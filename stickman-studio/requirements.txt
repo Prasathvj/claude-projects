@@ -1,0 +1,6 @@
+skia-python
+numpy
+edge-tts
+# only needed for upload.py
+google-api-python-client
+google-auth-oauthlib

@@ -1,0 +1,34 @@
+{
+  "title": "Why You Procrastinate (It's Not Laziness)",
+  "description": "Procrastination is not a time-management problem. Here is what is really going on in your head, and a two-minute trick that helps you start.",
+  "tags": ["procrastination", "psychology", "productivity", "self improvement", "stickman"],
+  "thumbnail_text": "You're not lazy",
+  "thumbnail_action": "shrug",
+  "accent": "#FFC233",
+  "scenes": [
+    {"say": "You have something important to do. You know it matters. And yet, here you are, watching a stickman on the internet.", "action": "wave", "text": "Hello, procrastinator"},
+    {"say": "So why do we put things off, even when we know it will hurt us later?", "action": "shrug", "icon": "question", "text": "Why do we delay?"},
+    {"say": "Most people think the answer is laziness, or bad time management.", "action": "talk", "icon": "clock", "text": "Bad with time?"},
+    {"say": "But researchers who study procrastination say that is not the real cause.", "action": "think", "icon": "cross", "text": "Not quite"},
+    {"say": "Procrastination is mostly about feelings. The task makes you feel bored, anxious, or not good enough.", "action": "sad", "icon": "heart", "text": "It's about feelings"},
+    {"say": "So your brain looks for a quick escape. And your phone is always happy to help.", "action": "point", "icon": "phone", "text": "The quick escape"},
+    {"say": "You feel better for a moment. But the task is still there, and now you also feel guilty.", "action": "facepalm", "icon": "warning", "text": "Relief, then guilt"},
+    {"say": "That guilt makes the task feel even worse, so you avoid it again. It becomes a loop.", "action": "walk", "text": "Avoid. Guilt. Repeat."},
+    {"say": "Here is a simple way to break it. It is called the two minute rule.", "action": "point", "icon": "bulb", "text": "The 2-minute rule"},
+    {"say": "Do not promise to finish the task. Only promise to work on it for two minutes.", "action": "talk", "icon": "clock", "text": "Just two minutes"},
+    {"say": "Open the document. Write one sentence. Put on your running shoes.", "action": "run", "icon": "check", "text": "Make it tiny"},
+    {"say": "Starting is the hardest part. Once you begin, the bad feeling fades, and continuing gets much easier.", "action": "talk", "icon": "chart", "text": "Starting is the hard part"},
+    {"say": "And if you still stop after two minutes? That is fine. You did more than zero.", "action": "shrug", "icon": "star", "text": "More than zero"},
+    {"say": "So pick the one thing you have been avoiding, and give it two minutes right now. Then come back and subscribe.", "action": "celebrate", "icon": "target", "text": "Go. Two minutes."}
+  ],
+  "short": {
+    "title": "You're not lazy. Try the 2-minute rule #shorts",
+    "scenes": [
+      {"say": "You are not lazy. You procrastinate for a different reason.", "action": "shock", "text": "You're not lazy"},
+      {"say": "The task makes you feel bored or anxious, so your brain runs away to something easier.", "action": "run", "icon": "phone", "text": "Your brain escapes"},
+      {"say": "The fix is the two minute rule. Only promise to work for two minutes.", "action": "point", "icon": "bulb", "text": "The 2-minute rule"},
+      {"say": "Starting is the hardest part. After that, it gets easier to keep going.", "action": "talk", "icon": "chart", "text": "Just start"},
+      {"say": "Try it right now on the thing you have been avoiding.", "action": "celebrate", "icon": "target", "text": "Go!"}
+    ]
+  }
+}

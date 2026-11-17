@@ -1,0 +1,102 @@
+{
+  "title": "Your car just died in a blizzard",
+  "format": "short",
+  "voice": "Fenrir",
+  "sets": {
+    "road": {
+      "image": "shots/01.jpg",
+      "hero_h": 400, "dog_h": 135, "snow": 1.0,
+      "marks": {
+        "hero": [1815, 1375], "dog": [1935, 1400],
+        "road_left": [1600, 1375], "road_far": [900, 1375],
+        "rear": [2035, 1395], "rear_dog": [2310, 1400],
+        "exhaust": [2128, 1262], "snowpile": [2150, 1360]
+      },
+      "views": {
+        "sky": [1900, 600, 1150], "wide": [1995, 911, 1250], "medium": [1995, 940, 1140], "rear": [2165, 1180, 820],
+        "exhaust": [2140, 1215, 660]
+      },
+      "glows": [[2098, 1153, 150, 1.4], [2394, 1139, 150, 1.4], [1802, 1076, 110, 1.4]]
+    }
+  },
+  "shots": [
+    {
+      "set": "road",
+      "say": "Your car just died in a blizzard. What you do in the next ten minutes decides everything.",
+      "direct": "bright, urgent hook, then lean in on 'decides everything'",
+      "camera": [{"view": "sky"}, {"at": 1.3, "view": "wide", "ease": "snap"}, {"at": "end", "view": "medium"}],
+      "actors": {
+        "hero": [{"from": "road_left", "to": "hero", "for": 1.7, "do": "think"}, {"on": "decides", "do": "shock"}],
+        "dog": [{"at": 0.3, "from": [1580, 1400], "to": "dog", "for": 1.7}]
+      },
+      "events": [{"on": "decides", "fx": "hit"}]
+    },
+    {
+      "set": "road",
+      "say": "Most people start walking for help. Great plan... if you want to become a snowman.",
+      "direct": "dry, amused sarcasm, with a comic pause before 'if you want to become a snowman'",
+      "camera": [{"follow": "hero", "dx": 40, "dy": -230, "zoom": 780}, {"on": "snowman"},
+                 {"on": "snowman", "delay": 0.2, "zoom": 610, "ease": "snap"}],
+      "actors": {
+        "hero": [{"to": "road_far", "speed": 150, "mood": "happy"}, {"on": "snowman", "as": "snowman"}],
+        "dog": [{"follow": "hero", "dx": 165, "dy": 14}, {"on": "snowman", "do": "sit", "face": "left", "tilt": -12}]
+      },
+      "events": [{"on": "snowman", "fx": "sparkle", "actor": "hero"}, {"on": "snowman", "fx": "hit"}]
+    },
+    {
+      "set": "road",
+      "say": "Stay! With! The car!",
+      "direct": "loud and forceful, hammering each word like a drill sergeant",
+      "camera": [{"view": "medium"}],
+      "actors": {
+        "hero": [{"from": "hero", "do": "stomp_point", "face": "right", "mouth": "talk"}],
+        "dog": [{"from": "dog", "do": "sit", "face": "right"}]
+      },
+      "events": [{"on": "Stay", "fx": "impact", "text": "STAY!"}, {"on": "With", "fx": "impact", "text": "WITH!"},
+                 {"on": "The", "fx": "impact", "text": "THE CAR!"}]
+    },
+    {
+      "set": "road",
+      "say": "It blocks the wind, and rescuers spot a car way before they spot you.",
+      "direct": "quick, confident, friendly explainer",
+      "camera": [{"view": "wide"}, {"at": "end", "view": "medium"}],
+      "actors": {"hero": [{"do": "lean_talk", "mouth": "talk"}], "dog": [{"do": "sit"}]},
+      "events": [{"fx": "wind_lines", "to_on": "spot"}, {"on": "wind", "fx": "sticker", "text": "BLOCKS THE WIND"},
+                 {"on": "spot", "fx": "sticker", "text": "EASY TO SPOT"}]
+    },
+    {
+      "set": "road",
+      "say": "But before you run that engine, dig out the exhaust pipe.",
+      "direct": "drop lower and serious, slower, a warning",
+      "camera": [{"view": "medium"}, {"at": 0.28, "view": "rear", "ease": "snap"}],
+      "actors": {
+        "hero": [{"from": "rear", "do": "dig", "face": "right"}],
+        "dog": [{"from": "rear_dog", "do": "dig", "face": "left"}]
+      },
+      "events": [{"at": 0.3, "fx": "chunks", "mark": "snowpile"}]
+    },
+    {
+      "set": "road",
+      "say": "Or the heater will quietly kill you.",
+      "direct": "hushed, ominous near-whisper",
+      "snow": 0.5,
+      "camera": [{"view": "rear"}, {"at": "end", "view": "exhaust"}],
+      "actors": {
+        "hero": [{"do": "crouch_look", "mood": "scared", "sweat": true}],
+        "dog": [{"do": "sit", "tilt": -6}]
+      },
+      "events": [{"fx": "dark", "level": 150}, {"fx": "smoke", "mark": "exhaust"}]
+    },
+    {
+      "set": "road",
+      "say": "Follow for more ways to not die.",
+      "direct": "upbeat and cheeky, smiling",
+      "camera": [{"view": "medium"}, {"at": "end", "view": "wide"}],
+      "actors": {
+        "hero": [{"from": "hero", "do": "wave", "face": "right"}],
+        "dog": [{"from": "dog", "do": "play"}]
+      },
+      "events": [{"at": 0, "fx": "sfx", "name": "pop"}]
+    }
+  ]
+}

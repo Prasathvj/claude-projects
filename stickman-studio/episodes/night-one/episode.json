@@ -1,0 +1,25 @@
+{
+  "title": "Night One (style test)",
+  "voice": {"voice": "en-US-ChristopherNeural", "rate": "-8%", "pitch": "-6Hz"},
+  "beats": [
+    {"type": "chapter", "text": "NIGHT ONE", "sub": "MOUNTAIN ROAD  /  DUSK", "dur": 2.6},
+    {"type": "shot", "image": "shots/01.jpg", "say": "The engine dies eleven miles from the nearest town. The snow does not care.",
+     "cam": [1.0, 0.5, 0.5, 1.16, 0.7, 0.62], "snow": 1.0,
+     "glows": [[0.762, 0.752, 0.07, 1.4], [0.870, 0.742, 0.07, 1.4], [0.655, 0.695, 0.05, 1.4]]},
+    {"type": "shot", "image": "shots/02.jpg", "say": "You check under the hood. You are not a mechanic. The dog knows it too.",
+     "cam": [1.0, 0.5, 0.5, 1.14, 0.44, 0.46], "snow": 0.8, "glows": [[0.357, 0.318, 0.06, 0]]},
+    {"type": "shot", "image": "shots/03.jpg", "say": "No signal. No traffic. And the temperature is still falling.",
+     "cam": [1.02, 0.5, 0.5, 1.22, 0.7, 0.5], "snow": 0, "glows": [[0.74, 0.27, 0.05, 0]]},
+    {"type": "shot", "image": "shots/04.jpg", "say": "Every instinct tells you to walk for help. That instinct kills people.",
+     "cam": [1.12, 0.4, 0.6, 1.12, 0.6, 0.44], "snow": 1.2},
+    {"type": "card", "header": "STAY WITH THE CAR",
+     "rows": [["SHELTER", "Blocks the wind and holds your heat"], ["VISIBILITY", "Rescuers spot a car long before a person"],
+              ["ON FOOT", "In a whiteout you can be lost within minutes"]],
+     "takeaway": "Leave only if you can see help close by.",
+     "say": "Rule one. Stay with the car. It is shelter, and it is far easier to find than you are."},
+    {"type": "shot", "image": "shots/05.jpg", "say": "Before you run the engine, dig out the exhaust pipe. A blocked pipe fills the car with carbon monoxide.",
+     "cam": [1.2, 0.42, 0.68, 1.0, 0.5, 0.5], "snow": 0.9, "glows": [[0.495, 0.49, 0.05, 0]]},
+    {"type": "shot", "image": "shots/06.jpg", "say": "Ten minutes of heat each hour. One window open a crack. Now, you wait.",
+     "cam": [1.0, 0.5, 0.5, 1.12, 0.45, 0.45], "snow": 0, "glows": [[0.44, 0.245, 0.06, 0]]}
+  ]
+}
