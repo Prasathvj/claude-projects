@@ -5,6 +5,38 @@
   const C = { skin: '#E9B691', skinS: '#D69C77', hair: '#3A2418', hood: '#F87736', hoodS: '#D85E25', hoodIn: '#2A140C',
     ink: '#1A0A04', white: '#FFF7F0', glass: '#1A0A04', phone: '#2A1912', accent: '#F87736', blush: '#F28C7A' };
 
+
+  function shade(hex, k) {
+    const n = parseInt(hex.slice(1), 16); let r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    const f = (c) => Math.max(0, Math.min(255, Math.round(c + (k < 0 ? c * k : (255 - c) * k))));
+    return '#' + [f(r), f(g), f(b)].map((c) => c.toString(16).padStart(2, '0')).join('');
+  }
+  const HAIR = {
+    messy: (L) => `<path d="M126 168 C118 108 162 92 204 96 C252 100 284 126 274 172 C262 148 240 140 222 138 C210 152 170 160 150 150 C140 158 132 162 126 168 Z" fill="${L.hairCol}"/><path d="M180 100 q14 -26 32 -6 q10 -18 24 -4" stroke="${L.hairCol}" stroke-width="10" fill="none" stroke-linecap="round"/>`,
+    fade: (L) => `<path d="M128 162 C124 112 160 98 200 98 C240 98 276 112 272 162 C266 140 246 128 200 128 C154 128 134 140 128 162 Z" fill="${L.hairCol}"/><path d="M128 162 C128 176 130 186 134 196 L140 196 C136 180 136 168 140 156 Z M272 162 C272 176 270 186 266 196 L260 196 C264 180 264 168 260 156 Z" fill="${L.hairCol}" opacity=".55"/>`,
+    curly: (L) => { let c = ''; for (let i = 0; i <= 12; i++) { const a = Math.PI * (1.02 + i * 0.08); const x = 200 + Math.cos(a) * 74, y = 168 + Math.sin(a) * 70; c += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${22 + (i % 3) * 3}" fill="${L.hairCol}"/>`; } return c + `<circle cx="200" cy="104" r="34" fill="${L.hairCol}"/>`; },
+    long: (L) => `<path d="M124 176 C118 108 164 92 204 94 C250 96 284 120 276 178 C262 140 236 126 206 124 C176 140 146 150 124 176 Z" fill="${L.hairCol}"/><path d="M206 124 C232 132 262 150 276 182 L276 150 C268 120 240 110 206 124 Z" fill="${shade(L.hairCol, 0.12)}"/>`,
+    bun: (L) => `<circle cx="200" cy="90" r="28" fill="${L.hairCol}"/><path d="M126 168 C120 112 160 98 200 98 C240 98 280 112 274 168 C262 140 236 128 200 128 C164 128 138 140 126 168 Z" fill="${L.hairCol}"/>`,
+    beanie: (L) => `<path d="M122 160 C118 98 160 82 200 82 C240 82 282 98 278 160 Z" fill="${L.hat}"/><rect x="118" y="140" width="164" height="30" rx="14" fill="${shade(L.hat, -0.2)}"/>${[0, 1, 2, 3, 4, 5, 6].map((i) => `<rect x="${128 + i * 22}" y="144" width="6" height="22" rx="3" fill="${shade(L.hat, -0.35)}"/>`).join('')}<circle cx="200" cy="80" r="14" fill="${shade(L.hat, -0.2)}"/>`,
+    cap: (L) => `<path d="M124 162 C118 104 160 88 200 88 C240 88 282 104 276 162 Z" fill="${L.hat}"/><rect x="170" y="150" width="60" height="16" rx="6" fill="${shade(L.hat, -0.3)}"/><path d="M124 162 C150 154 250 154 276 162 L276 170 C250 162 150 162 124 170 Z" fill="${shade(L.hat, -0.2)}"/><circle cx="200" cy="96" r="7" fill="${shade(L.hat, -0.3)}"/><path d="M140 168 q10 -8 22 0 M238 168 q10 -8 22 0" stroke="${L.hairCol}" stroke-width="8" fill="none" stroke-linecap="round"/>`,
+    buzz: (L) => `<path d="M130 160 C126 112 162 100 200 100 C238 100 274 112 270 160 C262 138 240 128 200 128 C160 128 138 138 130 160 Z" fill="${L.hairCol}" opacity=".85"/>`,
+  };
+  const GLASSES = {
+    round: () => `<g fill="none" stroke="${C.glass}" stroke-width="6"><rect x="134" y="152" width="56" height="50" rx="18"/><rect x="210" y="152" width="56" height="50" rx="18"/><path d="M190 172 h20"/></g>`,
+    square: () => `<g fill="none" stroke="${C.glass}" stroke-width="7"><rect x="132" y="154" width="60" height="46" rx="6"/><rect x="208" y="154" width="60" height="46" rx="6"/><path d="M192 172 h16"/></g>`,
+    visor: () => `<rect x="126" y="156" width="148" height="44" rx="22" fill="${C.accent}" opacity=".92"/><rect x="140" y="164" width="44" height="8" rx="4" fill="#FFE2CC" opacity=".85"/>`,
+    none: () => '',
+  };
+  const BEARD = {
+    stubble: (L) => `<path d="M134 214 C140 262 170 276 200 276 C230 276 260 262 266 214 C254 248 232 258 200 258 C168 258 146 248 134 214 Z" fill="${L.hairCol}" opacity=".35"/>`,
+    beard: (L) => `<path d="M130 200 C132 262 168 282 200 282 C232 282 268 262 270 200 C262 236 244 244 226 236 C214 230 186 230 174 236 C156 244 138 236 130 200 Z" fill="${L.hairCol}"/>`,
+  };
+  const PHONES = {
+    neck: () => `<path d="M128 312 C128 286 152 278 168 290 M272 312 C272 286 248 278 232 290" stroke="#2B2B2B" stroke-width="12" fill="none" stroke-linecap="round"/><rect x="110" y="300" width="34" height="44" rx="14" fill="#2B2B2B"/><rect x="256" y="300" width="34" height="44" rx="14" fill="#2B2B2B"/><rect x="116" y="308" width="22" height="28" rx="9" fill="${C.accent}"/><rect x="262" y="308" width="22" height="28" rx="9" fill="${C.accent}"/>`,
+    ears: () => `<path d="M124 196 C116 100 284 100 276 196" stroke="#2B2B2B" stroke-width="12" fill="none"/><rect x="108" y="172" width="30" height="52" rx="14" fill="#2B2B2B"/><rect x="262" y="172" width="30" height="52" rx="14" fill="#2B2B2B"/><rect x="113" y="180" width="20" height="36" rx="9" fill="${C.accent}"/><rect x="267" y="180" width="20" height="36" rx="9" fill="${C.accent}"/>`,
+    headset: () => PHONES.ears() + `<path d="M124 214 C130 252 160 250 176 242" stroke="#2B2B2B" stroke-width="6" fill="none" stroke-linecap="round"/><circle cx="180" cy="241" r="7" fill="${C.accent}"/>`,
+  };
+
   // ---- eyes: shapes per state; lx/ly = look direction (-1..1)
   function eye(cx, cy, kind, lx, ly, side, blink) {
     const px = cx + lx * 7, py = cy + ly * 5;
@@ -27,7 +59,7 @@
     const b = (cx, side) => {
       const a = skeptic ? (side < 0 ? -12 : 4) : ang * side;
       const l = skeptic ? (side < 0 ? -12 : 4) : lift;
-      return `<rect x="${cx - 17}" y="${-5}" width="34" height="9" rx="4.5" fill="${C.hair}" transform="translate(0 ${118 + l}) rotate(${a} ${cx} 0)"/>`;
+      return `<rect x="${cx - 18}" y="${-6}" width="36" height="10" rx="5" fill="${C.brow}" transform="translate(0 ${145 + l}) rotate(${a} ${cx} 0)"/>`;
     };
     return b(162, -1) + b(238, 1);
   }
@@ -92,33 +124,41 @@
   }
 
   function render(o = {}) {
+    const L = Object.assign({ skin: '#E9B691', hair: 'messy', hairCol: '#3A2418', glasses: 'round', hood: 'up', top: '#F87736', topS: '#D85E25', inner: '#2A140C', strings: '#FFF7F0', phones: 'neck', beard: 'none', hat: '#F87736' }, o.char || {});
+    const sk = L.skin, skS = shade(sk, -0.12);
+    Object.assign(C, { brow: shade(L.hairCol, -0.5), skin: sk, skinS: skS, hair: L.hairCol, hood: L.top, hoodS: L.topS, hoodIn: L.inner });
     const tilt = o.tilt ?? 0, look = o.look ?? [0, 0], blink = o.blink ?? 0;
+    const hoodUp = L.hood === 'up';
+    const backHair = L.hair === 'long' ? `<path d="M116 186 C106 104 158 88 200 90 C242 88 294 104 284 186 L296 318 C276 332 254 324 248 304 L152 304 C146 324 124 332 104 318 Z" fill="${L.hairCol}"/>` : '';
+    const hair = HAIR[L.hair] ? HAIR[L.hair](L) : HAIR.messy(L);
     const head = `
       <g transform="rotate(${tilt} 200 300)">
-        <path d="M108 250 C96 140 140 70 200 70 C260 70 304 140 292 250 C282 300 248 320 200 320 C152 320 118 300 108 250 Z" fill="${C.hood}"/>
-        <path d="M128 250 C120 160 156 100 200 100 C244 100 280 160 272 250 C262 290 236 306 200 306 C164 306 138 290 128 250 Z" fill="${C.hoodIn}"/>
+        ${hoodUp ? `<path d="M108 250 C96 140 140 70 200 70 C260 70 304 140 292 250 C282 300 248 320 200 320 C152 320 118 300 108 250 Z" fill="${C.hood}"/>
+        <path d="M128 250 C120 160 156 100 200 100 C244 100 280 160 272 250 C262 290 236 306 200 306 C164 306 138 290 128 250 Z" fill="${C.hoodIn}"/>` : ''}
+        ${backHair}
+        <rect x="178" y="250" width="44" height="60" rx="16" fill="${C.skinS}"/>
         <ellipse cx="200" cy="190" rx="72" ry="82" fill="${C.skin}"/>
         <ellipse cx="128" cy="196" rx="12" ry="18" fill="${C.skinS}"/><ellipse cx="272" cy="196" rx="12" ry="18" fill="${C.skinS}"/>
-        <path d="M126 168 C118 108 162 92 204 96 C252 100 284 126 274 172 C262 148 240 140 222 138 C210 152 170 160 150 150 C140 158 132 162 126 168 Z" fill="${C.hair}"/>
-        <path d="M180 100 q14 -26 32 -6 q10 -18 24 -4" stroke="${C.hair}" stroke-width="10" fill="none" stroke-linecap="round"/>
+        ${BEARD[L.beard] ? BEARD[L.beard](L) : ''}
+        ${hair}
         ${brows(o.brows ?? 'neutral')}
         ${eye(162, 178, o.eyes ?? 'open', look[0], look[1], -1, blink)}
         ${eye(238, 178, o.eyes ?? 'open', look[0], look[1], 1, blink)}
-        <g fill="none" stroke="${C.glass}" stroke-width="6"><rect x="134" y="152" width="56" height="50" rx="18"/><rect x="210" y="152" width="56" height="50" rx="18"/><path d="M190 172 h20"/></g>
+        ${GLASSES[L.glasses] ? GLASSES[L.glasses](L) : ''}
         <path d="M196 198 q4 10 -4 14" stroke="${C.skinS}" stroke-width="5" fill="none" stroke-linecap="round"/>
         ${mouth(o.mouth ?? 'rest')}
+        ${PHONES[L.phones] && L.phones !== 'neck' ? PHONES[L.phones](L) : ''}
         ${extras(o.extra ?? [])}
       </g>`;
     const body = `
+      ${!hoodUp ? `<path d="M110 360 C100 300 150 290 200 300 C250 290 300 300 290 360 Z" fill="${C.hoodS}"/>` : ''}
       <path d="M70 520 C70 380 120 330 200 330 C280 330 330 380 330 520 Z" fill="${C.hood}"/>
       <path d="M150 336 C160 360 240 360 250 336" fill="${C.hoodS}"/>
-      <path d="M182 350 L176 420 M218 350 L224 420" stroke="${C.white}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M182 350 L176 420 M218 350 L224 420" stroke="${L.strings}" stroke-width="6" stroke-linecap="round"/>
       <rect x="140" y="440" width="120" height="44" rx="14" fill="${C.hoodS}"/>
-      <path d="M128 312 C128 286 152 278 168 290 M272 312 C272 286 248 278 232 290" stroke="#2B2B2B" stroke-width="12" fill="none" stroke-linecap="round"/>
-      <rect x="110" y="300" width="34" height="44" rx="14" fill="#2B2B2B"/><rect x="256" y="300" width="34" height="44" rx="14" fill="#2B2B2B"/>
-      <rect x="116" y="308" width="22" height="28" rx="9" fill="${C.accent}"/><rect x="262" y="308" width="22" height="28" rx="9" fill="${C.accent}"/>`;
+      ${L.phones === 'neck' ? PHONES.neck(L) : ''}`;
     return `<svg viewBox="0 0 400 520" width="${o.w ?? 400}" height="${o.h ?? 520}" style="overflow:visible">${body}${head}${arms(o.arms ?? 'down')}</svg>`;
   }
 
-  g.HOST = { render, C };
+  g.HOST = { render, C, HAIR, GLASSES };
 })(typeof window !== 'undefined' ? window : globalThis);

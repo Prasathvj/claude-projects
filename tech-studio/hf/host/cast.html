@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'SD Display';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:T;src:url('/ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+body{margin:0;width:1920px;height:1250px;background:#0C0704;color:#F6EEE8;font-family:T;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(248,119,54,.09) 2px,transparent 2px),linear-gradient(90deg,rgba(248,119,54,.09) 2px,transparent 2px);background-size:96px 96px}
+h1{position:relative;text-align:center;font:900 54px 'SD Display';margin:24px 0 14px}h1 span{color:#F87736}
+.wrap{position:relative;display:grid;grid-template-columns:repeat(6,298px);gap:14px;justify-content:center}
+.c{background:linear-gradient(180deg,#2C1A13,#1F120C);border:2px solid #3E2217;border-radius:26px;height:1090px;display:flex;flex-direction:column;align-items:center;padding-top:6px}
+.c b{font:900 40px 'SD Display';margin-top:6px}.c b span{color:#F87736}
+.c i{font:600 21px T;color:#9E745A;font-style:normal;text-align:center;margin:4px 18px 0;line-height:1.3}
+.r{font:600 18px T;color:#F87736;letter-spacing:2px;margin-top:2px}
+</style><script src="/host/host.js"></script></head><body><div class="grid"></div>
+<h1>Choose the host: <span>6 originals</span></h1><div class="wrap" id="w"></div>
+<script>
+const CAST=[
+ ['1','Kai','Black hoodie, hood down, short fade, square glasses, headphones round the neck. Calm, sharp explainer.',
+  {skin:'#A8714C',hair:'fade',hairCol:'#1E120C',glasses:'square',hood:'down',top:'#1E1A18',topS:'#121010',inner:'#0E0C0B',strings:'#F87736',phones:'neck'}],
+ ['2','Max','Orange hoodie, messy hair, round glasses, stubble. Friendly, a bit chaotic.',
+  {skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'}],
+ ['3','Zara','Long dark hair, cream hoodie, studio headphones. Confident news anchor energy.',
+  {skin:'#C98E66',hair:'long',hairCol:'#24150F',glasses:'none',hood:'down',top:'#EFE3D6',topS:'#D7C6B5',strings:'#F87736',phones:'ears'}],
+ ['4','Rio','Curly hair, orange beanie, black hoodie, beard. Laid-back, funny reactions.',
+  {skin:'#7A4E32',hair:'beanie',hat:'#F87736',hairCol:'#1A0F0A',glasses:'none',hood:'down',top:'#22201E',topS:'#151312',strings:'#F6EEE8',phones:'none',beard:'beard'}],
+ ['5','Neo','Hood up, glowing orange visor. Mysterious "breaking tech news" vibe.',
+  {skin:'#D9A27E',hair:'buzz',hairCol:'#2A1A12',glasses:'visor',hood:'up',top:'#1C1916',topS:'#121010',inner:'#0B0908',strings:'#F87736',phones:'none'}],
+ ['6','Sam','Backwards cap, orange hoodie, headset mic. Streamer / gamer-dev energy.',
+  {skin:'#8E5B3C',hair:'cap',hat:'#1E1A18',hairCol:'#1A0F0A',glasses:'square',hood:'down',top:'#F87736',topS:'#D85E25',phones:'headset'}],
+];
+const w=document.getElementById('w');
+for(const [n,name,desc,ch] of CAST){
+ const d=document.createElement('div');d.className='c';
+ d.innerHTML=HOST.render({char:ch,brows:'up',mouth:'A',arms:'point',look:[1,0],w:270,h:351})+
+  `<div class="r">EXPLAINING</div>`+
+  HOST.render({char:ch,brows:'high',eyes:'wide',mouth:'shock',arms:'hands-up',extra:['bang'],w:270,h:351})+
+  `<div class="r">SHOCKED</div><b><span>${n}</span> · ${name}</b><i>${desc}</i>`;
+ w.appendChild(d);}
+</script></body></html>
