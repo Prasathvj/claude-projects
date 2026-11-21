@@ -1,2 +1,5 @@
 node_modules
 out
+# generated media (rebuild with tools/audio.py)
+public/ep*/
+public/sfx/

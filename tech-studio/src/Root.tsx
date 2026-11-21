@@ -1,11 +1,18 @@
 import React from 'react';
-import {Composition, AbsoluteFill, useCurrentFrame, interpolate, spring, useVideoConfig} from 'remotion';
-const Test: React.FC = () => {
-  const f = useCurrentFrame(); const {fps} = useVideoConfig();
-  const n = Math.round(interpolate(f, [0, 45], [0, 133], {extrapolateRight: 'clamp'}));
-  const s = spring({frame: f, fps, config: {damping: 10}});
-  return (<AbsoluteFill style={{background: '#0B1226', justifyContent: 'center', alignItems: 'center'}}>
-    <div style={{fontFamily: 'sans-serif', fontWeight: 900, fontSize: 260, color: '#2EE6FF', transform: `scale(${s})`}}>{n}</div>
-  </AbsoluteFill>);
-};
-export const Root: React.FC = () => <Composition id="Test" component={Test} durationInFrames={60} fps={30} width={1080} height={1920} />;
+import {Composition} from 'remotion';
+import {Episode, Timeline} from './lib/Episode';
+import {TIMELINES} from './episodes';
+import {Thumbnail} from './lib/Thumbnail';
+
+const size = (tl: Timeline) => (tl.format === 'vertical' ? {width: 1080, height: 1920} : {width: 1920, height: 1080});
+
+export const Root: React.FC = () => (
+  <>
+    {TIMELINES.map((tl) => (
+      <Composition key={tl.id} id={tl.id} component={Episode as any} defaultProps={{tl}} fps={tl.fps}
+        durationInFrames={Math.ceil(tl.duration * tl.fps)} {...size(tl)} />
+    ))}
+    <Composition id="Thumb-ep01" component={Thumbnail as any} defaultProps={{hook: 'AGENT HIJACKED', tag: 'PROMPT INJECTION'}}
+      fps={30} durationInFrames={30} width={1280} height={720} />
+  </>
+);
