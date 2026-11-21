@@ -42,10 +42,10 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#b03-card", { opacity:0, scale:.78, rotationX:18, rotationY:-12, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.05);
-    tl.to("#b03-h0", { color:"#E0261B", duration:.25 }, 1.468);
-    tl.to("#b03-h1", { color:"#E0261B", duration:.25 }, 1.718);
-    tl.fromTo("#b03-card", { x:0 }, { x:10, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 1.468);
-    tl.to("#b03-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 3.095);
+    tl.to("#b03-h0", { color:"#E0261B", duration:.25 }, 1.44);
+    tl.to("#b03-h1", { color:"#E0261B", duration:.25 }, 1.69);
+    tl.fromTo("#b03-card", { x:0 }, { x:10, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 1.44);
+    tl.to("#b03-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 3.034);
     window.__timelines["b03"] = tl;
   </script>
 </template>

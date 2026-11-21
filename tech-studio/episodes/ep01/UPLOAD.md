@@ -38,48 +38,45 @@ Max and Bit are animated characters. Narration is AI-generated (Google Gemini te
 
 **Settings:** Category Science & Technology · Not made for kids · Altered/synthetic content: No (animated characters, AI voice disclosed) · Related video: link the long video once it's live (the Short's CTA says "link below").
 
-## 2) LONG — `out/ep01-long-final.mp4` (1920×1080, 5:24)
+## 2) LONG — `out/TechDecoded_ep01_long.mp4` (1920×1080, 6:46) · v2 (owner script; Max host + Bit)
 
-**Title (47 chars):** Prompt Injection Explained: Hijacking AI Agents
-Alt A (question style): How does a web page hijack your AI agent?
-Alt B: Prompt injection explained in 5 minutes
+**Title (52 chars):** Indirect Prompt Injection: How a Webpage Hijacks AI
+Alt A: How a hidden webpage note hijacks your AI agent
+Alt B: Prompt injection explained: why AI agents can be hijacked
 
-**Thumbnail:** `out/ep01-thumbnail.png` ("AGENT HIJACKED", evil agent, pancake page with hidden line).
+**Thumbnail:** to make next (Max pointing at a white page with red hidden text, "AI HIJACKED").
 
 **Description:**
-A recipe page with one hidden line can take over an AI agent. In this video: how prompt injection works, why AI agents make it dangerous, a real zero-click attack on Microsoft 365 Copilot (EchoLeak), how attacks are growing into "promptware", and the simple rule security researchers use to stay safe: the lethal trifecta.
+A webpage that looks empty can hide instructions only your AI agent reads. In this video: how AI agents actually work (the think, choose, act, read loop), direct vs indirect prompt injection, why language models can't separate instructions from data, how "promptware" and poisoned memory let an attack outlive the page, why there's no complete fix yet, and 5 practical habits that shrink the blast radius.
 
-0:00 A web page that gives orders to AI
-0:36 Chatbot vs AI agent
-1:02 One channel for everything
-1:41 Direct vs indirect prompt injection
-2:17 EchoLeak: the zero-click email
-3:09 From trick to malware (promptware)
-3:40 Why not just fix it?
-4:04 The lethal trifecta + Agents Rule of Two
-4:43 5 habits for using AI agents safely
-5:08 The world talks back
+0:00 A page that gives orders
+0:37 Chatbot vs AI agent
+1:26 Direct vs indirect injection
+2:18 Why AI can't tell the difference
+3:12 Promptware and poisoned memory
+4:06 Why there's no complete fix
+4:59 5 habits to stay safe
+6:16 The page talks back
 
 Sources:
 - OWASP Top 10 for LLM Applications 2025, LLM01 Prompt Injection: https://genai.owasp.org/llmrisk/llm01/
-- OWASP Top 10 for Agentic Applications (2026): https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
-- Simon Willison, "Prompt injection attacks against GPT-3" (Sept 2022): https://simonwillison.net/2022/Sep/12/prompt-injection/
-- Greshake, Abdelnabi et al., "Not what you've signed up for" (2023): https://arxiv.org/abs/2302.12173
+- Greshake, Abdelnabi et al., "Not what you've signed up for" (indirect prompt injection, 2023): https://arxiv.org/abs/2302.12173
 - UK NCSC, "Prompt injection is not SQL injection (it may be worse)" (Dec 2025): https://www.ncsc.gov.uk/blog-post/prompt-injection-is-not-sql-injection
-- EchoLeak, CVE-2025-32711 (Aim Labs; fixed by Microsoft): https://thehackernews.com/2025/06/zero-click-ai-vulnerability-exposes.html
 - Brodt, Feldman, Schneier, Nassi, "The Promptware Kill Chain" (2026): https://arxiv.org/abs/2601.09625
 - OpenAI on prompt injection and ChatGPT Atlas (Dec 2025), via TechCrunch: https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/
+- OpenAI, "The Instruction Hierarchy" (2024): https://arxiv.org/abs/2404.13208
 - Simon Willison, "The lethal trifecta" (June 2025): https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
-- Meta AI, "Agents Rule of Two" (Oct 2025): https://ai.meta.com/blog/practical-ai-agent-security/
 
-Labels: the pancake page, chats, tool description and memory notes are illustrations. The EchoLeak email and image link are simplified recreations, not the real exploit. The kill chain is shown in 5 simplified steps (the paper defines 7 stages).
+Labels: the webpage, activity log, chat, email, code snippets and memory notes are illustrations; attacker@example.com is a placeholder. The promptware chain is shown in 5 simplified steps (the paper defines 7 stages).
 
-Narrated by an AI voice (Google Gemini TTS); script researched and fact-checked against the sources above. Educational content only, not security advice for your specific setup.
+Max and Bit are animated characters. Narration is AI-generated (Google Gemini text-to-speech); the script is researched and fact-checked against the sources above. Educational content, not security advice for your specific setup.
 
-**Tags:** prompt injection, prompt injection explained, indirect prompt injection, prompt injection attack, ai agent security, ai agents explained, ai agent guardrails, agentic ai security, llm security, ai security, echoleak, lethal trifecta, chatgpt security, owasp llm top 10
+#promptinjection #aiagents #aisecurity
 
-**Pinned comment:** Which AI agent do you use (ChatGPT, Claude, Copilot, Gemini, something else)? Tell me and I'll say which leg of the trifecta I'd cut.
+**Tags:** prompt injection, indirect prompt injection, prompt injection explained, ai agent security, ai agents explained, how ai agents work, prompt injection attack, agentic ai security, llm security, ai security, ai memory poisoning, promptware, chatgpt security, ai browser agents
+
+**Pinned comment:** Which of the 5 habits do you already follow, and which one are you adding today? 👇
 
 **End screen:** subscribe + the Short. **Cards:** none needed.
 
-Category: Science & Technology · Language: English · Altered/synthetic content: "No" for realistic people/events is fine (all graphics are clearly animated; voice is AI and disclosed in the description).
+Category: Science & Technology · Language: English · Altered/synthetic content: No (animated characters; AI voice disclosed in the description).

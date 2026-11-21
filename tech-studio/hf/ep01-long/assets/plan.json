@@ -1,37 +1,37 @@
 {
- "dur": 467.205,
- "provisional": true,
+ "dur": 405.979,
+ "provisional": false,
  "chapters": [
   [
    0.0,
    "A page that gives orders"
   ],
   [
-   43.781,
+   37.727,
    "Chatbot vs AI agent"
   ],
   [
-   105.075,
+   86.887,
    "Direct vs indirect injection"
   ],
   [
-   163.409,
+   138.19,
    "Why AI can't tell the difference"
   ],
   [
-   222.419,
+   192.773,
    "Promptware and poisoned memory"
   ],
   [
-   272.978,
+   246.58,
    "Why there's no complete fix"
   ],
   [
-   337.194,
+   299.631,
    "5 habits to stay safe"
   ],
   [
-   427.291,
+   376.2,
    "The page talks back"
   ]
  ]

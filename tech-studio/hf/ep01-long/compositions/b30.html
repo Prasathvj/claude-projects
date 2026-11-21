@@ -40,11 +40,11 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#b30-left", { opacity:0, scale:.78, rotationX:10, rotationY:20, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.05);
-    tl.fromTo("#b30-right", { opacity:0, scale:.78, rotationX:10, rotationY:-20, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 3.357);
-    tl.to("#b30-left", { x:140, duration:.5, ease:"power3.inOut" }, 5.947);
-    tl.to("#b30-right", { x:-140, duration:.5, ease:"power3.inOut" }, 5.947);
-    tl.fromTo("#b30-mg", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 6.594);
-    tl.to("#b30-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 8.193);
+    tl.fromTo("#b30-right", { opacity:0, scale:.78, rotationX:10, rotationY:-20, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 3.058);
+    tl.to("#b30-left", { x:140, duration:.5, ease:"power3.inOut" }, 5.409);
+    tl.to("#b30-right", { x:-140, duration:.5, ease:"power3.inOut" }, 5.409);
+    tl.fromTo("#b30-mg", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 5.997);
+    tl.to("#b30-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 7.446);
     window.__timelines["b30"] = tl;
   </script>
 </template>
