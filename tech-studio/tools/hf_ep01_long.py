@@ -162,9 +162,9 @@ def t_slam(i, sid, v):
     body = f'<div class="center big" style="top:{430 - size // 2}px; font-size:{size}px; padding:0 40px">{spans}</div><div class="ring" id="{sid}-ring" style="left:740px; top:470px"></div>'
     sc = []
     for k in range(n):
-        t = round(wfrac(i, min(0.85, k / max(1, n) * 0.8)), 3) if n > 1 else 0.05
+        t = round(0.08 + k * 0.12, 3)
         sc.append(f'    tl.fromTo("#{sid}-w{k}", {{ opacity:0, scale:1.5, filter:"blur(14px)" }}, {{ opacity:1, scale:1, filter:"blur(0px)", duration:.24, ease:"expo.out" }}, {max(0.03, t)});')
-    sc.append(ring(f'#{sid}-ring', wfrac(i, 0.75)))
+    sc.append(ring(f'#{sid}-ring', round(0.1 + n * 0.12, 3)))
     return body, sc, ''
 
 def t_browser(i, sid, v):
@@ -326,8 +326,8 @@ def t_split(i, sid, v):
 .mg { font:900 64px 'SD Display'; color:var(--accent); letter-spacing:2px; }"""
     sc = [fly(f'#{sid}-left', 0.05, 10, 20), fly(f'#{sid}-right', wfrac(i, 0.4), 10, -20)]
     if v.get('merge'):
-        sc += [f'    tl.to("#{sid}-left", {{ x:140, duration:.5, ease:"power3.inOut" }}, {wfrac(i, 0.72)});',
-               f'    tl.to("#{sid}-right", {{ x:-140, duration:.5, ease:"power3.inOut" }}, {wfrac(i, 0.72)});',
+        sc += [f'    tl.to("#{sid}-left", {{ x:55, duration:.5, ease:"power3.inOut" }}, {wfrac(i, 0.72)});',
+               f'    tl.to("#{sid}-right", {{ x:-55, duration:.5, ease:"power3.inOut" }}, {wfrac(i, 0.72)});',
                pop(f'#{sid}-mg', wfrac(i, 0.8))]
     return body, sc, css
 
