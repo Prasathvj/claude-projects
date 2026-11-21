@@ -3,3 +3,4 @@ out
 # generated media (rebuild with tools/audio.py)
 public/ep*/
 public/sfx/
+__pycache__/
