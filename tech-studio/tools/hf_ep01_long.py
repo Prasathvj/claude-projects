@@ -35,6 +35,10 @@ WORDS = [(w['w'], round(b['start'] + w['s'], 3), round(b['start'] + w['e'], 3)) 
 CUT = [0.0] + [round(b['start'] - 0.12, 3) for b in BE[1:]] + [DUR]
 S = {f'b{i:02d}': (CUT[i], CUT[i + 1]) for i in range(len(BE))}
 CHAPTERS = [(i, b['chapter']) for i, b in enumerate(BE) if b.get('chapter')]
+HOST = set(EP.get('host_beats', range(len(BE))))  # beats where Max is on screen; elsewhere the content is centred
+CENTER_X = (W - 1320) // 2
+def beat_at(t):
+    return max(k for k, b in enumerate(BE) if b['start'] - 0.12 <= t) if t >= BE[0]['start'] - 0.12 else 0
 
 def bword(i, word, nth=0):
     """local time of a word inside beat i (falls back to beat start)."""
@@ -489,7 +493,8 @@ def beat_scene(i):
     sid = f'b{i:02d}'
     v = BE[i]['v']
     body, sc, css = T[v['type']](i, sid, v)
-    body = f'<div class="stage" id="{sid}-all">{body}</div>'
+    left = 80 if i in HOST else CENTER_X
+    body = f'<div class="stage" id="{sid}-all" style="left:{left}px">{body}</div>'
     if i + 1 < len(BE):
         sc.append(out(sid))
     return scene(sid, body, '\n'.join(sc), css)
@@ -547,7 +552,8 @@ def captions(groups, part):
             sc.append(f'    tl.fromTo("#c{gi}b{wi}", {{ opacity:0 }}, {{ opacity:1, duration:.06 }}, {s});')
             nx = g[wi + 1][1] if wi + 1 < len(g) else end
             sc.append(f'    tl.to("#c{gi}b{wi}", {{ opacity:0, duration:.05 }}, {round(max(s + 0.08, min(nx, end) - 0.02), 3)});')
-        body.append(f'    <div class="grp" id="c{gi}">{"".join(spans)}</div>')
+        gl = 80 if beat_at(g[0][1]) in HOST else CENTER_X
+        body.append(f'    <div class="grp" id="c{gi}" style="left:{gl}px">{"".join(spans)}</div>')
         sc.append(f'    tl.set("#c{gi}", {{ visibility:"visible" }}, {start}); tl.fromTo("#c{gi}", {{ opacity:0 }}, {{ opacity:1, duration:.1 }}, {start});')
         sc.append(f'    tl.to("#c{gi}", {{ opacity:0, duration:.08 }}, {round(end - 0.08, 3)}); tl.set("#c{gi}", {{ visibility:"hidden" }}, {end});')
     css = """.grp { position:absolute; left:80px; width:1320px; top:930px; text-align:center; visibility:hidden; }
@@ -575,6 +581,8 @@ def sfx_list():
                 c.append((a + t, n, g))
         if v['type'] == 'agent' and v.get('mode') == 'hijack':
             c += [(a + wfrac(i, 0.75), 'glitch', .55), (a + wfrac(i, 0.75), 'error', .4)]
+        if i in HOST and (i - 1) not in HOST:
+            c.append((a, 'whoosh', .5))
         if v.get('reveal') or v['type'] == 'email':
             c.append((a + wfrac(i, 0.5), 'glitch', .5))
     return sorted(c)

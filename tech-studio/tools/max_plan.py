@@ -43,7 +43,7 @@ def auto(tl):
         for pat, ex in MOOD:
             if re.search(pat, b.get('dir', '')):
                 o = {**o, **ex}; break
-        segs.append((t1, 'host', o))
+        segs.append((t1, 'host' if i in HOSTB else 'off', o))
     return segs
 
 pid = sys.argv[1]
@@ -52,6 +52,7 @@ if pid not in SEGS:
     ep = json.load(open(f'episodes/{pid.split("-")[0]}/{pid.split("-")[1]}.json'))
     for b, e in zip(tl['beats'], ep['beats']):
         b['v'] = e['v']; b['dir'] = e.get('dir', '')
+    HOSTB = set(ep.get('host_beats', range(len(ep['beats']))))
     SEGS[pid] = auto(tl)
 B = tl['beats']; dur = tl['duration'] + float(sys.argv[2] if len(sys.argv) > 2 else 0)
 segs, t0 = [], 0.0
