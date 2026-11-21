@@ -11,31 +11,32 @@ Keyword data (vidIQ, 21 Nov 2026, est. monthly YouTube searches · competition 0
 
 ---
 
-## 1) SHORT (post first) — `out/TechDecoded_ep01_short.mp4` (1080×1920, 39.5 s) · channel: TechDecoded with Max
+## 1) SHORT (post first) — `out/TechDecoded_ep01_short.mp4` (1080×1920, 38.8 s) · channel: TechDecoded with Max · v2 (owner script, trimmed; Max + Bit)
 
-**Title (37 chars):** Can a web page hijack your AI agent?
-Alt: This web page is lying to your AI agent
+**Title (35 chars):** This blank webpage can hijack your AI
+Alt: Hidden text that hijacks your AI agent
 
 **Description:**
-A normal-looking recipe page hides a message only AI reads. Ask your AI agent to summarize it, and it starts taking orders from a stranger. That's prompt injection, the #1 risk on OWASP's list for AI apps.
+A blank-looking webpage can hide instructions only your AI reads. Ask your AI agent to summarize it, and it may start following a stranger's orders. That's indirect prompt injection, the #1 risk on OWASP's list for AI apps, and there's still no complete fix.
 
-Security researchers use one simple rule to stay safe with AI agents. Full video on the channel.
+The 5 habits that keep you safe are in the full video (link below).
 
 Sources:
 • OWASP LLM01:2025 Prompt Injection: https://genai.owasp.org/llmrisk/llm01/
-• EchoLeak, CVE-2025-32711 (Aim Labs; fixed by Microsoft in 2025)
-• OpenAI on prompt injection and ChatGPT Atlas (Dec 2025)
-The recipe page and chat are illustrations; the email is a simplified recreation.
+• UK NCSC, "Prompt injection is not SQL injection" (Dec 2025): https://www.ncsc.gov.uk/blog-post/prompt-injection-is-not-sql-injection
+• OpenAI on prompt injection and ChatGPT Atlas (Dec 2025): https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/
+• Greshake et al., indirect prompt injection (2023): https://arxiv.org/abs/2302.12173
+The webpage, activity log, memory notes and chats are illustrations; attacker@example.com is a placeholder.
 
-Max is an animated host. Narration is AI-generated (Google Gemini text-to-speech); the script is researched and fact-checked.
+Max and Bit are animated characters. Narration is AI-generated (Google Gemini text-to-speech); the script is researched and fact-checked.
 
 #promptinjection #aiagents #aisecurity #shorts
 
-**Tags:** prompt injection, prompt injection explained, ai agent security, indirect prompt injection, prompt injection attack, ai agents, ai security, chatgpt security, llm security, echoleak, ai news
+**Tags:** prompt injection, indirect prompt injection, prompt injection explained, ai agent security, prompt injection attack, ai agents, ai security, chatgpt security, llm security, ai memory, ai news
 
 **Pinned comment:** Would you let an AI agent read your email AND browse the web? Yes or no 👇
 
-**Settings:** Category Science & Technology · Not made for kids · Altered/synthetic content: No (animated host, AI voice disclosed) · Related video: link the long video once it's live.
+**Settings:** Category Science & Technology · Not made for kids · Altered/synthetic content: No (animated characters, AI voice disclosed) · Related video: link the long video once it's live (the Short's CTA says "link below").
 
 ## 2) LONG — `out/ep01-long-final.mp4` (1920×1080, 5:24)
 
