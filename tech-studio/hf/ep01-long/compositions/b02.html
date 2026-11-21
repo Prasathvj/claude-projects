@@ -1,0 +1,47 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --ground:#0C0704; --edge:#3E2217; --inner:#0E0806; --accent:#F87736; --accent-soft:#E98F5E; --dim:#9E745A; --ink:#F6EEE8;
+        --mute:#5C4337; --red:#FF3B30; --green:#3DDC97; --blue:#55C2FF; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.stage { position:absolute; left:80px; top:110px; width:1320px; height:760px; perspective:1800px; }
+.card { position:absolute; border-radius:30px; border:2px solid var(--edge); background:linear-gradient(180deg,#2C1A13 0%,#1F120C 100%);
+  box-shadow:0 36px 80px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,190,150,.06); padding:26px; }
+.hd { display:flex; align-items:center; gap:20px; margin-bottom:20px; }
+.tile { width:80px; height:80px; border-radius:20px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 22px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 38px 'SD Display'; color:var(--ink); white-space:nowrap; }
+.inner { background:var(--inner); border-radius:22px; padding:24px 28px; position:relative; overflow:hidden; }
+.tag { position:absolute; font:600 20px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.kick { font:600 26px 'SD Text'; letter-spacing:6px; color:var(--dim); }
+.big { font:900 120px 'SD Display'; color:var(--ink); line-height:1; letter-spacing:-2px; }
+.acc { color:var(--accent); text-shadow:0 0 50px rgba(248,119,54,.5); }
+.ring { position:absolute; width:260px; height:260px; margin:-130px 0 0 -130px; border-radius:50%; border:5px solid var(--accent);
+  box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+.center { position:absolute; left:0; right:0; text-align:center; }
+
+.row { position:absolute; left:60px; right:60px; top:230px; display:flex; gap:30px; justify-content:center; }
+.nl { width:360px; height:300px; border-radius:30px; background:linear-gradient(180deg,#2C1A13,#1F120C); border:2px solid var(--edge); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; }
+.ic { width:120px; height:120px; border-radius:60px; background:#2A0D0A; border:3px solid var(--red); display:flex; align-items:center; justify-content:center; }
+.nt { font:700 42px 'SD Display'; color:var(--ink); text-align:center; padding:0 20px; }
+  </style>
+  <div id="root" data-composition-id="b02" data-width="1920" data-height="1080">
+<div class="stage" id="b02-all"><div class="row" id="b02-row"><div class="nl" id="b02-n0"><div class="ic"><svg width="64" height="64" viewBox="0 0 100 100" fill="none" stroke="#FF3B30" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24l52 52M76 24L24 76"/></svg></div><div class="nt">Malware</div></div><div class="nl" id="b02-n1"><div class="ic"><svg width="64" height="64" viewBox="0 0 100 100" fill="none" stroke="#FF3B30" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24l52 52M76 24L24 76"/></svg></div><div class="nt">Browser exploit</div></div><div class="nl" id="b02-n2"><div class="ic"><svg width="64" height="64" viewBox="0 0 100 100" fill="none" stroke="#FF3B30" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24l52 52M76 24L24 76"/></svg></div><div class="nt">Zero-day</div></div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b02-n0", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.203);
+    tl.fromTo("#b02-n1", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 1.386);
+    tl.fromTo("#b02-n2", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 2.568);
+    tl.to("#b02-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 4.272);
+    window.__timelines["b02"] = tl;
+  </script>
+</template>

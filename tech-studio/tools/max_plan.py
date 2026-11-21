@@ -20,8 +20,39 @@ SEGS = {'ep01-short': [  # (until word or seconds, mode, expression)
     (99, 'duo', {'brows': 'up', 'eyes': 'happy', 'mouth': 'smile', 'arms': 'point', 'look': [-1, -0.3]}),
 ]}
 
+# automatic host acting for long videos: expression from each beat's visual type and delivery note
+AUTO = {'slam': {'brows': 'up', 'arms': 'point', 'look': [-1, 0]}, 'quote': {'brows': 'focused', 'arms': 'chin', 'look': [-1, 0]},
+        'checklist': {'brows': 'up', 'eyes': 'happy', 'arms': 'point', 'look': [-1, -0.2]}, 'end': {'brows': 'up', 'eyes': 'happy', 'mouth': 'smile', 'arms': 'thumbs'},
+        'nolist': {'brows': 'skeptic', 'arms': 'shrug'}, 'memory': {'brows': 'worried', 'eyes': 'worried', 'look': [-1, 0]},
+        'email': {'brows': 'skeptic', 'eyes': 'squint', 'arms': 'chin', 'look': [-1, 0]}, 'code': {'brows': 'focused', 'arms': 'chin', 'look': [-1, 0]},
+        'split': {'brows': 'neutral', 'arms': 'point', 'look': [-1, 0]}, 'loop': {'brows': 'up', 'arms': 'point', 'look': [-1, 0]}}
+MOOD = [('dark|ominous|creepy|grave|unsettling', {'brows': 'worried', 'eyes': 'worried', 'extra': ['sweat']}),
+        ('twist', {'brows': 'high', 'eyes': 'wide', 'mouth': 'shock', 'arms': 'hands-up', 'extra': ['bang']}),
+        ('curious|question', {'brows': 'skeptic', 'arms': 'chin', 'extra': ['question']}),
+        ('warm|friendly|helpful|energetic', {'brows': 'up', 'eyes': 'happy', 'mouth': 'smile'})]
+
+def auto(tl):
+    import re
+    segs, B = [], tl['beats']
+    for i, b in enumerate(B):
+        t0 = 0.0 if i == 0 else round(b['start'] - 0.12, 3)
+        t1 = round(B[i + 1]['start'] - 0.12, 3) if i + 1 < len(B) else 9999
+        o = dict(AUTO.get(b['v']['type'], {'brows': 'neutral', 'look': [-1, 0]}))
+        if b['v']['type'] == 'agent' and b['v'].get('mode') == 'hijack':
+            o = {'brows': 'high', 'eyes': 'wide', 'mouth': 'shock', 'arms': 'facepalm' if i % 2 else 'hands-up', 'extra': ['bang']}
+        for pat, ex in MOOD:
+            if re.search(pat, b.get('dir', '')):
+                o = {**o, **ex}; break
+        segs.append((t1, 'host', o))
+    return segs
+
 pid = sys.argv[1]
 tl = json.load(open(f'src/episodes/{pid}.timeline.json'))
+if pid not in SEGS:
+    ep = json.load(open(f'episodes/{pid.split("-")[0]}/{pid.split("-")[1]}.json'))
+    for b, e in zip(tl['beats'], ep['beats']):
+        b['v'] = e['v']; b['dir'] = e.get('dir', '')
+    SEGS[pid] = auto(tl)
 B = tl['beats']; dur = tl['duration'] + float(sys.argv[2] if len(sys.argv) > 2 else 0)
 segs, t0 = [], 0.0
 for until, mode, o in SEGS[pid]:
