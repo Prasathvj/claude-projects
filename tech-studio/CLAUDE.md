@@ -1,5 +1,9 @@
 # tech-studio: rules for this project
-Channel: Stick Dude (tech explainers). Owner is an IT professional. Language: English. Review before upload. Free tools only.
+IMPORTANT (owner, 2026-11-21): this is a NEW channel, separate from Stick Dude. Never use Stick Dude branding, name or characters here.
+Channel motto: explain tech, daily tech news and trending topics. Channel name: TBD (ask the owner).
+Look (approved 2026-11-21): HyperFrames (tech-studio/hf/), warm near-black #0C0704, orange grid + glows, brown cards #291811 / edge #3E2217, accent #F87736, step tracker, grey→white captions with an orange word box (see hf/ep01-test and tools/hf_ep01_test.py).
+Voice: Gemini TTS voice "Orus" (sample 04). Host character: hoodie tech guy (owner choosing between Pixel Dev / Hoodie Dev / Hood-Up Dev).
+Channel: (tech explainers). Owner is an IT professional. Language: English. Review before upload. Free tools only.
 Engine: Remotion (React + TypeScript). Render: `npx remotion render src/index.ts <Comp> out/<name>.mp4 --browser-executable=/opt/pw-browsers/chromium --concurrency=2`.
 Look (new, not copied from any reel): deep navy #0B1226, electric cyan #2EE6FF, hot accent #FF4D6D, off-white #F4F7FF. Big geometric sans, numbers as heroes.
 Format: tease Short (25-40 s) with a curiosity gap that points to the long video; plus stand-alone Shorts. Cuts every ~1 s, spring overshoot, counters, rips/whip zooms, punch zooms, UI mockups, SFX on every beat.
