@@ -6,15 +6,15 @@ body{margin:0;background:#0C0704;overflow:hidden}
 .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(248,119,54,.10) 3px,transparent 3px),linear-gradient(90deg,rgba(248,119,54,.10) 3px,transparent 3px)}
 .glow{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(248,119,54,.30),rgba(248,119,54,.08) 40%,transparent 66%)}
 .plus{position:absolute;color:#F87736;font:500 70px T;opacity:.8}
-.name{font:900 150px 'SD Display';color:#F6EEE8;letter-spacing:-3px;line-height:.95}
-.name em{font:600 italic 120px S;color:#F87736;letter-spacing:0}
-.tag{font:600 46px T;color:#E9D7CB;margin-top:22px}
+.name{font:900 112px 'SD Display';white-space:nowrap;color:#F6EEE8;letter-spacing:-3px;line-height:.95}
+.name em{font:600 italic 94px S;color:#F87736;letter-spacing:0}
+.tag{font:600 42px T;color:#E9D7CB;margin-top:22px}
 .pill{display:inline-flex;align-items:center;gap:14px;margin-top:26px;height:76px;padding:0 34px;border-radius:38px;border:3px solid #F87736;background:#1A0F0A;font:600 34px T;color:#F6EEE8}
 .pill i{width:16px;height:16px;border-radius:8px;background:#F87736;box-shadow:0 0 16px #F87736}
 </style><script src="/host/host.js"></script></head><body><div id="root"></div>
 <script>
 const MAX={skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'};
-const q=new URLSearchParams(location.search), mode=q.get('m'), NAME=q.get('n')||'Decoded|with Max';
+const q=new URLSearchParams(location.search), mode=q.get('m'), NAME=q.get('n')||'TechDecoded|with Max';
 const [n1,n2]=NAME.split('|');
 const head=(o,vb,w,h)=>HOST.render({char:MAX,...o,w,h}).replace('viewBox="0 0 400 520"',`viewBox="${vb}"`);
 const r=document.getElementById('root');
@@ -33,10 +33,10 @@ if(mode==='avatar'){ // 800x800 profile picture (shown as a circle)
  <div class="glow" style="left:300px;top:200px;width:1300px;height:1300px"></div><div class="glow" style="left:1500px;top:-300px;width:1200px;height:1200px"></div>
  <div class="plus" style="left:420px;top:380px">+</div><div class="plus" style="left:2120px;top:960px">+</div><div class="plus" style="left:1960px;top:420px;font-size:46px;opacity:.5">+</div>
  <div style="position:absolute;left:560px;top:478px;-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 100%)">${head({brows:'up',eyes:'open',mouth:'A',arms:'point',look:[1,0]},'60 50 380 470',380,470)}</div>
- <div style="position:absolute;left:980px;top:540px;width:1100px">
+ <div style="position:absolute;left:960px;top:560px;width:1090px">
   <div class="name">${n1}${n2?` <em>${n2}</em>`:''}</div>
-  <div class="tag">Tech, explained. AI & tech news in plain English.</div>
-  <div class="pill"><i></i>New Shorts daily · Deep dives weekly</div>
+  <div class="tag">AI &amp; technology, explained.</div>
+  <div class="pill"><i></i>Daily news · In-depth explainers</div>
  </div>`;
 }
 </script></body></html>
