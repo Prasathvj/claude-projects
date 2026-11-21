@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-composition-variables='[{"id":"color-ground","type":"color","label":"Background","default":"#0C0704"},{"id":"color-accent","type":"color","label":"Accent","default":"#F87736"}]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      html, body { margin:0; width:1080px; height:1920px; overflow:hidden; background:#0C0704; }
+      #root { position:relative; width:100%; height:100%; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15.4" data-width="1080" data-height="1920" data-fps="30">
+      <div id="s1" data-composition-id="s1" data-composition-src="compositions/s1.html" data-start="0.0" data-duration="5.1" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s2" data-composition-id="s2" data-composition-src="compositions/s2.html" data-start="5.1" data-duration="1.45" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s3" data-composition-id="s3" data-composition-src="compositions/s3.html" data-start="6.55" data-duration="2.6" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s4" data-composition-id="s4" data-composition-src="compositions/s4.html" data-start="9.15" data-duration="3.5" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="s5" data-composition-id="s5" data-composition-src="compositions/s5.html" data-start="12.65" data-duration="2.75" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="bg" data-composition-id="bg" data-composition-src="compositions/bg.html" data-start="0" data-duration="15.4" data-track-index="0" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="tracker" data-composition-id="tracker" data-composition-src="compositions/tracker.html" data-start="5.1" data-duration="10.3" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:3"></div>
+      <div id="mascot" data-composition-id="mascot" data-composition-src="compositions/mascot.html" data-start="0" data-duration="15.4" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:4"></div>
+      <div id="caps" data-composition-id="caps" data-composition-src="compositions/caps.html" data-start="0" data-duration="15.4" data-track-index="4" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:5"></div>
+      <audio id="vo" class="clip" src="assets/vo.wav" data-start="0" data-duration="15.4" data-track-index="5" data-volume="1"></audio>
+      <audio id="sfx0" class="clip" src="assets/sfx/whoosh.wav" data-start="0.12" data-duration="0.45" data-track-index="6" data-volume="0.6"></audio>
+      <audio id="sfx1" class="clip" src="assets/sfx/click.wav" data-start="2.686" data-duration="0.05" data-track-index="6" data-volume="0.9"></audio>
+      <audio id="sfx2" class="clip" src="assets/sfx/impact.wav" data-start="3.956" data-duration="0.9" data-track-index="7" data-volume="0.7"></audio>
+      <audio id="sfx3" class="clip" src="assets/sfx/glitch.wav" data-start="4.006" data-duration="0.42" data-track-index="6" data-volume="0.5"></audio>
+      <audio id="sfx4" class="clip" src="assets/sfx/tick.wav" data-start="5.1" data-duration="0.05" data-track-index="8" data-volume="0.7"></audio>
+      <audio id="sfx5" class="clip" src="assets/sfx/pop.wav" data-start="5.162" data-duration="0.14" data-track-index="9" data-volume="0.6"></audio>
+      <audio id="sfx6" class="clip" src="assets/sfx/pop.wav" data-start="5.682" data-duration="0.14" data-track-index="6" data-volume="0.6"></audio>
+      <audio id="sfx7" class="clip" src="assets/sfx/impact.wav" data-start="6.022" data-duration="0.9" data-track-index="7" data-volume="0.8"></audio>
+      <audio id="sfx8" class="clip" src="assets/sfx/tick.wav" data-start="6.55" data-duration="0.05" data-track-index="8" data-volume="0.7"></audio>
+      <audio id="sfx9" class="clip" src="assets/sfx/whoosh.wav" data-start="6.55" data-duration="0.45" data-track-index="9" data-volume="0.6"></audio>
+      <audio id="sfx10" class="clip" src="assets/sfx/type.wav" data-start="8.051" data-duration="0.9" data-track-index="6" data-volume="0.5"></audio>
+      <audio id="sfx11" class="clip" src="assets/sfx/notify.wav" data-start="8.651" data-duration="0.7" data-track-index="7" data-volume="0.6"></audio>
+      <audio id="sfx12" class="clip" src="assets/sfx/tick.wav" data-start="9.15" data-duration="0.05" data-track-index="8" data-volume="0.7"></audio>
+      <audio id="sfx13" class="clip" src="assets/sfx/whoosh.wav" data-start="9.15" data-duration="0.45" data-track-index="9" data-volume="0.6"></audio>
+      <audio id="sfx14" class="clip" src="assets/sfx/scan.wav" data-start="9.5" data-duration="0.6" data-track-index="6" data-volume="0.5"></audio>
+      <audio id="sfx15" class="clip" src="assets/sfx/glitch.wav" data-start="11.965" data-duration="0.42" data-track-index="6" data-volume="0.6"></audio>
+      <audio id="sfx16" class="clip" src="assets/sfx/tick.wav" data-start="12.65" data-duration="0.05" data-track-index="7" data-volume="0.7"></audio>
+      <audio id="sfx17" class="clip" src="assets/sfx/whoosh.wav" data-start="12.65" data-duration="0.45" data-track-index="8" data-volume="0.6"></audio>
+      <audio id="sfx18" class="clip" src="assets/sfx/error.wav" data-start="13.0" data-duration="0.55" data-track-index="9" data-volume="0.5"></audio>
+      <audio id="sfx19" class="clip" src="assets/sfx/impact.wav" data-start="13.702" data-duration="0.9" data-track-index="6" data-volume="0.9"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

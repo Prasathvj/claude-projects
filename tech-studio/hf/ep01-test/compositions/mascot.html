@@ -1,0 +1,51 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --ground:#0C0704; --card:#291811; --card2:#1E110B; --edge:#3E2217; --inner:#0E0806;
+        --accent:#F87736; --accent-soft:#E98F5E; --dim:#9E745A; --ink:#F6EEE8; --mute:#5C4337; }
+
+.stage3d { position:absolute; left:0; right:0; perspective:1700px; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid var(--edge);
+  background:linear-gradient(180deg,#2C1A13 0%,#1F120C 100%);
+  box-shadow:0 40px 90px rgba(0,0,0,.65), inset 0 2px 0 rgba(255,190,150,.06); padding:30px; }
+.hd { display:flex; align-items:center; gap:24px; margin-bottom:24px; }
+.tile { width:96px; height:96px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 28px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 46px 'SD Display'; color:var(--ink); letter-spacing:-.5px; margin-top:2px; white-space:nowrap; }
+.pill { margin-left:auto; height:72px; padding:0 26px; border-radius:36px; background:#0B0603; display:flex; align-items:center; gap:12px;
+  font:700 36px 'SD Display'; color:var(--ink); flex:none; }
+.inner { background:var(--inner); border-radius:28px; padding:28px 32px; position:relative; overflow:hidden; }
+.foot { margin-top:22px; height:70px; border-radius:35px; border:2px solid var(--edge); background:#1A0F0A; display:inline-flex; align-items:center; gap:14px; padding:0 26px 0 12px;
+  font:500 28px 'SD Text'; color:var(--dim); }
+.foot b { color:var(--ink); font-weight:600; }
+.dot { width:48px; height:48px; border-radius:24px; background:#5A2C1C; display:flex; align-items:center; justify-content:center; color:var(--accent); font:700 26px 'SD Display'; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent);
+  box-shadow:0 0 40px rgba(248,119,54,.6), inset 0 0 30px rgba(248,119,54,.4); opacity:0; }
+
+#root { position:absolute; inset:0; overflow:hidden; }
+
+.m { position:absolute; left:882px; top:422px; width:88px; height:132px; }
+.m i { position:absolute; width:11px; height:11px; background:#F87736; }
+.m i.e { background:#1A0A04; }
+
+  </style>
+  <div id="root" data-composition-id="mascot" data-width="1080" data-height="1920">
+    <div class="m" id="ms-m"><i class="b" style="left:22px; top:0px;"></i><i class="b" style="left:33px; top:0px;"></i><i class="b" style="left:44px; top:0px;"></i><i class="b" style="left:55px; top:0px;"></i><i class="b" style="left:11px; top:11px;"></i><i class="b" style="left:22px; top:11px;"></i><i class="b" style="left:33px; top:11px;"></i><i class="b" style="left:44px; top:11px;"></i><i class="b" style="left:55px; top:11px;"></i><i class="b" style="left:66px; top:11px;"></i><i class="b" style="left:11px; top:22px;"></i><i class="e" style="left:22px; top:22px;"></i><i class="b" style="left:33px; top:22px;"></i><i class="b" style="left:44px; top:22px;"></i><i class="e" style="left:55px; top:22px;"></i><i class="b" style="left:66px; top:22px;"></i><i class="b" style="left:11px; top:33px;"></i><i class="b" style="left:22px; top:33px;"></i><i class="b" style="left:33px; top:33px;"></i><i class="b" style="left:44px; top:33px;"></i><i class="b" style="left:55px; top:33px;"></i><i class="b" style="left:66px; top:33px;"></i><i class="b" style="left:22px; top:44px;"></i><i class="b" style="left:33px; top:44px;"></i><i class="b" style="left:44px; top:44px;"></i><i class="b" style="left:55px; top:44px;"></i><i class="b" style="left:33px; top:55px;"></i><i class="b" style="left:44px; top:55px;"></i><i class="b" style="left:11px; top:66px;"></i><i class="b" style="left:22px; top:66px;"></i><i class="b" style="left:33px; top:66px;"></i><i class="b" style="left:44px; top:66px;"></i><i class="b" style="left:55px; top:66px;"></i><i class="b" style="left:66px; top:66px;"></i><i class="b" style="left:0px; top:77px;"></i><i class="b" style="left:33px; top:77px;"></i><i class="b" style="left:44px; top:77px;"></i><i class="b" style="left:77px; top:77px;"></i><i class="b" style="left:33px; top:88px;"></i><i class="b" style="left:44px; top:88px;"></i><i class="b" style="left:22px; top:99px;"></i><i class="b" style="left:55px; top:99px;"></i><i class="b" style="left:11px; top:110px;"></i><i class="b" style="left:66px; top:110px;"></i><i class="b" style="left:0px; top:121px;"></i><i class="b" style="left:77px; top:121px;"></i></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.to("#ms-m i.e", { background:"#F87736", duration:.01 }, 2.0); tl.to("#ms-m i.e", { background:"#1A0A04", duration:.01 }, 2.12);
+    tl.to("#ms-m i.e", { background:"#F87736", duration:.01 }, 6.2); tl.to("#ms-m i.e", { background:"#1A0A04", duration:.01 }, 6.32);
+    tl.to("#ms-m i.e", { background:"#F87736", duration:.01 }, 10.4); tl.to("#ms-m i.e", { background:"#1A0A04", duration:.01 }, 10.52);
+    tl.fromTo("#ms-m", { y:0 }, { y:-26, duration:.12, yoyo:true, repeat:3, ease:"power2.out", immediateRender:false }, 13.752);
+    tl.fromTo("#ms-m", { y:0 }, { y:-14, duration:.1, yoyo:true, repeat:1, ease:"power2.out" }, 3.956);
+    window.__timelines["mascot"] = tl;
+  </script>
+</template>

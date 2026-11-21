@@ -1,0 +1,65 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --ground:#0C0704; --card:#291811; --card2:#1E110B; --edge:#3E2217; --inner:#0E0806;
+        --accent:#F87736; --accent-soft:#E98F5E; --dim:#9E745A; --ink:#F6EEE8; --mute:#5C4337; }
+
+.stage3d { position:absolute; left:0; right:0; perspective:1700px; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid var(--edge);
+  background:linear-gradient(180deg,#2C1A13 0%,#1F120C 100%);
+  box-shadow:0 40px 90px rgba(0,0,0,.65), inset 0 2px 0 rgba(255,190,150,.06); padding:30px; }
+.hd { display:flex; align-items:center; gap:24px; margin-bottom:24px; }
+.tile { width:96px; height:96px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 28px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 46px 'SD Display'; color:var(--ink); letter-spacing:-.5px; margin-top:2px; white-space:nowrap; }
+.pill { margin-left:auto; height:72px; padding:0 26px; border-radius:36px; background:#0B0603; display:flex; align-items:center; gap:12px;
+  font:700 36px 'SD Display'; color:var(--ink); flex:none; }
+.inner { background:var(--inner); border-radius:28px; padding:28px 32px; position:relative; overflow:hidden; }
+.foot { margin-top:22px; height:70px; border-radius:35px; border:2px solid var(--edge); background:#1A0F0A; display:inline-flex; align-items:center; gap:14px; padding:0 26px 0 12px;
+  font:500 28px 'SD Text'; color:var(--dim); }
+.foot b { color:var(--ink); font-weight:600; }
+.dot { width:48px; height:48px; border-radius:24px; background:#5A2C1C; display:flex; align-items:center; justify-content:center; color:var(--accent); font:700 26px 'SD Display'; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent);
+  box-shadow:0 0 40px rgba(248,119,54,.6), inset 0 0 30px rgba(248,119,54,.4); opacity:0; }
+
+#root { position:absolute; inset:0; overflow:hidden; }
+
+.row { position:absolute; top:300px; left:0; right:0; display:flex; justify-content:center; gap:16px; }
+.st { height:78px; padding:0 30px 0 12px; border-radius:39px; border:2px solid #2E1B13; background:#140B07; display:flex; align-items:center; gap:14px;
+  font:600 32px 'SD Text'; color:#8C6B5A; }
+.num { width:52px; height:52px; border-radius:26px; background:#2A1912; color:#8C6B5A; display:flex; align-items:center; justify-content:center; font:700 28px 'SD Display'; }
+
+  </style>
+  <div id="root" data-composition-id="tracker" data-width="1080" data-height="1920">
+    <div class="row" id="tr-row"><div class="st" id="tr-p0"><span class="num" id="tr-n0">1</span>Hide</div><div class="st" id="tr-p1"><span class="num" id="tr-n1">2</span>Ask</div><div class="st" id="tr-p2"><span class="num" id="tr-n2">3</span>Read</div><div class="st" id="tr-p3"><span class="num" id="tr-n3">4</span>Obey</div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#tr-row", { opacity:0, y:-40, filter:"blur(10px)" }, { opacity:1, y:0, filter:"blur(0px)", duration:.3, ease:"expo.out" }, 0);
+    tl.to("#tr-p0", { borderColor:"#F87736", color:"#F6EEE8", boxShadow:"0 0 30px rgba(248,119,54,.45)", duration:.2 }, 0.0);
+    tl.to("#tr-n0", { background:"#F87736", color:"#1A0A04", duration:.2 }, 0.0);
+    tl.to("#tr-p0", { borderColor:"#2E1B13", color:"#8C6B5A", boxShadow:"0 0 0 rgba(0,0,0,0)", duration:.2 }, 1.45);
+    tl.to("#tr-n0", { background:"#3A2318", color:"#F87736", duration:.2 }, 1.45);
+    tl.set("#tr-n0", { textContent:"✓" }, 1.45);
+    tl.to("#tr-p1", { borderColor:"#F87736", color:"#F6EEE8", boxShadow:"0 0 30px rgba(248,119,54,.45)", duration:.2 }, 1.45);
+    tl.to("#tr-n1", { background:"#F87736", color:"#1A0A04", duration:.2 }, 1.45);
+    tl.to("#tr-p1", { borderColor:"#2E1B13", color:"#8C6B5A", boxShadow:"0 0 0 rgba(0,0,0,0)", duration:.2 }, 4.05);
+    tl.to("#tr-n1", { background:"#3A2318", color:"#F87736", duration:.2 }, 4.05);
+    tl.set("#tr-n1", { textContent:"✓" }, 4.05);
+    tl.to("#tr-p2", { borderColor:"#F87736", color:"#F6EEE8", boxShadow:"0 0 30px rgba(248,119,54,.45)", duration:.2 }, 4.05);
+    tl.to("#tr-n2", { background:"#F87736", color:"#1A0A04", duration:.2 }, 4.05);
+    tl.to("#tr-p2", { borderColor:"#2E1B13", color:"#8C6B5A", boxShadow:"0 0 0 rgba(0,0,0,0)", duration:.2 }, 7.55);
+    tl.to("#tr-n2", { background:"#3A2318", color:"#F87736", duration:.2 }, 7.55);
+    tl.set("#tr-n2", { textContent:"✓" }, 7.55);
+    tl.to("#tr-p3", { borderColor:"#F87736", color:"#F6EEE8", boxShadow:"0 0 30px rgba(248,119,54,.45)", duration:.2 }, 7.55);
+    tl.to("#tr-n3", { background:"#F87736", color:"#1A0A04", duration:.2 }, 7.55);
+    window.__timelines["tracker"] = tl;
+  </script>
+</template>
