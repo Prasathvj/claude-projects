@@ -183,9 +183,10 @@ const TPL: Record<string, Tpl> = {
   slam(b, x, c, lt) {
     const words = (b.v.text as string).split(' ');
     const fam = ARCH(112, 900);
-    const maxW = V ? 960 : 1600;
+    const maxW = V ? 820 : 1600;
     // lay out in rows of at most maxW
     let size = Math.min(V ? 170 : 210, fit(b.v.text, fam, maxW * (words.length > 2 ? 1.7 : 1), 230));
+    for (const w of words) size = Math.min(size, fit(w, fam, maxW, 230));
     const rows: string[][] = [[]];
     for (const w of words) { const r = rows[rows.length - 1]!; if (r.length && rowWidth([...r, w], size, fam) > maxW) rows.push([w]); else r.push(w); }
     const lh = size * 0.98, y0 = -((rows.length - 1) * lh) / 2 + size * 0.36;
@@ -230,7 +231,7 @@ const TPL: Record<string, Tpl> = {
     x.restore();
     const bar = k(lt, 0.2, 0.6);
     x.fillStyle = rgba('signal', 1); x.fillRect(-300 * bar, 10, 600 * bar, 6);
-    const ts = fit(title, ARCH(100, 900), V ? 940 : 1500, V ? 92 : 110);
+    const ts = fit(title, ARCH(100, 900), V ? 840 : 1500, V ? 92 : 110);
     x.globalAlpha = k(lt, 0.25, 0.5);
     text(x, title, 0, 40 + ts, ARCH(100, 900), ts, rgba('bone', 1), { align: 'center' });
     mono(x, `CHAPTER ${num}`, 0, 40 + ts + 54, 18, rgba('ash', 0.9), 'center');
@@ -773,7 +774,7 @@ const TPL: Record<string, Tpl> = {
     x.filter = 'none'; x.restore();
     const pp = Math.min(1.1, pop(lt, 0.1, 0.35));
     x.save(); x.translate(0, -60); x.scale(pp, pp); icon(x, 'lock', 0, 0, 200, rgba('signal', 1), 7); x.restore();
-    text(x, b.v.title, 0, S * 0.45, ARCH(125, 900), V ? 120 : 110, rgba('bone', k(lt, 0.2, 0.4)), { align: 'center' });
+    text(x, b.v.title, 0, S * 0.45, ARCH(125, 900), fit(b.v.title, ARCH(125, 900), V ? 820 : 1300, 110), rgba('bone', k(lt, 0.2, 0.4)), { align: 'center' });
     const a = k(lt, 0.45, 0.7);
     if (a > 0) {
       const tw = rowWidth([b.v.sub + '  →'], 46, ARCH(100, 800)) + 60;
@@ -784,7 +785,7 @@ const TPL: Record<string, Tpl> = {
 
   end(b, x, c, lt) {
     agent(x, c, lt, 0, V ? -220 : -150, V ? 340 : 300, { mood: 'calm', look: Math.sin(lt * 2), k: k(lt, 0, 0.5, ease.inOutCubic) });
-    const fs = fit(b.v.title, ARCH(112, 900), V ? 960 : 1500, V ? 110 : 110);
+    const fs = fit(b.v.title, ARCH(112, 900), V ? 840 : 1500, V ? 110 : 110);
     text(x, b.v.title, 0, V ? 60 : 110, ARCH(112, 900), fs, rgba('bone', k(lt, 0.2, 0.4)), { align: 'center' });
     mono(x, (b.v.sub as string).toUpperCase(), 0, V ? 140 : 180, V ? 30 : 26, rgba('signal', k(lt, 0.35, 0.6)), 'center', 600);
   },
