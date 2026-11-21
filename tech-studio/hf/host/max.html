@@ -1,0 +1,18 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'SD Display';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:T;src:url('/ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+body{margin:0;width:1920px;height:900px;background:#0C0704;color:#F6EEE8;font-family:T;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(248,119,54,.09) 2px,transparent 2px),linear-gradient(90deg,rgba(248,119,54,.09) 2px,transparent 2px);background-size:96px 96px}
+h1{position:relative;text-align:center;font:900 54px 'SD Display';margin:24px 0 10px}h1 span{color:#F87736}
+.wrap{position:relative;display:flex;gap:14px;justify-content:center}
+.c{background:linear-gradient(180deg,#2C1A13,#1F120C);border:2px solid #3E2217;border-radius:26px;width:300px;height:700px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:18px}
+.c b{font:900 30px 'SD Display'}
+</style><script src="/host/host.js"></script></head><body><div class="grid"></div>
+<h1>Max, <span>fitted</span></h1><div class="wrap" id="w"></div>
+<script>
+const MAX={skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'};
+const P=[['Neutral',{}],['Explaining',{brows:'up',mouth:'A',arms:'point',look:[1,0]}],['Happy',{brows:'up',eyes:'happy',mouth:'smile',tilt:-4}],
+ ['Shocked',{brows:'high',eyes:'wide',mouth:'shock',arms:'hands-up',extra:['bang']}],['Thinking',{brows:'skeptic',mouth:'flat',arms:'chin',look:[1,-1],extra:['question']}],['Shrug',{brows:'up',mouth:'smirk',arms:'shrug',tilt:-6}]];
+const w=document.getElementById('w');
+for(const [n,o] of P){const d=document.createElement('div');d.className='c';d.innerHTML=HOST.render({char:MAX,...o,w:290,h:377})+`<b>${n}</b>`;w.appendChild(d);}
+</script></body></html>

@@ -88,24 +88,24 @@
   // ---- arms (from shoulders at (120,330) and (280,330)); pose names
   function arm(pts, hand) {
     const d = 'M' + pts.map((p) => p.join(' ')).join(' L');
-    return `<path d="${d}" stroke="${C.hood}" stroke-width="34" fill="none" stroke-linecap="round" stroke-linejoin="round"/>` +
-      `<path d="${d}" stroke="${C.hoodS}" stroke-width="34" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".25" transform="translate(0 4)"/>` + hand;
+    return `<path d="${d}" stroke="${C.hood}" stroke-width="27" fill="none" stroke-linecap="round" stroke-linejoin="round"/>` +
+      `<path d="${d}" stroke="${C.hoodS}" stroke-width="27" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".25" transform="translate(0 4)"/>` + hand;
   }
   const fist = (x, y, r = 17) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${C.skin}"/>`;
   const pointHand = (x, y, dir) => `<circle cx="${x}" cy="${y}" r="16" fill="${C.skin}"/><rect x="${dir > 0 ? x + 6 : x - 34}" y="${y - 6}" width="28" height="11" rx="5.5" fill="${C.skin}"/>`;
   const thumb = (x, y) => `<rect x="${x - 15}" y="${y - 12}" width="30" height="26" rx="10" fill="${C.skin}"/><rect x="${x - 6}" y="${y - 36}" width="12" height="28" rx="6" fill="${C.skin}"/>`;
   const palm = (x, y) => `<ellipse cx="${x}" cy="${y}" rx="17" ry="20" fill="${C.skin}"/><rect x="${x - 4}" y="${y - 36}" width="8" height="22" rx="4" fill="${C.skin}"/><rect x="${x - 15}" y="${y - 32}" width="8" height="20" rx="4" fill="${C.skin}"/><rect x="${x + 7}" y="${y - 32}" width="8" height="20" rx="4" fill="${C.skin}"/>`;
   function arms(pose) {
-    const L = [120, 330], R = [280, 330];
+    const L = [130, 350], R = [270, 350];
     switch (pose) {
-      case 'point': return arm([L, [96, 410], [118, 470]], fist(118, 476)) + arm([R, [352, 300], [400, 262]], pointHand(404, 258, 1));
+      case 'point': return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [352, 300], [400, 262]], pointHand(404, 258, 1));
       case 'shrug': return arm([L, [74, 380], [54, 316]], palm(54, 304)) + arm([R, [326, 380], [346, 316]], palm(346, 304));
-      case 'chin': return arm([L, [96, 410], [118, 470]], fist(118, 476)) + arm([R, [300, 420], [236, 300]], fist(232, 270, 19));
-      case 'facepalm': return arm([L, [96, 410], [118, 470]], fist(118, 476)) + arm([R, [300, 410], [222, 230]], palm(218, 176));
-      case 'thumbs': return arm([L, [96, 410], [118, 470]], fist(118, 476)) + arm([R, [332, 400], [356, 330]], thumb(356, 330));
+      case 'chin': return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [300, 420], [236, 300]], fist(232, 270, 19));
+      case 'facepalm': return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [300, 410], [222, 230]], palm(218, 176));
+      case 'thumbs': return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [332, 400], [356, 330]], thumb(356, 330));
       case 'hands-up': return arm([L, [60, 300], [56, 220]], palm(56, 206)) + arm([R, [340, 300], [344, 220]], palm(344, 206));
       case 'phone': return arm([L, [110, 420], [170, 400]], '') + arm([R, [290, 420], [230, 400]], '') + `<rect x="160" y="352" width="80" height="60" rx="10" fill="${C.phone}" stroke="${C.accent}" stroke-width="4"/><circle cx="170" cy="400" r="16" fill="${C.skin}"/><circle cx="230" cy="400" r="16" fill="${C.skin}"/>`;
-      default: return arm([L, [96, 410], [118, 470]], fist(118, 476)) + arm([R, [304, 410], [282, 470]], fist(282, 476));
+      default: return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [284, 428], [274, 494]], fist(274, 498, 15));
     }
   }
 
@@ -151,11 +151,11 @@
         ${extras(o.extra ?? [])}
       </g>`;
     const body = `
-      ${!hoodUp ? `<path d="M110 360 C100 300 150 290 200 300 C250 290 300 300 290 360 Z" fill="${C.hoodS}"/>` : ''}
-      <path d="M70 520 C70 380 120 330 200 330 C280 330 330 380 330 520 Z" fill="${C.hood}"/>
-      <path d="M150 336 C160 360 240 360 250 336" fill="${C.hoodS}"/>
-      <path d="M182 350 L176 420 M218 350 L224 420" stroke="${L.strings}" stroke-width="6" stroke-linecap="round"/>
-      <rect x="140" y="440" width="120" height="44" rx="14" fill="${C.hoodS}"/>
+      ${!hoodUp ? `<path d="M128 356 C118 306 162 292 200 300 C238 292 282 306 272 356 Z" fill="${C.hoodS}"/>` : ''}
+      <path d="M110 520 L114 398 C118 348 154 322 200 322 C246 322 282 348 286 398 L290 520 Z" fill="${C.hood}"/><path d="M200 330 L200 520" stroke="${C.hoodS}" stroke-width="3" opacity=".35"/>
+      <path d="M160 326 C168 348 232 348 240 326" fill="${C.hoodS}"/>
+      <path d="M184 342 L180 412 M216 342 L220 412" stroke="${L.strings}" stroke-width="6" stroke-linecap="round"/>
+      <rect x="152" y="440" width="96" height="40" rx="12" fill="${C.hoodS}"/>
       ${L.phones === 'neck' ? PHONES.neck(L) : ''}`;
     return `<svg viewBox="0 0 400 520" width="${o.w ?? 400}" height="${o.h ?? 520}" style="overflow:visible">${body}${head}${arms(o.arms ?? 'down')}</svg>`;
   }

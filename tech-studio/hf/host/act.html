@@ -31,7 +31,7 @@ function frame(i){
  const bl=[1.2,4.6,8.3].some(b=>t>=b&&t<b+0.1)?0.9:0;
  o.blink=bl; o.tilt=(o.tilt||0)+Math.sin(t*2.1)*1.5+e*2.5;
  const k=Math.max(0,1-(t-s[0])/0.12); // pop on expression change
- document.getElementById('h').innerHTML=HOST.render({...o,w:600,h:780});
+ document.getElementById('h').innerHTML=HOST.render({char:{skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'},...o,w:600,h:780});
  document.getElementById('h').style.transform=`translateY(${-e*6}px) scale(${1+0.04*k})`;
  document.getElementById('lab').textContent=s[2];
  document.getElementById('cap').textContent=s[3];
