@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'SD Display';src:url('../ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:T;src:url('../ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+body{margin:0;width:1920px;height:1340px;background:#0C0704;color:#F6EEE8;font-family:T;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(248,119,54,.09) 2px,transparent 2px),linear-gradient(90deg,rgba(248,119,54,.09) 2px,transparent 2px);background-size:96px 96px}
+h1{position:relative;text-align:center;font:900 56px 'SD Display';margin:26px 0 10px}h1 span{color:#F87736}
+.wrap{position:relative;display:grid;grid-template-columns:repeat(6,300px);gap:16px;justify-content:center}
+.c{background:linear-gradient(180deg,#2C1A13,#1F120C);border:2px solid #3E2217;border-radius:26px;height:430px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:14px}
+.c b{font:900 30px 'SD Display'}.c i{font:600 20px T;color:#9E745A;font-style:normal}
+.vis{position:relative;display:flex;justify-content:center;gap:14px;margin-top:18px}
+.v{background:#160C08;border:2px solid #3E2217;border-radius:18px;width:150px;height:120px;overflow:hidden;display:flex;flex-direction:column;align-items:center}
+.v div{height:84px;overflow:hidden}.v span{font:900 22px 'SD Display';color:#F87736}
+</style><script src="host.js"></script></head><body><div class="grid"></div>
+<h1>Host rig: <span>12 expressions + lip-sync mouths</span></h1>
+<div class="wrap" id="w"></div>
+<div class="vis" id="v"></div>
+<script>
+const E=[
+ ['Explaining','talking, pointing',{brows:'up',mouth:'A',arms:'point',look:[1,0]}],
+ ['Happy','good news',{brows:'up',eyes:'happy',mouth:'smile',tilt:-4}],
+ ['Laughing','that was funny',{brows:'high',eyes:'happy',mouth:'grin',extra:['blush'],tilt:6}],
+ ['Shocked','breaking news',{brows:'high',eyes:'wide',mouth:'shock',arms:'hands-up',extra:['bang']}],
+ ['Worried','security risk',{brows:'worried',eyes:'worried',mouth:'wavy',extra:['sweat'],look:[-1,0]}],
+ ['Thinking','hmm, but why?',{brows:'skeptic',eyes:'open',mouth:'flat',arms:'chin',look:[1,-1],extra:['question']}],
+ ['Suspicious','wait a second…',{brows:'skeptic',eyes:'squint',mouth:'smirk',look:[-1,0],tilt:-5}],
+ ['Angry','they did WHAT?',{brows:'angry',eyes:'angry',mouth:'frown',extra:['anger']}],
+ ['Facepalm','classic mistake',{brows:'worried',eyes:'closed',mouth:'flat',arms:'facepalm',tilt:8}],
+ ['Shrug','nobody knows',{brows:'up',eyes:'open',mouth:'smirk',arms:'shrug',tilt:-6}],
+ ['Thumbs up','do this',{brows:'up',eyes:'happy',mouth:'smile',arms:'thumbs',extra:['spark']}],
+ ['Reading news','on the phone',{brows:'focused',eyes:'open',mouth:'rest',arms:'phone',look:[0,1],extra:['glow']}],
+];
+const w=document.getElementById('w');
+for(const [n,s,o] of E){const d=document.createElement('div');d.className='c';d.innerHTML=HOST.render({...o,w:250,h:325})+`<b>${n}</b><i>${s}</i>`;w.appendChild(d);}
+const v=document.getElementById('v');
+for(const m of ['rest','M','A','E','O','F']){const d=document.createElement('div');d.className='v';d.innerHTML=`<div>${HOST.render({mouth:m,w:300,h:390}).replace('viewBox="0 0 400 520"','viewBox="110 150 180 110"').replace('width="300" height="390"','width="150" height="92"')}</div><span>${m==='rest'?'rest':m}</span>`;v.appendChild(d);}
+</script></body></html>
