@@ -125,7 +125,7 @@ export const Captions: React.FC<{words: Word[]; t: number; big?: boolean; hot?: 
   const g = groups[gi];
   const since = Math.max(0, t - g[0].s) * fps;
   const pop = 1 + 0.25 * Math.exp(-since / 2.5) * Math.cos(since / 1.6);
-  const size = big ? 92 : 44;
+  const size = big ? 92 : 50;
   return (
     <div style={{position: 'absolute', left: 0, right: 0, top: isV ? 1300 * u : undefined, bottom: isV ? undefined : 60 * u,
       display: 'flex', justifyContent: 'center', padding: `0 ${60 * u}px`}}>

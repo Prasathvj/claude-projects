@@ -6,12 +6,13 @@ import {Agent, Icon} from './icons';
 import {BrowserCard, ChatCard, CodeWindow, Counter, EmailCard, Receipt, Stack} from './widgets';
 
 /** Where scene content lives: above the captions on vertical, above the caption strip on horizontal. */
-export const Stage: React.FC<{children: React.ReactNode}> = ({children}) => {
+export const Stage: React.FC<{children: React.ReactNode; zoom?: number}> = ({children, zoom}) => {
   const {u, isV, h} = useLayout();
+  const z = zoom ?? (isV ? 1 : 1.3);
   return (
     <AbsoluteFill style={{top: isV ? 210 * u : 0, height: isV ? 1060 * u : h - 130 * u, display: 'flex', alignItems: 'center',
       justifyContent: 'center', flexDirection: 'column'}}>
-      {children}
+      <div style={{transform: `scale(${z})`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>{children}</div>
     </AbsoluteFill>
   );
 };
@@ -37,7 +38,7 @@ export const Slam: React.FC<{text: string; sub?: string; accent?: string}> = ({t
   return (
     <AbsoluteFill style={{transform: `translate(${shake}px, ${-shake * 0.6}px)`}}>
       <AbsoluteFill style={{background: col, opacity: interpolate(frame, [0, 4], [0.25, 0], clamp)}} />
-      <Stage>
+      <Stage zoom={1}>
         <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: `${10 * u}px ${34 * u}px`, padding: `0 ${70 * u}px`,
           maxWidth: (isV ? 1000 : 1700) * u}}>
           {words.map((w, i) => {
@@ -66,7 +67,7 @@ export const Chapter: React.FC<{n: string; title: string}> = ({n, title}) => {
   const {u} = useLayout();
   const bar = interpolate(frame, [4, 16], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
   return (
-    <Stage>
+    <Stage zoom={1.15}>
       <PopIn>
         <div style={{fontFamily: F.display, fontWeight: 900, fontSize: 300 * u, lineHeight: 0.9, color: 'transparent',
           WebkitTextStroke: `${5 * u}px ${C.cyan}`, textShadow: `0 0 ${60 * u}px ${C.cyan}44`}}>{n}</div>
@@ -87,7 +88,7 @@ export const Quote: React.FC<{text: string; who: string; when?: string}> = ({tex
   const mark = interpolate(frame, [6 + text.length * 0.9, 14 + text.length * 0.9], [0, 1], clamp);
   return (
     <Stage>
-      <div style={{maxWidth: (isV ? 940 : 1500) * u, padding: `0 ${40 * u}px`, position: 'relative'}}>
+      <div style={{maxWidth: (isV ? 940 : 1250) * u, padding: `0 ${40 * u}px`, position: 'relative'}}>
         <PopIn>
           <div style={{fontFamily: F.display, fontWeight: 900, fontSize: 260 * u, color: C.hot, lineHeight: 0.6, height: 120 * u}}>“</div>
         </PopIn>
@@ -112,7 +113,7 @@ export const Browser: React.FC<any> = (p) => {
   return (
     <Stage>
       <PopIn from={0.5}>
-        <Tilt><BrowserCard {...p} width={isV ? 900 : 1000} /></Tilt>
+        <Tilt><BrowserCard {...p} width={isV ? 900 : 900} /></Tilt>
       </PopIn>
     </Stage>
   );
@@ -143,7 +144,7 @@ export const Code: React.FC<any> = (p) => {
   return (
     <Stage>
       <Rise dist={120}>
-        <Tilt rx={5} ry={-6}><CodeWindow file={p.file} lines={p.lines} width={isV ? 1000 : 1500} /></Tilt>
+        <Tilt rx={5} ry={-6}><CodeWindow file={p.file} lines={p.lines} width={isV ? 1000 : 1250} /></Tilt>
       </Rise>
     </Stage>
   );
@@ -238,7 +239,7 @@ export const Rank: React.FC<{title: string; items: string[]; source?: string}> =
   const {u, isV} = useLayout();
   const hit = useSpring(4 + items.length * STAGGER, {damping: 8, stiffness: 240});
   return (
-    <Stage>
+    <Stage zoom={isV ? 1 : 1.12}>
       <Title size={isV ? 46 : 50}>{title}</Title>
       <div style={{width: (isV ? 900 : 1100) * u, display: 'flex', flexDirection: 'column', gap: 16 * u}}>
         {items.map((it, i) => {
@@ -302,10 +303,10 @@ export const StackScene: React.FC<{title?: string; items: string[]}> = ({title, 
 export const Icons: React.FC<{items: {icon: string; label: string}[]}> = ({items}) => {
   const {u, isV} = useLayout();
   const n = items.length;
-  const size = isV ? (n > 3 ? 230 : 260) : n > 4 ? 230 : 270;
+  const size = isV ? (n > 3 ? 230 : 260) : n > 4 ? 180 : 250;
   return (
     <Stage>
-      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: `${50 * u}px ${60 * u}px`, maxWidth: (isV ? 900 : 1750) * u}}>
+      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: `${50 * u}px ${60 * u}px`, maxWidth: (isV ? 900 : 1450) * u}}>
         {items.map((it, i) => (
           <PopIn key={i} delay={i * STAGGER}>
             <Float phase={i} amp={6}>
@@ -351,13 +352,13 @@ export const Flow: React.FC<{nodes: {icon: string; label: string}[]; hi?: number
           <React.Fragment key={i}>
             <PopIn delay={i * STAGGER * 1.4}>
               <div style={{display: 'flex', flexDirection: vertical ? 'row' : 'column', alignItems: 'center', gap: 18 * u,
-                width: vertical ? 700 * u : 300 * u, justifyContent: vertical ? 'flex-start' : 'center',
+                width: vertical ? 700 * u : 260 * u, justifyContent: vertical ? 'flex-start' : 'center',
                 filter: hi === i ? `drop-shadow(0 0 ${30 * u}px ${C.hot})` : undefined}}>
                 <Icon name={nd.icon} size={size * u} />
                 <div style={{fontFamily: F.display, fontWeight: 900, fontSize: 42 * u, color: hi === i ? C.hot : C.white, textAlign: 'center'}}>{nd.label}</div>
               </div>
             </PopIn>
-            {i < n - 1 && <Arrow len={vertical ? 60 : 110} vertical={vertical} delay={i * STAGGER * 1.4 + 5} hot={hi !== undefined && i + 1 === hi} />}
+            {i < n - 1 && <Arrow len={vertical ? 60 : 80} vertical={vertical} delay={i * STAGGER * 1.4 + 5} hot={hi !== undefined && i + 1 === hi} />}
           </React.Fragment>
         ))}
       </div>
@@ -368,7 +369,7 @@ export const Flow: React.FC<{nodes: {icon: string; label: string}[]; hi?: number
 export const Loop: React.FC<{steps: string[]}> = ({steps}) => {
   const frame = useCurrentFrame();
   const {u, isV} = useLayout();
-  const R = (isV ? 330 : 330) * u;
+  const R = (isV ? 330 : 270) * u;
   const active = Math.floor(Math.max(0, frame - 6) / 10) % steps.length;
   const ang = interpolate(frame, [0, 400], [0, 360]);
   return (
@@ -412,7 +413,7 @@ export const Split: React.FC<{left: any; right: any; merge?: string; bad?: 'left
     const dir = side === 'left' ? 1 : -1;
     return (
       <PopIn delay={i * STAGGER}>
-        <div style={{...cardStyle(u), width: (isV ? 820 : 680) * u, padding: 40 * u, display: 'flex', flexDirection: 'column', alignItems: 'center',
+        <div style={{...cardStyle(u), width: (isV ? 820 : 590) * u, padding: 40 * u, display: 'flex', flexDirection: 'column', alignItems: 'center',
           gap: 20 * u, borderColor: isBad ? C.hot : C.line,
           transform: isV ? `translateY(${dir * pull * 120 * u}px)` : `translateX(${dir * pull * 160 * u}px)`}}>
           <Icon name={c.icon} size={160 * u} />
@@ -446,7 +447,7 @@ export const Split: React.FC<{left: any; right: any; merge?: string; bad?: 'left
 export const Timeline: React.FC<{events: [string, string][]; hi?: number}> = ({events, hi}) => {
   const frame = useCurrentFrame();
   const {u, isV} = useLayout();
-  const len = isV ? 900 : 1500;
+  const len = isV ? 900 : 1300;
   const p = interpolate(frame, [2, 20], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
   return (
     <Stage>
@@ -506,7 +507,7 @@ export const Paper: React.FC<{title: string; sub: string; point: string}> = ({ti
 export const Trifecta: React.FC<{legs: string[]; show: number; danger?: boolean; cut?: number}> = ({legs, show, danger, cut}) => {
   const frame = useCurrentFrame();
   const {u, isV} = useLayout();
-  const S = (isV ? 760 : 700) * u;
+  const S = (isV ? 760 : 600) * u;
   const pts = [[0.5, 0.08], [0.08, 0.86], [0.92, 0.86]].map(([x, y]) => [x * S, y * S]);
   const cutP = cut !== undefined ? interpolate(frame, [8, 16], [0, 1], {...clamp, easing: Easing.out(Easing.back(2))}) : 0;
   const pulse = danger ? 0.5 + 0.5 * Math.sin(frame / 3) : 0;
@@ -532,7 +533,7 @@ export const Trifecta: React.FC<{legs: string[]; show: number; danger?: boolean;
   };
   const icons = ['brain', 'globe', 'send'];
   return (
-    <Stage>
+    <Stage zoom={isV ? 1 : 1.08}>
       <Title size={isV ? 58 : 56} color={danger ? C.hot : C.white}>THE LETHAL TRIFECTA</Title>
       <div style={{position: 'relative', width: S, height: S}}>
         <svg width={S} height={S} style={{position: 'absolute', overflow: 'visible'}}>
@@ -671,7 +672,7 @@ export const End: React.FC<{title: string; sub: string}> = ({title, sub}) => {
   const frame = useCurrentFrame();
   const {u} = useLayout();
   return (
-    <Stage>
+    <Stage zoom={1}>
       <Float amp={12}><PopIn><Agent size={330 * u} look={Math.sin(frame / 10)} /></PopIn></Float>
       <PopIn delay={5}>
         <div style={{fontFamily: F.display, fontWeight: 900, fontSize: 110 * u, color: C.white, marginTop: 30 * u, textAlign: 'center', lineHeight: 1,

@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 comp = sys.argv[1]; frac = float(sys.argv[2]) if len(sys.argv) > 2 else 0.65
 tl = json.loads((ROOT / "src/episodes" / f"{comp}.timeline.json").read_text())
-out = ROOT / "out" / "stills" / comp; out.mkdir(parents=True, exist_ok=True)
+out = ROOT / "out" / "stills" / comp; out.mkdir(parents=True, exist_ok=True); (out / "sheet.png").unlink(missing_ok=True)
 frames = [int((b["start"] + b["dur"] * frac) * 30) for b in tl["beats"]]
 procs = []
 # one bundle, many stills: use remotion's --frame for each (bundling cached by remotion)
