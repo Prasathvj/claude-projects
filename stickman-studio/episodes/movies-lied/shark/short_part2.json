@@ -1,0 +1,236 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A confident, punchy male narrator of fast-paced viral explainer Shorts. Energetic and clear, about 160 words per minute, crisp enunciation, only a very short pause between sentences, a bright hook on the first line, never sleepy.\n",
+ "max_wpm": 215,
+ "gap": 0.15,
+ "format": "short",
+ "tts_batch": 4,
+ "title": "What to do instead of punching a shark (Part 2)",
+ "sets": {
+  "K3": {
+   "clip": "shots/K3.mp4",
+   "crop": 1.0,
+   "loop": "hold",
+   "delogo": [
+    850,
+    1680,
+    160,
+    230
+   ]
+  },
+  "SH7": {
+   "image": "shots/SH7.jpg",
+   "crop": 1.0
+  },
+  "SH8": {
+   "image": "shots/SH8.jpg",
+   "crop": 1.0
+  },
+  "SH9": {
+   "image": "shots/SH9.jpg",
+   "crop": 1.0
+  },
+  "SH10": {
+   "image": "shots/SH10.jpg",
+   "crop": 1.0
+  },
+  "K4": {
+   "clip": "shots/K4.mp4",
+   "crop": 1.0,
+   "loop": "hold",
+   "delogo": [
+    850,
+    1680,
+    160,
+    230
+   ]
+  }
+ },
+ "shots": [
+  {
+   "set": "K3",
+   "say": "Shark nearby? Stay calm, keep it in sight, and leave the water slowly.",
+   "direct": "calm, clear",
+   "camera": [
+    {
+     "z": 1.0,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.05,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "calm",
+     "fx": "verdict",
+     "kind": "check",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "calm",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "SH7",
+   "say": "Playing dead does not work.",
+   "direct": "flat, dry",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "dead",
+     "fx": "verdict",
+     "kind": "cross",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "dead",
+     "fx": "sfx",
+     "name": "thud"
+    }
+   ]
+  },
+  {
+   "set": "SH8",
+   "say": "Most sharks never bite people. Only about thirteen species are known to bite humans often.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "thirteen",
+     "fx": "sticker",
+     "text": "ONLY ~13 SPECIES"
+    }
+   ]
+  },
+  {
+   "set": "SH9",
+   "say": "Bites are rare: about sixty a year, worldwide.",
+   "direct": "calm, reassuring",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "sixty",
+     "fx": "sticker",
+     "text": "~60 A YEAR"
+    }
+   ]
+  },
+  {
+   "set": "SH10",
+   "say": "Swim in groups, near lifeguards, and skip dawn and dusk.",
+   "direct": "clear, friendly",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.15,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "groups",
+     "fx": "verdict",
+     "kind": "check",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "groups",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "K4",
+   "say": "Comment your answer. Follow for the next movie lie.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "z": 1.0,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.04,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "Follow",
+     "fx": "sticker",
+     "text": "FOLLOW"
+    },
+    {
+     "on": "Follow",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  }
+ ]
+}

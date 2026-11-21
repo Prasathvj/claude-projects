@@ -24,7 +24,7 @@ LAYOUT = {
 }
 EASES = {"smooth": smooth, "snap": snap, "linear": clamp}
 DOG_DOES = ("sit", "dig", "play")
-FX = ("hit", "impact", "sticker", "sparkle", "chunks", "smoke", "dark", "wind_lines", "sfx")
+FX = ("hit", "impact", "sticker", "sparkle", "chunks", "smoke", "dark", "wind_lines", "sfx", "shake", "dust", "diagram", "verdict")
 SFX = ("whoosh", "thud", "pop", "ding", "crunch", "rumble")
 SPEED = {"hero": 170, "dog": 230}
 
@@ -63,6 +63,7 @@ class Director:
         self.W, self.H = self.L["W"], self.L["H"]
         self.sets = self.ep["sets"]
         self.images = {}
+        self.vclips = {}
         self.snow = stage.Snow(self.W, self.H)
         self._time_shots(synth)
         self._resolve()
@@ -71,10 +72,29 @@ class Director:
     def _time_shots(self, synth):
         self.shots, self.clips, t = [], [], 0.3
         gap = self.ep.get("gap", 0.16)
+        takes = {}
+        lines = [(i, sp["say"], sp.get("direct", "")) for i, sp in enumerate(self.ep["shots"]) if sp.get("say")]
+        if synth and self.ep.get("tts_batch"):                 # several lines per request: one voice, few requests
+            size = int(self.ep["tts_batch"])
+            for k in range(0, len(lines), size):
+                block = lines[k:k + size]
+                try:
+                    got = gtts.say_batch([(t_, d_) for _, t_, d_ in block], self.ep.get("voice", "Fenrir"),
+                                         self.ep.get("tts_model", gtts.MODEL), self.ep.get("voice_profile") or gtts.CALM_PROFILE)
+                    for (idx, _, _), r in zip(block, got):
+                        takes[idx] = r
+                except ValueError as e:
+                    print("could not split a batch, reading those lines one at a time:", e)
         for i, spec in enumerate(self.ep["shots"]):
             text = spec.get("say", "")
             if text and synth:
-                wav, dur = gtts.say(text, spec.get("direct", ""), self.ep.get("voice", "Fenrir"))
+                wav, dur = takes[i] if i in takes else gtts.say(text, spec.get("direct", ""), self.ep.get("voice", "Fenrir"),
+                                                                 self.ep.get("tts_model", gtts.MODEL),
+                                                                 self.ep.get("voice_profile") or (gtts.CALM_PROFILE if self.ep.get("tts_batch") else None))
+                wav, dur = gtts.clean(wav)                      # remove the end-of-clip burst, add fades
+                cap = self.ep.get("max_wpm")
+                if cap and len(text.split()) / dur * 60 > cap:     # slow down lines that came out rushed
+                    wav, dur = gtts.stretch(wav, cap / (len(text.split()) / dur * 60))
                 self.clips.append((wav, t))
             else:
                 dur = max(len(text.split()) * 0.33, spec.get("hold", 1.5 if not text else 0))
@@ -100,6 +120,16 @@ class Director:
         last = {}       # (set, actor) -> (pos, facing)
         for shot in self.shots:
             spec = shot.spec
+            if spec.get("type") == "card":
+                if self.ep.get("format", "short") != "long":
+                    raise Problem(f"shot {shot.index + 1}: cards are only supported in format 'long'")
+                if not spec.get("header"):
+                    raise Problem(f"shot {shot.index + 1}: a card needs a 'header'")
+                for row in spec.get("rows", []):
+                    if not (isinstance(row, list) and len(row) == 2):
+                        raise Problem(f"shot {shot.index + 1}: card rows must look like [\"KEY\", \"value\"]")
+                shot.tracks, shot.cam, shot.events, shot.hits = {}, [], [], []
+                continue
             if spec.get("set") not in self.sets:
                 raise Problem(f"shot {shot.index + 1}: unknown set '{spec.get('set')}' (have: {', '.join(self.sets)})")
             sname = spec["set"]
@@ -139,6 +169,12 @@ class Director:
             cam, prev = [], {"zoom": None, "dx": 0, "dy": 0}
             for key in spec.get("camera", [{"view": "wide"}]):
                 k = dict(prev, **key)
+                if "z" in key:                                   # full-frame zoom on the whole picture
+                    k.pop("view", None)
+                    k.pop("follow", None)
+                elif "view" in key or "follow" in key:
+                    for n in ("z", "fx", "fy"):
+                        k.pop(n, None)
                 if "view" in key:
                     k.pop("follow", None)
                     k["zoom"] = key.get("zoom")
@@ -217,8 +253,53 @@ class Director:
         return max([math.sin(clamp((lt - h) / 0.28) * math.pi) for h in shot.hits] + [0.0])
 
     # ---------- drawing ----------
+    def _clip_frames(self, clip, delogo=None):
+        """Decode a video clip once into a folder of JPEG frames (cached next to the episode)."""
+        if clip in self.vclips:
+            return self.vclips[clip]
+        src = self.path.parent / clip
+        out = self.path.parent / "out" / ".clips" / Path(clip).stem
+        if not list(out.glob("*.jpg")):
+            out.mkdir(parents=True, exist_ok=True)
+            scale = "scale='min(1920,iw)':-2" if self.W > self.H else "scale=-2:'min(1920,ih)'"
+            logo = f"delogo=x={delogo[0]}:y={delogo[1]}:w={delogo[2]}:h={delogo[3]}," if delogo else ""   # hides a corner watermark
+            subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(src), "-an", "-vf", f"{logo}fps={FPS},{scale}",
+                            "-q:v", "3", str(out / "%05d.jpg")], check=True)
+        frames = sorted(out.resolve().glob("*.jpg"))
+        if not frames:
+            raise SystemExit(f"no frames decoded from {src}")
+        self.vclips[clip] = frames
+        return frames
+
+    def _bg(self, shot, lt=0.0):
+        sset = self.sets[shot.spec["set"]]
+        if "clip" in sset:            # video clip background: loop (default), pingpong or hold the last frame
+            frames = self._clip_frames(sset["clip"], sset.get("delogo"))
+            n, i = len(frames), int(max(lt, 0) * FPS * sset.get("speed", 1.0))
+            mode = sset.get("loop", "pingpong")
+            if mode == "hold":
+                i = min(i, n - 1)
+            elif mode == "loop" or n < 2:
+                i %= n
+            else:
+                i %= 2 * (n - 1)
+                i = i if i < n else 2 * (n - 1) - i
+            path = str(frames[i])
+        else:
+            path = sset["image"]
+        if path not in self.images:
+            if len(self.images) > 90:                 # frames of clips: keep memory small
+                for k in [k for k in self.images if k.endswith(".jpg") and "/.clips/" in k][:60]:
+                    del self.images[k]
+            self.images[path] = skia.Image.open(path if path.startswith("/") else str(self.path.parent / path))
+        return self.images[path]
+
     def camera(self, shot, lt):
         def value(k):
+            if "z" in k:           # {"z": 1.1, "fx": 0.5, "fy": 0.45}: zoom on the whole picture, centre as a fraction
+                bg = self._bg(shot)
+                return (bg.width() * k.get("fx", 0.5), bg.height() * k.get("fy", 0.5),
+                        min(bg.height(), bg.width() * self.H / self.W) / k["z"])
             if "follow" in k:
                 st = self._state(shot, k["follow"], lt) or dict(pos=shot.tracks[k["follow"]][0]["p0"])
                 return st["pos"][0] + k.get("dx", 0), st["pos"][1] + k.get("dy", 0), k["zoom"]
@@ -236,11 +317,14 @@ class Director:
     def frame(self, canvas, t):
         W, H, L = self.W, self.H, self.L
         shot = max((s for s in self.shots if t >= s.start), key=lambda s: s.start)
+        if shot.spec.get("type") == "card":
+            stage.card(canvas, W, H, shot.spec["header"], shot.spec.get("rows", []), shot.spec.get("takeaway", ""), t - shot.start)
+            fade = min(clamp(t / 0.25), clamp((self.total - t) / 0.45))
+            if fade < 1:
+                canvas.drawRect(skia.Rect.MakeWH(W, H), skia.Paint(Color=skia.Color(0, 0, 0, int(255 * (1 - fade)))))
+            return
         lt, st_set = t - shot.start, self.sets[shot.spec["set"]]
-        img_path = st_set["image"]
-        if img_path not in self.images:
-            self.images[img_path] = skia.Image.open(str(self.path.parent / img_path))
-        bg = self.images[img_path]
+        bg = self._bg(shot, lt)
         bump = self._bump(shot, lt)
 
         cx, cy, vh = self.camera(shot, lt)
@@ -249,6 +333,11 @@ class Director:
         cx = clamp(cx, vw / 2, bg.width() * st_set.get("crop", 0.955) - vw / 2)
         cy = clamp(cy, vh / 2, bg.height() - vh / 2)
         sx, sy = stage.shake_offset(lt, shot.hits, 30)
+        for e in shot.events:                                    # steady rumble
+            if e["fx"] == "shake" and e["t"] <= lt < e["end"]:
+                a = e.get("amp", 9) * min(1.0, (lt - e["t"]) / 0.2, (e["end"] - lt) / 0.3)
+                sx += a * math.sin(lt * 53)
+                sy += a * math.cos(lt * 41)
         canvas.save()
         canvas.translate(W / 2 + sx, H / 2 + sy)
         canvas.scale(H / vh, H / vh)
@@ -266,7 +355,7 @@ class Director:
             if d < 0:
                 continue
             if e["fx"] == "smoke":
-                stage.smoke(canvas, e["xy"][0], e["xy"][1], t, strength=smooth(d / 0.6))
+                stage.smoke(canvas, e["xy"][0], e["xy"][1], t, strength=smooth(d / 0.6), tone=tuple(e.get("tone", (70, 72, 80))))
             elif e["fx"] == "dark":
                 dark = e.get("level", 150) * smooth(d / 0.8)
 
@@ -325,6 +414,12 @@ class Director:
         amount = shot.spec.get("snow", st_set.get("snow", 0))
         if amount:
             self.snow.draw(canvas, t, amount, wind=1.6 if windy else st_set.get("wind", 0.5))
+        for e in shot.events:
+            if e["fx"] == "dust" and e["t"] <= lt < e["end"]:
+                stage.dust(canvas, t, W, H, e.get("amount", 1.0))
+        for e in shot.events:
+            if e["fx"] == "diagram" and e["t"] <= lt < e["end"]:
+                stage.diagram(canvas, W, H, e, lt - e["t"], e["end"] - e["t"])
         vig = skia.GradientShader.MakeRadial((W / 2, H / 2), max(W, H) * 0.62, [skia.Color(0, 0, 0, 0), skia.Color(0, 0, 0, 150)],
                                              [0.55, 1.0])
         canvas.drawRect(skia.Rect.MakeWH(W, H), skia.Paint(Shader=vig))
@@ -334,6 +429,10 @@ class Director:
             size = L["impact_size"] * min(1.0, 7.5 / max(len(a["text"]), 1) + 0.25)
             stage.impact_word(canvas, a["text"], a["t"], lt, W, L["impact_y"], size=size,
                               hold=(b["t"] if b else shot.dur) - a["t"])
+        for e in shot.events:
+            if e["fx"] == "verdict" and e["t"] <= lt:
+                px, py = e.get("pos", [0.8, 0.28])
+                stage.verdict(canvas, e.get("kind", "cross"), e["t"], lt, W * px, H * py, e.get("size", 300))
         for n, e in enumerate([e for e in shot.events if e["fx"] == "sticker"]):
             stage.sticker(canvas, e["text"], e["t"], lt, W / 2, L["sticker_y"] + n * L["sticker_dy"])
         if not impacts and self.ep.get("captions", True):
@@ -348,9 +447,15 @@ class Director:
         tt = np.arange(n) / SR
         narr, fx, duck, seed = np.zeros(n), np.zeros(n), np.ones(n), 0
         for wav, s in self.clips:
-            stage.place(narr, stage.load_wav(wav), s)
-        narr *= 0.85 / (np.abs(narr).max() + 1e-9)
+            clip = stage.load_wav(wav)
+            act = clip[np.abs(clip) > 0.02]
+            if len(act):                                          # even loudness from line to line
+                clip = clip * float(np.clip(0.1 / (np.sqrt((act ** 2).mean()) + 1e-9), 0.5, 2.5))
+            stage.place(narr, clip, s)
+        narr *= 0.9 / (np.abs(narr).max() + 1e-9)
         for shot in self.shots:
+            if shot.spec.get("type") == "card":
+                stage.place(fx, stage.sfx("thud"), shot.start + 0.05, 0.6)
             for key in shot.cam:
                 if key.get("ease") == "snap":
                     prev_t = max([k["t"] for k in shot.cam if k["t"] < key["t"]] + [0.0])
@@ -387,6 +492,8 @@ class Director:
                     duck[int(at * SR):int((shot.start + shot.dur) * SR)] = 0.25
                 elif e["fx"] == "sfx":
                     stage.place(fx, stage.sfx(e["name"]), at, e.get("gain", 0.9))
+                elif e["fx"] == "shake":
+                    stage.place(fx, stage.sfx("rumble"), at, 0.8)
         k = int(0.25 * SR)
         duck = np.convolve(duck, np.ones(k) / k, mode="same")
         track_file = next(iter(sorted((Path(__file__).parent / "assets").glob("music.*"))), None)
@@ -394,11 +501,17 @@ class Director:
             raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-stream_loop", "-1", "-i", str(track_file), "-t", str(self.total),
                                   "-ac", "1", "-ar", str(SR), "-f", "s16le", "-"], capture_output=True, check=True).stdout
             mus = np.frombuffer(raw, dtype=np.int16).astype(np.float64)[:n] / 32768
-            mus = np.pad(mus, (0, n - len(mus))) * 0.12
+            mus = np.pad(mus, (0, n - len(mus))) * 0.08
         else:
-            mus = stage.music(n) * 0.17
-        wind = stage.wind_bed(n) if any(s.get("snow") for s in self.sets.values()) else 0
-        mix = narr + fx * 0.55 + wind + mus * duck
+            mus = stage.music(n) * 0.09
+        wind = stage.wind_bed(n) * 0.6 if any(s.get("snow") for s in self.sets.values()) else 0
+        # everything except the voice gets quieter whenever the narrator is speaking
+        w = int(0.03 * SR)
+        e = np.clip(np.convolve(np.abs(narr), np.ones(w) / w, mode="same") / 0.06, 0, 1)
+        r = int(0.3 * SR)
+        e = np.maximum(e, np.convolve(e, np.ones(r) / r, mode="same"))
+        voice_duck = 1 - 0.85 * e
+        mix = narr + (fx * 0.38 + wind + mus * duck) * voice_duck
         return mix * np.minimum(1, np.minimum(tt / 0.2, (self.total - tt) / 0.5))
 
 
@@ -428,7 +541,7 @@ def main():
     stage.save_wav(wav, d.soundtrack())
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgba", "-s", f"{d.W}x{d.H}",
                            "-r", str(FPS), "-i", "-", "-i", str(wav), "-c:v", "libx264", "-preset", "medium", "-crf", "19",
-                           "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(mp4)],
+                           "-pix_fmt", "yuv420p", "-af", "highpass=f=70,acompressor=threshold=-20dB:ratio=3:attack=10:release=180:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=9", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(mp4)],
                           stdin=subprocess.PIPE)
     for f in range(int(d.total * FPS)):
         d.frame(canvas, f / FPS)

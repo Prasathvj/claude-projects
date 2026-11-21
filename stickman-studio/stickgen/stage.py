@@ -193,14 +193,76 @@ def burst(canvas, x, y, t0, t, n=14, seed=5, color=skia.ColorWHITE, speed=420, s
         canvas.drawCircle(px, py, r, edge)
 
 
-def smoke(canvas, x, y, t, strength=1.0, n=9):
+def smoke(canvas, x, y, t, strength=1.0, n=9, tone=(70, 72, 80)):
     for i in range(n):
         ph = (t * 0.55 + i / n) % 1
         r = 14 + 60 * ph
         px = x + 26 * math.sin(i * 2.1 + t * 1.2) * ph - 30 * ph
         py = y - 190 * ph
-        paint = skia.Paint(AntiAlias=True, Color=skia.Color(70, 72, 80, int(170 * (1 - ph) * clamp(strength))))
+        paint = skia.Paint(AntiAlias=True, Color=skia.Color(tone[0], tone[1], tone[2], int(170 * (1 - ph) * clamp(strength))))
         canvas.drawCircle(px, py, r, paint)
+
+
+NAVY = skia.Color(16, 26, 46)
+
+
+def _text(canvas, s, x, y, f, color, alpha=1.0, spacing=0.0):
+    paint = skia.Paint(AntiAlias=True, Color=color)
+    paint.setAlphaf(clamp(alpha))
+    if not spacing:
+        canvas.drawString(s, x, y, f, paint)
+        return f.measureText(s)
+    cx = x
+    for ch in s:
+        canvas.drawString(ch, cx, y, f, paint)
+        cx += f.measureText(ch) + spacing
+    return cx - x - spacing
+
+
+def card(canvas, W, H, header, rows, takeaway, lt):
+    """Tip card for 16:9: orange header, KEY / value rows that slide in, optional takeaway bar.
+    A row with an empty value is drawn as a single bullet line."""
+    u = W / 1920
+    canvas.clear(NAVY)
+    canvas.drawRect(skia.Rect.MakeWH(W, 14 * u), skia.Paint(Color=ORANGE))
+    left = 200 * u
+    a = smooth(lt / 0.35)
+    hw = _text(canvas, header, left, (300 - 30 * (1 - a)) * u, font("ExtraBold", 118 * u), ORANGE, a, spacing=4 * u)
+    canvas.drawRect(skia.Rect.MakeXYWH(left, 336 * u, hw * smooth((lt - 0.2) / 0.5), 8 * u), skia.Paint(Color=skia.ColorWHITE))
+    n = max(len(rows), 1)
+    reserve = 210 if takeaway else 90
+    step = min(104, (1080 - 450 - reserve) / n)
+    y = 450.0
+    for i, (key, val) in enumerate(rows):
+        ra = smooth((lt - 0.7 - i * 0.5) / 0.4)
+        dx = 40 * (1 - ra) * u
+        base = (y + step * 0.62) * u
+        if val:
+            _text(canvas, key, left + dx, base, font("ExtraBold", 40 * u), ORANGE, ra, spacing=5 * u)
+            _text(canvas, val, left + 420 * u + dx, base, font("Medium", 46 * u), skia.ColorWHITE, ra)
+        else:
+            canvas.drawRect(skia.Rect.MakeXYWH(left + dx, base - 30 * u, 14 * u, 14 * u),
+                            skia.Paint(Color=skia.Color(255, 150, 40, int(255 * clamp(ra)))))
+            _text(canvas, key, left + 40 * u + dx, base, font("ExtraBold", 52 * u), skia.ColorWHITE, ra, spacing=3 * u)
+        y += step
+    if takeaway:
+        ta = smooth((lt - 0.9 - n * 0.5) / 0.5)
+        top = (y + 14) * u
+        canvas.drawRoundRect(skia.Rect.MakeXYWH(left, top, W - 2 * left, 110 * u), 14 * u, 14 * u,
+                             skia.Paint(AntiAlias=True, Color=skia.Color(255, 255, 255, int(22 * ta))))
+        canvas.drawRect(skia.Rect.MakeXYWH(left, top, 10 * u, 110 * u), skia.Paint(Color=skia.Color(255, 150, 40, int(255 * ta))))
+        _text(canvas, takeaway, left + 50 * u, top + 72 * u, font("SemiBold", 46 * u), skia.ColorWHITE, ta)
+
+
+def dust(canvas, t, W, H, amount=1.0, seed=6):
+    """Light specks drifting down, for shaking rooms. Deterministic per speck."""
+    rng = np.random.default_rng(seed)
+    n = int(70 * clamp(amount, 0, 2))
+    xs, ys, ph, sp, r = (rng.uniform(0, W, n), rng.uniform(0, H, n), rng.uniform(0, 6.28, n), rng.uniform(40, 140, n),
+                         rng.uniform(2.0, 5.5, n))
+    paint = skia.Paint(AntiAlias=True, Color=skia.Color(235, 220, 195, 120))
+    for x, y, p0, s0, r0 in zip(xs, ys, ph, sp, r):
+        canvas.drawCircle(float(x + 14 * math.sin(t * 1.7 + p0)), float((y + s0 * t) % (H + 20) - 10), float(r0), paint)
 
 
 # ---------------- sound ----------------
@@ -295,3 +357,217 @@ def save_wav(path, mix):
         w.setsampwidth(2)
         w.setframerate(SR)
         w.writeframes((np.tanh(mix) * 32000).astype(np.int16).tobytes())
+
+
+# ---------------------------------------------------------------- explainer diagrams (drawn in code, so every label is exact)
+_PALETTE = [skia.Color(255, 150, 40), skia.Color(80, 180, 255), skia.Color(120, 220, 150), skia.Color(240, 110, 150),
+            skia.Color(190, 150, 255), skia.Color(250, 220, 90)]
+
+
+def _panel(canvas, x, y, w, h, alpha=0.82):
+    canvas.drawRoundRect(skia.Rect.MakeXYWH(x, y, w, h), 36, 36, skia.Paint(AntiAlias=True, Color=skia.Color(10, 18, 36, int(255 * alpha))))
+    canvas.drawRoundRect(skia.Rect.MakeXYWH(x, y, w, h), 36, 36, skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=4,
+                                                                         Color=skia.Color(255, 150, 40, int(200 * alpha))))
+
+
+def _ctext(canvas, s, cx, y, f, color, alpha=1.0, spacing=0.0):
+    w = f.measureText(s) + spacing * max(len(s) - 1, 0)
+    _text(canvas, s, cx - w / 2, y, f, color, alpha, spacing)
+
+
+def _block(canvas, s, x, y, w, h, color, f, alpha=1.0):
+    p = skia.Paint(AntiAlias=True, Color=color)
+    p.setAlphaf(clamp(alpha))
+    canvas.drawRoundRect(skia.Rect.MakeXYWH(x, y, w, h), 18, 18, p)
+    _ctext(canvas, s, x + w / 2, y + h * 0.66, f, skia.Color(12, 18, 34), alpha)
+
+
+def diagram(canvas, W, H, e, lt, dur):
+    """Animated explainer overlay. kind: tokens | dials | attention | writing | context | gpu. lt = seconds since the event started.
+    Short (vertical) draws a narrow panel; long (landscape) a wide one. All text is exact, never generated."""
+    kind = e.get("kind", "tokens")
+    wide = W > H
+    if wide:
+        k, cx, pw = 0.9, W / 2 / 0.9, 1560
+    else:
+        k, cx, pw = W / 1080, 540, 1000
+    canvas.save()
+    canvas.scale(k, k)
+    if wide:
+        canvas.translate(0, -250)                 # panels were laid out from y=330; pull them up for 16:9
+    L = cx - pw / 2
+    fade = clamp(lt / 0.3) * clamp((dur - lt) / 0.3 + 0.2)
+    white = skia.ColorWHITE
+    soft = skia.Color(170, 200, 255)
+    if kind == "tokens":
+        _panel(canvas, L, 330, pw, 900, 0.82 * fade)
+        _ctext(canvas, "TOKENS", cx, 420, font("ExtraBold", 54), ORANGE, fade, 8)
+        words = e.get("words", ["The", " cat", " sat", " on", " the", " mat"])
+        nums = e.get("numbers", ["12", "845", "301", "47", "9", "2210"])
+        f = font("ExtraBold", 50)
+        wid = [f.measureText(w.strip()) + 52 for w in words]
+        gap = 24 * clamp((lt - 0.7) / 0.5)
+        total = sum(wid) + gap * (len(words) - 1)
+        x = cx - total / 2
+        for i, (w, ww) in enumerate(zip(words, wid)):
+            col = skia.Color(70, 88, 120) if lt < 0.7 else _PALETTE[i % len(_PALETTE)]
+            _block(canvas, w.strip(), x, 500, ww, 100, col, f, fade)
+            na = smooth((lt - 1.4 - i * 0.25) / 0.3)
+            if na > 0:
+                _ctext(canvas, nums[i % len(nums)], x + ww / 2, 680, font("ExtraBold", 46), white, na * fade)
+                canvas.drawRect(skia.Rect.MakeXYWH(x + ww / 2 - 3, 610, 6, 36 * na), skia.Paint(Color=skia.Color(255, 255, 255, int(150 * fade))))
+            x += ww + gap
+        _ctext(canvas, "EACH PIECE BECOMES A NUMBER", cx, 770, font("SemiBold", 38), soft, smooth((lt - 2.0) / 0.4) * fade, 3)
+        ra = smooth((lt - 2.6) / 0.5)
+        if ra > 0:
+            _ctext(canvas, "RARE WORDS GET SPLIT", cx, 880, font("SemiBold", 38), soft, ra * fade, 3)
+            parts = e.get("rare", ["un", "believ", "able"])
+            f2 = font("ExtraBold", 50)
+            wd = [f2.measureText(p) + 52 for p in parts]
+            xx = cx - (sum(wd) + 24 * (len(parts) - 1)) / 2
+            for i, (p, ww) in enumerate(zip(parts, wd)):
+                _block(canvas, p, xx, 930, ww, 100, _PALETTE[(i + 2) % len(_PALETTE)], f2, ra * fade)
+                xx += ww + 24
+        _ctext(canvas, "EXAMPLE", cx, 1190, font("Medium", 30), skia.Color(150, 170, 210), fade, 6)
+    elif kind == "dials":
+        _panel(canvas, L, 330, pw, 960, 0.82 * fade)
+        steps = ["GUESS", "CHECK", "NUDGE"]
+        active = int(lt / 0.9) % 3
+        fx = font("ExtraBold", 46)
+        x = L + 60
+        for i, s_ in enumerate(steps):
+            w = fx.measureText(s_) + 56
+            _block(canvas, s_, x, 390, w, 92, ORANGE if i == active else skia.Color(60, 76, 110), fx, fade)
+            x += w + 40
+            if i < 2:
+                _text(canvas, ">", x - 30, 452, fx, soft, fade)
+        pulse = smooth((lt % 0.9) / 0.45) if active == 2 else 0.0
+        cycle = int(lt / 2.7)
+        step = min(225, (pw - 160) / 3.6)
+        for r in range(3):
+            for c in range(4):
+                gx, gy = cx + (c - 1.5) * step, 640 + r * 190
+                a = -2.2 + ((r * 4 + c) * 0.9 % 4.2) + 0.55 * (cycle + (pulse if active == 2 else 0)) * (1 if (r + c) % 2 else -1)
+                canvas.drawCircle(gx, gy, 70, skia.Paint(AntiAlias=True, Color=skia.Color(52, 66, 96, int(255 * fade))))
+                canvas.drawCircle(gx, gy, 70, skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=5,
+                                                      Color=skia.Color(160, 190, 240, int(255 * fade))))
+                canvas.drawLine(gx, gy, gx + 54 * math.sin(a), gy - 54 * math.cos(a),
+                                skia.Paint(AntiAlias=True, StrokeWidth=10, StrokeCap=skia.Paint.kRound_Cap,
+                                           Color=skia.Color(255, 150, 40, int(255 * fade)) if active == 2 else skia.Color(255, 255, 255, int(255 * fade))))
+        _ctext(canvas, "MANY BILLIONS OF DIALS", cx, 1235, font("ExtraBold", 44), white, fade, 4)
+    elif kind == "attention":
+        _panel(canvas, L, 400, pw, 700, 0.82 * fade)
+        _ctext(canvas, "ATTENTION", cx, 485, font("ExtraBold", 54), ORANGE, fade, 8)
+        sets = e.get("sentences") or [
+            dict(words=["The", "mole", "dug", "a", "tunnel"], focus=1, links={2: 0.9, 4: 0.8}, label="ANIMAL"),
+            dict(words=["The", "mole", "on", "his", "skin"], focus=1, links={4: 0.9, 3: 0.4}, label="SKIN SPOT")]
+        kk = min(int(lt / max(dur / len(sets), 0.5)), len(sets) - 1)
+        s_ = sets[kk]
+        local = lt - kk * dur / len(sets)
+        f = font("ExtraBold", 46)
+        wid = [f.measureText(w) + 40 for w in s_["words"]]
+        total = sum(wid) + 20 * (len(wid) - 1)
+        x, centers = cx - total / 2, []
+        for i, (w, ww) in enumerate(zip(s_["words"], wid)):
+            _block(canvas, w, x, 800, ww, 90, ORANGE if i == s_["focus"] else skia.Color(70, 88, 120), f, fade)
+            centers.append(x + ww / 2)
+            x += ww + 20
+        grow = smooth(local / 0.5)
+        for j, wgt in s_["links"].items():
+            x0, x1 = centers[s_["focus"]], centers[j]
+            path = skia.Path()
+            path.moveTo(x0, 800)
+            path.quadTo((x0 + x1) / 2, 800 - 120 - abs(x1 - x0) * 0.25, x1, 800)
+            canvas.drawPath(path, skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=4 + 16 * wgt * grow,
+                                             StrokeCap=skia.Paint.kRound_Cap, Color=skia.Color(80, 180, 255, int(230 * fade * grow))))
+        _ctext(canvas, s_["label"], cx, 1000, font("ExtraBold", 56), skia.Color(120, 220, 150), smooth((local - 0.5) / 0.4) * fade, 6)
+        _ctext(canvas, "THICKER LINE = MORE ATTENTION", cx, 1060, font("SemiBold", 32), soft, fade, 3)
+    elif kind == "writing":
+        y0 = e.get("y", 250)
+        _panel(canvas, L, y0, pw, 640, 0.84 * fade)
+        prompt = e.get("prompt", "The sky is")
+        cands = e.get("cands", [["blue", 70], ["clear", 12], ["grey", 8], ["green", 1]])
+        chosen = lt > e.get("pick_at", 2.6)
+        _ctext(canvas, prompt + (" " + cands[0][0] if chosen else " ..."), cx, y0 + 100, font("ExtraBold", 64), white, fade)
+        maxw = pw - 360
+        for i, (w, pct) in enumerate(cands):
+            by = y0 + 170 + i * 92
+            a = smooth((lt - 0.4 - i * 0.2) / 0.4)
+            _text(canvas, w, L + 60, by + 56, font("ExtraBold", 44), white, a * fade)
+            hl = chosen and i == 0
+            canvas.drawRoundRect(skia.Rect.MakeXYWH(L + 260, by + 12, max(maxw * pct / 100 * a, 8), 56), 14, 14,
+                                 skia.Paint(AntiAlias=True, Color=skia.Color(255, 150, 40, int(255 * fade)) if hl
+                                            else skia.Color(80, 140, 230, int(255 * fade))))
+            _text(canvas, f"{pct}%", L + 260 + maxw * pct / 100 * a + 18, by + 56, font("SemiBold", 40), white, a * fade)
+        _ctext(canvas, "ILLUSTRATIVE NUMBERS", cx, y0 + 600, font("Medium", 30), skia.Color(150, 170, 210), fade, 6)
+    elif kind == "context":      # a window that fills up with the parts of a conversation, counted in tokens
+        _panel(canvas, L, 400, pw, 700, 0.84 * fade)
+        _ctext(canvas, "CONTEXT WINDOW", cx, 485, font("ExtraBold", 54), ORANGE, fade, 8)
+        bw, bx, by = pw - 160, L + 80, 560
+        canvas.drawRoundRect(skia.Rect.MakeXYWH(bx, by, bw, 150), 22, 22, skia.Paint(AntiAlias=True, Color=skia.Color(30, 44, 74, int(255 * fade))))
+        canvas.drawRoundRect(skia.Rect.MakeXYWH(bx, by, bw, 150), 22, 22, skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style,
+                                                                                 StrokeWidth=5, Color=skia.Color(160, 190, 240, int(255 * fade))))
+        parts = e.get("parts", [("EARLIER CHAT", 0.32, 1), ("YOUR QUESTION", 0.24, 2), ("THE ANSWER", 0.26, 3)])
+        x = bx + 8
+        for name, share, order in parts:
+            g = smooth((lt - 0.4 - order * 0.7) / 0.7)
+            ww = (bw - 16) * share * g
+            if ww > 2:
+                canvas.drawRoundRect(skia.Rect.MakeXYWH(x, by + 12, ww, 126), 14, 14,
+                                     skia.Paint(AntiAlias=True, Color=skia.Color(*[(255, 150, 40), (80, 180, 255), (120, 220, 150)][order - 1], int(235 * fade))))
+            _ctext(canvas, name, x + (bw - 16) * share / 2, by + 220, font("SemiBold", 27), soft, g * fade, 1)
+            x += (bw - 16) * share
+        _ctext(canvas, "THE WINDOW HOLDS A LIMITED NUMBER OF TOKENS", cx, 890, font("ExtraBold", 40), white, smooth((lt - 3.0) / 0.5) * fade, 3)
+        _ctext(canvas, "WHEN IT IS FULL, OLDER TEXT CAN BE DROPPED", cx, 960, font("SemiBold", 34), soft, smooth((lt - 4.0) / 0.5) * fade, 3)
+    elif kind == "gpu":          # a few strong cores working in turn, against thousands of small ones working together
+        _panel(canvas, L, 380, pw, 740, 0.84 * fade)
+        half = pw / 2
+        for side, (title, n, cols, col, size) in enumerate([("CPU: A FEW STRONG CORES", 4, 2, (255, 150, 40), 90),
+                                                             ("GPU: THOUSANDS OF SMALL CORES", 140, 14, (80, 180, 255), 22)]):
+            ccx = L + half * (side + 0.5)
+            _ctext(canvas, title, ccx, 470, font("ExtraBold", 34), white, fade, 2)
+            rows = math.ceil(n / cols)
+            gw = cols * (size + 8) - 8
+            gx0 = ccx - gw / 2
+            gy0 = 560 if side == 0 else 540
+            for idx in range(n):
+                r_, c_ = divmod(idx, cols)
+                if side == 0:
+                    on = int(lt / 0.8) % n == idx            # one after another
+                else:
+                    on = ((idx * 7 + int(lt * 6)) % 3) != 0   # many at once
+                a_ = 255 if on else 70
+                canvas.drawRoundRect(skia.Rect.MakeXYWH(gx0 + c_ * (size + 8), gy0 + r_ * (size + 8), size, size), size / 5, size / 5,
+                                     skia.Paint(AntiAlias=True, Color=skia.Color(*col, int(a_ * fade))))
+        canvas.drawRect(skia.Rect.MakeXYWH(cx - 2, 450, 4, 600), skia.Paint(Color=skia.Color(255, 255, 255, int(70 * fade))))
+        _ctext(canvas, "ONE BY ONE", L + half * 0.5, 1060, font("SemiBold", 34), soft, fade, 4)
+        _ctext(canvas, "MANY AT ONCE", L + half * 1.5, 1060, font("SemiBold", 34), soft, fade, 4)
+    canvas.restore()
+
+
+def verdict(canvas, kind, t0, t, x, y, size=300):
+    """Big animated red X ('cross') or green tick ('check') that pops in, for myth versus fact. Drawn in code, never baked into pictures."""
+    d = t - t0
+    if d < 0:
+        return
+    k = back(d / 0.25) * (1 + 0.04 * math.sin(d * 14) * math.exp(-d * 4))
+    canvas.save()
+    canvas.translate(x, y)
+    canvas.scale(k, k)
+    col = skia.Color(235, 50, 50) if kind == "cross" else skia.Color(60, 200, 110)
+    ring = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=size * 0.09, Color=skia.Color(0, 0, 0))
+    canvas.drawCircle(0, 0, size * 0.5, skia.Paint(AntiAlias=True, Color=skia.Color(255, 255, 255)))
+    canvas.drawCircle(0, 0, size * 0.5, ring)
+    p = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=size * 0.16, StrokeCap=skia.Paint.kRound_Cap,
+                   StrokeJoin=skia.Paint.kRound_Join, Color=col)
+    edge = skia.Paint(AntiAlias=True, Style=skia.Paint.kStroke_Style, StrokeWidth=size * 0.16 + 12, StrokeCap=skia.Paint.kRound_Cap,
+                      StrokeJoin=skia.Paint.kRound_Join, Color=skia.Color(0, 0, 0))
+    path = skia.Path()
+    if kind == "cross":
+        path.moveTo(-size * 0.24, -size * 0.24); path.lineTo(size * 0.24, size * 0.24)
+        path.moveTo(size * 0.24, -size * 0.24); path.lineTo(-size * 0.24, size * 0.24)
+    else:
+        path.moveTo(-size * 0.26, 0); path.lineTo(-size * 0.07, size * 0.2); path.lineTo(size * 0.28, -size * 0.22)
+    canvas.drawPath(path, edge)
+    canvas.drawPath(path, p)
+    canvas.restore()

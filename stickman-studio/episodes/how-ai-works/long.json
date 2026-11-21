@@ -1,0 +1,752 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A clear, warm, confident male narrator of educational animated videos. Very slow and deliberate, about 110 words per minute, crisp enunciation, a clear pause of about a second between sentences, never rushed, even on exciting lines.\n",
+ "max_wpm": 170,
+ "gap": 0.35,
+ "format": "long",
+ "tts_batch": 4,
+ "title": "How does AI actually work?",
+ "sets": {
+  "S1": {
+   "image": "shots/S1.jpg",
+   "crop": 1.0
+  },
+  "S2": {
+   "image": "shots/S2.jpg",
+   "crop": 1.0
+  },
+  "S3": {
+   "image": "shots/S3.jpg",
+   "crop": 1.0
+  },
+  "S4": {
+   "image": "shots/S4.jpg",
+   "crop": 1.0
+  },
+  "S5": {
+   "image": "shots/S5.jpg",
+   "crop": 1.0
+  },
+  "S6": {
+   "image": "shots/S6.jpg",
+   "crop": 1.0
+  },
+  "K1": {
+   "clip": "shots/K1.mp4",
+   "crop": 1.0,
+   "loop": "pingpong",
+   "delogo": [
+    1696,
+    856,
+    88,
+    88
+   ]
+  },
+  "K2": {
+   "clip": "shots/K2.mp4",
+   "crop": 1.0,
+   "loop": "pingpong",
+   "delogo": [
+    1696,
+    856,
+    88,
+    88
+   ]
+  },
+  "K3": {
+   "clip": "shots/K3.mp4",
+   "crop": 1.0,
+   "loop": "pingpong",
+   "delogo": [
+    1696,
+    856,
+    88,
+    88
+   ]
+  },
+  "K4": {
+   "clip": "shots/K4.mp4",
+   "crop": 1.0,
+   "loop": "pingpong",
+   "delogo": [
+    1696,
+    856,
+    88,
+    88
+   ]
+  }
+ },
+ "shots": [
+  {
+   "set": "S1",
+   "say": "You ask an AI to write a poem, fix your code, or explain the moon, and it answers like it understands.",
+   "direct": "calm, curious hook",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.35,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.16,
+     "fx": 0.35,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K1",
+   "say": "So how does it work? The honest answer is both simpler and stranger than you think.",
+   "direct": "intriguing",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "S1",
+   "say": "At its core, it guesses the next word. Over and over.",
+   "direct": "dramatic, slow",
+   "camera": [
+    {
+     "z": 1.1,
+     "fx": 0.6,
+     "fy": 0.55
+    },
+    {
+     "at": "end",
+     "z": 1.25,
+     "fx": 0.6,
+     "fy": 0.55
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "S2",
+   "say": "You know the suggestions above your phone keyboard. Type see you, and it offers soon.",
+   "direct": "friendly",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.6,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.6,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "S2",
+   "say": "That is next word guessing. A chatbot does the same thing, just with far more power.",
+   "direct": "explaining",
+   "camera": [
+    {
+     "z": 1.1,
+     "fx": 0.78,
+     "fy": 0.55
+    },
+    {
+     "at": "end",
+     "z": 1.22,
+     "fx": 0.78,
+     "fy": 0.55
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K1",
+   "say": "Give it, the sky is, and it works out that blue is very likely, and green is unlikely. It does not look anything up. It scores the options.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "diagram",
+     "kind": "writing",
+     "y": 330
+    }
+   ]
+  },
+  {
+   "set": "K3",
+   "say": "First problem: computers do not read words. They read numbers. So the text is chopped into pieces called tokens.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K3",
+   "say": "A token can be a whole word, a part of a word, or a single letter. Common words stay whole. Rare words get split. Each piece gets a number, and from there it is all maths.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "diagram",
+     "kind": "tokens"
+    }
+   ]
+  },
+  {
+   "set": "K1",
+   "say": "Now the training. The model is shown huge amounts of text with the next piece hidden, and it has to guess. At first, it is completely wrong.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K1",
+   "say": "Then the system measures how wrong it was, and nudges millions of tiny dials, called weights, so that guess would have been a little better.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "diagram",
+     "kind": "dials"
+    }
+   ]
+  },
+  {
+   "set": "K1",
+   "say": "Repeat this an enormous number of times, and those dials, many billions of them, end up holding patterns of grammar, facts and style. Nobody typed the rules in. The patterns were learned.",
+   "direct": "calm, impressed",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K3",
+   "say": "Here is a tiny example. The cat sat on the, what? The model scores many possible next words. Mat might score highest, sofa lower. These numbers are made up to show the idea.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "diagram",
+     "kind": "writing",
+     "y": 330,
+     "prompt": "The cat sat on the",
+     "cands": [
+      [
+       "mat",
+       40
+      ],
+      [
+       "sofa",
+       20
+      ],
+      [
+       "floor",
+       15
+      ],
+      [
+       "roof",
+       2
+      ]
+     ],
+     "pick_at": 3.5
+    }
+   ]
+  },
+  {
+   "set": "K1",
+   "say": "In twenty seventeen, researchers published a paper called Attention Is All You Need. It introduced an idea called attention.",
+   "direct": "clear, narrative",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K3",
+   "say": "Each word is re-read in light of the words around it. Take the word mole. In one sentence it is an animal. In another, a spot on skin. Attention lets the model use the neighbouring words to decide which meaning fits.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "diagram",
+     "kind": "attention"
+    }
+   ]
+  },
+  {
+   "set": "K1",
+   "say": "And it reads all the words at once, instead of one by one, which makes it much faster to train.",
+   "direct": "clear",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K1",
+   "say": "When you ask a question, the model picks one token, adds it to the text, and then guesses the next one, again and again.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "diagram",
+     "kind": "writing",
+     "y": 330,
+     "prompt": "The sky is blue",
+     "cands": [
+      [
+       "and",
+       32
+      ],
+      [
+       ".",
+       26
+      ],
+      [
+       "today",
+       9
+      ],
+      [
+       "because",
+       6
+      ]
+     ],
+     "pick_at": 2.2
+    }
+   ]
+  },
+  {
+   "set": "S1",
+   "say": "Why not always pick the single most likely word? Settings like temperature add a bit of randomness, which is why the same question can give different answers.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.4,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.4,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K1",
+   "say": "There is also a limit to how much it can look at. This is called the context window.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "diagram",
+     "kind": "context"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "The context window is the maximum amount of text, counted in tokens, that the model can consider at once. It includes your question, the earlier conversation, and the answer it is writing. As a rule of thumb, a thousand tokens is about seven hundred and fifty English words. Limits differ from model to model, so check the provider.",
+   "direct": "clear, teacher voice",
+   "header": "CONTEXT WINDOW",
+   "rows": [
+    [
+     "COUNTED IN",
+     "Tokens, not words"
+    ],
+    [
+     "INCLUDES",
+     "Your question, earlier chat, the answer"
+    ],
+    [
+     "RULE OF THUMB",
+     "1,000 tokens is about 750 English words"
+    ]
+   ],
+   "takeaway": "Limits differ by model, so check the provider"
+  },
+  {
+   "set": "S3",
+   "say": "A model trained only on guessing text is not a helpful assistant. So there is a second stage. People rate the answers, and the model is trained to prefer the ones people judge helpful.",
+   "direct": "friendly, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.3,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.16,
+     "fx": 0.3,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "S3",
+   "say": "This is often called learning from human feedback. It is part of why chatbots sound polite and follow instructions.",
+   "direct": "friendly",
+   "camera": [
+    {
+     "z": 1.1,
+     "fx": 0.72,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fx": 0.72,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K2",
+   "say": "All of this runs on a lot of hardware. Training is a huge amount of the same simple maths, multiplying big tables of numbers.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K4",
+   "say": "A CPU has a few strong cores that work through tasks in turn. A GPU has thousands of small cores that do many of these calculations at the same time.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "diagram",
+     "kind": "gpu"
+    }
+   ]
+  },
+  {
+   "set": "K2",
+   "say": "Big models are split across many GPUs, in data centres. And often the limit is not the maths, but how fast numbers can be fed in from memory.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.5,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "S4",
+   "say": "Here is the catch. The model is trained to produce text that fits the pattern, not text that has been checked.",
+   "direct": "serious, wry",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.3,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.16,
+     "fx": 0.3,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "S4",
+   "say": "So sometimes it writes something that sounds right and is false, in a confident voice. People call this a hallucination. Human feedback helps, but does not remove it.",
+   "direct": "serious, wry",
+   "camera": [
+    {
+     "z": 1.1,
+     "fx": 0.72,
+     "fy": 0.45
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fx": 0.72,
+     "fy": 0.45
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "S5",
+   "say": "So, is it thinking? Scientists still argue about that. Some say predicting the next word forces a model to learn something real about the world. Others say that is not enough on its own. Nobody has settled it, and anyone who sounds completely sure is guessing.",
+   "direct": "thoughtful, calm",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.45,
+     "fy": 0.45
+    },
+    {
+     "at": "end",
+     "z": 1.16,
+     "fx": 0.45,
+     "fy": 0.45
+    }
+   ],
+   "events": []
+  },
+  {
+   "type": "card",
+   "say": "Use it as a fast helper, not as a judge. Check important facts, like medicine, money and legal questions, with a reliable source. And ask it to explain its steps, then check them.",
+   "direct": "clear, teacher voice",
+   "header": "USE IT WELL",
+   "rows": [
+    [
+     "CHECK",
+     "Medicine, money and legal questions"
+    ],
+    [
+     "ASK",
+     "Make it explain its steps"
+    ],
+    [
+     "REMEMBER",
+     "It is a very good guesser"
+    ]
+   ],
+   "takeaway": "A fast helper, not a judge"
+  },
+  {
+   "set": "S6",
+   "say": "Recap. Words become tokens. Training nudges billions of dials. Attention reads words in context. It writes one piece at a time, and it can be confidently wrong.",
+   "direct": "upbeat, clear",
+   "camera": [
+    {
+     "z": 1.06,
+     "fx": 0.4,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.14,
+     "fx": 0.4,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "S6",
+   "say": "Follow for the next one: how a website actually loads.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "z": 1.1,
+     "fx": 0.55,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fx": 0.55,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  }
+ ]
+}

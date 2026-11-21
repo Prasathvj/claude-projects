@@ -55,6 +55,19 @@ pixels on that image.
 
 The shot lasts as long as its narration. A shot without `say` uses `"hold": seconds`.
 
+### Card shots (long format only)
+
+A shot with `"type": "card"` shows a tip card while the narration plays, instead of a set:
+
+```json
+{"type": "card", "say": "Rule one. Stay with the car.", "direct": "firm, teacher voice",
+ "header": "STAY WITH THE CAR",
+ "rows": [["SHELTER", "Blocks wind, holds heat"], ["ON FOOT", "A whiteout makes it easy to get lost"]],
+ "takeaway": "Leave only if help is clearly in sight"}
+```
+
+A row with an empty value (`["STAY", ""]`) is drawn as a single bullet line, for recaps and checklists.
+
 ### Timing
 
 Anything that happens at a moment takes one of:
@@ -110,7 +123,7 @@ Footsteps and digging sounds are added automatically from what the hero is doing
 | `sticker` | `text` | Pop-up label; several stack downward |
 | `sparkle` | `actor` or `mark` | Sparkle burst and chime |
 | `chunks` | `mark`, `every` | Repeating bursts of flying snow chunks |
-| `smoke` | `mark` | Rising smoke |
+| `smoke` | `mark`, `tone` | Rising smoke. `tone` is an `[r, g, b]` colour; use a light grey on dark scenes |
 | `dark` | `level` (0-255) | Darkens the scene, adds a rumble, lowers the music |
 | `wind_lines` | | Streaking wind lines and stronger snow drift |
 | `sfx` | `name`, `gain` | One sound: `whoosh thud pop ding crunch rumble` |
@@ -126,3 +139,16 @@ Drop a file at `assets/music.mp3` to replace the built-in synthesized loop.
 - New hero pose: a function in `stickgen/puppet.py`, added to `ACTIONS`.
 - New effect: draw function in `stickgen/stage.py`, then handle it in `Director.frame` and
   `Director.soundtrack` in `direct.py` and add its name to `FX`.
+
+
+## Full-frame vertical stills (Shorts, from 2026-11-17)
+
+Shorts use pictures generated at 9:16 and no puppets, so the character always looks exactly like the artwork.
+A set is just `{"image": "shots/V1.jpg", "crop": 1.0}`. Camera keys zoom on the whole picture:
+
+```json
+"camera": [{"z": 1.08, "fx": 0.5, "fy": 0.45}, {"at": "end", "z": 1.2, "fy": 0.4}]
+```
+
+`z` is the zoom (keep it at 1.06 or more, so shaking never shows an edge), `fx` and `fy` are the centre as a fraction of the picture.
+Extra effects: `{"fx": "shake", "amp": 10, "to_at": 2.5}` steady rumble, `{"fx": "dust"}` drifting specks.

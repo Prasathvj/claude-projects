@@ -1,0 +1,266 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A clear, warm, confident male narrator of educational animated videos. Very slow and deliberate, about 110 words per minute, crisp enunciation, a clear pause of about a second between sentences, never rushed, even on exciting lines.\n",
+ "max_wpm": 170,
+ "gap": 0.35,
+ "sets": {
+  "V1": {
+   "image": "shots/V1.jpg",
+   "crop": 1.0
+  },
+  "V2": {
+   "image": "shots/V2.jpg",
+   "crop": 1.0
+  },
+  "V8": {
+   "image": "shots/V8.jpg",
+   "crop": 1.0
+  },
+  "V9": {
+   "image": "shots/V9.jpg",
+   "crop": 1.0
+  },
+  "V10": {
+   "image": "shots/V10.jpg",
+   "crop": 1.0
+  },
+  "K5": {
+   "clip": "shots/K5.mp4",
+   "crop": 1.0,
+   "loop": "pingpong",
+   "delogo": [
+    858,
+    1698,
+    84,
+    84
+   ]
+  },
+  "K6": {
+   "clip": "shots/K6.mp4",
+   "crop": 1.0,
+   "loop": "pingpong",
+   "delogo": [
+    858,
+    1698,
+    84,
+    84
+   ]
+  }
+ },
+ "title": "How does AI actually work?",
+ "format": "short",
+ "tts_batch": 4,
+ "shots": [
+  {
+   "set": "V1",
+   "say": "You ask an AI anything, and it answers. How? It guesses the next word.",
+   "direct": "bright, curious hook",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V2",
+   "say": "It's phone autocomplete, but huge. It scores the likely next words.",
+   "direct": "friendly, clear",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.46
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.46
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K6",
+   "say": "Computers can't read words, so text is chopped into tokens, and each piece becomes a number.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.2,
+     "fx": "diagram",
+     "kind": "tokens"
+    }
+   ]
+  },
+  {
+   "set": "K5",
+   "say": "It learns by guessing, getting it wrong, and nudging billions of tiny dials.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.2,
+     "fx": "diagram",
+     "kind": "dials"
+    }
+   ]
+  },
+  {
+   "set": "K5",
+   "say": "After many rounds, those dials hold patterns of grammar, facts and style.",
+   "direct": "calm, impressed",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "K6",
+   "say": "Attention lets it read each word in context: mole the animal, or mole on skin?",
+   "direct": "clear, curious",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.2,
+     "fx": "diagram",
+     "kind": "attention"
+    }
+   ]
+  },
+  {
+   "set": "V1",
+   "say": "Then it writes one piece at a time, picking from likely options, so answers can differ.",
+   "direct": "clear, explaining",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.2,
+     "fx": "diagram",
+     "kind": "writing",
+     "y": 40
+    }
+   ]
+  },
+  {
+   "set": "V8",
+   "say": "People rate answers, so it learns to be helpful.",
+   "direct": "friendly",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.46
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.46
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V9",
+   "say": "But it aims for text that sounds right, not text that is checked. So it can be confidently wrong.",
+   "direct": "serious, wry",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.46
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.46
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V10",
+   "say": "Follow for more tech, explained.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "z": 1.04,
+     "fx": 0.5,
+     "fy": 0.45
+    },
+    {
+     "at": "end",
+     "z": 1.12,
+     "fy": 0.45
+    }
+   ],
+   "events": []
+  }
+ ]
+}

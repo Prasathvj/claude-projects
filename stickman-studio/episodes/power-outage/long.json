@@ -1,0 +1,757 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.1-flash-tts-preview"
+ ],
+ "tts_batch": 5,
+ "max_wpm": 160,
+ "gap": 0.35,
+ "sets": {
+  "L1": {
+   "image": "shots/L1.jpg",
+   "hero_h": 620,
+   "dog_h": 215,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1100,
+     1330
+    ],
+    "dog": [
+     1420,
+     1310
+    ],
+    "left": [
+     450,
+     1390
+    ],
+    "right": [
+     1950,
+     1400
+    ],
+    "tv": [
+     1130,
+     1260
+    ],
+    "lampside": [
+     520,
+     1340
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1100,
+     1000,
+     950
+    ],
+    "close": [
+     1150,
+     1050,
+     720
+    ]
+   }
+  },
+  "L2": {
+   "image": "shots/L2.jpg",
+   "hero_h": 620,
+   "dog_h": 215,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1100,
+     1330
+    ],
+    "dog": [
+     1420,
+     1310
+    ],
+    "left": [
+     450,
+     1390
+    ],
+    "right": [
+     1950,
+     1400
+    ],
+    "tv": [
+     1130,
+     1260
+    ],
+    "lampside": [
+     520,
+     1340
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1100,
+     1000,
+     950
+    ],
+    "close": [
+     1150,
+     1050,
+     720
+    ]
+   }
+  },
+  "L3": {
+   "image": "shots/L3.jpg",
+   "hero_h": 700,
+   "dog_h": 235,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1500,
+     1300
+    ],
+    "dog": [
+     1250,
+     1330
+    ],
+    "bin": [
+     1300,
+     1290
+    ],
+    "left": [
+     500,
+     1400
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1500,
+     950,
+     950
+    ],
+    "close": [
+     1450,
+     1000,
+     720
+    ]
+   }
+  },
+  "L4": {
+   "image": "shots/L4.jpg",
+   "hero_h": 640,
+   "dog_h": 215,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1500,
+     1350
+    ],
+    "dog": [
+     1750,
+     1380
+    ],
+    "left": [
+     450,
+     1420
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1600,
+     1000,
+     950
+    ]
+   }
+  },
+  "S1": {
+   "image": "shots/S1.jpg"
+  },
+  "S2": {
+   "image": "shots/S2.jpg"
+  },
+  "S3": {
+   "image": "shots/S3.jpg",
+   "marks": {
+    "fumes": [
+     800,
+     900
+    ]
+   }
+  },
+  "S4": {
+   "image": "shots/S4.jpg"
+  },
+  "S5": {
+   "image": "shots/S5.jpg"
+  }
+ },
+ "title": "Your Power Goes Out for 3 Days. What Do You Do?",
+ "format": "long",
+ "shots": [
+  {
+   "set": "S1",
+   "say": "The power just went out. The whole street is dark. And the utility says it could be three days.",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1100,
+      760,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "set": "L1",
+   "say": "What you do in the first hour decides how the next three go.",
+   "direct": "lean in, serious",
+   "camera": [
+    {
+     "view": "medium"
+    },
+    {
+     "at": "end",
+     "view": [
+      1250,
+      980,
+      880
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "think",
+      "face": "right"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   }
+  },
+  {
+   "set": "L1",
+   "say": "First, light. Grab a flashlight or a battery lantern. And you are in luck, you are already wearing a headlamp.",
+   "direct": "dry, amused",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "lean_talk",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   }
+  },
+  {
+   "set": "S2",
+   "say": "Second, the fridge. Do not open it.",
+   "direct": "firm and short",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1500,
+      800,
+      950
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "A closed fridge keeps food cold for about four hours. A full freezer, about two days. A half-full one, about one.",
+   "direct": "clear, steady",
+   "header": "THE FRIDGE RULES",
+   "rows": [
+    [
+     "FRIDGE",
+     "About 4 hours if you keep it shut"
+    ],
+    [
+     "FULL FREEZER",
+     "About 48 hours"
+    ],
+    [
+     "HALF FREEZER",
+     "About 24 hours"
+    ]
+   ],
+   "takeaway": "When in doubt, throw it out"
+  },
+  {
+   "set": "L3",
+   "say": "After four hours, throw out the perishable food. Never taste it to check. When in doubt, throw it out.",
+   "direct": "serious",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "bin",
+      "do": "lean_talk",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "four",
+     "fx": "sticker",
+     "text": "TOSS IT AFTER 4 HOURS"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "Third, water. Plan on one gallon per person, per day, for drinking and cleaning, for at least three days.",
+   "direct": "practical",
+   "header": "WATER AND FOOD",
+   "rows": [
+    [
+     "WATER",
+     "1 gallon per person per day"
+    ],
+    [
+     "FOR",
+     "Drinking and sanitation"
+    ],
+    [
+     "PLAN",
+     "At least 3 days"
+    ]
+   ],
+   "takeaway": "Store it before the storm"
+  },
+  {
+   "set": "L4",
+   "say": "Fourth, and this is the one that kills people.",
+   "direct": "low and grave, a pause before 'kills'",
+   "camera": [
+    {
+     "view": "wide"
+    },
+    {
+     "at": "end",
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "left",
+      "to": "hero",
+      "for": 2.0,
+      "do": "shock"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "left"
+     }
+    ]
+   },
+   "events": [
+    {
+     "fx": "dark",
+     "level": 110
+    },
+    {
+     "on": "kills",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "S3",
+   "say": "Never run a generator, a grill, or anything that burns fuel inside. Not in the garage. Not near a window.",
+   "direct": "urgent and commanding",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      900,
+      880,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "set": "S3",
+   "say": "Carbon monoxide has no smell and no colour. And a fan will not clear it.",
+   "direct": "hushed and ominous",
+   "camera": [
+    {
+     "view": [
+      900,
+      880,
+      1000
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      780,
+      800,
+      760
+     ]
+    }
+   ],
+   "events": [
+    {
+     "at": 0.3,
+     "fx": "smoke",
+     "mark": "fumes",
+     "tone": [
+      200,
+      205,
+      215
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "Keep the generator well away from doors, windows and vents. And put a battery-backup carbon monoxide alarm on every level of your home.",
+   "direct": "firm",
+   "header": "CARBON MONOXIDE",
+   "rows": [
+    [
+     "GENERATOR",
+     "Outside, away from doors and windows"
+    ],
+    [
+     "INDOORS",
+     "Never a grill or anything that burns fuel"
+    ],
+    [
+     "ALARM",
+     "Battery backup, every level"
+    ]
+   ],
+   "takeaway": "A fan will not clear it"
+  },
+  {
+   "set": "L1",
+   "say": "Fifth, unplug your electronics. When the power comes back, it can come back with a surge.",
+   "direct": "practical",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "tv",
+      "do": "lean_talk",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   }
+  },
+  {
+   "set": "L1",
+   "say": "And leave one light switched on, so you know the moment it returns.",
+   "direct": "gentle, smiling",
+   "camera": [
+    {
+     "view": [
+      800,
+      1000,
+      950
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "lampside",
+      "do": "point",
+      "face": "left"
+     }
+    ],
+    "dog": [
+     {
+      "from": [
+       820,
+       1330
+      ],
+      "do": "sit",
+      "face": "left"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "light",
+     "fx": "sticker",
+     "text": "LEAVE ONE LIGHT ON"
+    }
+   ]
+  },
+  {
+   "set": "S4",
+   "say": "Day one. Day two. The hardest part now is the boredom.",
+   "direct": "dry humour",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      700,
+      860,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Then, on day three... click. Lights. The fridge hums.",
+   "direct": "hope rising",
+   "camera": [
+    {
+     "view": "wide"
+    },
+    {
+     "at": "end",
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "shock",
+      "face": "right"
+     },
+     {
+      "on": "Lights",
+      "do": "celebrate"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "play"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "click",
+     "fx": "hit"
+    },
+    {
+     "on": "Lights",
+     "fx": "sparkle",
+     "actor": "hero"
+    }
+   ]
+  },
+  {
+   "set": "S5",
+   "say": "You did not panic. You did not open that fridge. You did it right.",
+   "direct": "quiet pride",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1050,
+      820,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "Light. Fridge. Water. Fuel outside. Unplug.",
+   "direct": "quick recap",
+   "header": "THE RECAP",
+   "rows": [
+    [
+     "LIGHT",
+     ""
+    ],
+    [
+     "FRIDGE CLOSED",
+     ""
+    ],
+    [
+     "WATER STORED",
+     ""
+    ],
+    [
+     "FUEL OUTSIDE",
+     ""
+    ],
+    [
+     "UNPLUG",
+     ""
+    ]
+   ],
+   "takeaway": ""
+  },
+  {
+   "type": "card",
+   "say": "Keep a kit ready. A flashlight, spare batteries, a battery radio, water, food that keeps, and a phone charger with a backup battery.",
+   "direct": "friendly",
+   "header": "BEFORE THE POWER GOES",
+   "rows": [
+    [
+     "FLASHLIGHT",
+     ""
+    ],
+    [
+     "SPARE BATTERIES",
+     ""
+    ],
+    [
+     "BATTERY RADIO",
+     ""
+    ],
+    [
+     "WATER",
+     ""
+    ],
+    [
+     "FOOD THAT KEEPS",
+     ""
+    ],
+    [
+     "PHONE CHARGER",
+     ""
+    ]
+   ],
+   "takeaway": "Pack it today"
+  },
+  {
+   "set": "L2",
+   "say": "Follow for the next scenario. Your move.",
+   "direct": "cheeky and upbeat",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "wave",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "play"
+     }
+    ]
+   },
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "pop"
+    }
+   ]
+  }
+ ]
+}

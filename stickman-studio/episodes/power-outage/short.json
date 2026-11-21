@@ -1,0 +1,411 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.1-flash-tts-preview"
+ ],
+ "tts_batch": 6,
+ "max_wpm": 160,
+ "gap": 0.35,
+ "sets": {
+  "L1": {
+   "image": "shots/L1.jpg",
+   "hero_h": 620,
+   "dog_h": 215,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1100,
+     1330
+    ],
+    "dog": [
+     1420,
+     1310
+    ],
+    "left": [
+     450,
+     1390
+    ],
+    "right": [
+     1950,
+     1400
+    ],
+    "tv": [
+     1130,
+     1260
+    ],
+    "lampside": [
+     520,
+     1340
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1100,
+     1000,
+     950
+    ],
+    "close": [
+     1150,
+     1050,
+     720
+    ]
+   }
+  },
+  "L2": {
+   "image": "shots/L2.jpg",
+   "hero_h": 620,
+   "dog_h": 215,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1100,
+     1330
+    ],
+    "dog": [
+     1420,
+     1310
+    ],
+    "left": [
+     450,
+     1390
+    ],
+    "right": [
+     1950,
+     1400
+    ],
+    "tv": [
+     1130,
+     1260
+    ],
+    "lampside": [
+     520,
+     1340
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1100,
+     1000,
+     950
+    ],
+    "close": [
+     1150,
+     1050,
+     720
+    ]
+   }
+  },
+  "L3": {
+   "image": "shots/L3.jpg",
+   "hero_h": 700,
+   "dog_h": 235,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1500,
+     1300
+    ],
+    "dog": [
+     1250,
+     1330
+    ],
+    "bin": [
+     1300,
+     1290
+    ],
+    "left": [
+     500,
+     1400
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1500,
+     950,
+     950
+    ],
+    "close": [
+     1450,
+     1000,
+     720
+    ]
+   }
+  },
+  "L4": {
+   "image": "shots/L4.jpg",
+   "hero_h": 640,
+   "dog_h": 215,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1500,
+     1350
+    ],
+    "dog": [
+     1750,
+     1380
+    ],
+    "left": [
+     450,
+     1420
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1600,
+     1000,
+     950
+    ]
+   }
+  },
+  "S1": {
+   "image": "shots/S1.jpg"
+  },
+  "S2": {
+   "image": "shots/S2.jpg"
+  },
+  "S3": {
+   "image": "shots/S3.jpg",
+   "marks": {
+    "fumes": [
+     800,
+     900
+    ]
+   }
+  },
+  "S4": {
+   "image": "shots/S4.jpg"
+  },
+  "S5": {
+   "image": "shots/S5.jpg"
+  }
+ },
+ "title": "Power out for 3 days? Do this first.",
+ "format": "short",
+ "shots": [
+  {
+   "set": "S1",
+   "say": "The power just went out, and it could be three days. What do you do?",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "view": [
+      1150,
+      900,
+      1300
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1120,
+      820,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "set": "S2",
+   "say": "First, do not open the fridge. It keeps food cold for about four hours.",
+   "direct": "firm",
+   "camera": [
+    {
+     "view": [
+      1550,
+      820,
+      1250
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1520,
+      780,
+      980
+     ]
+    }
+   ],
+   "events": [
+    {
+     "on": "four",
+     "fx": "sticker",
+     "text": "FRIDGE: 4 HOURS"
+    }
+   ]
+  },
+  {
+   "set": "L3",
+   "say": "A full freezer, about two days.",
+   "direct": "quick",
+   "camera": [
+    {
+     "view": [
+      1500,
+      950,
+      1300
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "point",
+      "face": "right"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "two",
+     "fx": "sticker",
+     "text": "FREEZER: 2 DAYS"
+    }
+   ]
+  },
+  {
+   "set": "S3",
+   "say": "Never run a generator or a grill inside. Carbon monoxide has no smell, and a fan will not clear it.",
+   "direct": "hushed, ominous",
+   "camera": [
+    {
+     "view": [
+      900,
+      880,
+      1300
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      800,
+      820,
+      1000
+     ]
+    }
+   ],
+   "events": [
+    {
+     "on": "Carbon",
+     "fx": "sticker",
+     "text": "NO SMELL, NO COLOUR"
+    },
+    {
+     "at": 0.3,
+     "fx": "smoke",
+     "mark": "fumes",
+     "tone": [
+      200,
+      205,
+      215
+     ]
+    }
+   ]
+  },
+  {
+   "set": "L1",
+   "say": "Unplug your electronics, and leave one light on.",
+   "direct": "practical",
+   "camera": [
+    {
+     "view": [
+      700,
+      1000,
+      1300
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "lampside",
+      "do": "lean_talk",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": [
+       820,
+       1330
+      ],
+      "do": "sit",
+      "face": "left"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "Unplug",
+     "fx": "sticker",
+     "text": "UNPLUG"
+    },
+    {
+     "on": "light",
+     "fx": "sticker",
+     "text": "LEAVE ONE LIGHT ON"
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Follow for more ways to not die.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "view": [
+      1150,
+      1000,
+      1300
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "wave",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "play"
+     }
+    ]
+   }
+  }
+ ]
+}

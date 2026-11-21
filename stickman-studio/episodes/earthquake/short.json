@@ -1,0 +1,333 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A clear, warm, confident male narrator of educational animated videos. Very slow and deliberate, about 110 words per minute, crisp enunciation, a clear pause of about a second between sentences, never rushed, even on exciting lines.\n",
+ "max_wpm": 170,
+ "gap": 0.35,
+ "sets": {
+  "V1": {
+   "image": "shots/V1.jpg",
+   "crop": 1.0
+  },
+  "V2": {
+   "image": "shots/V2.jpg",
+   "crop": 1.0
+  },
+  "V3": {
+   "image": "shots/V3.jpg",
+   "crop": 1.0
+  },
+  "V4": {
+   "image": "shots/V4.jpg",
+   "crop": 1.0
+  },
+  "V5": {
+   "image": "shots/V5.jpg",
+   "crop": 1.0
+  },
+  "V6": {
+   "image": "shots/V6.jpg",
+   "crop": 1.0
+  },
+  "V7": {
+   "image": "shots/V7.jpg",
+   "crop": 1.0
+  },
+  "V8": {
+   "image": "shots/V8.jpg",
+   "crop": 1.0
+  },
+  "V9": {
+   "image": "shots/V9.jpg",
+   "crop": 1.0
+  },
+  "V10": {
+   "image": "shots/V10.jpg",
+   "crop": 1.0
+  }
+ },
+ "title": "Earthquake? Do NOT run outside.",
+ "format": "short",
+ "tts_batch": 4,
+ "shots": [
+  {
+   "set": "V1",
+   "say": "The ground starts shaking. What do you do right now?",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.56
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.54
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "rumble"
+    },
+    {
+     "at": 0.3,
+     "fx": "shake",
+     "amp": 9,
+     "to_at": 3.2
+    },
+    {
+     "at": 0,
+     "fx": "dust"
+    }
+   ]
+  },
+  {
+   "set": "V2",
+   "say": "Do not run outside.",
+   "direct": "firm",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.48
+    }
+   ],
+   "events": [
+    {
+     "on": "run",
+     "fx": "hit"
+    },
+    {
+     "at": 0,
+     "fx": "dust"
+    }
+   ]
+  },
+  {
+   "set": "V3",
+   "say": "Do not stand in a doorway.",
+   "direct": "firm",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.48
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.45999999999999996
+    }
+   ],
+   "events": [
+    {
+     "on": "doorway",
+     "fx": "hit"
+    },
+    {
+     "at": 0,
+     "fx": "dust"
+    }
+   ]
+  },
+  {
+   "set": "V4",
+   "say": "Drop, cover, and hold on.",
+   "direct": "loud and steady",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.62
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.6
+    }
+   ],
+   "events": [
+    {
+     "on": "Drop",
+     "fx": "sticker",
+     "text": "DROP"
+    },
+    {
+     "on": "cover",
+     "fx": "sticker",
+     "text": "COVER"
+    },
+    {
+     "on": "hold",
+     "fx": "sticker",
+     "text": "HOLD ON"
+    },
+    {
+     "at": 0,
+     "fx": "shake",
+     "amp": 6,
+     "to_at": 2.4
+    }
+   ]
+  },
+  {
+   "set": "V4",
+   "say": "Get under a sturdy table, and protect your head and neck.",
+   "direct": "practical",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.66
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.64
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "dust"
+    }
+   ]
+  },
+  {
+   "set": "V5",
+   "say": "No table? Crawl next to an interior wall, away from windows.",
+   "direct": "practical",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.52
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "wall",
+     "fx": "sticker",
+     "text": "INTERIOR WALL"
+    }
+   ]
+  },
+  {
+   "set": "V6",
+   "say": "In bed? Stay there, and cover your head and neck with a pillow.",
+   "direct": "calm",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.48
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "dust"
+    }
+   ]
+  },
+  {
+   "set": "V7",
+   "say": "Driving? Pull over to a clear area, away from buildings, trees and power lines.",
+   "direct": "clear",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.48
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V8",
+   "say": "Outside? Move to an open area, away from buildings, trees and power lines.",
+   "direct": "clear",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.56
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.54
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V9",
+   "say": "Stay put until the shaking stops. Then expect aftershocks.",
+   "direct": "calm",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.58
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.5599999999999999
+    }
+   ],
+   "events": [
+    {
+     "on": "aftershocks",
+     "fx": "shake",
+     "amp": 5,
+     "to_at": 4.5
+    }
+   ]
+  },
+  {
+   "set": "V10",
+   "say": "Follow for more ways to not die.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.44
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.42
+    }
+   ],
+   "events": []
+  }
+ ]
+}

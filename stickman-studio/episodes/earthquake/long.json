@@ -1,0 +1,551 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A clear, warm, confident male narrator of educational animated videos. Very slow and deliberate, about 110 words per minute, crisp enunciation, a clear pause of about a second between sentences, never rushed, even on exciting lines.\n",
+ "max_wpm": 170,
+ "gap": 0.35,
+ "sets": {
+  "L2": {
+   "image": "shots/L2.jpg",
+   "hero_h": 620,
+   "dog_h": 215,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1100,
+     1330
+    ],
+    "dog": [
+     1420,
+     1310
+    ],
+    "left": [
+     450,
+     1390
+    ],
+    "right": [
+     1950,
+     1400
+    ],
+    "tv": [
+     1130,
+     1260
+    ],
+    "lampside": [
+     520,
+     1340
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1100,
+     1000,
+     950
+    ],
+    "close": [
+     1150,
+     1050,
+     720
+    ]
+   }
+  },
+  "S1": {
+   "image": "shots/S1.jpg"
+  },
+  "S2": {
+   "image": "shots/S2.jpg"
+  },
+  "S3": {
+   "image": "shots/S3.jpg"
+  },
+  "S4": {
+   "image": "shots/S4.jpg"
+  },
+  "S5": {
+   "image": "shots/S5.jpg"
+  },
+  "S6": {
+   "image": "shots/S6.jpg"
+  },
+  "S7": {
+   "image": "shots/S7.jpg"
+  },
+  "S8": {
+   "image": "shots/S8.jpg"
+  }
+ },
+ "title": "Don't Stand in a Doorway! What To Do in an Earthquake",
+ "format": "long",
+ "tts_batch": 4,
+ "shots": [
+  {
+   "set": "S1",
+   "say": "The ground starts shaking. The shelves rattle. What do you do right now?",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1150,
+      780,
+      1000
+     ]
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "rumble"
+    },
+    {
+     "at": 0.4,
+     "fx": "hit"
+    },
+    {
+     "on": "shelves",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Most people run for a doorway, or run outside. Both are mistakes.",
+   "direct": "firm, slightly dramatic",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "shock",
+      "face": "right"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "play"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "doorway",
+     "fx": "hit"
+    },
+    {
+     "on": "outside",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Here is what experts say to do instead. Drop. Cover. And hold on.",
+   "direct": "clear and steady",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "point",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "Drop",
+     "fx": "sticker",
+     "text": "DROP"
+    },
+    {
+     "on": "Cover",
+     "fx": "sticker",
+     "text": "COVER"
+    },
+    {
+     "on": "hold",
+     "fx": "sticker",
+     "text": "HOLD ON"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "Drop to your hands and knees. Cover your head and neck with one arm. And hold on to something sturdy until the shaking stops.",
+   "direct": "firm, teacher voice",
+   "header": "DROP, COVER, HOLD ON",
+   "rows": [
+    [
+     "DROP",
+     "Onto your hands and knees"
+    ],
+    [
+     "COVER",
+     "Your head and neck with one arm"
+    ],
+    [
+     "HOLD ON",
+     "To something sturdy until it stops"
+    ]
+   ],
+   "takeaway": "Stay low, stay covered, stay put"
+  },
+  {
+   "set": "S2",
+   "say": "Get under a sturdy table or desk if there is one. If not, crawl next to an interior wall, away from windows.",
+   "direct": "practical",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1300,
+      1000,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "set": "S3",
+   "say": "Myth one: stand in a doorway. That idea comes from old adobe houses. In modern buildings, a doorway is no safer, and it does not protect you from falling objects.",
+   "direct": "serious, myth-busting",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1376,
+      700,
+      900
+     ]
+    }
+   ],
+   "events": [
+    {
+     "on": "Myth",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "S4",
+   "say": "Myth two: run outside. Glass, bricks and pieces of the building can fall on you. Stay put, and get under a table.",
+   "direct": "urgent",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1200,
+      700,
+      1000
+     ]
+    }
+   ],
+   "events": [
+    {
+     "on": "Myth",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "Myth three: the triangle of life. The USGS says it does not apply to buildings built in the United States. Drop, cover and hold on is still the best advice.",
+   "direct": "matter-of-fact",
+   "header": "THREE MYTHS",
+   "rows": [
+    [
+     "DOORWAY",
+     "No safer in modern buildings"
+    ],
+    [
+     "RUN OUT",
+     "Glass and bricks can fall"
+    ],
+    [
+     "TRIANGLE",
+     "Triangle of Life: not for US buildings (USGS)"
+    ]
+   ],
+   "takeaway": "Drop, cover, hold on"
+  },
+  {
+   "set": "S5",
+   "say": "In bed? Stay there. Cover your head and neck with a pillow.",
+   "direct": "calm",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1100,
+      800,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "set": "S6",
+   "say": "Driving? Pull over to a clear area, away from buildings, trees, overpasses and power lines. Then stay in the car.",
+   "direct": "clear",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      900,
+      800,
+      1100
+     ]
+    }
+   ]
+  },
+  {
+   "set": "S7",
+   "say": "Outside? Stay outside. Move to an open area, away from buildings, trees, streetlights and power lines.",
+   "direct": "clear",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1500,
+      900,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "When the shaking stops, expect aftershocks. If one comes, drop, cover and hold on again.",
+   "direct": "serious",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "lean_talk",
+      "face": "right",
+      "mouth": "talk"
+     },
+     {
+      "on": "aftershocks",
+      "do": "shock"
+     },
+     {
+      "on": "drop",
+      "do": "crouch_look",
+      "mood": "scared"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "aftershocks",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Check yourself for injuries. For a medical emergency, call emergency services. For everything else, text instead of calling, so the phone lines stay free.",
+   "direct": "practical",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "lean_talk",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "text",
+     "fx": "sticker",
+     "text": "TEXT, DON'T CALL"
+    }
+   ]
+  },
+  {
+   "set": "S8",
+   "say": "Smell gas? Leave the building, and call from outside.",
+   "direct": "short and firm",
+   "camera": [
+    {
+     "view": [
+      1245,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1400,
+      800,
+      1100
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "Drop, cover, hold on. Stay put. Text, do not call.",
+   "direct": "quick recap",
+   "header": "THE RECAP",
+   "rows": [
+    [
+     "DROP",
+     ""
+    ],
+    [
+     "COVER",
+     ""
+    ],
+    [
+     "HOLD ON",
+     ""
+    ],
+    [
+     "STAY PUT",
+     ""
+    ],
+    [
+     "TEXT, DO NOT CALL",
+     ""
+    ]
+   ],
+   "takeaway": ""
+  },
+  {
+   "set": "L2",
+   "say": "Follow for the next scenario. Your move.",
+   "direct": "cheeky and upbeat",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "wave",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "play"
+     }
+    ]
+   },
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "pop"
+    }
+   ]
+  }
+ ]
+}

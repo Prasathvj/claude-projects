@@ -1,0 +1,309 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A confident, punchy male narrator of fast-paced viral explainer Shorts. Energetic and clear, about 160 words per minute, crisp enunciation, only a very short pause between sentences, a bright hook on the first line, never sleepy.\n",
+ "max_wpm": 215,
+ "gap": 0.15,
+ "format": "short",
+ "tts_batch": 4,
+ "title": "Your Car Is Stuck in Snow. Now What?",
+ "sets": {
+  "K0": {
+   "clip": "shots/K0.mp4",
+   "crop": 1.0,
+   "loop": "hold",
+   "delogo": [
+    850,
+    1680,
+    200,
+    235
+   ]
+  },
+  "K1": {
+   "clip": "shots/K1.mp4",
+   "crop": 1.0,
+   "loop": "hold",
+   "delogo": [
+    850,
+    1680,
+    200,
+    235
+   ]
+  },
+  "K2": {
+   "clip": "shots/K2.mp4",
+   "crop": 1.0,
+   "loop": "hold",
+   "delogo": [
+    850,
+    1680,
+    200,
+    235
+   ]
+  },
+  "W3": {
+   "image": "shots/W3.jpg",
+   "crop": 1.0
+  },
+  "W4": {
+   "image": "shots/W4.jpg",
+   "crop": 1.0
+  },
+  "W5": {
+   "image": "shots/W5.jpg",
+   "crop": 1.0
+  },
+  "W6": {
+   "image": "shots/W6.jpg",
+   "crop": 1.0
+  },
+  "W7": {
+   "image": "shots/W7.jpg",
+   "crop": 1.0
+  }
+ },
+ "shots": [
+  {
+   "set": "K0",
+   "say": "Your car is stuck in snow. There is one mistake that makes it much worse. Can you guess it? Pick one.",
+   "direct": "curious, teasing hook",
+   "camera": [
+    {
+     "z": 1.0,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.04,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0.1,
+     "fx": "sticker",
+     "text": "GUESS THE MISTAKE?"
+    },
+    {
+     "on": "guess",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "K1",
+   "say": "Do not spin the wheels. That digs you in deeper.",
+   "direct": "firm, then dry",
+   "camera": [
+    {
+     "z": 1.0,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.04,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "spin",
+     "fx": "verdict",
+     "kind": "cross",
+     "pos": [
+      0.18,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "spin",
+     "fx": "sfx",
+     "name": "thud"
+    },
+    {
+     "on": "deeper",
+     "fx": "shake",
+     "amp": 8,
+     "to_at": 1.2
+    }
+   ]
+  },
+  {
+   "set": "W3",
+   "say": "First, clear the snow from around the tires, and from under the car.",
+   "direct": "clear, practical",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "First",
+     "fx": "verdict",
+     "kind": "check",
+     "pos": [
+      0.2,
+      0.28
+     ],
+     "size": 300
+    },
+    {
+     "on": "First",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "W4",
+   "say": "Then move a little at a time. Back up, then drive forward over packed snow.",
+   "direct": "clear, practical",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.15,
+     "fy": 0.5
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "W5",
+   "say": "Still stuck? Call for help, and stay with your car.",
+   "direct": "calm, firm",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "stay",
+     "fx": "sticker",
+     "text": "STAY WITH YOUR CAR"
+    }
+   ]
+  },
+  {
+   "set": "W6",
+   "say": "This step can save your life. Clear the tailpipe before you run the engine. A blocked pipe can fill the car with carbon monoxide.",
+   "direct": "serious, urgent",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "save",
+     "fx": "sticker",
+     "text": "CLEAR THE TAILPIPE"
+    },
+    {
+     "on": "monoxide",
+     "fx": "sfx",
+     "name": "rumble"
+    }
+   ]
+  },
+  {
+   "set": "W7",
+   "say": "Run it only five to ten minutes an hour, with a window cracked a little.",
+   "direct": "calm, clear",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.15,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "five",
+     "fx": "sticker",
+     "text": "5-10 MIN / HOUR"
+    },
+    {
+     "on": "window",
+     "fx": "verdict",
+     "kind": "check",
+     "pos": [
+      0.84,
+      0.22
+     ],
+     "size": 260
+    }
+   ]
+  },
+  {
+   "set": "K2",
+   "say": "Comment your answer. Follow for the next winter survival tip.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "z": 1.0,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.04,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "Follow",
+     "fx": "sticker",
+     "text": "FOLLOW"
+    },
+    {
+     "on": "Follow",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  }
+ ]
+}

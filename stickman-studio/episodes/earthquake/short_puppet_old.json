@@ -1,0 +1,425 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A clear, warm, confident male narrator of educational animated videos. Very slow and deliberate, about 110 words per minute, crisp enunciation, a clear pause of about a second between sentences, never rushed, even on exciting lines.\n",
+ "max_wpm": 170,
+ "gap": 0.35,
+ "sets": {
+  "L2": {
+   "image": "shots/L2.jpg",
+   "hero_h": 620,
+   "dog_h": 215,
+   "snow": 0,
+   "marks": {
+    "hero": [
+     1100,
+     1330
+    ],
+    "dog": [
+     1420,
+     1310
+    ],
+    "left": [
+     450,
+     1390
+    ],
+    "right": [
+     1950,
+     1400
+    ],
+    "tv": [
+     1130,
+     1260
+    ],
+    "lampside": [
+     520,
+     1340
+    ]
+   },
+   "views": {
+    "wide": [
+     1245,
+     800,
+     1400
+    ],
+    "medium": [
+     1100,
+     1000,
+     950
+    ],
+    "close": [
+     1150,
+     1050,
+     720
+    ]
+   }
+  },
+  "S1": {
+   "image": "shots/S1.jpg"
+  },
+  "S2": {
+   "image": "shots/S2.jpg"
+  },
+  "S3": {
+   "image": "shots/S3.jpg"
+  },
+  "S4": {
+   "image": "shots/S4.jpg"
+  },
+  "S5": {
+   "image": "shots/S5.jpg"
+  },
+  "S6": {
+   "image": "shots/S6.jpg"
+  },
+  "S7": {
+   "image": "shots/S7.jpg"
+  },
+  "S8": {
+   "image": "shots/S8.jpg"
+  }
+ },
+ "title": "Earthquake? Do NOT run outside.",
+ "format": "short",
+ "tts_batch": 4,
+ "shots": [
+  {
+   "set": "S1",
+   "say": "The ground starts shaking. What do you do right now?",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "view": [
+      1100,
+      768,
+      1536
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1100,
+      760,
+      1300
+     ]
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "rumble"
+    },
+    {
+     "at": 0.4,
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "S4",
+   "say": "Do not run outside.",
+   "direct": "firm",
+   "camera": [
+    {
+     "view": [
+      1250,
+      768,
+      1536
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1200,
+      800,
+      1300
+     ]
+    }
+   ],
+   "events": [
+    {
+     "on": "run",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "S3",
+   "say": "Do not stand in a doorway.",
+   "direct": "firm",
+   "camera": [
+    {
+     "view": [
+      1376,
+      768,
+      1536
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1376,
+      740,
+      1300
+     ]
+    }
+   ],
+   "events": [
+    {
+     "on": "doorway",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Drop, cover, and hold on.",
+   "direct": "loud and steady",
+   "camera": [
+    {
+     "view": [
+      1150,
+      1000,
+      1300
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "crouch_look",
+      "face": "right",
+      "mood": "scared"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "Drop",
+     "fx": "sticker",
+     "text": "DROP"
+    },
+    {
+     "on": "cover",
+     "fx": "sticker",
+     "text": "COVER"
+    },
+    {
+     "on": "hold",
+     "fx": "sticker",
+     "text": "HOLD ON"
+    }
+   ]
+  },
+  {
+   "set": "S2",
+   "say": "Get under a sturdy table, and protect your head and neck.",
+   "direct": "practical",
+   "camera": [
+    {
+     "view": [
+      1350,
+      768,
+      1536
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1350,
+      900,
+      1100
+     ]
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "No table? Crawl next to an interior wall, away from windows.",
+   "direct": "practical",
+   "camera": [
+    {
+     "view": [
+      700,
+      1000,
+      1300
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "left",
+      "do": "think",
+      "face": "left"
+     }
+    ],
+    "dog": [
+     {
+      "from": [
+       800,
+       1340
+      ],
+      "do": "sit",
+      "face": "left"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "windows",
+     "fx": "sticker",
+     "text": "AWAY FROM WINDOWS"
+    }
+   ]
+  },
+  {
+   "set": "S5",
+   "say": "In bed? Stay there, and cover your head and neck with a pillow.",
+   "direct": "calm",
+   "camera": [
+    {
+     "view": [
+      1250,
+      768,
+      1536
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1150,
+      760,
+      1300
+     ]
+    }
+   ]
+  },
+  {
+   "set": "S6",
+   "say": "Driving? Pull over to a clear area, away from buildings, trees and power lines.",
+   "direct": "clear",
+   "camera": [
+    {
+     "view": [
+      1000,
+      768,
+      1536
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1000,
+      700,
+      1300
+     ]
+    }
+   ]
+  },
+  {
+   "set": "S7",
+   "say": "Outside? Move to an open area, away from buildings, trees and power lines.",
+   "direct": "clear",
+   "camera": [
+    {
+     "view": [
+      1420,
+      768,
+      1536
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1420,
+      850,
+      1300
+     ]
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Stay put until the shaking stops. Then expect aftershocks.",
+   "direct": "calm",
+   "camera": [
+    {
+     "view": [
+      1150,
+      1000,
+      1300
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "lean_talk",
+      "face": "right",
+      "mouth": "talk"
+     },
+     {
+      "on": "aftershocks",
+      "do": "shock"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "right"
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "aftershocks",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Follow for more ways to not die.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "view": [
+      1150,
+      1000,
+      1300
+     ]
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "wave",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "play"
+     }
+    ]
+   }
+  }
+ ]
+}

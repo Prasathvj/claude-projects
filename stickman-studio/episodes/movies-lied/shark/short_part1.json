@@ -1,0 +1,200 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A confident, punchy male narrator of fast-paced viral explainer Shorts. Energetic and clear, about 160 words per minute, crisp enunciation, only a very short pause between sentences, a bright hook on the first line, never sleepy.\n",
+ "max_wpm": 215,
+ "gap": 0.15,
+ "format": "short",
+ "tts_batch": 4,
+ "title": "Do you punch a shark in the nose? (Part 1)",
+ "sets": {
+  "K1": {
+   "clip": "shots/K1.mp4",
+   "crop": 1.0,
+   "loop": "hold",
+   "delogo": [
+    850,
+    1680,
+    160,
+    230
+   ]
+  },
+  "K2b": {
+   "clip": "shots/K2b.mp4",
+   "crop": 1.0,
+   "loop": "hold",
+   "delogo": [
+    850,
+    1680,
+    160,
+    230
+   ]
+  },
+  "K2a": {
+   "clip": "shots/K2a.mp4",
+   "crop": 1.0,
+   "loop": "hold",
+   "delogo": [
+    850,
+    1680,
+    160,
+    230
+   ]
+  },
+  "SH4": {
+   "image": "shots/SH4.jpg",
+   "crop": 1.0
+  },
+  "SH5": {
+   "image": "shots/SH5.jpg",
+   "crop": 1.0
+  }
+ },
+ "shots": [
+  {
+   "set": "K1",
+   "say": "A shark is coming straight at you. Do you punch it on the nose? Pick one.",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "z": 1.0,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.05,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "rumble"
+    },
+    {
+     "on": "nose",
+     "fx": "sticker",
+     "text": "PUNCH ITS NOSE?"
+    }
+   ]
+  },
+  {
+   "set": "K2b",
+   "say": "Movies say a punch on the nose saves you. Experts say, not so fast.",
+   "direct": "dramatic, then dry",
+   "camera": [
+    {
+     "z": 1.0,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.05,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "punch",
+     "fx": "sfx",
+     "name": "thud"
+    },
+    {
+     "on": "fast",
+     "fx": "verdict",
+     "kind": "cross",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    }
+   ]
+  },
+  {
+   "set": "K2a",
+   "say": "Hits to the snout may only help for a moment, and the shark can come back.",
+   "direct": "serious",
+   "camera": [
+    {
+     "z": 1.0,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.05,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "back",
+     "fx": "sfx",
+     "name": "whoosh"
+    }
+   ]
+  },
+  {
+   "set": "SH4",
+   "say": "If it bites, go for the eyes and the gills.",
+   "direct": "firm, clear",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "eyes",
+     "fx": "sticker",
+     "text": "EYES + GILLS"
+    },
+    {
+     "on": "eyes",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "SH5",
+   "say": "But there is a smarter move. Part 2 is next. Follow, so you do not miss it.",
+   "direct": "sly, teasing",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.5
+    }
+   ],
+   "events": [
+    {
+     "on": "Follow",
+     "fx": "sticker",
+     "text": "PART 2 NEXT"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,272 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A confident, punchy male narrator of fast-paced viral explainer Shorts. Energetic and clear, about 160 words per minute, crisp enunciation, only a very short pause between sentences, a bright hook on the first line, never sleepy.\n",
+ "max_wpm": 215,
+ "gap": 0.15,
+ "format": "short",
+ "tts_batch": 4,
+ "title": "Quicksand does NOT swallow you whole (Movies Lied To You)",
+ "sets": {
+  "Q1": {
+   "image": "shots/Q1.jpg",
+   "crop": 1.0
+  },
+  "Q2": {
+   "image": "shots/Q2.jpg",
+   "crop": 1.0
+  },
+  "Q3": {
+   "image": "shots/Q3.jpg",
+   "crop": 1.0
+  },
+  "Q4": {
+   "image": "shots/Q4.jpg",
+   "crop": 1.0
+  },
+  "Q5": {
+   "image": "shots/Q5.jpg",
+   "crop": 1.0
+  },
+  "Q6": {
+   "image": "shots/Q6.jpg",
+   "crop": 1.0
+  },
+  "Q7": {
+   "image": "shots/Q7.jpg",
+   "crop": 1.0
+  }
+ },
+ "shots": [
+  {
+   "set": "Q1",
+   "say": "Stuck in quicksand. Do you struggle, or stay calm? Pick one.",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.49
+    }
+   ],
+   "events": [
+    {
+     "at": 0.1,
+     "fx": "shake",
+     "amp": 6,
+     "to_at": 1.2
+    },
+    {
+     "on": "struggle",
+     "fx": "sticker",
+     "text": "STRUGGLE OR STAY CALM?"
+    }
+   ]
+  },
+  {
+   "set": "Q2",
+   "say": "Movies say it swallows you whole. That is a lie.",
+   "direct": "dramatic, then flat",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.49
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "rumble"
+    },
+    {
+     "on": "lie",
+     "fx": "verdict",
+     "kind": "cross",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "lie",
+     "fx": "sfx",
+     "name": "thud"
+    }
+   ]
+  },
+  {
+   "set": "Q3",
+   "say": "Your body floats, usually only to your waist.",
+   "direct": "calm, amazed",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.49
+    }
+   ],
+   "events": [
+    {
+     "on": "floats",
+     "fx": "verdict",
+     "kind": "check",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "floats",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "Q4",
+   "say": "The real problem is panic. Struggling stirs the sand, and you sink deeper.",
+   "direct": "urgent",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.49
+    }
+   ],
+   "events": [
+    {
+     "on": "Struggling",
+     "fx": "verdict",
+     "kind": "cross",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "Struggling",
+     "fx": "sfx",
+     "name": "thud"
+    }
+   ]
+  },
+  {
+   "set": "Q5",
+   "say": "So lean back, spread your weight, and slowly wiggle your legs.",
+   "direct": "calm, clear",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.49
+    }
+   ],
+   "events": [
+    {
+     "on": "lean",
+     "fx": "verdict",
+     "kind": "check",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "lean",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "Q6",
+   "say": "The real killers are exhaustion, and a rising tide.",
+   "direct": "serious",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.52
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.51
+    }
+   ],
+   "events": [
+    {
+     "at": 0.2,
+     "fx": "shake",
+     "amp": 5,
+     "to_at": 2.0
+    },
+    {
+     "on": "tide",
+     "fx": "sticker",
+     "text": "RISING TIDE"
+    }
+   ]
+  },
+  {
+   "set": "Q7",
+   "say": "Comment your answer. Follow for the next movie lie.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.47
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.45999999999999996
+    }
+   ],
+   "events": [
+    {
+     "on": "Follow",
+     "fx": "sticker",
+     "text": "FOLLOW"
+    }
+   ]
+  }
+ ]
+}

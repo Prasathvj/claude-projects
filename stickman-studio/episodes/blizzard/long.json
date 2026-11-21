@@ -1,0 +1,776 @@
+{
+ "title": "A Blizzard Strands You. What Do You Do?",
+ "format": "long",
+ "voice": "Fenrir",
+ "sets": {
+  "road": {
+   "image": "shots/01.jpg",
+   "hero_h": 400,
+   "dog_h": 135,
+   "snow": 1.0,
+   "marks": {
+    "hero": [
+     1815,
+     1375
+    ],
+    "dog": [
+     1935,
+     1400
+    ],
+    "road_left": [
+     1350,
+     1375
+    ],
+    "road_far": [
+     1150,
+     1375
+    ]
+   },
+   "views": {
+    "wide": [
+     1562,
+     820,
+     1200
+    ],
+    "medium": [
+     1828,
+     1000,
+     900
+    ],
+    "close": [
+     1900,
+     1150,
+     700
+    ]
+   },
+   "glows": [
+    [
+     2098,
+     1153,
+     150,
+     1.4
+    ],
+    [
+     2394,
+     1139,
+     150,
+     1.4
+    ],
+    [
+     1802,
+     1076,
+     110,
+     1.4
+    ]
+   ]
+  },
+  "night": {
+   "image": "shots/night.jpg",
+   "hero_h": 380,
+   "dog_h": 128,
+   "snow": 1.0,
+   "marks": {
+    "hero": [
+     1720,
+     1321
+    ],
+    "dog": [
+     1926,
+     1355
+    ],
+    "exhaust": [
+     900,
+     1285
+    ]
+   },
+   "views": {
+    "wide": [
+     1314,
+     800,
+     1400
+    ],
+    "medium": [
+     1500,
+     1000,
+     900
+    ],
+    "exhaust": [
+     1000,
+     1100,
+     700
+    ]
+   },
+   "glows": [
+    [
+     1431,
+     1080,
+     120,
+     1.4
+    ],
+    [
+     1053,
+     867,
+     100,
+     1.4
+    ]
+   ]
+  },
+  "dawn": {
+   "image": "shots/dawn.jpg",
+   "hero_h": 520,
+   "dog_h": 175,
+   "snow": 0.3,
+   "marks": {
+    "hero": [
+     1640,
+     1270
+    ],
+    "dog": [
+     1850,
+     1310
+    ]
+   },
+   "views": {
+    "wide": [
+     1314,
+     800,
+     1400
+    ],
+    "plow": [
+     1700,
+     780,
+     1000
+    ],
+    "close": [
+     1700,
+     1000,
+     800
+    ]
+   },
+   "glows": [
+    [
+     2064,
+     571,
+     120,
+     1.4
+    ]
+   ]
+  },
+  "phone": {
+   "image": "shots/03.jpg",
+   "snow": 0
+  },
+  "blanket": {
+   "image": "shots/06.jpg",
+   "snow": 0
+  },
+  "dig": {
+   "image": "shots/05.jpg",
+   "snow": 0.9
+  },
+  "darkroad": {
+   "image": "shots/04.jpg",
+   "snow": 1.1
+  }
+ },
+ "shots": [
+  {
+   "set": "road",
+   "say": "Your car just died in a blizzard. What you do in the next ten minutes decides everything.",
+   "direct": "bright, urgent hook, then lean in on \"decides everything\"",
+   "camera": [
+    {
+     "view": "wide"
+    },
+    {
+     "at": "end",
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "road_left",
+      "to": "hero",
+      "for": 1.7,
+      "do": "think"
+     },
+     {
+      "on": "decides",
+      "do": "shock"
+     }
+    ],
+    "dog": [
+     {
+      "at": 0.3,
+      "from": [
+       1250,
+       1400
+      ],
+      "to": "dog",
+      "for": 1.7
+     }
+    ]
+   },
+   "events": [
+    {
+     "on": "decides",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "phone",
+   "say": "You are eleven miles from the nearest town. The snow is coming sideways. And your phone just lost its signal.",
+   "direct": "flat, deadpan, a little tired",
+   "camera": [
+    {
+     "view": [
+      1314,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1700,
+      760,
+      900
+     ]
+    }
+   ]
+  },
+  {
+   "set": "road",
+   "say": "Every instinct says walk for help. It feels like the only move.",
+   "direct": "tempting, almost persuasive, steady pace",
+   "camera": [
+    {
+     "view": "medium"
+    },
+    {
+     "follow": "hero",
+     "dx": -100,
+     "dy": -250,
+     "zoom": 900
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "to": "road_far",
+      "speed": 150,
+      "mood": "happy"
+     }
+    ],
+    "dog": [
+     {
+      "follow": "hero",
+      "dx": 165,
+      "dy": 14
+     }
+    ]
+   }
+  },
+  {
+   "set": "road",
+   "say": "But in a whiteout, you can lose all sense of direction in moments. And a car is far easier to find than a person.",
+   "direct": "serious and clear, steady pace",
+   "camera": [
+    {
+     "follow": "hero",
+     "dx": 200,
+     "dy": -250,
+     "zoom": 900
+    },
+    {
+     "at": "end",
+     "view": "wide"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "do": "think",
+      "face": "left",
+      "mood": "confused"
+     }
+    ],
+    "dog": [
+     {
+      "do": "sit",
+      "face": "left"
+     }
+    ]
+   }
+  },
+  {
+   "type": "card",
+   "say": "Rule one. Stay with the car. It blocks the wind, and searchers look for vehicles. Leave only if help is clearly in sight, about a hundred yards away.",
+   "direct": "firm, teacher voice, steady pace",
+   "header": "STAY WITH THE CAR",
+   "rows": [
+    [
+     "SHELTER",
+     "Blocks the wind, holds heat"
+    ],
+    [
+     "SEARCHERS",
+     "Look for vehicles first"
+    ],
+    [
+     "ON FOOT",
+     "A whiteout makes it easy to lose your way"
+    ]
+   ],
+   "takeaway": "Leave only if help is clearly in sight"
+  },
+  {
+   "set": "phone",
+   "say": "Rule two. Call emergency services, and tell them exactly where you are. If the call will not connect, keep trying.",
+   "direct": "calm and steady",
+   "camera": [
+    {
+     "view": [
+      1700,
+      760,
+      900
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1680,
+      700,
+      780
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "Rule three. Be seen. Tie something bright to the antenna. When the snow eases, raise the hood.",
+   "direct": "brisk and practical",
+   "header": "BE SEEN",
+   "rows": [
+    [
+     "ANTENNA",
+     "Tie on something bright"
+    ],
+    [
+     "HOOD",
+     "Raise it when the snow eases"
+    ],
+    [
+     "PHONE",
+     "Save battery, keep trying"
+    ]
+   ],
+   "takeaway": "Make the car easy to find"
+  },
+  {
+   "set": "night",
+   "say": "Night falls. Now you need heat, and the engine is your only heater.",
+   "direct": "quiet, tension building, steady pace",
+   "camera": [
+    {
+     "view": "wide"
+    },
+    {
+     "at": "end",
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "sad",
+      "face": "left"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "left"
+     }
+    ]
+   }
+  },
+  {
+   "type": "card",
+   "say": "Run it for about ten minutes every hour. Heater on. Then switch it off to save fuel.",
+   "direct": "practical, steady",
+   "header": "THE ENGINE RULE",
+   "rows": [
+    [
+     "RUN",
+     "About 10 minutes each hour"
+    ],
+    [
+     "HEAT",
+     "Heater on, then switch off"
+    ],
+    [
+     "FUEL",
+     "Make it last"
+    ]
+   ],
+   "takeaway": "Just enough to warm the car"
+  },
+  {
+   "set": "night",
+   "say": "But this is where people die.",
+   "direct": "low and grave, a short pause before \"die\"",
+   "camera": [
+    {
+     "view": "medium"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "do": "shock",
+      "face": "left"
+     }
+    ],
+    "dog": [
+     {
+      "do": "sit",
+      "face": "left"
+     }
+    ]
+   },
+   "events": [
+    {
+     "fx": "dark",
+     "level": 120
+    },
+    {
+     "on": "die",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "night",
+   "say": "Snow can bury the tailpipe. Then the exhaust has nowhere to go but into your car. Carbon monoxide has no smell and no colour. You cannot sense it coming.",
+   "direct": "hushed and ominous, steady pace",
+   "camera": [
+    {
+     "view": "medium"
+    },
+    {
+     "at": "end",
+     "view": "exhaust",
+     "ease": "smooth"
+    }
+   ],
+   "snow": 0.6,
+   "actors": {
+    "hero": [
+     {
+      "do": "crouch_look",
+      "mood": "scared",
+      "sweat": true
+     }
+    ],
+    "dog": [
+     {
+      "do": "sit"
+     }
+    ]
+   },
+   "events": [
+    {
+     "fx": "dark",
+     "level": 150
+    },
+    {
+     "at": 0.5,
+     "fx": "smoke",
+     "mark": "exhaust",
+     "tone": [
+      175,
+      180,
+      195
+     ]
+    }
+   ]
+  },
+  {
+   "set": "dig",
+   "say": "So before every single time you start the engine, get out and dig the tailpipe clear.",
+   "direct": "urgent and commanding, brisk pace",
+   "camera": [
+    {
+     "view": [
+      1314,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1650,
+      850,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "And even with a clear pipe, crack open a window on the side away from the wind.",
+   "direct": "firm, steady",
+   "header": "CARBON MONOXIDE",
+   "rows": [
+    [
+     "TAILPIPE",
+     "Dig it clear before every run"
+    ],
+    [
+     "WINDOW",
+     "Crack one, away from the wind"
+    ],
+    [
+     "SMELL",
+     "None, so you cannot rely on it"
+    ]
+   ],
+   "takeaway": "A clear pipe is not a guarantee"
+  },
+  {
+   "set": "blanket",
+   "say": "Now, stay warm. Wrap up in blankets, coats, anything you have. Small movements, every so often, keep your blood moving.",
+   "direct": "gentle and reassuring, steady pace",
+   "camera": [
+    {
+     "view": [
+      1314,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1150,
+      760,
+      1100
+     ]
+    }
+   ]
+  },
+  {
+   "set": "blanket",
+   "say": "Your dog's survival strategy is to sit on your lap. Honestly? Not bad.",
+   "direct": "dry humour, smiling",
+   "camera": [
+    {
+     "view": [
+      1150,
+      760,
+      1100
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1400,
+      950,
+      800
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "say": "Watch for the warning signs of hypothermia. Uncontrollable shivering, slow or slurred speech, memory lapses, stumbling, drowsiness. If you see them, tell emergency services at once.",
+   "direct": "serious and clear, steady pace",
+   "header": "HYPOTHERMIA",
+   "rows": [
+    [
+     "SHIVERING",
+     "You cannot stop it"
+    ],
+    [
+     "SPEECH",
+     "Slow or slurred"
+    ],
+    [
+     "MIND",
+     "Memory lapses, drowsiness"
+    ],
+    [
+     "BODY",
+     "Stumbling"
+    ]
+   ],
+   "takeaway": "Tell emergency services at once"
+  },
+  {
+   "set": "darkroad",
+   "say": "The night is long. The wind does not stop. The hardest part now is just waiting.",
+   "direct": "soft and weary, at a natural pace",
+   "camera": [
+    {
+     "view": [
+      1314,
+      800,
+      1400
+     ]
+    },
+    {
+     "at": "end",
+     "view": [
+      1300,
+      700,
+      1100
+     ]
+    }
+   ]
+  },
+  {
+   "set": "dawn",
+   "say": "Then, at dawn... lights. A snowplow, crawling up the road.",
+   "direct": "hope slowly rising",
+   "camera": [
+    {
+     "view": "wide"
+    },
+    {
+     "at": "end",
+     "view": "plow"
+    }
+   ]
+  },
+  {
+   "set": "dawn",
+   "say": "You did not walk. You did not panic. You stayed.",
+   "direct": "quiet pride, steady pace",
+   "camera": [
+    {
+     "view": "close"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "idle",
+      "face": "right",
+      "mood": "happy"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "sit",
+      "face": "left"
+     }
+    ]
+   }
+  },
+  {
+   "type": "card",
+   "say": "Stay with the car. Be seen. Ten minutes of heat an hour. Keep the tailpipe clear. Keep warm.",
+   "direct": "quick recap, brisk",
+   "header": "THE RECAP",
+   "rows": [
+    [
+     "STAY WITH THE CAR",
+     ""
+    ],
+    [
+     "BE SEEN",
+     ""
+    ],
+    [
+     "10 MINUTES OF HEAT AN HOUR",
+     ""
+    ],
+    [
+     "KEEP THE TAILPIPE CLEAR",
+     ""
+    ],
+    [
+     "KEEP WARM",
+     ""
+    ]
+   ],
+   "takeaway": ""
+  },
+  {
+   "type": "card",
+   "say": "And next winter, keep a kit in your car. Blankets, a flashlight, a charger, water, snacks and a shovel.",
+   "direct": "friendly, steady",
+   "header": "BEFORE YOU DRIVE",
+   "rows": [
+    [
+     "BLANKETS",
+     ""
+    ],
+    [
+     "FLASHLIGHT",
+     ""
+    ],
+    [
+     "PHONE CHARGER",
+     ""
+    ],
+    [
+     "WATER AND SNACKS",
+     ""
+    ],
+    [
+     "SHOVEL",
+     ""
+    ]
+   ],
+   "takeaway": "Pack it before the storm"
+  },
+  {
+   "set": "dawn",
+   "say": "Next time, your power goes out for three days. Follow, so you are ready.",
+   "direct": "cheeky and upbeat",
+   "camera": [
+    {
+     "view": "close"
+    }
+   ],
+   "actors": {
+    "hero": [
+     {
+      "from": "hero",
+      "do": "wave",
+      "face": "right",
+      "mouth": "talk"
+     }
+    ],
+    "dog": [
+     {
+      "from": "dog",
+      "do": "play"
+     }
+    ]
+   },
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "pop"
+    }
+   ]
+  }
+ ],
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts"
+ ],
+ "max_wpm": 205
+}

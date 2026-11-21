@@ -1,0 +1,256 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts",
+  "gemini-3.8-flash-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A confident, punchy male narrator of fast-paced viral explainer Shorts. Energetic and clear, about 160 words per minute, crisp enunciation, only a very short pause between sentences, a bright hook on the first line, never sleepy.\n",
+ "max_wpm": 215,
+ "gap": 0.15,
+ "format": "short",
+ "tts_batch": 4,
+ "title": "Never hide under a tree in a storm (Movies Lied To You)",
+ "sets": {
+  "L1": {
+   "image": "shots/L1.jpg",
+   "crop": 1.0
+  },
+  "L2": {
+   "image": "shots/L2.jpg",
+   "crop": 1.0
+  },
+  "L3": {
+   "image": "shots/L3.jpg",
+   "crop": 1.0
+  },
+  "L4": {
+   "image": "shots/L4.jpg",
+   "crop": 1.0
+  },
+  "L5": {
+   "image": "shots/L5.jpg",
+   "crop": 1.0
+  },
+  "L6": {
+   "image": "shots/L6.jpg",
+   "crop": 1.0
+  },
+  "L7": {
+   "image": "shots/L7.jpg",
+   "crop": 1.0
+  }
+ },
+ "shots": [
+  {
+   "set": "L1",
+   "say": "Thunderstorm, and you are outside. Do you hide under a tree? Pick one.",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.58
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.57
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "rumble"
+    },
+    {
+     "at": 0.2,
+     "fx": "shake",
+     "amp": 6,
+     "to_at": 1.4
+    },
+    {
+     "on": "tree",
+     "fx": "sticker",
+     "text": "HIDE UNDER A TREE?"
+    }
+   ]
+  },
+  {
+   "set": "L2",
+   "say": "Movies say a tree is shelter. It is not.",
+   "direct": "smug, then flat",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.49
+    }
+   ],
+   "events": [
+    {
+     "on": "not",
+     "fx": "verdict",
+     "kind": "cross",
+     "pos": [
+      0.82,
+      0.3
+     ],
+     "size": 300
+    },
+    {
+     "on": "not",
+     "fx": "sfx",
+     "name": "thud"
+    }
+   ]
+  },
+  {
+   "set": "L3",
+   "say": "Standing under a tree is the second leading cause of lightning casualties.",
+   "direct": "serious",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.45
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.44
+    }
+   ],
+   "events": [
+    {
+     "at": 0.0,
+     "fx": "hit"
+    },
+    {
+     "at": 0.0,
+     "fx": "sfx",
+     "name": "thud"
+    },
+    {
+     "at": 0.05,
+     "fx": "shake",
+     "amp": 10,
+     "to_at": 1.0
+    }
+   ]
+  },
+  {
+   "set": "L4",
+   "say": "Hear thunder? You are close enough to be struck. It can reach ten miles from the storm.",
+   "direct": "urgent",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.55
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.54
+    }
+   ],
+   "events": [
+    {
+     "on": "ten",
+     "fx": "sticker",
+     "text": "UP TO 10 MILES"
+    }
+   ]
+  },
+  {
+   "set": "L5",
+   "say": "Get inside a sturdy building, or a hard-topped car with the windows up.",
+   "direct": "clear, reassuring",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.52
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.51
+    }
+   ],
+   "events": [
+    {
+     "on": "inside",
+     "fx": "verdict",
+     "kind": "check",
+     "pos": [
+      0.16,
+      0.27
+     ],
+     "size": 300
+    },
+    {
+     "on": "inside",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "L6",
+   "say": "And stay in for thirty minutes after the last thunder.",
+   "direct": "calm",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.52
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.51
+    }
+   ],
+   "events": [
+    {
+     "on": "thirty",
+     "fx": "sticker",
+     "text": "30 MINUTES"
+    }
+   ]
+  },
+  {
+   "set": "L7",
+   "say": "Comment your answer. Follow for the next movie lie.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "z": 1.07,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.17,
+     "fy": 0.49
+    }
+   ],
+   "events": [
+    {
+     "on": "Follow",
+     "fx": "sticker",
+     "text": "FOLLOW"
+    }
+   ]
+  }
+ ]
+}

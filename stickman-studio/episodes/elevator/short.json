@@ -1,0 +1,277 @@
+{
+ "voice": "Fenrir",
+ "tts_model": [
+  "gemini-3.1-flash-tts-preview",
+  "gemini-3.8-flash-lite-tts",
+  "gemini-2.5-flash-preview-tts"
+ ],
+ "voice_profile": "# AUDIO PROFILE: A clear, warm, confident male narrator of educational animated videos. Very slow and deliberate, about 110 words per minute, crisp enunciation, a clear pause of about a second between sentences, never rushed, even on exciting lines.\n",
+ "max_wpm": 170,
+ "gap": 0.35,
+ "sets": {
+  "V1": {
+   "image": "shots/V1.jpg",
+   "crop": 1.0
+  },
+  "V2": {
+   "image": "shots/V2.jpg",
+   "crop": 1.0
+  },
+  "V3": {
+   "image": "shots/V3.jpg",
+   "crop": 1.0
+  },
+  "V4": {
+   "image": "shots/V4.jpg",
+   "crop": 1.0
+  },
+  "V5": {
+   "image": "shots/V5.jpg",
+   "crop": 1.0
+  },
+  "V6": {
+   "image": "shots/V6.jpg",
+   "crop": 1.0
+  },
+  "V7": {
+   "image": "shots/V7.jpg",
+   "crop": 1.0
+  },
+  "V8": {
+   "image": "shots/V8.jpg",
+   "crop": 1.0
+  },
+  "V9": {
+   "image": "shots/V9.jpg",
+   "crop": 1.0
+  },
+  "V10": {
+   "image": "shots/V10.jpg",
+   "crop": 1.0
+  }
+ },
+ "title": "Stuck in an elevator? Do this.",
+ "format": "short",
+ "tts_batch": 4,
+ "shots": [
+  {
+   "set": "V1",
+   "say": "You're stuck in an elevator between floors. What do you do?",
+   "direct": "bright, urgent hook",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.48
+    }
+   ],
+   "events": [
+    {
+     "at": 0,
+     "fx": "sfx",
+     "name": "thud"
+    },
+    {
+     "at": 0.3,
+     "fx": "shake",
+     "amp": 8,
+     "to_at": 1.6
+    }
+   ]
+  },
+  {
+   "set": "V2",
+   "say": "First, don't panic. It's usually a power cut, or the safety system doing its job.",
+   "direct": "calm, reassuring",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.46
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.44
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V3",
+   "say": "Elevators have several independent safety systems that stop the car.",
+   "direct": "clear, confident",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.5
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.48
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V4",
+   "say": "Check the stop button, and the floor button.",
+   "direct": "practical",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.45
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.43
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V5",
+   "say": "Press the call or alarm button, and say where you are.",
+   "direct": "clear",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.42
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.39999999999999997
+    }
+   ],
+   "events": [
+    {
+     "on": "alarm",
+     "fx": "sfx",
+     "name": "ding"
+    }
+   ]
+  },
+  {
+   "set": "V6",
+   "say": "No answer? Use your phone, or bang on the door and shout.",
+   "direct": "urgent",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.42
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.39999999999999997
+    }
+   ],
+   "events": [
+    {
+     "on": "bang",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "V7",
+   "say": "Now stay inside. It is the safest place.",
+   "direct": "calm, steady",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.55
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.53
+    }
+   ],
+   "events": []
+  },
+  {
+   "set": "V8",
+   "say": "Never pry the doors open. The car can move again.",
+   "direct": "firm, serious",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.46
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.44
+    }
+   ],
+   "events": [
+    {
+     "on": "Never",
+     "fx": "sticker",
+     "text": "NEVER"
+    },
+    {
+     "on": "pry",
+     "fx": "hit"
+    }
+   ]
+  },
+  {
+   "set": "V9",
+   "say": "Feeling sick, or see smoke? Say so right away.",
+   "direct": "urgent but clear",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.45
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.43
+    }
+   ],
+   "events": [
+    {
+     "on": "smoke",
+     "fx": "sticker",
+     "text": "SAY SO"
+    }
+   ]
+  },
+  {
+   "set": "V10",
+   "say": "Follow for more survival tips.",
+   "direct": "upbeat, cheeky",
+   "camera": [
+    {
+     "z": 1.08,
+     "fx": 0.5,
+     "fy": 0.45
+    },
+    {
+     "at": "end",
+     "z": 1.2,
+     "fy": 0.43
+    }
+   ],
+   "events": []
+  }
+ ]
+}
