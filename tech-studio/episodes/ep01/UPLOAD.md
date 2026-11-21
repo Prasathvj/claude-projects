@@ -36,7 +36,7 @@ Narrated by an AI voice (Google Gemini TTS). Educational content only; not secur
 
 ---
 
-## 2) LONG — `out/ep01-long-final.mp4` (1920×1080, 5:35)
+## 2) LONG — `out/ep01-long-final.mp4` (1920×1080, 5:24)
 
 **Title (47 chars):** Prompt Injection Explained: Hijacking AI Agents
 Alt A (question style): How does a web page hijack your AI agent?
@@ -50,13 +50,13 @@ A recipe page with one hidden line can take over an AI agent. In this video: how
 0:00 A web page that gives orders to AI
 0:36 Chatbot vs AI agent
 1:02 One channel for everything
-1:47 Direct vs indirect prompt injection
-2:26 EchoLeak: the zero-click email
-3:18 From trick to malware (promptware)
-3:49 Why not just fix it?
-4:13 The lethal trifecta + Agents Rule of Two
-4:52 5 habits for using AI agents safely
-5:17 The world talks back
+1:41 Direct vs indirect prompt injection
+2:17 EchoLeak: the zero-click email
+3:09 From trick to malware (promptware)
+3:40 Why not just fix it?
+4:04 The lethal trifecta + Agents Rule of Two
+4:43 5 habits for using AI agents safely
+5:08 The world talks back
 
 Sources:
 - OWASP Top 10 for LLM Applications 2025, LLM01 Prompt Injection: https://genai.owasp.org/llmrisk/llm01/
