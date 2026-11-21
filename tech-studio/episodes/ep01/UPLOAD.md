@@ -11,30 +11,31 @@ Keyword data (vidIQ, 21 Nov 2026, est. monthly YouTube searches · competition 0
 
 ---
 
-## 1) SHORT (post first) — `out/ep01-short-final.mp4` (1080×1920, 37 s)
+## 1) SHORT (post first) — `out/TechDecoded_ep01_short.mp4` (1080×1920, 39.5 s) · channel: TechDecoded with Max
 
-**Title (36 chars):** Can a web page hijack your AI agent?
-Alt: This web page gives orders to AI agents
+**Title (37 chars):** Can a web page hijack your AI agent?
+Alt: This web page is lying to your AI agent
 
 **Description:**
-A normal-looking recipe page hides a message only AI can "see". Your AI agent reads it… and starts taking orders from a stranger. That's prompt injection, the #1 risk on OWASP's list for AI apps.
+A normal-looking recipe page hides a message only AI reads. Ask your AI agent to summarize it, and it starts taking orders from a stranger. That's prompt injection, the #1 risk on OWASP's list for AI apps.
 
-Researchers use one simple rule to stay safe with AI agents. Full video on the channel: [link to long video]
+Security researchers use one simple rule to stay safe with AI agents. Full video on the channel.
 
-Prompt injection explained, indirect prompt injection, AI agent security, and how hidden text can hijack ChatGPT-style agents.
+Sources:
+• OWASP LLM01:2025 Prompt Injection: https://genai.owasp.org/llmrisk/llm01/
+• EchoLeak, CVE-2025-32711 (Aim Labs; fixed by Microsoft in 2025)
+• OpenAI on prompt injection and ChatGPT Atlas (Dec 2025)
+The recipe page and chat are illustrations; the email is a simplified recreation.
 
-Sources: OWASP LLM01:2025 (genai.owasp.org/llmrisk/llm01) · Aim Labs EchoLeak, CVE-2025-32711 (since patched by Microsoft) · OpenAI on hardening ChatGPT Atlas, Dec 2025.
-The pancake page and the chat are illustrations; the email is a simplified recreation.
+Max is an animated host. Narration is AI-generated (Google Gemini text-to-speech); the script is researched and fact-checked.
 
-Narrated by an AI voice (Google Gemini TTS). Educational content only; not security advice for your specific setup.
+#promptinjection #aiagents #aisecurity #shorts
 
-**Tags:** prompt injection, prompt injection explained, ai agent security, indirect prompt injection, prompt injection attack, ai agents, ai security, chatgpt security, llm security, echoleak
+**Tags:** prompt injection, prompt injection explained, ai agent security, indirect prompt injection, prompt injection attack, ai agents, ai security, chatgpt security, llm security, echoleak, ai news
 
 **Pinned comment:** Would you let an AI agent read your email AND browse the web? Yes or no 👇
 
-**Related video:** link the long video once it's live (Shorts "Related video" field).
-
----
+**Settings:** Category Science & Technology · Not made for kids · Altered/synthetic content: No (animated host, AI voice disclosed) · Related video: link the long video once it's live.
 
 ## 2) LONG — `out/ep01-long-final.mp4` (1920×1080, 5:24)
 
