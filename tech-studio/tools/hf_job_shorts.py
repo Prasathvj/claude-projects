@@ -21,11 +21,13 @@ def donut(sid, pct, label, col='#F87736'):
     return f"""<svg class="dn" width="460" height="460" viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" fill="none" stroke="#2A1912" stroke-width="16"/>
 <circle id="{sid}-arc" cx="60" cy="60" r="48" fill="none" stroke="{col}" stroke-width="16" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 60 60)"/>
 <text x="60" y="66" text-anchor="middle" font-family="SD Display" font-weight="900" font-size="26" fill="#F6EEE8" id="{sid}-pct">0%</text></svg>
-<div class="center dl" id="{sid}-lb">{label}</div>"""
-DCSS = ".dn { position:absolute; left:310px; top:400px; } .dl { top:880px; font:900 68px 'SD Display'; color:var(--ink); opacity:0; }"
+<div class="center dl" id="{sid}-lb">{label}</div>{"".join(f'<i class="pp" id="{sid}-p{k}"></i>' for k in range(12))}"""
+DCSS = ".pp { position:absolute; left:532px; top:622px; width:16px; height:16px; border-radius:8px; background:#F87736; opacity:0; } .dn { position:absolute; left:310px; top:400px; } .dl { top:880px; font:900 68px 'SD Display'; color:var(--ink); opacity:0; }"
 def donut_anim(sid, t, pct):
     vals = [f'{round(pct * k / 6)}%' for k in range(1, 7)]
-    return [f'    tl.to("#{sid}-arc", {{ strokeDashoffset:{100 - pct}, duration:.6, ease:"power3.out" }}, {t});'] + steps(f'#{sid}-pct', t, vals, 0.09) + [pop(f'#{sid}-lb', t + 0.35)]
+    import math
+    burst = [f'    tl.fromTo("#{sid}-p{k}", {{ opacity:1, x:0, y:0, scale:1 }}, {{ opacity:0, x:{round(330 * math.cos(k * math.pi / 6))}, y:{round(330 * math.sin(k * math.pi / 6))}, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }}, {round(t + 0.6, 3)});' for k in range(12)]
+    return [f'    tl.to("#{sid}-arc", {{ strokeDashoffset:{100 - pct}, duration:.6, ease:"power3.out" }}, {t});'] + steps(f'#{sid}-pct', t, vals, 0.09) + [pop(f'#{sid}-lb', t + 0.35)] + burst
 
 # =================================================================== job01: developer postings
 def j1():
@@ -43,7 +45,7 @@ def j1():
           f'    tl.to("#s0-pl", {{ strokeDashoffset:0, duration:.7, ease:"power2.out" }}, {t_up - 0.6});', slam('#s0-q', t_up), out(sid)]
     sc += bit_on(sid, 'n', 0, False) + bit_float(sid)
     body += bit(sid, [('n', {'state': 'normal', 'arms': 'type'})])
-    sc_.append(scene(sid, body, '\n'.join(sc), css))
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + sc), css))
     # s1 Indeed chart
     sid = 's1'; t_r = wl(1, 'rising')
     body = f"""<div class="center kk" style="top:330px">US SOFTWARE DEV JOB POSTINGS</div>
@@ -51,11 +53,11 @@ def j1():
 <svg width="900" height="620"><line x1="60" y1="540" x2="860" y2="540" stroke="#5C4337" stroke-width="3"/>
 <polyline id="{sid}-pl" points="60,300 200,420 340,470 480,440 620,380 760,300 860,250" fill="none" stroke="#F87736" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
 <text x="470" y="590" font-family="SD Text" font-weight="600" font-size="28" fill="#9E745A">May 2025</text><text x="760" y="590" font-family="SD Text" font-weight="600" font-size="28" fill="#9E745A">May 2026</text></svg>
-<div class="up" id="{sid}-up">RISING AGAIN ↑</div></div>
+<div class="up" id="{sid}-up">RISING AGAIN ↑</div><div class="gdot" id="{sid}-dot"></div></div>
 <div class="src" style="top:1050px">ILLUSTRATIVE CURVE · SOURCE: INDEED HIRING LAB (JUL 2026)</div>"""
-    css = CSS0 + ".up { position:absolute; right:40px; top:40px; padding:14px 24px; border-radius:18px; background:var(--green); color:#0C3B26; font:900 40px 'SD Display'; opacity:0; }"
-    sc = [fly(f'#{sid}-c', 0.02), f'    tl.to("#{sid}-pl", {{ strokeDashoffset:0, duration:1.4, ease:"power1.inOut" }}, 0.3);', pop(f'#{sid}-up', t_r), out(sid)]
-    sc_.append(scene(sid, body, '\n'.join(sc), css))
+    css = CSS0 + ".gdot { position:absolute; left:-18px; top:-18px; width:36px; height:36px; border-radius:18px; background:#F87736; box-shadow:0 0 0 10px rgba(248,119,54,.25), 0 0 40px #F87736; opacity:0; } .up { position:absolute; right:40px; top:40px; padding:14px 24px; border-radius:18px; background:var(--green); color:#0C3B26; font:900 40px 'SD Display'; opacity:0; }"
+    sc = [fly(f'#{sid}-c', 0.02), f'    tl.to("#{sid}-pl", {{ strokeDashoffset:0, duration:1.4, ease:"power1.inOut" }}, 0.3);', f'    tl.set("#{sid}-dot", {{ x:60, y:300, opacity:1 }}, 0.3);', f'    tl.to("#{sid}-dot", {{ keyframes:[{{ x:200, y:420, duration:.2 }},{{ x:340, y:470, duration:.2 }},{{ x:480, y:440, duration:.2 }},{{ x:620, y:380, duration:.2 }},{{ x:760, y:300, duration:.2 }},{{ x:860, y:250, duration:.2 }}], ease:"none" }}, 0.3);', pop(f'#{sid}-up', t_r), out(sid)]
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + sc), css))
     # s2 who
     sid = 's2'; t_w = wl(2, 'who')
     body = f"""<div class="center who" id="{sid}-w">WHO?</div><div class="lens" id="{sid}-ls"></div>
@@ -64,15 +66,15 @@ def j1():
 .lens { position:absolute; left:340px; top:480px; width:400px; height:400px; border-radius:50%; border:22px solid var(--accent); box-shadow:0 0 60px rgba(248,119,54,.5); opacity:0; }"""
     sc = [f'    tl.fromTo("#{sid}-ls", {{ opacity:0, scale:.3, x:-300 }}, {{ opacity:1, scale:1, x:0, duration:.45, ease:"back.out(1.6)" }}, 0.05);', slam(f'#{sid}-w', t_w), out(sid)]
     sc += bit_on(sid, 'n', 0, False) + bit_float(sid)
-    sc_.append(scene(sid, body, '\n'.join(sc), css))
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + sc), css))
     # s3 donut 71
     sid = 's3'; t = wl(3, 'seventyone')
     body = f'<div class="center kk" style="top:320px">SHARE OF THE GROWTH</div>{donut(sid, 71, "SENIOR ROLES")}'
-    sc_.append(scene(sid, body, '\n'.join(donut_anim(sid, max(0.05, t), 71) + [out(sid)]), CSS0 + DCSS))
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + donut_anim(sid, max(0.05, t), 71) + [out(sid)]), CSS0 + DCSS))
     # s4 donut 37
     sid = 's4'; t = wl(4, 'third')
     body = f'<div class="center kk" style="top:320px">SHARE OF THE GROWTH</div>{donut(sid, 37, "“AI” IN THE TITLE", "#3DDC97")}<div class="src" style="top:1000px">CATEGORIES OVERLAP · SOURCE: INDEED HIRING LAB</div>'
-    sc_.append(scene(sid, body, '\n'.join(donut_anim(sid, max(0.05, t - 0.3), 37) + [out(sid)]), CSS0 + DCSS))
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + donut_anim(sid, max(0.05, t - 0.3), 37) + [out(sid)]), CSS0 + DCSS))
     # s5 below pre-pandemic
     sid = 's5'; t_q = wl(5, 'quarter')
     body = f"""<div class="center kk" style="top:340px">TOTAL SOFTWARE POSTINGS</div>
@@ -82,7 +84,7 @@ def j1():
 .bc { flex:1; display:flex; flex-direction:column; align-items:center; gap:16px; font:800 36px 'SD Display'; color:var(--ink); } .b { width:100%; border-radius:20px 20px 0 0; transform-origin:bottom; transform:scaleY(0); }
 .b.a { height:440px; background:#8C6B5A; } .b.n { height:319px; background:var(--accent); } .pc { top:990px; font:900 120px 'SD Display'; color:var(--red); opacity:0; }"""
     sc = [f'    tl.to("#{sid}-a", {{ scaleY:1, duration:.5, ease:"power3.out" }}, 0.1);', f'    tl.to("#{sid}-b", {{ scaleY:1, duration:.6, ease:"power3.out" }}, 0.4);', slam(f'#{sid}-p', t_q), out(sid)]
-    sc_.append(scene(sid, body, '\n'.join(sc), css))
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + sc), css))
     # s6 not dead, picky
     sid = 's6'; t_d, t_p = wl(6, 'dead'), wl(6, 'picky')
     body = f"""<div class="card" id="{sid}-c" style="top:380px;"><div class="hd"><div class="tile">{icon('doc')}</div><div><div class="lab">JOB BOARD · ILLUSTRATION</div><div class="ttl">Software Engineer</div></div></div>
@@ -93,7 +95,7 @@ def j1():
     css = CSS0 + ".req { font:700 38px 'SD Text'; color:#CDB8AA; padding:10px 6px; }"
     sc = [fly(f'#{sid}-c', 0.02), slam(f'#{sid}-d', t_d - 0.05), slam(f'#{sid}-p', t_p - 0.05), shake(f'#{sid}-c', t_p + 0.1), out(sid)]
     sc += bit_on(sid, 'n', 0, False) + bit_float(sid)
-    sc_.append(scene(sid, body, '\n'.join(sc), css))
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + sc), css))
     # s7 payoff
     sid = 's7'; t_w, t_n = wl(7, 'with'), wl(7, 'next')
     body = f"""<div class="center kk" style="top:320px">THE FASTEST WAY IN</div>
@@ -107,8 +109,16 @@ def j1():
 .ft { top:960px; font:700 40px 'SD Display'; color:var(--ink); opacity:0; }"""
     sc = [fly(f'#{sid}-a', t_w - 0.3, 10, 15), fly(f'#{sid}-b', t_n - 0.2, 10, -15), pop(f'#{sid}-f', t_n + 0.6)]
     sc += bit_on(sid, 'n', 0, False) + bit_float(sid) + bit_on(sid, 'h', t_w)
-    sc_.append(scene(sid, body, '\n'.join(sc), css))
-    sfx = lambda g: [(0.02, 'type', .5), (g(0, 'up'), 'impact', .8), (S['s1'][0], 'whoosh', .5), (g(1, 'rising'), 'ding', .6), (g(2, 'who'), 'impact', .8),
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + sc), css))
+    sid = 's8'; t_sub = wl(8, 'subscribe')
+    body, sc, css, tc = L.subscribe(sid, t_sub, bit(sid, [('n', {'state': 'happy', 'arms': 'wave'})]))
+    sc += bit_on(sid, 'n', 0, False) + bit_float(sid)
+    sc_.append(scene(sid, body, '\n'.join([L.punch(sid)] + sc), CSS0 + css))
+    sfx = lambda g: [(S['s8'][0], 'whoosh', .6), (S['s8'][0] + 0.1, 'riser', .4), (g(8, 'subscribe') + 1.5, 'click', .9), (g(8, 'subscribe') + 1.6, 'ding', .8),
+                     (S['s2'][0], 'whoosh', .5), (S['s3'][0], 'whoosh', .5), (S['s4'][0], 'whoosh', .5), (S['s5'][0], 'whoosh', .5), (S['s6'][0], 'whoosh', .5),
+                     (g(0, 'code') - 0.3, 'type', .45), (g(0, 'code') + 0.2, 'type', .45), (S['s1'][0] + 0.3, 'scan', .35), (g(2, 'who') - 0.4, 'riser', .45),
+                     (g(3, 'seventyone') + 0.95, 'ding', .6), (g(4, 'third') + 0.65, 'ding', .6), (g(5, 'quarter') - 0.3, 'riser', .4),
+                     (0.02, 'type', .5), (g(0, 'up'), 'impact', .8), (S['s1'][0], 'whoosh', .5), (g(1, 'rising'), 'ding', .6), (g(2, 'who'), 'impact', .8),
                      (g(3, 'seventyone'), 'riser', .4), (g(3, 'seventyone') + 0.5, 'pop', .7), (g(4, 'third'), 'pop', .7), (g(5, 'quarter'), 'thud', .8),
                      (g(6, 'dead'), 'impact', .7), (g(6, 'picky'), 'impact', .8), (S['s7'][0], 'whoosh', .5), (g(7, 'with'), 'ding', .7)]
     return sc_, sfx

@@ -42,17 +42,18 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s0-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.fromTo("#s0-ed", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
-    tl.fromTo("#s0-l0", { opacity:0, scale:.6, y:8 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.752);
-    tl.fromTo("#s0-l1", { opacity:0, scale:.6, y:8 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 1.002);
-    tl.fromTo("#s0-l2", { opacity:0, scale:.6, y:8 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 1.252);
-    tl.fromTo("#s0-ch", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 2.26);
-    tl.to("#s0-pl", { strokeDashoffset:0, duration:.7, ease:"power2.out" }, 2.6599999999999997);
-    tl.fromTo("#s0-q", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 3.26);
-    tl.to("#s0-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 6.659);
+    tl.fromTo("#s0-l0", { opacity:0, scale:.6, y:8 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 1.004);
+    tl.fromTo("#s0-l1", { opacity:0, scale:.6, y:8 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 1.254);
+    tl.fromTo("#s0-l2", { opacity:0, scale:.6, y:8 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 1.504);
+    tl.fromTo("#s0-ch", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 3.38);
+    tl.to("#s0-pl", { strokeDashoffset:0, duration:.7, ease:"power2.out" }, 3.78);
+    tl.fromTo("#s0-q", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 4.38);
+    tl.to("#s0-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 4.587);
     tl.set("#s0-bit > div", { opacity:0 }, 0);
     tl.set("#s0-bit-n", { opacity:1 }, 0);
-    tl.fromTo("#s0-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:7 }, 0);
+    tl.fromTo("#s0-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:4 }, 0);
     window.__timelines["s0"] = tl;
   </script>
 </template>

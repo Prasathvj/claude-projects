@@ -366,6 +366,37 @@ def index():
 </html>
 """
 
+# ------------------------------------------------------------------ shared extras: punch-in entrance + subscribe outro
+def punch(sid):
+    """camera punch-in on scene entry (prepend to a scene's script)."""
+    return f'    tl.fromTo("#{sid}-all", {{ scale:1.07, opacity:0 }}, {{ scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }}, 0);'
+
+BELL = '<svg width="90" height="90" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M50 14a24 24 0 0 0-24 24v18l-8 14h64l-8-14V38a24 24 0 0 0-24-24z"/><path d="M42 80a8 8 0 0 0 16 0"/></svg>'
+CURSOR = '<svg width="90" height="110" viewBox="0 0 60 74"><path d="M4 2 L4 58 L18 46 L28 70 L38 66 L28 42 L46 42 Z" fill="#FFFFFF" stroke="#1A0A04" stroke-width="4" stroke-linejoin="round"/></svg>'
+def subscribe(sid, t_sub, bit_html=''):
+    """Animated subscribe outro: channel card, red SUBSCRIBE button, cursor glides in and clicks, button -> SUBSCRIBED, bell rings."""
+    body = f"""<div class="sbc" id="{sid}-card"><div class="sbn">TECH<span>DECODED</span></div><div class="sbw">with Max</div>
+  <div class="sbrow"><div class="sbb" id="{sid}-btn"><span id="{sid}-bt">SUBSCRIBE</span></div><div class="sbbell" id="{sid}-bell">{BELL}</div></div>
+  <div class="sbt">AI &amp; tech news, decoded.</div></div>
+<div class="sbcur" id="{sid}-cur">{CURSOR}</div>{bit_html}"""
+    css = """.sbc { position:absolute; left:90px; width:900px; top:420px; padding:60px 40px 50px; border-radius:44px; border:4px solid var(--accent); background:linear-gradient(180deg,#2C1A13,#1F120C); text-align:center; box-shadow:0 0 90px rgba(248,119,54,.3); }
+.sbn { font:900 110px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:1; } .sbn span { color:var(--accent); } .sbw { font:600 italic 60px 'SD Serif'; color:var(--soft); }
+.sbrow { display:flex; align-items:center; justify-content:center; gap:30px; margin-top:40px; }
+.sbb { width:460px; height:120px; border-radius:60px; background:#FF3B30; display:flex; align-items:center; justify-content:center; font:900 54px 'SD Display'; color:#fff; letter-spacing:3px; box-shadow:0 14px 40px rgba(255,59,48,.4); }
+.sbbell { transform-origin:50% 10%; } .sbt { font:700 38px 'SD Text'; color:#CDB8AA; margin-top:34px; }
+.sbcur { position:absolute; left:0; top:0; opacity:0; }"""
+    tc = round(t_sub + 1.5, 3)
+    sc = [f'    tl.fromTo("#{sid}-card", {{ opacity:0, scale:.7, y:80 }}, {{ opacity:1, scale:1, y:0, duration:.5, ease:"back.out(1.7)" }}, 0.05);',
+          f'    tl.fromTo("#{sid}-btn", {{ scale:1 }}, {{ scale:1.06, duration:.4, yoyo:true, repeat:3, ease:"sine.inOut", immediateRender:false }}, 0.6);',
+          f'    tl.fromTo("#{sid}-cur", {{ opacity:0, x:1000, y:1500 }}, {{ opacity:1, x:520, y:760, duration:.8, ease:"power2.out", immediateRender:false }}, {round(tc - 0.8, 3)});',
+          f'    tl.fromTo("#{sid}-btn", {{ scale:1 }}, {{ scale:.9, duration:.08, yoyo:true, repeat:1, immediateRender:false }}, {tc});',
+          f'    tl.to("#{sid}-btn", {{ backgroundColor:"#8C6B5A", boxShadow:"0 0 0 rgba(0,0,0,0)", duration:.15 }}, {tc + 0.1});',
+          f'    tl.set("#{sid}-bt", {{ textContent:"SUBSCRIBED ✓" }}, {tc + 0.1});',
+          f'    tl.fromTo("#{sid}-bell", {{ rotation:0 }}, {{ rotation:18, duration:.08, yoyo:true, repeat:7, ease:"sine.inOut", immediateRender:false }}, {tc + 0.35});',
+          f'    tl.to("#{sid}-cur", {{ opacity:0, duration:.3 }}, {tc + 0.8});']
+    return body, sc, css, tc
+
+
 if __name__ == '__main__':
     comp = P / 'compositions'; comp.mkdir(parents=True, exist_ok=True)
     for f in comp.glob('*.html'): f.unlink()

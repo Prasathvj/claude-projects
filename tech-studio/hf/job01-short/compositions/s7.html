@@ -46,15 +46,16 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#s7-a", { opacity:0, scale:.74, rotationX:10, rotationY:15, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 1.716);
-    tl.fromTo("#s7-b", { opacity:0, scale:.74, rotationX:10, rotationY:-15, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 2.581);
-    tl.fromTo("#s7-f", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 3.3810000000000002);
+    tl.fromTo("#s7-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo("#s7-a", { opacity:0, scale:.74, rotationX:10, rotationY:15, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 2.011);
+    tl.fromTo("#s7-b", { opacity:0, scale:.74, rotationX:10, rotationY:-15, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 3.161);
+    tl.fromTo("#s7-f", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 3.9610000000000003);
     tl.set("#s7-bit > div", { opacity:0 }, 0);
     tl.set("#s7-bit-n", { opacity:1 }, 0);
-    tl.fromTo("#s7-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:6 }, 0);
-    tl.set("#s7-bit > div", { opacity:0 }, 2.016);
-    tl.set("#s7-bit-h", { opacity:1 }, 2.016);
-    tl.fromTo("#s7-bit", { scale:1.12 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 2.016);
+    tl.fromTo("#s7-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:4 }, 0);
+    tl.set("#s7-bit > div", { opacity:0 }, 2.311);
+    tl.set("#s7-bit-h", { opacity:1 }, 2.311);
+    tl.fromTo("#s7-bit", { scale:1.12 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 2.311);
     window.__timelines["s7"] = tl;
   </script>
 </template>

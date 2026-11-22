@@ -30,27 +30,40 @@
 .kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
 .big { font:900 200px 'SD Display'; color:var(--accent); letter-spacing:-5px; line-height:1; text-shadow:0 0 50px rgba(248,119,54,.4); }
 .box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
-.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }.dn { position:absolute; left:310px; top:400px; } .dl { top:880px; font:900 68px 'SD Display'; color:var(--ink); opacity:0; }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }.pp { position:absolute; left:532px; top:622px; width:16px; height:16px; border-radius:8px; background:#F87736; opacity:0; } .dn { position:absolute; left:310px; top:400px; } .dl { top:880px; font:900 68px 'SD Display'; color:var(--ink); opacity:0; }
   </style>
   <div id="root" data-composition-id="s4" data-width="1080" data-height="1920">
     <div class="all" id="s4-all">
 <div class="center kk" style="top:320px">SHARE OF THE GROWTH</div><svg class="dn" width="460" height="460" viewBox="0 0 120 120"><circle cx="60" cy="60" r="48" fill="none" stroke="#EFE4DA" stroke-width="16"/>
 <circle id="s4-arc" cx="60" cy="60" r="48" fill="none" stroke="#3DDC97" stroke-width="16" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 60 60)"/>
 <text x="60" y="66" text-anchor="middle" font-family="SD Display" font-weight="900" font-size="26" fill="#2A2018" id="s4-pct">0%</text></svg>
-<div class="center dl" id="s4-lb">“AI” IN THE TITLE</div><div class="src" style="top:1000px">CATEGORIES OVERLAP · SOURCE: INDEED HIRING LAB</div>
+<div class="center dl" id="s4-lb">“AI” IN THE TITLE</div><i class="pp" id="s4-p0"></i><i class="pp" id="s4-p1"></i><i class="pp" id="s4-p2"></i><i class="pp" id="s4-p3"></i><i class="pp" id="s4-p4"></i><i class="pp" id="s4-p5"></i><i class="pp" id="s4-p6"></i><i class="pp" id="s4-p7"></i><i class="pp" id="s4-p8"></i><i class="pp" id="s4-p9"></i><i class="pp" id="s4-p10"></i><i class="pp" id="s4-p11"></i><div class="src" style="top:1000px">CATEGORIES OVERLAP · SOURCE: INDEED HIRING LAB</div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.to("#s4-arc", { strokeDashoffset:63, duration:.6, ease:"power3.out" }, 0.307);
-    tl.set("#s4-pct", { textContent:"6%" }, 0.307);
-    tl.set("#s4-pct", { textContent:"12%" }, 0.397);
-    tl.set("#s4-pct", { textContent:"18%" }, 0.487);
-    tl.set("#s4-pct", { textContent:"25%" }, 0.577);
-    tl.set("#s4-pct", { textContent:"31%" }, 0.667);
-    tl.set("#s4-pct", { textContent:"37%" }, 0.757);
-    tl.fromTo("#s4-lb", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.657);
-    tl.to("#s4-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 2.288);
+    tl.fromTo("#s4-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.to("#s4-arc", { strokeDashoffset:63, duration:.6, ease:"power3.out" }, 0.702);
+    tl.set("#s4-pct", { textContent:"6%" }, 0.702);
+    tl.set("#s4-pct", { textContent:"12%" }, 0.792);
+    tl.set("#s4-pct", { textContent:"18%" }, 0.882);
+    tl.set("#s4-pct", { textContent:"25%" }, 0.972);
+    tl.set("#s4-pct", { textContent:"31%" }, 1.062);
+    tl.set("#s4-pct", { textContent:"37%" }, 1.152);
+    tl.fromTo("#s4-lb", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 1.052);
+    tl.fromTo("#s4-p0", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:330, y:0, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p1", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:286, y:165, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p2", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:165, y:286, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p3", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:0, y:330, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p4", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:-165, y:286, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p5", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:-286, y:165, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p6", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:-330, y:0, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p7", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:-286, y:-165, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p8", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:-165, y:-286, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p9", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:0, y:-330, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p10", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:165, y:-286, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.fromTo("#s4-p11", { opacity:1, x:0, y:0, scale:1 }, { opacity:0, x:286, y:-165, scale:.3, duration:.7, ease:"power3.out", immediateRender:false }, 1.302);
+    tl.to("#s4-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 2.99);
     window.__timelines["s4"] = tl;
   </script>
 </template>
