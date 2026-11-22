@@ -44,7 +44,7 @@ Max and Bit are animated characters. Narration is AI-generated (Google Gemini te
 Alt A: How a hidden webpage note hijacks your AI agent
 Alt B: Prompt injection explained: why AI agents can be hijacked
 
-**Thumbnail:** to make next (Max pointing at a white page with red hidden text, "AI HIJACKED").
+**Thumbnail:** `out/thumb_long_cream.jpg`
 
 **Description:**
 A webpage that looks empty can hide instructions only your AI agent reads. In this video: how AI agents actually work (the think, choose, act, read loop), direct vs indirect prompt injection, why language models can't separate instructions from data, how "promptware" and poisoned memory let an attack outlive the page, why there's no complete fix yet, and 5 practical habits that shrink the blast radius.
@@ -65,7 +65,6 @@ Sources:
 - Brodt, Feldman, Schneier, Nassi, "The Promptware Kill Chain" (2026): https://arxiv.org/abs/2601.09625
 - OpenAI on prompt injection and ChatGPT Atlas (Dec 2025), via TechCrunch: https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/
 - OpenAI, "The Instruction Hierarchy" (2024): https://arxiv.org/abs/2404.13208
-- Simon Willison, "The lethal trifecta" (June 2025): https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
 
 Labels: the webpage, activity log, chat, email, code snippets and memory notes are illustrations; attacker@example.com is a placeholder. The promptware chain is shown in 5 simplified steps (the paper defines 7 stages).
 
