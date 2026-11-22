@@ -20,6 +20,7 @@ PLAN = [
  ('13_ai01', 'ai01', None, None, 'Tue 1 Dec 2026, 6:30 PM', 'Schedule'),
  ('14_face01', 'face01', None, None, 'Thu 3 Dec 2026, 6:30 PM', 'Schedule'),
  ('15_del01', 'del01', None, None, 'Fri 4 Dec 2026, 6:30 PM', 'Schedule'),
+ ('16_pay01', 'pay01', None, None, 'Sun 6 Dec 2026, 12:30 PM', 'Schedule'),
  ('11_ep02_long', 'ep02', 'TechDecoded_ep02_long.mp4', OUT/'thumb_ep02_long.jpg', 'Wed 2 Dec 2026, 6:30 PM', 'Schedule'),
 ]
 for folder, ep, vid, thumb, when, status in PLAN:

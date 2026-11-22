@@ -61,18 +61,18 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s2-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.fromTo("#s2-s", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
-    tl.fromTo("#s2-m", { x:0 }, { x:900, duration:1.2, ease:"sine.inOut" }, 2.323);
-    tl.to("#s2-h", { color:"#E0261B", backgroundColor:"rgba(255,59,48,.12)", duration:.3 }, 3.0229999999999997);
-    tl.fromTo("#s2-s", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.0229999999999997);
+    tl.fromTo("#s2-m", { x:0 }, { x:900, duration:1.2, ease:"sine.inOut" }, 2.657);
+    tl.to("#s2-h", { color:"#E0261B", backgroundColor:"rgba(255,59,48,.12)", duration:.3 }, 3.3569999999999998);
+    tl.fromTo("#s2-s", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.3569999999999998);
     tl.set("#s2-bit > div", { opacity:0 }, 0);
     tl.set("#s2-bit-a", { opacity:1 }, 0);
-    tl.fromTo("#s2-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:10 }, 0);
-    tl.set("#s2-bit > div", { opacity:0 }, 5.759);
-    tl.set("#s2-bit-b", { opacity:1 }, 5.759);
-    tl.fromTo("#s2-bit", { scale:1.12 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 5.759);
-    tl.fromTo("#s2-b", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 6.192);
-    tl.fromTo("#s2-t", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 4.457);
-    tl.to("#s2-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 8.665);
+    tl.fromTo("#s2-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:11 }, 0);
+    tl.set("#s2-bit > div", { opacity:0 }, 6.483);
+    tl.set("#s2-bit-b", { opacity:1 }, 6.483);
+    tl.fromTo("#s2-bit", { scale:1.12 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 6.483);
+    tl.fromTo("#s2-b", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 6.972);
+    tl.fromTo("#s2-t", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.014);
+    tl.to("#s2-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 9.779);
     window.__timelines["s2"] = tl;
   </script>
 </template>
