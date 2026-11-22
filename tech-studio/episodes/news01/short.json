@@ -1,0 +1,19 @@
+{
+ "id": "news01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "beats": [
+  {"text": "Your AI agent sends money from your bank account. You never asked it to. Who pays?", "dir": "gripping, urgent hook, a real question"},
+  {"text": "One of America's biggest banks just answered — and it's not the bank.", "dir": "dramatic reveal, slight irony"},
+  {"text": "Citi's new online terms say: if an outside AI agent logs in with your details, everything it does counts as authorized by you.", "dir": "clear, factual, building"},
+  {"text": "Even if it ignores your instructions.", "dir": "punchy, disbelief"},
+  {"text": "Lend a friend your house keys. They throw a party. You get the bill.", "dir": "playful, rhythmic comparison"},
+  {"text": "And reports say other big banks are taking the same line.", "dir": "serious"},
+  {"text": "Here's the catch: the rule doesn't cover Citi's own AI tools. Only outside ones.", "dir": "conspiratorial twist"},
+  {"text": "And outside agents can be hijacked by a single hidden line on a webpage.", "dir": "ominous"},
+  {"text": "So before you hand any AI your bank login, ask one question: is it your bank's tool — or someone else's?", "dir": "confident, helpful payoff"}
+ ]
+}
