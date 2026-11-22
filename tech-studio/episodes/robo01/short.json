@@ -1,0 +1,47 @@
+{
+ "id": "robo01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "max_tempo": 1.05,
+ "beats": [
+  {
+   "text": "There's a factory in Japan where robots build other robots, in the dark.",
+   "dir": "mysterious hook; single read, no repetition"
+  },
+  {
+   "text": "FANUC has run lights-out production there since 2001. Its robots can work unsupervised for up to thirty days.",
+   "dir": "factual, impressed; single read, no repetition"
+  },
+  {
+   "text": "No lights. No breaks. No shift changes.",
+   "dir": "punchy, rhythmic; single read, no repetition"
+  },
+  {
+   "text": "In China, Xiaomi opened a dark factory in 2024 built to make about ten million phones a year.",
+   "dir": "factual, scale; single read, no repetition"
+  },
+  {
+   "text": "That sounds like the end of factory jobs. But look closer.",
+   "dir": "lean in; single read, no repetition"
+  },
+  {
+   "text": "People still design the products, program the robots, and fix them when they break.",
+   "dir": "reassuring, clear; single read, no repetition"
+  },
+  {
+   "text": "Robots that run 24/7 are like cruise control: the car keeps going, but someone still has to steer.",
+   "dir": "vivid comparison; single read, no repetition"
+  },
+  {
+   "text": "So the real question isn't robots versus humans. It's which jobs grow around them, and that's our next full video.",
+   "dir": "teasing payoff; single read, no repetition"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off; single read, no repetition"
+  }
+ ]
+}

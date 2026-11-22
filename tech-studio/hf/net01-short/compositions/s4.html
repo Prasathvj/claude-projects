@@ -1,0 +1,67 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 180px 'SD Display'; color:var(--accent); letter-spacing:-4px; line-height:1; }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.ph { position:relative; border-radius:28px; overflow:hidden; border:8px solid #FFFFFF; box-shadow:0 30px 70px rgba(0,0,0,.35); background:#F7F1EB; }
+.ph img { width:100%; height:100%; object-fit:cover; display:block; } .ph.fb { display:flex; align-items:center; justify-content:center; }
+.chip { display:inline-flex; align-items:center; gap:12px; padding:16px 26px; border-radius:24px; background:#F3E6DC; color:#1E120C; font:800 38px 'SD Display'; }
+.hl { color:var(--accent); }.water { position:absolute; left:0; right:0; top:560px; bottom:0; background:linear-gradient(180deg, rgba(28,126,214,.18), rgba(11,37,84,.45)); }
+.ship { position:absolute; left:80px; top:300px; } .hull { width:100%; height:100%; background:linear-gradient(180deg,#D8C4B4 60%,#C9BBB0 60%); }
+.chn { position:absolute; left:500px; top:560px; width:8px; height:0; background:repeating-linear-gradient(180deg,#C9BBB0 0 14px,transparent 14px 20px); } .anc { position:absolute; left:405px; top:520px; }
+.bed { position:absolute; left:0; right:0; top:1180px; height:80px; background:#C9A98A; } .cb { position:absolute; left:0; right:0; height:16px; border-radius:8px; background:#1E120C; }
+.rs { top:340px; font:900 50px 'SD Display'; color:var(--red); opacity:0; z-index:3; }
+  </style>
+  <div id="root" data-composition-id="s4" data-width="1080" data-height="1920">
+    <div class="all" id="s4-all">
+<div class="water"></div><div class="ship"><div class="ph fb" style="width:560px; height:300px;"><svg width="540" height="260" viewBox="0 0 270 130"><path d="M10 80 L260 80 L235 120 L35 120 Z" fill="#C9BBB0"/><rect x="60" y="50" width="120" height="30" rx="4" fill="#D8C4B4"/><rect x="80" y="28" width="60" height="24" rx="4" fill="#F3E6DC"/><rect x="190" y="20" width="8" height="60" fill="#9C8576"/><path d="M198 24 L250 60" stroke="#9C8576" stroke-width="5"/></svg></div></div><div class="chn" id="s4-ch"></div><div class="anc" id="s4-a"><svg width="200" height="240" viewBox="0 0 100 120" fill="none" stroke="#C9BBB0" stroke-width="9" stroke-linecap="round"><circle cx="50" cy="14" r="9"/><path d="M50 23v80M26 44h48M12 82c8 22 30 28 38 28s30-6 38-28"/></svg></div>
+<div class="bed"></div><div class="cb" id="s4-c0" style="top:1040px"></div><div class="cb" id="s4-c1" style="top:1086px"></div><div class="cb" id="s4-c2" style="top:1132px"></div><div class="center rs" id="s4-r">RED SEA · 2024 · 3 CABLES CUT</div><div class="src" style="top:1270px">ILLUSTRATION · SOURCE: TELEGEOGRAPHY</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s4-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo(".ship", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
+    tl.to("#s4-ch", { height:520, duration:1.1, ease:"power1.in" }, 0.3);
+    tl.to("#s4-a", { y:520, duration:1.1, ease:"power1.in" }, 0.3);
+    tl.to("#s4-a", { x:420, rotation:-25, duration:1.2, ease:"power1.inOut" }, 5.21);
+    tl.to("#s4-ch", { x:420, duration:1.2, ease:"power1.inOut" }, 5.21);
+    tl.to("#s4-c0", { clipPath:"inset(0 0 0 0)", backgroundColor:"#FF3B30", duration:.1 }, 5.61);
+    tl.to("#s4-c1", { clipPath:"inset(0 0 0 0)", backgroundColor:"#FF3B30", duration:.1 }, 5.86);
+    tl.to("#s4-c2", { clipPath:"inset(0 0 0 0)", backgroundColor:"#FF3B30", duration:.1 }, 6.11);
+    tl.to("#s4-c0", { scaleX:.45, transformOrigin:"left center", duration:.3 }, 5.71);
+    tl.to("#s4-c1", { scaleX:.45, transformOrigin:"left center", duration:.3 }, 5.96);
+    tl.to("#s4-c2", { scaleX:.45, transformOrigin:"left center", duration:.3 }, 6.21);
+    tl.fromTo("#s4-r", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 2.1999999999999997);
+    tl.to("#s4-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 5.724);
+    window.__timelines["s4"] = tl;
+  </script>
+</template>

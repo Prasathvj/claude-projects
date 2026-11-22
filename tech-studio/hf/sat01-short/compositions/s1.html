@@ -1,0 +1,68 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 180px 'SD Display'; color:var(--accent); letter-spacing:-4px; line-height:1; }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.ph { position:relative; border-radius:28px; overflow:hidden; border:8px solid #FFFFFF; box-shadow:0 30px 70px rgba(0,0,0,.35); background:#F7F1EB; }
+.ph img { width:100%; height:100%; object-fit:cover; display:block; } .ph.fb { display:flex; align-items:center; justify-content:center; }
+.chip { display:inline-flex; align-items:center; gap:12px; padding:16px 26px; border-radius:24px; background:#F3E6DC; color:#1E120C; font:800 38px 'SD Display'; }
+.hl { color:var(--accent); }.globe { position:absolute; left:280px; top:470px; } .eg { width:100%; height:100%; background:radial-gradient(circle at 35% 35%, #7FB7FF, #1C4E9A 60%, #0B2554); }
+.orb { position:absolute; left:40px; top:280px; } .os { position:absolute; left:0; top:0; } .st1 { top:1110px; opacity:0; } .st1 .chip { margin:0 8px; }
+  </style>
+  <div id="root" data-composition-id="s1" data-width="1080" data-height="1920">
+    <div class="all" id="s1-all">
+<div class="center kk" style="top:330px">THE GPS CONSTELLATION</div><div class="globe"><div class="ph fb" style="width:520px; height:520px; border-radius:50%;"><div class="eg"></div></div></div>
+<svg class="orb" width="1000" height="900" viewBox="0 0 1000 900"><ellipse cx="500" cy="450" rx="430" ry="170" fill="none" stroke="#F87736" stroke-opacity=".5" stroke-width="3" stroke-dasharray="10 10" transform="rotate(-20 500 450)"/><ellipse cx="500" cy="450" rx="430" ry="170" fill="none" stroke="#F87736" stroke-opacity=".5" stroke-width="3" stroke-dasharray="10 10" transform="rotate(25 500 450)"/><ellipse cx="500" cy="450" rx="200" ry="430" fill="none" stroke="#F87736" stroke-opacity=".4" stroke-width="3" stroke-dasharray="10 10"/></svg>
+<div class="os" id="s1-o0"><svg width="90" height="54" viewBox="0 0 200 120"><rect x="80" y="40" width="40" height="40" rx="6" fill="#D8C4B4"/><rect x="10" y="48" width="64" height="24" fill="#2F5FA8"/><rect x="126" y="48" width="64" height="24" fill="#2F5FA8"/><path d="M10 60h64M126 60h64M22 48v24M34 48v24M46 48v24M58 48v24M138 48v24M150 48v24M162 48v24M174 48v24" stroke="#9CC3FF" stroke-width="1.5"/><circle cx="100" cy="30" r="6" fill="#F87736"/><path d="M100 36v4" stroke="#D8C4B4" stroke-width="3"/></svg></div><div class="os" id="s1-o1"><svg width="90" height="54" viewBox="0 0 200 120"><rect x="80" y="40" width="40" height="40" rx="6" fill="#D8C4B4"/><rect x="10" y="48" width="64" height="24" fill="#2F5FA8"/><rect x="126" y="48" width="64" height="24" fill="#2F5FA8"/><path d="M10 60h64M126 60h64M22 48v24M34 48v24M46 48v24M58 48v24M138 48v24M150 48v24M162 48v24M174 48v24" stroke="#9CC3FF" stroke-width="1.5"/><circle cx="100" cy="30" r="6" fill="#F87736"/><path d="M100 36v4" stroke="#D8C4B4" stroke-width="3"/></svg></div><div class="os" id="s1-o2"><svg width="90" height="54" viewBox="0 0 200 120"><rect x="80" y="40" width="40" height="40" rx="6" fill="#D8C4B4"/><rect x="10" y="48" width="64" height="24" fill="#2F5FA8"/><rect x="126" y="48" width="64" height="24" fill="#2F5FA8"/><path d="M10 60h64M126 60h64M22 48v24M34 48v24M46 48v24M58 48v24M138 48v24M150 48v24M162 48v24M174 48v24" stroke="#9CC3FF" stroke-width="1.5"/><circle cx="100" cy="30" r="6" fill="#F87736"/><path d="M100 36v4" stroke="#D8C4B4" stroke-width="3"/></svg></div><div class="os" id="s1-o3"><svg width="90" height="54" viewBox="0 0 200 120"><rect x="80" y="40" width="40" height="40" rx="6" fill="#D8C4B4"/><rect x="10" y="48" width="64" height="24" fill="#2F5FA8"/><rect x="126" y="48" width="64" height="24" fill="#2F5FA8"/><path d="M10 60h64M126 60h64M22 48v24M34 48v24M46 48v24M58 48v24M138 48v24M150 48v24M162 48v24M174 48v24" stroke="#9CC3FF" stroke-width="1.5"/><circle cx="100" cy="30" r="6" fill="#F87736"/><path d="M100 36v4" stroke="#D8C4B4" stroke-width="3"/></svg></div><div class="os" id="s1-o4"><svg width="90" height="54" viewBox="0 0 200 120"><rect x="80" y="40" width="40" height="40" rx="6" fill="#D8C4B4"/><rect x="10" y="48" width="64" height="24" fill="#2F5FA8"/><rect x="126" y="48" width="64" height="24" fill="#2F5FA8"/><path d="M10 60h64M126 60h64M22 48v24M34 48v24M46 48v24M58 48v24M138 48v24M150 48v24M162 48v24M174 48v24" stroke="#9CC3FF" stroke-width="1.5"/><circle cx="100" cy="30" r="6" fill="#F87736"/><path d="M100 36v4" stroke="#D8C4B4" stroke-width="3"/></svg></div><div class="os" id="s1-o5"><svg width="90" height="54" viewBox="0 0 200 120"><rect x="80" y="40" width="40" height="40" rx="6" fill="#D8C4B4"/><rect x="10" y="48" width="64" height="24" fill="#2F5FA8"/><rect x="126" y="48" width="64" height="24" fill="#2F5FA8"/><path d="M10 60h64M126 60h64M22 48v24M34 48v24M46 48v24M58 48v24M138 48v24M150 48v24M162 48v24M174 48v24" stroke="#9CC3FF" stroke-width="1.5"/><circle cx="100" cy="30" r="6" fill="#F87736"/><path d="M100 36v4" stroke="#D8C4B4" stroke-width="3"/></svg></div><div class="center st1" id="s1-st"><span class="chip">~30 satellites</span> <span class="chip">~20,000 km up</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s1-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo(".globe", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.02);
+    tl.fromTo(".globe .kb", { scale:1 }, { scale:1.1, duration:5.099, ease:"none" }, 0);
+    tl.set("#s1-o0", { x:899, y:556 }, 0);
+    tl.to("#s1-o0", { keyframes:[{ x:874, y:656, duration:1.27 },{ x:747, y:768, duration:1.27 },{ x:553, y:863, duration:1.27 },{ x:343, y:915, duration:1.27 }], ease:"none" }, 0);
+    tl.set("#s1-o1", { x:628, y:927 }, 0);
+    tl.to("#s1-o1", { keyframes:[{ x:423, y:857, duration:1.27 },{ x:238, y:746, duration:1.27 },{ x:122, y:623, duration:1.27 },{ x:105, y:521, duration:1.27 }], ease:"none" }, 0);
+    tl.set("#s1-o2", { x:343, y:915 }, 0);
+    tl.to("#s1-o2", { keyframes:[{ x:174, y:910, duration:1.27 },{ x:91, y:850, duration:1.27 },{ x:116, y:750, duration:1.27 },{ x:243, y:638, duration:1.27 }], ease:"none" }, 0);
+    tl.set("#s1-o3", { x:105, y:521 }, 0);
+    tl.to("#s1-o3", { keyframes:[{ x:193, y:469, duration:1.27 },{ x:362, y:479, duration:1.27 },{ x:567, y:549, duration:1.27 },{ x:752, y:660, duration:1.27 }], ease:"none" }, 0);
+    tl.set("#s1-o4", { x:243, y:638 }, 0);
+    tl.to("#s1-o4", { keyframes:[{ x:437, y:543, duration:1.27 },{ x:647, y:491, duration:1.27 },{ x:816, y:496, duration:1.27 },{ x:899, y:556, duration:1.27 }], ease:"none" }, 0);
+    tl.set("#s1-o5", { x:752, y:660 }, 0);
+    tl.to("#s1-o5", { keyframes:[{ x:868, y:783, duration:1.27 },{ x:885, y:885, duration:1.27 },{ x:797, y:937, duration:1.27 },{ x:628, y:927, duration:1.27 }], ease:"none" }, 0);
+    tl.fromTo("#s1-st", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 3.0100000000000002);
+    tl.to("#s1-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 4.939);
+    window.__timelines["s1"] = tl;
+  </script>
+</template>

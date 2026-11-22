@@ -1,0 +1,59 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 180px 'SD Display'; color:var(--accent); letter-spacing:-4px; line-height:1; }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.ph { position:relative; border-radius:28px; overflow:hidden; border:8px solid #FFFFFF; box-shadow:0 30px 70px rgba(0,0,0,.35); background:#F7F1EB; }
+.ph img { width:100%; height:100%; object-fit:cover; display:block; } .ph.fb { display:flex; align-items:center; justify-content:center; }
+.chip { display:inline-flex; align-items:center; gap:12px; padding:16px 26px; border-radius:24px; background:#F3E6DC; color:#1E120C; font:800 38px 'SD Display'; }
+.hl { color:var(--accent); }.gauge { position:absolute; left:230px; top:320px; text-align:center; } .cc { display:inline-block; padding:12px 26px; border-radius:18px; background:#3DDC97; color:#0C3B26; font:900 40px 'SD Display'; opacity:0; }
+.wh { position:absolute; left:360px; top:800px; opacity:0; } .stx { top:1180px; font:900 52px 'SD Display'; color:var(--ink); opacity:0; }
+  </style>
+  <div id="root" data-composition-id="s6" data-width="1080" data-height="1920">
+    <div class="all" id="s6-all">
+<div class="gauge"><svg width="620" height="380" viewBox="0 0 200 120"><path d="M20 110 A80 80 0 0 1 180 110" fill="none" stroke="#EFE4DA" stroke-width="16"/><path d="M20 110 A80 80 0 0 1 150 45" fill="none" stroke="#F87736" stroke-width="16"/>
+<g id="s6-nd" style="transform-origin:100px 110px"><path d="M100 110 L100 40" stroke="#1E120C" stroke-width="6" stroke-linecap="round"/></g><circle cx="100" cy="110" r="8" fill="#1E120C"/></svg><div class="cc" id="s6-cc">CRUISE ON · 24/7</div></div>
+<div class="wh" id="s6-w"><svg width="360" height="360" viewBox="0 0 100 100" fill="none" stroke="#1E120C" stroke-width="7"><circle cx="50" cy="50" r="42"/><circle cx="50" cy="50" r="10" fill="#1E120C"/><path d="M50 40V8M41 55L14 70M59 55L86 70"/></svg></div><div class="center stx" id="s6-s">…SOMEONE STILL HAS TO <span class="hl">STEER</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s6-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo(".gauge", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.02);
+    tl.fromTo("#s6-nd", { rotation:-80 }, { rotation:40, duration:.8, ease:"back.out(1.5)" }, 1.9);
+    tl.fromTo("#s6-cc", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.5999999999999996);
+    tl.fromTo("#s6-w", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 4.35);
+    tl.fromTo("#s6-w", { rotation:-15 }, { rotation:15, duration:.6, yoyo:true, repeat:3, ease:"sine.inOut", immediateRender:false }, 4.75);
+    tl.fromTo("#s6-s", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.1499999999999995);
+    tl.to("#s6-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 5.58);
+    window.__timelines["s6"] = tl;
+  </script>
+</template>

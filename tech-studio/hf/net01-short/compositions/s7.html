@@ -1,0 +1,61 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 180px 'SD Display'; color:var(--accent); letter-spacing:-4px; line-height:1; }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.ph { position:relative; border-radius:28px; overflow:hidden; border:8px solid #FFFFFF; box-shadow:0 30px 70px rgba(0,0,0,.35); background:#F7F1EB; }
+.ph img { width:100%; height:100%; object-fit:cover; display:block; } .ph.fb { display:flex; align-items:center; justify-content:center; }
+.chip { display:inline-flex; align-items:center; gap:12px; padding:16px 26px; border-radius:24px; background:#F3E6DC; color:#1E120C; font:800 38px 'SD Display'; }
+.hl { color:var(--accent); }.cl { position:absolute; left:330px; top:320px; } .isnt { top:620px; font:900 80px 'SD Display'; color:var(--ink); opacity:0; }
+.parts { position:absolute; left:60px; right:60px; top:740px; display:flex; justify-content:center; gap:16px; opacity:0; } .bkp { position:absolute; left:40px; top:860px; } .bk { top:1180px; font:900 44px 'SD Display'; color:var(--ink); opacity:0; }
+  </style>
+  <div id="root" data-composition-id="s7" data-width="1080" data-height="1920">
+    <div class="all" id="s7-all">
+<div class="cl" id="s7-cl"><svg width="420" height="260" viewBox="0 0 100 62" fill="#F3E6DC"><path d="M22 58h56a16 16 0 0 0 0-32 22 22 0 0 0-42-6 18 18 0 0 0-14 38z"/></svg></div><div class="center isnt" id="s7-n">NOT A CLOUD.</div>
+<div class="parts" id="s7-p"><span class="chip">🧵 Cables</span><span class="chip">📡 Routers</span><span class="chip">⚙️ Settings</span></div>
+<svg class="bkp" width="1000" height="300"><path id="s7-b0" d="M60 150 C300 20 700 20 940 150" fill="none" stroke="#3DDC97" stroke-width="10" pathLength="1" style="stroke-dashoffset:1" stroke-dasharray="1"/><path id="s7-b1" d="M60 150 C300 280 700 280 940 150" fill="none" stroke="#3DDC97" stroke-width="10" pathLength="1" style="stroke-dashoffset:1" stroke-dasharray="1"/><path d="M60 150 L940 150" stroke="#F87736" stroke-width="10"/></svg>
+<div class="center bk" id="s7-bk">→ SO ENGINEERS BUILD <span style="color:#2E9E6B">BACKUP ROUTES</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s7-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo("#s7-cl", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.02);
+    tl.to("#s7-cl", { opacity:0, scale:1.4, filter:"blur(12px)", duration:.5 }, 1.694);
+    tl.fromTo("#s7-n", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 1.5939999999999999);
+    tl.fromTo("#s7-p", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.194);
+    tl.to("#s7-b0", { strokeDashoffset:0, duration:.8 }, 5.612);
+    tl.to("#s7-b1", { strokeDashoffset:0, duration:.8 }, 5.912);
+    tl.fromTo("#s7-bk", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.812);
+    tl.to("#s7-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 6.66);
+    window.__timelines["s7"] = tl;
+  </script>
+</template>

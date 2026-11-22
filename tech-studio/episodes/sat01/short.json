@@ -1,0 +1,51 @@
+{
+ "id": "sat01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "max_tempo": 1.05,
+ "beats": [
+  {
+   "text": "GPS satellites have no idea where you are. Your phone does all the work.",
+   "dir": "gripping myth-busting hook"
+  },
+  {
+   "text": "Around thirty GPS satellites circle Earth, about twenty thousand kilometres up.",
+   "dir": "calm, factual, a sense of scale"
+  },
+  {
+   "text": "They don't track you. They just broadcast two things, nonstop: where they are, and exactly what time it is.",
+   "dir": "clear, revealing"
+  },
+  {
+   "text": "Your phone listens. Even at light speed, each signal takes a tiny fraction of a second to arrive.",
+   "dir": "curious"
+  },
+  {
+   "text": "Multiply that delay by the speed of light, and you get your distance from that satellite.",
+   "dir": "clear, explanatory"
+  },
+  {
+   "text": "One satellite puts you on a giant sphere. Three narrow it to one point. A fourth fixes your phone's clock.",
+   "dir": "building, rhythmic"
+  },
+  {
+   "text": "The timing is so precise that Einstein matters: up there, satellite clocks run about thirty-eight microseconds a day fast.",
+   "dir": "surprising fact, playful"
+  },
+  {
+   "text": "Ignore that, and your location would drift by more than eleven kilometres in a single day.",
+   "dir": "dramatic"
+  },
+  {
+   "text": "So when your map finds you instantly, remember: the satellites are just clocks. The genius is in your pocket.",
+   "dir": "satisfying payoff"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}

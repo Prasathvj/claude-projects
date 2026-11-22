@@ -3,7 +3,49 @@ Usage: python3 tools/max_plan.py ep01-short  (segments are defined in SEGS below
 import json, subprocess, sys
 import numpy as np
 
-SEGS = {'job03-short': [
+SEGS = {'robo01-short': [
+    (4.46, 'duo', {"brows": "skeptic", "eyes": "squint", "arms": "chin", "extra": ["question"]}),
+    (10.97, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
+    (13.92, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (19.32, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
+    (22.16, 'duo', {"brows": "skeptic", "eyes": "squint", "arms": "chin", "extra": ["question"]}),
+    (26.25, 'duo', {"brows": "up", "eyes": "happy", "mouth": "grin", "arms": "thumbs"}),
+    (31.99, 'duo', {"brows": "up", "mouth": "smirk", "arms": "shrug", "tilt": -5}),
+    (38.2, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (99, 'duo', {"brows": "up", "eyes": "happy", "mouth": "grin", "arms": "thumbs"}),
+], 'net01-short': [
+    (8.21, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
+    (12.67, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (15.62, 'duo', {"brows": "up", "mouth": "smirk", "arms": "shrug", "tilt": -5}),
+    (23.3, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (29.19, 'duo', {"brows": "worried", "eyes": "worried", "extra": ["sweat"]}),
+    (33.91, 'duo', {"brows": "worried", "eyes": "worried", "extra": ["sweat"]}),
+    (41.36, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
+    (48.18, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (99, 'duo', {"brows": "up", "eyes": "happy", "mouth": "grin", "arms": "thumbs"}),
+], 'goog01-short': [
+    (5.64, 'duo', {"brows": "skeptic", "eyes": "squint", "arms": "chin", "extra": ["question"]}),
+    (9.72, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (14.19, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (16.95, 'duo', {"brows": "skeptic", "eyes": "squint", "arms": "chin", "extra": ["question"]}),
+    (21.7, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (28.73, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
+    (35.03, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (40.51, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (47.2, 'duo', {"brows": "up", "mouth": "smirk", "arms": "shrug", "tilt": -5}),
+    (99, 'duo', {"brows": "up", "eyes": "happy", "mouth": "grin", "arms": "thumbs"}),
+], 'sat01-short': [
+    (4.84, 'duo', {"brows": "skeptic", "eyes": "squint", "arms": "chin", "extra": ["question"]}),
+    (9.94, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (16.68, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (22.57, 'duo', {"brows": "skeptic", "eyes": "squint", "arms": "chin", "extra": ["question"]}),
+    (26.68, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (33.17, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (40.29, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
+    (44.81, 'duo', {"brows": "worried", "eyes": "worried", "extra": ["sweat"]}),
+    (51.02, 'duo', {"brows": "up", "eyes": "happy", "mouth": "grin", "arms": "thumbs"}),
+    (99, 'duo', {"brows": "up", "eyes": "happy", "mouth": "grin", "arms": "thumbs"}),
+], 'job03-short': [
     (6.84, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
     (11.32, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
     (14.72, 'duo', {"brows": "focused", "arms": "chin"}),

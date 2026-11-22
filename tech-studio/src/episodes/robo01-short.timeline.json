@@ -1,0 +1,732 @@
+{
+ "id": "robo01-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 43.187,
+ "vo": "robo01/robo01-short-vo.wav",
+ "music": "robo01/robo01-short-music.wav",
+ "beats": [
+  {
+   "text": "There's a factory in Japan where robots build other robots, in the dark.",
+   "dir": "mysterious hook",
+   "start": 0.25,
+   "vo": 4.176,
+   "dur": 4.326,
+   "words": [
+    {
+     "w": "There's",
+     "s": 0.13,
+     "e": 0.33
+    },
+    {
+     "w": "a",
+     "s": 0.33,
+     "e": 0.37
+    },
+    {
+     "w": "factory",
+     "s": 0.37,
+     "e": 0.79
+    },
+    {
+     "w": "in",
+     "s": 0.79,
+     "e": 0.89
+    },
+    {
+     "w": "Japan",
+     "s": 0.89,
+     "e": 1.31
+    },
+    {
+     "w": "where",
+     "s": 1.31,
+     "e": 1.43
+    },
+    {
+     "w": "robots",
+     "s": 1.43,
+     "e": 2.04
+    },
+    {
+     "w": "build",
+     "s": 2.04,
+     "e": 2.31
+    },
+    {
+     "w": "other",
+     "s": 2.5,
+     "e": 2.72
+    },
+    {
+     "w": "robots,",
+     "s": 2.72,
+     "e": 3.28
+    },
+    {
+     "w": "in",
+     "s": 3.52,
+     "e": 3.62
+    },
+    {
+     "w": "the",
+     "s": 3.62,
+     "e": 3.7
+    },
+    {
+     "w": "dark.",
+     "s": 3.7,
+     "e": 4.15
+    }
+   ]
+  },
+  {
+   "text": "FANUC has run lights-out production there since 2001. Its robots can work unsupervised for up to thirty days.",
+   "dir": "factual, impressed",
+   "start": 4.576,
+   "vo": 6.364,
+   "dur": 6.514,
+   "words": [
+    {
+     "w": "FANUC",
+     "s": 0.01,
+     "e": 0.41
+    },
+    {
+     "w": "has",
+     "s": 0.41,
+     "e": 0.55
+    },
+    {
+     "w": "run",
+     "s": 0.55,
+     "e": 0.86
+    },
+    {
+     "w": "lights-out",
+     "s": 0.86,
+     "e": 0.91
+    },
+    {
+     "w": "production",
+     "s": 0.86,
+     "e": 1.72
+    },
+    {
+     "w": "there",
+     "s": 1.72,
+     "e": 1.9
+    },
+    {
+     "w": "since",
+     "s": 1.9,
+     "e": 2.12
+    },
+    {
+     "w": "2001.",
+     "s": 2.12,
+     "e": 3.1
+    },
+    {
+     "w": "Its",
+     "s": 3.46,
+     "e": 3.61
+    },
+    {
+     "w": "robots",
+     "s": 3.61,
+     "e": 3.97
+    },
+    {
+     "w": "can",
+     "s": 3.97,
+     "e": 4.08
+    },
+    {
+     "w": "work",
+     "s": 4.08,
+     "e": 4.24
+    },
+    {
+     "w": "unsupervised",
+     "s": 4.35,
+     "e": 5.09
+    },
+    {
+     "w": "for",
+     "s": 5.09,
+     "e": 5.19
+    },
+    {
+     "w": "up",
+     "s": 5.19,
+     "e": 5.27
+    },
+    {
+     "w": "to",
+     "s": 5.27,
+     "e": 5.35
+    },
+    {
+     "w": "thirty",
+     "s": 5.35,
+     "e": 5.81
+    },
+    {
+     "w": "days.",
+     "s": 5.81,
+     "e": 6.33
+    }
+   ]
+  },
+  {
+   "text": "No lights. No breaks. No shift changes.",
+   "dir": "punchy, rhythmic",
+   "start": 11.09,
+   "vo": 2.8,
+   "dur": 2.95,
+   "words": [
+    {
+     "w": "No",
+     "s": 0.25,
+     "e": 0.4
+    },
+    {
+     "w": "lights.",
+     "s": 0.4,
+     "e": 0.85
+    },
+    {
+     "w": "No",
+     "s": 0.99,
+     "e": 1.21
+    },
+    {
+     "w": "breaks.",
+     "s": 1.21,
+     "e": 1.64
+    },
+    {
+     "w": "No",
+     "s": 1.78,
+     "e": 1.98
+    },
+    {
+     "w": "shift",
+     "s": 1.98,
+     "e": 2.26
+    },
+    {
+     "w": "changes.",
+     "s": 2.26,
+     "e": 2.76
+    }
+   ]
+  },
+  {
+   "text": "In China, Xiaomi opened a dark factory in 2024 built to make about ten million phones a year.",
+   "dir": "factual, scale",
+   "start": 14.04,
+   "vo": 5.25,
+   "dur": 5.4,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.24,
+     "e": 0.38
+    },
+    {
+     "w": "China,",
+     "s": 0.38,
+     "e": 0.86
+    },
+    {
+     "w": "Xiaomi",
+     "s": 0.86,
+     "e": 1.23
+    },
+    {
+     "w": "opened",
+     "s": 1.23,
+     "e": 1.48
+    },
+    {
+     "w": "a",
+     "s": 1.48,
+     "e": 1.53
+    },
+    {
+     "w": "dark",
+     "s": 1.53,
+     "e": 1.9
+    },
+    {
+     "w": "factory",
+     "s": 1.9,
+     "e": 2.29
+    },
+    {
+     "w": "in",
+     "s": 2.29,
+     "e": 2.38
+    },
+    {
+     "w": "2024",
+     "s": 2.38,
+     "e": 3.14
+    },
+    {
+     "w": "built",
+     "s": 3.14,
+     "e": 3.33
+    },
+    {
+     "w": "to",
+     "s": 3.33,
+     "e": 3.39
+    },
+    {
+     "w": "make",
+     "s": 3.39,
+     "e": 3.54
+    },
+    {
+     "w": "about",
+     "s": 3.54,
+     "e": 3.77
+    },
+    {
+     "w": "ten",
+     "s": 3.77,
+     "e": 4.1
+    },
+    {
+     "w": "million",
+     "s": 4.1,
+     "e": 4.5
+    },
+    {
+     "w": "phones",
+     "s": 4.5,
+     "e": 4.81
+    },
+    {
+     "w": "a",
+     "s": 4.81,
+     "e": 4.84
+    },
+    {
+     "w": "year.",
+     "s": 4.84,
+     "e": 5.18
+    }
+   ]
+  },
+  {
+   "text": "That sounds like the end of factory jobs. But look closer.",
+   "dir": "lean in",
+   "start": 19.44,
+   "vo": 2.686,
+   "dur": 2.836,
+   "words": [
+    {
+     "w": "That",
+     "s": -0.01,
+     "e": 0.19
+    },
+    {
+     "w": "sounds",
+     "s": 0.19,
+     "e": 0.56
+    },
+    {
+     "w": "like",
+     "s": 0.56,
+     "e": 0.7
+    },
+    {
+     "w": "the",
+     "s": 0.7,
+     "e": 0.85
+    },
+    {
+     "w": "end",
+     "s": 0.85,
+     "e": 0.97
+    },
+    {
+     "w": "of",
+     "s": 0.97,
+     "e": 1.03
+    },
+    {
+     "w": "factory",
+     "s": 1.03,
+     "e": 1.4
+    },
+    {
+     "w": "jobs.",
+     "s": 1.4,
+     "e": 1.76
+    },
+    {
+     "w": "But",
+     "s": 1.76,
+     "e": 2.01
+    },
+    {
+     "w": "look",
+     "s": 2.01,
+     "e": 2.23
+    },
+    {
+     "w": "closer.",
+     "s": 2.23,
+     "e": 2.66
+    }
+   ]
+  },
+  {
+   "text": "People still design the products, program the robots, and fix them when they break.",
+   "dir": "reassuring, clear",
+   "start": 22.276,
+   "vo": 3.949,
+   "dur": 4.099,
+   "words": [
+    {
+     "w": "People",
+     "s": 0.02,
+     "e": 0.35
+    },
+    {
+     "w": "still",
+     "s": 0.35,
+     "e": 0.62
+    },
+    {
+     "w": "design",
+     "s": 0.62,
+     "e": 1.06
+    },
+    {
+     "w": "the",
+     "s": 1.06,
+     "e": 1.13
+    },
+    {
+     "w": "products,",
+     "s": 1.13,
+     "e": 1.63
+    },
+    {
+     "w": "program",
+     "s": 1.63,
+     "e": 2.23
+    },
+    {
+     "w": "the",
+     "s": 2.23,
+     "e": 2.3
+    },
+    {
+     "w": "robots,",
+     "s": 2.3,
+     "e": 2.86
+    },
+    {
+     "w": "and",
+     "s": 2.86,
+     "e": 3.04
+    },
+    {
+     "w": "fix",
+     "s": 3.04,
+     "e": 3.29
+    },
+    {
+     "w": "them",
+     "s": 3.29,
+     "e": 3.39
+    },
+    {
+     "w": "when",
+     "s": 3.39,
+     "e": 3.52
+    },
+    {
+     "w": "they",
+     "s": 3.52,
+     "e": 3.63
+    },
+    {
+     "w": "break.",
+     "s": 3.63,
+     "e": 3.92
+    }
+   ]
+  },
+  {
+   "text": "Robots that run 24/7 are like cruise control: the car keeps going, but someone still has to steer.",
+   "dir": "vivid comparison",
+   "start": 26.374,
+   "vo": 5.59,
+   "dur": 5.74,
+   "words": [
+    {
+     "w": "Robots",
+     "s": 0.27,
+     "e": 0.73
+    },
+    {
+     "w": "that",
+     "s": 0.73,
+     "e": 0.87
+    },
+    {
+     "w": "run",
+     "s": 0.87,
+     "e": 1.01
+    },
+    {
+     "w": "24/7",
+     "s": 1.01,
+     "e": 1.91
+    },
+    {
+     "w": "are",
+     "s": 1.91,
+     "e": 1.98
+    },
+    {
+     "w": "like",
+     "s": 1.98,
+     "e": 2.18
+    },
+    {
+     "w": "cruise",
+     "s": 2.18,
+     "e": 2.52
+    },
+    {
+     "w": "control:",
+     "s": 2.52,
+     "e": 2.98
+    },
+    {
+     "w": "the",
+     "s": 3.17,
+     "e": 3.29
+    },
+    {
+     "w": "car",
+     "s": 3.29,
+     "e": 3.5
+    },
+    {
+     "w": "keeps",
+     "s": 3.5,
+     "e": 3.74
+    },
+    {
+     "w": "going,",
+     "s": 3.74,
+     "e": 4.12
+    },
+    {
+     "w": "but",
+     "s": 4.12,
+     "e": 4.37
+    },
+    {
+     "w": "someone",
+     "s": 4.37,
+     "e": 4.73
+    },
+    {
+     "w": "still",
+     "s": 4.73,
+     "e": 5.0
+    },
+    {
+     "w": "has",
+     "s": 5.0,
+     "e": 5.16
+    },
+    {
+     "w": "to",
+     "s": 5.16,
+     "e": 5.23
+    },
+    {
+     "w": "steer.",
+     "s": 5.23,
+     "e": 5.56
+    }
+   ]
+  },
+  {
+   "text": "So the real question isn't robots versus humans. It's which jobs grow around them, and that's our next full video.",
+   "dir": "teasing payoff",
+   "start": 32.114,
+   "vo": 6.06,
+   "dur": 6.21,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.24,
+     "e": 0.42
+    },
+    {
+     "w": "the",
+     "s": 0.42,
+     "e": 0.5
+    },
+    {
+     "w": "real",
+     "s": 0.5,
+     "e": 0.78
+    },
+    {
+     "w": "question",
+     "s": 0.78,
+     "e": 1.22
+    },
+    {
+     "w": "isn't",
+     "s": 1.22,
+     "e": 1.6
+    },
+    {
+     "w": "robots",
+     "s": 1.6,
+     "e": 2.02
+    },
+    {
+     "w": "versus",
+     "s": 2.02,
+     "e": 2.37
+    },
+    {
+     "w": "humans.",
+     "s": 2.37,
+     "e": 2.94
+    },
+    {
+     "w": "It's",
+     "s": 3.13,
+     "e": 3.33
+    },
+    {
+     "w": "which",
+     "s": 3.33,
+     "e": 3.63
+    },
+    {
+     "w": "jobs",
+     "s": 3.63,
+     "e": 3.95
+    },
+    {
+     "w": "grow",
+     "s": 3.95,
+     "e": 4.13
+    },
+    {
+     "w": "around",
+     "s": 4.13,
+     "e": 4.51
+    },
+    {
+     "w": "them,",
+     "s": 4.51,
+     "e": 4.69
+    },
+    {
+     "w": "and",
+     "s": 4.84,
+     "e": 4.96
+    },
+    {
+     "w": "that's",
+     "s": 4.96,
+     "e": 5.23
+    },
+    {
+     "w": "our",
+     "s": 5.23,
+     "e": 5.29
+    },
+    {
+     "w": "next",
+     "s": 5.29,
+     "e": 5.53
+    },
+    {
+     "w": "full",
+     "s": 5.53,
+     "e": 5.7
+    },
+    {
+     "w": "video.",
+     "s": 5.7,
+     "e": 6.02
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off",
+   "start": 38.324,
+   "vo": 3.513,
+   "dur": 4.863,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.0,
+     "e": 0.62
+    },
+    {
+     "w": "to",
+     "s": 0.62,
+     "e": 0.89
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.89,
+     "e": 1.39
+    },
+    {
+     "w": "with",
+     "s": 1.39,
+     "e": 1.53
+    },
+    {
+     "w": "Max",
+     "s": 1.53,
+     "e": 1.96
+    },
+    {
+     "w": "for",
+     "s": 1.96,
+     "e": 2.07
+    },
+    {
+     "w": "more",
+     "s": 2.07,
+     "e": 2.38
+    },
+    {
+     "w": "tech,",
+     "s": 2.38,
+     "e": 2.77
+    },
+    {
+     "w": "decoded.",
+     "s": 2.91,
+     "e": 3.48
+    }
+   ]
+  }
+ ]
+}

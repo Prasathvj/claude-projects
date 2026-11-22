@@ -1,0 +1,906 @@
+{
+ "id": "sat01-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 55.933,
+ "vo": "sat01/sat01-short-vo.wav",
+ "music": "sat01/sat01-short-music.wav",
+ "beats": [
+  {
+   "text": "GPS satellites have no idea where you are. Your phone does all the work.",
+   "dir": "gripping myth-busting hook",
+   "start": 0.25,
+   "vo": 4.565,
+   "dur": 4.715,
+   "words": [
+    {
+     "w": "GPS",
+     "s": 0.01,
+     "e": 0.67
+    },
+    {
+     "w": "satellites",
+     "s": 0.67,
+     "e": 1.25
+    },
+    {
+     "w": "have",
+     "s": 1.35,
+     "e": 1.51
+    },
+    {
+     "w": "no",
+     "s": 1.51,
+     "e": 1.93
+    },
+    {
+     "w": "idea",
+     "s": 1.93,
+     "e": 2.33
+    },
+    {
+     "w": "where",
+     "s": 2.33,
+     "e": 2.51
+    },
+    {
+     "w": "you",
+     "s": 2.51,
+     "e": 2.73
+    },
+    {
+     "w": "are.",
+     "s": 2.73,
+     "e": 3.01
+    },
+    {
+     "w": "Your",
+     "s": 3.26,
+     "e": 3.4
+    },
+    {
+     "w": "phone",
+     "s": 3.4,
+     "e": 3.79
+    },
+    {
+     "w": "does",
+     "s": 3.79,
+     "e": 3.97
+    },
+    {
+     "w": "all",
+     "s": 3.97,
+     "e": 4.07
+    },
+    {
+     "w": "the",
+     "s": 4.07,
+     "e": 4.15
+    },
+    {
+     "w": "work.",
+     "s": 4.15,
+     "e": 4.54
+    }
+   ]
+  },
+  {
+   "text": "Around thirty GPS satellites circle Earth, about twenty thousand kilometres up.",
+   "dir": "calm, factual, a sense of scale",
+   "start": 4.965,
+   "vo": 4.949,
+   "dur": 5.099,
+   "words": [
+    {
+     "w": "Around",
+     "s": 0.01,
+     "e": 0.35
+    },
+    {
+     "w": "thirty",
+     "s": 0.35,
+     "e": 0.8
+    },
+    {
+     "w": "GPS",
+     "s": 0.8,
+     "e": 1.39
+    },
+    {
+     "w": "satellites",
+     "s": 1.39,
+     "e": 1.92
+    },
+    {
+     "w": "circle",
+     "s": 1.92,
+     "e": 2.34
+    },
+    {
+     "w": "Earth,",
+     "s": 2.34,
+     "e": 2.68
+    },
+    {
+     "w": "about",
+     "s": 2.95,
+     "e": 3.19
+    },
+    {
+     "w": "twenty",
+     "s": 3.19,
+     "e": 3.61
+    },
+    {
+     "w": "thousand",
+     "s": 3.61,
+     "e": 4.15
+    },
+    {
+     "w": "kilometres",
+     "s": 4.15,
+     "e": 4.74
+    },
+    {
+     "w": "up.",
+     "s": 4.74,
+     "e": 4.92
+    }
+   ]
+  },
+  {
+   "text": "They don't track you. They just broadcast two things, nonstop: where they are, and exactly what time it is.",
+   "dir": "clear, revealing",
+   "start": 10.064,
+   "vo": 6.583,
+   "dur": 6.733,
+   "words": [
+    {
+     "w": "They",
+     "s": -0.01,
+     "e": 0.11
+    },
+    {
+     "w": "don't",
+     "s": 0.11,
+     "e": 0.28
+    },
+    {
+     "w": "track",
+     "s": 0.28,
+     "e": 0.64
+    },
+    {
+     "w": "you.",
+     "s": 0.64,
+     "e": 0.83
+    },
+    {
+     "w": "They",
+     "s": 1.04,
+     "e": 1.23
+    },
+    {
+     "w": "just",
+     "s": 1.23,
+     "e": 1.44
+    },
+    {
+     "w": "broadcast",
+     "s": 1.44,
+     "e": 2.0
+    },
+    {
+     "w": "two",
+     "s": 2.0,
+     "e": 2.33
+    },
+    {
+     "w": "things,",
+     "s": 2.33,
+     "e": 2.78
+    },
+    {
+     "w": "nonstop:",
+     "s": 2.89,
+     "e": 3.77
+    },
+    {
+     "w": "where",
+     "s": 4.12,
+     "e": 4.34
+    },
+    {
+     "w": "they",
+     "s": 4.34,
+     "e": 4.59
+    },
+    {
+     "w": "are,",
+     "s": 4.59,
+     "e": 4.9
+    },
+    {
+     "w": "and",
+     "s": 5.03,
+     "e": 5.2
+    },
+    {
+     "w": "exactly",
+     "s": 5.2,
+     "e": 5.75
+    },
+    {
+     "w": "what",
+     "s": 5.75,
+     "e": 5.97
+    },
+    {
+     "w": "time",
+     "s": 5.97,
+     "e": 6.25
+    },
+    {
+     "w": "it",
+     "s": 6.25,
+     "e": 6.35
+    },
+    {
+     "w": "is.",
+     "s": 6.35,
+     "e": 6.56
+    }
+   ]
+  },
+  {
+   "text": "Your phone listens. Even at light speed, each signal takes a tiny fraction of a second to arrive.",
+   "dir": "curious",
+   "start": 16.797,
+   "vo": 5.745,
+   "dur": 5.895,
+   "words": [
+    {
+     "w": "Your",
+     "s": 0.0,
+     "e": 0.15
+    },
+    {
+     "w": "phone",
+     "s": 0.15,
+     "e": 0.6
+    },
+    {
+     "w": "listens.",
+     "s": 0.6,
+     "e": 1.23
+    },
+    {
+     "w": "Even",
+     "s": 1.6,
+     "e": 1.83
+    },
+    {
+     "w": "at",
+     "s": 1.83,
+     "e": 1.95
+    },
+    {
+     "w": "light",
+     "s": 1.95,
+     "e": 2.32
+    },
+    {
+     "w": "speed,",
+     "s": 2.32,
+     "e": 2.67
+    },
+    {
+     "w": "each",
+     "s": 2.87,
+     "e": 3.08
+    },
+    {
+     "w": "signal",
+     "s": 3.08,
+     "e": 3.38
+    },
+    {
+     "w": "takes",
+     "s": 3.38,
+     "e": 3.64
+    },
+    {
+     "w": "a",
+     "s": 3.64,
+     "e": 3.69
+    },
+    {
+     "w": "tiny",
+     "s": 3.69,
+     "e": 4.21
+    },
+    {
+     "w": "fraction",
+     "s": 4.21,
+     "e": 4.73
+    },
+    {
+     "w": "of",
+     "s": 4.73,
+     "e": 4.79
+    },
+    {
+     "w": "a",
+     "s": 4.79,
+     "e": 4.83
+    },
+    {
+     "w": "second",
+     "s": 4.83,
+     "e": 5.21
+    },
+    {
+     "w": "to",
+     "s": 5.21,
+     "e": 5.32
+    },
+    {
+     "w": "arrive.",
+     "s": 5.32,
+     "e": 5.7
+    }
+   ]
+  },
+  {
+   "text": "Multiply that delay by the speed of light, and you get your distance from that satellite.",
+   "dir": "clear, explanatory",
+   "start": 22.692,
+   "vo": 3.956,
+   "dur": 4.106,
+   "words": [
+    {
+     "w": "Multiply",
+     "s": 0.01,
+     "e": 0.52
+    },
+    {
+     "w": "that",
+     "s": 0.52,
+     "e": 0.68
+    },
+    {
+     "w": "delay",
+     "s": 0.68,
+     "e": 0.96
+    },
+    {
+     "w": "by",
+     "s": 0.96,
+     "e": 1.08
+    },
+    {
+     "w": "the",
+     "s": 1.08,
+     "e": 1.16
+    },
+    {
+     "w": "speed",
+     "s": 1.16,
+     "e": 1.43
+    },
+    {
+     "w": "of",
+     "s": 1.43,
+     "e": 1.56
+    },
+    {
+     "w": "light,",
+     "s": 1.56,
+     "e": 1.86
+    },
+    {
+     "w": "and",
+     "s": 2.07,
+     "e": 2.27
+    },
+    {
+     "w": "you",
+     "s": 2.27,
+     "e": 2.38
+    },
+    {
+     "w": "get",
+     "s": 2.38,
+     "e": 2.52
+    },
+    {
+     "w": "your",
+     "s": 2.52,
+     "e": 2.65
+    },
+    {
+     "w": "distance",
+     "s": 2.65,
+     "e": 3.19
+    },
+    {
+     "w": "from",
+     "s": 3.19,
+     "e": 3.31
+    },
+    {
+     "w": "that",
+     "s": 3.31,
+     "e": 3.47
+    },
+    {
+     "w": "satellite.",
+     "s": 3.47,
+     "e": 3.93
+    }
+   ]
+  },
+  {
+   "text": "One satellite puts you on a giant sphere. Three narrow it to one point. A fourth fixes your phone's clock.",
+   "dir": "building, rhythmic",
+   "start": 26.798,
+   "vo": 6.344,
+   "dur": 6.494,
+   "words": [
+    {
+     "w": "One",
+     "s": 0.03,
+     "e": 0.27
+    },
+    {
+     "w": "satellite",
+     "s": 0.27,
+     "e": 0.71
+    },
+    {
+     "w": "puts",
+     "s": 0.71,
+     "e": 0.97
+    },
+    {
+     "w": "you",
+     "s": 0.97,
+     "e": 1.07
+    },
+    {
+     "w": "on",
+     "s": 1.07,
+     "e": 1.18
+    },
+    {
+     "w": "a",
+     "s": 1.18,
+     "e": 1.23
+    },
+    {
+     "w": "giant",
+     "s": 1.23,
+     "e": 1.71
+    },
+    {
+     "w": "sphere.",
+     "s": 1.71,
+     "e": 2.19
+    },
+    {
+     "w": "Three",
+     "s": 2.49,
+     "e": 2.99
+    },
+    {
+     "w": "narrow",
+     "s": 3.02,
+     "e": 3.34
+    },
+    {
+     "w": "it",
+     "s": 3.34,
+     "e": 3.4
+    },
+    {
+     "w": "to",
+     "s": 3.4,
+     "e": 3.47
+    },
+    {
+     "w": "one",
+     "s": 3.47,
+     "e": 3.88
+    },
+    {
+     "w": "point.",
+     "s": 3.88,
+     "e": 4.25
+    },
+    {
+     "w": "A",
+     "s": 4.59,
+     "e": 4.64
+    },
+    {
+     "w": "fourth",
+     "s": 4.64,
+     "e": 5.1
+    },
+    {
+     "w": "fixes",
+     "s": 5.29,
+     "e": 5.61
+    },
+    {
+     "w": "your",
+     "s": 5.61,
+     "e": 5.71
+    },
+    {
+     "w": "phone's",
+     "s": 5.71,
+     "e": 5.97
+    },
+    {
+     "w": "clock.",
+     "s": 5.97,
+     "e": 6.31
+    }
+   ]
+  },
+  {
+   "text": "The timing is so precise that Einstein matters: up there, satellite clocks run about thirty-eight microseconds a day fast.",
+   "dir": "surprising fact, playful",
+   "start": 33.292,
+   "vo": 6.969,
+   "dur": 7.119,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.1
+    },
+    {
+     "w": "timing",
+     "s": 0.1,
+     "e": 0.61
+    },
+    {
+     "w": "is",
+     "s": 0.67,
+     "e": 0.77
+    },
+    {
+     "w": "so",
+     "s": 0.77,
+     "e": 1.14
+    },
+    {
+     "w": "precise",
+     "s": 1.14,
+     "e": 1.69
+    },
+    {
+     "w": "that",
+     "s": 1.79,
+     "e": 1.94
+    },
+    {
+     "w": "Einstein",
+     "s": 1.94,
+     "e": 2.47
+    },
+    {
+     "w": "matters:",
+     "s": 2.47,
+     "e": 2.87
+    },
+    {
+     "w": "up",
+     "s": 3.18,
+     "e": 3.35
+    },
+    {
+     "w": "there,",
+     "s": 3.35,
+     "e": 3.54
+    },
+    {
+     "w": "satellite",
+     "s": 3.81,
+     "e": 4.23
+    },
+    {
+     "w": "clocks",
+     "s": 4.23,
+     "e": 4.54
+    },
+    {
+     "w": "run",
+     "s": 4.54,
+     "e": 4.7
+    },
+    {
+     "w": "about",
+     "s": 4.7,
+     "e": 4.98
+    },
+    {
+     "w": "thirty-eight",
+     "s": 4.98,
+     "e": 6.15
+    },
+    {
+     "w": "microseconds",
+     "s": 6.15,
+     "e": 6.2
+    },
+    {
+     "w": "a",
+     "s": 6.15,
+     "e": 6.2
+    },
+    {
+     "w": "day",
+     "s": 6.2,
+     "e": 6.37
+    },
+    {
+     "w": "fast.",
+     "s": 6.37,
+     "e": 6.95
+    }
+   ]
+  },
+  {
+   "text": "Ignore that, and your location would drift by more than eleven kilometres in a single day.",
+   "dir": "dramatic",
+   "start": 40.411,
+   "vo": 4.365,
+   "dur": 4.515,
+   "words": [
+    {
+     "w": "Ignore",
+     "s": 0.0,
+     "e": 0.4
+    },
+    {
+     "w": "that,",
+     "s": 0.4,
+     "e": 0.64
+    },
+    {
+     "w": "and",
+     "s": 0.82,
+     "e": 0.92
+    },
+    {
+     "w": "your",
+     "s": 0.92,
+     "e": 1.05
+    },
+    {
+     "w": "location",
+     "s": 1.05,
+     "e": 1.49
+    },
+    {
+     "w": "would",
+     "s": 1.49,
+     "e": 1.63
+    },
+    {
+     "w": "drift",
+     "s": 1.63,
+     "e": 1.94
+    },
+    {
+     "w": "by",
+     "s": 1.94,
+     "e": 2.05
+    },
+    {
+     "w": "more",
+     "s": 2.05,
+     "e": 2.24
+    },
+    {
+     "w": "than",
+     "s": 2.24,
+     "e": 2.35
+    },
+    {
+     "w": "eleven",
+     "s": 2.35,
+     "e": 2.87
+    },
+    {
+     "w": "kilometres",
+     "s": 2.87,
+     "e": 3.58
+    },
+    {
+     "w": "in",
+     "s": 3.58,
+     "e": 3.66
+    },
+    {
+     "w": "a",
+     "s": 3.66,
+     "e": 3.69
+    },
+    {
+     "w": "single",
+     "s": 3.69,
+     "e": 4.14
+    },
+    {
+     "w": "day.",
+     "s": 4.14,
+     "e": 4.3
+    }
+   ]
+  },
+  {
+   "text": "So when your map finds you instantly, remember: the satellites are just clocks. The genius is in your pocket.",
+   "dir": "satisfying payoff",
+   "start": 44.926,
+   "vo": 6.068,
+   "dur": 6.218,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.01,
+     "e": 0.16
+    },
+    {
+     "w": "when",
+     "s": 0.16,
+     "e": 0.31
+    },
+    {
+     "w": "your",
+     "s": 0.31,
+     "e": 0.43
+    },
+    {
+     "w": "map",
+     "s": 0.43,
+     "e": 0.79
+    },
+    {
+     "w": "finds",
+     "s": 0.79,
+     "e": 1.14
+    },
+    {
+     "w": "you",
+     "s": 1.14,
+     "e": 1.29
+    },
+    {
+     "w": "instantly,",
+     "s": 1.38,
+     "e": 1.98
+    },
+    {
+     "w": "remember:",
+     "s": 2.09,
+     "e": 2.56
+    },
+    {
+     "w": "the",
+     "s": 2.56,
+     "e": 2.66
+    },
+    {
+     "w": "satellites",
+     "s": 2.66,
+     "e": 3.29
+    },
+    {
+     "w": "are",
+     "s": 3.29,
+     "e": 3.38
+    },
+    {
+     "w": "just",
+     "s": 3.38,
+     "e": 3.6
+    },
+    {
+     "w": "clocks.",
+     "s": 3.6,
+     "e": 4.19
+    },
+    {
+     "w": "The",
+     "s": 4.19,
+     "e": 4.42
+    },
+    {
+     "w": "genius",
+     "s": 4.42,
+     "e": 5.04
+    },
+    {
+     "w": "is",
+     "s": 5.04,
+     "e": 5.24
+    },
+    {
+     "w": "in",
+     "s": 5.24,
+     "e": 5.35
+    },
+    {
+     "w": "your",
+     "s": 5.35,
+     "e": 5.48
+    },
+    {
+     "w": "pocket.",
+     "s": 5.48,
+     "e": 5.98
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off",
+   "start": 51.144,
+   "vo": 3.439,
+   "dur": 4.789,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.0,
+     "e": 0.5
+    },
+    {
+     "w": "to",
+     "s": 0.5,
+     "e": 0.62
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.62,
+     "e": 1.35
+    },
+    {
+     "w": "with",
+     "s": 1.35,
+     "e": 1.48
+    },
+    {
+     "w": "Max",
+     "s": 1.48,
+     "e": 1.9
+    },
+    {
+     "w": "for",
+     "s": 1.99,
+     "e": 2.1
+    },
+    {
+     "w": "more",
+     "s": 2.1,
+     "e": 2.33
+    },
+    {
+     "w": "tech,",
+     "s": 2.33,
+     "e": 2.69
+    },
+    {
+     "w": "decoded.",
+     "s": 2.9,
+     "e": 3.41
+    }
+   ]
+  }
+ ]
+}

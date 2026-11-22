@@ -1,0 +1,47 @@
+{
+ "id": "net01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "max_tempo": 1.05,
+ "beats": [
+  {
+   "text": "In 2021, one bad settings change made Facebook, Instagram and WhatsApp vanish for about six hours. Now imagine the whole internet.",
+   "dir": "dramatic hook; single read, no repetition"
+  },
+  {
+   "text": "Meta said a faulty configuration change on its backbone routers cut its data centers off.",
+   "dir": "factual; single read, no repetition"
+  },
+  {
+   "text": "Even many of its own internal tools went down with it.",
+   "dir": "ironic; single read, no repetition"
+  },
+  {
+   "text": "And most of the internet doesn't travel through space: over ninety-nine percent of data between continents runs through cables on the sea floor.",
+   "dir": "surprising reveal; single read, no repetition"
+  },
+  {
+   "text": "In 2024, three of those cables were cut in the Red Sea, most likely by a ship's dragging anchor.",
+   "dir": "storytelling, ominous; single read, no repetition"
+  },
+  {
+   "text": "The UN estimates about a quarter of data traffic between Europe and Asia was disrupted.",
+   "dir": "serious; single read, no repetition"
+  },
+  {
+   "text": "Lose all of it, and it's not just social media: card payments, maps, ride apps and online banking all stop working.",
+   "dir": "urgent; single read, no repetition"
+  },
+  {
+   "text": "The internet isn't a cloud. It's cables, routers and settings, which is why engineers build so many backup routes.",
+   "dir": "satisfying payoff; single read, no repetition"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off; single read, no repetition"
+  }
+ ]
+}

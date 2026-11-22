@@ -1,0 +1,51 @@
+{
+ "id": "goog01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "max_tempo": 1.05,
+ "beats": [
+  {
+   "text": "Google often guesses your search before you finish typing. It's not reading your mind.",
+   "dir": "gripping hook"
+  },
+  {
+   "text": "Those suggestions come from real searches people have already made.",
+   "dir": "clear"
+  },
+  {
+   "text": "It weighs what's trending, what's common where you are, and what you've searched before.",
+   "dir": "brisk, listing"
+  },
+  {
+   "text": "But finding the answer is the bigger trick.",
+   "dir": "lean in, curious"
+  },
+  {
+   "text": "Bots called crawlers visit public web pages and follow every link they find.",
+   "dir": "explanatory"
+  },
+  {
+   "text": "Everything they find goes into Google's index: hundreds of billions of pages, over a hundred million gigabytes.",
+   "dir": "sense of awe at scale"
+  },
+  {
+   "text": "It works like the index at the back of a book: Google checks the index, not the whole web, which is why it's instant.",
+   "dir": "clear comparison"
+  },
+  {
+   "text": "Then hundreds of signals, like your language, location and device, decide what you see first.",
+   "dir": "brisk"
+  },
+  {
+   "text": "So when you hit Enter, Google isn't searching the internet. It already did, and it's just checking its notes.",
+   "dir": "satisfying payoff"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}
