@@ -1,0 +1,19 @@
+{
+ "id": "news02-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "beats": [
+  {"text": "The company behind Claude just pulled off the biggest IPO in history. And its rivals helped pay for it.", "dir": "big, gripping news hook with a twist"},
+  {"text": "Anthropic priced its shares at eighty-three dollars — above its own target range.", "dir": "quick, factual"},
+  {"text": "That raised over eighty billion dollars. More than SpaceX's record.", "dir": "impressed, punchy"},
+  {"text": "At that price, the whole company was worth about one and a half trillion.", "dir": "slow down on the number, awe"},
+  {"text": "Claude first launched in 2023. Three years later — a trillion-dollar company.", "dir": "storytelling, emphasise the contrast"},
+  {"text": "Day one, the stock opened thirty-four percent higher… then cooled to close up seventeen.", "dir": "up then down, playful"},
+  {"text": "Now the strange part: Google, Microsoft and Nvidia bought billions in shares alongside the IPO.", "dir": "conspiratorial twist"},
+  {"text": "Why? They build the chips and the cloud that AI runs on.", "dir": "clear reveal"},
+  {"text": "So every time an AI company wins, the companies selling the shovels win too.", "dir": "satisfying, knowing payoff"}
+ ]
+}

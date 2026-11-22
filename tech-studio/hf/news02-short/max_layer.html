@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'SD Display';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden}
+#m{position:absolute;left:0;top:0;transform-origin:0 0}
+</style><script src="/host/host.js"></script></head><body><div id="m"></div><script>
+const MAX={skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'};
+const POS={corner:[886,350,0.29],center:[285,540,0.85],left:[30,700,0.6],duo:[630,1290,0.6]};
+let P=null; async function init(){P=await (await fetch('/news02-short/assets/max_plan.json')).json();}
+const ease=(u)=>u<0?0:u>1?1:1-Math.pow(1-u,4);
+let prevV='rest',hold=0;
+function frame(i){
+ const t=i/P.fps, k=Math.min(i,P.env.length-1), e=P.env[k]||0, z=P.zc[k]||0;
+ const si=P.segs.findIndex(s=>t>=s.t0&&t<s.t1); const s=P.segs[si<0?P.segs.length-1:si]; const prev=P.segs[Math.max(0,si-1)];
+ const o={...s.o};
+ const talking=P.words.some(([a,b])=>t>=a-0.02&&t<=b+0.02);
+ let v=!talking||e<0.12?null: e>0.7?'A': z>0.28?'E': e>0.4?'O':'M';
+ if(v&&hold>0&&v!==prevV){v=prevV;hold--;} else if(v){if(v!==prevV)hold=1;prevV=v;}
+ if(v) o.mouth=(o.mouth==='shock'&&v!=='M')?'shock':v;
+ o.blink=((t%4.1)<0.1)?0.9:0;
+ o.tilt=(o.tilt||0)+Math.sin(t*2.1)*1.5+e*2;
+ // position: ease between modes over 0.35 s; pop on expression change
+ const a=POS[prev.mode], b=POS[s.mode], u=ease((t-s.t0)/0.35);
+ const p= si>0 && prev.mode!==s.mode ? a.map((x,j)=>x+(b[j]-x)*u) : b;
+ const pop=1+0.08*Math.max(0,1-(t-s.t0)/0.15);
+ const intro=ease(t/0.4);
+ const el=document.getElementById('m');
+ el.innerHTML=HOST.render({char:MAX,...o,w:600,h:780});
+ el.style.transform=`translate(${p[0]}px,${p[1]+(1-intro)*120-e*5}px) scale(${p[2]*pop})`;
+ el.style.opacity=intro;
+}
+</script></body></html>

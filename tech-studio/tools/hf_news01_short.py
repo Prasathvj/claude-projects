@@ -1,15 +1,16 @@
 """News Short #1: banks make customers responsible for third-party AI agents (Citi, Nov 2026).
 One scene per beat, authored in the house palette and remapped by tools/theme.py (THEME=cream GRID=blueprint).
 Max is composited afterwards (hf/news01-short/max_layer.html). Usage: THEME=cream GRID=blueprint python3 tools/hf_news01_short.py"""
-import html, json, re, subprocess, sys, wave
+import html, json, os, re, subprocess, sys, wave
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'tools'))
 import theme
 
-P = ROOT / 'hf/news01-short'
-TL = json.loads((ROOT / 'src/episodes/news01-short.timeline.json').read_text())
+SID = os.environ.get('SHORT_ID', 'news01-short')  # other Shorts import this module as a helper library
+P = ROOT / f'hf/{SID}'
+TL = json.loads((ROOT / f'src/episodes/{SID}.timeline.json').read_text())
 BE = TL['beats']
 TAIL = 1.4
 DUR = round(TL['duration'] + TAIL, 3)

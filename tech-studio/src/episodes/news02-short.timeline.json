@@ -1,0 +1,707 @@
+{
+ "id": "news02-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 43.178,
+ "vo": "news02/news02-short-vo.wav",
+ "music": "news02/news02-short-music.wav",
+ "beats": [
+  {
+   "text": "The company behind Claude just pulled off the biggest IPO in history. And its rivals helped pay for it.",
+   "dir": "big, gripping news hook with a twist",
+   "start": 0.236,
+   "vo": 6.123,
+   "dur": 6.264,
+   "words": [
+    {
+     "w": "The",
+     "s": -0.02,
+     "e": 0.09
+    },
+    {
+     "w": "company",
+     "s": 0.09,
+     "e": 0.48
+    },
+    {
+     "w": "behind",
+     "s": 0.48,
+     "e": 0.82
+    },
+    {
+     "w": "Claude",
+     "s": 0.82,
+     "e": 1.38
+    },
+    {
+     "w": "just",
+     "s": 1.38,
+     "e": 1.6
+    },
+    {
+     "w": "pulled",
+     "s": 1.6,
+     "e": 1.83
+    },
+    {
+     "w": "off",
+     "s": 1.83,
+     "e": 1.98
+    },
+    {
+     "w": "the",
+     "s": 1.98,
+     "e": 2.08
+    },
+    {
+     "w": "biggest",
+     "s": 2.08,
+     "e": 2.58
+    },
+    {
+     "w": "IPO",
+     "s": 2.58,
+     "e": 3.1
+    },
+    {
+     "w": "in",
+     "s": 3.1,
+     "e": 3.24
+    },
+    {
+     "w": "history.",
+     "s": 3.24,
+     "e": 3.89
+    },
+    {
+     "w": "And",
+     "s": 4.2,
+     "e": 4.32
+    },
+    {
+     "w": "its",
+     "s": 4.32,
+     "e": 4.41
+    },
+    {
+     "w": "rivals",
+     "s": 4.41,
+     "e": 4.96
+    },
+    {
+     "w": "helped",
+     "s": 5.19,
+     "e": 5.43
+    },
+    {
+     "w": "pay",
+     "s": 5.54,
+     "e": 5.75
+    },
+    {
+     "w": "for",
+     "s": 5.75,
+     "e": 6.03
+    },
+    {
+     "w": "it.",
+     "s": 6.03,
+     "e": 6.12
+    }
+   ]
+  },
+  {
+   "text": "Anthropic priced its shares at eighty-three dollars \u2014 above its own target range.",
+   "dir": "quick, factual",
+   "start": 6.5,
+   "vo": 3.877,
+   "dur": 4.019,
+   "words": [
+    {
+     "w": "Anthropic",
+     "s": 0.0,
+     "e": 0.51
+    },
+    {
+     "w": "priced",
+     "s": 0.51,
+     "e": 0.98
+    },
+    {
+     "w": "its",
+     "s": 0.98,
+     "e": 1.08
+    },
+    {
+     "w": "shares",
+     "s": 1.08,
+     "e": 1.36
+    },
+    {
+     "w": "at",
+     "s": 1.36,
+     "e": 1.45
+    },
+    {
+     "w": "eighty-three",
+     "s": 1.45,
+     "e": 2.07
+    },
+    {
+     "w": "dollars",
+     "s": 2.07,
+     "e": 2.52
+    },
+    {
+     "w": "\u2014",
+     "s": 2.52,
+     "e": 2.73
+    },
+    {
+     "w": "above",
+     "s": 2.73,
+     "e": 3.0
+    },
+    {
+     "w": "its",
+     "s": 3.0,
+     "e": 3.15
+    },
+    {
+     "w": "own",
+     "s": 3.15,
+     "e": 3.26
+    },
+    {
+     "w": "target",
+     "s": 3.26,
+     "e": 3.57
+    },
+    {
+     "w": "range.",
+     "s": 3.57,
+     "e": 3.86
+    }
+   ]
+  },
+  {
+   "text": "That raised over eighty billion dollars. More than SpaceX's record.",
+   "dir": "impressed, punchy",
+   "start": 10.52,
+   "vo": 3.784,
+   "dur": 3.925,
+   "words": [
+    {
+     "w": "That",
+     "s": -0.02,
+     "e": 0.26
+    },
+    {
+     "w": "raised",
+     "s": 0.26,
+     "e": 0.51
+    },
+    {
+     "w": "over",
+     "s": 0.51,
+     "e": 0.82
+    },
+    {
+     "w": "eighty",
+     "s": 0.82,
+     "e": 1.1
+    },
+    {
+     "w": "billion",
+     "s": 1.1,
+     "e": 1.6
+    },
+    {
+     "w": "dollars.",
+     "s": 1.6,
+     "e": 2.07
+    },
+    {
+     "w": "More",
+     "s": 2.22,
+     "e": 2.51
+    },
+    {
+     "w": "than",
+     "s": 2.51,
+     "e": 2.64
+    },
+    {
+     "w": "SpaceX's",
+     "s": 2.64,
+     "e": 3.44
+    },
+    {
+     "w": "record.",
+     "s": 3.44,
+     "e": 3.77
+    }
+   ]
+  },
+  {
+   "text": "At that price, the whole company was worth about one and a half trillion.",
+   "dir": "slow down on the number, awe",
+   "start": 14.445,
+   "vo": 3.452,
+   "dur": 3.593,
+   "words": [
+    {
+     "w": "At",
+     "s": -0.01,
+     "e": 0.11
+    },
+    {
+     "w": "that",
+     "s": 0.11,
+     "e": 0.27
+    },
+    {
+     "w": "price,",
+     "s": 0.27,
+     "e": 0.58
+    },
+    {
+     "w": "the",
+     "s": 0.71,
+     "e": 0.8
+    },
+    {
+     "w": "whole",
+     "s": 0.8,
+     "e": 1.17
+    },
+    {
+     "w": "company",
+     "s": 1.17,
+     "e": 1.5
+    },
+    {
+     "w": "was",
+     "s": 1.5,
+     "e": 1.64
+    },
+    {
+     "w": "worth",
+     "s": 1.64,
+     "e": 1.82
+    },
+    {
+     "w": "about",
+     "s": 1.82,
+     "e": 2.02
+    },
+    {
+     "w": "one",
+     "s": 2.02,
+     "e": 2.33
+    },
+    {
+     "w": "and",
+     "s": 2.33,
+     "e": 2.42
+    },
+    {
+     "w": "a",
+     "s": 2.42,
+     "e": 2.45
+    },
+    {
+     "w": "half",
+     "s": 2.45,
+     "e": 2.78
+    },
+    {
+     "w": "trillion.",
+     "s": 2.78,
+     "e": 3.43
+    }
+   ]
+  },
+  {
+   "text": "Claude first launched in 2023. Three years later \u2014 a trillion-dollar company.",
+   "dir": "storytelling, emphasise the contrast",
+   "start": 18.039,
+   "vo": 4.739,
+   "dur": 4.88,
+   "words": [
+    {
+     "w": "Claude",
+     "s": -0.02,
+     "e": 0.4
+    },
+    {
+     "w": "first",
+     "s": 0.4,
+     "e": 0.71
+    },
+    {
+     "w": "launched",
+     "s": 0.71,
+     "e": 1.05
+    },
+    {
+     "w": "in",
+     "s": 1.05,
+     "e": 1.16
+    },
+    {
+     "w": "2023.",
+     "s": 1.16,
+     "e": 2.18
+    },
+    {
+     "w": "Three",
+     "s": 2.52,
+     "e": 2.78
+    },
+    {
+     "w": "years",
+     "s": 2.78,
+     "e": 3.01
+    },
+    {
+     "w": "later",
+     "s": 3.01,
+     "e": 3.3
+    },
+    {
+     "w": "\u2014",
+     "s": 3.3,
+     "e": 4.02
+    },
+    {
+     "w": "a",
+     "s": 4.02,
+     "e": 4.36
+    },
+    {
+     "w": "trillion-dollar",
+     "s": 4.36,
+     "e": 4.41
+    },
+    {
+     "w": "company.",
+     "s": 4.36,
+     "e": 4.71
+    }
+   ]
+  },
+  {
+   "text": "Day one, the stock opened thirty-four percent higher\u2026 then cooled to close up seventeen.",
+   "dir": "up then down, playful",
+   "start": 22.919,
+   "vo": 4.432,
+   "dur": 4.574,
+   "words": [
+    {
+     "w": "Day",
+     "s": -0.01,
+     "e": 0.19
+    },
+    {
+     "w": "one,",
+     "s": 0.19,
+     "e": 0.5
+    },
+    {
+     "w": "the",
+     "s": 0.63,
+     "e": 0.7
+    },
+    {
+     "w": "stock",
+     "s": 0.7,
+     "e": 1.0
+    },
+    {
+     "w": "opened",
+     "s": 1.0,
+     "e": 1.28
+    },
+    {
+     "w": "thirty-four",
+     "s": 1.28,
+     "e": 1.9
+    },
+    {
+     "w": "percent",
+     "s": 1.9,
+     "e": 2.24
+    },
+    {
+     "w": "higher\u2026",
+     "s": 2.24,
+     "e": 2.52
+    },
+    {
+     "w": "then",
+     "s": 2.97,
+     "e": 3.2
+    },
+    {
+     "w": "cooled",
+     "s": 3.2,
+     "e": 3.58
+    },
+    {
+     "w": "to",
+     "s": 3.58,
+     "e": 3.65
+    },
+    {
+     "w": "close",
+     "s": 3.65,
+     "e": 3.93
+    },
+    {
+     "w": "up",
+     "s": 3.93,
+     "e": 4.02
+    },
+    {
+     "w": "seventeen.",
+     "s": 4.02,
+     "e": 4.42
+    }
+   ]
+  },
+  {
+   "text": "Now the strange part: Google, Microsoft and Nvidia bought billions in shares alongside the IPO.",
+   "dir": "conspiratorial twist",
+   "start": 27.492,
+   "vo": 6.065,
+   "dur": 6.207,
+   "words": [
+    {
+     "w": "Now",
+     "s": -0.01,
+     "e": 0.29
+    },
+    {
+     "w": "the",
+     "s": 0.29,
+     "e": 0.36
+    },
+    {
+     "w": "strange",
+     "s": 0.36,
+     "e": 0.88
+    },
+    {
+     "w": "part:",
+     "s": 0.88,
+     "e": 1.18
+    },
+    {
+     "w": "Google,",
+     "s": 1.46,
+     "e": 1.86
+    },
+    {
+     "w": "Microsoft",
+     "s": 2.09,
+     "e": 2.64
+    },
+    {
+     "w": "and",
+     "s": 2.64,
+     "e": 2.75
+    },
+    {
+     "w": "Nvidia",
+     "s": 2.75,
+     "e": 3.22
+    },
+    {
+     "w": "bought",
+     "s": 3.34,
+     "e": 3.55
+    },
+    {
+     "w": "billions",
+     "s": 3.55,
+     "e": 4.14
+    },
+    {
+     "w": "in",
+     "s": 4.14,
+     "e": 4.28
+    },
+    {
+     "w": "shares",
+     "s": 4.28,
+     "e": 4.75
+    },
+    {
+     "w": "alongside",
+     "s": 4.75,
+     "e": 5.49
+    },
+    {
+     "w": "the",
+     "s": 5.49,
+     "e": 5.9
+    },
+    {
+     "w": "IPO.",
+     "s": 5.9,
+     "e": 6.065
+    }
+   ]
+  },
+  {
+   "text": "Why? They build the chips and the cloud that AI runs on.",
+   "dir": "clear reveal",
+   "start": 33.698,
+   "vo": 3.298,
+   "dur": 3.44,
+   "words": [
+    {
+     "w": "Why?",
+     "s": -0.01,
+     "e": 0.32
+    },
+    {
+     "w": "They",
+     "s": 0.85,
+     "e": 1.11
+    },
+    {
+     "w": "build",
+     "s": 1.11,
+     "e": 1.32
+    },
+    {
+     "w": "the",
+     "s": 1.32,
+     "e": 1.38
+    },
+    {
+     "w": "chips",
+     "s": 1.38,
+     "e": 1.74
+    },
+    {
+     "w": "and",
+     "s": 1.74,
+     "e": 1.9
+    },
+    {
+     "w": "the",
+     "s": 1.9,
+     "e": 1.96
+    },
+    {
+     "w": "cloud",
+     "s": 1.96,
+     "e": 2.36
+    },
+    {
+     "w": "that",
+     "s": 2.36,
+     "e": 2.51
+    },
+    {
+     "w": "AI",
+     "s": 2.51,
+     "e": 2.83
+    },
+    {
+     "w": "runs",
+     "s": 2.83,
+     "e": 3.22
+    },
+    {
+     "w": "on.",
+     "s": 3.22,
+     "e": 3.28
+    }
+   ]
+  },
+  {
+   "text": "So every time an AI company wins, the companies selling the shovels win too.",
+   "dir": "satisfying, knowing payoff",
+   "start": 37.139,
+   "vo": 4.766,
+   "dur": 6.04,
+   "words": [
+    {
+     "w": "So",
+     "s": -0.01,
+     "e": 0.24
+    },
+    {
+     "w": "every",
+     "s": 0.44,
+     "e": 0.92
+    },
+    {
+     "w": "time",
+     "s": 0.92,
+     "e": 1.21
+    },
+    {
+     "w": "an",
+     "s": 1.21,
+     "e": 1.3
+    },
+    {
+     "w": "AI",
+     "s": 1.3,
+     "e": 1.63
+    },
+    {
+     "w": "company",
+     "s": 1.63,
+     "e": 1.94
+    },
+    {
+     "w": "wins,",
+     "s": 1.94,
+     "e": 2.34
+    },
+    {
+     "w": "the",
+     "s": 2.57,
+     "e": 2.64
+    },
+    {
+     "w": "companies",
+     "s": 2.64,
+     "e": 3.12
+    },
+    {
+     "w": "selling",
+     "s": 3.12,
+     "e": 3.42
+    },
+    {
+     "w": "the",
+     "s": 3.42,
+     "e": 3.48
+    },
+    {
+     "w": "shovels",
+     "s": 3.48,
+     "e": 4.11
+    },
+    {
+     "w": "win",
+     "s": 4.11,
+     "e": 4.36
+    },
+    {
+     "w": "too.",
+     "s": 4.36,
+     "e": 4.69
+    }
+   ]
+  }
+ ]
+}

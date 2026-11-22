@@ -3,7 +3,17 @@ Usage: python3 tools/max_plan.py ep01-short  (segments are defined in SEGS below
 import json, subprocess, sys
 import numpy as np
 
-SEGS = {'news01-short': [
+SEGS = {'news02-short': [
+    (6.38, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
+    (10.4, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (14.33, 'duo', {"brows": "up", "eyes": "happy", "mouth": "grin", "arms": "thumbs"}),
+    (17.92, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "extra": ["bang"]}),
+    (22.8, 'duo', {"brows": "up", "eyes": "open", "arms": "chin", "look": [-1, -0.6]}),
+    (27.37, 'duo', {"brows": "up", "eyes": "happy", "mouth": "smile", "arms": "shrug", "tilt": -5}),
+    (33.58, 'duo', {"brows": "skeptic", "eyes": "squint", "mouth": "smirk", "arms": "chin", "extra": ["question"], "look": [-1, -0.6]}),
+    (37.02, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (99, 'duo', {"brows": "up", "eyes": "happy", "mouth": "smile", "arms": "point", "look": [-1, -0.3]}),
+], 'news01-short': [
     (2.11, 'duo', {'brows': 'up', 'eyes': 'open', 'arms': 'point', 'look': [-1, -0.6]}),
     (5.98, 'duo', {'brows': 'high', 'eyes': 'wide', 'mouth': 'shock', 'arms': 'hands-up', 'extra': ['bang']}),
     (10.41, 'duo', {'brows': 'skeptic', 'eyes': 'squint', 'mouth': 'smirk', 'arms': 'chin', 'look': [-1, -0.6]}),
