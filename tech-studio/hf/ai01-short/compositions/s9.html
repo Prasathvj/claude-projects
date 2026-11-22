@@ -54,8 +54,8 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s9-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.fromTo("#s9-a", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.05);
-    tl.fromTo("#s9-x", { scaleX:0 }, { scaleX:1, duration:0.25, ease:"power2.out" }, 1.204);
-    tl.fromTo("#s9-b", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 1.8139999999999998);
+    tl.fromTo("#s9-x", { scaleX:0 }, { scaleX:1, duration:0.25, ease:"power2.out" }, 1.06);
+    tl.fromTo("#s9-b", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 1.78);
     tl.to("#s9-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 4.095);
     window.__timelines["s9"] = tl;
   </script>

@@ -53,7 +53,7 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s3-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.fromTo("#s3-all .bl i", { opacity:0 }, { opacity:1, duration:.15, stagger:.01 }, 0.02);
-    tl.fromTo("#s3-f", { opacity:0, scale:2 }, { opacity:1, scale:1, duration:0.25, ease:"power4.in" }, 3.847);
+    tl.fromTo("#s3-f", { opacity:0, scale:2 }, { opacity:1, scale:1, duration:0.25, ease:"power4.in" }, 3.84);
     tl.fromTo("#s3-t", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 1.405);
     tl.to("#s3-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 4.273);
     window.__timelines["s3"] = tl;

@@ -55,8 +55,8 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s9-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.fromTo("#s9-v", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.05);
-    tl.fromTo("#s9-c", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 4.352);
-    tl.fromTo("#s9-c i", { scaleX:0 }, { scaleX:1, duration:0.25, ease:"power2.out" }, 4.952);
+    tl.fromTo("#s9-c", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 4.33);
+    tl.fromTo("#s9-c i", { scaleX:0 }, { scaleX:1, duration:0.25, ease:"power2.out" }, 4.93);
     tl.to("#s9-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 5.17);
     window.__timelines["s9"] = tl;
   </script>
