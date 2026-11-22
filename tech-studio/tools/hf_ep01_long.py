@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'tools'))
+import theme
 P = ROOT / 'hf/ep01-long'
 EP = json.loads((ROOT / 'episodes/ep01/long.json').read_text())
 W, H = 1920, 1080
@@ -83,7 +84,7 @@ BASE_CSS = """
 """
 
 def scene(sid, body, script, css=''):
-    return f"""<template>
+    return theme.apply(f"""<template>
   <style>
 {FONTS}{BASE_CSS}
 {css}
@@ -97,7 +98,7 @@ def scene(sid, body, script, css=''):
     window.__timelines["{sid}"] = tl;
   </script>
 </template>
-"""
+""")
 
 E = html.escape
 def fly(sel, t=0.05, rx=18, ry=-12):
@@ -312,7 +313,7 @@ def t_chat(i, sid, v):
     body = f'<div class="card" id="{sid}-card" style="left:160px; top:90px; width:1000px;"><div class="hd"><div class="tile">{icon("chat")}</div><div><div class="lab">{E(v.get("label", "ILLUSTRATION"))}</div><div class="ttl">Chat</div></div></div><div class="inner" style="min-height:360px">{msgs}</div></div>'
     css = """.m { max-width:720px; padding:22px 30px; border-radius:30px; margin:16px 0; font:700 36px 'SD Display'; }
 .m.you { margin-left:auto; background:var(--accent); color:#1A0A04; border-bottom-right-radius:8px; }
-.m.agent { background:#F3E6DC; color:#2A1A12; border-bottom-left-radius:8px; }"""
+.m.agent { background:#F3E6DC; color:#1E120C; border-bottom-left-radius:8px; }"""
     sc = [fly(f'#{sid}-card')] + [pop(f'#{sid}-m{k}', wfrac(i, 0.05 + k * 0.5)) for k in range(len(v['msgs']))]
     return body, sc, css
 
@@ -427,7 +428,7 @@ def t_memory(i, sid, v):
     body = f'<div class="card" id="{sid}-card" style="left:90px; top:60px; width:{760 if v.get("chats") else 1100}px;"><div class="hd"><div class="tile">{icon("server")}</div><div><div class="lab">ILLUSTRATION</div><div class="ttl">Your agent\'s long-term memory</div></div></div><div class="inner">{notes}</div></div>'
     chats = v.get('chats', [])
     body += ''.join(f'<div class="ch" id="{sid}-c{k}" style="top:{90 + k * 190}px"><span>New chat · {E(c)}</span><b>loads memory ●</b></div>' for k, c in enumerate(chats))
-    css = """.nt { padding:20px 26px; margin:12px 0; border-radius:16px; background:#F3E6DC; color:#2A1A12; font:600 34px 'SD Text'; }
+    css = """.nt { padding:20px 26px; margin:12px 0; border-radius:16px; background:#F3E6DC; color:#1E120C; font:600 34px 'SD Text'; }
 .nt.x { background:#2A0D0A; border:3px solid var(--red); color:#FF6B5E; font:700 30px 'SD Mono'; }
 .ch { position:absolute; left:900px; width:400px; height:150px; border-radius:26px; background:linear-gradient(180deg,#2C1A13,#1F120C); border:2px solid var(--edge);
   display:flex; flex-direction:column; justify-content:center; gap:10px; padding:0 26px; font:700 32px 'SD Display'; color:var(--ink); }
@@ -612,7 +613,7 @@ def index():
     <meta charset="UTF-8" />
     <meta name="viewport" content="width={W}, height={H}" />
     <script src="assets/gsap.min.js"></script>
-    <style>* {{ margin:0; padding:0; box-sizing:border-box; }} html, body {{ margin:0; width:{W}px; height:{H}px; overflow:hidden; background:#0C0704; }} #root {{ position:relative; width:100%; height:100%; }}</style>
+    <style>* {{ margin:0; padding:0; box-sizing:border-box; }} html, body {{ margin:0; width:{W}px; height:{H}px; overflow:hidden; background:{'#0C0704' if theme.name() == 'dark' else theme.GROUND[theme.name()]}; }} #root {{ position:relative; width:100%; height:100%; }}</style>
   </head>
   <body>
     <div id="root" data-composition-id="main" data-start="0" data-duration="{DUR}" data-width="{W}" data-height="{H}" data-fps="30">
