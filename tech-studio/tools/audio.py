@@ -230,9 +230,37 @@ def narrate(chunk, voice, profile):
 
 
 
+_KOKORO = None
+
+
+def kokoro_say(text, voice, speed=0.95):
+    """Free offline Kokoro voice: same voice for every line, no daily limit. Cached by (voice, speed, text)."""
+    global _KOKORO
+    import hashlib
+    import soundfile as sf
+    cache = ROOT / ".cache" / "kokoro"
+    cache.mkdir(parents=True, exist_ok=True)
+    p = cache / (hashlib.sha1(f"{voice}|{speed}|{text}".encode()).hexdigest()[:16] + ".wav")
+    if not p.exists():
+        if _KOKORO is None:
+            from kokoro_onnx import Kokoro
+            _KOKORO = Kokoro("/root/.cache/hyperframes/tts/models/kokoro-v1.0.onnx", "/root/.cache/hyperframes/tts/voices/voices-v1.0.bin")
+        a, sr = _KOKORO.create(text, voice=voice, speed=speed, lang="en-gb" if voice.startswith("b") else "en-us")
+        sf.write(p, a, sr)
+    return p
+
+
+def lock_model(ep):
+    """One episode = one voice model. Never fall back to a different model mid-episode (mixed voices, 22 Nov)."""
+    global MODELS
+    if ep.get("model"):
+        MODELS = [ep["model"]]
+
+
 def episode(path):
     path = Path(path)
     ep = json.loads(path.read_text())
+    lock_model(ep)
     epdir = path.parent.name
     profile = ep.get("profile", "fast")
     beats = ep["beats"]
@@ -241,7 +269,9 @@ def episode(path):
     size = ep.get("batch", 8)  # batch 1 = one request per line (no batch-split errors, costs more quota)
     for i in range(0, len(lines), size):
         chunk = lines[i:i + size]
-        if size == 1:
+        if ep.get("engine") == "kokoro":
+            takes += [kokoro_say(t, ep["voice"], ep.get("speed", 0.95)) for t, _ in chunk]
+        elif size == 1:
             p, _ = gtts.say(chunk[0][0], chunk[0][1], voice=ep.get("voice", "Fenrir"), model=MODELS, profile=PROFILES[profile])
             takes.append(gtts.clean(p)[0])
         else:

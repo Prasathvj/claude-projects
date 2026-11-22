@@ -9,13 +9,17 @@ import os
 k = k.rstrip('/').split('/')[-1]
 epf = f'episodes/{k}/short.json' if os.path.exists(f'episodes/{k}/short.json') else f'episodes/{k}/long.json'
 ep = json.load(open(epf))
+audio.lock_model(ep)
 tp = f"src/episodes/{ep['id']}.timeline.json"
 t = json.load(open(tp)); sr = audio.SR
 x = audio.read('public/' + t['vo'])
 for i in reversed(idx):   # back to front so earlier offsets stay valid
     b = ep['beats'][i]
-    p, _ = audio.gtts.say(b['text'], b.get('dir', '') + '; read this line exactly once', voice=ep.get('voice', 'Orus'), model=audio.MODELS, profile=audio.PROFILES[ep.get('profile', 'fast')])
-    new = audio.read(audio.gtts.clean(p)[0])
+    if ep.get('engine') == 'kokoro':
+        new = audio.read(audio.kokoro_say(b['text'], ep['voice'], ep.get('speed', 0.95)))
+    else:
+        p, _ = audio.gtts.say(b['text'], b.get('dir', '') + '; read this line exactly once', voice=ep.get('voice', 'Orus'), model=audio.MODELS, profile=audio.PROFILES[ep.get('profile', 'fast')])
+        new = audio.read(audio.gtts.clean(p)[0])
     tb = t['beats'][i]; a0, a1 = int(tb['start'] * sr), int((tb['start'] + tb['vo']) * sr)
     d = len(new) / sr - tb['vo']
     x = np.concatenate([x[:a0], new, x[a1:]])

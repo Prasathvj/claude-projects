@@ -4,3 +4,4 @@ out
 public/ep*/
 public/sfx/
 __pycache__/
+.cache/
