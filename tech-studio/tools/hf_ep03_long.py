@@ -4,7 +4,7 @@ checkout traps, two stores with hidden text, courtroom, virtual card, approve po
 Usage: THEME=cream GRID=<pattern> python3 tools/hf_ep03_long.py"""
 import json, os, sys
 from pathlib import Path
-os.environ['EPID'] = 'ep03'
+os.environ.setdefault('EPID', 'ep03')
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import hf_ep02_long as X   # noqa: E402  (registers the ep02 scene types)
 B = X.B

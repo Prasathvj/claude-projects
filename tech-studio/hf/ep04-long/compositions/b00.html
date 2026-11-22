@@ -1,0 +1,65 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --ground:#F4EDE3; --edge:#EADCCD; --inner:#F8F1E8; --accent:#F87736; --accent-soft:#E98F5E; --dim:#8A6550; --ink:#2A2018;
+        --mute:#C9BBB0; --red:#FF3B30; --green:#3DDC97; --blue:#1C7ED6; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.stage { position:absolute; left:80px; top:110px; width:1320px; height:760px; perspective:1800px; }
+.card { position:absolute; border-radius:30px; border:2px solid var(--edge); background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 36px 80px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:26px; }
+.hd { display:flex; align-items:center; gap:20px; margin-bottom:20px; }
+.tile { width:80px; height:80px; border-radius:20px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 22px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 38px 'SD Display'; color:var(--ink); white-space:nowrap; }
+.inner { background:var(--inner); border-radius:22px; padding:24px 28px; position:relative; overflow:hidden; }
+.tag { position:absolute; font:600 20px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.kick { font:600 26px 'SD Text'; letter-spacing:6px; color:var(--dim); }
+.big { font:900 120px 'SD Display'; color:var(--ink); line-height:1; letter-spacing:-2px; }
+.acc { color:var(--accent); text-shadow:0 0 50px rgba(248,119,54,.5); }
+.ring { position:absolute; width:260px; height:260px; margin:-130px 0 0 -130px; border-radius:50%; border:5px solid var(--accent);
+  box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+.center { position:absolute; left:0; right:0; text-align:center; }
+
+.ed { position:absolute; left:40px; top:40px; width:820px; height:600px; border-radius:26px; background:#1E1A24; box-shadow:0 30px 80px rgba(60,30,10,.35); overflow:hidden; }
+.eb { height:58px; background:#2A2533; display:flex; align-items:center; gap:10px; padding:0 22px; font:700 20px 'SD Mono'; color:#A59DB3; }
+.eb i { width:16px; height:16px; border-radius:8px; background:#FF5F57; } .eb i:nth-child(2) { background:#FEBC2E; } .eb i:nth-child(3) { background:#28C840; }
+.eb span { margin-left:14px; } .eb em { margin-left:auto; font-style:normal; color:#F87736; }
+.ec { padding:26px 20px; } .el { display:flex; gap:22px; font:600 25px 'SD Mono'; color:#E8E2F0; line-height:1.9; white-space:pre; opacity:0; }
+.el i { font-style:normal; width:30px; text-align:right; color:#6B6378; }
+.mg { position:absolute; left:40px; top:120px; font-size:90px; opacity:0; }
+.pc { position:absolute; left:900px; top:150px; width:380px; padding:34px; background:#FFFFFF; border-radius:30px; box-shadow:0 30px 70px rgba(90,50,20,.2); text-align:center; }
+.pc small { display:block; font:800 18px 'SD Mono'; letter-spacing:1px; color:#9C8576; line-height:1.4; } .pc b { display:block; font:900 140px 'SD Display'; color:#F87736; line-height:1.1; }
+.pc span { font:700 30px 'SD Display'; color:#2A2018; } .pc .nn { font-style:normal; } .pb { height:20px; border-radius:10px; background:#F3E6DC; margin:10px 0 16px; overflow:hidden; } .pb i { display:block; height:100%; background:#F87736; border-radius:10px; }
+.tg { position:absolute; left:640px; padding:16px 26px; border-radius:18px; background:#FF3B30; color:#fff; font:900 32px 'SD Display'; opacity:0; transform:rotate(3deg); box-shadow:0 16px 40px rgba(255,59,48,.35); }
+  </style>
+  <div id="root" data-composition-id="b00" data-width="1920" data-height="1080">
+<div class="stage" id="b00-all" style="left:80px"><div class="ed" id="b00-e"><div class="eb"><i></i><i></i><i></i><span>checkout.py · ILLUSTRATION</span>
+<em id="b00-ai">✦ AI suggesting…</em></div><div class="ec"><div class="el" id="b00-l0"><i>1</i><span>def checkout(cart, user):</span></div><div class="el" id="b00-l1"><i>2</i><span>    total = sum(i.price for i in cart)</span></div><div class="el" id="b00-l2"><i>3</i><span>    if user.coupon:</span></div><div class="el" id="b00-l3"><i>4</i><span>        total *= 0.9</span></div><div class="el" id="b00-l4"><i>5</i><span>    tax = round(total * 0.18, 2)</span></div><div class="el" id="b00-l5"><i>6</i><span>    order = Order(user, cart, total + tax)</span></div><div class="el" id="b00-l6"><i>7</i><span>    db.save(order)</span></div><div class="el" id="b00-l7"><i>8</i><span>    return order</span></div></div><div class="mg" id="b00-m">🔍</div></div><div class="pc" id="b00-pc"><small>GOOGLE · SHARE OF NEW CODE GENERATED BY AI</small><b><i class="nn" id="b00-n">25</i>%</b><div class="pb"><i id="b00-bar" style="width:25%"></i></div><span id="b00-y">2024 → 2026</span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b00-e", { opacity:0, scale:.78, rotationX:8, rotationY:10, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.05);
+    tl.fromTo("#b00-l0", { opacity:0, x:-30 }, { opacity:1, x:0, duration:.18 }, 0.3);
+    tl.fromTo("#b00-l1", { opacity:0, x:-30 }, { opacity:1, x:0, duration:.18 }, 0.62);
+    tl.fromTo("#b00-l2", { opacity:0, x:-30 }, { opacity:1, x:0, duration:.18 }, 0.94);
+    tl.fromTo("#b00-l3", { opacity:0, x:-30 }, { opacity:1, x:0, duration:.18 }, 1.26);
+    tl.fromTo("#b00-l4", { opacity:0, x:-30 }, { opacity:1, x:0, duration:.18 }, 1.58);
+    tl.fromTo("#b00-l5", { opacity:0, x:-30 }, { opacity:1, x:0, duration:.18 }, 1.9);
+    tl.fromTo("#b00-l6", { opacity:0, x:-30 }, { opacity:1, x:0, duration:.18 }, 2.22);
+    tl.fromTo("#b00-l7", { opacity:0, x:-30 }, { opacity:1, x:0, duration:.18 }, 2.54);
+    tl.fromTo("#b00-pc", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.2);
+    tl.fromTo("#b00-n", { innerText:25 }, { innerText:75, snap:{ innerText:1 }, duration:2.2, ease:"power2.inOut" }, 1.371);
+    tl.fromTo("#b00-bar", { width:"25%" }, { width:"75%", duration:2.2, ease:"power2.inOut" }, 1.371);
+    tl.fromTo("#b00-ai", { opacity:.3 }, { opacity:1, duration:.4, yoyo:true, repeat:9, immediateRender:false }, 0.3);
+    tl.to("#b00-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 7.751);
+    window.__timelines["b00"] = tl;
+  </script>
+</template>
