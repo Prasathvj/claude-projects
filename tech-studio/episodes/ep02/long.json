@@ -1,0 +1,256 @@
+{
+ "id": "ep02-long",
+ "format": "horizontal",
+ "profile": "explainer",
+ "gap": 0.3,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 6,
+ "max_tempo": 1.05,
+ "host_beats": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  20,
+  21,
+  27,
+  28,
+  30,
+  41,
+  42,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53
+ ],
+ "beats": [
+  {
+   "text": "Right now, in a factory in Japan, the lights are off.",
+   "dir": "quiet, intriguing hook, almost a whisper",
+   "chapter": "Lights out"
+  },
+  {
+   "text": "Nobody is inside. And the machines are still building\u2026 more machines.",
+   "dir": "slow reveal, a little eerie"
+  },
+  {
+   "text": "FANUC has run factories like this since 2001. Its robots can work for up to thirty days without a human checking on them.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "So here's the question everyone is quietly asking: if robots can work in the dark, do they still need us?",
+   "dir": "curious, direct question to the viewer"
+  },
+  {
+   "text": "The answer is stranger than yes or no. And it starts with a machine you probably used last week.",
+   "dir": "teasing, confident"
+  },
+  {
+   "text": "First, the scale. At the end of 2025, about five million industrial robots were working in factories around the world. A new record.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "How many robots are there?"
+  },
+  {
+   "text": "In 2025 alone, factories installed more than six hundred thousand new ones.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "China installed fifty-nine percent of them. More than the rest of the world combined.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "And India? About ten thousand five hundred in a single year. Another record, and sixth in the world.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Outside factories, Amazon says it now runs more than one million robots across its warehouse network.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Internal documents reported by The New York Times suggest automation could let Amazon avoid hiring about six hundred thousand people by 2033.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Amazon says those papers reflect one team, not its hiring plan.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "So yes, the robots are real, and they're multiplying. But here's what the headlines miss.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Robots are brilliant at things we find hard\u2026 and terrible at things we find easy.",
+   "dir": "turning point, lean in",
+   "chapter": "What robots still can't do"
+  },
+  {
+   "text": "A robot arm can weld a car door in seconds, exactly the same way, thousands of times a day.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "But ask it to fold a towel, or find one sock in a messy laundry basket, and it struggles.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Scientists call this Moravec's paradox. Seeing, grasping, walking through a cluttered room: the skills evolution spent millions of years building are the hardest ones to copy.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "That's why the new humanoid robots, the ones shaped like people, still do narrow jobs. Moving boxes. Loading metal parts. Carrying totes.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Figure's humanoids spent months loading sheet-metal parts at a BMW plant in the US. Agility says its robot, Digit, has moved more than a hundred thousand totes in a warehouse.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Impressive. But a long way from replacing a mechanic, a nurse or an electrician.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Now, that machine you used last week. The ATM.",
+   "dir": "playful callback",
+   "chapter": "The ATM story"
+  },
+  {
+   "text": "When ATMs arrived, people said bank tellers were finished. A machine that hands out cash all day, with no lunch break.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "What actually happened? ATMs made each branch cheaper to run. So banks opened more branches.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Each branch needed fewer tellers. But there were many more branches.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "In the US, teller jobs didn't collapse. By 2018 there were more tellers than in 2000.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "And the job changed. Less counting cash. More helping customers, selling loans, solving problems.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Economists see this pattern again and again: machines take over tasks, not whole jobs.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "But here's the twist. The story didn't end there.",
+   "dir": "twist, slow down"
+  },
+  {
+   "text": "Today, the World Economic Forum lists bank tellers among the fastest-declining jobs on the planet. Not because of the ATM. Because of the phone in your pocket.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "In India you already know what that looks like: you scan a QR code, and you never meet a cashier at all.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "So the lesson isn't \"technology never takes jobs\". It's this: the first machine rarely kills a job. The next one can.",
+   "dir": "firm, memorable line"
+  },
+  {
+   "text": "So what do the big studies predict?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "What the big studies say"
+  },
+  {
+   "text": "The World Economic Forum surveyed more than a thousand of the world's largest employers.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Their forecast: by 2030, about ninety-two million jobs displaced\u2026 and one hundred and seventy million new ones created.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "That's a net gain of seventy-eight million jobs. But a global total hides millions of people forced to switch careers.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "The roles shrinking fastest: cashiers, clerks, data entry, bank tellers.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "The roles growing fastest: AI and machine learning specialists, big data specialists, fintech engineers.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "And the biggest growth in raw numbers? Not tech at all. Farmworkers, delivery drivers, construction workers.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "The IMF adds another angle: almost forty percent of jobs worldwide are exposed to AI. In rich countries, about sixty percent.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Exposed doesn't mean replaced. The IMF says roughly half of those jobs could benefit, because AI makes the worker more productive.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "The other half could see less hiring and lower pay.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "So what does this mean for India?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "What it means for India"
+  },
+  {
+   "text": "India's factories are automating fast, mostly car plants. Automotive takes almost half of India's new industrial robots.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "But India's biggest job engine isn't the assembly line. It's services. IT, customer support, back office.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "And that's exactly where AI, not robots, is moving in. Software that writes code, answers tickets and reads documents.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "It's the ATM pattern again: the routine tasks go first. Checking, copying, sorting, repeating.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "The work that stays is the work around the machine: designing it, fixing it, checking what it produces, and dealing with people.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "So, will robots replace human jobs?",
+   "dir": "reflective, the big question",
+   "chapter": "So, will robots replace us?"
+  },
+  {
+   "text": "Some, yes. A job that is one repetitive task from start to finish is in real danger.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "But most jobs are a bundle of tasks. Machines take the predictable ones, and leave the messy, human ones.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Remember that dark factory in Japan? Someone designed those robots. Someone programs them. And when one breaks down at three in the morning, a human still gets the call.",
+   "dir": "warm callback to the opening"
+  },
+  {
+   "text": "So the better question isn't \"Will a robot take my job?\" It's \"Which part of my job could a robot do\u2026 and what will I do instead?\"",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Answer that before your boss does, and you're already ahead.",
+   "dir": "confident, upbeat"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "friendly sign-off"
+  }
+ ]
+}

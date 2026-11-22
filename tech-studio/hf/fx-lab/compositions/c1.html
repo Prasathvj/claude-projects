@@ -1,0 +1,136 @@
+<template>
+<style>
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+#c1-all{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,#FBE3D2 0%,#F4EDE3 65%);overflow:hidden}
+.c1-lab{position:absolute;top:250px;width:100%;text-align:center;font:700 30px 'SD Mono';letter-spacing:6px;color:#F87736}
+.c1-num{position:absolute;top:330px;width:100%;text-align:center;font:900 230px 'SD Display';color:#2A2018;letter-spacing:-4px;line-height:1}
+.c1-sub{position:absolute;top:610px;width:100%;text-align:center;font:600 44px 'SD Text';color:#8C6B5A}
+.c1-sub b{color:#F87736}
+.c1-src{position:absolute;bottom:60px;width:100%;text-align:center;font:600 22px 'SD Text';color:#B09080}
+.c1-band{position:absolute;top:-200px;left:-700px;width:420px;height:1500px;transform:rotate(18deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.75),transparent)}
+.c1-dot{position:absolute;left:960px;top:445px;width:16px;height:16px;border-radius:50%;background:#F87736;opacity:0}
+</style>
+<div id="root" data-composition-id="c1" data-width="1920" data-height="1080"><div id="c1-all">
+  <div class="c1-lab">INDUSTRIAL ROBOTS AT WORK · END OF 2025</div>
+  <div class="c1-num"><span class="hf-number-wheel" data-value="5,079,078"></span></div>
+  <div class="c1-sub"><b>+9%</b> in one year · a new record</div>
+  <div class="c1-src">Source: IFR World Robotics 2026</div>
+  <div class="c1-band"></div>
+  <div class="c1-dot" id="c1-d0"></div>
+<div class="c1-dot" id="c1-d1"></div>
+<div class="c1-dot" id="c1-d2"></div>
+<div class="c1-dot" id="c1-d3"></div>
+<div class="c1-dot" id="c1-d4"></div>
+<div class="c1-dot" id="c1-d5"></div>
+<div class="c1-dot" id="c1-d6"></div>
+<div class="c1-dot" id="c1-d7"></div>
+<div class="c1-dot" id="c1-d8"></div>
+<div class="c1-dot" id="c1-d9"></div>
+<div class="c1-dot" id="c1-d10"></div>
+<div class="c1-dot" id="c1-d11"></div>
+<div class="c1-dot" id="c1-d12"></div>
+<div class="c1-dot" id="c1-d13"></div>
+<div class="c1-dot" id="c1-d14"></div>
+<div class="c1-dot" id="c1-d15"></div>
+<div class="c1-dot" id="c1-d16"></div>
+<div class="c1-dot" id="c1-d17"></div>
+</div></div>
+<style
+  data-composition-variables='[
+    { "id": "spin", "type": "enum", "role": "motion", "label": "Spin", "description": "How many full 0 to 9 revolutions each column adds before it lands, which is how far the reel travels in the same time.", "default": "single", "options": [{ "value": "single", "label": "Single" }, { "value": "double", "label": "Double" }, { "value": "triple", "label": "Triple" }] },
+    { "id": "spacing", "type": "enum", "role": "layout", "label": "Spacing", "description": "Gap between the digit columns.", "default": "standard", "options": [{ "value": "tight", "label": "Tight" }, { "value": "standard", "label": "Standard" }, { "value": "wide", "label": "Wide" }] },
+    { "id": "tone", "type": "enum", "role": "style", "label": "Tone", "description": "Digit colour: inherit keeps the surrounding text colour, ink suits light frames, paper suits dark ones, accent rides --brand.", "default": "inherit", "options": [{ "value": "inherit", "label": "Inherit" }, { "value": "ink", "label": "Ink" }, { "value": "paper", "label": "Paper" }, { "value": "accent", "label": "Accent" }] }
+  ]'
+>
+  .hf-number-wheel {
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--hf-wheel-gap, 0.02em);
+    color: var(--hf-wheel-color, inherit);
+    font-variant-numeric: tabular-nums;
+  }
+  .hf-number-wheel-digit {
+    display: inline-block;
+    height: 1em;
+    overflow: hidden;
+  }
+  .hf-number-wheel-strip {
+    display: grid;
+    
+    will-change: transform;
+  }
+  .hf-number-wheel-strip span {
+    height: 1em;
+    line-height: 1em;
+  }
+</style>
+
+<script>
+  (function () {
+    const vars =
+      window.__hyperframes && window.__hyperframes.getVariables
+        ? window.__hyperframes.getVariables()
+        : {};
+
+    // Unrecognised overrides return to their declared defaults.
+    const spins = { single: 0, double: 1, triple: 2 };
+    const gaps = { tight: "0em", standard: "0.02em", wide: "0.14em" };
+    const tones = {
+      inherit: "inherit",
+      ink: "#18181b",
+      paper: "#fafafa",
+      accent: "var(--brand, #34d399)",
+    };
+    const pick = (table, value, fallback) =>
+      Object.prototype.hasOwnProperty.call(table, value) ? table[value] : table[fallback];
+
+    const cycles = pick(spins, vars.spin, "single");
+    const gap = pick(gaps, vars.spacing, "standard");
+    const tone = pick(tones, vars.tone, "inherit");
+
+    document.querySelectorAll(".hf-number-wheel").forEach((el) => {
+      if (el.dataset.hfNumberWheelReady === "1") return;
+      el.style.setProperty("--hf-wheel-gap", gap);
+      el.style.setProperty("--hf-wheel-color", tone);
+      const value = el.dataset.value || "0";
+      el.textContent = "";
+      for (const char of value) {
+        if (!/\d/.test(char)) {
+          el.append(document.createTextNode(char));
+          continue;
+        }
+        const stops = cycles * 10 + Number(char);
+        const frame = document.createElement("span");
+        frame.className = "hf-number-wheel-digit";
+        const strip = document.createElement("span");
+        strip.className = "hf-number-wheel-strip";
+        strip.style.setProperty("--hf-number-target-y", `${-stops}em`);
+        for (let i = 0; i <= stops; i++) {
+          const step = document.createElement("span");
+          step.textContent = String(i % 10);
+          strip.appendChild(step);
+        }
+        frame.appendChild(strip);
+        el.appendChild(frame);
+      }
+      el.dataset.hfNumberWheelReady = "1";
+    });
+  })();
+</script>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused: true });
+  tl.from("#c1-all .c1-lab", { y: -40, opacity: 0, duration: .5, ease: "power3.out" }, 0.1);
+  tl.from("#c1-all .c1-num", { scale: .85, opacity: 0, duration: .5, ease: "back.out(2)" }, 0.2);
+  tl.fromTo("#c1-all .hf-number-wheel-strip", { y: 0 }, { y: (_, s) => s.style.getPropertyValue("--hf-number-target-y"), duration: 1.6, ease: "power3.out", stagger: .07 }, 0.3);
+  for (let i = 0; i < 18; i++) { const a = i / 18 * Math.PI * 2, r = 380 + (i % 3) * 90;
+    tl.fromTo("#c1-d" + i, { opacity: 1, x: 0, y: 0, scale: 1 }, { opacity: 0, x: Math.cos(a) * r, y: Math.sin(a) * r * .55, scale: .3, duration: .9, ease: "power2.out" }, 2.25); }
+  tl.fromTo("#c1-all .c1-num", { scale: 1 }, { scale: 1.06, duration: .12, yoyo: true, repeat: 1, ease: "power2.out" }, 2.2);
+  tl.from("#c1-all .c1-sub", { y: 40, opacity: 0, duration: .5, ease: "power3.out" }, 2.4);
+  tl.from("#c1-all .c1-src", { opacity: 0, duration: .5 }, 2.8);
+  tl.to("#c1-all .c1-band", { x: 3000, duration: 1.4, ease: "power2.inOut" }, 2.6);
+  window.__timelines["c1"] = tl;
+</script>
+</template>
