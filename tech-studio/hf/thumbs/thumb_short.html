@@ -39,7 +39,11 @@ const D={
  sat01:["GPS DOESN'T",'TRACK','YOU','HERE\'S HOW','smile','point','scan'],
  goog01:['GOOGLE ISN\'T','SEARCHING','THE WEB','WAIT, WHAT?','o','point','scan'],
  net01:['NO INTERNET','FOR 6 HOURS','WHAT BROKE?','TRUE STORY','shock','hands-up','gasp'],
- robo01:['ROBOTS WORK','IN THE','DARK','24/7','o','point','worried']};
+ robo01:['ROBOTS WORK','IN THE','DARK','24/7','o','point','worried'],
+ upi01:['YOUR UPI MONEY',"DOESN'T",'MOVE?','IN 2 SECONDS','shock','hands-up','gasp'],
+ ai01:['CHATGPT',"DOESN'T KNOW","WHAT'S NEXT",'TOKEN BY TOKEN','o','chin','scan'],
+ del01:['DELETED?','NOT','REALLY','YOUR FILES','shock','hands-up','worried'],
+ face01:['30,000','INVISIBLE','DOTS','ON YOUR FACE','o','point','scan']};
 const id=new URLSearchParams(location.search).get('id');const [a,b,c,chip,mouth,arms,bst]=D[id];
 const MAX={skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'};
 const fs=t=>t.length>11?110:t.length>8?130:150;

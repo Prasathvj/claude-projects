@@ -53,12 +53,12 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s4-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.set("#s4-all .bl i", { opacity:1 }, 0);
-    tl.to("#s4-q26", { backgroundColor:"#9C8576", duration:.1 }, 0.682);
-    tl.to("#s4-q27", { backgroundColor:"#9C8576", duration:.1 }, 0.802);
-    tl.to("#s4-q28", { backgroundColor:"#9C8576", duration:.1 }, 0.922);
-    tl.fromTo("#s4-s", { opacity:1, y:0 }, { y:580, duration:1, ease:"sine.inOut" }, 3.183);
-    tl.fromTo("#s4-ok", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.301);
-    tl.to("#s4-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 5.614);
+    tl.to("#s4-q26", { backgroundColor:"#9C8576", duration:.1 }, 0.624);
+    tl.to("#s4-q27", { backgroundColor:"#9C8576", duration:.1 }, 0.744);
+    tl.to("#s4-q28", { backgroundColor:"#9C8576", duration:.1 }, 0.864);
+    tl.fromTo("#s4-s", { opacity:1, y:0 }, { y:580, duration:1, ease:"sine.inOut" }, 2.813);
+    tl.fromTo("#s4-ok", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 4.751);
+    tl.to("#s4-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 5.029);
     window.__timelines["s4"] = tl;
   </script>
 </template>

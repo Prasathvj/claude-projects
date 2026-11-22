@@ -53,9 +53,9 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s4-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.fromTo("#s4-g i", { opacity:0, scale:.3 }, { opacity:1, scale:1, duration:.2, stagger:{ each:.006, from:"random" } }, 0.05);
-    tl.to("#s4-g i", { backgroundColor:"#F87736", duration:.12, yoyo:true, repeat:1, stagger:{ each:.01, from:"random" } }, 2.778);
-    tl.fromTo("#s4-n", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.483);
-    tl.to("#s4-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 5.897);
+    tl.to("#s4-g i", { backgroundColor:"#F87736", duration:.12, yoyo:true, repeat:1, stagger:{ each:.01, from:"random" } }, 3.135);
+    tl.fromTo("#s4-n", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.8);
+    tl.to("#s4-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 6.689);
     window.__timelines["s4"] = tl;
   </script>
 </template>

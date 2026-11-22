@@ -120,6 +120,20 @@ SEGS = {'robo01-short': [
     (99, 'duo', {'brows': 'up', 'eyes': 'happy', 'mouth': 'smile', 'arms': 'point', 'look': [-1, -0.3]}),
 ]}
 
+
+# batch-3 Shorts: one expression per beat (Max stays in 'duo' position), keyed by mood
+EX = {'shock': {'brows': 'high', 'eyes': 'wide', 'mouth': 'shock', 'arms': 'hands-up', 'extra': ['bang']},
+      'point': {'brows': 'up', 'arms': 'point', 'look': [-1, -0.6]},
+      'think': {'brows': 'skeptic', 'eyes': 'squint', 'arms': 'chin', 'extra': ['question']},
+      'focus': {'brows': 'focused', 'arms': 'point', 'look': [-1, -0.6]},
+      'worry': {'brows': 'worried', 'eyes': 'worried', 'extra': ['sweat']},
+      'shrug': {'brows': 'up', 'mouth': 'smirk', 'arms': 'shrug', 'tilt': -5},
+      'happy': {'brows': 'up', 'eyes': 'happy', 'mouth': 'grin', 'arms': 'thumbs'}}
+MOODS = {'upi01-short': 'shock think point focus think focus point happy shrug shock shock happy',
+         'ai01-short': 'think shock point focus focus shrug point shock think focus worry happy',
+         'del01-short': 'shock think focus point focus worry point focus shock point happy',
+         'face01-short': 'shock point focus shrug focus point shock focus worry happy happy'}
+
 # automatic host acting for long videos: expression from each beat's visual type and delivery note
 AUTO = {'slam': {'brows': 'up', 'arms': 'point', 'look': [-1, 0]}, 'quote': {'brows': 'focused', 'arms': 'chin', 'look': [-1, 0]},
         'checklist': {'brows': 'up', 'eyes': 'happy', 'arms': 'point', 'look': [-1, -0.2]}, 'end': {'brows': 'up', 'eyes': 'happy', 'mouth': 'smile', 'arms': 'thumbs'},
@@ -148,6 +162,9 @@ def auto(tl):
 
 pid = sys.argv[1]
 tl = json.load(open(f'src/episodes/{pid}.timeline.json'))
+if pid in MOODS:
+    mm = MOODS[pid].split(); bb = tl['beats']
+    SEGS[pid] = [(round(bb[i + 1]['start'] - 0.12, 3) if i + 1 < len(bb) else 99, 'duo', EX[mm[min(i, len(mm) - 1)]]) for i in range(len(bb))]
 if pid not in SEGS:
     ep = json.load(open(f'episodes/{pid.split("-")[0]}/{pid.split("-")[1]}.json'))
     for b, e in zip(tl['beats'], ep['beats']):

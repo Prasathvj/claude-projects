@@ -3,7 +3,7 @@
  "format": "vertical",
  "captions": "big",
  "fps": 30,
- "duration": 49.154,
+ "duration": 56.396,
  "vo": "upi01/upi01-short-vo.wav",
  "music": "upi01/upi01-short-music.wav",
  "beats": [
@@ -70,45 +70,45 @@
    "text": "Not in those two seconds, anyway.",
    "dir": "teasing follow-up",
    "start": 3.86,
-   "vo": 1.346,
-   "dur": 1.496,
+   "vo": 2.107,
+   "dur": 2.257,
    "words": [
     {
      "w": "Not",
      "s": 0.0,
-     "e": 0.132
+     "e": 0.207
     },
     {
      "w": "in",
-     "s": 0.132,
-     "e": 0.264
+     "s": 0.207,
+     "e": 0.413
     },
     {
      "w": "those",
-     "s": 0.264,
-     "e": 0.396
+     "s": 0.413,
+     "e": 0.62
     },
     {
      "w": "two",
-     "s": 0.396,
-     "e": 0.528
+     "s": 0.62,
+     "e": 0.826
     },
     {
      "w": "seconds,",
-     "s": 0.528,
-     "e": 0.871
+     "s": 0.826,
+     "e": 1.363
     },
     {
      "w": "anyway.",
-     "s": 0.871,
-     "e": 1.346
+     "s": 1.363,
+     "e": 2.107
     }
    ]
   },
   {
    "text": "You scan a QR code at a tea stall. Your app sends the request to its bank.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 5.356,
+   "start": 6.117,
    "vo": 4.286,
    "dur": 4.436,
    "words": [
@@ -202,7 +202,7 @@
   {
    "text": "That bank passes it to NPCI, the switchboard that sits between every UPI bank in India.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 9.792,
+   "start": 10.553,
    "vo": 5.447,
    "dur": 5.597,
    "words": [
@@ -291,7 +291,7 @@
   {
    "text": "NPCI looks up the UPI ID, like name@bank, and finds which bank account it points to.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 15.389,
+   "start": 16.15,
    "vo": 5.2,
    "dur": 5.35,
    "words": [
@@ -380,7 +380,7 @@
   {
    "text": "Then it asks your bank one question: does this person have the money?",
    "dir": "clear, curious explainer, natural pace",
-   "start": 20.739,
+   "start": 21.5,
    "vo": 4.199,
    "dur": 4.349,
    "words": [
@@ -454,7 +454,7 @@
   {
    "text": "Your bank checks your PIN and your balance, and takes the amount out of your account.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 25.088,
+   "start": 25.849,
    "vo": 5.131,
    "dur": 5.281,
    "words": [
@@ -543,283 +543,283 @@
   {
    "text": "NPCI tells the shopkeeper's bank, which adds it to their account. Ding. Paid.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 30.37,
-   "vo": 2.64,
-   "dur": 2.79,
+   "start": 31.131,
+   "vo": 4.731,
+   "dur": 4.881,
    "words": [
     {
      "w": "NPCI",
      "s": 0.0,
-     "e": 0.143
+     "e": 0.257
     },
     {
      "w": "tells",
-     "s": 0.143,
-     "e": 0.287
+     "s": 0.257,
+     "e": 0.514
     },
     {
      "w": "the",
-     "s": 0.287,
-     "e": 0.43
+     "s": 0.514,
+     "e": 0.771
     },
     {
      "w": "shopkeeper's",
-     "s": 0.43,
-     "e": 0.861
+     "s": 0.771,
+     "e": 1.543
     },
     {
      "w": "bank,",
-     "s": 0.861,
-     "e": 1.09
+     "s": 1.543,
+     "e": 1.954
     },
     {
      "w": "which",
-     "s": 1.09,
-     "e": 1.234
+     "s": 1.954,
+     "e": 2.211
     },
     {
      "w": "adds",
-     "s": 1.234,
-     "e": 1.377
+     "s": 2.211,
+     "e": 2.468
     },
     {
      "w": "it",
-     "s": 1.377,
-     "e": 1.521
+     "s": 2.468,
+     "e": 2.725
     },
     {
      "w": "to",
-     "s": 1.521,
-     "e": 1.664
+     "s": 2.725,
+     "e": 2.983
     },
     {
      "w": "their",
-     "s": 1.664,
-     "e": 1.808
+     "s": 2.983,
+     "e": 3.24
     },
     {
      "w": "account.",
-     "s": 1.808,
-     "e": 2.181
+     "s": 3.24,
+     "e": 3.908
     },
     {
      "w": "Ding.",
-     "s": 2.181,
-     "e": 2.41
+     "s": 3.908,
+     "e": 4.32
     },
     {
      "w": "Paid.",
-     "s": 2.41,
-     "e": 2.64
+     "s": 4.32,
+     "e": 4.731
     }
    ]
   },
   {
    "text": "The banks settle the real money between themselves later, in batches.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 33.16,
-   "vo": 0.65,
-   "dur": 0.8,
+   "start": 36.012,
+   "vo": 3.67,
+   "dur": 3.82,
    "words": [
     {
      "w": "The",
      "s": 0.0,
-     "e": 0.036
+     "e": 0.202
     },
     {
      "w": "banks",
-     "s": 0.036,
-     "e": 0.071
+     "s": 0.202,
+     "e": 0.403
     },
     {
      "w": "settle",
-     "s": 0.071,
-     "e": 0.107
+     "s": 0.403,
+     "e": 0.605
     },
     {
      "w": "the",
-     "s": 0.107,
-     "e": 0.143
+     "s": 0.605,
+     "e": 0.807
     },
     {
      "w": "real",
-     "s": 0.143,
-     "e": 0.179
+     "s": 0.807,
+     "e": 1.008
     },
     {
      "w": "money",
-     "s": 0.179,
-     "e": 0.25
+     "s": 1.008,
+     "e": 1.412
     },
     {
      "w": "between",
-     "s": 0.25,
-     "e": 0.322
+     "s": 1.412,
+     "e": 1.815
     },
     {
      "w": "themselves",
-     "s": 0.322,
-     "e": 0.429
+     "s": 1.815,
+     "e": 2.42
     },
     {
      "w": "later,",
-     "s": 0.429,
-     "e": 0.522
+     "s": 2.42,
+     "e": 2.944
     },
     {
      "w": "in",
-     "s": 0.522,
-     "e": 0.557
+     "s": 2.944,
+     "e": 3.146
     },
     {
      "w": "batches.",
-     "s": 0.557,
-     "e": 0.65
+     "s": 3.146,
+     "e": 3.67
     }
    ]
   },
   {
    "text": "And the scale is wild: in August 2026, UPI handled 24.5 billion payments in a single month.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 33.96,
-   "vo": 7.49,
-   "dur": 7.64,
+   "start": 39.832,
+   "vo": 8.41,
+   "dur": 8.56,
    "words": [
     {
      "w": "And",
      "s": 0.0,
-     "e": 0.26
+     "e": 0.292
     },
     {
      "w": "the",
-     "s": 0.26,
-     "e": 0.52
+     "s": 0.292,
+     "e": 0.584
     },
     {
      "w": "scale",
-     "s": 0.52,
-     "e": 0.78
+     "s": 0.584,
+     "e": 0.876
     },
     {
      "w": "is",
-     "s": 0.78,
-     "e": 1.04
+     "s": 0.876,
+     "e": 1.168
     },
     {
      "w": "wild:",
-     "s": 1.04,
-     "e": 1.456
+     "s": 1.168,
+     "e": 1.635
     },
     {
      "w": "in",
-     "s": 1.456,
-     "e": 1.716
+     "s": 1.635,
+     "e": 1.927
     },
     {
      "w": "August",
-     "s": 1.716,
-     "e": 2.236
+     "s": 1.927,
+     "e": 2.511
     },
     {
      "w": "2026,",
-     "s": 2.236,
-     "e": 3.433
+     "s": 2.511,
+     "e": 3.855
     },
     {
      "w": "UPI",
-     "s": 3.433,
-     "e": 3.953
+     "s": 3.855,
+     "e": 4.439
     },
     {
      "w": "handled",
-     "s": 3.953,
-     "e": 4.473
+     "s": 4.439,
+     "e": 5.023
     },
     {
      "w": "24.5",
-     "s": 4.473,
-     "e": 5.253
+     "s": 5.023,
+     "e": 5.899
     },
     {
      "w": "billion",
-     "s": 5.253,
-     "e": 5.773
+     "s": 5.899,
+     "e": 6.483
     },
     {
      "w": "payments",
-     "s": 5.773,
-     "e": 6.293
+     "s": 6.483,
+     "e": 7.067
     },
     {
      "w": "in",
-     "s": 6.293,
-     "e": 6.553
+     "s": 7.067,
+     "e": 7.359
     },
     {
      "w": "a",
-     "s": 6.553,
-     "e": 6.813
+     "s": 7.359,
+     "e": 7.651
     },
     {
      "w": "single",
-     "s": 6.813,
-     "e": 7.073
+     "s": 7.651,
+     "e": 7.943
     },
     {
      "w": "month.",
-     "s": 7.073,
-     "e": 7.49
+     "s": 7.943,
+     "e": 8.41
     }
    ]
   },
   {
    "text": "That's about nine thousand payments every second.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 41.6,
-   "vo": 2.914,
-   "dur": 3.064,
+   "start": 48.392,
+   "vo": 3.364,
+   "dur": 3.514,
    "words": [
     {
      "w": "That's",
      "s": 0.0,
-     "e": 0.214
+     "e": 0.247
     },
     {
      "w": "about",
-     "s": 0.214,
-     "e": 0.643
+     "s": 0.247,
+     "e": 0.742
     },
     {
      "w": "nine",
-     "s": 0.643,
-     "e": 0.857
+     "s": 0.742,
+     "e": 0.989
     },
     {
      "w": "thousand",
-     "s": 0.857,
-     "e": 1.286
+     "s": 0.989,
+     "e": 1.484
     },
     {
      "w": "payments",
-     "s": 1.286,
-     "e": 1.714
+     "s": 1.484,
+     "e": 1.979
     },
     {
      "w": "every",
-     "s": 1.714,
-     "e": 2.357
+     "s": 1.979,
+     "e": 2.721
     },
     {
      "w": "second.",
-     "s": 2.357,
-     "e": 2.914
+     "s": 2.721,
+     "e": 3.364
     }
    ]
   },
   {
    "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
    "dir": "warm, friendly sign-off",
-   "start": 44.664,
+   "start": 51.906,
    "vo": 3.14,
    "dur": 4.49,
    "words": [

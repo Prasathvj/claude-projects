@@ -3,7 +3,7 @@
  "format": "vertical",
  "captions": "big",
  "fps": 30,
- "duration": 58.424,
+ "duration": 57.471,
  "vo": "ai01/ai01-short-vo.wav",
  "music": "ai01/ai01-short-music.wav",
  "beats": [
@@ -99,328 +99,328 @@
    "text": "Every reply is built one small piece at a time. Those pieces are called tokens.",
    "dir": "clear, curious explainer, natural pace",
    "start": 5.038,
-   "vo": 2.872,
-   "dur": 3.022,
+   "vo": 4.997,
+   "dur": 5.147,
    "words": [
     {
      "w": "Every",
      "s": 0.0,
-     "e": 0.356
+     "e": 0.619
     },
     {
      "w": "reply",
-     "s": 0.356,
-     "e": 0.593
+     "s": 0.619,
+     "e": 1.032
     },
     {
      "w": "is",
-     "s": 0.593,
-     "e": 0.712
+     "s": 1.032,
+     "e": 1.239
     },
     {
      "w": "built",
-     "s": 0.712,
-     "e": 0.831
+     "s": 1.239,
+     "e": 1.445
     },
     {
      "w": "one",
-     "s": 0.831,
-     "e": 1.068
+     "s": 1.445,
+     "e": 1.858
     },
     {
      "w": "small",
-     "s": 1.068,
-     "e": 1.187
+     "s": 1.858,
+     "e": 2.065
     },
     {
      "w": "piece",
-     "s": 1.187,
-     "e": 1.305
+     "s": 2.065,
+     "e": 2.271
     },
     {
      "w": "at",
-     "s": 1.305,
-     "e": 1.424
+     "s": 2.271,
+     "e": 2.478
     },
     {
      "w": "a",
-     "s": 1.424,
-     "e": 1.543
+     "s": 2.478,
+     "e": 2.684
     },
     {
      "w": "time.",
-     "s": 1.543,
-     "e": 1.733
+     "s": 2.684,
+     "e": 3.015
     },
     {
      "w": "Those",
-     "s": 1.733,
-     "e": 1.851
+     "s": 3.015,
+     "e": 3.221
     },
     {
      "w": "pieces",
-     "s": 1.851,
-     "e": 2.089
+     "s": 3.221,
+     "e": 3.634
     },
     {
      "w": "are",
-     "s": 2.089,
-     "e": 2.326
+     "s": 3.634,
+     "e": 4.047
     },
     {
      "w": "called",
-     "s": 2.326,
-     "e": 2.563
+     "s": 4.047,
+     "e": 4.46
     },
     {
      "w": "tokens.",
-     "s": 2.563,
-     "e": 2.872
+     "s": 4.46,
+     "e": 4.997
     }
    ]
   },
   {
    "text": "A token is often a whole word, sometimes just part of one. In English, a token is roughly three quarters of a word.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 8.06,
-   "vo": 13.102,
-   "dur": 13.252,
+   "start": 10.185,
+   "vo": 6.88,
+   "dur": 7.03,
    "words": [
     {
      "w": "A",
      "s": 0.0,
-     "e": 0.37
+     "e": 0.194
     },
     {
      "w": "token",
-     "s": 0.37,
-     "e": 1.11
+     "s": 0.194,
+     "e": 0.583
     },
     {
      "w": "is",
-     "s": 1.11,
-     "e": 1.48
+     "s": 0.583,
+     "e": 0.777
     },
     {
      "w": "often",
-     "s": 1.48,
-     "e": 2.221
+     "s": 0.777,
+     "e": 1.166
     },
     {
      "w": "a",
-     "s": 2.221,
-     "e": 2.591
+     "s": 1.166,
+     "e": 1.36
     },
     {
      "w": "whole",
-     "s": 2.591,
-     "e": 2.961
+     "s": 1.36,
+     "e": 1.555
     },
     {
      "w": "word,",
-     "s": 2.961,
-     "e": 3.553
+     "s": 1.555,
+     "e": 1.866
     },
     {
      "w": "sometimes",
-     "s": 3.553,
-     "e": 5.033
+     "s": 1.866,
+     "e": 2.643
     },
     {
      "w": "just",
-     "s": 5.033,
-     "e": 5.403
+     "s": 2.643,
+     "e": 2.838
     },
     {
      "w": "part",
-     "s": 5.403,
-     "e": 5.774
+     "s": 2.838,
+     "e": 3.032
     },
     {
      "w": "of",
-     "s": 5.774,
-     "e": 6.144
+     "s": 3.032,
+     "e": 3.226
     },
     {
      "w": "one.",
-     "s": 6.144,
-     "e": 7.106
+     "s": 3.226,
+     "e": 3.732
     },
     {
      "w": "In",
-     "s": 7.106,
-     "e": 7.476
+     "s": 3.732,
+     "e": 3.926
     },
     {
      "w": "English,",
-     "s": 7.476,
-     "e": 8.438
+     "s": 3.926,
+     "e": 4.431
     },
     {
      "w": "a",
-     "s": 8.438,
-     "e": 8.808
+     "s": 4.431,
+     "e": 4.626
     },
     {
      "w": "token",
-     "s": 8.808,
-     "e": 9.549
+     "s": 4.626,
+     "e": 5.014
     },
     {
      "w": "is",
-     "s": 9.549,
-     "e": 9.919
+     "s": 5.014,
+     "e": 5.209
     },
     {
      "w": "roughly",
-     "s": 9.919,
-     "e": 10.659
+     "s": 5.209,
+     "e": 5.597
     },
     {
      "w": "three",
-     "s": 10.659,
-     "e": 11.029
+     "s": 5.597,
+     "e": 5.792
     },
     {
      "w": "quarters",
-     "s": 11.029,
-     "e": 11.769
+     "s": 5.792,
+     "e": 6.18
     },
     {
      "w": "of",
-     "s": 11.769,
-     "e": 12.139
+     "s": 6.18,
+     "e": 6.375
     },
     {
      "w": "a",
-     "s": 12.139,
-     "e": 12.509
+     "s": 6.375,
+     "e": 6.569
     },
     {
      "w": "word.",
-     "s": 12.509,
-     "e": 13.102
+     "s": 6.569,
+     "e": 6.88
     }
    ]
   },
   {
    "text": "At every step, the model scores every token it knows, tens of thousands of them, and gives each one a probability.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 21.311,
-   "vo": 5.907,
-   "dur": 6.057,
+   "start": 17.214,
+   "vo": 6.699,
+   "dur": 6.849,
    "words": [
     {
      "w": "At",
      "s": 0.0,
-     "e": 0.158
+     "e": 0.179
     },
     {
      "w": "every",
-     "s": 0.158,
-     "e": 0.632
+     "s": 0.179,
+     "e": 0.716
     },
     {
      "w": "step,",
-     "s": 0.632,
-     "e": 0.884
+     "s": 0.716,
+     "e": 1.003
     },
     {
      "w": "the",
-     "s": 0.884,
-     "e": 1.042
+     "s": 1.003,
+     "e": 1.182
     },
     {
      "w": "model",
-     "s": 1.042,
-     "e": 1.358
+     "s": 1.182,
+     "e": 1.54
     },
     {
      "w": "scores",
-     "s": 1.358,
-     "e": 1.674
+     "s": 1.54,
+     "e": 1.899
     },
     {
      "w": "every",
-     "s": 1.674,
-     "e": 2.148
+     "s": 1.899,
+     "e": 2.436
     },
     {
      "w": "token",
-     "s": 2.148,
-     "e": 2.464
+     "s": 2.436,
+     "e": 2.794
     },
     {
      "w": "it",
-     "s": 2.464,
-     "e": 2.622
+     "s": 2.794,
+     "e": 2.973
     },
     {
      "w": "knows,",
-     "s": 2.622,
-     "e": 2.874
+     "s": 2.973,
+     "e": 3.26
     },
     {
      "w": "tens",
-     "s": 2.874,
-     "e": 3.032
+     "s": 3.26,
+     "e": 3.439
     },
     {
      "w": "of",
-     "s": 3.032,
-     "e": 3.19
+     "s": 3.439,
+     "e": 3.618
     },
     {
      "w": "thousands",
-     "s": 3.19,
-     "e": 3.506
+     "s": 3.618,
+     "e": 3.976
     },
     {
      "w": "of",
-     "s": 3.506,
-     "e": 3.664
+     "s": 3.976,
+     "e": 4.156
     },
     {
      "w": "them,",
-     "s": 3.664,
-     "e": 3.917
+     "s": 4.156,
+     "e": 4.442
     },
     {
      "w": "and",
-     "s": 3.917,
-     "e": 4.075
+     "s": 4.442,
+     "e": 4.621
     },
     {
      "w": "gives",
-     "s": 4.075,
-     "e": 4.391
+     "s": 4.621,
+     "e": 4.979
     },
     {
      "w": "each",
-     "s": 4.391,
-     "e": 4.549
+     "s": 4.979,
+     "e": 5.159
     },
     {
      "w": "one",
-     "s": 4.549,
-     "e": 4.865
+     "s": 5.159,
+     "e": 5.517
     },
     {
      "w": "a",
-     "s": 4.865,
-     "e": 5.022
+     "s": 5.517,
+     "e": 5.696
     },
     {
      "w": "probability.",
-     "s": 5.022,
-     "e": 5.907
+     "s": 5.696,
+     "e": 6.699
     }
    ]
   },
   {
    "text": "After \"The sky is\", \"blue\" gets a high score. \"Banana\" gets almost nothing.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 27.368,
+   "start": 24.063,
    "vo": 4.625,
    "dur": 4.775,
    "words": [
@@ -494,7 +494,7 @@
   {
    "text": "It picks one, adds it to the sentence, and does the whole thing again. And again. And again.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 32.143,
+   "start": 28.838,
    "vo": 4.98,
    "dur": 5.13,
    "words": [
@@ -593,7 +593,7 @@
   {
    "text": "A long answer can mean hundreds of these predictions in a few seconds.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 37.273,
+   "start": 33.968,
    "vo": 5.637,
    "dur": 5.787,
    "words": [
@@ -667,101 +667,101 @@
   {
    "text": "So how does it sound so smart? It learned those probabilities from a huge amount of text.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 43.06,
-   "vo": 2.989,
-   "dur": 3.139,
+   "start": 39.755,
+   "vo": 5.341,
+   "dur": 5.491,
    "words": [
     {
      "w": "So",
      "s": 0.0,
-     "e": 0.124
+     "e": 0.221
     },
     {
      "w": "how",
-     "s": 0.124,
-     "e": 0.247
+     "s": 0.221,
+     "e": 0.441
     },
     {
      "w": "does",
-     "s": 0.247,
-     "e": 0.371
+     "s": 0.441,
+     "e": 0.662
     },
     {
      "w": "it",
-     "s": 0.371,
-     "e": 0.494
+     "s": 0.662,
+     "e": 0.883
     },
     {
      "w": "sound",
-     "s": 0.494,
-     "e": 0.618
+     "s": 0.883,
+     "e": 1.104
     },
     {
      "w": "so",
-     "s": 0.618,
-     "e": 0.741
+     "s": 1.104,
+     "e": 1.324
     },
     {
      "w": "smart?",
-     "s": 0.741,
-     "e": 0.939
+     "s": 1.324,
+     "e": 1.677
     },
     {
      "w": "It",
-     "s": 0.939,
-     "e": 1.062
+     "s": 1.677,
+     "e": 1.898
     },
     {
      "w": "learned",
-     "s": 1.062,
-     "e": 1.309
+     "s": 1.898,
+     "e": 2.339
     },
     {
      "w": "those",
-     "s": 1.309,
-     "e": 1.433
+     "s": 2.339,
+     "e": 2.56
     },
     {
      "w": "probabilities",
-     "s": 1.433,
-     "e": 2.05
+     "s": 2.56,
+     "e": 3.664
     },
     {
      "w": "from",
-     "s": 2.05,
-     "e": 2.174
+     "s": 3.664,
+     "e": 3.884
     },
     {
      "w": "a",
-     "s": 2.174,
-     "e": 2.297
+     "s": 3.884,
+     "e": 4.105
     },
     {
      "w": "huge",
-     "s": 2.297,
-     "e": 2.421
+     "s": 4.105,
+     "e": 4.326
     },
     {
      "w": "amount",
-     "s": 2.421,
-     "e": 2.668
+     "s": 4.326,
+     "e": 4.767
     },
     {
      "w": "of",
-     "s": 2.668,
-     "e": 2.791
+     "s": 4.767,
+     "e": 4.988
     },
     {
      "w": "text.",
-     "s": 2.791,
-     "e": 2.989
+     "s": 4.988,
+     "e": 5.341
     }
    ]
   },
   {
    "text": "It isn't looking up an answer. It's predicting one, token by token.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 46.199,
+   "start": 45.246,
    "vo": 4.104,
    "dur": 4.254,
    "words": [
@@ -830,7 +830,7 @@
   {
    "text": "That's also why it can sound confident and still be wrong.",
    "dir": "clear, curious explainer, natural pace",
-   "start": 50.454,
+   "start": 49.501,
    "vo": 3.45,
    "dur": 3.6,
    "words": [
@@ -894,7 +894,7 @@
   {
    "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
    "dir": "warm, friendly sign-off",
-   "start": 54.054,
+   "start": 53.101,
    "vo": 3.02,
    "dur": 4.37,
    "words": [
