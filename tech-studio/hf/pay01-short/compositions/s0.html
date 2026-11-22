@@ -1,0 +1,74 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 180px 'SD Display'; color:var(--accent); letter-spacing:-4px; line-height:1; }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.ph { position:relative; border-radius:28px; overflow:hidden; border:8px solid #FFFFFF; box-shadow:0 30px 70px rgba(0,0,0,.35); background:#F7F1EB; }
+.ph img { width:100%; height:100%; object-fit:cover; display:block; } .ph.fb { display:flex; align-items:center; justify-content:center; }
+.chip { display:inline-flex; align-items:center; gap:12px; padding:16px 26px; border-radius:24px; background:#F3E6DC; color:#1E120C; font:800 38px 'SD Display'; }
+.hl { color:var(--accent); }
+.card { position:absolute; border-radius:36px; border:3px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.30); }
+.h1 { position:absolute; left:40px; right:40px; text-align:center; font:900 96px 'SD Display'; color:var(--ink); line-height:1.02; letter-spacing:-2px; }
+.h1 span { color:var(--accent); }
+.lab { font:700 30px 'SD Mono'; letter-spacing:4px; color:var(--accent); }
+.mono { font-family:'SD Mono'; }
+.tag2 { position:absolute; padding:14px 26px; border-radius:18px; font:900 44px 'SD Display'; }
+.ok { background:#3DDC97; color:#0E3B26; } .bad { background:#FF3B30; color:#FFFFFF; }
+.ill { position:absolute; left:0; right:0; text-align:center; top:1240px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }.gcard { position:absolute; width:620px; height:380px; border-radius:36px; background:linear-gradient(135deg,#FFD89A,#F87736 60%,#C85019); box-shadow:0 30px 90px rgba(248,119,54,.55); padding:44px; }
+.chip3 { width:110px; height:80px; border-radius:16px; background:linear-gradient(135deg,#FFF1C9,#E0B25A); } .gnum { margin-top:70px; font:900 56px 'SD Mono'; color:#FFFFFF; letter-spacing:4px; }
+.gnm { font:800 30px 'SD Display'; color:#100804; margin-top:10px; letter-spacing:3px; }
+.cap3 { position:absolute; left:40px; right:40px; text-align:center; font:900 78px 'SD Display'; color:var(--ink); line-height:1.02; } .cap3 span { color:var(--accent); }.spk { position:absolute; left:520px; top:540px; font-size:60px; color:#FFC24A; opacity:0; }
+  </style>
+  <div id="root" data-composition-id="s0" data-width="1080" data-height="1920">
+    <div class="all" id="s0-all">
+<div id="s0-all" class="all"><div class="gcard" style="left:230px; top:360px" id="s0-c"><div class="chip3"></div><div class="gnum mono">•••• 4821</div><div class="gnm">YOUR MAIN CARD</div></div><div class="spk" id="s0-k0">✦</div><div class="spk" id="s0-k1">✦</div><div class="spk" id="s0-k2">✦</div><div class="spk" id="s0-k3">✦</div><div class="spk" id="s0-k4">✦</div><div class="spk" id="s0-k5">✦</div><div class="spk" id="s0-k6">✦</div><div class="spk" id="s0-k7">✦</div><div class="cap3" id="s0-t" style="top:860px">GIVE AI YOUR<br><span>CREDIT CARD?!</span></div><div class="bit" id="s0-bit" style="left:110px; top:1080px; width:300px; height:270px;"><div id="s0-bit-n"><svg viewBox="0 0 400 360" width="300" height="270" style="overflow:visible"><defs><pattern id="scan" width="4" height="6" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#fff"/></pattern></defs><g transform="rotate(0 200 180)"><ellipse cx="200" cy="330" rx="46" ry="10" fill="rgba(0,0,0,.4)"/><path d="M184 300 Q200 336 216 300 Z" fill="#F87736" opacity=".9"/><path d="M192 300 Q200 320 208 300 Z" fill="#FFE2CC"/><rect x="120" y="196" width="160" height="110" rx="40" fill="#F87736"/><rect x="160" y="226" width="80" height="40" rx="12" fill="#160B06"/><circle cx="182" cy="246" r="6" fill="#1C7ED6"/><circle cx="218" cy="246" r="6" fill="#F87736"/><path d="M128 224 q-26 14 -30 44" stroke="#D8C4B4" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="98" cy="270" r="13" fill="#D8C4B4"/><path d="M272 224 q30 -10 34 -56" stroke="#D8C4B4" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="306" cy="164" r="13" fill="#D8C4B4"/><path d="M324 140 q8 8 2 18 M334 154 q8 8 2 18" stroke="#F87736" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M200 54 V26" stroke="#D8C4B4" stroke-width="8"/><circle cx="200" cy="22" r="11" fill="#F87736"/><rect x="96" y="52" width="208" height="150" rx="56" fill="#F3E6DC"/><rect x="96" y="52" width="208" height="150" rx="56" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3"/><rect x="120" y="82" width="160" height="92" rx="34" fill="#160B06"/><ellipse cx="200" cy="122" rx="70" ry="34" fill="#1C7ED6" opacity=".18"/><path d="M161 127 Q174 110 187 127 M213 127 Q226 110 239 127" stroke="#1C7ED6" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M188 146 Q200 154 212 146" stroke="#1C7ED6" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="82" y="104" width="18" height="40" rx="8" fill="#D8C4B4"/><rect x="300" y="104" width="18" height="40" rx="8" fill="#D8C4B4"/></g></svg></div></div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s0-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo("#s0-c", { opacity:0, scale:.4, rotation:-20 }, { opacity:1, scale:1, rotation:-6, duration:0.5, ease:"back.out(1.8)" }, 0.02);
+    tl.fromTo("#s0-k0", { opacity:1, x:0, y:0, scale:.5 }, { opacity:0, x:400, y:0, scale:1.4, duration:.8, ease:"power2.out" }, 0.35);
+    tl.fromTo("#s0-k1", { opacity:1, x:0, y:0, scale:.5 }, { opacity:0, x:283, y:184, scale:1.4, duration:.8, ease:"power2.out" }, 0.35);
+    tl.fromTo("#s0-k2", { opacity:1, x:0, y:0, scale:.5 }, { opacity:0, x:0, y:260, scale:1.4, duration:.8, ease:"power2.out" }, 0.35);
+    tl.fromTo("#s0-k3", { opacity:1, x:0, y:0, scale:.5 }, { opacity:0, x:-283, y:184, scale:1.4, duration:.8, ease:"power2.out" }, 0.35);
+    tl.fromTo("#s0-k4", { opacity:1, x:0, y:0, scale:.5 }, { opacity:0, x:-400, y:0, scale:1.4, duration:.8, ease:"power2.out" }, 0.35);
+    tl.fromTo("#s0-k5", { opacity:1, x:0, y:0, scale:.5 }, { opacity:0, x:-283, y:-184, scale:1.4, duration:.8, ease:"power2.out" }, 0.35);
+    tl.fromTo("#s0-k6", { opacity:1, x:0, y:0, scale:.5 }, { opacity:0, x:-0, y:-260, scale:1.4, duration:.8, ease:"power2.out" }, 0.35);
+    tl.fromTo("#s0-k7", { opacity:1, x:0, y:0, scale:.5 }, { opacity:0, x:283, y:-184, scale:1.4, duration:.8, ease:"power2.out" }, 0.35);
+    tl.fromTo("#s0-t", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 1.388);
+    tl.set("#s0-bit > div", { opacity:0 }, 0);
+    tl.set("#s0-bit-n", { opacity:1 }, 0);
+    tl.fromTo("#s0-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:3 }, 0);
+    tl.to("#s0-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 3.371);
+    window.__timelines["s0"] = tl;
+  </script>
+</template>

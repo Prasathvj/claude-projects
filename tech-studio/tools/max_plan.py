@@ -132,7 +132,8 @@ EX = {'shock': {'brows': 'high', 'eyes': 'wide', 'mouth': 'shock', 'arms': 'hand
 MOODS = {'upi01-short': 'shock think point focus think focus point happy shrug shock shock happy',
          'ai01-short': 'think shock point focus focus shrug point shock think focus worry happy',
          'del01-short': 'shock think focus point focus worry point focus shock point happy',
-         'face01-short': 'shock point focus shrug focus point shock focus worry happy happy'}
+         'face01-short': 'shock point focus shrug focus point shock focus worry happy happy',
+         'pay01-short': 'think happy shock worry point happy'}
 
 # automatic host acting for long videos: expression from each beat's visual type and delivery note
 AUTO = {'slam': {'brows': 'up', 'arms': 'point', 'look': [-1, 0]}, 'quote': {'brows': 'focused', 'arms': 'chin', 'look': [-1, 0]},
