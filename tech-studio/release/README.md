@@ -17,7 +17,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 8 | [08_job03](08_job03) | AI got blamed for 120,000 layoffs. Then they stopped. | 0:40 | **Fri 27 Nov, 6:30 PM** | Uploads 24 Nov |
 | 9 | [09_net01](09_net01) | What if the internet disappeared? | 0:55 | **Sat 28 Nov, 12:30 PM** | Uploads 24 Nov |
 | 10 | [10_robo01](10_robo01) | Robots that work 24/7 — in the dark | 0:45 | **Sun 29 Nov, 12:30 PM** | Uploads 25 Nov |
-| ▶ | next long video | Will Robots Replace Human Jobs? | ~7 min | target **Wed 2 Dec** | To make |
+| 11 | [11_ep02_long](11_ep02_long) | Will Robots Replace Human Jobs? The Real Data | 6:01 | **Wed 2 Dec, 6:30 PM** | Ready (long video) |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.
