@@ -22,6 +22,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 11 | [11_ep02_long](11_ep02_long) | Will Robots Replace Human Jobs? The Real Data | 6:01 | **Wed 2 Dec, 6:30 PM** | Ready (long video) |
 | 14 | [14_face01](14_face01) | Your phone checks your face with 30,000 invisible dots | 0:56 | **Thu 3 Dec, 6:30 PM** | Ready |
 | 15 | [15_del01](15_del01) | Deleting a file doesn't delete it | 0:59 | **Fri 4 Dec, 6:30 PM** | Ready |
+| 17 | [17_ep03_long](17_ep03_long) | AI Agents Can Now Spend Your Money (What Could Go Wrong?) | 5:10 | **Sat 5 Dec, 12:30 PM** | Ready (long video) |
 | 16 | [16_pay01](16_pay01) | Why you shouldn't give AI your credit card yet | 0:39 | **Sun 6 Dec, 12:30 PM** (after the EP03 long video) | Ready |
 
 ## Why this order
