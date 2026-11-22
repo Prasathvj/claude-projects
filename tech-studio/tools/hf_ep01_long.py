@@ -460,7 +460,7 @@ def t_checklist(i, sid, v):
         cls = ' on' if k == up else ' done' if k < up else ''
         rows += f'<div class="cr{cls}" id="{sid}-r{k}"><b>{k + 1}</b>{E(x)}</div>'
     det = f'<div class="det" id="{sid}-d">{E(v["detail"])}</div>' if v.get('detail') else ''
-    body = f'<div class="kick" style="position:absolute; left:120px; top:40px">{E(v["title"])} TO STAY SAFE</div><div class="cl">{rows}</div>{det}'
+    body = f'<div class="kick" style="position:absolute; left:120px; top:40px">{E(v["title"])}{E(v.get("suffix", " TO STAY SAFE"))}</div><div class="cl">{rows}</div>{det}'
     css = """.cl { position:absolute; left:120px; top:100px; width:1080px; }
 .cr { height:88px; margin-bottom:12px; border-radius:22px; background:#140B07; border:2px solid #2E1B13; display:flex; align-items:center; gap:22px; padding:0 22px; font:700 40px 'SD Display'; color:#6E5444; }
 .cr b { width:56px; height:56px; border-radius:28px; background:#2A1912; color:#8C6B5A; display:flex; align-items:center; justify-content:center; font-size:30px; flex:none; }

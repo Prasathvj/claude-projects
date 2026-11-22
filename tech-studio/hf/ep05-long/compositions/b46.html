@@ -1,0 +1,49 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --ground:#F4EDE3; --edge:#EADCCD; --inner:#F8F1E8; --accent:#F87736; --accent-soft:#E98F5E; --dim:#8A6550; --ink:#2A2018;
+        --mute:#C9BBB0; --red:#FF3B30; --green:#3DDC97; --blue:#1C7ED6; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.stage { position:absolute; left:80px; top:110px; width:1320px; height:760px; perspective:1800px; }
+.card { position:absolute; border-radius:30px; border:2px solid var(--edge); background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 36px 80px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:26px; }
+.hd { display:flex; align-items:center; gap:20px; margin-bottom:20px; }
+.tile { width:80px; height:80px; border-radius:20px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 22px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 38px 'SD Display'; color:var(--ink); white-space:nowrap; }
+.inner { background:var(--inner); border-radius:22px; padding:24px 28px; position:relative; overflow:hidden; }
+.tag { position:absolute; font:600 20px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.kick { font:600 26px 'SD Text'; letter-spacing:6px; color:var(--dim); }
+.big { font:900 120px 'SD Display'; color:var(--ink); line-height:1; letter-spacing:-2px; }
+.acc { color:var(--accent); text-shadow:0 0 50px rgba(248,119,54,.5); }
+.ring { position:absolute; width:260px; height:260px; margin:-130px 0 0 -130px; border-radius:50%; border:5px solid var(--accent);
+  box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+.center { position:absolute; left:0; right:0; text-align:center; }
+
+.vid9 { position:absolute; left:200px; top:40px; width:920px; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); border:2px solid var(--edge); border-radius:30px; padding:24px; }
+.th9 { position:relative; height:420px; border-radius:22px; background:linear-gradient(135deg,#FFE9D9,#F8B48C); display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.pl9 { width:150px; height:150px; border-radius:75px; background:#FF3B30; color:#fff; font:900 70px 'SD Display'; display:flex; align-items:center; justify-content:center; }
+.tt9 { position:absolute; left:30px; right:30px; top:24px; font:900 50px 'SD Display'; color:#1E120C; line-height:1.05; } .du9 { position:absolute; right:20px; bottom:16px; padding:6px 14px; border-radius:10px; background:#100804; color:#fff; font:800 26px 'SD Mono'; }
+.mt9 { font:700 30px 'SD Text'; color:var(--dim); margin-top:18px; } .ar9 { position:absolute; left:440px; top:640px; font:900 60px 'SD Display'; color:var(--accent); opacity:0; }
+  </style>
+  <div id="root" data-composition-id="b46" data-width="1920" data-height="1080">
+<div class="stage" id="b46-all" style="left:80px"><div class="vid9" id="b46-v"><div class="th9"><div class="pl9">▶</div><div class="tt9">A Webpage Can Hijack Your AI Agent</div><div class="du9">6:46</div></div>
+<div class="mt9">TechDecoded with Max · watch next</div></div><div class="ar9" id="b46-a">👆 WATCH NEXT</div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b46-v", { opacity:0, scale:.78, rotationX:18, rotationY:-12, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.05);
+    tl.fromTo("#b46-a", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 2.502);
+    tl.fromTo("#b46-a", { y:0 }, { y:-20, duration:.35, yoyo:true, repeat:7, ease:"sine.inOut", immediateRender:false }, 3.098);
+    tl.to("#b46-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 6.106);
+    window.__timelines["b46"] = tl;
+  </script>
+</template>

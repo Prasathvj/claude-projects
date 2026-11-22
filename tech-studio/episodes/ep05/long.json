@@ -1,0 +1,1301 @@
+{
+ "id": "ep05-long",
+ "format": "horizontal",
+ "profile": "explainer",
+ "gap": 0.3,
+ "captions": "big",
+ "voice": "Eric",
+ "batch": 48,
+ "max_tempo": 1.05,
+ "engine": "vidiq",
+ "voice_id": "cjVigY5qzO86Huf0OWal",
+ "host_beats": [
+  39,
+  40,
+  41,
+  42,
+  43,
+  45,
+  46,
+  47
+ ],
+ "beats": [
+  {
+   "text": "Right now, as ChatGPT writes its answer to you, it has no idea how its own sentence is going to end.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "hook",
+    "cam": [
+     0.5,
+     0.45,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "\"Write a poem about chai\"",
+      "x": 40,
+      "y": 40,
+      "at": 0.15,
+      "kind": "bubble"
+     }
+    ]
+   },
+   "chapter": "No plan, one word at a time"
+  },
+  {
+   "text": "It doesn't plan the paragraph. It doesn't even plan the next sentence. It picks one small piece of a word, then the next, then the next.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "hook",
+    "cam": [
+     0.55,
+     0.3,
+     1.25
+    ],
+    "tags": [
+     {
+      "text": "Chai",
+      "x": 520,
+      "y": 330,
+      "at": 0.35,
+      "kind": "ok"
+     },
+     {
+      "text": "is",
+      "x": 700,
+      "y": 330,
+      "at": 0.5,
+      "kind": "ok"
+     },
+     {
+      "text": "warm",
+      "x": 820,
+      "y": 330,
+      "at": 0.65,
+      "kind": "ok"
+     },
+     {
+      "text": "\u2026",
+      "x": 1010,
+      "y": 330,
+      "at": 0.8,
+      "kind": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "text": "And yet about a billion people use it every week, to write emails, fix code and explain homework.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "hook",
+    "cam": [
+     0.5,
+     0.45,
+     1.05
+    ],
+    "tags": [
+     {
+      "text": "\u2248 1 BILLION",
+      "x": 640,
+      "y": 360,
+      "at": 0.2,
+      "kind": "big",
+      "size": 100
+     },
+     {
+      "text": "people use it every week",
+      "x": 650,
+      "y": 480,
+      "at": 0.35,
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "text": "So how can something that is basically guessing, one word at a time, sound so smart? Let's open the box.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "hook",
+    "cam": [
+     0.78,
+     0.5,
+     1.35
+    ],
+    "tags": [
+     {
+      "text": "How?",
+      "x": 560,
+      "y": 380,
+      "at": 0.35,
+      "kind": "big",
+      "size": 130
+     }
+    ]
+   }
+  },
+  {
+   "text": "First, ChatGPT doesn't actually read words. It reads tokens.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "tokens",
+    "cam": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "TOKENS",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "big",
+      "size": 120
+     }
+    ]
+   },
+   "chapter": "Words become tokens"
+  },
+  {
+   "text": "A token is a chunk of text. Sometimes a whole word, sometimes just a piece of one. On average, a hundred tokens make about seventy-five English words.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "tokens",
+    "cam": [
+     0.45,
+     0.6,
+     1.2
+    ],
+    "tags": [
+     {
+      "text": "100 tokens \u2248 75 words",
+      "x": 380,
+      "y": 40,
+      "at": 0.5,
+      "kind": "note",
+      "size": 56
+     }
+    ]
+   }
+  },
+  {
+   "text": "Every token is turned into a number, because underneath it all, the model can only do maths.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "tokens",
+    "cam": [
+     0.5,
+     0.55,
+     1.4
+    ],
+    "tags": [
+     {
+      "text": "every token \u2192 a number",
+      "x": 60,
+      "y": 60,
+      "at": 0.3,
+      "kind": "note",
+      "size": 52
+     }
+    ]
+   }
+  },
+  {
+   "text": "This one detail explains a famous fail. For a long time, chatbots insisted the word \"strawberry\" has only two R's.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "tokens",
+    "cam": [
+     0.88,
+     0.6,
+     1.7
+    ],
+    "tags": [
+     {
+      "text": "\"strawberry\" has 2 R's!",
+      "x": 60,
+      "y": 60,
+      "at": 0.4,
+      "kind": "bubble"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Why? Because the model never saw the letters. It saw a couple of token chunks, like \"straw\" and \"berry\", each one just a number.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "tokens",
+    "cam": [
+     0.88,
+     0.6,
+     1.7
+    ],
+    "tags": [
+     {
+      "text": "straw",
+      "x": 60,
+      "y": 80,
+      "at": 0.35,
+      "kind": "ok",
+      "size": 64
+     },
+     {
+      "text": "berry",
+      "x": 360,
+      "y": 80,
+      "at": 0.5,
+      "kind": "ok",
+      "size": 64
+     },
+     {
+      "text": "= just numbers",
+      "x": 60,
+      "y": 230,
+      "at": 0.7,
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Counting letters inside those chunks is surprisingly hard for it, a bit like counting the letters in a word you only ever heard spoken. Newer models that work step by step usually get it right.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "tokens",
+    "cam": [
+     0.8,
+     0.6,
+     1.4
+    ],
+    "tags": [
+     {
+      "text": "s t r a w b e r r y",
+      "x": 60,
+      "y": 60,
+      "at": 0.3,
+      "kind": "note",
+      "size": 60
+     },
+     {
+      "text": "3 R's",
+      "x": 60,
+      "y": 190,
+      "at": 0.6,
+      "kind": "bad",
+      "size": 60
+     }
+    ]
+   }
+  },
+  {
+   "text": "So when you type a question, ChatGPT sees a long row of numbers. And its only job is to answer one question about them.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "tokens",
+    "cam": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "your question = a row of numbers",
+      "x": 60,
+      "y": 60,
+      "at": 0.3,
+      "kind": "note",
+      "size": 50
+     }
+    ]
+   }
+  },
+  {
+   "text": "What token is most likely to come next?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "dice",
+    "cam": [
+     0.7,
+     0.5,
+     1.1
+    ],
+    "tags": [
+     {
+      "text": "What comes next?",
+      "x": 60,
+      "y": 60,
+      "at": 0.25,
+      "kind": "big",
+      "size": 90
+     }
+    ]
+   },
+   "chapter": "The guessing game"
+  },
+  {
+   "text": "You already know this trick. It's the autocomplete on your phone keyboard. Type \"I'll be there in\", and it suggests \"five minutes\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "dice",
+    "cam": [
+     0.62,
+     0.55,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "\"I'll be there in \u2026\"",
+      "x": 60,
+      "y": 40,
+      "at": 0.2,
+      "kind": "bubble"
+     },
+     {
+      "text": "5",
+      "x": 660,
+      "y": 40,
+      "at": 0.55,
+      "kind": "ok"
+     },
+     {
+      "text": "10",
+      "x": 760,
+      "y": 40,
+      "at": 0.65,
+      "kind": "ok"
+     },
+     {
+      "text": "a",
+      "x": 880,
+      "y": 40,
+      "at": 0.75,
+      "kind": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "text": "ChatGPT is that same idea, scaled up enormously. For every next token, it calculates a probability for tens of thousands of options.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "dice",
+    "cam": [
+     0.72,
+     0.5,
+     1.15
+    ],
+    "tags": [
+     {
+      "text": "a probability for every option",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Then it picks one, adds it to the text, and does the whole thing again. Word, by word, by word.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "dice",
+    "cam": [
+     0.85,
+     0.4,
+     1.4
+    ],
+    "tags": [
+     {
+      "text": "pick \u2192 add \u2192 repeat",
+      "x": 60,
+      "y": 60,
+      "at": 0.3,
+      "kind": "big",
+      "size": 80
+     }
+    ]
+   }
+  },
+  {
+   "text": "That's also why you can ask the same question twice and get two different answers. ChatGPT usually doesn't take the single most likely token. It rolls the dice a little, so the writing sounds natural instead of robotic.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "dice",
+    "cam": [
+     0.2,
+     0.5,
+     1.5
+    ],
+    "tags": [
+     {
+      "text": "Same question",
+      "x": 60,
+      "y": 40,
+      "at": 0.2,
+      "kind": "note"
+     },
+     {
+      "text": "Answer A",
+      "x": 60,
+      "y": 150,
+      "at": 0.45,
+      "kind": "ok"
+     },
+     {
+      "text": "Answer B",
+      "x": 300,
+      "y": 150,
+      "at": 0.6,
+      "kind": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "text": "And here's something most people don't realise. Every single time ChatGPT adds one token, it looks back over the entire conversation so far.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "attention",
+    "cam": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "looks back at EVERYTHING",
+      "x": 60,
+      "y": 40,
+      "at": 0.4,
+      "kind": "note",
+      "size": 50
+     }
+    ]
+   },
+   "chapter": "It re-reads everything"
+  },
+  {
+   "text": "Your question, its own earlier words, everything. That's how it keeps track of what \"it\" or \"that\" refers to.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "attention",
+    "cam": [
+     0.55,
+     0.5,
+     1.3
+    ],
+    "tags": [
+     {
+      "text": "\"it\"",
+      "x": 100,
+      "y": 60,
+      "at": 0.3,
+      "kind": "ok",
+      "size": 56
+     },
+     {
+      "text": "\"that\"",
+      "x": 300,
+      "y": 60,
+      "at": 0.5,
+      "kind": "ok",
+      "size": 56
+     }
+    ]
+   }
+  },
+  {
+   "text": "The technique that makes this possible is called attention. It was introduced by Google researchers in twenty seventeen, in a paper called \"Attention Is All You Need\". It's the T in GPT: the transformer.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "attention",
+    "cam": [
+     0.6,
+     0.5,
+     1.15
+    ],
+    "tags": [
+     {
+      "text": "ATTENTION",
+      "x": 60,
+      "y": 30,
+      "at": 0.25,
+      "kind": "big",
+      "size": 110
+     },
+     {
+      "text": "Google \u00b7 2017 \u00b7 \"Attention Is All You Need\"",
+      "x": 60,
+      "y": 170,
+      "at": 0.45,
+      "kind": "note",
+      "size": 34
+     },
+     {
+      "text": "GPT = Generative Pre-trained Transformer",
+      "x": 60,
+      "y": 260,
+      "at": 0.7,
+      "kind": "note",
+      "size": 34
+     }
+    ]
+   }
+  },
+  {
+   "text": "Attention lets the model decide which earlier words matter most for the next one. In \"I dropped my laptop and now it won't start\", attention links \"it\" back to \"laptop\", not \"I\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "attention",
+    "cam": [
+     0.6,
+     0.5,
+     1.25
+    ],
+    "tags": [
+     {
+      "text": "I dropped my laptop and now it won't start",
+      "x": 60,
+      "y": 40,
+      "at": 0.15,
+      "kind": "bubble"
+     }
+    ]
+   }
+  },
+  {
+   "text": "But there's a limit to how much it can look back on, called the context window. In a very long chat, the earliest details can get less attention, or fall out completely. That's why it sometimes forgets what you said at the start.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "attention",
+    "cam": [
+     0.15,
+     0.5,
+     1.35
+    ],
+    "tags": [
+     {
+      "text": "CONTEXT WINDOW",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "big",
+      "size": 80
+     },
+     {
+      "text": "the oldest messages fade",
+      "x": 60,
+      "y": 170,
+      "at": 0.55,
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "text": "But how does it know which guesses are good? It learned by reading. An enormous amount of reading.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "library",
+    "cam": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "It learned by reading",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "note",
+      "size": 56
+     }
+    ]
+   },
+   "chapter": "How it learned"
+  },
+  {
+   "text": "During training, the model is shown huge amounts of text from books, websites and code, with the next word hidden.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "library",
+    "cam": [
+     0.3,
+     0.35,
+     1.25
+    ],
+    "tags": [
+     {
+      "text": "books \u00b7 websites \u00b7 code",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "note"
+     },
+     {
+      "text": "next word hidden: ___",
+      "x": 60,
+      "y": 150,
+      "at": 0.6,
+      "kind": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "text": "It guesses. It checks the real answer. And it adjusts itself a tiny bit to guess better next time.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "library",
+    "cam": [
+     0.5,
+     0.45,
+     1.3
+    ],
+    "tags": [
+     {
+      "text": "The capital of India is ___",
+      "x": 60,
+      "y": 40,
+      "at": 0.15,
+      "kind": "note"
+     },
+     {
+      "text": "Mumbai \u2717",
+      "x": 60,
+      "y": 150,
+      "at": 0.45,
+      "kind": "bad"
+     },
+     {
+      "text": "New Delhi \u2713",
+      "x": 330,
+      "y": 150,
+      "at": 0.7,
+      "kind": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Those adjustable parts are called parameters. Think of them as knobs. GPT-3, back in twenty twenty, had a hundred and seventy-five billion of them.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "library",
+    "cam": [
+     0.93,
+     0.65,
+     1.8
+    ],
+    "tags": [
+     {
+      "text": "175,000,000,000",
+      "x": 60,
+      "y": 40,
+      "at": 0.35,
+      "kind": "big",
+      "size": 110
+     },
+     {
+      "text": "knobs (parameters) in GPT-3, 2020",
+      "x": 60,
+      "y": 190,
+      "at": 0.55,
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Repeat that guessing game billions of times, and something surprising happens. To predict the next word well, the model has to pick up grammar, facts, styles, and even some reasoning patterns along the way.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "library",
+    "cam": [
+     0.5,
+     0.45,
+     1.05
+    ],
+    "tags": [
+     {
+      "text": "grammar",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "ok"
+     },
+     {
+      "text": "facts",
+      "x": 300,
+      "y": 40,
+      "at": 0.45,
+      "kind": "ok"
+     },
+     {
+      "text": "style",
+      "x": 490,
+      "y": 40,
+      "at": 0.6,
+      "kind": "ok"
+     },
+     {
+      "text": "reasoning patterns",
+      "x": 680,
+      "y": 40,
+      "at": 0.75,
+      "kind": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "text": "A model trained only on the internet is a bit like a very well-read parrot. Ask it a question, and it might just continue your sentence, or ramble.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "rlhf",
+    "cam": [
+     0.15,
+     0.5,
+     1.5
+    ],
+    "tags": [
+     {
+      "text": "A very well-read parrot",
+      "x": 60,
+      "y": 40,
+      "at": 0.35,
+      "kind": "note",
+      "size": 52
+     }
+    ]
+   },
+   "chapter": "From parrot to assistant"
+  },
+  {
+   "text": "So companies add a second stage. Real people write good example answers, and rank the model's answers from best to worst.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "rlhf",
+    "cam": [
+     0.75,
+     0.45,
+     1.3
+    ],
+    "tags": [
+     {
+      "text": "Real people rank answers",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "note",
+      "size": 52
+     }
+    ]
+   }
+  },
+  {
+   "text": "The model is then trained to produce the kind of answers people prefer. This is called reinforcement learning from human feedback.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "rlhf",
+    "cam": [
+     0.55,
+     0.45,
+     1.1
+    ],
+    "tags": [
+     {
+      "text": "RLHF",
+      "x": 60,
+      "y": 30,
+      "at": 0.2,
+      "kind": "big",
+      "size": 120
+     },
+     {
+      "text": "reinforcement learning from human feedback",
+      "x": 60,
+      "y": 180,
+      "at": 0.4,
+      "kind": "note",
+      "size": 36
+     }
+    ]
+   }
+  },
+  {
+   "text": "And it matters a lot. In OpenAI's twenty twenty-two study, people preferred answers from a small model trained this way over the giant GPT-3, a model a hundred times bigger.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "rlhf",
+    "cam": [
+     0.74,
+     0.55,
+     1.6
+    ],
+    "tags": [
+     {
+      "text": "1.3B model \ud83e\udd47",
+      "x": 60,
+      "y": 40,
+      "at": 0.35,
+      "kind": "ok",
+      "size": 56
+     },
+     {
+      "text": "beat 175B GPT-3",
+      "x": 60,
+      "y": 150,
+      "at": 0.6,
+      "kind": "note",
+      "size": 48
+     }
+    ]
+   }
+  },
+  {
+   "text": "Now here's the catch. Remember, its job is to produce a likely-sounding next word, not a true one.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "exam",
+    "cam": [
+     0.5,
+     0.5,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "likely \u2260 true",
+      "x": 60,
+      "y": 40,
+      "at": 0.4,
+      "kind": "big",
+      "size": 100
+     }
+    ]
+   },
+   "chapter": "Why it makes things up"
+  },
+  {
+   "text": "Most of the time, likely and true are the same thing. But when the model doesn't really know, it can still produce something that sounds perfectly confident. That's called a hallucination.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "exam",
+    "cam": [
+     0.5,
+     0.4,
+     1.25
+    ],
+    "tags": [
+     {
+      "text": "\"Max's birthday is 12 March!\"",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "bubble"
+     },
+     {
+      "text": "HALLUCINATION",
+      "x": 60,
+      "y": 170,
+      "at": 0.7,
+      "kind": "bad",
+      "size": 60
+     }
+    ]
+   }
+  },
+  {
+   "text": "OpenAI researchers compared it to a student on a multiple-choice exam. If you get zero points for saying \"I don't know\", guessing always looks smarter.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "exam",
+    "cam": [
+     0.5,
+     0.68,
+     1.45
+    ],
+    "tags": [
+     {
+      "text": "\"I don't know\" = 0 points",
+      "x": 60,
+      "y": 40,
+      "at": 0.25,
+      "kind": "note"
+     },
+     {
+      "text": "Lucky guess = +1",
+      "x": 60,
+      "y": 150,
+      "at": 0.55,
+      "kind": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "text": "And many of the tests used to grade AI models work exactly like that. They reward a lucky guess more than an honest \"I'm not sure\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "exam",
+    "cam": [
+     0.5,
+     0.5,
+     1.1
+    ],
+    "tags": [
+     {
+      "text": "Guessing gets rewarded",
+      "x": 60,
+      "y": 40,
+      "at": 0.4,
+      "kind": "bad",
+      "size": 56
+     }
+    ]
+   }
+  },
+  {
+   "text": "That's why rare facts are where it slips most: a specific date, a small company's details, a quote from a person who isn't famous. There's no strong pattern to predict from.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "exam",
+    "cam": [
+     0.4,
+     0.15,
+     1.6
+    ],
+    "tags": [
+     {
+      "text": "dates",
+      "x": 60,
+      "y": 60,
+      "at": 0.25,
+      "kind": "note"
+     },
+     {
+      "text": "small companies",
+      "x": 250,
+      "y": 60,
+      "at": 0.45,
+      "kind": "note"
+     },
+     {
+      "text": "rare quotes",
+      "x": 620,
+      "y": 60,
+      "at": 0.65,
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "text": "So is ChatGPT just fancy autocomplete, or does it actually understand?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "scale",
+    "cam": [
+     0.5,
+     0.45,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "Autocomplete\u2026 or understanding?",
+      "x": 60,
+      "y": 40,
+      "at": 0.3,
+      "kind": "note",
+      "size": 50
+     }
+    ]
+   },
+   "chapter": "Does it understand?"
+  },
+  {
+   "text": "Honestly, researchers still disagree. It clearly isn't thinking the way you do. It has no memory of your life and no experience of the world.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "scale",
+    "cam": [
+     0.5,
+     0.55,
+     1.3
+    ],
+    "tags": [
+     {
+      "text": "Researchers disagree",
+      "x": 60,
+      "y": 40,
+      "at": 0.15,
+      "kind": "bad",
+      "size": 50
+     },
+     {
+      "text": "no memory of your life",
+      "x": 60,
+      "y": 150,
+      "at": 0.45,
+      "kind": "note"
+     },
+     {
+      "text": "no experience of the world",
+      "x": 60,
+      "y": 250,
+      "at": 0.65,
+      "kind": "note"
+     }
+    ]
+   }
+  },
+  {
+   "text": "But predicting text really well turns out to require surprisingly deep patterns. That's why it can explain code, translate languages and solve problems it has never seen word for word.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "library",
+    "cam": [
+     0.5,
+     0.45,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "explain code",
+      "x": 60,
+      "y": 40,
+      "at": 0.35,
+      "kind": "ok"
+     },
+     {
+      "text": "translate",
+      "x": 330,
+      "y": 40,
+      "at": 0.5,
+      "kind": "ok"
+     },
+     {
+      "text": "solve new problems",
+      "x": 560,
+      "y": 40,
+      "at": 0.65,
+      "kind": "ok"
+     }
+    ]
+   }
+  },
+  {
+   "text": "A useful way to think about it: it's an incredibly well-read prediction machine. Powerful, but not a source of truth on its own.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "library",
+    "cam": [
+     0.5,
+     0.45,
+     1.12
+    ],
+    "tags": [
+     {
+      "text": "An incredibly well-read prediction machine.",
+      "x": 60,
+      "y": 40,
+      "at": 0.15,
+      "kind": "quote"
+     },
+     {
+      "text": "Powerful, but not a source of truth",
+      "x": 60,
+      "y": 260,
+      "at": 0.5,
+      "kind": "bad",
+      "size": 44
+     }
+    ]
+   }
+  },
+  {
+   "text": "Once you know how it works, you can use it much better. Here are four habits.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "slam",
+    "text": "4 habits for better answers"
+   },
+   "chapter": "Get better answers"
+  },
+  {
+   "text": "One. Give it context. The more relevant details you put in, the better its predictions become. \"Write an email\" is weak. \"Write a polite email to my manager asking for Friday off\" is strong.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "checklist",
+    "title": "4 HABITS FOR BETTER ANSWERS",
+    "suffix": "",
+    "items": [
+     "Give it context",
+     "Let it say \"I don't know\"",
+     "Check anything that matters",
+     "Ask for step by step"
+    ],
+    "upto": 0,
+    "detail": "\"Write a polite email to my manager asking for Friday off\""
+   }
+  },
+  {
+   "text": "Two. Give it permission to say \"I don't know\". Simply adding that one line to your question can reduce confident made-up answers.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "checklist",
+    "title": "4 HABITS FOR BETTER ANSWERS",
+    "suffix": "",
+    "items": [
+     "Give it context",
+     "Let it say \"I don't know\"",
+     "Check anything that matters",
+     "Ask for step by step"
+    ],
+    "upto": 1,
+    "detail": "\"If you're not sure, say so.\""
+   }
+  },
+  {
+   "text": "Three. Check anything that matters. Facts, numbers, dates, legal or medical advice. Ask for sources, then open them yourself.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "checklist",
+    "title": "4 HABITS FOR BETTER ANSWERS",
+    "suffix": "",
+    "items": [
+     "Give it context",
+     "Let it say \"I don't know\"",
+     "Check anything that matters",
+     "Ask for step by step"
+    ],
+    "upto": 2,
+    "detail": "Ask for sources, then open them"
+   }
+  },
+  {
+   "text": "Four. For hard problems, ask it to work step by step. Writing out the steps gives the model more text to build on before it reaches the answer.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "checklist",
+    "title": "4 HABITS FOR BETTER ANSWERS",
+    "suffix": "",
+    "items": [
+     "Give it context",
+     "Let it say \"I don't know\"",
+     "Check anything that matters",
+     "Ask for step by step"
+    ],
+    "upto": 3,
+    "detail": "More steps = more text to build on"
+   }
+  },
+  {
+   "text": "So, ChatGPT doesn't know what it's going to say next. It predicts it, one token at a time, using patterns from an enormous amount of human writing.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "hook",
+    "cam": [
+     0.5,
+     0.45,
+     1.0
+    ],
+    "tags": [
+     {
+      "text": "one token at a time",
+      "x": 60,
+      "y": 40,
+      "at": 0.4,
+      "kind": "big",
+      "size": 90
+     }
+    ]
+   },
+   "chapter": "The bottom line"
+  },
+  {
+   "text": "That's what makes it so useful, and also why you should never switch your own brain off.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "scene",
+    "img": "hook",
+    "cam": [
+     0.3,
+     0.45,
+     1.3
+    ],
+    "tags": [
+     {
+      "text": "Never switch your own brain off.",
+      "x": 760,
+      "y": 40,
+      "at": 0.2,
+      "kind": "quote"
+     }
+    ]
+   }
+  },
+  {
+   "text": "If you want to see what happens when an AI like this gets tricked by a webpage, watch this video next.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "callback",
+    "title": "A Webpage Can Hijack Your AI Agent",
+    "dur": "6:46"
+   }
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "end",
+    "sub": "More tech, decoded."
+   }
+  }
+ ]
+}

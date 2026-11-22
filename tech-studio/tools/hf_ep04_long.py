@@ -5,7 +5,7 @@ skill cards, a portfolio comparison and a comment poll.
 Usage: THEME=cream GRID=<pattern> python3 tools/hf_ep04_long.py"""
 import os, sys
 from pathlib import Path
-os.environ['EPID'] = 'ep04'
+os.environ.setdefault('EPID', 'ep04')
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import hf_ep03_long as Y   # noqa: E402  (registers the ep02 + ep03 scene types)
 X = Y.X; B = Y.B

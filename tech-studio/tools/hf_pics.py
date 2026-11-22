@@ -22,7 +22,8 @@ def register(B):
 .tg.note { padding:14px 26px; border-radius:18px; background:#FFFFFF; color:var(--ink); font:800 40px 'SD Display'; box-shadow:0 16px 40px rgba(90,50,20,.15); }
 .tg.ok { padding:14px 26px; border-radius:18px; background:#3DDC97; color:#0E3B26; font:900 40px 'SD Display'; }
 .tg.bad { padding:14px 26px; border-radius:18px; background:#FF3B30; color:#FFFFFF; font:900 40px 'SD Display'; }
-.tg.big { font:900 120px 'SD Display'; color:var(--accent); letter-spacing:-2px; }
+.tg.big { font:900 120px 'SD Display'; color:var(--accent); letter-spacing:-2px; padding:4px 30px 10px; border-radius:28px; background:rgba(255,250,247,.88); box-shadow:0 20px 50px rgba(90,50,20,.18); }
+.tg.quote { padding:22px 34px; border-radius:26px; background:rgba(255,250,247,.92); color:var(--ink); font:600 italic 64px 'SD Serif'; box-shadow:0 20px 50px rgba(90,50,20,.18); white-space:normal; max-width:1100px; line-height:1.1; }
 .tg.bubble { padding:18px 28px; border-radius:30px 30px 30px 8px; background:#FFFFFF; color:var(--ink); font:700 34px 'SD Text'; box-shadow:0 16px 40px rgba(90,50,20,.15); white-space:normal; max-width:520px; }
 .kk { position:absolute; left:0; right:0; top:24px; text-align:center; font:800 24px 'SD Mono'; letter-spacing:4px; color:var(--accent); }"""]
         if v.get('title'):
@@ -73,3 +74,32 @@ def register(B):
 
     B.T['pic'] = t_pic
     B.SFX_BY_TYPE['pic'] = [(0.05, 'pop', .4), (0.6, 'whoosh', .3)]
+
+
+def register_scenes(B):
+    """'scene' beat: a full-frame AI illustration (assets/scenes/<img>.jpg) with a camera move plus the 'pic' overlays.
+    spec {"type": "scene", "img": "library", "cam": [fx, fy, zoom], "from": [fx, fy, zoom] (optional), ...pic overlay keys}
+    fx, fy = focus point as fractions of the picture; zoom 1 = whole picture. Consecutive beats on the same picture continue
+    the camera from the previous beat's 'cam', so the move is one smooth shot; a new picture fades in from a slight push-in."""
+    t_pic = B.T['pic']
+
+    def t_scene(i, sid, v):
+        prev = B.BE[i - 1]['v'] if i > 0 else {}
+        cam = v.get('cam', [0.5, 0.5, 1.0])
+        same = prev.get('type') == 'scene' and prev.get('img') == v['img']
+        frm = v.get('from') or (prev.get('cam', [0.5, 0.5, 1.0]) if same else [cam[0], cam[1], max(1.0, cam[2] * 0.92)])
+        def org(c): return f'{c[0] * 100:.1f}% {c[1] * 100:.1f}%'
+        d = round(B.S[sid][1] - B.S[sid][0], 2)
+        sl = 80 if i in B.HOST else B.CENTER_X   # the stage's left edge (beat_scene); the picture covers the whole frame
+        img = (f'<div id="{sid}-img" style="position:absolute; left:-{sl}px; top:-110px; width:1920px; height:1080px; overflow:hidden">'
+               f'<div id="{sid}-cam" style="position:absolute; inset:0; background:url(assets/scenes/{v["img"]}.jpg) center/cover; transform-origin:{org(frm)}; transform:scale({frm[2]})"></div>'
+               f'<div style="position:absolute; left:0; right:0; bottom:0; height:300px; background:linear-gradient(180deg,rgba(244,237,227,0),rgba(244,237,227,.85))"></div></div>')
+        body, sc, css = t_pic(i, sid, v)
+        sc = [f'    tl.fromTo("#{sid}-cam", {{ scale:{frm[2]}, transformOrigin:"{org(frm)}" }}, {{ scale:{cam[2]}, transformOrigin:"{org(cam)}", duration:{d}, ease:"sine.inOut" }}, 0);']
+        if not same:
+            sc.append(f'    tl.fromTo("#{sid}-img", {{ opacity:0 }}, {{ opacity:1, duration:.35, ease:"power1.out" }}, 0);')
+        sc += t_pic(i, sid, v)[1]
+        return img + body, sc, css
+
+    B.T['scene'] = t_scene
+    B.SFX_BY_TYPE['scene'] = [(0.6, 'whoosh', .25)]

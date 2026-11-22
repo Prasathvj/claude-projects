@@ -1,0 +1,6098 @@
+{
+ "id": "ep05-long",
+ "format": "horizontal",
+ "captions": "big",
+ "fps": 30,
+ "duration": 432.529,
+ "vo": "ep05/ep05-long-vo.wav",
+ "music": "ep05/ep05-long-music.wav",
+ "beats": [
+  {
+   "text": "Right now, as ChatGPT writes its answer to you, it has no idea how its own sentence is going to end.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 0.25,
+   "vo": 6.922,
+   "dur": 7.222,
+   "words": [
+    {
+     "w": "Right",
+     "s": 0.05,
+     "e": 0.27
+    },
+    {
+     "w": "now,",
+     "s": 0.27,
+     "e": 0.73
+    },
+    {
+     "w": "as",
+     "s": 0.86,
+     "e": 1.15
+    },
+    {
+     "w": "ChatGPT",
+     "s": 1.15,
+     "e": 1.2
+    },
+    {
+     "w": "writes",
+     "s": 1.15,
+     "e": 1.41
+    },
+    {
+     "w": "its",
+     "s": 1.41,
+     "e": 1.58
+    },
+    {
+     "w": "answer",
+     "s": 1.58,
+     "e": 1.76
+    },
+    {
+     "w": "to",
+     "s": 1.76,
+     "e": 1.82
+    },
+    {
+     "w": "you,",
+     "s": 1.82,
+     "e": 2.0
+    },
+    {
+     "w": "it",
+     "s": 2.0,
+     "e": 2.41
+    },
+    {
+     "w": "has",
+     "s": 2.41,
+     "e": 2.67
+    },
+    {
+     "w": "no",
+     "s": 2.67,
+     "e": 2.73
+    },
+    {
+     "w": "idea",
+     "s": 2.73,
+     "e": 3.13
+    },
+    {
+     "w": "how",
+     "s": 3.53,
+     "e": 3.72
+    },
+    {
+     "w": "its",
+     "s": 3.72,
+     "e": 3.87
+    },
+    {
+     "w": "own",
+     "s": 3.87,
+     "e": 4.06
+    },
+    {
+     "w": "sentence",
+     "s": 4.56,
+     "e": 5.09
+    },
+    {
+     "w": "is",
+     "s": 5.32,
+     "e": 5.52
+    },
+    {
+     "w": "going",
+     "s": 5.52,
+     "e": 5.65
+    },
+    {
+     "w": "to",
+     "s": 5.65,
+     "e": 6.24
+    },
+    {
+     "w": "end.",
+     "s": 6.24,
+     "e": 6.78
+    }
+   ]
+  },
+  {
+   "text": "It doesn't plan the paragraph. It doesn't even plan the next sentence. It picks one small piece of a word, then the next, then the next.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 7.472,
+   "vo": 8.673,
+   "dur": 8.973,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.08,
+     "e": 0.21
+    },
+    {
+     "w": "doesn't",
+     "s": 0.21,
+     "e": 0.58
+    },
+    {
+     "w": "plan",
+     "s": 0.58,
+     "e": 0.96
+    },
+    {
+     "w": "the",
+     "s": 0.96,
+     "e": 1.05
+    },
+    {
+     "w": "paragraph.",
+     "s": 1.05,
+     "e": 1.88
+    },
+    {
+     "w": "It",
+     "s": 2.15,
+     "e": 2.25
+    },
+    {
+     "w": "doesn't",
+     "s": 2.25,
+     "e": 2.52
+    },
+    {
+     "w": "even",
+     "s": 2.52,
+     "e": 2.74
+    },
+    {
+     "w": "plan",
+     "s": 2.74,
+     "e": 3.03
+    },
+    {
+     "w": "the",
+     "s": 3.03,
+     "e": 3.09
+    },
+    {
+     "w": "next",
+     "s": 3.09,
+     "e": 3.3
+    },
+    {
+     "w": "sentence.",
+     "s": 3.3,
+     "e": 3.94
+    },
+    {
+     "w": "It",
+     "s": 4.44,
+     "e": 4.56
+    },
+    {
+     "w": "picks",
+     "s": 4.56,
+     "e": 4.82
+    },
+    {
+     "w": "one",
+     "s": 4.82,
+     "e": 5.19
+    },
+    {
+     "w": "small",
+     "s": 5.19,
+     "e": 5.59
+    },
+    {
+     "w": "piece",
+     "s": 5.59,
+     "e": 5.88
+    },
+    {
+     "w": "of",
+     "s": 5.88,
+     "e": 5.99
+    },
+    {
+     "w": "a",
+     "s": 5.99,
+     "e": 6.02
+    },
+    {
+     "w": "word,",
+     "s": 6.02,
+     "e": 6.49
+    },
+    {
+     "w": "then",
+     "s": 6.77,
+     "e": 6.94
+    },
+    {
+     "w": "the",
+     "s": 6.94,
+     "e": 7.0
+    },
+    {
+     "w": "next,",
+     "s": 7.0,
+     "e": 7.57
+    },
+    {
+     "w": "then",
+     "s": 7.79,
+     "e": 7.98
+    },
+    {
+     "w": "the",
+     "s": 7.98,
+     "e": 8.04
+    },
+    {
+     "w": "next.",
+     "s": 8.04,
+     "e": 8.54
+    }
+   ]
+  },
+  {
+   "text": "And yet about a billion people use it every week, to write emails, fix code and explain homework.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 16.445,
+   "vo": 6.687,
+   "dur": 6.987,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.08,
+     "e": 0.24
+    },
+    {
+     "w": "yet",
+     "s": 0.24,
+     "e": 0.55
+    },
+    {
+     "w": "about",
+     "s": 0.55,
+     "e": 0.85
+    },
+    {
+     "w": "a",
+     "s": 0.85,
+     "e": 0.9
+    },
+    {
+     "w": "billion",
+     "s": 0.9,
+     "e": 1.54
+    },
+    {
+     "w": "people",
+     "s": 1.54,
+     "e": 1.95
+    },
+    {
+     "w": "use",
+     "s": 1.95,
+     "e": 2.22
+    },
+    {
+     "w": "it",
+     "s": 2.22,
+     "e": 2.43
+    },
+    {
+     "w": "every",
+     "s": 2.43,
+     "e": 2.77
+    },
+    {
+     "w": "week,",
+     "s": 2.77,
+     "e": 3.21
+    },
+    {
+     "w": "to",
+     "s": 3.46,
+     "e": 3.57
+    },
+    {
+     "w": "write",
+     "s": 3.57,
+     "e": 3.83
+    },
+    {
+     "w": "emails,",
+     "s": 3.83,
+     "e": 4.52
+    },
+    {
+     "w": "fix",
+     "s": 4.52,
+     "e": 4.81
+    },
+    {
+     "w": "code",
+     "s": 4.81,
+     "e": 5.31
+    },
+    {
+     "w": "and",
+     "s": 5.31,
+     "e": 5.63
+    },
+    {
+     "w": "explain",
+     "s": 5.63,
+     "e": 6.0
+    },
+    {
+     "w": "homework.",
+     "s": 6.0,
+     "e": 6.53
+    }
+   ]
+  },
+  {
+   "text": "So how can something that is basically guessing, one word at a time, sound so smart? Let's open the box.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 23.432,
+   "vo": 7.314,
+   "dur": 7.614,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.05,
+     "e": 0.41
+    },
+    {
+     "w": "how",
+     "s": 0.41,
+     "e": 0.67
+    },
+    {
+     "w": "can",
+     "s": 0.67,
+     "e": 0.85
+    },
+    {
+     "w": "something",
+     "s": 0.85,
+     "e": 1.26
+    },
+    {
+     "w": "that",
+     "s": 1.26,
+     "e": 1.38
+    },
+    {
+     "w": "is",
+     "s": 1.38,
+     "e": 1.5
+    },
+    {
+     "w": "basically",
+     "s": 1.5,
+     "e": 2.1
+    },
+    {
+     "w": "guessing,",
+     "s": 2.1,
+     "e": 2.87
+    },
+    {
+     "w": "one",
+     "s": 3.02,
+     "e": 3.36
+    },
+    {
+     "w": "word",
+     "s": 3.36,
+     "e": 3.59
+    },
+    {
+     "w": "at",
+     "s": 3.59,
+     "e": 3.71
+    },
+    {
+     "w": "a",
+     "s": 3.71,
+     "e": 3.75
+    },
+    {
+     "w": "time,",
+     "s": 3.75,
+     "e": 4.3
+    },
+    {
+     "w": "sound",
+     "s": 4.45,
+     "e": 4.76
+    },
+    {
+     "w": "so",
+     "s": 4.76,
+     "e": 4.94
+    },
+    {
+     "w": "smart?",
+     "s": 4.94,
+     "e": 5.53
+    },
+    {
+     "w": "Let's",
+     "s": 6.08,
+     "e": 6.29
+    },
+    {
+     "w": "open",
+     "s": 6.29,
+     "e": 6.52
+    },
+    {
+     "w": "the",
+     "s": 6.52,
+     "e": 6.59
+    },
+    {
+     "w": "box.",
+     "s": 6.59,
+     "e": 7.11
+    }
+   ]
+  },
+  {
+   "text": "First, ChatGPT doesn't actually read words. It reads tokens.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 31.047,
+   "vo": 5.251,
+   "dur": 5.551,
+   "words": [
+    {
+     "w": "First,",
+     "s": 0.05,
+     "e": 0.61
+    },
+    {
+     "w": "ChatGPT",
+     "s": 0.61,
+     "e": 0.75
+    },
+    {
+     "w": "doesn't",
+     "s": 0.75,
+     "e": 1.2
+    },
+    {
+     "w": "actually",
+     "s": 1.2,
+     "e": 1.39
+    },
+    {
+     "w": "read",
+     "s": 1.53,
+     "e": 1.8
+    },
+    {
+     "w": "words.",
+     "s": 1.8,
+     "e": 1.96
+    },
+    {
+     "w": "It",
+     "s": 2.21,
+     "e": 2.38
+    },
+    {
+     "w": "reads",
+     "s": 2.38,
+     "e": 2.96
+    },
+    {
+     "w": "tokens.",
+     "s": 2.96,
+     "e": 3.65
+    }
+   ]
+  },
+  {
+   "text": "A token is a chunk of text. Sometimes a whole word, sometimes just a piece of one. On average, a hundred tokens make about seventy-five English words.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 36.597,
+   "vo": 9.796,
+   "dur": 10.096,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.09,
+     "e": 0.17
+    },
+    {
+     "w": "token",
+     "s": 0.17,
+     "e": 0.7
+    },
+    {
+     "w": "is",
+     "s": 0.7,
+     "e": 0.91
+    },
+    {
+     "w": "a",
+     "s": 0.91,
+     "e": 0.96
+    },
+    {
+     "w": "chunk",
+     "s": 0.96,
+     "e": 1.26
+    },
+    {
+     "w": "of",
+     "s": 1.26,
+     "e": 1.36
+    },
+    {
+     "w": "text.",
+     "s": 1.36,
+     "e": 1.97
+    },
+    {
+     "w": "Sometimes",
+     "s": 2.29,
+     "e": 2.78
+    },
+    {
+     "w": "a",
+     "s": 2.78,
+     "e": 2.82
+    },
+    {
+     "w": "whole",
+     "s": 2.82,
+     "e": 3.09
+    },
+    {
+     "w": "word,",
+     "s": 3.09,
+     "e": 3.55
+    },
+    {
+     "w": "sometimes",
+     "s": 3.74,
+     "e": 4.33
+    },
+    {
+     "w": "just",
+     "s": 4.33,
+     "e": 4.55
+    },
+    {
+     "w": "a",
+     "s": 4.55,
+     "e": 4.59
+    },
+    {
+     "w": "piece",
+     "s": 4.59,
+     "e": 4.88
+    },
+    {
+     "w": "of",
+     "s": 4.88,
+     "e": 5.0
+    },
+    {
+     "w": "one.",
+     "s": 5.0,
+     "e": 5.22
+    },
+    {
+     "w": "On",
+     "s": 5.81,
+     "e": 5.97
+    },
+    {
+     "w": "average,",
+     "s": 5.97,
+     "e": 6.51
+    },
+    {
+     "w": "a",
+     "s": 6.55,
+     "e": 6.63
+    },
+    {
+     "w": "hundred",
+     "s": 6.63,
+     "e": 7.05
+    },
+    {
+     "w": "tokens",
+     "s": 7.05,
+     "e": 7.51
+    },
+    {
+     "w": "make",
+     "s": 7.51,
+     "e": 7.71
+    },
+    {
+     "w": "about",
+     "s": 7.71,
+     "e": 8.27
+    },
+    {
+     "w": "seventy-five",
+     "s": 8.27,
+     "e": 8.32
+    },
+    {
+     "w": "English",
+     "s": 8.27,
+     "e": 9.13
+    },
+    {
+     "w": "words.",
+     "s": 9.13,
+     "e": 9.65
+    }
+   ]
+  },
+  {
+   "text": "Every token is turned into a number, because underneath it all, the model can only do maths.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 46.693,
+   "vo": 5.878,
+   "dur": 6.178,
+   "words": [
+    {
+     "w": "Every",
+     "s": 0.08,
+     "e": 0.37
+    },
+    {
+     "w": "token",
+     "s": 0.37,
+     "e": 0.86
+    },
+    {
+     "w": "is",
+     "s": 0.86,
+     "e": 1.06
+    },
+    {
+     "w": "turned",
+     "s": 1.06,
+     "e": 1.35
+    },
+    {
+     "w": "into",
+     "s": 1.35,
+     "e": 1.62
+    },
+    {
+     "w": "a",
+     "s": 1.62,
+     "e": 1.66
+    },
+    {
+     "w": "number,",
+     "s": 1.66,
+     "e": 2.27
+    },
+    {
+     "w": "because",
+     "s": 2.41,
+     "e": 2.91
+    },
+    {
+     "w": "underneath",
+     "s": 2.91,
+     "e": 3.39
+    },
+    {
+     "w": "it",
+     "s": 3.39,
+     "e": 3.46
+    },
+    {
+     "w": "all,",
+     "s": 3.46,
+     "e": 3.74
+    },
+    {
+     "w": "the",
+     "s": 3.94,
+     "e": 4.04
+    },
+    {
+     "w": "model",
+     "s": 4.04,
+     "e": 4.38
+    },
+    {
+     "w": "can",
+     "s": 4.38,
+     "e": 4.57
+    },
+    {
+     "w": "only",
+     "s": 4.57,
+     "e": 5.0
+    },
+    {
+     "w": "do",
+     "s": 5.0,
+     "e": 5.18
+    },
+    {
+     "w": "maths.",
+     "s": 5.18,
+     "e": 5.878
+    }
+   ]
+  },
+  {
+   "text": "This one detail explains a famous fail. For a long time, chatbots insisted the word \"strawberry\" has only two R's.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 52.871,
+   "vo": 8.281,
+   "dur": 8.581,
+   "words": [
+    {
+     "w": "This",
+     "s": 0.04,
+     "e": 0.32
+    },
+    {
+     "w": "one",
+     "s": 0.32,
+     "e": 0.69
+    },
+    {
+     "w": "detail",
+     "s": 0.69,
+     "e": 1.21
+    },
+    {
+     "w": "explains",
+     "s": 1.21,
+     "e": 1.69
+    },
+    {
+     "w": "a",
+     "s": 1.69,
+     "e": 1.73
+    },
+    {
+     "w": "famous",
+     "s": 1.73,
+     "e": 2.32
+    },
+    {
+     "w": "fail.",
+     "s": 2.32,
+     "e": 2.68
+    },
+    {
+     "w": "For",
+     "s": 3.25,
+     "e": 3.41
+    },
+    {
+     "w": "a",
+     "s": 3.41,
+     "e": 3.44
+    },
+    {
+     "w": "long",
+     "s": 3.44,
+     "e": 3.76
+    },
+    {
+     "w": "time,",
+     "s": 3.76,
+     "e": 4.2
+    },
+    {
+     "w": "chatbots",
+     "s": 4.2,
+     "e": 4.7
+    },
+    {
+     "w": "insisted",
+     "s": 4.7,
+     "e": 5.41
+    },
+    {
+     "w": "the",
+     "s": 5.41,
+     "e": 5.48
+    },
+    {
+     "w": "word",
+     "s": 5.48,
+     "e": 5.74
+    },
+    {
+     "w": "\"strawberry\"",
+     "s": 5.74,
+     "e": 6.54
+    },
+    {
+     "w": "has",
+     "s": 6.54,
+     "e": 6.85
+    },
+    {
+     "w": "only",
+     "s": 6.85,
+     "e": 7.17
+    },
+    {
+     "w": "two",
+     "s": 7.17,
+     "e": 7.6
+    },
+    {
+     "w": "R's.",
+     "s": 7.6,
+     "e": 8.12
+    }
+   ]
+  },
+  {
+   "text": "Why? Because the model never saw the letters. It saw a couple of token chunks, like \"straw\" and \"berry\", each one just a number.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 61.452,
+   "vo": 8.673,
+   "dur": 8.973,
+   "words": [
+    {
+     "w": "Why?",
+     "s": 0.07,
+     "e": 0.54
+    },
+    {
+     "w": "Because",
+     "s": 0.98,
+     "e": 1.27
+    },
+    {
+     "w": "the",
+     "s": 1.27,
+     "e": 1.34
+    },
+    {
+     "w": "model",
+     "s": 1.34,
+     "e": 1.75
+    },
+    {
+     "w": "never",
+     "s": 1.75,
+     "e": 1.99
+    },
+    {
+     "w": "saw",
+     "s": 1.99,
+     "e": 2.34
+    },
+    {
+     "w": "the",
+     "s": 2.34,
+     "e": 2.44
+    },
+    {
+     "w": "letters.",
+     "s": 2.44,
+     "e": 2.98
+    },
+    {
+     "w": "It",
+     "s": 3.37,
+     "e": 3.49
+    },
+    {
+     "w": "saw",
+     "s": 3.49,
+     "e": 3.71
+    },
+    {
+     "w": "a",
+     "s": 3.71,
+     "e": 3.74
+    },
+    {
+     "w": "couple",
+     "s": 3.74,
+     "e": 4.06
+    },
+    {
+     "w": "of",
+     "s": 4.06,
+     "e": 4.16
+    },
+    {
+     "w": "token",
+     "s": 4.16,
+     "e": 4.58
+    },
+    {
+     "w": "chunks,",
+     "s": 4.58,
+     "e": 5.06
+    },
+    {
+     "w": "like",
+     "s": 5.06,
+     "e": 5.4
+    },
+    {
+     "w": "\"straw\"",
+     "s": 5.4,
+     "e": 6.05
+    },
+    {
+     "w": "and",
+     "s": 6.05,
+     "e": 6.39
+    },
+    {
+     "w": "\"berry\",",
+     "s": 6.39,
+     "e": 6.88
+    },
+    {
+     "w": "each",
+     "s": 7.19,
+     "e": 7.4
+    },
+    {
+     "w": "one",
+     "s": 7.4,
+     "e": 7.7
+    },
+    {
+     "w": "just",
+     "s": 7.7,
+     "e": 8.01
+    },
+    {
+     "w": "a",
+     "s": 8.01,
+     "e": 8.07
+    },
+    {
+     "w": "number.",
+     "s": 8.07,
+     "e": 8.55
+    }
+   ]
+  },
+  {
+   "text": "Counting letters inside those chunks is surprisingly hard for it, a bit like counting the letters in a word you only ever heard spoken. Newer models that work step by step usually get it right.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 70.424,
+   "vo": 11.389,
+   "dur": 11.689,
+   "words": [
+    {
+     "w": "Counting",
+     "s": 0.05,
+     "e": 0.52
+    },
+    {
+     "w": "letters",
+     "s": 0.52,
+     "e": 0.85
+    },
+    {
+     "w": "inside",
+     "s": 0.85,
+     "e": 1.34
+    },
+    {
+     "w": "those",
+     "s": 1.34,
+     "e": 1.58
+    },
+    {
+     "w": "chunks",
+     "s": 1.58,
+     "e": 1.96
+    },
+    {
+     "w": "is",
+     "s": 1.96,
+     "e": 2.09
+    },
+    {
+     "w": "surprisingly",
+     "s": 2.09,
+     "e": 2.91
+    },
+    {
+     "w": "hard",
+     "s": 2.91,
+     "e": 3.28
+    },
+    {
+     "w": "for",
+     "s": 3.28,
+     "e": 3.56
+    },
+    {
+     "w": "it,",
+     "s": 3.56,
+     "e": 3.7
+    },
+    {
+     "w": "a",
+     "s": 4.13,
+     "e": 4.21
+    },
+    {
+     "w": "bit",
+     "s": 4.21,
+     "e": 4.39
+    },
+    {
+     "w": "like",
+     "s": 4.39,
+     "e": 4.59
+    },
+    {
+     "w": "counting",
+     "s": 4.59,
+     "e": 4.99
+    },
+    {
+     "w": "the",
+     "s": 4.99,
+     "e": 5.05
+    },
+    {
+     "w": "letters",
+     "s": 5.05,
+     "e": 5.44
+    },
+    {
+     "w": "in",
+     "s": 5.44,
+     "e": 5.51
+    },
+    {
+     "w": "a",
+     "s": 5.51,
+     "e": 5.54
+    },
+    {
+     "w": "word",
+     "s": 5.54,
+     "e": 5.9
+    },
+    {
+     "w": "you",
+     "s": 5.9,
+     "e": 6.1
+    },
+    {
+     "w": "only",
+     "s": 6.1,
+     "e": 6.47
+    },
+    {
+     "w": "ever",
+     "s": 6.47,
+     "e": 6.64
+    },
+    {
+     "w": "heard",
+     "s": 6.64,
+     "e": 6.88
+    },
+    {
+     "w": "spoken.",
+     "s": 6.88,
+     "e": 7.4
+    },
+    {
+     "w": "Newer",
+     "s": 8.0,
+     "e": 8.28
+    },
+    {
+     "w": "models",
+     "s": 8.28,
+     "e": 8.71
+    },
+    {
+     "w": "that",
+     "s": 8.71,
+     "e": 8.83
+    },
+    {
+     "w": "work",
+     "s": 8.83,
+     "e": 9.06
+    },
+    {
+     "w": "step",
+     "s": 9.06,
+     "e": 9.38
+    },
+    {
+     "w": "by",
+     "s": 9.38,
+     "e": 9.53
+    },
+    {
+     "w": "step",
+     "s": 9.53,
+     "e": 10.13
+    },
+    {
+     "w": "usually",
+     "s": 10.13,
+     "e": 10.61
+    },
+    {
+     "w": "get",
+     "s": 10.61,
+     "e": 10.76
+    },
+    {
+     "w": "it",
+     "s": 10.76,
+     "e": 10.83
+    },
+    {
+     "w": "right.",
+     "s": 10.83,
+     "e": 11.18
+    }
+   ]
+  },
+  {
+   "text": "So when you type a question, ChatGPT sees a long row of numbers. And its only job is to answer one question about them.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 82.114,
+   "vo": 8.202,
+   "dur": 8.502,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.05,
+     "e": 0.32
+    },
+    {
+     "w": "when",
+     "s": 0.32,
+     "e": 0.6
+    },
+    {
+     "w": "you",
+     "s": 0.6,
+     "e": 0.71
+    },
+    {
+     "w": "type",
+     "s": 0.71,
+     "e": 1.0
+    },
+    {
+     "w": "a",
+     "s": 1.0,
+     "e": 1.07
+    },
+    {
+     "w": "question,",
+     "s": 1.07,
+     "e": 1.73
+    },
+    {
+     "w": "ChatGPT",
+     "s": 1.73,
+     "e": 2.59
+    },
+    {
+     "w": "sees",
+     "s": 2.59,
+     "e": 3.1
+    },
+    {
+     "w": "a",
+     "s": 3.1,
+     "e": 3.13
+    },
+    {
+     "w": "long",
+     "s": 3.13,
+     "e": 3.69
+    },
+    {
+     "w": "row",
+     "s": 3.69,
+     "e": 3.9
+    },
+    {
+     "w": "of",
+     "s": 3.9,
+     "e": 3.99
+    },
+    {
+     "w": "numbers.",
+     "s": 3.99,
+     "e": 4.6
+    },
+    {
+     "w": "And",
+     "s": 4.98,
+     "e": 5.12
+    },
+    {
+     "w": "its",
+     "s": 5.12,
+     "e": 5.27
+    },
+    {
+     "w": "only",
+     "s": 5.27,
+     "e": 5.66
+    },
+    {
+     "w": "job",
+     "s": 5.66,
+     "e": 6.06
+    },
+    {
+     "w": "is",
+     "s": 6.06,
+     "e": 6.21
+    },
+    {
+     "w": "to",
+     "s": 6.21,
+     "e": 6.34
+    },
+    {
+     "w": "answer",
+     "s": 6.34,
+     "e": 6.63
+    },
+    {
+     "w": "one",
+     "s": 6.63,
+     "e": 7.07
+    },
+    {
+     "w": "question",
+     "s": 7.07,
+     "e": 7.52
+    },
+    {
+     "w": "about",
+     "s": 7.52,
+     "e": 7.77
+    },
+    {
+     "w": "them.",
+     "s": 7.77,
+     "e": 7.96
+    }
+   ]
+  },
+  {
+   "text": "What token is most likely to come next?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 90.616,
+   "vo": 2.508,
+   "dur": 2.808,
+   "words": [
+    {
+     "w": "What",
+     "s": 0.07,
+     "e": 0.29
+    },
+    {
+     "w": "token",
+     "s": 0.29,
+     "e": 0.78
+    },
+    {
+     "w": "is",
+     "s": 0.78,
+     "e": 0.94
+    },
+    {
+     "w": "most",
+     "s": 0.94,
+     "e": 1.25
+    },
+    {
+     "w": "likely",
+     "s": 1.25,
+     "e": 1.59
+    },
+    {
+     "w": "to",
+     "s": 1.59,
+     "e": 1.65
+    },
+    {
+     "w": "come",
+     "s": 1.65,
+     "e": 1.86
+    },
+    {
+     "w": "next?",
+     "s": 1.86,
+     "e": 2.39
+    }
+   ]
+  },
+  {
+   "text": "You already know this trick. It's the autocomplete on your phone keyboard. Type \"I'll be there in\", and it suggests \"five minutes\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 93.424,
+   "vo": 8.281,
+   "dur": 8.581,
+   "words": [
+    {
+     "w": "You",
+     "s": 0.03,
+     "e": 0.22
+    },
+    {
+     "w": "already",
+     "s": 0.22,
+     "e": 0.59
+    },
+    {
+     "w": "know",
+     "s": 0.59,
+     "e": 0.8
+    },
+    {
+     "w": "this",
+     "s": 0.8,
+     "e": 1.03
+    },
+    {
+     "w": "trick.",
+     "s": 1.03,
+     "e": 1.46
+    },
+    {
+     "w": "It's",
+     "s": 1.77,
+     "e": 1.96
+    },
+    {
+     "w": "the",
+     "s": 1.96,
+     "e": 2.09
+    },
+    {
+     "w": "autocomplete",
+     "s": 2.09,
+     "e": 2.14
+    },
+    {
+     "w": "on",
+     "s": 2.09,
+     "e": 2.28
+    },
+    {
+     "w": "your",
+     "s": 2.28,
+     "e": 2.39
+    },
+    {
+     "w": "phone",
+     "s": 2.39,
+     "e": 2.57
+    },
+    {
+     "w": "keyboard.",
+     "s": 2.57,
+     "e": 3.09
+    },
+    {
+     "w": "Type",
+     "s": 3.09,
+     "e": 3.26
+    },
+    {
+     "w": "\"I'll",
+     "s": 3.26,
+     "e": 3.36
+    },
+    {
+     "w": "be",
+     "s": 3.36,
+     "e": 3.54
+    },
+    {
+     "w": "there",
+     "s": 3.54,
+     "e": 3.78
+    },
+    {
+     "w": "in\",",
+     "s": 5.15,
+     "e": 6.02
+    },
+    {
+     "w": "and",
+     "s": 6.27,
+     "e": 6.41
+    },
+    {
+     "w": "it",
+     "s": 6.41,
+     "e": 6.52
+    },
+    {
+     "w": "suggests",
+     "s": 6.52,
+     "e": 7.23
+    },
+    {
+     "w": "\"five",
+     "s": 7.34,
+     "e": 7.64
+    },
+    {
+     "w": "minutes\".",
+     "s": 7.64,
+     "e": 8.12
+    }
+   ]
+  },
+  {
+   "text": "ChatGPT is that same idea, scaled up enormously. For every next token, it calculates a probability for tens of thousands of options.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 102.005,
+   "vo": 9.796,
+   "dur": 10.096,
+   "words": [
+    {
+     "w": "ChatGPT",
+     "s": 0.0,
+     "e": 0.05
+    },
+    {
+     "w": "is",
+     "s": 0.03,
+     "e": 0.1
+    },
+    {
+     "w": "that",
+     "s": 0.1,
+     "e": 0.32
+    },
+    {
+     "w": "same",
+     "s": 0.32,
+     "e": 0.51
+    },
+    {
+     "w": "idea,",
+     "s": 0.51,
+     "e": 1.08
+    },
+    {
+     "w": "scaled",
+     "s": 1.08,
+     "e": 1.45
+    },
+    {
+     "w": "up",
+     "s": 1.45,
+     "e": 1.51
+    },
+    {
+     "w": "enormously.",
+     "s": 1.51,
+     "e": 2.16
+    },
+    {
+     "w": "For",
+     "s": 2.89,
+     "e": 2.96
+    },
+    {
+     "w": "every",
+     "s": 2.96,
+     "e": 3.2
+    },
+    {
+     "w": "next",
+     "s": 3.2,
+     "e": 3.87
+    },
+    {
+     "w": "token,",
+     "s": 4.62,
+     "e": 5.17
+    },
+    {
+     "w": "it",
+     "s": 5.17,
+     "e": 5.4
+    },
+    {
+     "w": "calculates",
+     "s": 5.4,
+     "e": 5.88
+    },
+    {
+     "w": "a",
+     "s": 5.97,
+     "e": 6.05
+    },
+    {
+     "w": "probability",
+     "s": 6.05,
+     "e": 6.69
+    },
+    {
+     "w": "for",
+     "s": 7.36,
+     "e": 7.57
+    },
+    {
+     "w": "tens",
+     "s": 7.57,
+     "e": 8.1
+    },
+    {
+     "w": "of",
+     "s": 8.1,
+     "e": 8.2
+    },
+    {
+     "w": "thousands",
+     "s": 8.2,
+     "e": 8.9
+    },
+    {
+     "w": "of",
+     "s": 8.9,
+     "e": 8.99
+    },
+    {
+     "w": "options.",
+     "s": 8.99,
+     "e": 9.61
+    }
+   ]
+  },
+  {
+   "text": "Then it picks one, adds it to the text, and does the whole thing again. Word, by word, by word.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 112.101,
+   "vo": 6.922,
+   "dur": 7.222,
+   "words": [
+    {
+     "w": "Then",
+     "s": 0.03,
+     "e": 0.27
+    },
+    {
+     "w": "it",
+     "s": 0.27,
+     "e": 0.39
+    },
+    {
+     "w": "picks",
+     "s": 0.39,
+     "e": 0.7
+    },
+    {
+     "w": "one,",
+     "s": 0.7,
+     "e": 1.04
+    },
+    {
+     "w": "adds",
+     "s": 1.27,
+     "e": 1.55
+    },
+    {
+     "w": "it",
+     "s": 1.55,
+     "e": 1.64
+    },
+    {
+     "w": "to",
+     "s": 1.64,
+     "e": 1.74
+    },
+    {
+     "w": "the",
+     "s": 1.74,
+     "e": 1.84
+    },
+    {
+     "w": "text,",
+     "s": 1.84,
+     "e": 2.37
+    },
+    {
+     "w": "and",
+     "s": 2.43,
+     "e": 2.6
+    },
+    {
+     "w": "does",
+     "s": 2.6,
+     "e": 2.78
+    },
+    {
+     "w": "the",
+     "s": 2.78,
+     "e": 2.86
+    },
+    {
+     "w": "whole",
+     "s": 2.86,
+     "e": 3.26
+    },
+    {
+     "w": "thing",
+     "s": 3.26,
+     "e": 3.48
+    },
+    {
+     "w": "again.",
+     "s": 3.48,
+     "e": 3.93
+    },
+    {
+     "w": "Word,",
+     "s": 4.34,
+     "e": 4.87
+    },
+    {
+     "w": "by",
+     "s": 5.06,
+     "e": 5.23
+    },
+    {
+     "w": "word,",
+     "s": 5.23,
+     "e": 5.8
+    },
+    {
+     "w": "by",
+     "s": 6.03,
+     "e": 6.2
+    },
+    {
+     "w": "word.",
+     "s": 6.2,
+     "e": 6.77
+    }
+   ]
+  },
+  {
+   "text": "That's also why you can ask the same question twice and get two different answers. ChatGPT usually doesn't take the single most likely token. It rolls the dice a little, so the writing sounds natural instead of robotic.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 119.323,
+   "vo": 13.244,
+   "dur": 13.544,
+   "words": [
+    {
+     "w": "That's",
+     "s": 0.09,
+     "e": 0.31
+    },
+    {
+     "w": "also",
+     "s": 0.31,
+     "e": 0.77
+    },
+    {
+     "w": "why",
+     "s": 0.77,
+     "e": 0.96
+    },
+    {
+     "w": "you",
+     "s": 0.96,
+     "e": 1.09
+    },
+    {
+     "w": "can",
+     "s": 1.09,
+     "e": 1.24
+    },
+    {
+     "w": "ask",
+     "s": 1.24,
+     "e": 1.52
+    },
+    {
+     "w": "the",
+     "s": 1.52,
+     "e": 1.6
+    },
+    {
+     "w": "same",
+     "s": 1.6,
+     "e": 1.93
+    },
+    {
+     "w": "question",
+     "s": 1.93,
+     "e": 2.37
+    },
+    {
+     "w": "twice",
+     "s": 2.37,
+     "e": 2.98
+    },
+    {
+     "w": "and",
+     "s": 2.98,
+     "e": 3.14
+    },
+    {
+     "w": "get",
+     "s": 3.14,
+     "e": 3.32
+    },
+    {
+     "w": "two",
+     "s": 3.32,
+     "e": 3.59
+    },
+    {
+     "w": "different",
+     "s": 3.59,
+     "e": 3.89
+    },
+    {
+     "w": "answers.",
+     "s": 3.89,
+     "e": 4.42
+    },
+    {
+     "w": "ChatGPT",
+     "s": 4.42,
+     "e": 5.16
+    },
+    {
+     "w": "usually",
+     "s": 5.16,
+     "e": 6.29
+    },
+    {
+     "w": "doesn't",
+     "s": 6.29,
+     "e": 6.63
+    },
+    {
+     "w": "take",
+     "s": 6.63,
+     "e": 6.95
+    },
+    {
+     "w": "the",
+     "s": 6.95,
+     "e": 7.04
+    },
+    {
+     "w": "single",
+     "s": 7.04,
+     "e": 7.51
+    },
+    {
+     "w": "most",
+     "s": 7.51,
+     "e": 7.79
+    },
+    {
+     "w": "likely",
+     "s": 7.79,
+     "e": 8.18
+    },
+    {
+     "w": "token.",
+     "s": 8.18,
+     "e": 8.64
+    },
+    {
+     "w": "It",
+     "s": 9.1,
+     "e": 9.19
+    },
+    {
+     "w": "rolls",
+     "s": 9.19,
+     "e": 9.47
+    },
+    {
+     "w": "the",
+     "s": 9.47,
+     "e": 9.55
+    },
+    {
+     "w": "dice",
+     "s": 9.55,
+     "e": 9.87
+    },
+    {
+     "w": "a",
+     "s": 9.87,
+     "e": 9.91
+    },
+    {
+     "w": "little,",
+     "s": 9.91,
+     "e": 10.25
+    },
+    {
+     "w": "so",
+     "s": 10.43,
+     "e": 10.7
+    },
+    {
+     "w": "the",
+     "s": 10.7,
+     "e": 10.78
+    },
+    {
+     "w": "writing",
+     "s": 10.78,
+     "e": 11.1
+    },
+    {
+     "w": "sounds",
+     "s": 11.1,
+     "e": 11.42
+    },
+    {
+     "w": "natural",
+     "s": 11.42,
+     "e": 12.02
+    },
+    {
+     "w": "instead",
+     "s": 12.02,
+     "e": 12.35
+    },
+    {
+     "w": "of",
+     "s": 12.35,
+     "e": 12.47
+    },
+    {
+     "w": "robotic.",
+     "s": 12.47,
+     "e": 13.09
+    }
+   ]
+  },
+  {
+   "text": "And here's something most people don't realise. Every single time ChatGPT adds one token, it looks back over the entire conversation so far.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 132.867,
+   "vo": 9.091,
+   "dur": 9.391,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.08,
+     "e": 0.22
+    },
+    {
+     "w": "here's",
+     "s": 0.22,
+     "e": 0.44
+    },
+    {
+     "w": "something",
+     "s": 0.44,
+     "e": 0.81
+    },
+    {
+     "w": "most",
+     "s": 0.81,
+     "e": 1.08
+    },
+    {
+     "w": "people",
+     "s": 1.08,
+     "e": 1.34
+    },
+    {
+     "w": "don't",
+     "s": 1.34,
+     "e": 1.53
+    },
+    {
+     "w": "realise.",
+     "s": 1.53,
+     "e": 2.09
+    },
+    {
+     "w": "Every",
+     "s": 2.59,
+     "e": 2.89
+    },
+    {
+     "w": "single",
+     "s": 2.89,
+     "e": 3.25
+    },
+    {
+     "w": "time",
+     "s": 3.25,
+     "e": 3.63
+    },
+    {
+     "w": "ChatGPT",
+     "s": 3.63,
+     "e": 3.68
+    },
+    {
+     "w": "adds",
+     "s": 3.63,
+     "e": 4.0
+    },
+    {
+     "w": "one",
+     "s": 4.0,
+     "e": 4.1
+    },
+    {
+     "w": "token,",
+     "s": 4.1,
+     "e": 4.61
+    },
+    {
+     "w": "it",
+     "s": 4.61,
+     "e": 4.79
+    },
+    {
+     "w": "looks",
+     "s": 4.79,
+     "e": 5.23
+    },
+    {
+     "w": "back",
+     "s": 5.23,
+     "e": 5.44
+    },
+    {
+     "w": "over",
+     "s": 5.44,
+     "e": 5.61
+    },
+    {
+     "w": "the",
+     "s": 6.03,
+     "e": 6.17
+    },
+    {
+     "w": "entire",
+     "s": 6.17,
+     "e": 6.54
+    },
+    {
+     "w": "conversation",
+     "s": 6.54,
+     "e": 7.08
+    },
+    {
+     "w": "so",
+     "s": 7.87,
+     "e": 8.5
+    },
+    {
+     "w": "far.",
+     "s": 8.5,
+     "e": 8.96
+    }
+   ]
+  },
+  {
+   "text": "Your question, its own earlier words, everything. That's how it keeps track of what \"it\" or \"that\" refers to.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 142.258,
+   "vo": 7.549,
+   "dur": 7.849,
+   "words": [
+    {
+     "w": "Your",
+     "s": 0.09,
+     "e": 0.24
+    },
+    {
+     "w": "question,",
+     "s": 0.24,
+     "e": 0.88
+    },
+    {
+     "w": "its",
+     "s": 1.23,
+     "e": 1.39
+    },
+    {
+     "w": "own",
+     "s": 1.39,
+     "e": 1.59
+    },
+    {
+     "w": "earlier",
+     "s": 1.59,
+     "e": 1.97
+    },
+    {
+     "w": "words,",
+     "s": 1.97,
+     "e": 2.53
+    },
+    {
+     "w": "everything.",
+     "s": 2.8,
+     "e": 3.4
+    },
+    {
+     "w": "That's",
+     "s": 3.91,
+     "e": 4.17
+    },
+    {
+     "w": "how",
+     "s": 4.17,
+     "e": 4.31
+    },
+    {
+     "w": "it",
+     "s": 4.31,
+     "e": 4.39
+    },
+    {
+     "w": "keeps",
+     "s": 4.39,
+     "e": 4.64
+    },
+    {
+     "w": "track",
+     "s": 4.64,
+     "e": 4.96
+    },
+    {
+     "w": "of",
+     "s": 4.96,
+     "e": 5.1
+    },
+    {
+     "w": "what",
+     "s": 5.1,
+     "e": 5.28
+    },
+    {
+     "w": "\"it\"",
+     "s": 5.28,
+     "e": 5.77
+    },
+    {
+     "w": "or",
+     "s": 5.77,
+     "e": 6.1
+    },
+    {
+     "w": "\"that\"",
+     "s": 6.1,
+     "e": 6.64
+    },
+    {
+     "w": "refers",
+     "s": 6.64,
+     "e": 7.09
+    },
+    {
+     "w": "to.",
+     "s": 7.09,
+     "e": 7.31
+    }
+   ]
+  },
+  {
+   "text": "The technique that makes this possible is called attention. It was introduced by Google researchers in twenty seventeen, in a paper called \"Attention Is All You Need\". It's the T in GPT: the transformer.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 150.107,
+   "vo": 13.166,
+   "dur": 13.466,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.08,
+     "e": 0.18
+    },
+    {
+     "w": "technique",
+     "s": 0.18,
+     "e": 0.63
+    },
+    {
+     "w": "that",
+     "s": 0.63,
+     "e": 0.76
+    },
+    {
+     "w": "makes",
+     "s": 0.76,
+     "e": 1.01
+    },
+    {
+     "w": "this",
+     "s": 1.01,
+     "e": 1.18
+    },
+    {
+     "w": "possible",
+     "s": 1.18,
+     "e": 1.86
+    },
+    {
+     "w": "is",
+     "s": 1.86,
+     "e": 2.01
+    },
+    {
+     "w": "called",
+     "s": 2.01,
+     "e": 2.44
+    },
+    {
+     "w": "attention.",
+     "s": 2.44,
+     "e": 3.14
+    },
+    {
+     "w": "It",
+     "s": 3.69,
+     "e": 3.77
+    },
+    {
+     "w": "was",
+     "s": 3.77,
+     "e": 3.92
+    },
+    {
+     "w": "introduced",
+     "s": 3.92,
+     "e": 4.4
+    },
+    {
+     "w": "by",
+     "s": 4.4,
+     "e": 4.57
+    },
+    {
+     "w": "Google",
+     "s": 4.57,
+     "e": 4.96
+    },
+    {
+     "w": "researchers",
+     "s": 4.96,
+     "e": 5.63
+    },
+    {
+     "w": "in",
+     "s": 5.63,
+     "e": 5.72
+    },
+    {
+     "w": "twenty",
+     "s": 5.72,
+     "e": 6.02
+    },
+    {
+     "w": "seventeen,",
+     "s": 6.02,
+     "e": 6.7
+    },
+    {
+     "w": "in",
+     "s": 6.7,
+     "e": 6.98
+    },
+    {
+     "w": "a",
+     "s": 6.98,
+     "e": 7.04
+    },
+    {
+     "w": "paper",
+     "s": 7.04,
+     "e": 7.36
+    },
+    {
+     "w": "called",
+     "s": 7.36,
+     "e": 7.79
+    },
+    {
+     "w": "\"Attention",
+     "s": 7.96,
+     "e": 8.56
+    },
+    {
+     "w": "Is",
+     "s": 8.56,
+     "e": 8.83
+    },
+    {
+     "w": "All",
+     "s": 8.83,
+     "e": 9.07
+    },
+    {
+     "w": "You",
+     "s": 9.07,
+     "e": 9.23
+    },
+    {
+     "w": "Need\".",
+     "s": 9.23,
+     "e": 9.6
+    },
+    {
+     "w": "It's",
+     "s": 10.07,
+     "e": 10.27
+    },
+    {
+     "w": "the",
+     "s": 10.27,
+     "e": 10.39
+    },
+    {
+     "w": "T",
+     "s": 10.39,
+     "e": 10.94
+    },
+    {
+     "w": "in",
+     "s": 10.94,
+     "e": 11.11
+    },
+    {
+     "w": "GPT:",
+     "s": 11.11,
+     "e": 11.16
+    },
+    {
+     "w": "the",
+     "s": 11.11,
+     "e": 11.28
+    },
+    {
+     "w": "transformer.",
+     "s": 11.28,
+     "e": 11.72
+    }
+   ]
+  },
+  {
+   "text": "Attention lets the model decide which earlier words matter most for the next one. In \"I dropped my laptop and now it won't start\", attention links \"it\" back to \"laptop\", not \"I\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 163.573,
+   "vo": 12.121,
+   "dur": 12.421,
+   "words": [
+    {
+     "w": "Attention",
+     "s": 0.05,
+     "e": 0.63
+    },
+    {
+     "w": "lets",
+     "s": 0.63,
+     "e": 0.9
+    },
+    {
+     "w": "the",
+     "s": 0.9,
+     "e": 0.97
+    },
+    {
+     "w": "model",
+     "s": 0.97,
+     "e": 1.33
+    },
+    {
+     "w": "decide",
+     "s": 1.33,
+     "e": 1.81
+    },
+    {
+     "w": "which",
+     "s": 1.81,
+     "e": 2.18
+    },
+    {
+     "w": "earlier",
+     "s": 2.26,
+     "e": 2.63
+    },
+    {
+     "w": "words",
+     "s": 2.63,
+     "e": 3.03
+    },
+    {
+     "w": "matter",
+     "s": 3.03,
+     "e": 3.31
+    },
+    {
+     "w": "most",
+     "s": 3.31,
+     "e": 3.81
+    },
+    {
+     "w": "for",
+     "s": 3.81,
+     "e": 3.94
+    },
+    {
+     "w": "the",
+     "s": 3.94,
+     "e": 4.03
+    },
+    {
+     "w": "next",
+     "s": 4.03,
+     "e": 4.32
+    },
+    {
+     "w": "one.",
+     "s": 4.32,
+     "e": 4.57
+    },
+    {
+     "w": "In",
+     "s": 5.08,
+     "e": 5.41
+    },
+    {
+     "w": "\"I",
+     "s": 5.66,
+     "e": 5.76
+    },
+    {
+     "w": "dropped",
+     "s": 5.76,
+     "e": 6.15
+    },
+    {
+     "w": "my",
+     "s": 6.15,
+     "e": 6.27
+    },
+    {
+     "w": "laptop",
+     "s": 6.27,
+     "e": 6.92
+    },
+    {
+     "w": "and",
+     "s": 6.92,
+     "e": 7.09
+    },
+    {
+     "w": "now",
+     "s": 7.09,
+     "e": 7.33
+    },
+    {
+     "w": "it",
+     "s": 7.33,
+     "e": 7.39
+    },
+    {
+     "w": "won't",
+     "s": 7.39,
+     "e": 7.61
+    },
+    {
+     "w": "start\",",
+     "s": 7.61,
+     "e": 8.11
+    },
+    {
+     "w": "attention",
+     "s": 8.51,
+     "e": 8.99
+    },
+    {
+     "w": "links",
+     "s": 8.99,
+     "e": 9.3
+    },
+    {
+     "w": "\"it\"",
+     "s": 9.3,
+     "e": 9.75
+    },
+    {
+     "w": "back",
+     "s": 9.81,
+     "e": 10.03
+    },
+    {
+     "w": "to",
+     "s": 10.03,
+     "e": 10.15
+    },
+    {
+     "w": "\"laptop\",",
+     "s": 10.15,
+     "e": 10.82
+    },
+    {
+     "w": "not",
+     "s": 11.08,
+     "e": 11.38
+    },
+    {
+     "w": "\"I\".",
+     "s": 11.54,
+     "e": 11.83
+    }
+   ]
+  },
+  {
+   "text": "But there's a limit to how much it can look back on, called the context window. In a very long chat, the earliest details can get less attention, or fall out completely. That's why it sometimes forgets what you said at the start.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 175.994,
+   "vo": 13.244,
+   "dur": 13.544,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.05,
+     "e": 0.2
+    },
+    {
+     "w": "there's",
+     "s": 0.2,
+     "e": 0.41
+    },
+    {
+     "w": "a",
+     "s": 0.41,
+     "e": 0.45
+    },
+    {
+     "w": "limit",
+     "s": 0.45,
+     "e": 0.89
+    },
+    {
+     "w": "to",
+     "s": 0.89,
+     "e": 1.01
+    },
+    {
+     "w": "how",
+     "s": 1.01,
+     "e": 1.21
+    },
+    {
+     "w": "much",
+     "s": 1.21,
+     "e": 1.47
+    },
+    {
+     "w": "it",
+     "s": 1.47,
+     "e": 1.55
+    },
+    {
+     "w": "can",
+     "s": 1.55,
+     "e": 1.68
+    },
+    {
+     "w": "look",
+     "s": 1.68,
+     "e": 1.88
+    },
+    {
+     "w": "back",
+     "s": 1.88,
+     "e": 2.19
+    },
+    {
+     "w": "on,",
+     "s": 2.19,
+     "e": 2.49
+    },
+    {
+     "w": "called",
+     "s": 2.68,
+     "e": 3.01
+    },
+    {
+     "w": "the",
+     "s": 3.01,
+     "e": 3.12
+    },
+    {
+     "w": "context",
+     "s": 3.12,
+     "e": 3.77
+    },
+    {
+     "w": "window.",
+     "s": 3.77,
+     "e": 4.16
+    },
+    {
+     "w": "In",
+     "s": 4.73,
+     "e": 4.85
+    },
+    {
+     "w": "a",
+     "s": 4.85,
+     "e": 4.89
+    },
+    {
+     "w": "very",
+     "s": 4.89,
+     "e": 5.33
+    },
+    {
+     "w": "long",
+     "s": 5.33,
+     "e": 5.61
+    },
+    {
+     "w": "chat,",
+     "s": 5.61,
+     "e": 6.03
+    },
+    {
+     "w": "the",
+     "s": 6.18,
+     "e": 6.37
+    },
+    {
+     "w": "earliest",
+     "s": 6.37,
+     "e": 6.79
+    },
+    {
+     "w": "details",
+     "s": 6.79,
+     "e": 7.29
+    },
+    {
+     "w": "can",
+     "s": 7.29,
+     "e": 7.45
+    },
+    {
+     "w": "get",
+     "s": 7.45,
+     "e": 7.59
+    },
+    {
+     "w": "less",
+     "s": 7.59,
+     "e": 7.85
+    },
+    {
+     "w": "attention,",
+     "s": 7.85,
+     "e": 8.44
+    },
+    {
+     "w": "or",
+     "s": 8.55,
+     "e": 8.85
+    },
+    {
+     "w": "fall",
+     "s": 8.85,
+     "e": 9.2
+    },
+    {
+     "w": "out",
+     "s": 9.2,
+     "e": 9.33
+    },
+    {
+     "w": "completely.",
+     "s": 9.33,
+     "e": 9.98
+    },
+    {
+     "w": "That's",
+     "s": 10.44,
+     "e": 10.67
+    },
+    {
+     "w": "why",
+     "s": 10.67,
+     "e": 10.85
+    },
+    {
+     "w": "it",
+     "s": 10.85,
+     "e": 10.95
+    },
+    {
+     "w": "sometimes",
+     "s": 10.95,
+     "e": 11.49
+    },
+    {
+     "w": "forgets",
+     "s": 11.49,
+     "e": 11.96
+    },
+    {
+     "w": "what",
+     "s": 11.96,
+     "e": 12.09
+    },
+    {
+     "w": "you",
+     "s": 12.09,
+     "e": 12.22
+    },
+    {
+     "w": "said",
+     "s": 12.22,
+     "e": 12.45
+    },
+    {
+     "w": "at",
+     "s": 12.45,
+     "e": 12.53
+    },
+    {
+     "w": "the",
+     "s": 12.53,
+     "e": 12.61
+    },
+    {
+     "w": "start.",
+     "s": 12.61,
+     "e": 13.12
+    }
+   ]
+  },
+  {
+   "text": "But how does it know which guesses are good? It learned by reading. An enormous amount of reading.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 189.538,
+   "vo": 6.609,
+   "dur": 6.909,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.07,
+     "e": 0.29
+    },
+    {
+     "w": "how",
+     "s": 0.29,
+     "e": 0.61
+    },
+    {
+     "w": "does",
+     "s": 0.61,
+     "e": 0.8
+    },
+    {
+     "w": "it",
+     "s": 0.8,
+     "e": 0.88
+    },
+    {
+     "w": "know",
+     "s": 0.88,
+     "e": 1.11
+    },
+    {
+     "w": "which",
+     "s": 1.11,
+     "e": 1.35
+    },
+    {
+     "w": "guesses",
+     "s": 1.35,
+     "e": 1.75
+    },
+    {
+     "w": "are",
+     "s": 1.75,
+     "e": 1.82
+    },
+    {
+     "w": "good?",
+     "s": 1.82,
+     "e": 2.3
+    },
+    {
+     "w": "It",
+     "s": 2.84,
+     "e": 2.96
+    },
+    {
+     "w": "learned",
+     "s": 2.96,
+     "e": 3.51
+    },
+    {
+     "w": "by",
+     "s": 3.51,
+     "e": 3.68
+    },
+    {
+     "w": "reading.",
+     "s": 3.68,
+     "e": 4.21
+    },
+    {
+     "w": "An",
+     "s": 4.65,
+     "e": 4.8
+    },
+    {
+     "w": "enormous",
+     "s": 4.8,
+     "e": 5.6
+    },
+    {
+     "w": "amount",
+     "s": 5.6,
+     "e": 5.9
+    },
+    {
+     "w": "of",
+     "s": 5.9,
+     "e": 6.04
+    },
+    {
+     "w": "reading.",
+     "s": 6.04,
+     "e": 6.48
+    }
+   ]
+  },
+  {
+   "text": "During training, the model is shown huge amounts of text from books, websites and code, with the next word hidden.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 196.447,
+   "vo": 7.236,
+   "dur": 7.536,
+   "words": [
+    {
+     "w": "During",
+     "s": 0.06,
+     "e": 0.38
+    },
+    {
+     "w": "training,",
+     "s": 0.38,
+     "e": 0.98
+    },
+    {
+     "w": "the",
+     "s": 1.06,
+     "e": 1.18
+    },
+    {
+     "w": "model",
+     "s": 1.18,
+     "e": 1.55
+    },
+    {
+     "w": "is",
+     "s": 1.55,
+     "e": 1.62
+    },
+    {
+     "w": "shown",
+     "s": 1.62,
+     "e": 1.93
+    },
+    {
+     "w": "huge",
+     "s": 1.93,
+     "e": 2.47
+    },
+    {
+     "w": "amounts",
+     "s": 2.47,
+     "e": 2.81
+    },
+    {
+     "w": "of",
+     "s": 2.81,
+     "e": 2.87
+    },
+    {
+     "w": "text",
+     "s": 2.87,
+     "e": 3.26
+    },
+    {
+     "w": "from",
+     "s": 3.26,
+     "e": 3.49
+    },
+    {
+     "w": "books,",
+     "s": 3.49,
+     "e": 4.03
+    },
+    {
+     "w": "websites",
+     "s": 4.03,
+     "e": 4.72
+    },
+    {
+     "w": "and",
+     "s": 4.72,
+     "e": 4.88
+    },
+    {
+     "w": "code,",
+     "s": 4.88,
+     "e": 5.41
+    },
+    {
+     "w": "with",
+     "s": 5.66,
+     "e": 5.81
+    },
+    {
+     "w": "the",
+     "s": 5.81,
+     "e": 5.9
+    },
+    {
+     "w": "next",
+     "s": 5.9,
+     "e": 6.29
+    },
+    {
+     "w": "word",
+     "s": 6.29,
+     "e": 6.57
+    },
+    {
+     "w": "hidden.",
+     "s": 6.57,
+     "e": 6.99
+    }
+   ]
+  },
+  {
+   "text": "It guesses. It checks the real answer. And it adjusts itself a tiny bit to guess better next time.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 203.983,
+   "vo": 6.922,
+   "dur": 7.222,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.12,
+     "e": 0.24
+    },
+    {
+     "w": "guesses.",
+     "s": 0.24,
+     "e": 0.97
+    },
+    {
+     "w": "It",
+     "s": 1.32,
+     "e": 1.46
+    },
+    {
+     "w": "checks",
+     "s": 1.46,
+     "e": 1.83
+    },
+    {
+     "w": "the",
+     "s": 1.83,
+     "e": 1.92
+    },
+    {
+     "w": "real",
+     "s": 1.92,
+     "e": 2.31
+    },
+    {
+     "w": "answer.",
+     "s": 2.31,
+     "e": 2.78
+    },
+    {
+     "w": "And",
+     "s": 3.07,
+     "e": 3.53
+    },
+    {
+     "w": "it",
+     "s": 3.53,
+     "e": 3.63
+    },
+    {
+     "w": "adjusts",
+     "s": 3.63,
+     "e": 4.14
+    },
+    {
+     "w": "itself",
+     "s": 4.14,
+     "e": 4.54
+    },
+    {
+     "w": "a",
+     "s": 4.54,
+     "e": 4.62
+    },
+    {
+     "w": "tiny",
+     "s": 4.62,
+     "e": 5.12
+    },
+    {
+     "w": "bit",
+     "s": 5.12,
+     "e": 5.48
+    },
+    {
+     "w": "to",
+     "s": 5.48,
+     "e": 5.59
+    },
+    {
+     "w": "guess",
+     "s": 5.59,
+     "e": 5.87
+    },
+    {
+     "w": "better",
+     "s": 5.87,
+     "e": 6.18
+    },
+    {
+     "w": "next",
+     "s": 6.18,
+     "e": 6.45
+    },
+    {
+     "w": "time.",
+     "s": 6.45,
+     "e": 6.7
+    }
+   ]
+  },
+  {
+   "text": "Those adjustable parts are called parameters. Think of them as knobs. GPT-3, back in twenty twenty, had a hundred and seventy-five billion of them.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 211.205,
+   "vo": 10.109,
+   "dur": 10.409,
+   "words": [
+    {
+     "w": "Those",
+     "s": 0.04,
+     "e": 0.32
+    },
+    {
+     "w": "adjustable",
+     "s": 0.32,
+     "e": 0.87
+    },
+    {
+     "w": "parts",
+     "s": 0.87,
+     "e": 1.3
+    },
+    {
+     "w": "are",
+     "s": 1.3,
+     "e": 1.43
+    },
+    {
+     "w": "called",
+     "s": 1.43,
+     "e": 1.73
+    },
+    {
+     "w": "parameters.",
+     "s": 1.73,
+     "e": 2.59
+    },
+    {
+     "w": "Think",
+     "s": 2.96,
+     "e": 3.18
+    },
+    {
+     "w": "of",
+     "s": 3.18,
+     "e": 3.29
+    },
+    {
+     "w": "them",
+     "s": 3.29,
+     "e": 3.48
+    },
+    {
+     "w": "as",
+     "s": 3.48,
+     "e": 3.68
+    },
+    {
+     "w": "knobs.",
+     "s": 3.68,
+     "e": 4.28
+    },
+    {
+     "w": "GPT-3,",
+     "s": 4.28,
+     "e": 4.97
+    },
+    {
+     "w": "back",
+     "s": 4.97,
+     "e": 5.2
+    },
+    {
+     "w": "in",
+     "s": 5.2,
+     "e": 5.31
+    },
+    {
+     "w": "twenty",
+     "s": 5.31,
+     "e": 5.85
+    },
+    {
+     "w": "twenty,",
+     "s": 5.92,
+     "e": 6.19
+    },
+    {
+     "w": "had",
+     "s": 6.19,
+     "e": 6.31
+    },
+    {
+     "w": "a",
+     "s": 6.31,
+     "e": 6.35
+    },
+    {
+     "w": "hundred",
+     "s": 6.35,
+     "e": 7.01
+    },
+    {
+     "w": "and",
+     "s": 7.62,
+     "e": 8.22
+    },
+    {
+     "w": "seventy-five",
+     "s": 8.22,
+     "e": 8.27
+    },
+    {
+     "w": "billion",
+     "s": 8.22,
+     "e": 8.59
+    },
+    {
+     "w": "of",
+     "s": 8.78,
+     "e": 8.97
+    },
+    {
+     "w": "them.",
+     "s": 8.97,
+     "e": 9.94
+    }
+   ]
+  },
+  {
+   "text": "Repeat that guessing game billions of times, and something surprising happens. To predict the next word well, the model has to pick up grammar, facts, styles, and even some reasoning patterns along the way.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 221.614,
+   "vo": 12.669,
+   "dur": 12.969,
+   "words": [
+    {
+     "w": "Repeat",
+     "s": 0.09,
+     "e": 0.45
+    },
+    {
+     "w": "that",
+     "s": 0.45,
+     "e": 0.64
+    },
+    {
+     "w": "guessing",
+     "s": 0.64,
+     "e": 1.08
+    },
+    {
+     "w": "game",
+     "s": 1.08,
+     "e": 1.36
+    },
+    {
+     "w": "billions",
+     "s": 1.36,
+     "e": 1.99
+    },
+    {
+     "w": "of",
+     "s": 1.99,
+     "e": 2.07
+    },
+    {
+     "w": "times,",
+     "s": 2.07,
+     "e": 2.73
+    },
+    {
+     "w": "and",
+     "s": 2.73,
+     "e": 2.94
+    },
+    {
+     "w": "something",
+     "s": 2.94,
+     "e": 3.35
+    },
+    {
+     "w": "surprising",
+     "s": 3.35,
+     "e": 3.96
+    },
+    {
+     "w": "happens.",
+     "s": 3.96,
+     "e": 4.54
+    },
+    {
+     "w": "To",
+     "s": 5.0,
+     "e": 5.14
+    },
+    {
+     "w": "predict",
+     "s": 5.14,
+     "e": 5.48
+    },
+    {
+     "w": "the",
+     "s": 5.48,
+     "e": 5.58
+    },
+    {
+     "w": "next",
+     "s": 5.58,
+     "e": 5.91
+    },
+    {
+     "w": "word",
+     "s": 5.91,
+     "e": 6.13
+    },
+    {
+     "w": "well,",
+     "s": 6.13,
+     "e": 6.59
+    },
+    {
+     "w": "the",
+     "s": 6.97,
+     "e": 7.03
+    },
+    {
+     "w": "model",
+     "s": 7.03,
+     "e": 7.36
+    },
+    {
+     "w": "has",
+     "s": 7.36,
+     "e": 7.57
+    },
+    {
+     "w": "to",
+     "s": 7.57,
+     "e": 7.67
+    },
+    {
+     "w": "pick",
+     "s": 7.67,
+     "e": 7.88
+    },
+    {
+     "w": "up",
+     "s": 7.88,
+     "e": 8.03
+    },
+    {
+     "w": "grammar,",
+     "s": 8.03,
+     "e": 8.65
+    },
+    {
+     "w": "facts,",
+     "s": 8.69,
+     "e": 9.43
+    },
+    {
+     "w": "styles,",
+     "s": 9.43,
+     "e": 10.17
+    },
+    {
+     "w": "and",
+     "s": 10.17,
+     "e": 10.45
+    },
+    {
+     "w": "even",
+     "s": 10.45,
+     "e": 10.77
+    },
+    {
+     "w": "some",
+     "s": 10.77,
+     "e": 11.01
+    },
+    {
+     "w": "reasoning",
+     "s": 11.01,
+     "e": 11.47
+    },
+    {
+     "w": "patterns",
+     "s": 11.47,
+     "e": 11.88
+    },
+    {
+     "w": "along",
+     "s": 11.88,
+     "e": 12.14
+    },
+    {
+     "w": "the",
+     "s": 12.14,
+     "e": 12.21
+    },
+    {
+     "w": "way.",
+     "s": 12.21,
+     "e": 12.49
+    }
+   ]
+  },
+  {
+   "text": "A model trained only on the internet is a bit like a very well-read parrot. Ask it a question, and it might just continue your sentence, or ramble.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 234.584,
+   "vo": 9.482,
+   "dur": 9.782,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.11,
+     "e": 0.17
+    },
+    {
+     "w": "model",
+     "s": 0.17,
+     "e": 0.53
+    },
+    {
+     "w": "trained",
+     "s": 0.53,
+     "e": 0.9
+    },
+    {
+     "w": "only",
+     "s": 0.9,
+     "e": 1.34
+    },
+    {
+     "w": "on",
+     "s": 1.34,
+     "e": 1.45
+    },
+    {
+     "w": "the",
+     "s": 1.45,
+     "e": 1.62
+    },
+    {
+     "w": "internet",
+     "s": 1.62,
+     "e": 2.14
+    },
+    {
+     "w": "is",
+     "s": 2.14,
+     "e": 2.38
+    },
+    {
+     "w": "a",
+     "s": 2.38,
+     "e": 2.43
+    },
+    {
+     "w": "bit",
+     "s": 2.43,
+     "e": 2.8
+    },
+    {
+     "w": "like",
+     "s": 2.8,
+     "e": 2.99
+    },
+    {
+     "w": "a",
+     "s": 2.99,
+     "e": 3.06
+    },
+    {
+     "w": "very",
+     "s": 3.06,
+     "e": 3.53
+    },
+    {
+     "w": "well-read",
+     "s": 3.53,
+     "e": 3.58
+    },
+    {
+     "w": "parrot.",
+     "s": 3.53,
+     "e": 4.56
+    },
+    {
+     "w": "Ask",
+     "s": 5.01,
+     "e": 5.26
+    },
+    {
+     "w": "it",
+     "s": 5.26,
+     "e": 5.34
+    },
+    {
+     "w": "a",
+     "s": 5.34,
+     "e": 5.37
+    },
+    {
+     "w": "question,",
+     "s": 5.37,
+     "e": 5.99
+    },
+    {
+     "w": "and",
+     "s": 5.99,
+     "e": 6.36
+    },
+    {
+     "w": "it",
+     "s": 6.36,
+     "e": 6.45
+    },
+    {
+     "w": "might",
+     "s": 6.45,
+     "e": 6.71
+    },
+    {
+     "w": "just",
+     "s": 6.71,
+     "e": 6.93
+    },
+    {
+     "w": "continue",
+     "s": 6.93,
+     "e": 7.39
+    },
+    {
+     "w": "your",
+     "s": 7.39,
+     "e": 7.53
+    },
+    {
+     "w": "sentence,",
+     "s": 7.53,
+     "e": 8.19
+    },
+    {
+     "w": "or",
+     "s": 8.42,
+     "e": 8.73
+    },
+    {
+     "w": "ramble.",
+     "s": 8.73,
+     "e": 9.28
+    }
+   ]
+  },
+  {
+   "text": "So companies add a second stage. Real people write good example answers, and rank the model's answers from best to worst.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 244.366,
+   "vo": 7.811,
+   "dur": 8.111,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.03,
+     "e": 0.41
+    },
+    {
+     "w": "companies",
+     "s": 0.41,
+     "e": 1.01
+    },
+    {
+     "w": "add",
+     "s": 1.01,
+     "e": 1.24
+    },
+    {
+     "w": "a",
+     "s": 1.24,
+     "e": 1.27
+    },
+    {
+     "w": "second",
+     "s": 1.27,
+     "e": 1.68
+    },
+    {
+     "w": "stage.",
+     "s": 1.68,
+     "e": 2.18
+    },
+    {
+     "w": "Real",
+     "s": 2.62,
+     "e": 2.96
+    },
+    {
+     "w": "people",
+     "s": 2.96,
+     "e": 3.34
+    },
+    {
+     "w": "write",
+     "s": 3.34,
+     "e": 3.54
+    },
+    {
+     "w": "good",
+     "s": 3.54,
+     "e": 3.84
+    },
+    {
+     "w": "example",
+     "s": 3.84,
+     "e": 4.34
+    },
+    {
+     "w": "answers,",
+     "s": 4.34,
+     "e": 4.9
+    },
+    {
+     "w": "and",
+     "s": 4.9,
+     "e": 5.07
+    },
+    {
+     "w": "rank",
+     "s": 5.07,
+     "e": 5.4
+    },
+    {
+     "w": "the",
+     "s": 5.4,
+     "e": 5.48
+    },
+    {
+     "w": "model's",
+     "s": 5.48,
+     "e": 5.89
+    },
+    {
+     "w": "answers",
+     "s": 5.89,
+     "e": 6.33
+    },
+    {
+     "w": "from",
+     "s": 6.33,
+     "e": 6.54
+    },
+    {
+     "w": "best",
+     "s": 6.54,
+     "e": 7.0
+    },
+    {
+     "w": "to",
+     "s": 7.0,
+     "e": 7.15
+    },
+    {
+     "w": "worst.",
+     "s": 7.15,
+     "e": 7.65
+    }
+   ]
+  },
+  {
+   "text": "The model is then trained to produce the kind of answers people prefer. This is called reinforcement learning from human feedback.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 252.477,
+   "vo": 7.236,
+   "dur": 7.536,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.1,
+     "e": 0.19
+    },
+    {
+     "w": "model",
+     "s": 0.19,
+     "e": 0.57
+    },
+    {
+     "w": "is",
+     "s": 0.57,
+     "e": 0.72
+    },
+    {
+     "w": "then",
+     "s": 0.72,
+     "e": 0.93
+    },
+    {
+     "w": "trained",
+     "s": 0.93,
+     "e": 1.35
+    },
+    {
+     "w": "to",
+     "s": 1.35,
+     "e": 1.46
+    },
+    {
+     "w": "produce",
+     "s": 1.46,
+     "e": 1.81
+    },
+    {
+     "w": "the",
+     "s": 1.81,
+     "e": 1.89
+    },
+    {
+     "w": "kind",
+     "s": 1.89,
+     "e": 2.14
+    },
+    {
+     "w": "of",
+     "s": 2.14,
+     "e": 2.25
+    },
+    {
+     "w": "answers",
+     "s": 2.25,
+     "e": 2.68
+    },
+    {
+     "w": "people",
+     "s": 2.68,
+     "e": 2.99
+    },
+    {
+     "w": "prefer.",
+     "s": 2.99,
+     "e": 3.57
+    },
+    {
+     "w": "This",
+     "s": 4.02,
+     "e": 4.19
+    },
+    {
+     "w": "is",
+     "s": 4.19,
+     "e": 4.32
+    },
+    {
+     "w": "called",
+     "s": 4.32,
+     "e": 4.63
+    },
+    {
+     "w": "reinforcement",
+     "s": 4.63,
+     "e": 5.56
+    },
+    {
+     "w": "learning",
+     "s": 5.56,
+     "e": 5.95
+    },
+    {
+     "w": "from",
+     "s": 5.95,
+     "e": 6.15
+    },
+    {
+     "w": "human",
+     "s": 6.15,
+     "e": 6.48
+    },
+    {
+     "w": "feedback.",
+     "s": 6.48,
+     "e": 7.13
+    }
+   ]
+  },
+  {
+   "text": "And it matters a lot. In OpenAI's twenty twenty-two study, people preferred answers from a small model trained this way over the giant GPT-3, a model a hundred times bigger.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 260.013,
+   "vo": 11.964,
+   "dur": 12.264,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.09,
+     "e": 0.22
+    },
+    {
+     "w": "it",
+     "s": 0.22,
+     "e": 0.29
+    },
+    {
+     "w": "matters",
+     "s": 0.29,
+     "e": 0.77
+    },
+    {
+     "w": "a",
+     "s": 0.77,
+     "e": 0.8
+    },
+    {
+     "w": "lot.",
+     "s": 0.8,
+     "e": 1.46
+    },
+    {
+     "w": "In",
+     "s": 1.89,
+     "e": 2.01
+    },
+    {
+     "w": "OpenAI's",
+     "s": 2.01,
+     "e": 2.06
+    },
+    {
+     "w": "twenty",
+     "s": 2.01,
+     "e": 2.49
+    },
+    {
+     "w": "twenty-two",
+     "s": 2.49,
+     "e": 2.67
+    },
+    {
+     "w": "study,",
+     "s": 2.67,
+     "e": 3.09
+    },
+    {
+     "w": "people",
+     "s": 3.09,
+     "e": 3.48
+    },
+    {
+     "w": "preferred",
+     "s": 3.48,
+     "e": 4.08
+    },
+    {
+     "w": "answers",
+     "s": 4.64,
+     "e": 4.87
+    },
+    {
+     "w": "from",
+     "s": 4.87,
+     "e": 5.12
+    },
+    {
+     "w": "a",
+     "s": 5.12,
+     "e": 5.35
+    },
+    {
+     "w": "small",
+     "s": 5.35,
+     "e": 5.83
+    },
+    {
+     "w": "model",
+     "s": 6.02,
+     "e": 6.65
+    },
+    {
+     "w": "trained",
+     "s": 6.65,
+     "e": 7.02
+    },
+    {
+     "w": "this",
+     "s": 7.02,
+     "e": 7.25
+    },
+    {
+     "w": "way",
+     "s": 7.25,
+     "e": 7.62
+    },
+    {
+     "w": "over",
+     "s": 7.62,
+     "e": 7.93
+    },
+    {
+     "w": "the",
+     "s": 7.93,
+     "e": 8.05
+    },
+    {
+     "w": "giant",
+     "s": 8.05,
+     "e": 9.05
+    },
+    {
+     "w": "GPT-3,",
+     "s": 9.05,
+     "e": 9.1
+    },
+    {
+     "w": "a",
+     "s": 9.05,
+     "e": 9.59
+    },
+    {
+     "w": "model",
+     "s": 9.95,
+     "e": 10.34
+    },
+    {
+     "w": "a",
+     "s": 10.34,
+     "e": 10.37
+    },
+    {
+     "w": "hundred",
+     "s": 10.37,
+     "e": 10.94
+    },
+    {
+     "w": "times",
+     "s": 10.94,
+     "e": 11.33
+    },
+    {
+     "w": "bigger.",
+     "s": 11.33,
+     "e": 11.81
+    }
+   ]
+  },
+  {
+   "text": "Now here's the catch. Remember, its job is to produce a likely-sounding next word, not a true one.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 272.277,
+   "vo": 6.844,
+   "dur": 7.144,
+   "words": [
+    {
+     "w": "Now",
+     "s": 0.03,
+     "e": 0.23
+    },
+    {
+     "w": "here's",
+     "s": 0.23,
+     "e": 0.55
+    },
+    {
+     "w": "the",
+     "s": 0.55,
+     "e": 0.63
+    },
+    {
+     "w": "catch.",
+     "s": 0.63,
+     "e": 1.17
+    },
+    {
+     "w": "Remember,",
+     "s": 1.63,
+     "e": 2.14
+    },
+    {
+     "w": "its",
+     "s": 2.37,
+     "e": 2.62
+    },
+    {
+     "w": "job",
+     "s": 2.62,
+     "e": 2.95
+    },
+    {
+     "w": "is",
+     "s": 2.95,
+     "e": 3.1
+    },
+    {
+     "w": "to",
+     "s": 3.1,
+     "e": 3.22
+    },
+    {
+     "w": "produce",
+     "s": 3.22,
+     "e": 3.61
+    },
+    {
+     "w": "a",
+     "s": 3.61,
+     "e": 3.95
+    },
+    {
+     "w": "likely-sounding",
+     "s": 3.95,
+     "e": 4.0
+    },
+    {
+     "w": "next",
+     "s": 3.95,
+     "e": 4.21
+    },
+    {
+     "w": "word,",
+     "s": 4.21,
+     "e": 4.46
+    },
+    {
+     "w": "not",
+     "s": 4.46,
+     "e": 4.68
+    },
+    {
+     "w": "a",
+     "s": 4.68,
+     "e": 4.92
+    },
+    {
+     "w": "true",
+     "s": 4.92,
+     "e": 5.32
+    },
+    {
+     "w": "one.",
+     "s": 5.71,
+     "e": 6.06
+    }
+   ]
+  },
+  {
+   "text": "Most of the time, likely and true are the same thing. But when the model doesn't really know, it can still produce something that sounds perfectly confident. That's called a hallucination.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 279.421,
+   "vo": 11.076,
+   "dur": 11.376,
+   "words": [
+    {
+     "w": "Most",
+     "s": 0.05,
+     "e": 0.33
+    },
+    {
+     "w": "of",
+     "s": 0.33,
+     "e": 0.42
+    },
+    {
+     "w": "the",
+     "s": 0.42,
+     "e": 0.49
+    },
+    {
+     "w": "time,",
+     "s": 0.49,
+     "e": 0.98
+    },
+    {
+     "w": "likely",
+     "s": 1.16,
+     "e": 1.73
+    },
+    {
+     "w": "and",
+     "s": 1.73,
+     "e": 1.92
+    },
+    {
+     "w": "true",
+     "s": 1.92,
+     "e": 2.42
+    },
+    {
+     "w": "are",
+     "s": 2.42,
+     "e": 2.57
+    },
+    {
+     "w": "the",
+     "s": 2.57,
+     "e": 2.66
+    },
+    {
+     "w": "same",
+     "s": 2.66,
+     "e": 2.98
+    },
+    {
+     "w": "thing.",
+     "s": 2.98,
+     "e": 3.33
+    },
+    {
+     "w": "But",
+     "s": 3.81,
+     "e": 3.95
+    },
+    {
+     "w": "when",
+     "s": 3.95,
+     "e": 4.08
+    },
+    {
+     "w": "the",
+     "s": 4.08,
+     "e": 4.14
+    },
+    {
+     "w": "model",
+     "s": 4.14,
+     "e": 4.48
+    },
+    {
+     "w": "doesn't",
+     "s": 4.48,
+     "e": 4.76
+    },
+    {
+     "w": "really",
+     "s": 4.76,
+     "e": 5.25
+    },
+    {
+     "w": "know,",
+     "s": 5.25,
+     "e": 5.63
+    },
+    {
+     "w": "it",
+     "s": 5.9,
+     "e": 5.99
+    },
+    {
+     "w": "can",
+     "s": 5.99,
+     "e": 6.12
+    },
+    {
+     "w": "still",
+     "s": 6.12,
+     "e": 6.43
+    },
+    {
+     "w": "produce",
+     "s": 6.43,
+     "e": 6.79
+    },
+    {
+     "w": "something",
+     "s": 6.79,
+     "e": 7.16
+    },
+    {
+     "w": "that",
+     "s": 7.16,
+     "e": 7.28
+    },
+    {
+     "w": "sounds",
+     "s": 7.28,
+     "e": 7.57
+    },
+    {
+     "w": "perfectly",
+     "s": 7.57,
+     "e": 8.17
+    },
+    {
+     "w": "confident.",
+     "s": 8.17,
+     "e": 8.81
+    },
+    {
+     "w": "That's",
+     "s": 9.24,
+     "e": 9.52
+    },
+    {
+     "w": "called",
+     "s": 9.52,
+     "e": 9.93
+    },
+    {
+     "w": "a",
+     "s": 9.93,
+     "e": 9.99
+    },
+    {
+     "w": "hallucination.",
+     "s": 9.99,
+     "e": 10.88
+    }
+   ]
+  },
+  {
+   "text": "OpenAI researchers compared it to a student on a multiple-choice exam. If you get zero points for saying \"I don't know\", guessing always looks smarter.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 290.797,
+   "vo": 9.326,
+   "dur": 9.626,
+   "words": [
+    {
+     "w": "OpenAI",
+     "s": 0.0,
+     "e": 0.54
+    },
+    {
+     "w": "researchers",
+     "s": 0.54,
+     "e": 1.29
+    },
+    {
+     "w": "compared",
+     "s": 1.29,
+     "e": 1.72
+    },
+    {
+     "w": "it",
+     "s": 1.72,
+     "e": 1.8
+    },
+    {
+     "w": "to",
+     "s": 1.8,
+     "e": 1.94
+    },
+    {
+     "w": "a",
+     "s": 1.94,
+     "e": 1.99
+    },
+    {
+     "w": "student",
+     "s": 1.99,
+     "e": 2.51
+    },
+    {
+     "w": "on",
+     "s": 2.51,
+     "e": 2.8
+    },
+    {
+     "w": "a",
+     "s": 2.8,
+     "e": 2.89
+    },
+    {
+     "w": "multiple-choice",
+     "s": 2.89,
+     "e": 3.31
+    },
+    {
+     "w": "exam.",
+     "s": 3.31,
+     "e": 3.85
+    },
+    {
+     "w": "If",
+     "s": 4.45,
+     "e": 4.53
+    },
+    {
+     "w": "you",
+     "s": 4.53,
+     "e": 4.63
+    },
+    {
+     "w": "get",
+     "s": 4.63,
+     "e": 4.84
+    },
+    {
+     "w": "zero",
+     "s": 4.84,
+     "e": 5.27
+    },
+    {
+     "w": "points",
+     "s": 5.27,
+     "e": 5.65
+    },
+    {
+     "w": "for",
+     "s": 5.65,
+     "e": 5.78
+    },
+    {
+     "w": "saying",
+     "s": 5.78,
+     "e": 6.29
+    },
+    {
+     "w": "\"I",
+     "s": 6.36,
+     "e": 6.51
+    },
+    {
+     "w": "don't",
+     "s": 6.51,
+     "e": 6.69
+    },
+    {
+     "w": "know\",",
+     "s": 6.69,
+     "e": 7.08
+    },
+    {
+     "w": "guessing",
+     "s": 7.53,
+     "e": 7.95
+    },
+    {
+     "w": "always",
+     "s": 7.95,
+     "e": 8.49
+    },
+    {
+     "w": "looks",
+     "s": 8.49,
+     "e": 8.7
+    },
+    {
+     "w": "smarter.",
+     "s": 8.7,
+     "e": 9.24
+    }
+   ]
+  },
+  {
+   "text": "And many of the tests used to grade AI models work exactly like that. They reward a lucky guess more than an honest \"I'm not sure\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 300.423,
+   "vo": 8.594,
+   "dur": 8.894,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.09,
+     "e": 0.24
+    },
+    {
+     "w": "many",
+     "s": 0.24,
+     "e": 0.54
+    },
+    {
+     "w": "of",
+     "s": 0.54,
+     "e": 0.62
+    },
+    {
+     "w": "the",
+     "s": 0.62,
+     "e": 0.72
+    },
+    {
+     "w": "tests",
+     "s": 0.72,
+     "e": 1.24
+    },
+    {
+     "w": "used",
+     "s": 1.24,
+     "e": 1.52
+    },
+    {
+     "w": "to",
+     "s": 1.52,
+     "e": 1.58
+    },
+    {
+     "w": "grade",
+     "s": 1.58,
+     "e": 1.95
+    },
+    {
+     "w": "AI",
+     "s": 1.95,
+     "e": 2.27
+    },
+    {
+     "w": "models",
+     "s": 2.27,
+     "e": 2.72
+    },
+    {
+     "w": "work",
+     "s": 2.72,
+     "e": 2.98
+    },
+    {
+     "w": "exactly",
+     "s": 2.98,
+     "e": 3.64
+    },
+    {
+     "w": "like",
+     "s": 3.64,
+     "e": 3.93
+    },
+    {
+     "w": "that.",
+     "s": 3.93,
+     "e": 4.28
+    },
+    {
+     "w": "They",
+     "s": 4.74,
+     "e": 4.85
+    },
+    {
+     "w": "reward",
+     "s": 4.85,
+     "e": 5.28
+    },
+    {
+     "w": "a",
+     "s": 5.28,
+     "e": 5.31
+    },
+    {
+     "w": "lucky",
+     "s": 5.31,
+     "e": 5.72
+    },
+    {
+     "w": "guess",
+     "s": 5.72,
+     "e": 6.26
+    },
+    {
+     "w": "more",
+     "s": 6.26,
+     "e": 6.55
+    },
+    {
+     "w": "than",
+     "s": 6.55,
+     "e": 6.74
+    },
+    {
+     "w": "an",
+     "s": 6.74,
+     "e": 6.86
+    },
+    {
+     "w": "honest",
+     "s": 6.86,
+     "e": 7.46
+    },
+    {
+     "w": "\"I'm",
+     "s": 7.66,
+     "e": 7.79
+    },
+    {
+     "w": "not",
+     "s": 7.79,
+     "e": 7.96
+    },
+    {
+     "w": "sure\".",
+     "s": 7.96,
+     "e": 8.48
+    }
+   ]
+  },
+  {
+   "text": "That's why rare facts are where it slips most: a specific date, a small company's details, a quote from a person who isn't famous. There's no strong pattern to predict from.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 309.317,
+   "vo": 10.998,
+   "dur": 11.298,
+   "words": [
+    {
+     "w": "That's",
+     "s": 0.05,
+     "e": 0.32
+    },
+    {
+     "w": "why",
+     "s": 0.32,
+     "e": 0.53
+    },
+    {
+     "w": "rare",
+     "s": 0.53,
+     "e": 0.95
+    },
+    {
+     "w": "facts",
+     "s": 0.95,
+     "e": 1.43
+    },
+    {
+     "w": "are",
+     "s": 1.43,
+     "e": 1.49
+    },
+    {
+     "w": "where",
+     "s": 1.49,
+     "e": 1.7
+    },
+    {
+     "w": "it",
+     "s": 1.7,
+     "e": 1.79
+    },
+    {
+     "w": "slips",
+     "s": 1.79,
+     "e": 2.12
+    },
+    {
+     "w": "most:",
+     "s": 2.12,
+     "e": 2.61
+    },
+    {
+     "w": "a",
+     "s": 3.01,
+     "e": 3.08
+    },
+    {
+     "w": "specific",
+     "s": 3.08,
+     "e": 3.63
+    },
+    {
+     "w": "date,",
+     "s": 3.63,
+     "e": 4.24
+    },
+    {
+     "w": "a",
+     "s": 4.24,
+     "e": 4.35
+    },
+    {
+     "w": "small",
+     "s": 4.35,
+     "e": 4.7
+    },
+    {
+     "w": "company's",
+     "s": 4.7,
+     "e": 5.15
+    },
+    {
+     "w": "details,",
+     "s": 5.15,
+     "e": 5.84
+    },
+    {
+     "w": "a",
+     "s": 6.18,
+     "e": 6.27
+    },
+    {
+     "w": "quote",
+     "s": 6.27,
+     "e": 6.58
+    },
+    {
+     "w": "from",
+     "s": 6.58,
+     "e": 6.76
+    },
+    {
+     "w": "a",
+     "s": 6.76,
+     "e": 6.82
+    },
+    {
+     "w": "person",
+     "s": 6.82,
+     "e": 7.21
+    },
+    {
+     "w": "who",
+     "s": 7.21,
+     "e": 7.42
+    },
+    {
+     "w": "isn't",
+     "s": 7.42,
+     "e": 7.71
+    },
+    {
+     "w": "famous.",
+     "s": 7.71,
+     "e": 8.34
+    },
+    {
+     "w": "There's",
+     "s": 8.74,
+     "e": 8.93
+    },
+    {
+     "w": "no",
+     "s": 8.93,
+     "e": 9.08
+    },
+    {
+     "w": "strong",
+     "s": 9.08,
+     "e": 9.5
+    },
+    {
+     "w": "pattern",
+     "s": 9.5,
+     "e": 9.95
+    },
+    {
+     "w": "to",
+     "s": 9.95,
+     "e": 10.07
+    },
+    {
+     "w": "predict",
+     "s": 10.07,
+     "e": 10.43
+    },
+    {
+     "w": "from.",
+     "s": 10.43,
+     "e": 10.74
+    }
+   ]
+  },
+  {
+   "text": "So is ChatGPT just fancy autocomplete, or does it actually understand?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 320.614,
+   "vo": 5.642,
+   "dur": 5.942,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.03,
+     "e": 0.43
+    },
+    {
+     "w": "is",
+     "s": 0.43,
+     "e": 0.71
+    },
+    {
+     "w": "ChatGPT",
+     "s": 0.71,
+     "e": 0.76
+    },
+    {
+     "w": "just",
+     "s": 0.71,
+     "e": 1.17
+    },
+    {
+     "w": "fancy",
+     "s": 1.17,
+     "e": 1.57
+    },
+    {
+     "w": "autocomplete,",
+     "s": 1.57,
+     "e": 1.62
+    },
+    {
+     "w": "or",
+     "s": 1.57,
+     "e": 1.6
+    },
+    {
+     "w": "does",
+     "s": 1.6,
+     "e": 1.87
+    },
+    {
+     "w": "it",
+     "s": 1.87,
+     "e": 2.09
+    },
+    {
+     "w": "actually",
+     "s": 2.09,
+     "e": 2.46
+    },
+    {
+     "w": "understand?",
+     "s": 2.46,
+     "e": 3.19
+    }
+   ]
+  },
+  {
+   "text": "Honestly, researchers still disagree. It clearly isn't thinking the way you do. It has no memory of your life and no experience of the world.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 326.557,
+   "vo": 9.404,
+   "dur": 9.704,
+   "words": [
+    {
+     "w": "Honestly,",
+     "s": 0.07,
+     "e": 0.63
+    },
+    {
+     "w": "researchers",
+     "s": 0.93,
+     "e": 1.56
+    },
+    {
+     "w": "still",
+     "s": 1.56,
+     "e": 1.9
+    },
+    {
+     "w": "disagree.",
+     "s": 1.9,
+     "e": 2.62
+    },
+    {
+     "w": "It",
+     "s": 3.08,
+     "e": 3.19
+    },
+    {
+     "w": "clearly",
+     "s": 3.19,
+     "e": 3.75
+    },
+    {
+     "w": "isn't",
+     "s": 3.75,
+     "e": 4.01
+    },
+    {
+     "w": "thinking",
+     "s": 4.01,
+     "e": 4.63
+    },
+    {
+     "w": "the",
+     "s": 4.63,
+     "e": 4.7
+    },
+    {
+     "w": "way",
+     "s": 4.7,
+     "e": 4.85
+    },
+    {
+     "w": "you",
+     "s": 4.85,
+     "e": 5.12
+    },
+    {
+     "w": "do.",
+     "s": 5.12,
+     "e": 5.37
+    },
+    {
+     "w": "It",
+     "s": 5.76,
+     "e": 5.88
+    },
+    {
+     "w": "has",
+     "s": 5.88,
+     "e": 6.13
+    },
+    {
+     "w": "no",
+     "s": 6.13,
+     "e": 6.36
+    },
+    {
+     "w": "memory",
+     "s": 6.36,
+     "e": 6.72
+    },
+    {
+     "w": "of",
+     "s": 6.72,
+     "e": 6.82
+    },
+    {
+     "w": "your",
+     "s": 6.82,
+     "e": 6.94
+    },
+    {
+     "w": "life",
+     "s": 6.94,
+     "e": 7.4
+    },
+    {
+     "w": "and",
+     "s": 7.4,
+     "e": 7.67
+    },
+    {
+     "w": "no",
+     "s": 7.67,
+     "e": 7.91
+    },
+    {
+     "w": "experience",
+     "s": 7.91,
+     "e": 8.53
+    },
+    {
+     "w": "of",
+     "s": 8.53,
+     "e": 8.63
+    },
+    {
+     "w": "the",
+     "s": 8.63,
+     "e": 8.7
+    },
+    {
+     "w": "world.",
+     "s": 8.7,
+     "e": 9.18
+    }
+   ]
+  },
+  {
+   "text": "But predicting text really well turns out to require surprisingly deep patterns. That's why it can explain code, translate languages and solve problems it has never seen word for word.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 336.261,
+   "vo": 11.886,
+   "dur": 12.186,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.07,
+     "e": 0.23
+    },
+    {
+     "w": "predicting",
+     "s": 0.23,
+     "e": 0.71
+    },
+    {
+     "w": "text",
+     "s": 0.71,
+     "e": 1.08
+    },
+    {
+     "w": "really",
+     "s": 1.08,
+     "e": 1.58
+    },
+    {
+     "w": "well",
+     "s": 1.58,
+     "e": 2.06
+    },
+    {
+     "w": "turns",
+     "s": 2.09,
+     "e": 2.42
+    },
+    {
+     "w": "out",
+     "s": 2.42,
+     "e": 2.55
+    },
+    {
+     "w": "to",
+     "s": 2.55,
+     "e": 2.67
+    },
+    {
+     "w": "require",
+     "s": 2.67,
+     "e": 3.17
+    },
+    {
+     "w": "surprisingly",
+     "s": 3.17,
+     "e": 4.08
+    },
+    {
+     "w": "deep",
+     "s": 4.08,
+     "e": 4.45
+    },
+    {
+     "w": "patterns.",
+     "s": 4.45,
+     "e": 5.08
+    },
+    {
+     "w": "That's",
+     "s": 5.56,
+     "e": 5.83
+    },
+    {
+     "w": "why",
+     "s": 5.83,
+     "e": 6.04
+    },
+    {
+     "w": "it",
+     "s": 6.04,
+     "e": 6.12
+    },
+    {
+     "w": "can",
+     "s": 6.12,
+     "e": 6.25
+    },
+    {
+     "w": "explain",
+     "s": 6.25,
+     "e": 6.71
+    },
+    {
+     "w": "code,",
+     "s": 6.71,
+     "e": 7.21
+    },
+    {
+     "w": "translate",
+     "s": 7.34,
+     "e": 7.84
+    },
+    {
+     "w": "languages",
+     "s": 7.84,
+     "e": 8.59
+    },
+    {
+     "w": "and",
+     "s": 8.59,
+     "e": 8.78
+    },
+    {
+     "w": "solve",
+     "s": 8.78,
+     "e": 9.1
+    },
+    {
+     "w": "problems",
+     "s": 9.1,
+     "e": 9.63
+    },
+    {
+     "w": "it",
+     "s": 9.63,
+     "e": 9.73
+    },
+    {
+     "w": "has",
+     "s": 9.73,
+     "e": 9.89
+    },
+    {
+     "w": "never",
+     "s": 9.89,
+     "e": 10.3
+    },
+    {
+     "w": "seen",
+     "s": 10.3,
+     "e": 10.72
+    },
+    {
+     "w": "word",
+     "s": 10.72,
+     "e": 11.14
+    },
+    {
+     "w": "for",
+     "s": 11.14,
+     "e": 11.3
+    },
+    {
+     "w": "word.",
+     "s": 11.3,
+     "e": 11.67
+    }
+   ]
+  },
+  {
+   "text": "A useful way to think about it: it's an incredibly well-read prediction machine. Powerful, but not a source of truth on its own.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 348.447,
+   "vo": 8.359,
+   "dur": 8.659,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.11,
+     "e": 0.17
+    },
+    {
+     "w": "useful",
+     "s": 0.17,
+     "e": 0.63
+    },
+    {
+     "w": "way",
+     "s": 0.63,
+     "e": 0.77
+    },
+    {
+     "w": "to",
+     "s": 0.77,
+     "e": 0.85
+    },
+    {
+     "w": "think",
+     "s": 0.85,
+     "e": 1.1
+    },
+    {
+     "w": "about",
+     "s": 1.1,
+     "e": 1.41
+    },
+    {
+     "w": "it:",
+     "s": 1.41,
+     "e": 1.49
+    },
+    {
+     "w": "it's",
+     "s": 1.98,
+     "e": 2.17
+    },
+    {
+     "w": "an",
+     "s": 2.17,
+     "e": 2.24
+    },
+    {
+     "w": "incredibly",
+     "s": 2.24,
+     "e": 3.04
+    },
+    {
+     "w": "well-read",
+     "s": 3.04,
+     "e": 3.65
+    },
+    {
+     "w": "prediction",
+     "s": 3.65,
+     "e": 4.32
+    },
+    {
+     "w": "machine.",
+     "s": 4.32,
+     "e": 4.76
+    },
+    {
+     "w": "Powerful,",
+     "s": 5.21,
+     "e": 5.89
+    },
+    {
+     "w": "but",
+     "s": 6.08,
+     "e": 6.36
+    },
+    {
+     "w": "not",
+     "s": 6.36,
+     "e": 6.69
+    },
+    {
+     "w": "a",
+     "s": 6.69,
+     "e": 6.74
+    },
+    {
+     "w": "source",
+     "s": 6.74,
+     "e": 7.09
+    },
+    {
+     "w": "of",
+     "s": 7.09,
+     "e": 7.18
+    },
+    {
+     "w": "truth",
+     "s": 7.18,
+     "e": 7.59
+    },
+    {
+     "w": "on",
+     "s": 7.59,
+     "e": 7.71
+    },
+    {
+     "w": "its",
+     "s": 7.71,
+     "e": 7.88
+    },
+    {
+     "w": "own.",
+     "s": 7.88,
+     "e": 8.18
+    }
+   ]
+  },
+  {
+   "text": "Once you know how it works, you can use it much better. Here are four habits.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 357.106,
+   "vo": 4.833,
+   "dur": 5.133,
+   "words": [
+    {
+     "w": "Once",
+     "s": 0.04,
+     "e": 0.29
+    },
+    {
+     "w": "you",
+     "s": 0.29,
+     "e": 0.38
+    },
+    {
+     "w": "know",
+     "s": 0.38,
+     "e": 0.53
+    },
+    {
+     "w": "how",
+     "s": 0.53,
+     "e": 0.75
+    },
+    {
+     "w": "it",
+     "s": 0.75,
+     "e": 0.81
+    },
+    {
+     "w": "works,",
+     "s": 0.81,
+     "e": 1.5
+    },
+    {
+     "w": "you",
+     "s": 1.5,
+     "e": 1.67
+    },
+    {
+     "w": "can",
+     "s": 1.67,
+     "e": 1.82
+    },
+    {
+     "w": "use",
+     "s": 1.82,
+     "e": 2.03
+    },
+    {
+     "w": "it",
+     "s": 2.03,
+     "e": 2.12
+    },
+    {
+     "w": "much",
+     "s": 2.12,
+     "e": 2.44
+    },
+    {
+     "w": "better.",
+     "s": 2.44,
+     "e": 2.84
+    },
+    {
+     "w": "Here",
+     "s": 3.27,
+     "e": 3.59
+    },
+    {
+     "w": "are",
+     "s": 3.59,
+     "e": 3.7
+    },
+    {
+     "w": "four",
+     "s": 3.7,
+     "e": 4.08
+    },
+    {
+     "w": "habits.",
+     "s": 4.08,
+     "e": 4.67
+    }
+   ]
+  },
+  {
+   "text": "One. Give it context. The more relevant details you put in, the better its predictions become. \"Write an email\" is weak. \"Write a polite email to my manager asking for Friday off\" is strong.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 362.239,
+   "vo": 13.714,
+   "dur": 14.014,
+   "words": [
+    {
+     "w": "One.",
+     "s": 0.08,
+     "e": 0.52
+    },
+    {
+     "w": "Give",
+     "s": 0.99,
+     "e": 1.17
+    },
+    {
+     "w": "it",
+     "s": 1.17,
+     "e": 1.3
+    },
+    {
+     "w": "context.",
+     "s": 1.3,
+     "e": 2.13
+    },
+    {
+     "w": "The",
+     "s": 2.64,
+     "e": 2.7
+    },
+    {
+     "w": "more",
+     "s": 2.7,
+     "e": 2.97
+    },
+    {
+     "w": "relevant",
+     "s": 2.97,
+     "e": 3.4
+    },
+    {
+     "w": "details",
+     "s": 3.4,
+     "e": 3.85
+    },
+    {
+     "w": "you",
+     "s": 3.85,
+     "e": 3.94
+    },
+    {
+     "w": "put",
+     "s": 3.94,
+     "e": 4.16
+    },
+    {
+     "w": "in,",
+     "s": 4.16,
+     "e": 4.51
+    },
+    {
+     "w": "the",
+     "s": 4.68,
+     "e": 4.79
+    },
+    {
+     "w": "better",
+     "s": 4.79,
+     "e": 5.18
+    },
+    {
+     "w": "its",
+     "s": 5.18,
+     "e": 5.31
+    },
+    {
+     "w": "predictions",
+     "s": 5.31,
+     "e": 5.87
+    },
+    {
+     "w": "become.",
+     "s": 5.87,
+     "e": 6.38
+    },
+    {
+     "w": "\"Write",
+     "s": 6.93,
+     "e": 7.18
+    },
+    {
+     "w": "an",
+     "s": 7.18,
+     "e": 7.31
+    },
+    {
+     "w": "email\"",
+     "s": 7.31,
+     "e": 7.94
+    },
+    {
+     "w": "is",
+     "s": 8.1,
+     "e": 8.29
+    },
+    {
+     "w": "weak.",
+     "s": 8.29,
+     "e": 8.77
+    },
+    {
+     "w": "\"Write",
+     "s": 9.24,
+     "e": 9.54
+    },
+    {
+     "w": "a",
+     "s": 9.54,
+     "e": 9.61
+    },
+    {
+     "w": "polite",
+     "s": 9.61,
+     "e": 10.09
+    },
+    {
+     "w": "email",
+     "s": 10.09,
+     "e": 10.46
+    },
+    {
+     "w": "to",
+     "s": 10.46,
+     "e": 10.58
+    },
+    {
+     "w": "my",
+     "s": 10.58,
+     "e": 10.72
+    },
+    {
+     "w": "manager",
+     "s": 10.72,
+     "e": 11.28
+    },
+    {
+     "w": "asking",
+     "s": 11.28,
+     "e": 11.67
+    },
+    {
+     "w": "for",
+     "s": 11.67,
+     "e": 11.82
+    },
+    {
+     "w": "Friday",
+     "s": 11.82,
+     "e": 12.24
+    },
+    {
+     "w": "off\"",
+     "s": 12.24,
+     "e": 12.7
+    },
+    {
+     "w": "is",
+     "s": 12.84,
+     "e": 12.97
+    },
+    {
+     "w": "strong.",
+     "s": 12.97,
+     "e": 13.53
+    }
+   ]
+  },
+  {
+   "text": "Two. Give it permission to say \"I don't know\". Simply adding that one line to your question can reduce confident made-up answers.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 376.253,
+   "vo": 8.594,
+   "dur": 8.894,
+   "words": [
+    {
+     "w": "Two.",
+     "s": 0.09,
+     "e": 0.44
+    },
+    {
+     "w": "Give",
+     "s": 0.93,
+     "e": 1.12
+    },
+    {
+     "w": "it",
+     "s": 1.12,
+     "e": 1.24
+    },
+    {
+     "w": "permission",
+     "s": 1.24,
+     "e": 1.74
+    },
+    {
+     "w": "to",
+     "s": 1.74,
+     "e": 1.84
+    },
+    {
+     "w": "say",
+     "s": 1.84,
+     "e": 2.28
+    },
+    {
+     "w": "\"I",
+     "s": 2.46,
+     "e": 2.6
+    },
+    {
+     "w": "don't",
+     "s": 2.6,
+     "e": 2.77
+    },
+    {
+     "w": "know\".",
+     "s": 2.77,
+     "e": 3.31
+    },
+    {
+     "w": "Simply",
+     "s": 3.71,
+     "e": 4.14
+    },
+    {
+     "w": "adding",
+     "s": 4.14,
+     "e": 4.44
+    },
+    {
+     "w": "that",
+     "s": 4.44,
+     "e": 4.61
+    },
+    {
+     "w": "one",
+     "s": 4.61,
+     "e": 4.97
+    },
+    {
+     "w": "line",
+     "s": 4.97,
+     "e": 5.3
+    },
+    {
+     "w": "to",
+     "s": 5.3,
+     "e": 5.4
+    },
+    {
+     "w": "your",
+     "s": 5.4,
+     "e": 5.52
+    },
+    {
+     "w": "question",
+     "s": 5.52,
+     "e": 6.09
+    },
+    {
+     "w": "can",
+     "s": 6.09,
+     "e": 6.27
+    },
+    {
+     "w": "reduce",
+     "s": 6.27,
+     "e": 6.69
+    },
+    {
+     "w": "confident",
+     "s": 6.69,
+     "e": 7.76
+    },
+    {
+     "w": "made-up",
+     "s": 7.76,
+     "e": 7.81
+    },
+    {
+     "w": "answers.",
+     "s": 7.76,
+     "e": 8.42
+    }
+   ]
+  },
+  {
+   "text": "Three. Check anything that matters. Facts, numbers, dates, legal or medical advice. Ask for sources, then open them yourself.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 385.147,
+   "vo": 9.953,
+   "dur": 10.253,
+   "words": [
+    {
+     "w": "Three.",
+     "s": 0.06,
+     "e": 0.49
+    },
+    {
+     "w": "Check",
+     "s": 0.94,
+     "e": 1.25
+    },
+    {
+     "w": "anything",
+     "s": 1.25,
+     "e": 1.84
+    },
+    {
+     "w": "that",
+     "s": 1.84,
+     "e": 1.94
+    },
+    {
+     "w": "matters.",
+     "s": 1.94,
+     "e": 2.56
+    },
+    {
+     "w": "Facts,",
+     "s": 2.85,
+     "e": 3.52
+    },
+    {
+     "w": "numbers,",
+     "s": 3.52,
+     "e": 4.21
+    },
+    {
+     "w": "dates,",
+     "s": 4.21,
+     "e": 4.88
+    },
+    {
+     "w": "legal",
+     "s": 4.99,
+     "e": 5.5
+    },
+    {
+     "w": "or",
+     "s": 5.5,
+     "e": 5.64
+    },
+    {
+     "w": "medical",
+     "s": 5.64,
+     "e": 6.03
+    },
+    {
+     "w": "advice.",
+     "s": 6.03,
+     "e": 6.54
+    },
+    {
+     "w": "Ask",
+     "s": 7.07,
+     "e": 7.32
+    },
+    {
+     "w": "for",
+     "s": 7.32,
+     "e": 7.47
+    },
+    {
+     "w": "sources,",
+     "s": 7.47,
+     "e": 8.11
+    },
+    {
+     "w": "then",
+     "s": 8.24,
+     "e": 8.72
+    },
+    {
+     "w": "open",
+     "s": 8.78,
+     "e": 9.08
+    },
+    {
+     "w": "them",
+     "s": 9.08,
+     "e": 9.22
+    },
+    {
+     "w": "yourself.",
+     "s": 9.22,
+     "e": 9.85
+    }
+   ]
+  },
+  {
+   "text": "Four. For hard problems, ask it to work step by step. Writing out the steps gives the model more text to build on before it reaches the answer.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 395.4,
+   "vo": 9.326,
+   "dur": 9.626,
+   "words": [
+    {
+     "w": "Four.",
+     "s": 0.03,
+     "e": 0.55
+    },
+    {
+     "w": "For",
+     "s": 0.99,
+     "e": 1.13
+    },
+    {
+     "w": "hard",
+     "s": 1.13,
+     "e": 1.45
+    },
+    {
+     "w": "problems,",
+     "s": 1.45,
+     "e": 2.12
+    },
+    {
+     "w": "ask",
+     "s": 2.33,
+     "e": 2.61
+    },
+    {
+     "w": "it",
+     "s": 2.61,
+     "e": 2.73
+    },
+    {
+     "w": "to",
+     "s": 2.73,
+     "e": 2.83
+    },
+    {
+     "w": "work",
+     "s": 2.83,
+     "e": 3.13
+    },
+    {
+     "w": "step",
+     "s": 3.13,
+     "e": 3.5
+    },
+    {
+     "w": "by",
+     "s": 3.5,
+     "e": 3.67
+    },
+    {
+     "w": "step.",
+     "s": 3.67,
+     "e": 4.12
+    },
+    {
+     "w": "Writing",
+     "s": 4.65,
+     "e": 4.96
+    },
+    {
+     "w": "out",
+     "s": 4.96,
+     "e": 5.08
+    },
+    {
+     "w": "the",
+     "s": 5.08,
+     "e": 5.17
+    },
+    {
+     "w": "steps",
+     "s": 5.17,
+     "e": 5.66
+    },
+    {
+     "w": "gives",
+     "s": 5.66,
+     "e": 5.93
+    },
+    {
+     "w": "the",
+     "s": 5.93,
+     "e": 6.0
+    },
+    {
+     "w": "model",
+     "s": 6.0,
+     "e": 6.32
+    },
+    {
+     "w": "more",
+     "s": 6.32,
+     "e": 6.62
+    },
+    {
+     "w": "text",
+     "s": 6.62,
+     "e": 7.01
+    },
+    {
+     "w": "to",
+     "s": 7.01,
+     "e": 7.09
+    },
+    {
+     "w": "build",
+     "s": 7.09,
+     "e": 7.44
+    },
+    {
+     "w": "on",
+     "s": 7.44,
+     "e": 7.66
+    },
+    {
+     "w": "before",
+     "s": 7.66,
+     "e": 8.13
+    },
+    {
+     "w": "it",
+     "s": 8.13,
+     "e": 8.21
+    },
+    {
+     "w": "reaches",
+     "s": 8.21,
+     "e": 8.55
+    },
+    {
+     "w": "the",
+     "s": 8.55,
+     "e": 8.69
+    },
+    {
+     "w": "answer.",
+     "s": 8.69,
+     "e": 9.17
+    }
+   ]
+  },
+  {
+   "text": "So, ChatGPT doesn't know what it's going to say next. It predicts it, one token at a time, using patterns from an enormous amount of human writing.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 405.026,
+   "vo": 9.639,
+   "dur": 9.939,
+   "words": [
+    {
+     "w": "So,",
+     "s": 0.03,
+     "e": 0.42
+    },
+    {
+     "w": "ChatGPT",
+     "s": 0.42,
+     "e": 0.48
+    },
+    {
+     "w": "doesn't",
+     "s": 0.48,
+     "e": 1.68
+    },
+    {
+     "w": "know",
+     "s": 1.68,
+     "e": 2.11
+    },
+    {
+     "w": "what",
+     "s": 2.11,
+     "e": 2.27
+    },
+    {
+     "w": "it's",
+     "s": 2.27,
+     "e": 2.4
+    },
+    {
+     "w": "going",
+     "s": 2.4,
+     "e": 2.61
+    },
+    {
+     "w": "to",
+     "s": 2.61,
+     "e": 2.67
+    },
+    {
+     "w": "say",
+     "s": 2.67,
+     "e": 2.89
+    },
+    {
+     "w": "next.",
+     "s": 2.89,
+     "e": 3.45
+    },
+    {
+     "w": "It",
+     "s": 3.74,
+     "e": 3.88
+    },
+    {
+     "w": "predicts",
+     "s": 3.88,
+     "e": 4.4
+    },
+    {
+     "w": "it,",
+     "s": 4.4,
+     "e": 4.53
+    },
+    {
+     "w": "one",
+     "s": 4.82,
+     "e": 5.2
+    },
+    {
+     "w": "token",
+     "s": 5.2,
+     "e": 5.58
+    },
+    {
+     "w": "at",
+     "s": 5.58,
+     "e": 5.68
+    },
+    {
+     "w": "a",
+     "s": 5.68,
+     "e": 5.74
+    },
+    {
+     "w": "time,",
+     "s": 5.74,
+     "e": 6.18
+    },
+    {
+     "w": "using",
+     "s": 6.5,
+     "e": 6.78
+    },
+    {
+     "w": "patterns",
+     "s": 6.78,
+     "e": 7.3
+    },
+    {
+     "w": "from",
+     "s": 7.3,
+     "e": 7.47
+    },
+    {
+     "w": "an",
+     "s": 7.47,
+     "e": 7.57
+    },
+    {
+     "w": "enormous",
+     "s": 7.57,
+     "e": 8.21
+    },
+    {
+     "w": "amount",
+     "s": 8.21,
+     "e": 8.55
+    },
+    {
+     "w": "of",
+     "s": 8.55,
+     "e": 8.67
+    },
+    {
+     "w": "human",
+     "s": 8.67,
+     "e": 8.98
+    },
+    {
+     "w": "writing.",
+     "s": 8.98,
+     "e": 9.38
+    }
+   ]
+  },
+  {
+   "text": "That's what makes it so useful, and also why you should never switch your own brain off.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 414.965,
+   "vo": 5.146,
+   "dur": 5.446,
+   "words": [
+    {
+     "w": "That's",
+     "s": 0.04,
+     "e": 0.31
+    },
+    {
+     "w": "what",
+     "s": 0.31,
+     "e": 0.45
+    },
+    {
+     "w": "makes",
+     "s": 0.45,
+     "e": 0.69
+    },
+    {
+     "w": "it",
+     "s": 0.69,
+     "e": 0.81
+    },
+    {
+     "w": "so",
+     "s": 0.81,
+     "e": 1.13
+    },
+    {
+     "w": "useful,",
+     "s": 1.13,
+     "e": 1.76
+    },
+    {
+     "w": "and",
+     "s": 2.06,
+     "e": 2.2
+    },
+    {
+     "w": "also",
+     "s": 2.2,
+     "e": 2.7
+    },
+    {
+     "w": "why",
+     "s": 2.7,
+     "e": 2.91
+    },
+    {
+     "w": "you",
+     "s": 2.91,
+     "e": 3.05
+    },
+    {
+     "w": "should",
+     "s": 3.05,
+     "e": 3.3
+    },
+    {
+     "w": "never",
+     "s": 3.3,
+     "e": 3.76
+    },
+    {
+     "w": "switch",
+     "s": 3.76,
+     "e": 4.06
+    },
+    {
+     "w": "your",
+     "s": 4.06,
+     "e": 4.22
+    },
+    {
+     "w": "own",
+     "s": 4.22,
+     "e": 4.39
+    },
+    {
+     "w": "brain",
+     "s": 4.39,
+     "e": 4.69
+    },
+    {
+     "w": "off.",
+     "s": 4.69,
+     "e": 5.04
+    }
+   ]
+  },
+  {
+   "text": "If you want to see what happens when an AI like this gets tricked by a webpage, watch this video next.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 420.411,
+   "vo": 5.956,
+   "dur": 6.256,
+   "words": [
+    {
+     "w": "If",
+     "s": 0.07,
+     "e": 0.18
+    },
+    {
+     "w": "you",
+     "s": 0.18,
+     "e": 0.28
+    },
+    {
+     "w": "want",
+     "s": 0.28,
+     "e": 0.45
+    },
+    {
+     "w": "to",
+     "s": 0.45,
+     "e": 0.52
+    },
+    {
+     "w": "see",
+     "s": 0.52,
+     "e": 0.69
+    },
+    {
+     "w": "what",
+     "s": 0.69,
+     "e": 0.84
+    },
+    {
+     "w": "happens",
+     "s": 0.84,
+     "e": 1.32
+    },
+    {
+     "w": "when",
+     "s": 1.32,
+     "e": 1.47
+    },
+    {
+     "w": "an",
+     "s": 1.47,
+     "e": 1.57
+    },
+    {
+     "w": "AI",
+     "s": 1.57,
+     "e": 2.03
+    },
+    {
+     "w": "like",
+     "s": 2.03,
+     "e": 2.31
+    },
+    {
+     "w": "this",
+     "s": 2.31,
+     "e": 2.58
+    },
+    {
+     "w": "gets",
+     "s": 2.58,
+     "e": 2.85
+    },
+    {
+     "w": "tricked",
+     "s": 2.85,
+     "e": 3.22
+    },
+    {
+     "w": "by",
+     "s": 3.22,
+     "e": 3.37
+    },
+    {
+     "w": "a",
+     "s": 3.37,
+     "e": 3.42
+    },
+    {
+     "w": "webpage,",
+     "s": 3.42,
+     "e": 4.15
+    },
+    {
+     "w": "watch",
+     "s": 4.51,
+     "e": 4.8
+    },
+    {
+     "w": "this",
+     "s": 4.8,
+     "e": 5.02
+    },
+    {
+     "w": "video",
+     "s": 5.02,
+     "e": 5.31
+    },
+    {
+     "w": "next.",
+     "s": 5.31,
+     "e": 5.81
+    }
+   ]
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 426.667,
+   "vo": 4.362,
+   "dur": 5.862,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.06,
+     "e": 0.22
+    },
+    {
+     "w": "subscribe",
+     "s": 0.22,
+     "e": 0.75
+    },
+    {
+     "w": "to",
+     "s": 0.75,
+     "e": 0.91
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.91,
+     "e": 1.61
+    },
+    {
+     "w": "with",
+     "s": 1.61,
+     "e": 1.8
+    },
+    {
+     "w": "Max",
+     "s": 1.8,
+     "e": 2.33
+    },
+    {
+     "w": "for",
+     "s": 2.33,
+     "e": 2.56
+    },
+    {
+     "w": "more",
+     "s": 2.56,
+     "e": 2.8
+    },
+    {
+     "w": "tech,",
+     "s": 2.8,
+     "e": 3.25
+    },
+    {
+     "w": "decoded.",
+     "s": 3.47,
+     "e": 4.09
+    }
+   ]
+  }
+ ]
+}
