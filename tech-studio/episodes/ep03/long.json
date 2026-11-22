@@ -1,0 +1,180 @@
+{
+ "id": "ep03-long",
+ "format": "horizontal",
+ "profile": "explainer",
+ "gap": 0.3,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 9,
+ "max_tempo": 1.05,
+ "model": "gemini-3.1-flash-tts-preview",
+ "host_beats": [
+  0,
+  1,
+  2,
+  3,
+  15,
+  16,
+  17,
+  26,
+  27,
+  28,
+  32,
+  33,
+  34,
+  35
+ ],
+ "beats": [
+  {
+   "text": "For years, AI could only recommend what to buy. Now, AI agents are being handed something much more dangerous: your wallet.",
+   "dir": "intriguing hook, a little ominous",
+   "chapter": "Your wallet, handed over"
+  },
+  {
+   "text": "Major tech platforms are rolling out AI shopping agents that can browse stores, fill out your address, and actually complete the checkout for you.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "It sounds like the ultimate convenience, until you realize what happens when an AI makes a mistake, or worse, gets tricked at the checkout screen.",
+   "dir": "building tension"
+  },
+  {
+   "text": "Here is how AI payments actually work, the three ways they can go horribly wrong, and the simple rules you need before you ever let an AI spend a single dollar.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "To understand the risk, look at how fast AI is changing.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "From chatbots to AI shoppers"
+  },
+  {
+   "text": "A regular chatbot just gives you links. You are still the one typing in your card number and clicking \"Place Order.\"",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "With agentic commerce, the AI doesn't stop at advice. It connects to a digital wallet or a payment token, navigates the store itself, and finishes the transaction on your behalf. You don't even have to open the website.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "And for simple, boring tasks, like reordering toothpaste or booking a routine train ticket, it feels like magic.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "The problem? You're handing real money to software that still doesn't think like a human.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "The first danger isn't even a hacker. It's just the AI being confidently wrong.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "Risk 1: the hallucination tax"
+  },
+  {
+   "text": "We already know AI models sometimes hallucinate facts. When an AI hallucinates in a chat, you just roll your eyes and move on. When an AI hallucinates at checkout, it costs you real money.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "It might misread a currency symbol, book a non-refundable flight for the wrong Tuesday, or accidentally sign you up for an annual subscription hidden behind a \"free trial\" button.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Humans have spent years learning to spot shady checkout tricks: pre-checked add-ons, fake countdown timers, and sneaky shipping fees.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "AI agents don't have that street smarts. They're built to complete your goal as fast as possible, which means they can walk straight into every dark pattern on the internet.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "In one recent study, these tricks pushed AI agents toward the seller's choice in more than seventy percent of tests. For humans, it was about thirty-one percent.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Now here is where it gets genuinely scary.",
+   "dir": "leaning in, serious",
+   "chapter": "Risk 2: websites built to trick your AI"
+  },
+  {
+   "text": "In an earlier video, I showed you how a blank-looking webpage can hijack an AI agent using hidden text, an attack called indirect prompt injection.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Now imagine that exact same attack, except the AI has your payment details.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "A shady seller doesn't need to fool you anymore. They just need to fool your agent.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "By hiding invisible instructions inside a product description or a fake five-star review, a website can try to steer your AI away from cheaper competitors, push it toward an overpriced item, or trick it into buying from a scam store.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "And because you never even looked at the webpage yourself, you wouldn't know your agent was manipulated until the receipt lands in your inbox.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "So what happens if your AI agent gets tricked and buys something you didn't want?",
+   "dir": "curious question",
+   "chapter": "Risk 3: who pays?"
+  },
+  {
+   "text": "If a human hacker steals your credit card number, the rules are pretty clear: your bank usually treats it as fraud and refunds you.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "But if you gave an AI agent permission to use your wallet, and the agent simply made a terrible decision\u2026 is that fraud, or is that just you making a bad purchase?",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Banks, payment networks and AI companies are still working out where that line sits.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Right now, if your agent buys a non-refundable ticket or gets fooled by a sketchy merchant, getting your money back can turn into a nightmare.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "The good news is that payment companies know this is a massive risk, so they're building guardrails, like single-use virtual cards and strict spending caps.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "How to stay safe: four rules"
+  },
+  {
+   "text": "Until those systems mature, here are four simple rules to protect your wallet.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "One: never give an AI your main bank card. If you test an AI shopping tool, use a virtual card with a low, hard spending limit, so a single mistake can't wipe out your account.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Two: keep \"ask before paying\" turned on. Let the AI do the boring work, searching, comparing and filling the cart, but always require your fingerprint or your own click for the final payment.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Three: stick to trusted merchants. Don't let an autonomous agent enter payment details on random, unverified websites it found in a web search.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Four: audit your receipts and subscriptions. Treat an AI shopper like a brand-new intern. Check its work until it earns your trust.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "AI agents that can shop for us are coming fast, and they really will save us hours of boring errands.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "The bottom line"
+  },
+  {
+   "text": "Just remember: convenience is great, but an AI doesn't feel the pain when your bank balance drops.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "If you want to see the exact hidden-text trick websites use to hijack AI agents in the first place, watch this video next. It breaks down the whole attack in under seven minutes.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}
