@@ -15,7 +15,8 @@ PLAN = [
  ('07_goog01', 'goog01', None, None, 'Sun 29 Nov 2026, 12:30 PM', 'Schedule'),
  ('08_job03',  'job03',  None, None, 'Mon 30 Nov 2026, 6:30 PM', 'Schedule'),
  ('09_net01',  'net01',  None, None, 'Tue 1 Dec 2026, 6:30 PM', 'Schedule'),
- ('10_robo01', 'robo01', None, None, 'Wed 2 Dec 2026, 6:30 PM', 'Schedule'),
+ ('10_robo01', 'robo01', None, None, 'Sun 29 Nov 2026, 12:30 PM', 'Schedule'),
+ ('11_ep02_long', 'ep02', 'TechDecoded_ep02_long.mp4', OUT/'thumb_ep02_long.jpg', 'Wed 2 Dec 2026, 6:30 PM', 'Schedule'),
 ]
 for folder, ep, vid, thumb, when, status in PLAN:
     d = REL/folder; d.mkdir(parents=True, exist_ok=True)

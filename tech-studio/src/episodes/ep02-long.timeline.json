@@ -3,7 +3,7 @@
  "format": "horizontal",
  "captions": "big",
  "fps": 30,
- "duration": 357.095,
+ "duration": 359.254,
  "vo": "ep02/ep02-long-vo.wav",
  "music": "ep02/ep02-long-music.wav",
  "beats": [
@@ -3776,58 +3776,58 @@
    "text": "The other half could see less hiring and lower pay.",
    "dir": "clear, engaging explainer tone, natural pace",
    "start": 272.431,
-   "vo": 0.672,
-   "dur": 0.972,
+   "vo": 2.831,
+   "dur": 3.131,
    "words": [
     {
      "w": "The",
      "s": 0.0,
-     "e": 0.049
+     "e": 0.208
     },
     {
      "w": "other",
-     "s": 0.049,
-     "e": 0.148
+     "s": 0.208,
+     "e": 0.624
     },
     {
      "w": "half",
-     "s": 0.148,
-     "e": 0.198
+     "s": 0.624,
+     "e": 0.833
     },
     {
      "w": "could",
-     "s": 0.198,
-     "e": 0.247
+     "s": 0.833,
+     "e": 1.041
     },
     {
      "w": "see",
-     "s": 0.247,
-     "e": 0.297
+     "s": 1.041,
+     "e": 1.249
     },
     {
      "w": "less",
-     "s": 0.297,
-     "e": 0.346
+     "s": 1.249,
+     "e": 1.457
     },
     {
      "w": "hiring",
-     "s": 0.346,
-     "e": 0.445
+     "s": 1.457,
+     "e": 1.873
     },
     {
      "w": "and",
-     "s": 0.445,
-     "e": 0.494
+     "s": 1.873,
+     "e": 2.082
     },
     {
      "w": "lower",
-     "s": 0.494,
-     "e": 0.593
+     "s": 2.082,
+     "e": 2.498
     },
     {
      "w": "pay.",
-     "s": 0.593,
-     "e": 0.672
+     "s": 2.498,
+     "e": 2.831
     }
    ]
   },
@@ -3835,7 +3835,7 @@
    "text": "So what does this mean for India?",
    "dir": "clear, engaging explainer tone, natural pace",
    "chapter": "What it means for India",
-   "start": 273.403,
+   "start": 275.562,
    "vo": 2.189,
    "dur": 2.489,
    "words": [
@@ -3879,7 +3879,7 @@
   {
    "text": "India's factories are automating fast, mostly car plants. Automotive takes almost half of India's new industrial robots.",
    "dir": "clear, engaging explainer tone, natural pace",
-   "start": 275.892,
+   "start": 278.051,
    "vo": 7.895,
    "dur": 8.195,
    "words": [
@@ -3973,7 +3973,7 @@
   {
    "text": "But India's biggest job engine isn't the assembly line. It's services. IT, customer support, back office.",
    "dir": "clear, engaging explainer tone, natural pace",
-   "start": 284.088,
+   "start": 286.247,
    "vo": 6.878,
    "dur": 7.178,
    "words": [
@@ -4062,7 +4062,7 @@
   {
    "text": "And that's exactly where AI, not robots, is moving in. Software that writes code, answers tickets and reads documents.",
    "dir": "clear, engaging explainer tone, natural pace",
-   "start": 291.265,
+   "start": 293.424,
    "vo": 7.314,
    "dur": 7.614,
    "words": [
@@ -4166,7 +4166,7 @@
   {
    "text": "It's the ATM pattern again: the routine tasks go first. Checking, copying, sorting, repeating.",
    "dir": "clear, engaging explainer tone, natural pace",
-   "start": 298.879,
+   "start": 301.038,
    "vo": 6.969,
    "dur": 7.269,
    "words": [
@@ -4245,7 +4245,7 @@
   {
    "text": "The work that stays is the work around the machine: designing it, fixing it, checking what it produces, and dealing with people.",
    "dir": "clear, engaging explainer tone, natural pace",
-   "start": 306.149,
+   "start": 308.308,
    "vo": 7.66,
    "dur": 7.96,
    "words": [
@@ -4365,7 +4365,7 @@
    "text": "So, will robots replace human jobs?",
    "dir": "reflective, the big question",
    "chapter": "So, will robots replace us?",
-   "start": 314.109,
+   "start": 316.268,
    "vo": 3.034,
    "dur": 3.334,
    "words": [
@@ -4404,7 +4404,7 @@
   {
    "text": "Some, yes. A job that is one repetitive task from start to finish is in real danger.",
    "dir": "clear, engaging explainer tone, natural pace",
-   "start": 317.443,
+   "start": 319.602,
    "vo": 5.91,
    "dur": 6.21,
    "words": [
@@ -4498,7 +4498,7 @@
   {
    "text": "But most jobs are a bundle of tasks. Machines take the predictable ones, and leave the messy, human ones.",
    "dir": "clear, engaging explainer tone, natural pace",
-   "start": 323.653,
+   "start": 325.812,
    "vo": 6.626,
    "dur": 6.926,
    "words": [
@@ -4602,7 +4602,7 @@
   {
    "text": "Remember that dark factory in Japan? Someone designed those robots. Someone programs them. And when one breaks down at three in the morning, a human still gets the call.",
    "dir": "warm callback to the opening",
-   "start": 330.579,
+   "start": 332.738,
    "vo": 9.461,
    "dur": 9.761,
    "words": [
@@ -4756,7 +4756,7 @@
   {
    "text": "So the better question isn't \"Will a robot take my job?\" It's \"Which part of my job could a robot do\u2026 and what will I do instead?\"",
    "dir": "clear, engaging explainer tone, natural pace",
-   "start": 340.34,
+   "start": 342.499,
    "vo": 8.111,
    "dur": 8.411,
    "words": [
@@ -4900,7 +4900,7 @@
   {
    "text": "Answer that before your boss does, and you're already ahead.",
    "dir": "confident, upbeat",
-   "start": 348.75,
+   "start": 350.909,
    "vo": 3.085,
    "dur": 3.385,
    "words": [
@@ -4959,7 +4959,7 @@
   {
    "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
    "dir": "friendly sign-off",
-   "start": 352.135,
+   "start": 354.294,
    "vo": 3.46,
    "dur": 4.96,
    "words": [

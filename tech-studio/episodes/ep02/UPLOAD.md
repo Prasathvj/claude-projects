@@ -14,8 +14,8 @@ Chapters:
 1:23 What robots still can't do
 2:18 The ATM story
 3:32 What the big studies say
-4:33 What it means for India
-5:14 So, will robots replace us?
+4:35 What it means for India
+5:16 So, will robots replace us?
 
 Sources:
 • IFR World Robotics 2026 (5,079,078 robots in operation; 603,307 installed in 2025; China 59%): https://ifr.org/ifr-press-releases/five-million-robots-now-operate-in-factories-globally
