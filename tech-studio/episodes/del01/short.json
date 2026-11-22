@@ -1,0 +1,57 @@
+{
+ "id": "del01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "max_tempo": 1.05,
+ "model": "gemini-3.1-flash-tts-preview",
+ "batch": 6,
+ "beats": [
+  {
+   "text": "When you delete a file, your computer doesn't actually delete it.",
+   "dir": "gripping myth-busting hook"
+  },
+  {
+   "text": "At least, not on an old hard drive.",
+   "dir": "teasing follow-up"
+  },
+  {
+   "text": "Deleting only removes the file's entry from the drive's index, like tearing a line out of a book's contents page.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "The data itself is still sitting there. The space is just marked as free.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "It stays until new files are written over it. That's how recovery tools bring files back.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "And it's why selling an old hard drive without wiping it is risky.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "Modern SSDs are different. When you delete, your computer sends a command called TRIM.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "It tells the drive those blocks aren't needed, and the drive clears them in the background.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "So on most new laptops, a deleted file can be truly gone within moments.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "The lesson: on an old hard drive, delete isn't erase. On an SSD, delete is almost forever. Back up what matters.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}

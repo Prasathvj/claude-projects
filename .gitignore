@@ -6,3 +6,7 @@ tech-studio/hf/ep02-long/render.log
 tech-studio/hf/ep02-long/maxframes/
 tech-studio/hf/ep02-long/.hyperframes/
 tech-studio/hf/*/maxrender.log
+tech-studio/hf/*-short/out/
+tech-studio/hf/*-short/render.log
+tech-studio/hf/*-short/maxframes/
+tech-studio/hf/*-short/.hyperframes/

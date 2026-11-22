@@ -1,0 +1,61 @@
+{
+ "id": "upi01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "max_tempo": 1.05,
+ "model": "gemini-3.1-flash-tts-preview",
+ "batch": 6,
+ "beats": [
+  {
+   "text": "Your money doesn't actually move when you pay by UPI.",
+   "dir": "gripping myth-busting hook"
+  },
+  {
+   "text": "Not in those two seconds, anyway.",
+   "dir": "teasing follow-up"
+  },
+  {
+   "text": "You scan a QR code at a tea stall. Your app sends the request to its bank.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "That bank passes it to NPCI, the switchboard that sits between every UPI bank in India.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "NPCI looks up the UPI ID, like name@bank, and finds which bank account it points to.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "Then it asks your bank one question: does this person have the money?",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "Your bank checks your PIN and your balance, and takes the amount out of your account.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "NPCI tells the shopkeeper's bank, which adds it to their account. Ding. Paid.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "The banks settle the real money between themselves later, in batches.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "And the scale is wild: in August 2026, UPI handled 24.5 billion payments in a single month.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "That's about nine thousand payments every second.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}

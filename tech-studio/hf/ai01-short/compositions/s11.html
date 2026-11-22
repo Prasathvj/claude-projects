@@ -1,0 +1,68 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 180px 'SD Display'; color:var(--accent); letter-spacing:-4px; line-height:1; }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.ph { position:relative; border-radius:28px; overflow:hidden; border:8px solid #FFFFFF; box-shadow:0 30px 70px rgba(0,0,0,.35); background:#F7F1EB; }
+.ph img { width:100%; height:100%; object-fit:cover; display:block; } .ph.fb { display:flex; align-items:center; justify-content:center; }
+.chip { display:inline-flex; align-items:center; gap:12px; padding:16px 26px; border-radius:24px; background:#F3E6DC; color:#1E120C; font:800 38px 'SD Display'; }
+.hl { color:var(--accent); }.sbc { position:absolute; left:90px; width:900px; top:420px; padding:60px 40px 50px; border-radius:44px; border:4px solid var(--accent); background:linear-gradient(180deg,#FFFAF7,#FFF6EF); text-align:center; box-shadow:0 0 90px rgba(248,119,54,.3); }
+.sbn { font:900 110px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:1; } .sbn span { color:var(--accent); } .sbw { font:600 italic 60px 'SD Serif'; color:var(--soft); }
+.sbrow { display:flex; align-items:center; justify-content:center; gap:30px; margin-top:40px; }
+.sbb { width:460px; height:120px; border-radius:60px; background:#FF3B30; display:flex; align-items:center; justify-content:center; font:900 54px 'SD Display'; color:#fff; letter-spacing:3px; box-shadow:0 14px 40px rgba(255,59,48,.4); }
+.sbbell { transform-origin:50% 10%; } .sbt { font:700 38px 'SD Text'; color:#6B5446; margin-top:34px; }
+.sbcur { position:absolute; left:0; top:0; opacity:0; }
+  </style>
+  <div id="root" data-composition-id="s11" data-width="1080" data-height="1920">
+    <div class="all" id="s11-all">
+<div class="sbc" id="s11-card"><div class="sbn">TECH<span>DECODED</span></div><div class="sbw">with Max</div>
+  <div class="sbrow"><div class="sbb" id="s11-btn"><span id="s11-bt">SUBSCRIBE</span></div><div class="sbbell" id="s11-bell"><svg width="90" height="90" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M50 14a24 24 0 0 0-24 24v18l-8 14h64l-8-14V38a24 24 0 0 0-24-24z"/><path d="M42 80a8 8 0 0 0 16 0"/></svg></div></div>
+  <div class="sbt">AI &amp; tech news, decoded.</div></div>
+<div class="sbcur" id="s11-cur"><svg width="90" height="110" viewBox="0 0 60 74"><path d="M4 2 L4 58 L18 46 L28 70 L38 66 L28 42 L46 42 Z" fill="#FFFFFF" stroke="#1A0A04" stroke-width="4" stroke-linejoin="round"/></svg></div><div class="bit" id="s11-bit" style="left:70px; top:1370px; width:280px; height:252px;"><div id="s11-bit-n"><svg viewBox="0 0 400 360" width="280" height="252" style="overflow:visible"><defs><pattern id="scan" width="4" height="6" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#fff"/></pattern></defs><g transform="rotate(0 200 180)"><ellipse cx="200" cy="330" rx="46" ry="10" fill="rgba(0,0,0,.4)"/><path d="M184 300 Q200 336 216 300 Z" fill="#F87736" opacity=".9"/><path d="M192 300 Q200 320 208 300 Z" fill="#FFE2CC"/><rect x="120" y="196" width="160" height="110" rx="40" fill="#F87736"/><rect x="160" y="226" width="80" height="40" rx="12" fill="#160B06"/><circle cx="182" cy="246" r="6" fill="#1C7ED6"/><circle cx="218" cy="246" r="6" fill="#F87736"/><path d="M128 224 q-26 14 -30 44" stroke="#D8C4B4" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="98" cy="270" r="13" fill="#D8C4B4"/><path d="M272 224 q30 -10 34 -56" stroke="#D8C4B4" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="306" cy="164" r="13" fill="#D8C4B4"/><path d="M324 140 q8 8 2 18 M334 154 q8 8 2 18" stroke="#F87736" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M200 54 V26" stroke="#D8C4B4" stroke-width="8"/><circle cx="200" cy="22" r="11" fill="#F87736"/><rect x="96" y="52" width="208" height="150" rx="56" fill="#F3E6DC"/><rect x="96" y="52" width="208" height="150" rx="56" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3"/><rect x="120" y="82" width="160" height="92" rx="34" fill="#160B06"/><ellipse cx="200" cy="122" rx="70" ry="34" fill="#1C7ED6" opacity=".18"/><path d="M161 127 Q174 110 187 127 M213 127 Q226 110 239 127" stroke="#1C7ED6" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M188 146 Q200 154 212 146" stroke="#1C7ED6" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="82" y="104" width="18" height="40" rx="8" fill="#D8C4B4"/><rect x="300" y="104" width="18" height="40" rx="8" fill="#D8C4B4"/></g></svg></div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s11-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo("#s11-card", { opacity:0, scale:.7, y:80 }, { opacity:1, scale:1, y:0, duration:.5, ease:"back.out(1.7)" }, 0.05);
+    tl.fromTo("#s11-btn", { scale:1 }, { scale:1.06, duration:.4, yoyo:true, repeat:3, ease:"sine.inOut", immediateRender:false }, 0.6);
+    tl.fromTo("#s11-cur", { opacity:0, x:1000, y:1500 }, { opacity:1, x:520, y:760, duration:.8, ease:"power2.out", immediateRender:false }, 0.82);
+    tl.fromTo("#s11-btn", { scale:1 }, { scale:.9, duration:.08, yoyo:true, repeat:1, immediateRender:false }, 1.62);
+    tl.to("#s11-btn", { backgroundColor:"#9C8576", boxShadow:"0 0 0 rgba(0,0,0,0)", duration:.15 }, 1.7200000000000002);
+    tl.set("#s11-bt", { textContent:"SUBSCRIBED ✓" }, 1.7200000000000002);
+    tl.fromTo("#s11-bell", { rotation:0 }, { rotation:18, duration:.08, yoyo:true, repeat:7, ease:"sine.inOut", immediateRender:false }, 1.9700000000000002);
+    tl.to("#s11-cur", { opacity:0, duration:.3 }, 2.42);
+    tl.set("#s11-bit > div", { opacity:0 }, 0);
+    tl.set("#s11-bit-n", { opacity:1 }, 0);
+    tl.fromTo("#s11-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:6 }, 0);
+    window.__timelines["s11"] = tl;
+  </script>
+</template>

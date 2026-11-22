@@ -1,0 +1,57 @@
+{
+ "id": "face01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "max_tempo": 1.05,
+ "model": "gemini-3.1-flash-tts-preview",
+ "batch": 6,
+ "beats": [
+  {
+   "text": "Your phone checks your face with thirty thousand invisible dots.",
+   "dir": "gripping myth-busting hook"
+  },
+  {
+   "text": "On an iPhone, Face ID projects more than thirty thousand infrared dots onto your face. You can't see a single one.",
+   "dir": "teasing follow-up"
+  },
+  {
+   "text": "An infrared camera reads how those dots land, and builds a 3D map of your face.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "That's why a printed photo of you can't open it. A photo is flat. Your face isn't.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "A neural network compares that map with the one saved when you set it up.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "It also checks that your eyes are open and looking at the screen.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "Apple says the chance a random stranger unlocks your phone is less than one in a million.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "The old fingerprint sensor? About one in fifty thousand.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "The catch: identical twins, and siblings who look very alike, can fool it more often.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "And your face map never leaves the phone. It's stored in a secure chip, not sent to Apple.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}

@@ -1,0 +1,887 @@
+{
+ "id": "del01-short",
+ "provisional": true,
+ "duration": 57.984,
+ "vo": null,
+ "beats": [
+  {
+   "text": "When you delete a file, your computer doesn't actually delete it.",
+   "dir": "gripping myth-busting hook",
+   "start": 0.25,
+   "vo": 3.929,
+   "dur": 4.079,
+   "words": [
+    {
+     "w": "When",
+     "s": 0.0,
+     "e": 0.216
+    },
+    {
+     "w": "you",
+     "s": 0.216,
+     "e": 0.432
+    },
+    {
+     "w": "delete",
+     "s": 0.432,
+     "e": 0.864
+    },
+    {
+     "w": "a",
+     "s": 0.864,
+     "e": 1.079
+    },
+    {
+     "w": "file,",
+     "s": 1.079,
+     "e": 1.425
+    },
+    {
+     "w": "your",
+     "s": 1.425,
+     "e": 1.641
+    },
+    {
+     "w": "computer",
+     "s": 1.641,
+     "e": 2.288
+    },
+    {
+     "w": "doesn't",
+     "s": 2.288,
+     "e": 2.504
+    },
+    {
+     "w": "actually",
+     "s": 2.504,
+     "e": 3.152
+    },
+    {
+     "w": "delete",
+     "s": 3.152,
+     "e": 3.584
+    },
+    {
+     "w": "it.",
+     "s": 3.584,
+     "e": 3.929
+    }
+   ]
+  },
+  {
+   "text": "At least, not on an old hard drive.",
+   "dir": "teasing follow-up",
+   "start": 4.329,
+   "vo": 2.912,
+   "dur": 3.062,
+   "words": [
+    {
+     "w": "At",
+     "s": 0.0,
+     "e": 0.317
+    },
+    {
+     "w": "least,",
+     "s": 0.317,
+     "e": 0.823
+    },
+    {
+     "w": "not",
+     "s": 0.823,
+     "e": 1.139
+    },
+    {
+     "w": "on",
+     "s": 1.139,
+     "e": 1.456
+    },
+    {
+     "w": "an",
+     "s": 1.456,
+     "e": 1.773
+    },
+    {
+     "w": "old",
+     "s": 1.773,
+     "e": 2.089
+    },
+    {
+     "w": "hard",
+     "s": 2.089,
+     "e": 2.406
+    },
+    {
+     "w": "drive.",
+     "s": 2.406,
+     "e": 2.912
+    }
+   ]
+  },
+  {
+   "text": "Deleting only removes the file's entry from the drive's index, like tearing a line out of a book's contents page.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 7.391,
+   "vo": 6.98,
+   "dur": 7.13,
+   "words": [
+    {
+     "w": "Deleting",
+     "s": 0.0,
+     "e": 0.65
+    },
+    {
+     "w": "only",
+     "s": 0.65,
+     "e": 1.084
+    },
+    {
+     "w": "removes",
+     "s": 1.084,
+     "e": 1.734
+    },
+    {
+     "w": "the",
+     "s": 1.734,
+     "e": 1.951
+    },
+    {
+     "w": "file's",
+     "s": 1.951,
+     "e": 2.384
+    },
+    {
+     "w": "entry",
+     "s": 2.384,
+     "e": 2.818
+    },
+    {
+     "w": "from",
+     "s": 2.818,
+     "e": 3.035
+    },
+    {
+     "w": "the",
+     "s": 3.035,
+     "e": 3.252
+    },
+    {
+     "w": "drive's",
+     "s": 3.252,
+     "e": 3.685
+    },
+    {
+     "w": "index,",
+     "s": 3.685,
+     "e": 4.249
+    },
+    {
+     "w": "like",
+     "s": 4.249,
+     "e": 4.465
+    },
+    {
+     "w": "tearing",
+     "s": 4.465,
+     "e": 4.899
+    },
+    {
+     "w": "a",
+     "s": 4.899,
+     "e": 5.116
+    },
+    {
+     "w": "line",
+     "s": 5.116,
+     "e": 5.333
+    },
+    {
+     "w": "out",
+     "s": 5.333,
+     "e": 5.549
+    },
+    {
+     "w": "of",
+     "s": 5.549,
+     "e": 5.766
+    },
+    {
+     "w": "a",
+     "s": 5.766,
+     "e": 5.983
+    },
+    {
+     "w": "book's",
+     "s": 5.983,
+     "e": 6.2
+    },
+    {
+     "w": "contents",
+     "s": 6.2,
+     "e": 6.633
+    },
+    {
+     "w": "page.",
+     "s": 6.633,
+     "e": 6.98
+    }
+   ]
+  },
+  {
+   "text": "The data itself is still sitting there. The space is just marked as free.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 14.521,
+   "vo": 4.946,
+   "dur": 5.096,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.258
+    },
+    {
+     "w": "data",
+     "s": 0.258,
+     "e": 0.773
+    },
+    {
+     "w": "itself",
+     "s": 0.773,
+     "e": 1.288
+    },
+    {
+     "w": "is",
+     "s": 1.288,
+     "e": 1.546
+    },
+    {
+     "w": "still",
+     "s": 1.546,
+     "e": 1.803
+    },
+    {
+     "w": "sitting",
+     "s": 1.803,
+     "e": 2.318
+    },
+    {
+     "w": "there.",
+     "s": 2.318,
+     "e": 2.731
+    },
+    {
+     "w": "The",
+     "s": 2.731,
+     "e": 2.988
+    },
+    {
+     "w": "space",
+     "s": 2.988,
+     "e": 3.246
+    },
+    {
+     "w": "is",
+     "s": 3.246,
+     "e": 3.503
+    },
+    {
+     "w": "just",
+     "s": 3.503,
+     "e": 3.761
+    },
+    {
+     "w": "marked",
+     "s": 3.761,
+     "e": 4.276
+    },
+    {
+     "w": "as",
+     "s": 4.276,
+     "e": 4.534
+    },
+    {
+     "w": "free.",
+     "s": 4.534,
+     "e": 4.946
+    }
+   ]
+  },
+  {
+   "text": "It stays until new files are written over it. That's how recovery tools bring files back.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 19.617,
+   "vo": 5.624,
+   "dur": 5.774,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.0,
+     "e": 0.215
+    },
+    {
+     "w": "stays",
+     "s": 0.215,
+     "e": 0.429
+    },
+    {
+     "w": "until",
+     "s": 0.429,
+     "e": 0.859
+    },
+    {
+     "w": "new",
+     "s": 0.859,
+     "e": 1.073
+    },
+    {
+     "w": "files",
+     "s": 1.073,
+     "e": 1.503
+    },
+    {
+     "w": "are",
+     "s": 1.503,
+     "e": 1.932
+    },
+    {
+     "w": "written",
+     "s": 1.932,
+     "e": 2.361
+    },
+    {
+     "w": "over",
+     "s": 2.361,
+     "e": 2.791
+    },
+    {
+     "w": "it.",
+     "s": 2.791,
+     "e": 3.134
+    },
+    {
+     "w": "That's",
+     "s": 3.134,
+     "e": 3.349
+    },
+    {
+     "w": "how",
+     "s": 3.349,
+     "e": 3.563
+    },
+    {
+     "w": "recovery",
+     "s": 3.563,
+     "e": 4.422
+    },
+    {
+     "w": "tools",
+     "s": 4.422,
+     "e": 4.637
+    },
+    {
+     "w": "bring",
+     "s": 4.637,
+     "e": 4.851
+    },
+    {
+     "w": "files",
+     "s": 4.851,
+     "e": 5.281
+    },
+    {
+     "w": "back.",
+     "s": 5.281,
+     "e": 5.624
+    }
+   ]
+  },
+  {
+   "text": "And it's why selling an old hard drive without wiping it is risky.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 25.391,
+   "vo": 4.607,
+   "dur": 4.757,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.0,
+     "e": 0.262
+    },
+    {
+     "w": "it's",
+     "s": 0.262,
+     "e": 0.524
+    },
+    {
+     "w": "why",
+     "s": 0.524,
+     "e": 0.785
+    },
+    {
+     "w": "selling",
+     "s": 0.785,
+     "e": 1.309
+    },
+    {
+     "w": "an",
+     "s": 1.309,
+     "e": 1.571
+    },
+    {
+     "w": "old",
+     "s": 1.571,
+     "e": 1.832
+    },
+    {
+     "w": "hard",
+     "s": 1.832,
+     "e": 2.094
+    },
+    {
+     "w": "drive",
+     "s": 2.094,
+     "e": 2.356
+    },
+    {
+     "w": "without",
+     "s": 2.356,
+     "e": 2.879
+    },
+    {
+     "w": "wiping",
+     "s": 2.879,
+     "e": 3.403
+    },
+    {
+     "w": "it",
+     "s": 3.403,
+     "e": 3.665
+    },
+    {
+     "w": "is",
+     "s": 3.665,
+     "e": 3.926
+    },
+    {
+     "w": "risky.",
+     "s": 3.926,
+     "e": 4.607
+    }
+   ]
+  },
+  {
+   "text": "Modern SSDs are different. When you delete, your computer sends a command called TRIM.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 30.148,
+   "vo": 4.946,
+   "dur": 5.096,
+   "words": [
+    {
+     "w": "Modern",
+     "s": 0.0,
+     "e": 0.399
+    },
+    {
+     "w": "SSDs",
+     "s": 0.399,
+     "e": 0.598
+    },
+    {
+     "w": "are",
+     "s": 0.598,
+     "e": 0.997
+    },
+    {
+     "w": "different.",
+     "s": 0.997,
+     "e": 1.715
+    },
+    {
+     "w": "When",
+     "s": 1.715,
+     "e": 1.915
+    },
+    {
+     "w": "you",
+     "s": 1.915,
+     "e": 2.114
+    },
+    {
+     "w": "delete,",
+     "s": 2.114,
+     "e": 2.633
+    },
+    {
+     "w": "your",
+     "s": 2.633,
+     "e": 2.832
+    },
+    {
+     "w": "computer",
+     "s": 2.832,
+     "e": 3.43
+    },
+    {
+     "w": "sends",
+     "s": 3.43,
+     "e": 3.63
+    },
+    {
+     "w": "a",
+     "s": 3.63,
+     "e": 3.829
+    },
+    {
+     "w": "command",
+     "s": 3.829,
+     "e": 4.228
+    },
+    {
+     "w": "called",
+     "s": 4.228,
+     "e": 4.627
+    },
+    {
+     "w": "TRIM.",
+     "s": 4.627,
+     "e": 4.946
+    }
+   ]
+  },
+  {
+   "text": "It tells the drive those blocks aren't needed, and the drive clears them in the background.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 35.244,
+   "vo": 5.624,
+   "dur": 5.774,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.0,
+     "e": 0.278
+    },
+    {
+     "w": "tells",
+     "s": 0.278,
+     "e": 0.557
+    },
+    {
+     "w": "the",
+     "s": 0.557,
+     "e": 0.835
+    },
+    {
+     "w": "drive",
+     "s": 0.835,
+     "e": 1.114
+    },
+    {
+     "w": "those",
+     "s": 1.114,
+     "e": 1.392
+    },
+    {
+     "w": "blocks",
+     "s": 1.392,
+     "e": 1.67
+    },
+    {
+     "w": "aren't",
+     "s": 1.67,
+     "e": 2.227
+    },
+    {
+     "w": "needed,",
+     "s": 2.227,
+     "e": 2.951
+    },
+    {
+     "w": "and",
+     "s": 2.951,
+     "e": 3.23
+    },
+    {
+     "w": "the",
+     "s": 3.23,
+     "e": 3.508
+    },
+    {
+     "w": "drive",
+     "s": 3.508,
+     "e": 3.786
+    },
+    {
+     "w": "clears",
+     "s": 3.786,
+     "e": 4.065
+    },
+    {
+     "w": "them",
+     "s": 4.065,
+     "e": 4.343
+    },
+    {
+     "w": "in",
+     "s": 4.343,
+     "e": 4.622
+    },
+    {
+     "w": "the",
+     "s": 4.622,
+     "e": 4.9
+    },
+    {
+     "w": "background.",
+     "s": 4.9,
+     "e": 5.624
+    }
+   ]
+  },
+  {
+   "text": "So on most new laptops, a deleted file can be truly gone within moments.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 41.018,
+   "vo": 4.946,
+   "dur": 5.096,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.233
+    },
+    {
+     "w": "on",
+     "s": 0.233,
+     "e": 0.467
+    },
+    {
+     "w": "most",
+     "s": 0.467,
+     "e": 0.7
+    },
+    {
+     "w": "new",
+     "s": 0.7,
+     "e": 0.933
+    },
+    {
+     "w": "laptops,",
+     "s": 0.933,
+     "e": 1.54
+    },
+    {
+     "w": "a",
+     "s": 1.54,
+     "e": 1.773
+    },
+    {
+     "w": "deleted",
+     "s": 1.773,
+     "e": 2.473
+    },
+    {
+     "w": "file",
+     "s": 2.473,
+     "e": 2.706
+    },
+    {
+     "w": "can",
+     "s": 2.706,
+     "e": 2.94
+    },
+    {
+     "w": "be",
+     "s": 2.94,
+     "e": 3.173
+    },
+    {
+     "w": "truly",
+     "s": 3.173,
+     "e": 3.64
+    },
+    {
+     "w": "gone",
+     "s": 3.64,
+     "e": 3.873
+    },
+    {
+     "w": "within",
+     "s": 3.873,
+     "e": 4.339
+    },
+    {
+     "w": "moments.",
+     "s": 4.339,
+     "e": 4.946
+    }
+   ]
+  },
+  {
+   "text": "The lesson: on an old hard drive, delete isn't erase. On an SSD, delete is almost forever. Back up what matters.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 46.114,
+   "vo": 7.319,
+   "dur": 7.469,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.225
+    },
+    {
+     "w": "lesson:",
+     "s": 0.225,
+     "e": 0.808
+    },
+    {
+     "w": "on",
+     "s": 0.808,
+     "e": 1.033
+    },
+    {
+     "w": "an",
+     "s": 1.033,
+     "e": 1.257
+    },
+    {
+     "w": "old",
+     "s": 1.257,
+     "e": 1.482
+    },
+    {
+     "w": "hard",
+     "s": 1.482,
+     "e": 1.706
+    },
+    {
+     "w": "drive,",
+     "s": 1.706,
+     "e": 2.065
+    },
+    {
+     "w": "delete",
+     "s": 2.065,
+     "e": 2.515
+    },
+    {
+     "w": "isn't",
+     "s": 2.515,
+     "e": 2.739
+    },
+    {
+     "w": "erase.",
+     "s": 2.739,
+     "e": 3.323
+    },
+    {
+     "w": "On",
+     "s": 3.323,
+     "e": 3.547
+    },
+    {
+     "w": "an",
+     "s": 3.547,
+     "e": 3.772
+    },
+    {
+     "w": "SSD,",
+     "s": 3.772,
+     "e": 4.131
+    },
+    {
+     "w": "delete",
+     "s": 4.131,
+     "e": 4.58
+    },
+    {
+     "w": "is",
+     "s": 4.58,
+     "e": 4.804
+    },
+    {
+     "w": "almost",
+     "s": 4.804,
+     "e": 5.254
+    },
+    {
+     "w": "forever.",
+     "s": 5.254,
+     "e": 6.062
+    },
+    {
+     "w": "Back",
+     "s": 6.062,
+     "e": 6.286
+    },
+    {
+     "w": "up",
+     "s": 6.286,
+     "e": 6.511
+    },
+    {
+     "w": "what",
+     "s": 6.511,
+     "e": 6.735
+    },
+    {
+     "w": "matters.",
+     "s": 6.735,
+     "e": 7.319
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off",
+   "start": 53.583,
+   "vo": 3.251,
+   "dur": 3.401,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.0,
+     "e": 0.401
+    },
+    {
+     "w": "to",
+     "s": 0.401,
+     "e": 0.602
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.602,
+     "e": 1.405
+    },
+    {
+     "w": "with",
+     "s": 1.405,
+     "e": 1.605
+    },
+    {
+     "w": "Max",
+     "s": 1.605,
+     "e": 1.806
+    },
+    {
+     "w": "for",
+     "s": 1.806,
+     "e": 2.007
+    },
+    {
+     "w": "more",
+     "s": 2.007,
+     "e": 2.207
+    },
+    {
+     "w": "tech,",
+     "s": 2.207,
+     "e": 2.529
+    },
+    {
+     "w": "decoded.",
+     "s": 2.529,
+     "e": 3.251
+    }
+   ]
+  }
+ ]
+}

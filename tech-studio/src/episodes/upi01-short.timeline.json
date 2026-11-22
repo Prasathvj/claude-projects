@@ -1,0 +1,874 @@
+{
+ "id": "upi01-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 49.154,
+ "vo": "upi01/upi01-short-vo.wav",
+ "music": "upi01/upi01-short-music.wav",
+ "beats": [
+  {
+   "text": "Your money doesn't actually move when you pay by UPI.",
+   "dir": "gripping myth-busting hook",
+   "start": 0.25,
+   "vo": 3.46,
+   "dur": 3.61,
+   "words": [
+    {
+     "w": "Your",
+     "s": 0.0,
+     "e": 0.237
+    },
+    {
+     "w": "money",
+     "s": 0.237,
+     "e": 0.711
+    },
+    {
+     "w": "doesn't",
+     "s": 0.711,
+     "e": 0.948
+    },
+    {
+     "w": "actually",
+     "s": 0.948,
+     "e": 1.659
+    },
+    {
+     "w": "move",
+     "s": 1.659,
+     "e": 1.896
+    },
+    {
+     "w": "when",
+     "s": 1.896,
+     "e": 2.133
+    },
+    {
+     "w": "you",
+     "s": 2.133,
+     "e": 2.37
+    },
+    {
+     "w": "pay",
+     "s": 2.37,
+     "e": 2.607
+    },
+    {
+     "w": "by",
+     "s": 2.607,
+     "e": 2.844
+    },
+    {
+     "w": "UPI.",
+     "s": 2.844,
+     "e": 3.46
+    }
+   ]
+  },
+  {
+   "text": "Not in those two seconds, anyway.",
+   "dir": "teasing follow-up",
+   "start": 3.86,
+   "vo": 1.346,
+   "dur": 1.496,
+   "words": [
+    {
+     "w": "Not",
+     "s": 0.0,
+     "e": 0.132
+    },
+    {
+     "w": "in",
+     "s": 0.132,
+     "e": 0.264
+    },
+    {
+     "w": "those",
+     "s": 0.264,
+     "e": 0.396
+    },
+    {
+     "w": "two",
+     "s": 0.396,
+     "e": 0.528
+    },
+    {
+     "w": "seconds,",
+     "s": 0.528,
+     "e": 0.871
+    },
+    {
+     "w": "anyway.",
+     "s": 0.871,
+     "e": 1.346
+    }
+   ]
+  },
+  {
+   "text": "You scan a QR code at a tea stall. Your app sends the request to its bank.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 5.356,
+   "vo": 4.286,
+   "dur": 4.436,
+   "words": [
+    {
+     "w": "You",
+     "s": 0.0,
+     "e": 0.223
+    },
+    {
+     "w": "scan",
+     "s": 0.223,
+     "e": 0.447
+    },
+    {
+     "w": "a",
+     "s": 0.447,
+     "e": 0.67
+    },
+    {
+     "w": "QR",
+     "s": 0.67,
+     "e": 0.893
+    },
+    {
+     "w": "code",
+     "s": 0.893,
+     "e": 1.116
+    },
+    {
+     "w": "at",
+     "s": 1.116,
+     "e": 1.34
+    },
+    {
+     "w": "a",
+     "s": 1.34,
+     "e": 1.563
+    },
+    {
+     "w": "tea",
+     "s": 1.563,
+     "e": 1.786
+    },
+    {
+     "w": "stall.",
+     "s": 1.786,
+     "e": 2.143
+    },
+    {
+     "w": "Your",
+     "s": 2.143,
+     "e": 2.366
+    },
+    {
+     "w": "app",
+     "s": 2.366,
+     "e": 2.59
+    },
+    {
+     "w": "sends",
+     "s": 2.59,
+     "e": 2.813
+    },
+    {
+     "w": "the",
+     "s": 2.813,
+     "e": 3.036
+    },
+    {
+     "w": "request",
+     "s": 3.036,
+     "e": 3.483
+    },
+    {
+     "w": "to",
+     "s": 3.483,
+     "e": 3.706
+    },
+    {
+     "w": "its",
+     "s": 3.706,
+     "e": 3.929
+    },
+    {
+     "w": "bank.",
+     "s": 3.929,
+     "e": 4.286
+    }
+   ]
+  },
+  {
+   "text": "That bank passes it to NPCI, the switchboard that sits between every UPI bank in India.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 9.792,
+   "vo": 5.447,
+   "dur": 5.597,
+   "words": [
+    {
+     "w": "That",
+     "s": 0.0,
+     "e": 0.225
+    },
+    {
+     "w": "bank",
+     "s": 0.225,
+     "e": 0.45
+    },
+    {
+     "w": "passes",
+     "s": 0.45,
+     "e": 0.9
+    },
+    {
+     "w": "it",
+     "s": 0.9,
+     "e": 1.125
+    },
+    {
+     "w": "to",
+     "s": 1.125,
+     "e": 1.35
+    },
+    {
+     "w": "NPCI,",
+     "s": 1.35,
+     "e": 1.711
+    },
+    {
+     "w": "the",
+     "s": 1.711,
+     "e": 1.936
+    },
+    {
+     "w": "switchboard",
+     "s": 1.936,
+     "e": 2.386
+    },
+    {
+     "w": "that",
+     "s": 2.386,
+     "e": 2.611
+    },
+    {
+     "w": "sits",
+     "s": 2.611,
+     "e": 2.836
+    },
+    {
+     "w": "between",
+     "s": 2.836,
+     "e": 3.286
+    },
+    {
+     "w": "every",
+     "s": 3.286,
+     "e": 3.961
+    },
+    {
+     "w": "UPI",
+     "s": 3.961,
+     "e": 4.412
+    },
+    {
+     "w": "bank",
+     "s": 4.412,
+     "e": 4.637
+    },
+    {
+     "w": "in",
+     "s": 4.637,
+     "e": 4.862
+    },
+    {
+     "w": "India.",
+     "s": 4.862,
+     "e": 5.447
+    }
+   ]
+  },
+  {
+   "text": "NPCI looks up the UPI ID, like name@bank, and finds which bank account it points to.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 15.389,
+   "vo": 5.2,
+   "dur": 5.35,
+   "words": [
+    {
+     "w": "NPCI",
+     "s": 0.0,
+     "e": 0.239
+    },
+    {
+     "w": "looks",
+     "s": 0.239,
+     "e": 0.477
+    },
+    {
+     "w": "up",
+     "s": 0.477,
+     "e": 0.716
+    },
+    {
+     "w": "the",
+     "s": 0.716,
+     "e": 0.954
+    },
+    {
+     "w": "UPI",
+     "s": 0.954,
+     "e": 1.431
+    },
+    {
+     "w": "ID,",
+     "s": 1.431,
+     "e": 1.813
+    },
+    {
+     "w": "like",
+     "s": 1.813,
+     "e": 2.051
+    },
+    {
+     "w": "name@bank,",
+     "s": 2.051,
+     "e": 2.91
+    },
+    {
+     "w": "and",
+     "s": 2.91,
+     "e": 3.149
+    },
+    {
+     "w": "finds",
+     "s": 3.149,
+     "e": 3.387
+    },
+    {
+     "w": "which",
+     "s": 3.387,
+     "e": 3.626
+    },
+    {
+     "w": "bank",
+     "s": 3.626,
+     "e": 3.864
+    },
+    {
+     "w": "account",
+     "s": 3.864,
+     "e": 4.341
+    },
+    {
+     "w": "it",
+     "s": 4.341,
+     "e": 4.58
+    },
+    {
+     "w": "points",
+     "s": 4.58,
+     "e": 4.819
+    },
+    {
+     "w": "to.",
+     "s": 4.819,
+     "e": 5.2
+    }
+   ]
+  },
+  {
+   "text": "Then it asks your bank one question: does this person have the money?",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 20.739,
+   "vo": 4.199,
+   "dur": 4.349,
+   "words": [
+    {
+     "w": "Then",
+     "s": 0.0,
+     "e": 0.231
+    },
+    {
+     "w": "it",
+     "s": 0.231,
+     "e": 0.461
+    },
+    {
+     "w": "asks",
+     "s": 0.461,
+     "e": 0.692
+    },
+    {
+     "w": "your",
+     "s": 0.692,
+     "e": 0.923
+    },
+    {
+     "w": "bank",
+     "s": 0.923,
+     "e": 1.154
+    },
+    {
+     "w": "one",
+     "s": 1.154,
+     "e": 1.615
+    },
+    {
+     "w": "question:",
+     "s": 1.615,
+     "e": 2.215
+    },
+    {
+     "w": "does",
+     "s": 2.215,
+     "e": 2.446
+    },
+    {
+     "w": "this",
+     "s": 2.446,
+     "e": 2.676
+    },
+    {
+     "w": "person",
+     "s": 2.676,
+     "e": 3.138
+    },
+    {
+     "w": "have",
+     "s": 3.138,
+     "e": 3.369
+    },
+    {
+     "w": "the",
+     "s": 3.369,
+     "e": 3.599
+    },
+    {
+     "w": "money?",
+     "s": 3.599,
+     "e": 4.199
+    }
+   ]
+  },
+  {
+   "text": "Your bank checks your PIN and your balance, and takes the amount out of your account.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 25.088,
+   "vo": 5.131,
+   "dur": 5.281,
+   "words": [
+    {
+     "w": "Your",
+     "s": 0.0,
+     "e": 0.242
+    },
+    {
+     "w": "bank",
+     "s": 0.242,
+     "e": 0.484
+    },
+    {
+     "w": "checks",
+     "s": 0.484,
+     "e": 0.726
+    },
+    {
+     "w": "your",
+     "s": 0.726,
+     "e": 0.968
+    },
+    {
+     "w": "PIN",
+     "s": 0.968,
+     "e": 1.21
+    },
+    {
+     "w": "and",
+     "s": 1.21,
+     "e": 1.452
+    },
+    {
+     "w": "your",
+     "s": 1.452,
+     "e": 1.694
+    },
+    {
+     "w": "balance,",
+     "s": 1.694,
+     "e": 2.324
+    },
+    {
+     "w": "and",
+     "s": 2.324,
+     "e": 2.566
+    },
+    {
+     "w": "takes",
+     "s": 2.566,
+     "e": 3.05
+    },
+    {
+     "w": "the",
+     "s": 3.05,
+     "e": 3.292
+    },
+    {
+     "w": "amount",
+     "s": 3.292,
+     "e": 3.776
+    },
+    {
+     "w": "out",
+     "s": 3.776,
+     "e": 4.018
+    },
+    {
+     "w": "of",
+     "s": 4.018,
+     "e": 4.26
+    },
+    {
+     "w": "your",
+     "s": 4.26,
+     "e": 4.502
+    },
+    {
+     "w": "account.",
+     "s": 4.502,
+     "e": 5.131
+    }
+   ]
+  },
+  {
+   "text": "NPCI tells the shopkeeper's bank, which adds it to their account. Ding. Paid.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 30.37,
+   "vo": 2.64,
+   "dur": 2.79,
+   "words": [
+    {
+     "w": "NPCI",
+     "s": 0.0,
+     "e": 0.143
+    },
+    {
+     "w": "tells",
+     "s": 0.143,
+     "e": 0.287
+    },
+    {
+     "w": "the",
+     "s": 0.287,
+     "e": 0.43
+    },
+    {
+     "w": "shopkeeper's",
+     "s": 0.43,
+     "e": 0.861
+    },
+    {
+     "w": "bank,",
+     "s": 0.861,
+     "e": 1.09
+    },
+    {
+     "w": "which",
+     "s": 1.09,
+     "e": 1.234
+    },
+    {
+     "w": "adds",
+     "s": 1.234,
+     "e": 1.377
+    },
+    {
+     "w": "it",
+     "s": 1.377,
+     "e": 1.521
+    },
+    {
+     "w": "to",
+     "s": 1.521,
+     "e": 1.664
+    },
+    {
+     "w": "their",
+     "s": 1.664,
+     "e": 1.808
+    },
+    {
+     "w": "account.",
+     "s": 1.808,
+     "e": 2.181
+    },
+    {
+     "w": "Ding.",
+     "s": 2.181,
+     "e": 2.41
+    },
+    {
+     "w": "Paid.",
+     "s": 2.41,
+     "e": 2.64
+    }
+   ]
+  },
+  {
+   "text": "The banks settle the real money between themselves later, in batches.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 33.16,
+   "vo": 0.65,
+   "dur": 0.8,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.036
+    },
+    {
+     "w": "banks",
+     "s": 0.036,
+     "e": 0.071
+    },
+    {
+     "w": "settle",
+     "s": 0.071,
+     "e": 0.107
+    },
+    {
+     "w": "the",
+     "s": 0.107,
+     "e": 0.143
+    },
+    {
+     "w": "real",
+     "s": 0.143,
+     "e": 0.179
+    },
+    {
+     "w": "money",
+     "s": 0.179,
+     "e": 0.25
+    },
+    {
+     "w": "between",
+     "s": 0.25,
+     "e": 0.322
+    },
+    {
+     "w": "themselves",
+     "s": 0.322,
+     "e": 0.429
+    },
+    {
+     "w": "later,",
+     "s": 0.429,
+     "e": 0.522
+    },
+    {
+     "w": "in",
+     "s": 0.522,
+     "e": 0.557
+    },
+    {
+     "w": "batches.",
+     "s": 0.557,
+     "e": 0.65
+    }
+   ]
+  },
+  {
+   "text": "And the scale is wild: in August 2026, UPI handled 24.5 billion payments in a single month.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 33.96,
+   "vo": 7.49,
+   "dur": 7.64,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.0,
+     "e": 0.26
+    },
+    {
+     "w": "the",
+     "s": 0.26,
+     "e": 0.52
+    },
+    {
+     "w": "scale",
+     "s": 0.52,
+     "e": 0.78
+    },
+    {
+     "w": "is",
+     "s": 0.78,
+     "e": 1.04
+    },
+    {
+     "w": "wild:",
+     "s": 1.04,
+     "e": 1.456
+    },
+    {
+     "w": "in",
+     "s": 1.456,
+     "e": 1.716
+    },
+    {
+     "w": "August",
+     "s": 1.716,
+     "e": 2.236
+    },
+    {
+     "w": "2026,",
+     "s": 2.236,
+     "e": 3.433
+    },
+    {
+     "w": "UPI",
+     "s": 3.433,
+     "e": 3.953
+    },
+    {
+     "w": "handled",
+     "s": 3.953,
+     "e": 4.473
+    },
+    {
+     "w": "24.5",
+     "s": 4.473,
+     "e": 5.253
+    },
+    {
+     "w": "billion",
+     "s": 5.253,
+     "e": 5.773
+    },
+    {
+     "w": "payments",
+     "s": 5.773,
+     "e": 6.293
+    },
+    {
+     "w": "in",
+     "s": 6.293,
+     "e": 6.553
+    },
+    {
+     "w": "a",
+     "s": 6.553,
+     "e": 6.813
+    },
+    {
+     "w": "single",
+     "s": 6.813,
+     "e": 7.073
+    },
+    {
+     "w": "month.",
+     "s": 7.073,
+     "e": 7.49
+    }
+   ]
+  },
+  {
+   "text": "That's about nine thousand payments every second.",
+   "dir": "clear, curious explainer, natural pace",
+   "start": 41.6,
+   "vo": 2.914,
+   "dur": 3.064,
+   "words": [
+    {
+     "w": "That's",
+     "s": 0.0,
+     "e": 0.214
+    },
+    {
+     "w": "about",
+     "s": 0.214,
+     "e": 0.643
+    },
+    {
+     "w": "nine",
+     "s": 0.643,
+     "e": 0.857
+    },
+    {
+     "w": "thousand",
+     "s": 0.857,
+     "e": 1.286
+    },
+    {
+     "w": "payments",
+     "s": 1.286,
+     "e": 1.714
+    },
+    {
+     "w": "every",
+     "s": 1.714,
+     "e": 2.357
+    },
+    {
+     "w": "second.",
+     "s": 2.357,
+     "e": 2.914
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off",
+   "start": 44.664,
+   "vo": 3.14,
+   "dur": 4.49,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.0,
+     "e": 0.388
+    },
+    {
+     "w": "to",
+     "s": 0.388,
+     "e": 0.582
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.582,
+     "e": 1.357
+    },
+    {
+     "w": "with",
+     "s": 1.357,
+     "e": 1.551
+    },
+    {
+     "w": "Max",
+     "s": 1.551,
+     "e": 1.745
+    },
+    {
+     "w": "for",
+     "s": 1.745,
+     "e": 1.938
+    },
+    {
+     "w": "more",
+     "s": 1.938,
+     "e": 2.132
+    },
+    {
+     "w": "tech,",
+     "s": 2.132,
+     "e": 2.442
+    },
+    {
+     "w": "decoded.",
+     "s": 2.442,
+     "e": 3.14
+    }
+   ]
+  }
+ ]
+}

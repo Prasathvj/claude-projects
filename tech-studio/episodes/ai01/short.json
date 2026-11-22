@@ -1,0 +1,61 @@
+{
+ "id": "ai01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "max_tempo": 1.05,
+ "model": "gemini-3.1-flash-tts-preview",
+ "batch": 6,
+ "beats": [
+  {
+   "text": "ChatGPT doesn't know what it's going to say next.",
+   "dir": "gripping myth-busting hook"
+  },
+  {
+   "text": "Not even the next word.",
+   "dir": "teasing follow-up"
+  },
+  {
+   "text": "Every reply is built one small piece at a time. Those pieces are called tokens.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "A token is often a whole word, sometimes just part of one. In English, a token is roughly three quarters of a word.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "At every step, the model scores every token it knows, tens of thousands of them, and gives each one a probability.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "After \"The sky is\", \"blue\" gets a high score. \"Banana\" gets almost nothing.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "It picks one, adds it to the sentence, and does the whole thing again. And again. And again.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "A long answer can mean hundreds of these predictions in a few seconds.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "So how does it sound so smart? It learned those probabilities from a huge amount of text.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "It isn't looking up an answer. It's predicting one, token by token.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "That's also why it can sound confident and still be wrong.",
+   "dir": "clear, curious explainer, natural pace"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}
