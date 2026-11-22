@@ -16,3 +16,6 @@ STRICT SCRIPT RULES (owner, 2026-11-22), apply to every Short:
 3. Create an unanswered question or mystery immediately. 4. Every sentence moves the story forward.
 5. Short, natural sentences that sound great narrated. 6. Include a surprising fact, unexpected comparison or concrete example.
 7. Keep curiosity alive throughout. 8. Give a satisfying mini-payoff; never empty clickbait.
+VOICE-OVER RULES (owner, 2026-11-22): every video ends with a spoken subscribe line ("Subscribe to TechDecoded with Max for more tech news, decoded." or similar) plus an animated subscribe button outro.
+Record Shorts line by line ("batch": 1 in the episode JSON) and cap speed-ups ("max_tempo": 1.05); the owner found sped-up narration too fast.
+Before rendering, run `python3 tools/verify_vo.py <id>` and listen-check anything flagged; batch takes have repeated lines and even read the style prompt aloud (job01, 2026-11-22).

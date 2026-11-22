@@ -238,16 +238,20 @@ def episode(path):
     beats = ep["beats"]
     lines = [(b["text"], b.get("dir", "")) for b in beats]
     takes = []
-    size = 8
+    size = ep.get("batch", 8)  # batch 1 = one request per line (no batch-split errors, costs more quota)
     for i in range(0, len(lines), size):
         chunk = lines[i:i + size]
-        takes += [gtts.clean(p)[0] for p, _ in narrate(chunk, ep.get("voice", "Fenrir"), PROFILES[profile])]
+        if size == 1:
+            p, _ = gtts.say(chunk[0][0], chunk[0][1], voice=ep.get("voice", "Fenrir"), model=MODELS, profile=PROFILES[profile])
+            takes.append(gtts.clean(p)[0])
+        else:
+            takes += [gtts.clean(p)[0] for p, _ in narrate(chunk, ep.get("voice", "Fenrir"), PROFILES[profile])]
         print(f"  narration {min(i + size, len(lines))}/{len(lines)}")
     # measure pace and speed up to the target if needed (never slow down)
     words = sum(len(t.split()) for t, _ in lines)
     secs = sum(gtts.wav_duration(p) for p in takes)
     wpm = words / secs * 60
-    factor = min(1.25, max(1.0, TARGET_WPM[profile] / wpm))
+    factor = min(ep.get("max_tempo", 1.25), max(1.0, TARGET_WPM[profile] / wpm))
     print(f"  raw pace {wpm:.0f} wpm -> tempo x{factor:.2f}")
     gap, lead, tail = ep.get("gap", 0.15), 0.25, 1.2
     t = lead

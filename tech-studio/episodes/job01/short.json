@@ -8,35 +8,41 @@
  "beats": [
   {
    "text": "AI is writing more code than ever. So why are software job postings going up?",
-   "dir": "gripping, puzzled hook; clear pause between sentences"
+   "dir": "gripping, puzzled hook"
   },
   {
    "text": "Indeed's job data shows US software postings rising again since mid-2025.",
-   "dir": "factual, quick; clear pause between sentences"
+   "dir": "factual, quick"
   },
   {
    "text": "But look at who they're hiring.",
-   "dir": "conspiratorial lean-in; clear pause between sentences"
+   "dir": "conspiratorial lean-in"
   },
   {
    "text": "Seventy-one percent of the growth came from senior roles.",
-   "dir": "punchy reveal; clear pause between sentences"
+   "dir": "punchy reveal"
   },
   {
    "text": "And over a third came from jobs with AI in the title.",
-   "dir": "punchy reveal; clear pause between sentences"
+   "dir": "punchy reveal"
   },
   {
    "text": "Meanwhile, total postings are still about a quarter below pre-pandemic levels.",
-   "dir": "serious; clear pause between sentences"
+   "dir": "serious"
   },
   {
    "text": "So the market isn't dead. It's picky.",
-   "dir": "confident, memorable; clear pause between sentences"
+   "dir": "confident, memorable"
   },
   {
    "text": "The fastest way in? Show you can build with AI, not just next to it.",
-   "dir": "helpful, energetic payoff; clear pause between sentences"
+   "dir": "helpful, energetic payoff"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech news, decoded.",
+   "dir": "warm, friendly sign-off"
   }
- ]
+ ],
+ "batch": 1,
+ "max_tempo": 1.05
 }
