@@ -1,5 +1,5 @@
 # EP04 long video: Will AI Replace Software Engineers? (The Real Data)
-Draft for owner approval (22 Nov 2026). Target 8:30–9:30 (~1,450 words at ~165 wpm). Voice: vidIQ ElevenLabs "Eric" (one voice for the whole video).
+Draft for owner approval (22 Nov 2026). Target ~8 min (1,270 words at ~165 wpm). Voice: vidIQ ElevenLabs "Eric" (one voice for the whole video).
 Max (host, at key moments ★) + Bit; cream theme, new background pattern; UI mockups (code editor, job boards, payroll charts, an IBM 1954 report card).
 Angle (from vidIQ outlier data): first-person and data-driven. Winning small-channel videos on this topic were personal ("I'm one of them") rather than generic.
 Title options: "Will AI Replace Software Engineers? The Real Data" · "AI Writes 75% of Google's New Code. So Why Are Developer Jobs Growing?" · "I'm a Software Engineer. Here's What AI Is Really Doing to Our Jobs"
@@ -60,31 +60,40 @@ VISUAL: a race. Max with AI versus Max without AI. A stopwatch. The "with AI" Ma
 34. Why? Reviewing, correcting and re-prompting AI output takes time, especially in large, complex code you already know well.
 35. To be fair, that study used early twenty twenty-five tools, and the tools have improved a lot since. But it shows something important. AI writes code fast. Making sure that code is right is still human work.
 
-## 7. The jobs AI can't take (yet) ★ Max
-VISUAL: Max at a whiteboard. Bit hands him code; Max circles a bug. Icons appear one by one: a speech bubble (requirements), a shield (security), a map (architecture), a magnifier (review).
-36. So what part of the job is safe? Mostly the parts that were never about typing.
-37. Understanding what the customer actually needs, when they can't explain it clearly.
-38. Designing how a big system fits together, so it doesn't collapse when a million users show up.
-39. Judging whether AI-written code is secure, because AI will confidently write code with security holes in it.
-40. And taking responsibility when something breaks at two in the morning. An AI can suggest a fix. It can't be accountable for it.
-41. Notice the pattern. AI is great at answering "how do I write this?" Humans are still needed for "what should we build, and is it right?"
-42. That's also why the official forecasts are still positive. The US Bureau of Labor Statistics expects software developer jobs to grow about sixteen percent over the next ten years, much faster than average.
+## 7. The security problem
+VISUAL: a code editor; Bit types a login form. A magnifier sweeps over it and red warning tags pop up: "SQL injection", "XSS". A counter: "45% of tasks".
+36. And there's another reason companies still need humans checking every line.
+37. In twenty twenty-five, the security company Veracode tested more than a hundred AI models on eighty common coding tasks.
+38. In forty-five percent of the tasks, the AI-written code contained a known security weakness.
+39. Even when there was a safe way and an unsafe way to write the code, the models picked the unsafe way almost half the time.
+40. And the newer, smarter models weren't much better. They got better at writing code that runs, but not at writing code that's safe.
+41. So as AI writes more code, someone has to understand it well enough to spot the hole before an attacker does. That someone is a software engineer.
 
-## 8. What to do if you're in IT ★ Max
+## 8. The jobs AI can't take (yet) ★ Max
+VISUAL: Max at a whiteboard. Bit hands him code; Max circles a bug. Icons appear one by one: a speech bubble (requirements), a shield (security), a map (architecture), a magnifier (review).
+42. So what part of the job is safe? Mostly the parts that were never about typing.
+43. Understanding what the customer actually needs, when they can't explain it clearly.
+44. Designing how a big system fits together, so it doesn't collapse when a million users show up.
+45. Judging whether AI-written code is secure, and whether it really does what the business needs.
+46. And taking responsibility when something breaks at two in the morning. An AI can suggest a fix. It can't be accountable for it.
+47. Notice the pattern. AI is great at answering "how do I write this?" Humans are still needed for "what should we build, and is it right?"
+48. That's also why the official forecasts are still positive. The US Bureau of Labor Statistics expects software developer jobs to grow about sixteen percent over the next ten years, much faster than average.
+
+## 9. What to do if you're in IT ★ Max
 VISUAL: checklist UI with four items; Max ticks each, Bit gives a thumbs-up.
-43. So if you're a developer, or you want to be one, here's how to stay on the right side of this.
-44. One. Use AI tools every day, but treat them like a fast junior teammate. Let them draft. You review, test and decide.
-45. Two. Climb above syntax. Learn system design, debugging and reading other people's code. Those skills get more valuable as AI writes more of the code.
-46. Three. Learn the basics of how AI systems work, and how they fail. Companies need people who can build with AI safely.
-47. Four. If you're a fresher, build real projects that show judgement, not just a certificate. Something deployed, used by real people, and explained clearly.
+49. So if you're a developer, or you want to be one, here's how to stay on the right side of this.
+50. One. Use AI tools every day, but treat them like a fast junior teammate. Let them draft. You review, test and decide.
+51. Two. Climb above syntax. Learn system design, debugging and reading other people's code. Those skills get more valuable as AI writes more of the code.
+52. Three. Learn the basics of how AI systems work, and how they fail. Companies need people who can build with AI safely.
+53. Four. If you're a fresher, build real projects that show judgement, not just a certificate. Something deployed, used by real people, and explained clearly.
 VISUAL: a fresher's portfolio card: "Live app · 200 users · bugs fixed · write-up" next to a plain "Certificate" card that fades.
 
-## 9. Close ★ Max
+## 10. Close ★ Max
 VISUAL: Max and Bit side by side at one desk. Bit types, Max points at the screen and they high-five. End screen.
-48. So, will AI replace software engineers? Not the ones who learn to work with it.
-49. But it is changing who gets hired, and what they're hired to do. And that change is happening right now, starting with the very first rung of the ladder.
-50. Tell me in the comments: do you use AI at work? Is it making your job easier, or harder?
-51. And subscribe to TechDecoded with Max for more tech, decoded.
+54. So, will AI replace software engineers? Not the ones who learn to work with it.
+55. But it is changing who gets hired, and what they're hired to do. And that change is happening right now, starting with the very first rung of the ladder.
+56. Tell me in the comments: do you use AI at work? Is it making your job easier, or harder?
+57. And subscribe to TechDecoded with Max for more tech, decoded.
 
 ---
 
@@ -100,5 +109,6 @@ VISUAL: Max and Bit side by side at one desk. Bit types, Max points at the scree
 | 27 | TCS: >12,000 job cuts (Jul 2025, AI-driven restructuring); FY26 net headcount −23,460 | same Business Standard article |
 | 28 | TCS ~25,000 fresher offers for FY27; Infosys ≥20,000 freshers FY27; AI/ML fresher hiring up | same Business Standard article · https://www.theregister.com/2026/01/19/hcl_infosys_tcs_wipro_results/ |
 | 31–35 | METR RCT, Jul 2025: 16 experienced OSS devs, 246 tasks; expected +24%, measured 19% slower, believed +20%; early-2025 tools | https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/ · https://arxiv.org/pdf/2507.09089 |
-| 42 | BLS: software developers +15.8% (≈16%) 2024–2034 | https://www.bls.gov/opub/ted/2026/artificial-intelligence-information-technology-and-employment-2024-34.htm |
+| 48 | BLS: software developers +15.8% (≈16%) 2024–2034 | https://www.bls.gov/opub/ted/2026/artificial-intelligence-information-technology-and-employment-2024-34.htm |
+| 36–41 | Veracode 2025 GenAI Code Security Report: 100+ LLMs, 80 tasks, 45% introduced a security flaw; insecure option chosen 45% of the time; no improvement with newer models (2026 edition: 44%) | https://www.veracode.com/press-release/ai-generated-code-poses-major-security-risks-in-nearly-half-of-all-development-tasks-veracode-research-reveals/ · https://www.techradar.com/pro/nearly-half-of-all-code-generated-by-ai-found-to-contain-security-flaws-even-big-llms-affected |
 Charts are illustrations of the cited figures; the "software jobs through the decades" line (14–15) is illustrative, not plotted data. Company names appear only in narration; visuals use neutral icons.
