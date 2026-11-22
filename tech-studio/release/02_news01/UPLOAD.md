@@ -10,7 +10,7 @@ Your AI agent sends money from your account — without asking. Who pays? Citi's
 
 Before you give any AI your bank login, ask: is it your bank's own tool, or someone else's?
 
-How AI agents get hijacked (full video): [EP01 LONG VIDEO LINK]
+How AI agents get hijacked (full video): https://youtu.be/yNgX0CM_-nA
 
 Sources:
 • TechCrunch, "More banks say customers using AI agents are on their own — even if they get hacked" (Nov 18, 2026): https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/

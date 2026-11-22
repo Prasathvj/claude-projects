@@ -13,7 +13,7 @@ Your AI agent just read a poisoned webpage. What happens next depends on five ha
 4. Treat unknown files and plugins like email attachments.
 5. Check what it hands you: a hijacked agent can just give you a poisoned link.
 
-How the hijack works (full video): [EP01 LONG VIDEO LINK]
+How the hijack works (full video): https://youtu.be/yNgX0CM_-nA
 
 Sources for the risk: OWASP LLM01:2025 Prompt Injection (https://genai.owasp.org/llmrisk/llm01/); UK NCSC, "Prompt injection is not SQL injection" (https://www.ncsc.gov.uk/blog-post/prompt-injection-is-not-sql-injection).
 The webpage, permissions screen, phone prompt, attachments and chat are illustrations; summary-viewer.example is not a real site.
