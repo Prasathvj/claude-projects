@@ -1,0 +1,18 @@
+{
+ "id": "tip01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "beats": [
+  {"text": "Your AI agent just read a poisoned webpage. What happens next depends on five habits.", "dir": "urgent, gripping hook"},
+  {"text": "Think of it as a brilliant intern who believes everything it reads.", "dir": "wry, knowing"},
+  {"text": "One: least privilege. If it only needs to read, don't let it send, pay or delete.", "dir": "crisp, practical"},
+  {"text": "Two: approve anything you can't undo. One tap can stop the whole attack.", "dir": "crisp, confident"},
+  {"text": "Three: keep browsing and work apart. The agent reading random sites shouldn't be logged into your email.", "dir": "clear, practical"},
+  {"text": "Four: treat unknown files and plugins like email attachments.", "dir": "quick"},
+  {"text": "Five: check what it hands you. A hijacked agent can just give you a poisoned link.", "dir": "pointed, slightly ominous"},
+  {"text": "Five habits. No new software. And an intern that can't hurt you.", "dir": "satisfying, warm payoff"}
+ ]
+}

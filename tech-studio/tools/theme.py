@@ -32,7 +32,9 @@ MAPS = {'cream': CREAM, 'grey': LIGHT, 'white': LIGHT, 'slate': SLATE, 'charcoal
 def name():
     return os.environ.get('THEME', 'dark')
 
-GRIDS = {  # background pattern variants (env GRID); 'lines' keeps the house grid
+GRIDS = {
+    'plus': ('background-image:url("data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%2764%27 height=%2764%27><path d=%27M32 23v18M23 32h18%27 stroke=%27%23E86E3C%27 stroke-opacity=%27.45%27 stroke-width=%273%27 stroke-linecap=%27round%27/></svg>"); '
+             'background-size:64px 64px;'),  # background pattern variants (env GRID); 'lines' keeps the house grid
     'dots': 'background-image:radial-gradient(rgba(232,110,60,.38) 2.5px, transparent 3px); background-size:48px 48px;',
     'blueprint': ('background-image:linear-gradient(rgba(232,110,60,.20) 2px, transparent 2px), linear-gradient(90deg, rgba(232,110,60,.20) 2px, transparent 2px), '
                   'linear-gradient(rgba(232,110,60,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(232,110,60,.08) 1px, transparent 1px); '

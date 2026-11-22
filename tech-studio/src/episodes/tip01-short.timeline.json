@@ -1,0 +1,633 @@
+{
+ "id": "tip01-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 37.087,
+ "vo": "tip01/tip01-short-vo.wav",
+ "music": "tip01/tip01-short-music.wav",
+ "beats": [
+  {
+   "text": "Your AI agent just read a poisoned webpage. What happens next depends on five habits.",
+   "dir": "urgent, gripping hook",
+   "start": 0.25,
+   "vo": 5.134,
+   "dur": 5.284,
+   "words": [
+    {
+     "w": "Your",
+     "s": -0.01,
+     "e": 0.27
+    },
+    {
+     "w": "AI",
+     "s": 0.27,
+     "e": 0.63
+    },
+    {
+     "w": "agent",
+     "s": 0.63,
+     "e": 1.06
+    },
+    {
+     "w": "just",
+     "s": 1.06,
+     "e": 1.29
+    },
+    {
+     "w": "read",
+     "s": 1.29,
+     "e": 1.42
+    },
+    {
+     "w": "a",
+     "s": 1.42,
+     "e": 1.48
+    },
+    {
+     "w": "poisoned",
+     "s": 1.48,
+     "e": 2.03
+    },
+    {
+     "w": "webpage.",
+     "s": 2.03,
+     "e": 2.66
+    },
+    {
+     "w": "What",
+     "s": 2.82,
+     "e": 2.94
+    },
+    {
+     "w": "happens",
+     "s": 2.94,
+     "e": 3.3
+    },
+    {
+     "w": "next",
+     "s": 3.3,
+     "e": 3.71
+    },
+    {
+     "w": "depends",
+     "s": 3.78,
+     "e": 4.13
+    },
+    {
+     "w": "on",
+     "s": 4.13,
+     "e": 4.35
+    },
+    {
+     "w": "five",
+     "s": 4.35,
+     "e": 4.65
+    },
+    {
+     "w": "habits.",
+     "s": 4.65,
+     "e": 5.11
+    }
+   ]
+  },
+  {
+   "text": "Think of it as a brilliant intern who believes everything it reads.",
+   "dir": "wry, knowing",
+   "start": 5.534,
+   "vo": 3.622,
+   "dur": 3.772,
+   "words": [
+    {
+     "w": "Think",
+     "s": 0.0,
+     "e": 0.16
+    },
+    {
+     "w": "of",
+     "s": 0.16,
+     "e": 0.22
+    },
+    {
+     "w": "it",
+     "s": 0.22,
+     "e": 0.35
+    },
+    {
+     "w": "as",
+     "s": 0.35,
+     "e": 0.5
+    },
+    {
+     "w": "a",
+     "s": 0.5,
+     "e": 0.6
+    },
+    {
+     "w": "brilliant",
+     "s": 0.6,
+     "e": 1.38
+    },
+    {
+     "w": "intern",
+     "s": 1.38,
+     "e": 1.92
+    },
+    {
+     "w": "who",
+     "s": 1.92,
+     "e": 2.07
+    },
+    {
+     "w": "believes",
+     "s": 2.07,
+     "e": 2.44
+    },
+    {
+     "w": "everything",
+     "s": 2.6,
+     "e": 3.14
+    },
+    {
+     "w": "it",
+     "s": 3.14,
+     "e": 3.26
+    },
+    {
+     "w": "reads.",
+     "s": 3.26,
+     "e": 3.6
+    }
+   ]
+  },
+  {
+   "text": "One: least privilege. If it only needs to read, don't let it send, pay or delete.",
+   "dir": "crisp, practical",
+   "start": 9.307,
+   "vo": 4.996,
+   "dur": 5.146,
+   "words": [
+    {
+     "w": "One:",
+     "s": 0.0,
+     "e": 0.36
+    },
+    {
+     "w": "least",
+     "s": 0.59,
+     "e": 1.01
+    },
+    {
+     "w": "privilege.",
+     "s": 1.01,
+     "e": 1.56
+    },
+    {
+     "w": "If",
+     "s": 1.75,
+     "e": 1.85
+    },
+    {
+     "w": "it",
+     "s": 1.85,
+     "e": 1.92
+    },
+    {
+     "w": "only",
+     "s": 1.92,
+     "e": 2.11
+    },
+    {
+     "w": "needs",
+     "s": 2.11,
+     "e": 2.37
+    },
+    {
+     "w": "to",
+     "s": 2.37,
+     "e": 2.44
+    },
+    {
+     "w": "read,",
+     "s": 2.44,
+     "e": 2.89
+    },
+    {
+     "w": "don't",
+     "s": 3.05,
+     "e": 3.23
+    },
+    {
+     "w": "let",
+     "s": 3.23,
+     "e": 3.36
+    },
+    {
+     "w": "it",
+     "s": 3.36,
+     "e": 3.49
+    },
+    {
+     "w": "send,",
+     "s": 3.49,
+     "e": 4.05
+    },
+    {
+     "w": "pay",
+     "s": 4.05,
+     "e": 4.42
+    },
+    {
+     "w": "or",
+     "s": 4.42,
+     "e": 4.57
+    },
+    {
+     "w": "delete.",
+     "s": 4.57,
+     "e": 4.97
+    }
+   ]
+  },
+  {
+   "text": "Two: approve anything you can't undo. One tap can stop the whole attack.",
+   "dir": "crisp, confident",
+   "start": 14.453,
+   "vo": 4.22,
+   "dur": 4.37,
+   "words": [
+    {
+     "w": "Two:",
+     "s": 0.01,
+     "e": 0.29
+    },
+    {
+     "w": "approve",
+     "s": 0.48,
+     "e": 0.78
+    },
+    {
+     "w": "anything",
+     "s": 0.99,
+     "e": 1.43
+    },
+    {
+     "w": "you",
+     "s": 1.43,
+     "e": 1.52
+    },
+    {
+     "w": "can't",
+     "s": 1.52,
+     "e": 1.78
+    },
+    {
+     "w": "undo.",
+     "s": 1.78,
+     "e": 2.13
+    },
+    {
+     "w": "One",
+     "s": 2.31,
+     "e": 2.59
+    },
+    {
+     "w": "tap",
+     "s": 2.59,
+     "e": 2.97
+    },
+    {
+     "w": "can",
+     "s": 2.97,
+     "e": 3.12
+    },
+    {
+     "w": "stop",
+     "s": 3.12,
+     "e": 3.39
+    },
+    {
+     "w": "the",
+     "s": 3.39,
+     "e": 3.45
+    },
+    {
+     "w": "whole",
+     "s": 3.45,
+     "e": 3.86
+    },
+    {
+     "w": "attack.",
+     "s": 3.86,
+     "e": 4.17
+    }
+   ]
+  },
+  {
+   "text": "Three: keep browsing and work apart. The agent reading random sites shouldn't be logged into your email.",
+   "dir": "clear, practical",
+   "start": 18.823,
+   "vo": 5.49,
+   "dur": 5.64,
+   "words": [
+    {
+     "w": "Three:",
+     "s": 0.0,
+     "e": 0.3
+    },
+    {
+     "w": "keep",
+     "s": 0.48,
+     "e": 0.68
+    },
+    {
+     "w": "browsing",
+     "s": 0.68,
+     "e": 1.24
+    },
+    {
+     "w": "and",
+     "s": 1.24,
+     "e": 1.42
+    },
+    {
+     "w": "work",
+     "s": 1.42,
+     "e": 1.74
+    },
+    {
+     "w": "apart.",
+     "s": 1.82,
+     "e": 2.28
+    },
+    {
+     "w": "The",
+     "s": 2.46,
+     "e": 2.69
+    },
+    {
+     "w": "agent",
+     "s": 2.69,
+     "e": 3.0
+    },
+    {
+     "w": "reading",
+     "s": 3.0,
+     "e": 3.36
+    },
+    {
+     "w": "random",
+     "s": 3.36,
+     "e": 3.68
+    },
+    {
+     "w": "sites",
+     "s": 3.68,
+     "e": 4.03
+    },
+    {
+     "w": "shouldn't",
+     "s": 4.1,
+     "e": 4.43
+    },
+    {
+     "w": "be",
+     "s": 4.43,
+     "e": 4.53
+    },
+    {
+     "w": "logged",
+     "s": 4.53,
+     "e": 4.84
+    },
+    {
+     "w": "into",
+     "s": 4.84,
+     "e": 4.99
+    },
+    {
+     "w": "your",
+     "s": 4.99,
+     "e": 5.13
+    },
+    {
+     "w": "email.",
+     "s": 5.25,
+     "e": 5.47
+    }
+   ]
+  },
+  {
+   "text": "Four: treat unknown files and plugins like email attachments.",
+   "dir": "quick",
+   "start": 24.463,
+   "vo": 3.436,
+   "dur": 3.586,
+   "words": [
+    {
+     "w": "Four:",
+     "s": 0.04,
+     "e": 0.28
+    },
+    {
+     "w": "treat",
+     "s": 0.28,
+     "e": 0.7
+    },
+    {
+     "w": "unknown",
+     "s": 0.7,
+     "e": 1.12
+    },
+    {
+     "w": "files",
+     "s": 1.12,
+     "e": 1.59
+    },
+    {
+     "w": "and",
+     "s": 1.59,
+     "e": 1.69
+    },
+    {
+     "w": "plugins",
+     "s": 1.69,
+     "e": 2.2
+    },
+    {
+     "w": "like",
+     "s": 2.2,
+     "e": 2.38
+    },
+    {
+     "w": "email",
+     "s": 2.59,
+     "e": 2.86
+    },
+    {
+     "w": "attachments.",
+     "s": 2.86,
+     "e": 3.41
+    }
+   ]
+  },
+  {
+   "text": "Five: check what it hands you. A hijacked agent can just give you a poisoned link.",
+   "dir": "pointed, slightly ominous",
+   "start": 28.049,
+   "vo": 4.124,
+   "dur": 4.274,
+   "words": [
+    {
+     "w": "Five:",
+     "s": 0.04,
+     "e": 0.25
+    },
+    {
+     "w": "check",
+     "s": 0.44,
+     "e": 0.76
+    },
+    {
+     "w": "what",
+     "s": 0.76,
+     "e": 0.88
+    },
+    {
+     "w": "it",
+     "s": 0.88,
+     "e": 0.96
+    },
+    {
+     "w": "hands",
+     "s": 0.96,
+     "e": 1.34
+    },
+    {
+     "w": "you.",
+     "s": 1.34,
+     "e": 1.51
+    },
+    {
+     "w": "A",
+     "s": 1.68,
+     "e": 1.71
+    },
+    {
+     "w": "hijacked",
+     "s": 1.71,
+     "e": 2.26
+    },
+    {
+     "w": "agent",
+     "s": 2.26,
+     "e": 2.58
+    },
+    {
+     "w": "can",
+     "s": 2.58,
+     "e": 2.72
+    },
+    {
+     "w": "just",
+     "s": 2.72,
+     "e": 2.9
+    },
+    {
+     "w": "give",
+     "s": 2.9,
+     "e": 3.21
+    },
+    {
+     "w": "you",
+     "s": 3.21,
+     "e": 3.39
+    },
+    {
+     "w": "a",
+     "s": 3.39,
+     "e": 3.42
+    },
+    {
+     "w": "poisoned",
+     "s": 3.42,
+     "e": 3.86
+    },
+    {
+     "w": "link.",
+     "s": 3.86,
+     "e": 4.1
+    }
+   ]
+  },
+  {
+   "text": "Five habits. No new software. And an intern that can't hurt you.",
+   "dir": "satisfying, warm payoff",
+   "start": 32.322,
+   "vo": 3.415,
+   "dur": 4.765,
+   "words": [
+    {
+     "w": "Five",
+     "s": 0.05,
+     "e": 0.21
+    },
+    {
+     "w": "habits.",
+     "s": 0.21,
+     "e": 0.66
+    },
+    {
+     "w": "No",
+     "s": 0.81,
+     "e": 1.05
+    },
+    {
+     "w": "new",
+     "s": 1.05,
+     "e": 1.3
+    },
+    {
+     "w": "software.",
+     "s": 1.3,
+     "e": 1.83
+    },
+    {
+     "w": "And",
+     "s": 1.83,
+     "e": 2.07
+    },
+    {
+     "w": "an",
+     "s": 2.07,
+     "e": 2.16
+    },
+    {
+     "w": "intern",
+     "s": 2.16,
+     "e": 2.62
+    },
+    {
+     "w": "that",
+     "s": 2.62,
+     "e": 2.73
+    },
+    {
+     "w": "can't",
+     "s": 2.73,
+     "e": 3.07
+    },
+    {
+     "w": "hurt",
+     "s": 3.07,
+     "e": 3.18
+    },
+    {
+     "w": "you.",
+     "s": 3.18,
+     "e": 3.27
+    }
+   ]
+  }
+ ]
+}
