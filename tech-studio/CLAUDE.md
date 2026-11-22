@@ -11,3 +11,8 @@ Format: tease Short (25-40 s) with a curiosity gap that points to the long video
 Every video: verify facts with sources first; no unverifiable numbers; label illustrative numbers; AI-narrator line in description; two upload packages (long + Short) with SEO from vidIQ keyword data.
 Reuse from /home/user/claude-projects/stickman-studio: Gemini TTS (stickgen/gtts.py), SFX synth (stickgen/stage.py), Drive asset workflow, watermark removal for Flow files.
 Rendering of Flow clips: delogo the sparkle (bottom-right) before use.
+STRICT SCRIPT RULES (owner, 2026-11-22), apply to every Short:
+1. Irresistible curiosity hook in the first 1-2 seconds. 2. Never open with greetings, intros, channel names or explanations.
+3. Create an unanswered question or mystery immediately. 4. Every sentence moves the story forward.
+5. Short, natural sentences that sound great narrated. 6. Include a surprising fact, unexpected comparison or concrete example.
+7. Keep curiosity alive throughout. 8. Give a satisfying mini-payoff; never empty clickbait.
