@@ -12,3 +12,4 @@ tech-studio/hf/*-short/maxframes/
 tech-studio/hf/*-short/.hyperframes/
 tech-studio/hf/*/maxframes/
 tech-studio/hf/*/render.log
+tech-studio/hf/*/.hyperframes/video-state.json
