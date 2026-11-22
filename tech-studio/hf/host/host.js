@@ -157,7 +157,16 @@
       <path d="M184 342 L180 412 M216 342 L220 412" stroke="${L.strings}" stroke-width="6" stroke-linecap="round"/>
       <rect x="152" y="440" width="96" height="40" rx="12" fill="${C.hoodS}"/>
       ${L.phones === 'neck' ? PHONES.neck(L) : ''}`;
-    return `<svg viewBox="0 0 400 520" width="${o.w ?? 400}" height="${o.h ?? 520}" style="overflow:visible">${body}${head}${arms(o.arms ?? 'down')}</svg>`;
+    // legs (jeans + sneakers) below the hoodie so Max never looks cut off at the waist; drawn past the viewBox (overflow visible)
+    const jean = o.jeans ?? '#3B4A63', jeanS = shade(jean, -0.25);
+    const legs = o.legs === false ? '' : `
+      <path d="M124 512 L198 512 L194 772 L144 772 Z" fill="${jean}"/><path d="M202 512 L276 512 L256 772 L206 772 Z" fill="${jean}"/>
+      <path d="M196 520 L198 700 M204 520 L202 700" stroke="${jeanS}" stroke-width="4" opacity=".5"/>
+      <path d="M150 560 L150 640 M250 560 L250 640" stroke="${jeanS}" stroke-width="3" opacity=".35"/>
+      <rect x="126" y="762" width="84" height="38" rx="18" fill="#F6EEE8"/><rect x="126" y="790" width="84" height="10" rx="5" fill="${C.hood}"/>
+      <rect x="194" y="762" width="84" height="38" rx="18" fill="#F6EEE8"/><rect x="194" y="790" width="84" height="10" rx="5" fill="${C.hood}"/>`;
+    const hem = o.legs === false ? '' : `<rect x="108" y="500" width="184" height="30" rx="12" fill="${C.hoodS}"/>`;
+    return `<svg viewBox="0 0 400 520" width="${o.w ?? 400}" height="${o.h ?? 520}" style="overflow:visible">${legs}${body}${hem}${head}${arms(o.arms ?? 'down')}</svg>`;
   }
 
   g.HOST = { render, C, HAIR, GLASSES };
