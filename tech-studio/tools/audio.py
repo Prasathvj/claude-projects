@@ -252,6 +252,13 @@ def kokoro_say(text, voice, speed=0.95):
     return p
 
 
+def vidiq_path(voice, text):
+    """Cache file for one vidIQ (ElevenLabs) voiceover line; filled by tools/vidiq_fetch.py."""
+    import hashlib
+    d = ROOT / ".cache" / "vidiq"; d.mkdir(parents=True, exist_ok=True)
+    return d / (hashlib.sha1(f"{voice}|{text}".encode()).hexdigest()[:16] + ".wav")
+
+
 def lock_model(ep):
     """One episode = one voice model. Never fall back to a different model mid-episode (mixed voices, 22 Nov)."""
     global MODELS
@@ -271,7 +278,12 @@ def episode(path):
     size = ep.get("batch", 8)  # batch 1 = one request per line (no batch-split errors, costs more quota)
     for i in range(0, len(lines), size):
         chunk = lines[i:i + size]
-        if ep.get("engine") == "kokoro":
+        if ep.get("engine") == "vidiq":
+            miss = [t for t, _ in chunk if not vidiq_path(ep["voice"], t).exists()]
+            if miss:
+                raise SystemExit(f"vidIQ voiceover missing for {len(miss)} line(s); generate with vidiq_voiceover_generate and run tools/vidiq_fetch.py")
+            takes += [vidiq_path(ep["voice"], t) for t, _ in chunk]
+        elif ep.get("engine") == "kokoro":
             takes += [kokoro_say(t, ep["voice"], ep.get("speed", 0.95)) for t, _ in chunk]
         elif size == 1:
             p, _ = gtts.say(chunk[0][0], chunk[0][1], voice=ep.get("voice", "Fenrir"), model=MODELS, profile=PROFILES[profile])

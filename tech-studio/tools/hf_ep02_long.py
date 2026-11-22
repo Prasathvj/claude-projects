@@ -6,7 +6,7 @@ Usage: THEME=cream GRID=blueprint python3 tools/hf_ep02_long.py"""
 import json, math, os, random, re, shutil, sys
 from pathlib import Path
 
-os.environ['EPID'] = 'ep02'
+os.environ.setdefault('EPID', 'ep02')
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import hf_ep01_long as B   # noqa: E402  (module globals now describe ep02)
 
@@ -179,7 +179,7 @@ def t_doc(i, sid, v):
     lines = ''.join(f'<div class="dl">{E(x)}</div>' for x in v['lines'])
     body = f'''<div class="card" id="{sid}-card" style="left:170px; top:60px; width:980px; transform:rotate(-1.5deg)">
 <div class="hd"><div class="tile">{icon("doc")}</div><div><div class="lab">{E(v['label'])}</div><div class="ttl">{E(v['title'])}</div></div></div>
-<div class="paper">{lines}<div class="hl" id="{sid}-hl"><i id="{sid}-mk"></i><span>{E(v['hi'])}</span></div><div class="stamp" id="{sid}-st">REPORTED</div></div></div>'''
+<div class="paper">{lines}<div class="hl" id="{sid}-hl"><i id="{sid}-mk"></i><span>{E(v['hi'])}</span></div><div class="stamp" id="{sid}-st">{E(v.get('stamp', 'REPORTED'))}</div></div></div>'''
     css = """.paper { background:#FFFFFF; border-radius:20px; padding:34px 44px; min-height:380px; position:relative; }
 .dl { font:500 32px 'SD Text'; color:#9A8576; margin:10px 0; } .hl { position:relative; margin-top:40px; font:800 50px 'SD Display'; color:#1E120C; }
 .hl i { position:absolute; left:-12px; right:-12px; top:6px; bottom:-4px; background:#FFD166; border-radius:8px; transform:scaleX(0); transform-origin:left; } .hl span { position:relative; }

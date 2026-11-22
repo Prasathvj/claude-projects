@@ -1,0 +1,4462 @@
+{
+ "id": "ep03-long",
+ "format": "horizontal",
+ "captions": "big",
+ "fps": 30,
+ "duration": 309.994,
+ "vo": "ep03/ep03-long-vo.wav",
+ "music": "ep03/ep03-long-music.wav",
+ "beats": [
+  {
+   "text": "For years, AI could only recommend what to buy. Now, AI agents are being handed something much more dangerous: your wallet.",
+   "dir": "intriguing hook, a little ominous",
+   "chapter": "Your wallet, handed over",
+   "start": 0.25,
+   "vo": 9.169,
+   "dur": 9.469,
+   "words": [
+    {
+     "w": "For",
+     "s": 0.05,
+     "e": 0.21
+    },
+    {
+     "w": "years,",
+     "s": 0.21,
+     "e": 0.92
+    },
+    {
+     "w": "AI",
+     "s": 1.09,
+     "e": 1.46
+    },
+    {
+     "w": "could",
+     "s": 1.46,
+     "e": 1.64
+    },
+    {
+     "w": "only",
+     "s": 1.64,
+     "e": 2.02
+    },
+    {
+     "w": "recommend",
+     "s": 2.02,
+     "e": 2.57
+    },
+    {
+     "w": "what",
+     "s": 2.57,
+     "e": 2.78
+    },
+    {
+     "w": "to",
+     "s": 2.78,
+     "e": 2.89
+    },
+    {
+     "w": "buy.",
+     "s": 2.89,
+     "e": 3.35
+    },
+    {
+     "w": "Now,",
+     "s": 3.84,
+     "e": 4.25
+    },
+    {
+     "w": "AI",
+     "s": 4.61,
+     "e": 4.97
+    },
+    {
+     "w": "agents",
+     "s": 4.97,
+     "e": 5.37
+    },
+    {
+     "w": "are",
+     "s": 5.37,
+     "e": 5.44
+    },
+    {
+     "w": "being",
+     "s": 5.44,
+     "e": 5.71
+    },
+    {
+     "w": "handed",
+     "s": 5.71,
+     "e": 6.06
+    },
+    {
+     "w": "something",
+     "s": 6.06,
+     "e": 6.51
+    },
+    {
+     "w": "much",
+     "s": 6.51,
+     "e": 6.93
+    },
+    {
+     "w": "more",
+     "s": 6.93,
+     "e": 7.14
+    },
+    {
+     "w": "dangerous:",
+     "s": 7.14,
+     "e": 7.85
+    },
+    {
+     "w": "your",
+     "s": 8.29,
+     "e": 8.46
+    },
+    {
+     "w": "wallet.",
+     "s": 8.46,
+     "e": 9.05
+    }
+   ]
+  },
+  {
+   "text": "Major tech platforms are rolling out AI shopping agents that can browse stores, fill out your address, and actually complete the checkout for you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 9.719,
+   "vo": 8.359,
+   "dur": 8.659,
+   "words": [
+    {
+     "w": "Major",
+     "s": 0.08,
+     "e": 0.44
+    },
+    {
+     "w": "tech",
+     "s": 0.44,
+     "e": 0.71
+    },
+    {
+     "w": "platforms",
+     "s": 0.71,
+     "e": 1.34
+    },
+    {
+     "w": "are",
+     "s": 1.34,
+     "e": 1.4
+    },
+    {
+     "w": "rolling",
+     "s": 1.4,
+     "e": 1.8
+    },
+    {
+     "w": "out",
+     "s": 1.8,
+     "e": 2.04
+    },
+    {
+     "w": "AI",
+     "s": 2.04,
+     "e": 2.39
+    },
+    {
+     "w": "shopping",
+     "s": 2.39,
+     "e": 2.91
+    },
+    {
+     "w": "agents",
+     "s": 2.91,
+     "e": 3.33
+    },
+    {
+     "w": "that",
+     "s": 3.33,
+     "e": 3.47
+    },
+    {
+     "w": "can",
+     "s": 3.47,
+     "e": 3.64
+    },
+    {
+     "w": "browse",
+     "s": 3.64,
+     "e": 3.98
+    },
+    {
+     "w": "stores,",
+     "s": 3.98,
+     "e": 4.59
+    },
+    {
+     "w": "fill",
+     "s": 4.74,
+     "e": 5.02
+    },
+    {
+     "w": "out",
+     "s": 5.02,
+     "e": 5.14
+    },
+    {
+     "w": "your",
+     "s": 5.14,
+     "e": 5.32
+    },
+    {
+     "w": "address,",
+     "s": 5.32,
+     "e": 5.75
+    },
+    {
+     "w": "and",
+     "s": 5.75,
+     "e": 6.08
+    },
+    {
+     "w": "actually",
+     "s": 6.08,
+     "e": 6.66
+    },
+    {
+     "w": "complete",
+     "s": 6.66,
+     "e": 7.15
+    },
+    {
+     "w": "the",
+     "s": 7.15,
+     "e": 7.26
+    },
+    {
+     "w": "checkout",
+     "s": 7.26,
+     "e": 7.71
+    },
+    {
+     "w": "for",
+     "s": 7.71,
+     "e": 7.97
+    },
+    {
+     "w": "you.",
+     "s": 7.97,
+     "e": 8.15
+    }
+   ]
+  },
+  {
+   "text": "It sounds like the ultimate convenience, until you realize what happens when an AI makes a mistake, or worse, gets tricked at the checkout screen.",
+   "dir": "building tension",
+   "start": 18.378,
+   "vo": 9.169,
+   "dur": 9.469,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.02,
+     "e": 0.17
+    },
+    {
+     "w": "sounds",
+     "s": 0.17,
+     "e": 0.51
+    },
+    {
+     "w": "like",
+     "s": 0.51,
+     "e": 0.68
+    },
+    {
+     "w": "the",
+     "s": 0.68,
+     "e": 0.84
+    },
+    {
+     "w": "ultimate",
+     "s": 0.95,
+     "e": 1.39
+    },
+    {
+     "w": "convenience,",
+     "s": 1.39,
+     "e": 2.3
+    },
+    {
+     "w": "until",
+     "s": 2.62,
+     "e": 3.07
+    },
+    {
+     "w": "you",
+     "s": 3.07,
+     "e": 3.24
+    },
+    {
+     "w": "realize",
+     "s": 3.24,
+     "e": 3.72
+    },
+    {
+     "w": "what",
+     "s": 3.72,
+     "e": 3.86
+    },
+    {
+     "w": "happens",
+     "s": 3.86,
+     "e": 4.37
+    },
+    {
+     "w": "when",
+     "s": 4.37,
+     "e": 4.53
+    },
+    {
+     "w": "an",
+     "s": 4.53,
+     "e": 4.62
+    },
+    {
+     "w": "AI",
+     "s": 4.62,
+     "e": 5.04
+    },
+    {
+     "w": "makes",
+     "s": 5.04,
+     "e": 5.33
+    },
+    {
+     "w": "a",
+     "s": 5.33,
+     "e": 5.36
+    },
+    {
+     "w": "mistake,",
+     "s": 5.36,
+     "e": 6.04
+    },
+    {
+     "w": "or",
+     "s": 6.27,
+     "e": 6.41
+    },
+    {
+     "w": "worse,",
+     "s": 6.41,
+     "e": 7.0
+    },
+    {
+     "w": "gets",
+     "s": 7.25,
+     "e": 7.49
+    },
+    {
+     "w": "tricked",
+     "s": 7.49,
+     "e": 7.97
+    },
+    {
+     "w": "at",
+     "s": 7.97,
+     "e": 8.06
+    },
+    {
+     "w": "the",
+     "s": 8.06,
+     "e": 8.14
+    },
+    {
+     "w": "checkout",
+     "s": 8.14,
+     "e": 8.58
+    },
+    {
+     "w": "screen.",
+     "s": 8.58,
+     "e": 8.99
+    }
+   ]
+  },
+  {
+   "text": "Here is how AI payments actually work, the three ways they can go horribly wrong, and the simple rules you need before you ever let an AI spend a single dollar.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 27.847,
+   "vo": 10.109,
+   "dur": 10.409,
+   "words": [
+    {
+     "w": "Here",
+     "s": 0.04,
+     "e": 0.32
+    },
+    {
+     "w": "is",
+     "s": 0.32,
+     "e": 0.45
+    },
+    {
+     "w": "how",
+     "s": 0.45,
+     "e": 0.68
+    },
+    {
+     "w": "AI",
+     "s": 0.68,
+     "e": 1.04
+    },
+    {
+     "w": "payments",
+     "s": 1.04,
+     "e": 1.5
+    },
+    {
+     "w": "actually",
+     "s": 1.5,
+     "e": 2.11
+    },
+    {
+     "w": "work,",
+     "s": 2.11,
+     "e": 2.55
+    },
+    {
+     "w": "the",
+     "s": 2.93,
+     "e": 3.03
+    },
+    {
+     "w": "three",
+     "s": 3.03,
+     "e": 3.33
+    },
+    {
+     "w": "ways",
+     "s": 3.33,
+     "e": 3.67
+    },
+    {
+     "w": "they",
+     "s": 3.67,
+     "e": 3.78
+    },
+    {
+     "w": "can",
+     "s": 3.78,
+     "e": 3.95
+    },
+    {
+     "w": "go",
+     "s": 3.95,
+     "e": 4.12
+    },
+    {
+     "w": "horribly",
+     "s": 4.12,
+     "e": 4.74
+    },
+    {
+     "w": "wrong,",
+     "s": 4.74,
+     "e": 5.18
+    },
+    {
+     "w": "and",
+     "s": 5.54,
+     "e": 5.67
+    },
+    {
+     "w": "the",
+     "s": 5.67,
+     "e": 5.73
+    },
+    {
+     "w": "simple",
+     "s": 5.73,
+     "e": 6.19
+    },
+    {
+     "w": "rules",
+     "s": 6.19,
+     "e": 6.53
+    },
+    {
+     "w": "you",
+     "s": 6.53,
+     "e": 6.64
+    },
+    {
+     "w": "need",
+     "s": 6.64,
+     "e": 6.92
+    },
+    {
+     "w": "before",
+     "s": 6.92,
+     "e": 7.25
+    },
+    {
+     "w": "you",
+     "s": 7.25,
+     "e": 7.44
+    },
+    {
+     "w": "ever",
+     "s": 7.54,
+     "e": 7.83
+    },
+    {
+     "w": "let",
+     "s": 7.83,
+     "e": 8.06
+    },
+    {
+     "w": "an",
+     "s": 8.06,
+     "e": 8.17
+    },
+    {
+     "w": "AI",
+     "s": 8.17,
+     "e": 8.54
+    },
+    {
+     "w": "spend",
+     "s": 8.54,
+     "e": 8.95
+    },
+    {
+     "w": "a",
+     "s": 8.95,
+     "e": 8.98
+    },
+    {
+     "w": "single",
+     "s": 8.98,
+     "e": 9.52
+    },
+    {
+     "w": "dollar.",
+     "s": 9.52,
+     "e": 10.02
+    }
+   ]
+  },
+  {
+   "text": "To understand the risk, look at how fast AI is changing.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "From chatbots to AI shoppers",
+   "start": 38.257,
+   "vo": 3.971,
+   "dur": 4.271,
+   "words": [
+    {
+     "w": "To",
+     "s": 0.06,
+     "e": 0.2
+    },
+    {
+     "w": "understand",
+     "s": 0.2,
+     "e": 0.76
+    },
+    {
+     "w": "the",
+     "s": 0.76,
+     "e": 0.82
+    },
+    {
+     "w": "risk,",
+     "s": 0.82,
+     "e": 1.4
+    },
+    {
+     "w": "look",
+     "s": 1.65,
+     "e": 1.9
+    },
+    {
+     "w": "at",
+     "s": 1.9,
+     "e": 1.96
+    },
+    {
+     "w": "how",
+     "s": 1.96,
+     "e": 2.13
+    },
+    {
+     "w": "fast",
+     "s": 2.13,
+     "e": 2.73
+    },
+    {
+     "w": "AI",
+     "s": 2.73,
+     "e": 3.09
+    },
+    {
+     "w": "is",
+     "s": 3.09,
+     "e": 3.25
+    },
+    {
+     "w": "changing.",
+     "s": 3.25,
+     "e": 3.85
+    }
+   ]
+  },
+  {
+   "text": "A regular chatbot just gives you links. You are still the one typing in your card number and clicking \"Place Order.\"",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 42.527,
+   "vo": 6.844,
+   "dur": 7.144,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.1,
+     "e": 0.15
+    },
+    {
+     "w": "regular",
+     "s": 0.15,
+     "e": 0.63
+    },
+    {
+     "w": "chatbot",
+     "s": 0.63,
+     "e": 0.68
+    },
+    {
+     "w": "just",
+     "s": 0.63,
+     "e": 0.91
+    },
+    {
+     "w": "gives",
+     "s": 1.14,
+     "e": 1.47
+    },
+    {
+     "w": "you",
+     "s": 1.5,
+     "e": 1.8
+    },
+    {
+     "w": "links.",
+     "s": 1.8,
+     "e": 2.37
+    },
+    {
+     "w": "You",
+     "s": 2.69,
+     "e": 2.99
+    },
+    {
+     "w": "are",
+     "s": 2.99,
+     "e": 3.09
+    },
+    {
+     "w": "still",
+     "s": 3.09,
+     "e": 3.49
+    },
+    {
+     "w": "the",
+     "s": 3.49,
+     "e": 3.56
+    },
+    {
+     "w": "one",
+     "s": 3.56,
+     "e": 3.84
+    },
+    {
+     "w": "typing",
+     "s": 3.84,
+     "e": 4.23
+    },
+    {
+     "w": "in",
+     "s": 4.23,
+     "e": 4.3
+    },
+    {
+     "w": "your",
+     "s": 4.3,
+     "e": 4.42
+    },
+    {
+     "w": "card",
+     "s": 4.42,
+     "e": 4.76
+    },
+    {
+     "w": "number",
+     "s": 4.76,
+     "e": 5.15
+    },
+    {
+     "w": "and",
+     "s": 5.15,
+     "e": 5.32
+    },
+    {
+     "w": "clicking",
+     "s": 5.32,
+     "e": 5.82
+    },
+    {
+     "w": "\"Place",
+     "s": 5.82,
+     "e": 6.21
+    },
+    {
+     "w": "Order.\"",
+     "s": 6.21,
+     "e": 6.73
+    }
+   ]
+  },
+  {
+   "text": "With agentic commerce, the AI doesn't stop at advice. It connects to a digital wallet or a payment token, navigates the store itself, and finishes the transaction on your behalf. You don't even have to open the website.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 49.671,
+   "vo": 12.931,
+   "dur": 13.231,
+   "words": [
+    {
+     "w": "With",
+     "s": 0.09,
+     "e": 0.64
+    },
+    {
+     "w": "agentic",
+     "s": 0.64,
+     "e": 0.69
+    },
+    {
+     "w": "commerce,",
+     "s": 0.64,
+     "e": 1.34
+    },
+    {
+     "w": "the",
+     "s": 1.34,
+     "e": 1.66
+    },
+    {
+     "w": "AI",
+     "s": 1.66,
+     "e": 1.97
+    },
+    {
+     "w": "doesn't",
+     "s": 1.97,
+     "e": 2.36
+    },
+    {
+     "w": "stop",
+     "s": 2.36,
+     "e": 2.77
+    },
+    {
+     "w": "at",
+     "s": 2.77,
+     "e": 2.86
+    },
+    {
+     "w": "advice.",
+     "s": 2.86,
+     "e": 3.48
+    },
+    {
+     "w": "It",
+     "s": 3.86,
+     "e": 3.97
+    },
+    {
+     "w": "connects",
+     "s": 3.97,
+     "e": 4.34
+    },
+    {
+     "w": "to",
+     "s": 4.34,
+     "e": 4.48
+    },
+    {
+     "w": "a",
+     "s": 4.48,
+     "e": 4.53
+    },
+    {
+     "w": "digital",
+     "s": 4.53,
+     "e": 4.97
+    },
+    {
+     "w": "wallet",
+     "s": 4.97,
+     "e": 5.39
+    },
+    {
+     "w": "or",
+     "s": 5.39,
+     "e": 5.58
+    },
+    {
+     "w": "a",
+     "s": 5.58,
+     "e": 5.61
+    },
+    {
+     "w": "payment",
+     "s": 5.61,
+     "e": 6.02
+    },
+    {
+     "w": "token,",
+     "s": 6.02,
+     "e": 6.48
+    },
+    {
+     "w": "navigates",
+     "s": 6.79,
+     "e": 7.33
+    },
+    {
+     "w": "the",
+     "s": 7.33,
+     "e": 7.41
+    },
+    {
+     "w": "store",
+     "s": 7.41,
+     "e": 7.7
+    },
+    {
+     "w": "itself,",
+     "s": 7.7,
+     "e": 8.26
+    },
+    {
+     "w": "and",
+     "s": 8.35,
+     "e": 8.49
+    },
+    {
+     "w": "finishes",
+     "s": 8.49,
+     "e": 9.01
+    },
+    {
+     "w": "the",
+     "s": 9.01,
+     "e": 9.11
+    },
+    {
+     "w": "transaction",
+     "s": 9.11,
+     "e": 9.79
+    },
+    {
+     "w": "on",
+     "s": 9.79,
+     "e": 9.98
+    },
+    {
+     "w": "your",
+     "s": 9.98,
+     "e": 10.16
+    },
+    {
+     "w": "behalf.",
+     "s": 10.16,
+     "e": 10.71
+    },
+    {
+     "w": "You",
+     "s": 11.05,
+     "e": 11.18
+    },
+    {
+     "w": "don't",
+     "s": 11.18,
+     "e": 11.31
+    },
+    {
+     "w": "even",
+     "s": 11.31,
+     "e": 11.48
+    },
+    {
+     "w": "have",
+     "s": 11.48,
+     "e": 11.66
+    },
+    {
+     "w": "to",
+     "s": 11.66,
+     "e": 11.74
+    },
+    {
+     "w": "open",
+     "s": 11.74,
+     "e": 12.04
+    },
+    {
+     "w": "the",
+     "s": 12.04,
+     "e": 12.11
+    },
+    {
+     "w": "website.",
+     "s": 12.11,
+     "e": 12.68
+    }
+   ]
+  },
+  {
+   "text": "And for simple, boring tasks, like reordering toothpaste or booking a routine train ticket, it feels like magic.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 62.902,
+   "vo": 7.549,
+   "dur": 7.849,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.09,
+     "e": 0.22
+    },
+    {
+     "w": "for",
+     "s": 0.22,
+     "e": 0.36
+    },
+    {
+     "w": "simple,",
+     "s": 0.36,
+     "e": 0.98
+    },
+    {
+     "w": "boring",
+     "s": 0.98,
+     "e": 1.56
+    },
+    {
+     "w": "tasks,",
+     "s": 1.56,
+     "e": 2.19
+    },
+    {
+     "w": "like",
+     "s": 2.19,
+     "e": 2.54
+    },
+    {
+     "w": "reordering",
+     "s": 2.54,
+     "e": 3.12
+    },
+    {
+     "w": "toothpaste",
+     "s": 3.12,
+     "e": 3.89
+    },
+    {
+     "w": "or",
+     "s": 3.89,
+     "e": 4.07
+    },
+    {
+     "w": "booking",
+     "s": 4.07,
+     "e": 4.47
+    },
+    {
+     "w": "a",
+     "s": 4.47,
+     "e": 4.5
+    },
+    {
+     "w": "routine",
+     "s": 4.5,
+     "e": 4.96
+    },
+    {
+     "w": "train",
+     "s": 4.96,
+     "e": 5.28
+    },
+    {
+     "w": "ticket,",
+     "s": 5.28,
+     "e": 5.71
+    },
+    {
+     "w": "it",
+     "s": 6.04,
+     "e": 6.15
+    },
+    {
+     "w": "feels",
+     "s": 6.15,
+     "e": 6.56
+    },
+    {
+     "w": "like",
+     "s": 6.56,
+     "e": 6.72
+    },
+    {
+     "w": "magic.",
+     "s": 6.72,
+     "e": 7.39
+    }
+   ]
+  },
+  {
+   "text": "The problem? You're handing real money to software that still doesn't think like a human.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 70.751,
+   "vo": 5.486,
+   "dur": 5.786,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.07,
+     "e": 0.2
+    },
+    {
+     "w": "problem?",
+     "s": 0.2,
+     "e": 0.73
+    },
+    {
+     "w": "You're",
+     "s": 1.21,
+     "e": 1.34
+    },
+    {
+     "w": "handing",
+     "s": 1.34,
+     "e": 1.88
+    },
+    {
+     "w": "real",
+     "s": 1.88,
+     "e": 2.14
+    },
+    {
+     "w": "money",
+     "s": 2.14,
+     "e": 2.54
+    },
+    {
+     "w": "to",
+     "s": 2.54,
+     "e": 2.68
+    },
+    {
+     "w": "software",
+     "s": 2.68,
+     "e": 3.23
+    },
+    {
+     "w": "that",
+     "s": 3.23,
+     "e": 3.41
+    },
+    {
+     "w": "still",
+     "s": 3.41,
+     "e": 3.86
+    },
+    {
+     "w": "doesn't",
+     "s": 3.86,
+     "e": 4.19
+    },
+    {
+     "w": "think",
+     "s": 4.19,
+     "e": 4.55
+    },
+    {
+     "w": "like",
+     "s": 4.55,
+     "e": 4.75
+    },
+    {
+     "w": "a",
+     "s": 4.75,
+     "e": 4.78
+    },
+    {
+     "w": "human.",
+     "s": 4.78,
+     "e": 5.23
+    }
+   ]
+  },
+  {
+   "text": "The first danger isn't even a hacker. It's just the AI being confidently wrong.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "Risk 1: the hallucination tax",
+   "start": 76.537,
+   "vo": 5.329,
+   "dur": 5.629,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.08,
+     "e": 0.15
+    },
+    {
+     "w": "first",
+     "s": 0.15,
+     "e": 0.53
+    },
+    {
+     "w": "danger",
+     "s": 0.53,
+     "e": 0.96
+    },
+    {
+     "w": "isn't",
+     "s": 0.96,
+     "e": 1.24
+    },
+    {
+     "w": "even",
+     "s": 1.24,
+     "e": 1.44
+    },
+    {
+     "w": "a",
+     "s": 1.44,
+     "e": 1.48
+    },
+    {
+     "w": "hacker.",
+     "s": 1.48,
+     "e": 2.15
+    },
+    {
+     "w": "It's",
+     "s": 2.46,
+     "e": 2.67
+    },
+    {
+     "w": "just",
+     "s": 2.67,
+     "e": 2.89
+    },
+    {
+     "w": "the",
+     "s": 2.89,
+     "e": 3.11
+    },
+    {
+     "w": "AI",
+     "s": 3.11,
+     "e": 3.59
+    },
+    {
+     "w": "being",
+     "s": 3.59,
+     "e": 3.9
+    },
+    {
+     "w": "confidently",
+     "s": 3.9,
+     "e": 4.61
+    },
+    {
+     "w": "wrong.",
+     "s": 4.61,
+     "e": 5.17
+    }
+   ]
+  },
+  {
+   "text": "We already know AI models sometimes hallucinate facts. When an AI hallucinates in a chat, you just roll your eyes and move on. When an AI hallucinates at checkout, it costs you real money.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 82.166,
+   "vo": 12.199,
+   "dur": 12.499,
+   "words": [
+    {
+     "w": "We",
+     "s": 0.06,
+     "e": 0.2
+    },
+    {
+     "w": "already",
+     "s": 0.2,
+     "e": 0.55
+    },
+    {
+     "w": "know",
+     "s": 0.55,
+     "e": 0.91
+    },
+    {
+     "w": "AI",
+     "s": 0.91,
+     "e": 1.25
+    },
+    {
+     "w": "models",
+     "s": 1.25,
+     "e": 1.66
+    },
+    {
+     "w": "sometimes",
+     "s": 1.66,
+     "e": 2.3
+    },
+    {
+     "w": "hallucinate",
+     "s": 2.3,
+     "e": 2.91
+    },
+    {
+     "w": "facts.",
+     "s": 2.91,
+     "e": 3.54
+    },
+    {
+     "w": "When",
+     "s": 3.94,
+     "e": 4.1
+    },
+    {
+     "w": "an",
+     "s": 4.1,
+     "e": 4.22
+    },
+    {
+     "w": "AI",
+     "s": 4.22,
+     "e": 4.6
+    },
+    {
+     "w": "hallucinates",
+     "s": 4.6,
+     "e": 5.27
+    },
+    {
+     "w": "in",
+     "s": 5.27,
+     "e": 5.36
+    },
+    {
+     "w": "a",
+     "s": 5.36,
+     "e": 5.41
+    },
+    {
+     "w": "chat,",
+     "s": 5.41,
+     "e": 5.92
+    },
+    {
+     "w": "you",
+     "s": 6.14,
+     "e": 6.28
+    },
+    {
+     "w": "just",
+     "s": 6.28,
+     "e": 6.53
+    },
+    {
+     "w": "roll",
+     "s": 6.53,
+     "e": 6.79
+    },
+    {
+     "w": "your",
+     "s": 6.79,
+     "e": 6.98
+    },
+    {
+     "w": "eyes",
+     "s": 6.98,
+     "e": 7.25
+    },
+    {
+     "w": "and",
+     "s": 7.25,
+     "e": 7.34
+    },
+    {
+     "w": "move",
+     "s": 7.34,
+     "e": 7.55
+    },
+    {
+     "w": "on.",
+     "s": 7.55,
+     "e": 7.78
+    },
+    {
+     "w": "When",
+     "s": 8.36,
+     "e": 8.5
+    },
+    {
+     "w": "an",
+     "s": 8.5,
+     "e": 8.61
+    },
+    {
+     "w": "AI",
+     "s": 8.61,
+     "e": 9.0
+    },
+    {
+     "w": "hallucinates",
+     "s": 9.0,
+     "e": 9.67
+    },
+    {
+     "w": "at",
+     "s": 9.67,
+     "e": 9.77
+    },
+    {
+     "w": "checkout,",
+     "s": 9.77,
+     "e": 10.36
+    },
+    {
+     "w": "it",
+     "s": 10.62,
+     "e": 10.75
+    },
+    {
+     "w": "costs",
+     "s": 10.75,
+     "e": 11.12
+    },
+    {
+     "w": "you",
+     "s": 11.12,
+     "e": 11.25
+    },
+    {
+     "w": "real",
+     "s": 11.25,
+     "e": 11.62
+    },
+    {
+     "w": "money.",
+     "s": 11.62,
+     "e": 12.01
+    }
+   ]
+  },
+  {
+   "text": "It might misread a currency symbol, book a non-refundable flight for the wrong Tuesday, or accidentally sign you up for an annual subscription hidden behind a \"free trial\" button.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 94.665,
+   "vo": 10.527,
+   "dur": 10.827,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.05,
+     "e": 0.19
+    },
+    {
+     "w": "might",
+     "s": 0.19,
+     "e": 0.42
+    },
+    {
+     "w": "misread",
+     "s": 0.42,
+     "e": 0.88
+    },
+    {
+     "w": "a",
+     "s": 0.88,
+     "e": 0.93
+    },
+    {
+     "w": "currency",
+     "s": 0.93,
+     "e": 1.44
+    },
+    {
+     "w": "symbol,",
+     "s": 1.44,
+     "e": 2.02
+    },
+    {
+     "w": "book",
+     "s": 2.17,
+     "e": 2.45
+    },
+    {
+     "w": "a",
+     "s": 2.45,
+     "e": 2.5
+    },
+    {
+     "w": "non-refundable",
+     "s": 2.5,
+     "e": 3.29
+    },
+    {
+     "w": "flight",
+     "s": 3.29,
+     "e": 3.64
+    },
+    {
+     "w": "for",
+     "s": 3.64,
+     "e": 3.75
+    },
+    {
+     "w": "the",
+     "s": 3.75,
+     "e": 3.84
+    },
+    {
+     "w": "wrong",
+     "s": 3.84,
+     "e": 4.12
+    },
+    {
+     "w": "Tuesday,",
+     "s": 4.12,
+     "e": 4.79
+    },
+    {
+     "w": "or",
+     "s": 5.14,
+     "e": 5.49
+    },
+    {
+     "w": "accidentally",
+     "s": 5.49,
+     "e": 6.17
+    },
+    {
+     "w": "sign",
+     "s": 6.17,
+     "e": 6.47
+    },
+    {
+     "w": "you",
+     "s": 6.47,
+     "e": 6.63
+    },
+    {
+     "w": "up",
+     "s": 6.63,
+     "e": 6.75
+    },
+    {
+     "w": "for",
+     "s": 6.75,
+     "e": 6.92
+    },
+    {
+     "w": "an",
+     "s": 6.92,
+     "e": 7.01
+    },
+    {
+     "w": "annual",
+     "s": 7.01,
+     "e": 7.43
+    },
+    {
+     "w": "subscription",
+     "s": 7.43,
+     "e": 8.16
+    },
+    {
+     "w": "hidden",
+     "s": 8.16,
+     "e": 8.45
+    },
+    {
+     "w": "behind",
+     "s": 8.45,
+     "e": 8.83
+    },
+    {
+     "w": "a",
+     "s": 8.83,
+     "e": 8.99
+    },
+    {
+     "w": "\"free",
+     "s": 8.99,
+     "e": 9.41
+    },
+    {
+     "w": "trial\"",
+     "s": 9.41,
+     "e": 9.95
+    },
+    {
+     "w": "button.",
+     "s": 9.95,
+     "e": 10.34
+    }
+   ]
+  },
+  {
+   "text": "Humans have spent years learning to spot shady checkout tricks: pre-checked add-ons, fake countdown timers, and sneaky shipping fees.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 105.492,
+   "vo": 8.594,
+   "dur": 8.894,
+   "words": [
+    {
+     "w": "Humans",
+     "s": 0.05,
+     "e": 0.45
+    },
+    {
+     "w": "have",
+     "s": 0.45,
+     "e": 0.55
+    },
+    {
+     "w": "spent",
+     "s": 0.55,
+     "e": 0.89
+    },
+    {
+     "w": "years",
+     "s": 0.89,
+     "e": 1.51
+    },
+    {
+     "w": "learning",
+     "s": 1.51,
+     "e": 1.78
+    },
+    {
+     "w": "to",
+     "s": 1.78,
+     "e": 1.9
+    },
+    {
+     "w": "spot",
+     "s": 1.9,
+     "e": 2.23
+    },
+    {
+     "w": "shady",
+     "s": 2.23,
+     "e": 2.66
+    },
+    {
+     "w": "checkout",
+     "s": 2.66,
+     "e": 3.11
+    },
+    {
+     "w": "tricks:",
+     "s": 3.11,
+     "e": 3.62
+    },
+    {
+     "w": "pre-checked",
+     "s": 3.62,
+     "e": 4.07
+    },
+    {
+     "w": "add-ons,",
+     "s": 4.07,
+     "e": 4.12
+    },
+    {
+     "w": "fake",
+     "s": 4.07,
+     "e": 4.25
+    },
+    {
+     "w": "countdown",
+     "s": 4.25,
+     "e": 4.8
+    },
+    {
+     "w": "timers,",
+     "s": 4.8,
+     "e": 5.35
+    },
+    {
+     "w": "and",
+     "s": 5.78,
+     "e": 7.03
+    },
+    {
+     "w": "sneaky",
+     "s": 7.06,
+     "e": 7.57
+    },
+    {
+     "w": "shipping",
+     "s": 7.57,
+     "e": 7.97
+    },
+    {
+     "w": "fees.",
+     "s": 7.97,
+     "e": 8.45
+    }
+   ]
+  },
+  {
+   "text": "AI agents don't have that street smarts. They're built to complete your goal as fast as possible, which means they can walk straight into every dark pattern on the internet.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 114.387,
+   "vo": 9.796,
+   "dur": 10.096,
+   "words": [
+    {
+     "w": "AI",
+     "s": 0.07,
+     "e": 0.42
+    },
+    {
+     "w": "agents",
+     "s": 0.42,
+     "e": 0.95
+    },
+    {
+     "w": "don't",
+     "s": 0.95,
+     "e": 1.19
+    },
+    {
+     "w": "have",
+     "s": 1.19,
+     "e": 1.55
+    },
+    {
+     "w": "that",
+     "s": 1.55,
+     "e": 1.72
+    },
+    {
+     "w": "street",
+     "s": 1.72,
+     "e": 2.04
+    },
+    {
+     "w": "smarts.",
+     "s": 2.04,
+     "e": 2.6
+    },
+    {
+     "w": "They're",
+     "s": 2.92,
+     "e": 3.05
+    },
+    {
+     "w": "built",
+     "s": 3.05,
+     "e": 3.31
+    },
+    {
+     "w": "to",
+     "s": 3.31,
+     "e": 3.41
+    },
+    {
+     "w": "complete",
+     "s": 3.41,
+     "e": 3.81
+    },
+    {
+     "w": "your",
+     "s": 3.81,
+     "e": 3.93
+    },
+    {
+     "w": "goal",
+     "s": 3.93,
+     "e": 4.25
+    },
+    {
+     "w": "as",
+     "s": 4.25,
+     "e": 4.41
+    },
+    {
+     "w": "fast",
+     "s": 4.41,
+     "e": 4.83
+    },
+    {
+     "w": "as",
+     "s": 4.83,
+     "e": 4.93
+    },
+    {
+     "w": "possible,",
+     "s": 4.93,
+     "e": 5.62
+    },
+    {
+     "w": "which",
+     "s": 5.9,
+     "e": 6.06
+    },
+    {
+     "w": "means",
+     "s": 6.06,
+     "e": 6.5
+    },
+    {
+     "w": "they",
+     "s": 6.5,
+     "e": 6.68
+    },
+    {
+     "w": "can",
+     "s": 6.68,
+     "e": 6.81
+    },
+    {
+     "w": "walk",
+     "s": 6.81,
+     "e": 7.07
+    },
+    {
+     "w": "straight",
+     "s": 7.07,
+     "e": 7.56
+    },
+    {
+     "w": "into",
+     "s": 7.56,
+     "e": 7.8
+    },
+    {
+     "w": "every",
+     "s": 7.89,
+     "e": 8.22
+    },
+    {
+     "w": "dark",
+     "s": 8.22,
+     "e": 8.51
+    },
+    {
+     "w": "pattern",
+     "s": 8.51,
+     "e": 8.89
+    },
+    {
+     "w": "on",
+     "s": 8.89,
+     "e": 8.99
+    },
+    {
+     "w": "the",
+     "s": 8.99,
+     "e": 9.13
+    },
+    {
+     "w": "internet.",
+     "s": 9.13,
+     "e": 9.64
+    }
+   ]
+  },
+  {
+   "text": "In one recent study, these tricks pushed AI agents toward the seller's choice in more than seventy percent of tests. For humans, it was about thirty-one percent.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 124.483,
+   "vo": 10.031,
+   "dur": 10.331,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.07,
+     "e": 0.21
+    },
+    {
+     "w": "one",
+     "s": 0.21,
+     "e": 0.45
+    },
+    {
+     "w": "recent",
+     "s": 0.45,
+     "e": 0.8
+    },
+    {
+     "w": "study,",
+     "s": 0.8,
+     "e": 1.31
+    },
+    {
+     "w": "these",
+     "s": 1.62,
+     "e": 1.84
+    },
+    {
+     "w": "tricks",
+     "s": 1.84,
+     "e": 2.16
+    },
+    {
+     "w": "pushed",
+     "s": 2.16,
+     "e": 2.55
+    },
+    {
+     "w": "AI",
+     "s": 2.55,
+     "e": 2.87
+    },
+    {
+     "w": "agents",
+     "s": 2.87,
+     "e": 3.38
+    },
+    {
+     "w": "toward",
+     "s": 3.38,
+     "e": 3.66
+    },
+    {
+     "w": "the",
+     "s": 3.66,
+     "e": 3.73
+    },
+    {
+     "w": "seller's",
+     "s": 3.73,
+     "e": 4.19
+    },
+    {
+     "w": "choice",
+     "s": 4.19,
+     "e": 4.57
+    },
+    {
+     "w": "in",
+     "s": 4.57,
+     "e": 4.73
+    },
+    {
+     "w": "more",
+     "s": 4.73,
+     "e": 4.92
+    },
+    {
+     "w": "than",
+     "s": 4.92,
+     "e": 5.1
+    },
+    {
+     "w": "seventy",
+     "s": 5.1,
+     "e": 5.66
+    },
+    {
+     "w": "percent",
+     "s": 5.66,
+     "e": 6.15
+    },
+    {
+     "w": "of",
+     "s": 6.15,
+     "e": 6.25
+    },
+    {
+     "w": "tests.",
+     "s": 6.25,
+     "e": 6.82
+    },
+    {
+     "w": "For",
+     "s": 7.35,
+     "e": 7.48
+    },
+    {
+     "w": "humans,",
+     "s": 7.48,
+     "e": 8.16
+    },
+    {
+     "w": "it",
+     "s": 8.3,
+     "e": 8.39
+    },
+    {
+     "w": "was",
+     "s": 8.39,
+     "e": 8.52
+    },
+    {
+     "w": "about",
+     "s": 8.52,
+     "e": 8.86
+    },
+    {
+     "w": "thirty-one",
+     "s": 8.86,
+     "e": 8.91
+    },
+    {
+     "w": "percent.",
+     "s": 8.86,
+     "e": 9.9
+    }
+   ]
+  },
+  {
+   "text": "Now here is where it gets genuinely scary.",
+   "dir": "leaning in, serious",
+   "chapter": "Risk 2: websites built to trick your AI",
+   "start": 134.814,
+   "vo": 3.161,
+   "dur": 3.461,
+   "words": [
+    {
+     "w": "Now",
+     "s": 0.07,
+     "e": 0.28
+    },
+    {
+     "w": "here",
+     "s": 0.28,
+     "e": 0.85
+    },
+    {
+     "w": "is",
+     "s": 0.93,
+     "e": 1.09
+    },
+    {
+     "w": "where",
+     "s": 1.09,
+     "e": 1.26
+    },
+    {
+     "w": "it",
+     "s": 1.26,
+     "e": 1.34
+    },
+    {
+     "w": "gets",
+     "s": 1.34,
+     "e": 1.61
+    },
+    {
+     "w": "genuinely",
+     "s": 1.61,
+     "e": 2.34
+    },
+    {
+     "w": "scary.",
+     "s": 2.34,
+     "e": 2.98
+    }
+   ]
+  },
+  {
+   "text": "In an earlier video, I showed you how a blank-looking webpage can hijack an AI agent using hidden text, an attack called indirect prompt injection.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 138.274,
+   "vo": 9.718,
+   "dur": 10.018,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.03,
+     "e": 0.15
+    },
+    {
+     "w": "an",
+     "s": 0.15,
+     "e": 0.26
+    },
+    {
+     "w": "earlier",
+     "s": 0.26,
+     "e": 0.7
+    },
+    {
+     "w": "video,",
+     "s": 0.7,
+     "e": 1.24
+    },
+    {
+     "w": "I",
+     "s": 1.44,
+     "e": 1.51
+    },
+    {
+     "w": "showed",
+     "s": 1.51,
+     "e": 1.82
+    },
+    {
+     "w": "you",
+     "s": 1.82,
+     "e": 1.98
+    },
+    {
+     "w": "how",
+     "s": 1.98,
+     "e": 2.18
+    },
+    {
+     "w": "a",
+     "s": 2.18,
+     "e": 2.21
+    },
+    {
+     "w": "blank-looking",
+     "s": 2.21,
+     "e": 2.26
+    },
+    {
+     "w": "webpage",
+     "s": 2.21,
+     "e": 2.77
+    },
+    {
+     "w": "can",
+     "s": 2.77,
+     "e": 3.0
+    },
+    {
+     "w": "hijack",
+     "s": 3.0,
+     "e": 3.23
+    },
+    {
+     "w": "an",
+     "s": 3.23,
+     "e": 3.31
+    },
+    {
+     "w": "AI",
+     "s": 3.31,
+     "e": 3.34
+    },
+    {
+     "w": "agent",
+     "s": 3.34,
+     "e": 3.71
+    },
+    {
+     "w": "using",
+     "s": 3.98,
+     "e": 4.39
+    },
+    {
+     "w": "hidden",
+     "s": 4.39,
+     "e": 5.1
+    },
+    {
+     "w": "text,",
+     "s": 5.1,
+     "e": 5.35
+    },
+    {
+     "w": "an",
+     "s": 5.35,
+     "e": 5.69
+    },
+    {
+     "w": "attack",
+     "s": 5.9,
+     "e": 6.36
+    },
+    {
+     "w": "called",
+     "s": 6.36,
+     "e": 6.55
+    },
+    {
+     "w": "indirect",
+     "s": 7.08,
+     "e": 7.57
+    },
+    {
+     "w": "prompt",
+     "s": 7.57,
+     "e": 7.89
+    },
+    {
+     "w": "injection.",
+     "s": 7.98,
+     "e": 8.61
+    }
+   ]
+  },
+  {
+   "text": "Now imagine that exact same attack, except the AI has your payment details.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 148.292,
+   "vo": 5.068,
+   "dur": 5.368,
+   "words": [
+    {
+     "w": "Now",
+     "s": 0.07,
+     "e": 0.34
+    },
+    {
+     "w": "imagine",
+     "s": 0.34,
+     "e": 0.77
+    },
+    {
+     "w": "that",
+     "s": 0.77,
+     "e": 0.93
+    },
+    {
+     "w": "exact",
+     "s": 0.93,
+     "e": 1.48
+    },
+    {
+     "w": "same",
+     "s": 1.48,
+     "e": 1.76
+    },
+    {
+     "w": "attack,",
+     "s": 1.76,
+     "e": 2.33
+    },
+    {
+     "w": "except",
+     "s": 2.54,
+     "e": 2.85
+    },
+    {
+     "w": "the",
+     "s": 2.85,
+     "e": 3.04
+    },
+    {
+     "w": "AI",
+     "s": 3.04,
+     "e": 3.49
+    },
+    {
+     "w": "has",
+     "s": 3.49,
+     "e": 3.73
+    },
+    {
+     "w": "your",
+     "s": 3.73,
+     "e": 3.83
+    },
+    {
+     "w": "payment",
+     "s": 3.83,
+     "e": 4.3
+    },
+    {
+     "w": "details.",
+     "s": 4.3,
+     "e": 4.93
+    }
+   ]
+  },
+  {
+   "text": "A shady seller doesn't need to fool you anymore. They just need to fool your agent.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 153.66,
+   "vo": 4.911,
+   "dur": 5.211,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.05,
+     "e": 0.11
+    },
+    {
+     "w": "shady",
+     "s": 0.11,
+     "e": 0.52
+    },
+    {
+     "w": "seller",
+     "s": 0.52,
+     "e": 0.94
+    },
+    {
+     "w": "doesn't",
+     "s": 0.94,
+     "e": 1.32
+    },
+    {
+     "w": "need",
+     "s": 1.32,
+     "e": 1.51
+    },
+    {
+     "w": "to",
+     "s": 1.51,
+     "e": 1.6
+    },
+    {
+     "w": "fool",
+     "s": 1.6,
+     "e": 1.89
+    },
+    {
+     "w": "you",
+     "s": 1.89,
+     "e": 2.22
+    },
+    {
+     "w": "anymore.",
+     "s": 2.22,
+     "e": 2.65
+    },
+    {
+     "w": "They",
+     "s": 3.14,
+     "e": 3.25
+    },
+    {
+     "w": "just",
+     "s": 3.25,
+     "e": 3.53
+    },
+    {
+     "w": "need",
+     "s": 3.53,
+     "e": 3.68
+    },
+    {
+     "w": "to",
+     "s": 3.68,
+     "e": 3.76
+    },
+    {
+     "w": "fool",
+     "s": 3.76,
+     "e": 4.03
+    },
+    {
+     "w": "your",
+     "s": 4.03,
+     "e": 4.21
+    },
+    {
+     "w": "agent.",
+     "s": 4.21,
+     "e": 4.77
+    }
+   ]
+  },
+  {
+   "text": "By hiding invisible instructions inside a product description or a fake five-star review, a website can try to steer your AI away from cheaper competitors, push it toward an overpriced item, or trick it into buying from a scam store.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 158.871,
+   "vo": 14.838,
+   "dur": 15.138,
+   "words": [
+    {
+     "w": "By",
+     "s": 0.06,
+     "e": 0.23
+    },
+    {
+     "w": "hiding",
+     "s": 0.23,
+     "e": 0.65
+    },
+    {
+     "w": "invisible",
+     "s": 0.65,
+     "e": 1.19
+    },
+    {
+     "w": "instructions",
+     "s": 1.19,
+     "e": 1.92
+    },
+    {
+     "w": "inside",
+     "s": 1.92,
+     "e": 2.27
+    },
+    {
+     "w": "a",
+     "s": 2.27,
+     "e": 2.31
+    },
+    {
+     "w": "product",
+     "s": 2.31,
+     "e": 2.73
+    },
+    {
+     "w": "description",
+     "s": 2.73,
+     "e": 3.43
+    },
+    {
+     "w": "or",
+     "s": 3.43,
+     "e": 3.79
+    },
+    {
+     "w": "a",
+     "s": 3.79,
+     "e": 3.83
+    },
+    {
+     "w": "fake",
+     "s": 3.83,
+     "e": 4.21
+    },
+    {
+     "w": "five-star",
+     "s": 4.21,
+     "e": 4.64
+    },
+    {
+     "w": "review,",
+     "s": 4.64,
+     "e": 5.39
+    },
+    {
+     "w": "a",
+     "s": 5.81,
+     "e": 5.88
+    },
+    {
+     "w": "website",
+     "s": 5.88,
+     "e": 6.36
+    },
+    {
+     "w": "can",
+     "s": 6.36,
+     "e": 6.51
+    },
+    {
+     "w": "try",
+     "s": 6.51,
+     "e": 6.7
+    },
+    {
+     "w": "to",
+     "s": 6.7,
+     "e": 6.77
+    },
+    {
+     "w": "steer",
+     "s": 6.77,
+     "e": 7.23
+    },
+    {
+     "w": "your",
+     "s": 7.23,
+     "e": 7.42
+    },
+    {
+     "w": "AI",
+     "s": 7.42,
+     "e": 7.87
+    },
+    {
+     "w": "away",
+     "s": 7.87,
+     "e": 8.29
+    },
+    {
+     "w": "from",
+     "s": 8.29,
+     "e": 8.53
+    },
+    {
+     "w": "cheaper",
+     "s": 8.53,
+     "e": 8.86
+    },
+    {
+     "w": "competitors,",
+     "s": 8.86,
+     "e": 9.62
+    },
+    {
+     "w": "push",
+     "s": 10.0,
+     "e": 10.23
+    },
+    {
+     "w": "it",
+     "s": 10.23,
+     "e": 10.33
+    },
+    {
+     "w": "toward",
+     "s": 10.33,
+     "e": 10.64
+    },
+    {
+     "w": "an",
+     "s": 10.64,
+     "e": 10.75
+    },
+    {
+     "w": "overpriced",
+     "s": 10.75,
+     "e": 11.41
+    },
+    {
+     "w": "item,",
+     "s": 11.41,
+     "e": 11.79
+    },
+    {
+     "w": "or",
+     "s": 12.14,
+     "e": 12.53
+    },
+    {
+     "w": "trick",
+     "s": 12.66,
+     "e": 12.92
+    },
+    {
+     "w": "it",
+     "s": 12.92,
+     "e": 13.01
+    },
+    {
+     "w": "into",
+     "s": 13.01,
+     "e": 13.21
+    },
+    {
+     "w": "buying",
+     "s": 13.21,
+     "e": 13.61
+    },
+    {
+     "w": "from",
+     "s": 13.61,
+     "e": 13.77
+    },
+    {
+     "w": "a",
+     "s": 13.77,
+     "e": 13.8
+    },
+    {
+     "w": "scam",
+     "s": 13.8,
+     "e": 14.22
+    },
+    {
+     "w": "store.",
+     "s": 14.22,
+     "e": 14.66
+    }
+   ]
+  },
+  {
+   "text": "And because you never even looked at the webpage yourself, you wouldn't know your agent was manipulated until the receipt lands in your inbox.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 174.008,
+   "vo": 7.471,
+   "dur": 7.771,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.06,
+     "e": 0.19
+    },
+    {
+     "w": "because",
+     "s": 0.19,
+     "e": 0.57
+    },
+    {
+     "w": "you",
+     "s": 0.57,
+     "e": 0.66
+    },
+    {
+     "w": "never",
+     "s": 0.66,
+     "e": 0.93
+    },
+    {
+     "w": "even",
+     "s": 0.93,
+     "e": 1.13
+    },
+    {
+     "w": "looked",
+     "s": 1.13,
+     "e": 1.54
+    },
+    {
+     "w": "at",
+     "s": 1.54,
+     "e": 1.62
+    },
+    {
+     "w": "the",
+     "s": 1.62,
+     "e": 1.71
+    },
+    {
+     "w": "webpage",
+     "s": 1.71,
+     "e": 2.19
+    },
+    {
+     "w": "yourself,",
+     "s": 2.19,
+     "e": 2.96
+    },
+    {
+     "w": "you",
+     "s": 3.17,
+     "e": 3.3
+    },
+    {
+     "w": "wouldn't",
+     "s": 3.3,
+     "e": 3.6
+    },
+    {
+     "w": "know",
+     "s": 3.6,
+     "e": 3.79
+    },
+    {
+     "w": "your",
+     "s": 3.79,
+     "e": 3.98
+    },
+    {
+     "w": "agent",
+     "s": 3.98,
+     "e": 4.3
+    },
+    {
+     "w": "was",
+     "s": 4.3,
+     "e": 4.45
+    },
+    {
+     "w": "manipulated",
+     "s": 4.45,
+     "e": 5.27
+    },
+    {
+     "w": "until",
+     "s": 5.27,
+     "e": 5.55
+    },
+    {
+     "w": "the",
+     "s": 5.55,
+     "e": 5.64
+    },
+    {
+     "w": "receipt",
+     "s": 5.64,
+     "e": 6.12
+    },
+    {
+     "w": "lands",
+     "s": 6.12,
+     "e": 6.46
+    },
+    {
+     "w": "in",
+     "s": 6.46,
+     "e": 6.53
+    },
+    {
+     "w": "your",
+     "s": 6.53,
+     "e": 6.66
+    },
+    {
+     "w": "inbox.",
+     "s": 6.66,
+     "e": 7.3
+    }
+   ]
+  },
+  {
+   "text": "So what happens if your AI agent gets tricked and buys something you didn't want?",
+   "dir": "curious question",
+   "chapter": "Risk 3: who pays?",
+   "start": 181.779,
+   "vo": 4.989,
+   "dur": 5.289,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.03,
+     "e": 0.42
+    },
+    {
+     "w": "what",
+     "s": 0.42,
+     "e": 0.74
+    },
+    {
+     "w": "happens",
+     "s": 0.74,
+     "e": 1.15
+    },
+    {
+     "w": "if",
+     "s": 1.15,
+     "e": 1.27
+    },
+    {
+     "w": "your",
+     "s": 1.27,
+     "e": 1.42
+    },
+    {
+     "w": "AI",
+     "s": 1.42,
+     "e": 1.84
+    },
+    {
+     "w": "agent",
+     "s": 1.84,
+     "e": 2.28
+    },
+    {
+     "w": "gets",
+     "s": 2.28,
+     "e": 2.54
+    },
+    {
+     "w": "tricked",
+     "s": 2.54,
+     "e": 3.19
+    },
+    {
+     "w": "and",
+     "s": 3.22,
+     "e": 3.41
+    },
+    {
+     "w": "buys",
+     "s": 3.41,
+     "e": 3.69
+    },
+    {
+     "w": "something",
+     "s": 3.69,
+     "e": 4.06
+    },
+    {
+     "w": "you",
+     "s": 4.06,
+     "e": 4.15
+    },
+    {
+     "w": "didn't",
+     "s": 4.15,
+     "e": 4.39
+    },
+    {
+     "w": "want?",
+     "s": 4.39,
+     "e": 4.88
+    }
+   ]
+  },
+  {
+   "text": "If a human hacker steals your credit card number, the rules are pretty clear: your bank usually treats it as fraud and refunds you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 187.069,
+   "vo": 7.393,
+   "dur": 7.693,
+   "words": [
+    {
+     "w": "If",
+     "s": 0.03,
+     "e": 0.2
+    },
+    {
+     "w": "a",
+     "s": 0.2,
+     "e": 0.24
+    },
+    {
+     "w": "human",
+     "s": 0.24,
+     "e": 0.6
+    },
+    {
+     "w": "hacker",
+     "s": 0.6,
+     "e": 1.0
+    },
+    {
+     "w": "steals",
+     "s": 1.0,
+     "e": 1.38
+    },
+    {
+     "w": "your",
+     "s": 1.38,
+     "e": 1.5
+    },
+    {
+     "w": "credit",
+     "s": 1.5,
+     "e": 1.82
+    },
+    {
+     "w": "card",
+     "s": 1.82,
+     "e": 2.06
+    },
+    {
+     "w": "number,",
+     "s": 2.06,
+     "e": 2.46
+    },
+    {
+     "w": "the",
+     "s": 2.69,
+     "e": 2.76
+    },
+    {
+     "w": "rules",
+     "s": 2.76,
+     "e": 3.12
+    },
+    {
+     "w": "are",
+     "s": 3.12,
+     "e": 3.19
+    },
+    {
+     "w": "pretty",
+     "s": 3.19,
+     "e": 3.44
+    },
+    {
+     "w": "clear:",
+     "s": 3.44,
+     "e": 3.87
+    },
+    {
+     "w": "your",
+     "s": 4.37,
+     "e": 4.48
+    },
+    {
+     "w": "bank",
+     "s": 4.48,
+     "e": 4.83
+    },
+    {
+     "w": "usually",
+     "s": 4.83,
+     "e": 5.29
+    },
+    {
+     "w": "treats",
+     "s": 5.29,
+     "e": 5.61
+    },
+    {
+     "w": "it",
+     "s": 5.61,
+     "e": 5.7
+    },
+    {
+     "w": "as",
+     "s": 5.7,
+     "e": 5.85
+    },
+    {
+     "w": "fraud",
+     "s": 5.85,
+     "e": 6.31
+    },
+    {
+     "w": "and",
+     "s": 6.31,
+     "e": 6.56
+    },
+    {
+     "w": "refunds",
+     "s": 6.56,
+     "e": 7.02
+    },
+    {
+     "w": "you.",
+     "s": 7.02,
+     "e": 7.19
+    }
+   ]
+  },
+  {
+   "text": "But if you gave an AI agent permission to use your wallet, and the agent simply made a terrible decision\u2026 is that fraud, or is that just you making a bad purchase?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 194.761,
+   "vo": 10.371,
+   "dur": 10.671,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.06,
+     "e": 0.37
+    },
+    {
+     "w": "if",
+     "s": 0.37,
+     "e": 0.55
+    },
+    {
+     "w": "you",
+     "s": 0.55,
+     "e": 0.68
+    },
+    {
+     "w": "gave",
+     "s": 0.68,
+     "e": 0.91
+    },
+    {
+     "w": "an",
+     "s": 0.91,
+     "e": 1.01
+    },
+    {
+     "w": "AI",
+     "s": 1.01,
+     "e": 1.42
+    },
+    {
+     "w": "agent",
+     "s": 1.42,
+     "e": 1.86
+    },
+    {
+     "w": "permission",
+     "s": 1.86,
+     "e": 2.41
+    },
+    {
+     "w": "to",
+     "s": 2.41,
+     "e": 2.53
+    },
+    {
+     "w": "use",
+     "s": 2.53,
+     "e": 2.76
+    },
+    {
+     "w": "your",
+     "s": 2.76,
+     "e": 2.93
+    },
+    {
+     "w": "wallet,",
+     "s": 2.93,
+     "e": 3.51
+    },
+    {
+     "w": "and",
+     "s": 3.7,
+     "e": 3.87
+    },
+    {
+     "w": "the",
+     "s": 3.87,
+     "e": 4.03
+    },
+    {
+     "w": "agent",
+     "s": 4.03,
+     "e": 4.32
+    },
+    {
+     "w": "simply",
+     "s": 4.32,
+     "e": 4.71
+    },
+    {
+     "w": "made",
+     "s": 4.71,
+     "e": 4.92
+    },
+    {
+     "w": "a",
+     "s": 4.92,
+     "e": 4.99
+    },
+    {
+     "w": "terrible",
+     "s": 4.99,
+     "e": 5.55
+    },
+    {
+     "w": "decision\u2026",
+     "s": 5.55,
+     "e": 6.15
+    },
+    {
+     "w": "is",
+     "s": 6.79,
+     "e": 6.91
+    },
+    {
+     "w": "that",
+     "s": 6.91,
+     "e": 7.07
+    },
+    {
+     "w": "fraud,",
+     "s": 7.07,
+     "e": 7.68
+    },
+    {
+     "w": "or",
+     "s": 7.93,
+     "e": 8.18
+    },
+    {
+     "w": "is",
+     "s": 8.18,
+     "e": 8.29
+    },
+    {
+     "w": "that",
+     "s": 8.29,
+     "e": 8.45
+    },
+    {
+     "w": "just",
+     "s": 8.45,
+     "e": 8.7
+    },
+    {
+     "w": "you",
+     "s": 8.7,
+     "e": 8.99
+    },
+    {
+     "w": "making",
+     "s": 8.99,
+     "e": 9.29
+    },
+    {
+     "w": "a",
+     "s": 9.29,
+     "e": 9.33
+    },
+    {
+     "w": "bad",
+     "s": 9.33,
+     "e": 9.59
+    },
+    {
+     "w": "purchase?",
+     "s": 9.59,
+     "e": 10.16
+    }
+   ]
+  },
+  {
+   "text": "Banks, payment networks and AI companies are still working out where that line sits.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 205.432,
+   "vo": 5.486,
+   "dur": 5.786,
+   "words": [
+    {
+     "w": "Banks,",
+     "s": 0.05,
+     "e": 0.67
+    },
+    {
+     "w": "payment",
+     "s": 0.67,
+     "e": 1.11
+    },
+    {
+     "w": "networks",
+     "s": 1.11,
+     "e": 1.66
+    },
+    {
+     "w": "and",
+     "s": 1.66,
+     "e": 1.93
+    },
+    {
+     "w": "AI",
+     "s": 1.93,
+     "e": 2.32
+    },
+    {
+     "w": "companies",
+     "s": 2.32,
+     "e": 2.94
+    },
+    {
+     "w": "are",
+     "s": 2.94,
+     "e": 3.06
+    },
+    {
+     "w": "still",
+     "s": 3.06,
+     "e": 3.47
+    },
+    {
+     "w": "working",
+     "s": 3.47,
+     "e": 3.88
+    },
+    {
+     "w": "out",
+     "s": 3.88,
+     "e": 4.02
+    },
+    {
+     "w": "where",
+     "s": 4.02,
+     "e": 4.26
+    },
+    {
+     "w": "that",
+     "s": 4.26,
+     "e": 4.45
+    },
+    {
+     "w": "line",
+     "s": 4.45,
+     "e": 4.75
+    },
+    {
+     "w": "sits.",
+     "s": 4.75,
+     "e": 5.32
+    }
+   ]
+  },
+  {
+   "text": "Right now, if your agent buys a non-refundable ticket or gets fooled by a sketchy merchant, getting your money back can turn into a nightmare.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 211.218,
+   "vo": 8.359,
+   "dur": 8.659,
+   "words": [
+    {
+     "w": "Right",
+     "s": 0.05,
+     "e": 0.28
+    },
+    {
+     "w": "now,",
+     "s": 0.28,
+     "e": 0.68
+    },
+    {
+     "w": "if",
+     "s": 0.9,
+     "e": 1.05
+    },
+    {
+     "w": "your",
+     "s": 1.05,
+     "e": 1.22
+    },
+    {
+     "w": "agent",
+     "s": 1.22,
+     "e": 1.6
+    },
+    {
+     "w": "buys",
+     "s": 1.6,
+     "e": 1.9
+    },
+    {
+     "w": "a",
+     "s": 1.9,
+     "e": 1.94
+    },
+    {
+     "w": "non-refundable",
+     "s": 1.94,
+     "e": 2.8
+    },
+    {
+     "w": "ticket",
+     "s": 2.8,
+     "e": 3.27
+    },
+    {
+     "w": "or",
+     "s": 3.27,
+     "e": 3.58
+    },
+    {
+     "w": "gets",
+     "s": 3.58,
+     "e": 3.82
+    },
+    {
+     "w": "fooled",
+     "s": 3.82,
+     "e": 4.2
+    },
+    {
+     "w": "by",
+     "s": 4.2,
+     "e": 4.35
+    },
+    {
+     "w": "a",
+     "s": 4.35,
+     "e": 4.42
+    },
+    {
+     "w": "sketchy",
+     "s": 4.42,
+     "e": 4.83
+    },
+    {
+     "w": "merchant,",
+     "s": 4.83,
+     "e": 5.4
+    },
+    {
+     "w": "getting",
+     "s": 5.78,
+     "e": 6.01
+    },
+    {
+     "w": "your",
+     "s": 6.01,
+     "e": 6.1
+    },
+    {
+     "w": "money",
+     "s": 6.1,
+     "e": 6.4
+    },
+    {
+     "w": "back",
+     "s": 6.4,
+     "e": 6.78
+    },
+    {
+     "w": "can",
+     "s": 6.78,
+     "e": 6.97
+    },
+    {
+     "w": "turn",
+     "s": 6.97,
+     "e": 7.21
+    },
+    {
+     "w": "into",
+     "s": 7.21,
+     "e": 7.46
+    },
+    {
+     "w": "a",
+     "s": 7.46,
+     "e": 7.5
+    },
+    {
+     "w": "nightmare.",
+     "s": 7.5,
+     "e": 8.27
+    }
+   ]
+  },
+  {
+   "text": "The good news is that payment companies know this is a massive risk, so they're building guardrails, like single-use virtual cards and strict spending caps.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "How to stay safe: four rules",
+   "start": 219.877,
+   "vo": 9.639,
+   "dur": 9.939,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.09,
+     "e": 0.19
+    },
+    {
+     "w": "good",
+     "s": 0.19,
+     "e": 0.43
+    },
+    {
+     "w": "news",
+     "s": 0.43,
+     "e": 0.86
+    },
+    {
+     "w": "is",
+     "s": 0.86,
+     "e": 1.01
+    },
+    {
+     "w": "that",
+     "s": 1.01,
+     "e": 1.19
+    },
+    {
+     "w": "payment",
+     "s": 1.19,
+     "e": 1.55
+    },
+    {
+     "w": "companies",
+     "s": 1.55,
+     "e": 2.03
+    },
+    {
+     "w": "know",
+     "s": 2.03,
+     "e": 2.4
+    },
+    {
+     "w": "this",
+     "s": 2.4,
+     "e": 2.62
+    },
+    {
+     "w": "is",
+     "s": 2.62,
+     "e": 2.74
+    },
+    {
+     "w": "a",
+     "s": 2.74,
+     "e": 2.78
+    },
+    {
+     "w": "massive",
+     "s": 2.78,
+     "e": 3.41
+    },
+    {
+     "w": "risk,",
+     "s": 3.41,
+     "e": 3.82
+    },
+    {
+     "w": "so",
+     "s": 4.14,
+     "e": 4.46
+    },
+    {
+     "w": "they're",
+     "s": 4.46,
+     "e": 4.68
+    },
+    {
+     "w": "building",
+     "s": 4.68,
+     "e": 5.08
+    },
+    {
+     "w": "guardrails,",
+     "s": 5.08,
+     "e": 5.84
+    },
+    {
+     "w": "like",
+     "s": 6.07,
+     "e": 6.38
+    },
+    {
+     "w": "single-use",
+     "s": 6.38,
+     "e": 6.43
+    },
+    {
+     "w": "virtual",
+     "s": 6.38,
+     "e": 6.76
+    },
+    {
+     "w": "cards",
+     "s": 6.76,
+     "e": 7.02
+    },
+    {
+     "w": "and",
+     "s": 7.02,
+     "e": 7.26
+    },
+    {
+     "w": "strict",
+     "s": 7.5,
+     "e": 7.82
+    },
+    {
+     "w": "spending",
+     "s": 7.82,
+     "e": 8.3
+    },
+    {
+     "w": "caps.",
+     "s": 8.3,
+     "e": 8.66
+    }
+   ]
+  },
+  {
+   "text": "Until those systems mature, here are four simple rules to protect your wallet.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 229.816,
+   "vo": 4.911,
+   "dur": 5.211,
+   "words": [
+    {
+     "w": "Until",
+     "s": 0.09,
+     "e": 0.44
+    },
+    {
+     "w": "those",
+     "s": 0.44,
+     "e": 0.63
+    },
+    {
+     "w": "systems",
+     "s": 0.63,
+     "e": 1.11
+    },
+    {
+     "w": "mature,",
+     "s": 1.11,
+     "e": 1.78
+    },
+    {
+     "w": "here",
+     "s": 2.03,
+     "e": 2.3
+    },
+    {
+     "w": "are",
+     "s": 2.3,
+     "e": 2.42
+    },
+    {
+     "w": "four",
+     "s": 2.42,
+     "e": 2.86
+    },
+    {
+     "w": "simple",
+     "s": 2.86,
+     "e": 3.28
+    },
+    {
+     "w": "rules",
+     "s": 3.28,
+     "e": 3.67
+    },
+    {
+     "w": "to",
+     "s": 3.67,
+     "e": 3.76
+    },
+    {
+     "w": "protect",
+     "s": 3.76,
+     "e": 4.2
+    },
+    {
+     "w": "your",
+     "s": 4.2,
+     "e": 4.3
+    },
+    {
+     "w": "wallet.",
+     "s": 4.3,
+     "e": 4.81
+    }
+   ]
+  },
+  {
+   "text": "One: never give an AI your main bank card. If you test an AI shopping tool, use a virtual card with a low, hard spending limit, so a single mistake can't wipe out your account.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 235.027,
+   "vo": 11.964,
+   "dur": 12.264,
+   "words": [
+    {
+     "w": "One:",
+     "s": 0.03,
+     "e": 0.5
+    },
+    {
+     "w": "never",
+     "s": 0.95,
+     "e": 1.36
+    },
+    {
+     "w": "give",
+     "s": 1.36,
+     "e": 1.56
+    },
+    {
+     "w": "an",
+     "s": 1.56,
+     "e": 1.66
+    },
+    {
+     "w": "AI",
+     "s": 1.66,
+     "e": 2.14
+    },
+    {
+     "w": "your",
+     "s": 2.14,
+     "e": 2.3
+    },
+    {
+     "w": "main",
+     "s": 2.3,
+     "e": 2.7
+    },
+    {
+     "w": "bank",
+     "s": 2.7,
+     "e": 2.97
+    },
+    {
+     "w": "card.",
+     "s": 2.97,
+     "e": 3.31
+    },
+    {
+     "w": "If",
+     "s": 3.83,
+     "e": 3.96
+    },
+    {
+     "w": "you",
+     "s": 3.96,
+     "e": 4.07
+    },
+    {
+     "w": "test",
+     "s": 4.07,
+     "e": 4.42
+    },
+    {
+     "w": "an",
+     "s": 4.42,
+     "e": 4.52
+    },
+    {
+     "w": "AI",
+     "s": 4.52,
+     "e": 4.87
+    },
+    {
+     "w": "shopping",
+     "s": 4.87,
+     "e": 5.33
+    },
+    {
+     "w": "tool,",
+     "s": 5.33,
+     "e": 5.78
+    },
+    {
+     "w": "use",
+     "s": 6.02,
+     "e": 6.22
+    },
+    {
+     "w": "a",
+     "s": 6.22,
+     "e": 6.28
+    },
+    {
+     "w": "virtual",
+     "s": 6.28,
+     "e": 6.85
+    },
+    {
+     "w": "card",
+     "s": 6.85,
+     "e": 7.19
+    },
+    {
+     "w": "with",
+     "s": 7.19,
+     "e": 7.31
+    },
+    {
+     "w": "a",
+     "s": 7.31,
+     "e": 7.34
+    },
+    {
+     "w": "low,",
+     "s": 7.34,
+     "e": 7.81
+    },
+    {
+     "w": "hard",
+     "s": 7.81,
+     "e": 8.29
+    },
+    {
+     "w": "spending",
+     "s": 8.29,
+     "e": 8.73
+    },
+    {
+     "w": "limit,",
+     "s": 8.73,
+     "e": 8.98
+    },
+    {
+     "w": "so",
+     "s": 9.32,
+     "e": 9.51
+    },
+    {
+     "w": "a",
+     "s": 9.51,
+     "e": 9.54
+    },
+    {
+     "w": "single",
+     "s": 9.54,
+     "e": 9.9
+    },
+    {
+     "w": "mistake",
+     "s": 9.9,
+     "e": 10.39
+    },
+    {
+     "w": "can't",
+     "s": 10.39,
+     "e": 10.78
+    },
+    {
+     "w": "wipe",
+     "s": 10.78,
+     "e": 11.01
+    },
+    {
+     "w": "out",
+     "s": 11.01,
+     "e": 11.16
+    },
+    {
+     "w": "your",
+     "s": 11.16,
+     "e": 11.35
+    },
+    {
+     "w": "account.",
+     "s": 11.35,
+     "e": 11.84
+    }
+   ]
+  },
+  {
+   "text": "Two: keep \"ask before paying\" turned on. Let the AI do the boring work, searching, comparing and filling the cart, but always require your fingerprint or your own click for the final payment.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 247.291,
+   "vo": 13.009,
+   "dur": 13.309,
+   "words": [
+    {
+     "w": "Two:",
+     "s": 0.02,
+     "e": 0.35
+    },
+    {
+     "w": "keep",
+     "s": 0.83,
+     "e": 1.17
+    },
+    {
+     "w": "\"ask",
+     "s": 1.17,
+     "e": 1.67
+    },
+    {
+     "w": "before",
+     "s": 1.67,
+     "e": 2.03
+    },
+    {
+     "w": "paying\"",
+     "s": 2.03,
+     "e": 2.63
+    },
+    {
+     "w": "turned",
+     "s": 2.63,
+     "e": 2.98
+    },
+    {
+     "w": "on.",
+     "s": 2.98,
+     "e": 3.35
+    },
+    {
+     "w": "Let",
+     "s": 3.88,
+     "e": 4.07
+    },
+    {
+     "w": "the",
+     "s": 4.07,
+     "e": 4.26
+    },
+    {
+     "w": "AI",
+     "s": 4.26,
+     "e": 4.64
+    },
+    {
+     "w": "do",
+     "s": 4.64,
+     "e": 4.8
+    },
+    {
+     "w": "the",
+     "s": 4.8,
+     "e": 4.88
+    },
+    {
+     "w": "boring",
+     "s": 4.88,
+     "e": 5.37
+    },
+    {
+     "w": "work,",
+     "s": 5.37,
+     "e": 5.75
+    },
+    {
+     "w": "searching,",
+     "s": 5.94,
+     "e": 6.65
+    },
+    {
+     "w": "comparing",
+     "s": 6.65,
+     "e": 7.34
+    },
+    {
+     "w": "and",
+     "s": 7.34,
+     "e": 7.48
+    },
+    {
+     "w": "filling",
+     "s": 7.48,
+     "e": 7.81
+    },
+    {
+     "w": "the",
+     "s": 7.81,
+     "e": 7.87
+    },
+    {
+     "w": "cart,",
+     "s": 7.87,
+     "e": 8.29
+    },
+    {
+     "w": "but",
+     "s": 8.67,
+     "e": 8.87
+    },
+    {
+     "w": "always",
+     "s": 8.87,
+     "e": 9.32
+    },
+    {
+     "w": "require",
+     "s": 9.32,
+     "e": 9.82
+    },
+    {
+     "w": "your",
+     "s": 9.82,
+     "e": 9.93
+    },
+    {
+     "w": "fingerprint",
+     "s": 9.93,
+     "e": 10.64
+    },
+    {
+     "w": "or",
+     "s": 10.64,
+     "e": 10.86
+    },
+    {
+     "w": "your",
+     "s": 10.86,
+     "e": 11.07
+    },
+    {
+     "w": "own",
+     "s": 11.07,
+     "e": 11.33
+    },
+    {
+     "w": "click",
+     "s": 11.33,
+     "e": 11.73
+    },
+    {
+     "w": "for",
+     "s": 11.73,
+     "e": 11.88
+    },
+    {
+     "w": "the",
+     "s": 11.88,
+     "e": 11.97
+    },
+    {
+     "w": "final",
+     "s": 11.97,
+     "e": 12.31
+    },
+    {
+     "w": "payment.",
+     "s": 12.31,
+     "e": 12.84
+    }
+   ]
+  },
+  {
+   "text": "Three: stick to trusted merchants. Don't let an autonomous agent enter payment details on random, unverified websites it found in a web search.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 260.6,
+   "vo": 9.639,
+   "dur": 9.939,
+   "words": [
+    {
+     "w": "Three:",
+     "s": 0.05,
+     "e": 0.56
+    },
+    {
+     "w": "stick",
+     "s": 0.92,
+     "e": 1.33
+    },
+    {
+     "w": "to",
+     "s": 1.33,
+     "e": 1.5
+    },
+    {
+     "w": "trusted",
+     "s": 1.5,
+     "e": 2.08
+    },
+    {
+     "w": "merchants.",
+     "s": 2.08,
+     "e": 2.71
+    },
+    {
+     "w": "Don't",
+     "s": 3.21,
+     "e": 3.45
+    },
+    {
+     "w": "let",
+     "s": 3.45,
+     "e": 3.61
+    },
+    {
+     "w": "an",
+     "s": 3.61,
+     "e": 3.74
+    },
+    {
+     "w": "autonomous",
+     "s": 3.74,
+     "e": 4.33
+    },
+    {
+     "w": "agent",
+     "s": 4.33,
+     "e": 4.74
+    },
+    {
+     "w": "enter",
+     "s": 4.74,
+     "e": 5.04
+    },
+    {
+     "w": "payment",
+     "s": 5.04,
+     "e": 5.46
+    },
+    {
+     "w": "details",
+     "s": 5.46,
+     "e": 6.02
+    },
+    {
+     "w": "on",
+     "s": 6.02,
+     "e": 6.2
+    },
+    {
+     "w": "random,",
+     "s": 6.2,
+     "e": 6.86
+    },
+    {
+     "w": "unverified",
+     "s": 6.86,
+     "e": 7.65
+    },
+    {
+     "w": "websites",
+     "s": 7.65,
+     "e": 8.25
+    },
+    {
+     "w": "it",
+     "s": 8.25,
+     "e": 8.35
+    },
+    {
+     "w": "found",
+     "s": 8.35,
+     "e": 8.67
+    },
+    {
+     "w": "in",
+     "s": 8.67,
+     "e": 8.75
+    },
+    {
+     "w": "a",
+     "s": 8.75,
+     "e": 8.78
+    },
+    {
+     "w": "web",
+     "s": 8.78,
+     "e": 9.03
+    },
+    {
+     "w": "search.",
+     "s": 9.03,
+     "e": 9.52
+    }
+   ]
+  },
+  {
+   "text": "Four: audit your receipts and subscriptions. Treat an AI shopper like a brand-new intern. Check its work until it earns your trust.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 270.539,
+   "vo": 8.986,
+   "dur": 9.286,
+   "words": [
+    {
+     "w": "Four:",
+     "s": 0.03,
+     "e": 0.52
+    },
+    {
+     "w": "audit",
+     "s": 0.96,
+     "e": 1.27
+    },
+    {
+     "w": "your",
+     "s": 1.27,
+     "e": 1.42
+    },
+    {
+     "w": "receipts",
+     "s": 1.42,
+     "e": 1.99
+    },
+    {
+     "w": "and",
+     "s": 1.99,
+     "e": 2.15
+    },
+    {
+     "w": "subscriptions.",
+     "s": 2.15,
+     "e": 3.01
+    },
+    {
+     "w": "Treat",
+     "s": 3.51,
+     "e": 3.8
+    },
+    {
+     "w": "an",
+     "s": 3.8,
+     "e": 3.9
+    },
+    {
+     "w": "AI",
+     "s": 3.9,
+     "e": 4.3
+    },
+    {
+     "w": "shopper",
+     "s": 4.3,
+     "e": 4.74
+    },
+    {
+     "w": "like",
+     "s": 4.74,
+     "e": 4.94
+    },
+    {
+     "w": "a",
+     "s": 4.94,
+     "e": 4.99
+    },
+    {
+     "w": "brand-new",
+     "s": 4.99,
+     "e": 5.65
+    },
+    {
+     "w": "intern.",
+     "s": 5.65,
+     "e": 6.25
+    },
+    {
+     "w": "Check",
+     "s": 6.68,
+     "e": 6.92
+    },
+    {
+     "w": "its",
+     "s": 6.92,
+     "e": 7.07
+    },
+    {
+     "w": "work",
+     "s": 7.07,
+     "e": 7.41
+    },
+    {
+     "w": "until",
+     "s": 7.41,
+     "e": 7.71
+    },
+    {
+     "w": "it",
+     "s": 7.71,
+     "e": 7.86
+    },
+    {
+     "w": "earns",
+     "s": 7.86,
+     "e": 8.15
+    },
+    {
+     "w": "your",
+     "s": 8.15,
+     "e": 8.26
+    },
+    {
+     "w": "trust.",
+     "s": 8.26,
+     "e": 8.86
+    }
+   ]
+  },
+  {
+   "text": "AI agents that can shop for us are coming fast, and they really will save us hours of boring errands.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "The bottom line",
+   "start": 279.826,
+   "vo": 6.609,
+   "dur": 6.909,
+   "words": [
+    {
+     "w": "AI",
+     "s": 0.07,
+     "e": 0.43
+    },
+    {
+     "w": "agents",
+     "s": 0.43,
+     "e": 0.89
+    },
+    {
+     "w": "that",
+     "s": 0.89,
+     "e": 1.03
+    },
+    {
+     "w": "can",
+     "s": 1.03,
+     "e": 1.16
+    },
+    {
+     "w": "shop",
+     "s": 1.16,
+     "e": 1.5
+    },
+    {
+     "w": "for",
+     "s": 1.5,
+     "e": 1.71
+    },
+    {
+     "w": "us",
+     "s": 1.71,
+     "e": 1.9
+    },
+    {
+     "w": "are",
+     "s": 1.9,
+     "e": 1.98
+    },
+    {
+     "w": "coming",
+     "s": 1.98,
+     "e": 2.34
+    },
+    {
+     "w": "fast,",
+     "s": 2.34,
+     "e": 3.0
+    },
+    {
+     "w": "and",
+     "s": 3.23,
+     "e": 3.43
+    },
+    {
+     "w": "they",
+     "s": 3.43,
+     "e": 3.54
+    },
+    {
+     "w": "really",
+     "s": 3.54,
+     "e": 3.94
+    },
+    {
+     "w": "will",
+     "s": 3.94,
+     "e": 4.26
+    },
+    {
+     "w": "save",
+     "s": 4.26,
+     "e": 4.52
+    },
+    {
+     "w": "us",
+     "s": 4.52,
+     "e": 4.67
+    },
+    {
+     "w": "hours",
+     "s": 4.83,
+     "e": 5.28
+    },
+    {
+     "w": "of",
+     "s": 5.28,
+     "e": 5.38
+    },
+    {
+     "w": "boring",
+     "s": 5.38,
+     "e": 5.84
+    },
+    {
+     "w": "errands.",
+     "s": 5.84,
+     "e": 6.41
+    }
+   ]
+  },
+  {
+   "text": "Just remember: convenience is great, but an AI doesn't feel the pain when your bank balance drops.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 286.734,
+   "vo": 6.269,
+   "dur": 6.569,
+   "words": [
+    {
+     "w": "Just",
+     "s": 0.07,
+     "e": 0.32
+    },
+    {
+     "w": "remember:",
+     "s": 0.32,
+     "e": 0.87
+    },
+    {
+     "w": "convenience",
+     "s": 1.19,
+     "e": 1.8
+    },
+    {
+     "w": "is",
+     "s": 1.8,
+     "e": 1.94
+    },
+    {
+     "w": "great,",
+     "s": 1.94,
+     "e": 2.51
+    },
+    {
+     "w": "but",
+     "s": 2.7,
+     "e": 2.93
+    },
+    {
+     "w": "an",
+     "s": 2.93,
+     "e": 3.04
+    },
+    {
+     "w": "AI",
+     "s": 3.04,
+     "e": 3.53
+    },
+    {
+     "w": "doesn't",
+     "s": 3.53,
+     "e": 3.95
+    },
+    {
+     "w": "feel",
+     "s": 3.95,
+     "e": 4.22
+    },
+    {
+     "w": "the",
+     "s": 4.22,
+     "e": 4.3
+    },
+    {
+     "w": "pain",
+     "s": 4.3,
+     "e": 4.72
+    },
+    {
+     "w": "when",
+     "s": 4.72,
+     "e": 4.83
+    },
+    {
+     "w": "your",
+     "s": 4.83,
+     "e": 4.93
+    },
+    {
+     "w": "bank",
+     "s": 4.93,
+     "e": 5.24
+    },
+    {
+     "w": "balance",
+     "s": 5.24,
+     "e": 5.63
+    },
+    {
+     "w": "drops.",
+     "s": 5.63,
+     "e": 6.15
+    }
+   ]
+  },
+  {
+   "text": "If you want to see the exact hidden-text trick websites use to hijack AI agents in the first place, watch this video next. It breaks down the whole attack in under seven minutes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 293.304,
+   "vo": 10.527,
+   "dur": 10.827,
+   "words": [
+    {
+     "w": "If",
+     "s": 0.06,
+     "e": 0.19
+    },
+    {
+     "w": "you",
+     "s": 0.19,
+     "e": 0.31
+    },
+    {
+     "w": "want",
+     "s": 0.31,
+     "e": 0.46
+    },
+    {
+     "w": "to",
+     "s": 0.46,
+     "e": 0.54
+    },
+    {
+     "w": "see",
+     "s": 0.54,
+     "e": 0.75
+    },
+    {
+     "w": "the",
+     "s": 0.75,
+     "e": 0.89
+    },
+    {
+     "w": "exact",
+     "s": 0.89,
+     "e": 1.46
+    },
+    {
+     "w": "hidden-text",
+     "s": 1.46,
+     "e": 1.51
+    },
+    {
+     "w": "trick",
+     "s": 1.46,
+     "e": 1.61
+    },
+    {
+     "w": "websites",
+     "s": 1.61,
+     "e": 2.03
+    },
+    {
+     "w": "use",
+     "s": 2.31,
+     "e": 2.54
+    },
+    {
+     "w": "to",
+     "s": 2.54,
+     "e": 3.09
+    },
+    {
+     "w": "hijack",
+     "s": 3.17,
+     "e": 3.76
+    },
+    {
+     "w": "AI",
+     "s": 3.76,
+     "e": 4.09
+    },
+    {
+     "w": "agents",
+     "s": 4.09,
+     "e": 4.56
+    },
+    {
+     "w": "in",
+     "s": 4.56,
+     "e": 4.63
+    },
+    {
+     "w": "the",
+     "s": 4.63,
+     "e": 4.69
+    },
+    {
+     "w": "first",
+     "s": 4.69,
+     "e": 5.09
+    },
+    {
+     "w": "place,",
+     "s": 5.09,
+     "e": 5.52
+    },
+    {
+     "w": "watch",
+     "s": 5.81,
+     "e": 6.12
+    },
+    {
+     "w": "this",
+     "s": 6.12,
+     "e": 6.33
+    },
+    {
+     "w": "video",
+     "s": 6.33,
+     "e": 6.64
+    },
+    {
+     "w": "next.",
+     "s": 6.64,
+     "e": 7.15
+    },
+    {
+     "w": "It",
+     "s": 7.59,
+     "e": 7.69
+    },
+    {
+     "w": "breaks",
+     "s": 7.69,
+     "e": 7.98
+    },
+    {
+     "w": "down",
+     "s": 7.98,
+     "e": 8.2
+    },
+    {
+     "w": "the",
+     "s": 8.2,
+     "e": 8.26
+    },
+    {
+     "w": "whole",
+     "s": 8.26,
+     "e": 8.64
+    },
+    {
+     "w": "attack",
+     "s": 8.64,
+     "e": 9.05
+    },
+    {
+     "w": "in",
+     "s": 9.05,
+     "e": 9.23
+    },
+    {
+     "w": "under",
+     "s": 9.23,
+     "e": 9.46
+    },
+    {
+     "w": "seven",
+     "s": 9.46,
+     "e": 9.89
+    },
+    {
+     "w": "minutes.",
+     "s": 9.89,
+     "e": 10.38
+    }
+   ]
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off",
+   "start": 304.131,
+   "vo": 4.362,
+   "dur": 5.862,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.07,
+     "e": 0.22
+    },
+    {
+     "w": "subscribe",
+     "s": 0.22,
+     "e": 0.75
+    },
+    {
+     "w": "to",
+     "s": 0.75,
+     "e": 0.9
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.9,
+     "e": 1.6
+    },
+    {
+     "w": "with",
+     "s": 1.6,
+     "e": 1.8
+    },
+    {
+     "w": "Max",
+     "s": 1.8,
+     "e": 2.33
+    },
+    {
+     "w": "for",
+     "s": 2.33,
+     "e": 2.56
+    },
+    {
+     "w": "more",
+     "s": 2.56,
+     "e": 2.8
+    },
+    {
+     "w": "tech,",
+     "s": 2.8,
+     "e": 3.25
+    },
+    {
+     "w": "decoded.",
+     "s": 3.47,
+     "e": 4.09
+    }
+   ]
+  }
+ ]
+}

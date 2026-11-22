@@ -1,0 +1,63 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --ground:#F4EDE3; --edge:#EADCCD; --inner:#F8F1E8; --accent:#F87736; --accent-soft:#E98F5E; --dim:#8A6550; --ink:#2A2018;
+        --mute:#C9BBB0; --red:#FF3B30; --green:#3DDC97; --blue:#1C7ED6; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.stage { position:absolute; left:80px; top:110px; width:1320px; height:760px; perspective:1800px; }
+.card { position:absolute; border-radius:30px; border:2px solid var(--edge); background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 36px 80px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:26px; }
+.hd { display:flex; align-items:center; gap:20px; margin-bottom:20px; }
+.tile { width:80px; height:80px; border-radius:20px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 22px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 38px 'SD Display'; color:var(--ink); white-space:nowrap; }
+.inner { background:var(--inner); border-radius:22px; padding:24px 28px; position:relative; overflow:hidden; }
+.tag { position:absolute; font:600 20px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.kick { font:600 26px 'SD Text'; letter-spacing:6px; color:var(--dim); }
+.big { font:900 120px 'SD Display'; color:var(--ink); line-height:1; letter-spacing:-2px; }
+.acc { color:var(--accent); text-shadow:0 0 50px rgba(248,119,54,.5); }
+.ring { position:absolute; width:260px; height:260px; margin:-130px 0 0 -130px; border-radius:50%; border:5px solid var(--accent);
+  box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+.center { position:absolute; left:0; right:0; text-align:center; }
+
+.ph3 { position:absolute; left:120px; top:20px; width:420px; height:720px; border-radius:60px; background:#100804; padding:22px; box-shadow:0 40px 90px rgba(90,50,20,.35); }
+.scr3 { position:relative; width:100%; height:100%; border-radius:42px; background:#FFFFFF; padding:34px 24px; }
+.pr3 { padding:22px; border-radius:24px 24px 6px 24px; background:#F87736; color:#100804; font:800 30px 'SD Display'; margin-left:30px; }
+.nt3 { position:absolute; left:14px; right:14px; top:300px; padding:24px; border-radius:24px; background:#1E120C; color:#FFFFFF; opacity:0; box-shadow:0 20px 40px rgba(0,0,0,.3); }
+.nt3 b { display:block; font:900 34px 'SD Display'; color:#3DDC97; } .nt3 span { font:800 34px 'SD Mono'; }
+.sp3 { position:absolute; left:640px; top:120px; font:900 120px 'SD Display'; color:#FF3B30; opacity:0; transform:rotate(-6deg); }
+  </style>
+  <div id="root" data-composition-id="b00" data-width="1920" data-height="1080">
+<div class="stage" id="b00-all" style="left:80px"><div class="ph3" id="b00-p"><div class="scr3"><div class="pr3" id="b00-q">Find me a good pair of running shoes under $80 and order them.</div>
+<div class="nt3" id="b00-n"><b>✓ Payment approved</b><span>$380.00 · Non-refundable</span></div></div></div>
+<div class="bit" id="b00-bit" style="left:820px; top:260px; width:340px; height:306px;"><div id="b00-bit-a"><svg viewBox="0 0 400 360" width="340" height="306" style="overflow:visible"><defs><pattern id="scan" width="4" height="6" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#fff"/></pattern></defs><g transform="rotate(0 200 180)"><ellipse cx="200" cy="330" rx="46" ry="10" fill="rgba(0,0,0,.4)"/><path d="M184 300 Q200 336 216 300 Z" fill="#F87736" opacity=".9"/><path d="M192 300 Q200 320 208 300 Z" fill="#FFE2CC"/><rect x="120" y="196" width="160" height="110" rx="40" fill="#F87736"/><rect x="160" y="226" width="80" height="40" rx="12" fill="#160B06"/><circle cx="182" cy="246" r="6" fill="#1C7ED6"/><circle cx="218" cy="246" r="6" fill="#F87736"/><path d="M128 224 q-26 14 -30 44" stroke="#D8C4B4" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="98" cy="270" r="13" fill="#D8C4B4"/><path d="M272 224 q30 -10 34 -56" stroke="#D8C4B4" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="306" cy="164" r="13" fill="#D8C4B4"/><path d="M324 140 q8 8 2 18 M334 154 q8 8 2 18" stroke="#F87736" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M200 54 V26" stroke="#D8C4B4" stroke-width="8"/><circle cx="200" cy="22" r="11" fill="#F87736"/><rect x="96" y="52" width="208" height="150" rx="56" fill="#F3E6DC"/><rect x="96" y="52" width="208" height="150" rx="56" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3"/><rect x="120" y="82" width="160" height="92" rx="34" fill="#160B06"/><ellipse cx="200" cy="122" rx="70" ry="34" fill="#1C7ED6" opacity=".18"/><path d="M161 127 Q174 110 187 127 M213 127 Q226 110 239 127" stroke="#1C7ED6" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M188 146 Q200 154 212 146" stroke="#1C7ED6" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="82" y="104" width="18" height="40" rx="8" fill="#D8C4B4"/><rect x="300" y="104" width="18" height="40" rx="8" fill="#D8C4B4"/></g></svg></div><div id="b00-bit-b"><svg viewBox="0 0 400 360" width="340" height="306" style="overflow:visible"><defs><pattern id="scan" width="4" height="6" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#fff"/></pattern></defs><g transform="rotate(0 200 180)"><ellipse cx="200" cy="330" rx="46" ry="10" fill="rgba(0,0,0,.4)"/><path d="M184 300 Q200 336 216 300 Z" fill="#F87736" opacity=".9"/><path d="M192 300 Q200 320 208 300 Z" fill="#FFE2CC"/><rect x="120" y="196" width="160" height="110" rx="40" fill="#F87736"/><rect x="160" y="226" width="80" height="40" rx="12" fill="#160B06"/><circle cx="182" cy="246" r="6" fill="#1C7ED6"/><circle cx="218" cy="246" r="6" fill="#F87736"/><path d="M128 224 q-22 16 -24 44" stroke="#D8C4B4" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="104" cy="270" r="13" fill="#D8C4B4"/><path d="M272 224 q22 16 24 44" stroke="#D8C4B4" stroke-width="12" fill="none" stroke-linecap="round"/><circle cx="296" cy="270" r="13" fill="#D8C4B4"/><path d="M200 54 V26" stroke="#D8C4B4" stroke-width="8"/><circle cx="200" cy="22" r="11" fill="#F87736"/><rect x="96" y="52" width="208" height="150" rx="56" fill="#F3E6DC"/><rect x="96" y="52" width="208" height="150" rx="56" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3"/><rect x="120" y="82" width="160" height="92" rx="34" fill="#160B06"/><ellipse cx="200" cy="122" rx="70" ry="34" fill="#1C7ED6" opacity=".18"/><circle cx="174" cy="122" r="15" fill="none" stroke="#1C7ED6" stroke-width="6"/><circle cx="226" cy="122" r="15" fill="none" stroke="#1C7ED6" stroke-width="6"/><circle cx="174" cy="122" r="4" fill="#1C7ED6"/><circle cx="226" cy="122" r="4" fill="#1C7ED6"/><ellipse cx="200" cy="148" rx="7" ry="9" fill="#1C7ED6"/><rect x="82" y="104" width="18" height="40" rx="8" fill="#D8C4B4"/><rect x="300" y="104" width="18" height="40" rx="8" fill="#D8C4B4"/><text x="300" y="80" font-family="SD Display" font-weight="900" font-size="64" fill="#FF3B30">!</text></g></svg></div></div>
+<div class="sp3" id="b00-sp">$380.00?!</div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#b00-p", { opacity:0, scale:.78, rotationX:18, rotationY:-12, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.05);
+    tl.fromTo("#b00-q", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.4);
+    tl.set("#b00-bit > div", { opacity:0 }, 0);
+    tl.set("#b00-bit-a", { opacity:1 }, 0);
+    tl.fromTo("#b00-bit", { opacity:0, y:60 }, { opacity:1, y:0, duration:.45, ease:"back.out(1.8)" }, 0.1);
+    tl.fromTo("#b00-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:10, immediateRender:false }, 0.55);
+    tl.to("#b00-bit", { x:300, opacity:0, duration:.35, ease:"power2.in" }, 2.542);
+    tl.to("#b00-bit", { x:0, opacity:1, duration:.35, ease:"back.out(2)" }, 5.593);
+    tl.fromTo("#b00-n", { opacity:0, y:-80 }, { opacity:1, y:0, duration:.35, ease:"back.out(2)" }, 5.293);
+    tl.fromTo("#b00-p", { x:0 }, { x:10, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 5.393);
+    tl.fromTo("#b00-sp", { opacity:0, scale:2 }, { opacity:1, scale:1, duration:.25, ease:"power4.in" }, 5.593);
+    tl.set("#b00-bit > div", { opacity:0 }, 5.593);
+    tl.set("#b00-bit-b", { opacity:1 }, 5.593);
+    tl.fromTo("#b00-bit", { scale:1.1 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 5.593);
+    tl.to("#b00-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 9.449);
+    window.__timelines["b00"] = tl;
+  </script>
+</template>

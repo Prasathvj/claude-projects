@@ -1,0 +1,72 @@
+
+◆  Rendering ep03-long → /home/user/claude-projects/tech-studio/hf/ep03-long/out/scenes.mp4
+   30fps · looks (CRF 16) · auto workers (4 cores usable)
+   GPU: browser GPU (auto-detect)
+
+
+  Lint: 0 error(s), 9 warning(s) — run `hyperframes lint` for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+
+Checking browser...
+Browser: env
+[INFO] [Render] Pipeline started {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","platform":"linux","arch":"x64","nodeVersion":"v22.23.5","fps":{"num":30,"den":1},"format":"mp4","quality":"standard","browserGpuMode":"auto","forceScreenshot":false,"protocolTimeout":300000,"browserTimeout":120000,"pageNavigationTimeout":60000,"playerReadyTimeout":45000}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"pipeline","status":"checkpoint","elapsedMs":3,"message":"started","format":"mp4","quality":"standard","browserGpuMode":"auto","forceScreenshot":false,"protocolTimeoutMs":300000,"pageNavigationTimeoutMs":60000,"playerReadyTimeoutMs":45000,"requestedWorkers":"auto"}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"compile","status":"start","elapsedMs":5,"needsAlpha":false}
+  █░░░░░░░░░░░░░░░░░░░░░░░░  5%  Compiling composition
+@hf-progress {"code":"compile","pct":5}
+[WARN] [compile] Audio "vo" (assets/vo.wav) is 309.99s but its data-duration is 311.99s, so the slot is shortened to the media length. Set data-duration to ~309.99s, trim data-media-start, or use a longer/looping source if that isn't intended. {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[WARN] [compile] Audio "bgm" (assets/bgm.wav) is 309.99s but its data-duration is 311.99s, so the slot is shortened to the media length. Set data-duration to ~309.99s, trim data-media-start, or use a longer/looping source if that isn't intended. {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] Compiled composition metadata {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","entryFile":"index.html","staticDuration":311.994,"width":1920,"height":1080,"videoCount":0,"audioCount":72,"renderModeHints":{"recommendScreenshot":false,"reasons":[]}}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"compile","status":"end","elapsedMs":3232,"durationMs":3226,"needsAlpha":false}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"compile","status":"checkpoint","elapsedMs":3245,"message":"composition metadata resolved","width":1920,"height":1080,"videoCount":0,"audioCount":72,"imageCount":0,"deviceScaleFactor":1,"forceScreenshot":false,"compositionHash":"c9356c5b80d16880"}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"browser_probe","status":"start","elapsedMs":3246,"forceScreenshot":false,"stagePhase":"calibrating"}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"browser_probe","status":"end","elapsedMs":3988,"durationMs":742,"forceScreenshot":false,"stagePhase":"calibrating"}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"browser_probe","status":"checkpoint","elapsedMs":3999,"message":"duration resolved","durationSeconds":311.994,"totalFrames":9360,"compositionHash":"c9356c5b80d16880","beginFrameStalled":false}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"video_extract","status":"start","elapsedMs":4000,"videoCount":0}
+  ██░░░░░░░░░░░░░░░░░░░░░░░  10%  Extracting video frames
+@hf-progress {"code":"extract_video","pct":10}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"video_extract","status":"end","elapsedMs":4000,"durationMs":0,"videoCount":0}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"video_extract","status":"checkpoint","elapsedMs":4034,"message":"frames resolved","videoCount":0,"extractedVideoCount":0,"totalFramesExtracted":0,"maxFramesPerVideo":0,"avgFramesPerExtractedVideo":null,"vfrPreflightCount":null,"vfrPreflightMs":null,"cacheHits":null,"cacheMisses":null,"transientRetries":null,"minVideoFrameCoverageRatio":null,"authoredTimedClipCount":118}
+[INFO] [Render] No HDR sources detected, rendering SDR {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"hdr_detection","status":"checkpoint","elapsedMs":4035,"message":"resolved","requestedHdrMode":"auto","effectiveHdr":"sdr","nativeHdrVideoCount":0,"nativeHdrImageCount":0}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"audio_process","status":"start","elapsedMs":4035,"audioCount":72}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"file_server","status":"start","elapsedMs":4037,"reused":false}
+  █████░░░░░░░░░░░░░░░░░░░░  20%  Processing audio tracks
+@hf-progress {"code":"process_audio","pct":20}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting frame capture
+@hf-progress {"code":"start_browsers","pct":25}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"file_server","status":"end","elapsedMs":4047,"durationMs":10}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Checking browser GPU
+@hf-progress {"code":"start_browsers","pct":25}
+[hyperframes] browserGpuMode probe → software (WebGL unavailable)
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting frame capture
+@hf-progress {"code":"start_browsers","pct":25}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"capture_calibration","status":"start","elapsedMs":4818,"stagePhase":"calibrating","forceScreenshot":false,"totalFrames":9360,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+[INFO] [Render] Calibration config {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","protocolTimeout":30000,"parentProtocolTimeout":300000,"forceScreenshot":false,"totalFrames":9360}
+[INFO] Launching browser for capture calibration... {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Measuring capture speed
+@hf-progress {"code":"start_browsers","pct":25}
+[BrowserManager] HeadlessExperimental.beginFrame probe failed after 205ms: Protocol error (HeadlessExperimental.enable): 'HeadlessExperimental.enable' wasn't found; falling back to screenshot mode.
+[INFO] Initializing calibration session... {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[non-blocking] Failed to load resource: the server responded with a status of 404 (Not Found)
+[INFO] Calibration session ready, capturing test frames... {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] Calibration: capturing test frame 1/5... {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] Calibration: capturing test frame 2/5... {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] Calibration: capturing test frame 3/5... {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] Calibration: capturing test frame 4/5... {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] Calibration: capturing test frame 5/5... {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] Calibration complete, estimated cost: 280ms/frame (p95) {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554"}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"capture_calibration","status":"end","elapsedMs":8640,"durationMs":3821,"stagePhase":"calibrating","forceScreenshot":false,"totalFrames":9360,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"capture_calibration","status":"checkpoint","elapsedMs":8640,"message":"resolved","forceScreenshot":false,"multiplier":1,"p95Ms":280,"medianMs":144}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"worker_resolution","status":"checkpoint","elapsedMs":8643,"message":"resolved","workerCount":1}
+[INFO] streaming-encode gate {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","enabled":true,"reason":"single_worker","configFlag":true,"durationCapEnabled":false,"outputFormat":"mp4","workerCount":1,"durationSeconds":311.994,"maxDurationSeconds":240}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"capture_strategy","status":"checkpoint","elapsedMs":8644,"message":"resolved","workerCount":1,"forceScreenshot":false,"captureBeyondViewport":null,"useStreamingEncode":true,"useLayeredComposite":false,"usePageSideCompositing":false,"hasHdrContent":false,"hasShaderTransitions":false,"isPngSequence":false}
+[INFO] [Render:trace] {"renderJobId":"27ddb5a0-ac71-4dae-925b-a75e14ff6554","phase":"capture_streaming","status":"start","elapsedMs":8644,"stagePhase":"capturing","workerCount":1,"forceScreenshot":false,"totalFrames":9360,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting frame capture
+@hf-progress {"code":"start_browsers","pct":25}
+[BrowserManager] HeadlessExperimental.beginFrame probe failed after 179ms: Protocol error (HeadlessExperimental.enable): 'HeadlessExperimental.enable' wasn't found; falling back to screenshot mode.
+[non-blocking] Failed to load resource: the server responded with a status of 404 (Not Found)
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Streaming frame 1/9360
+@hf-progress {"code":"capture","done":1,"total":9360,"pct":25}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Streaming frame 3/9360
+@hf-progress {"code":"capture","done":3,"total":9360,"pct":25}
