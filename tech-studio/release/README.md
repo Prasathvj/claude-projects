@@ -24,6 +24,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 15 | [15_del01](15_del01) | Deleting a file doesn't delete it | 0:59 | **Fri 4 Dec, 6:30 PM** | Ready |
 | 17 | [17_ep03_long](17_ep03_long) | AI Agents Can Now Spend Your Money (What Could Go Wrong?) | 5:12 | **Sat 5 Dec, 12:30 PM** | Ready (long video) |
 | 16 | [16_pay01](16_pay01) | Why you shouldn't give AI your credit card yet | 0:39 | **Sun 6 Dec, 12:30 PM** (after the EP03 long video) | Ready |
+| 18 | [18_ep04_long](18_ep04_long) | AI Writes 75% of Google's New Code. So Why Are Developer Jobs Growing? | 8:21 | **Tue 8 Dec, 6:30 PM** | Ready (long video) |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.

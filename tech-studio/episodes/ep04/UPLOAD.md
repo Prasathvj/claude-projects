@@ -1,6 +1,6 @@
 # ep04 long video: Will AI Replace Software Engineers?
 File: `TechDecoded_ep04_long.mp4` (1920×1080, 8:21) · Thumbnail: `thumbnail.jpg` · Theme: cream + circuit
-Teaser Short: swe01 · Planned release: see release/README.md
+Teaser Short: swe01 · Planned release: **Tue 8 Dec 2026, 6:30 PM IST** (teaser swe01 the day before)
 
 **Title:** AI Writes 75% of Google's New Code. So Why Are Developer Jobs Growing?
 Alt titles (vidIQ score): "I'm a Software Engineer. Here's What AI Is Really Doing to Our Jobs" (98; the channel owner is an IT professional, but the narration is AI-voiced) · "Will AI Replace Software Engineers? The Real Data" (84). The main title scored 95.
