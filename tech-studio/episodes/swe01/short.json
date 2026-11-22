@@ -1,0 +1,45 @@
+{
+ "id": "swe01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 1,
+ "max_tempo": 1.05,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "At Google, AI now writes three out of every four new lines of code.",
+   "dir": "gripping, surprising hook"
+  },
+  {
+   "text": "So are programmers finished? Look at who's actually losing jobs.",
+   "dir": "curious, leaning in"
+  },
+  {
+   "text": "Developers over thirty? Still growing.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Developers aged twenty-two to twenty-five? Down almost twenty percent.",
+   "dir": "serious, emphatic"
+  },
+  {
+   "text": "AI isn't replacing engineers. It's removing the first rung of the ladder.",
+   "dir": "confident reveal"
+  },
+  {
+   "text": "And the twist? In one study, experienced developers using AI were nineteen percent slower.",
+   "dir": "playful twist, surprised"
+  },
+  {
+   "text": "The full story, and what to do about it, is in our new video.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}

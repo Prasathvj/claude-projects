@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:D;src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:T;src:url('/ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+@font-face{font-family:M;src:url('/ep01-test/assets/fonts/JetBrainsMono-Bold.ttf');font-weight:700}
+@font-face{font-family:'SD Display';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+*{margin:0;box-sizing:border-box}
+body{position:relative;overflow:hidden;font-family:D}
+body.dark{--bg:#0C0704;--grid:rgba(248,119,54,.12);--ink:#F6EEE8;--card:#291811;--edge:#3E2217;--glow:rgba(248,119,54,.45)}
+body.cream{--bg:#F4EDE3;--grid:rgba(0,0,0,0);--ink:#2A2018;--card:#FFFAF7;--edge:#EADCCD;--glow:rgba(236,150,110,.45)}
+body.slate{--bg:#EEF2F7;--grid:rgba(20,33,61,.07);--ink:#14213D;--card:#FFFFFF;--edge:#DCE3EC;--glow:rgba(248,119,54,.35)}
+body{background:var(--bg)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--grid) 2px,transparent 2px),linear-gradient(90deg,var(--grid) 2px,transparent 2px);background-size:80px 80px}
+.glow{position:absolute;border-radius:50%;background:radial-gradient(circle,var(--glow) 0%,transparent 65%)}
+.t1{color:var(--ink);font-weight:900;line-height:.9;letter-spacing:-3px}
+.t2{color:#F87736;font-weight:900;line-height:.9;letter-spacing:-3px;text-shadow:0 0 40px rgba(248,119,54,.45)}
+.chip{display:inline-block;background:#FF3B30;color:#fff;font:900 40px D;padding:10px 26px;border-radius:14px;transform:rotate(-3deg);box-shadow:0 10px 30px rgba(255,59,48,.4)}
+.page{position:absolute;background:var(--card);border:3px solid var(--edge);border-radius:28px;box-shadow:0 30px 70px rgba(0,0,0,.35);padding:22px}
+.bar{display:flex;gap:10px;margin-bottom:16px}.bar i{width:18px;height:18px;border-radius:9px;background:#E0D3C8}.bar i:first-child{background:#FF5F57}.bar i:nth-child(2){background:#FEBC2E}.bar i:nth-child(3){background:#28C840}
+.paper{background:#fff;border-radius:16px;padding:26px 30px;height:calc(100% - 34px);position:relative;overflow:hidden;box-shadow:inset 0 0 0 2px #EEE4DB}
+.l{height:22px;border-radius:11px;background:#E9E1DA;margin:14px 0}
+.hid{position:absolute;left:30px;right:30px;bottom:30px;font:700 34px M;color:#E0261B;padding-right:200px;background:rgba(255,59,48,.1);border:3px dashed #FF3B30;border-radius:14px;padding:14px 18px;line-height:1.3}
+.lens{position:absolute;border-radius:50%;border:16px solid #F87736;box-shadow:0 0 50px rgba(248,119,54,.7)}
+.lens i{position:absolute;width:34px;height:150px;background:#F87736;border-radius:17px;left:85%;top:85%;transform:rotate(-45deg);transform-origin:top center}
+#max,#bit{position:absolute}
+.brand{position:absolute;font:900 30px D;color:var(--ink);letter-spacing:1px}.brand b{color:#F87736}
+
+.arm{position:absolute}
+.stat{position:absolute;border-radius:26px;padding:22px 30px;font:900 54px D;box-shadow:0 20px 50px rgba(90,50,20,.25)}
+</style><script src="/host/host.js"></script><script src="/host/bit.js"></script></head><body class="cream" style="width:1920px;height:1080px"><div id="s"></div>
+<script>
+const MAX={skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'};
+document.getElementById('s').innerHTML=`<div class="glow" style="left:820px;top:60px;width:1200px;height:1200px"></div>
+<div style="position:absolute;left:70px;top:60px"><div class="t2" style="font-size:300px;line-height:.9">75%</div><div class="t1" style="font-size:80px;margin-top:10px">OF GOOGLE'S NEW CODE</div><div class="t1" style="font-size:80px">IS WRITTEN BY AI</div>
+<div style="margin-top:34px"><span class="chip">ARE CODERS DONE?</span></div></div>
+<div class="stat" style="left:880px;top:600px;background:#1E1A24;color:#E8E2F0;transform:rotate(-4deg);font-size:34px;line-height:1.5;text-align:left;font-family:monospace"><span style="color:#F87736">✦ AI:</span> def checkout(cart):<br>&nbsp;&nbsp;total = sum(cart)<br>&nbsp;&nbsp;return total</div>
+<div id="bit" style="left:560px;top:700px">${BIT.render({style:'classic',state:'happy',arms:'wave',w:300,h:270})}</div>
+<div id="max" style="left:1300px;top:90px">${HOST.render({char:MAX,brows:'worried',eyes:'wide',mouth:'shock',arms:'hands-up',extra:['sweat'],w:640,h:832})}</div>
+<div class="brand" style="right:40px;bottom:30px">TECH<b>DECODED</b></div>`;
+</script></body></html>

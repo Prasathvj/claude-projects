@@ -1,6 +1,6 @@
 """Shorts batch 3 (Nov 2026): upi01 UPI, ai01 ChatGPT tokens, del01 file deletion, face01 Face ID.
 Built on the explainer-Short helpers (hf_explainers / hf_news01_short); each topic has its own visual language.
-Usage: THEME=cream GRID=<pattern> python3 tools/hf_batch3.py upi01|ai01|del01|face01"""
+Usage: THEME=cream GRID=<pattern> python3 tools/hf_batch3.py upi01|ai01|del01|face01|pay01|swe01"""
 import json, math, random, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -435,8 +435,72 @@ def pay():
                 (S['s5'][0], 'whoosh', .5), (tc + S['s5'][0], 'click', .9), (tc + S['s5'][0] + 0.1, 'ding', .7)]
     return out_, sfx
 
+# ================================================================= swe01 (teaser for ep04 "Will AI Replace Software Engineers?")
+SWECSS = PAYCSS + """.ed2 { position:absolute; left:90px; top:300px; width:900px; height:560px; border-radius:30px; background:#1E1A24; box-shadow:0 30px 80px rgba(60,30,10,.35); overflow:hidden; }
+.eb2 { height:64px; background:#2A2533; padding:0 26px; display:flex; align-items:center; font:700 24px 'SD Mono'; color:#A59DB3; }
+.el2 { font:600 30px 'SD Mono'; color:#E8E2F0; line-height:1.9; white-space:pre; padding-left:30px; opacity:0; }
+.pc2 { position:absolute; left:640px; top:720px; width:360px; padding:26px; border-radius:30px; background:#FFFFFF; box-shadow:0 30px 70px rgba(90,50,20,.25); text-align:center; }
+.pc2 small { display:block; font:800 22px 'SD Mono'; color:#8C6B5A; letter-spacing:1px; } .pc2 b { font:900 130px 'SD Display'; color:#F87736; line-height:1.05; }
+.vbar { position:absolute; bottom:760px; width:300px; border-radius:26px 26px 8px 8px; transform-origin:bottom; } .vlab { position:absolute; top:1180px; width:400px; text-align:center; font:900 50px 'SD Display'; color:var(--ink); }
+.vval { position:absolute; width:400px; text-align:center; font:900 76px 'SD Display'; opacity:0; } .axis2 { position:absolute; left:100px; right:100px; top:1160px; height:6px; background:#E6D5C6; }
+.rg2 { position:absolute; left:240px; width:600px; height:96px; border-radius:22px; background:#FFFFFF; box-shadow:0 14px 30px rgba(90,50,20,.15); display:flex; align-items:center; justify-content:center; font:800 40px 'SD Display'; color:#2A2018; }
+.rg2.low { background:#FFE3DC; color:#D93025; border:4px dashed #FF3B30; } .rail2 { position:absolute; top:280px; width:26px; height:800px; border-radius:13px; background:#C9A98E; }
+.ln2 { position:absolute; left:90px; width:900px; font:800 44px 'SD Display'; color:var(--ink); } .tr2 { height:110px; border-radius:55px; background:#FFFFFF; margin-top:14px; overflow:hidden; box-shadow:0 12px 30px rgba(90,50,20,.12); }
+.tr2 i { display:block; height:100%; width:0; border-radius:55px; }
+.vc2 { position:absolute; left:110px; top:330px; width:860px; padding:24px; border-radius:30px; background:#FFFFFF; box-shadow:0 30px 70px rgba(90,50,20,.25); }
+.th2 { height:440px; border-radius:22px; background:linear-gradient(135deg,#FFE9D9,#F8B48C); position:relative; display:flex; align-items:center; justify-content:center; }
+.th2 b { position:absolute; left:30px; right:30px; top:26px; font:900 58px 'SD Display'; color:#1E120C; line-height:1.05; } .pl2 { width:160px; height:160px; border-radius:80px; background:#FF3B30; color:#fff; font:900 76px 'SD Display'; display:flex; align-items:center; justify-content:center; margin-top:120px; }
+.mt2 { font:700 32px 'SD Text'; color:#8C6B5A; margin-top:18px; }"""
+def swe():
+    out_ = []
+    code = ['def checkout(cart):', '    total = sum(cart)', '    tax = total * 0.18', '    order = save(total)', '    return order']
+    rows = ''.join(f'<div class="el2" id="s0-l{k}">{E(x)}</div>' for k, x in enumerate(code))
+    body = f"""<div class="ed2" id="s0-e"><div class="eb2">checkout.py · ILLUSTRATION &nbsp; <span style="color:#F87736">✦ AI</span></div><div style="padding-top:24px">{rows}</div></div>
+<div class="pc2" id="s0-p"><small>GOOGLE · NEW CODE BY AI</small><b><i style="font-style:normal" id="s0-n">25</i>%</b></div>
+<div class="cap3" id="s0-t" style="top:960px">AI WRITES <span>3 OF 4</span><br>NEW LINES</div>"""
+    sc = [fly('#s0-e', 0.02)] + [tween(f'#s0-l{k}', 0.1 + k * 0.18, 'opacity:0, x:-30', 'opacity:1, x:0', .15, 'power2.out') for k in range(5)]
+    sc += [pop('#s0-p', 0.3), f'    tl.fromTo("#s0-n", {{ innerText:25 }}, {{ innerText:75, snap:{{ innerText:1 }}, duration:1.6, ease:"power2.inOut" }}, 0.4);', slam('#s0-t', fr(0, .5))]
+    out_.append(mk(0, body, sc, SWECSS))
+    body = f"""<div class="cap3" id="s1-t" style="top:420px; font-size:130px">ARE CODERS<br><span>DONE?</span></div><div class="cap3" id="s1-s" style="top:800px; font-size:56px">Who is <span>actually</span> losing jobs?</div>""" + \
+        bit('s1', [('n', {'state': 'scan', 'extra': ['laser']})], 390, 960, 300)
+    sc = [slam('#s1-t', 0.02), pop('#s1-s', fr(1, .45))] + bit_on('s1', 'n', 0, False) + bit_float('s1')
+    out_.append(mk(1, body, sc, SWECSS))
+    for i, (lab, val, col, h, cap) in enumerate([('AGE 30+', 'GROWING ↑', '#3DDC97', 520, 'STILL<br><span>GROWING</span>'), ('AGE 22–25', '≈ −20%', '#FF3B30', 520, 'DOWN<br><span>~20%</span>')], start=2):
+        body = f"""<div class="lab" style="position:absolute; left:0; right:0; top:300px; text-align:center">US SOFTWARE DEVELOPERS · STANFORD</div>
+<div class="vbar" id="s{i}-b" style="left:390px; height:{h}px; background:{col}"></div><div class="vval" id="s{i}-v" style="left:340px; top:{1160 - h - 120}px; color:{col}">{val}</div>
+<div class="axis2"></div><div class="vlab" style="left:340px">{lab}</div>"""
+        sc = [tween(f'#s{i}-b', 0.05, 'scaleY:0' if i == 2 else 'scaleY:1', 'scaleY:1' if i == 2 else 'scaleY:.25', .9, 'expo.out' if i == 2 else 'power3.in'), pop(f'#s{i}-v', fr(i, .4))]
+        if i == 3:
+            sc[1] = f'    tl.fromTo("#s{i}-v", {{ opacity:0, y:0 }}, {{ opacity:1, y:390, duration:.5, ease:"back.out(1.6)" }}, {fr(i, .35)});'
+            sc.append(shake('#s3-b', fr(3, .6)))
+        out_.append(mk(i, body, sc, SWECSS))
+    rungs = ''.join(f'<div class="rg2{" low" if k == 3 else ""}" id="s4-r{k}" style="top:{330 + k * 190}px">{E(t)}</div>' for k, t in enumerate(['Senior', 'Mid-level', 'Junior', 'First job']))
+    body = f"""<div class="rail2" style="left:210px"></div><div class="rail2" style="left:844px"></div>{rungs}<div class="cap3" id="s4-t" style="top:1120px; font-size:70px">AI IS REMOVING<br><span>THE FIRST RUNG</span></div>"""
+    sc = [tween(f'#s4-r{k}', 0.02 + k * 0.08, 'opacity:0, x:-80', 'opacity:1, x:0', .3, 'power3.out') for k in range(4)]
+    sc += [shake('#s4-r3', fr(4, .45)), f'    tl.to("#s4-r3", {{ y:420, rotation:-16, opacity:0, duration:.8, ease:"power3.in" }}, {fr(4, .55)});', slam('#s4-t', fr(4, .3))]
+    out_.append(mk(4, body, sc, SWECSS))
+    body = """<div class="lab" style="position:absolute; left:0; right:0; top:320px; text-align:center">EXPERIENCED DEVELOPERS · METR STUDY</div>
+<div class="ln2" style="top:440px">Without AI<div class="tr2"><i id="s5-a" style="background:#C9A98E"></i></div></div>
+<div class="ln2" style="top:640px">With AI<div class="tr2"><i id="s5-b" style="background:#FF3B30"></i></div></div>
+<div class="cap3" id="s5-t" style="top:900px; font-size:120px; color:#FF3B30">19%<br>SLOWER</div>"""
+    sc = [tween('#s5-a', 0.1, 'width:"0%"', 'width:"100%"', 1.6, 'power1.inOut'), tween('#s5-b', 0.1, 'width:"0%"', 'width:"81%"', 1.6, 'power1.inOut'),
+          slam('#s5-t', fr(5, .55)), shake('#s5-t', fr(5, .6))]
+    out_.append(mk(5, body, sc, SWECSS))
+    body = """<div class="vc2" id="s6-v"><div class="th2"><b>AI Writes 75% of Google's New Code. So Why Are Developer Jobs Growing?</b><div class="pl2">▶</div></div><div class="mt2">TechDecoded with Max · new video</div></div>
+<div class="cap3" id="s6-t" style="top:1000px">FULL STORY<br><span>👆 WATCH NEXT</span></div>"""
+    sc = [fly('#s6-v', 0.02), slam('#s6-t', fr(6, .35)), f'    tl.fromTo("#s6-t", {{ y:0 }}, {{ y:-18, duration:.35, yoyo:true, repeat:5, ease:"sine.inOut", immediateRender:false }}, {fr(6, .5)});']
+    out_.append(mk(6, body, sc, SWECSS))
+    s, tc = subscribe_scene(7); out_.append(s)
+    def sfx(g):
+        return [(0.02, 'whoosh', .55), (0.1, 'type', .45), (0.4, 'tick', .4), (S['s1'][0], 'impact', .6), (S['s1'][0] + 0.4, 'scan', .4),
+                (S['s2'][0] + 0.05, 'riser', .45), (S['s3'][0] + 0.05, 'powerdown', .5), (S['s3'][0] + fr(3, .6), 'thud', .5),
+                (S['s4'][0] + 0.05, 'pop', .4), (S['s4'][0] + fr(4, .45), 'error', .45), (S['s4'][0] + fr(4, .55), 'whoosh', .5),
+                (S['s5'][0] + 0.1, 'whoosh', .45), (S['s5'][0] + fr(5, .55), 'impact', .6), (S['s6'][0], 'whoosh', .5), (S['s6'][0] + fr(6, .35), 'ding', .5),
+                (S['s7'][0], 'whoosh', .5), (tc + S['s7'][0], 'click', .9), (tc + S['s7'][0] + 0.1, 'ding', .7)]
+    return out_, sfx
+
 if __name__ == '__main__':
-    scenes, sfx = {'upi01': upi, 'ai01': ai, 'del01': dele, 'face01': face, 'pay01': pay}[K]()
+    scenes, sfx = {'upi01': upi, 'ai01': ai, 'del01': dele, 'face01': face, 'pay01': pay, 'swe01': swe}[K]()
     L.sfx_list = lambda: sorted(sfx(lambda i, w: S[f's{i}'][0] + wl(i, w)))
     comp = L.P / 'compositions'; comp.mkdir(parents=True, exist_ok=True)
     for f in comp.glob('*.html'): f.unlink()
