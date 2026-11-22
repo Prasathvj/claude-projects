@@ -41,14 +41,14 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s3-note", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.02);
-    tl.to("#s3-x", { scaleX:1, duration:.25, ease:"power2.out" }, 0.671);
-    tl.fromTo("#s3-ev", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 0.5710000000000001);
+    tl.to("#s3-x", { scaleX:1, duration:.25, ease:"power2.out" }, 0.71);
+    tl.fromTo("#s3-ev", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 0.61);
     tl.to("#s3-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 2.125);
     tl.set("#s3-bit > div", { opacity:0 }, 0);
     tl.set("#s3-bit-n", { opacity:1 }, 0);
-    tl.set("#s3-bit > div", { opacity:0 }, 0.671);
-    tl.set("#s3-bit-h", { opacity:1 }, 0.671);
-    tl.fromTo("#s3-bit", { scale:1.12 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 0.671);
+    tl.set("#s3-bit > div", { opacity:0 }, 0.71);
+    tl.set("#s3-bit-h", { opacity:1 }, 0.71);
+    tl.fromTo("#s3-bit", { scale:1.12 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 0.71);
     tl.fromTo("#s3-bit", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.1);
     window.__timelines["s3"] = tl;
   </script>

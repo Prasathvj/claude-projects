@@ -45,18 +45,18 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s2-doc", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
-    tl.fromTo("#s2-l0", { opacity:0, scale:.6, y:10 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.403);
-    tl.fromTo("#s2-l1", { opacity:0, scale:.6, y:10 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.534000000000001);
-    tl.fromTo("#s2-l2", { opacity:0, scale:.6, y:10 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 7.026);
-    tl.fromTo("#s2-stamp", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 7.326);
-    tl.fromTo("#s2-doc", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 7.526);
+    tl.fromTo("#s2-l0", { opacity:0, scale:.6, y:10 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.4099999999999997);
+    tl.fromTo("#s2-l1", { opacity:0, scale:.6, y:10 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.53);
+    tl.fromTo("#s2-l2", { opacity:0, scale:.6, y:10 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 6.9);
+    tl.fromTo("#s2-stamp", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 7.2);
+    tl.fromTo("#s2-doc", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 7.4);
     tl.to("#s2-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 8.422);
     tl.set("#s2-bit > div", { opacity:0 }, 0);
     tl.set("#s2-bit-n", { opacity:1 }, 0);
     tl.fromTo("#s2-bit", { y:0 }, { y:-14, duration:.8, ease:"sine.inOut", yoyo:true, repeat:9 }, 0);
-    tl.set("#s2-bit > div", { opacity:0 }, 7.425999999999999);
-    tl.set("#s2-bit-w", { opacity:1 }, 7.425999999999999);
-    tl.fromTo("#s2-bit", { scale:1.12 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 7.425999999999999);
+    tl.set("#s2-bit > div", { opacity:0 }, 7.3);
+    tl.set("#s2-bit-w", { opacity:1 }, 7.3);
+    tl.fromTo("#s2-bit", { scale:1.12 }, { scale:1, duration:.25, ease:"back.out(3)", immediateRender:false }, 7.3);
     window.__timelines["s2"] = tl;
   </script>
 </template>

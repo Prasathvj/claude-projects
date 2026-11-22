@@ -41,9 +41,9 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s1-bk", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
-    tl.fromTo("#s1-ans", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.291);
-    tl.fromTo("#s1-no", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 3.5);
-    tl.fromTo("#s1-bk", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.6999999999999997);
+    tl.fromTo("#s1-ans", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.31);
+    tl.fromTo("#s1-no", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 3.49);
+    tl.fromTo("#s1-bk", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.69);
     tl.to("#s1-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 4.268);
     window.__timelines["s1"] = tl;
   </script>
