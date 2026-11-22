@@ -1,5 +1,6 @@
 import ep01_long from './ep01-long.timeline.json';
 import ep01_short from './ep01-short.timeline.json';
+import ep02_long from './ep02-long.timeline.json';
 import goog01_short from './goog01-short.timeline.json';
 import job01_short from './job01-short.timeline.json';
 import job02_short from './job02-short.timeline.json';
@@ -11,4 +12,4 @@ import robo01_short from './robo01-short.timeline.json';
 import sat01_short from './sat01-short.timeline.json';
 import tip01_short from './tip01-short.timeline.json';
 import type {Timeline} from '../lib/Episode';
-export const TIMELINES = [ep01_long, ep01_short, goog01_short, job01_short, job02_short, job03_short, net01_short, news01_short, news02_short, robo01_short, sat01_short, tip01_short] as unknown as Timeline[];
+export const TIMELINES = [ep01_long, ep01_short, ep02_long, goog01_short, job01_short, job02_short, job03_short, net01_short, news01_short, news02_short, robo01_short, sat01_short, tip01_short] as unknown as Timeline[];

@@ -1,0 +1,5014 @@
+{
+ "id": "ep02-long",
+ "format": "horizontal",
+ "captions": "big",
+ "fps": 30,
+ "duration": 330.069,
+ "vo": "ep02/ep02-long-vo.wav",
+ "music": "ep02/ep02-long-music.wav",
+ "beats": [
+  {
+   "text": "Right now, in a factory in Japan, the lights are off.",
+   "dir": "quiet, intriguing hook, almost a whisper",
+   "chapter": "Lights out",
+   "start": 0.25,
+   "vo": 4.3,
+   "dur": 4.6,
+   "words": [
+    {
+     "w": "Right",
+     "s": 0.0,
+     "e": 0.256
+    },
+    {
+     "w": "now,",
+     "s": 0.256,
+     "e": 0.665
+    },
+    {
+     "w": "in",
+     "s": 0.665,
+     "e": 0.921
+    },
+    {
+     "w": "a",
+     "s": 0.921,
+     "e": 1.177
+    },
+    {
+     "w": "factory",
+     "s": 1.177,
+     "e": 1.945
+    },
+    {
+     "w": "in",
+     "s": 1.945,
+     "e": 2.201
+    },
+    {
+     "w": "Japan,",
+     "s": 2.201,
+     "e": 2.867
+    },
+    {
+     "w": "the",
+     "s": 2.867,
+     "e": 3.123
+    },
+    {
+     "w": "lights",
+     "s": 3.123,
+     "e": 3.379
+    },
+    {
+     "w": "are",
+     "s": 3.379,
+     "e": 3.89
+    },
+    {
+     "w": "off.",
+     "s": 3.89,
+     "e": 4.3
+    }
+   ]
+  },
+  {
+   "text": "Nobody is inside. And the machines are still building\u2026 more machines.",
+   "dir": "slow reveal, a little eerie",
+   "start": 4.85,
+   "vo": 5.203,
+   "dur": 5.503,
+   "words": [
+    {
+     "w": "Nobody",
+     "s": 0.0,
+     "e": 0.736
+    },
+    {
+     "w": "is",
+     "s": 0.736,
+     "e": 0.982
+    },
+    {
+     "w": "inside.",
+     "s": 0.982,
+     "e": 1.62
+    },
+    {
+     "w": "And",
+     "s": 1.62,
+     "e": 1.865
+    },
+    {
+     "w": "the",
+     "s": 1.865,
+     "e": 2.11
+    },
+    {
+     "w": "machines",
+     "s": 2.11,
+     "e": 2.847
+    },
+    {
+     "w": "are",
+     "s": 2.847,
+     "e": 3.338
+    },
+    {
+     "w": "still",
+     "s": 3.338,
+     "e": 3.583
+    },
+    {
+     "w": "building\u2026",
+     "s": 3.583,
+     "e": 4.074
+    },
+    {
+     "w": "more",
+     "s": 4.074,
+     "e": 4.319
+    },
+    {
+     "w": "machines.",
+     "s": 4.319,
+     "e": 5.203
+    }
+   ]
+  },
+  {
+   "text": "FANUC has run factories like this since 2001. Its robots can work for up to thirty days without a human checking on them.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 10.353,
+   "vo": 8.11,
+   "dur": 8.41,
+   "words": [
+    {
+     "w": "FANUC",
+     "s": 0.0,
+     "e": 0.461
+    },
+    {
+     "w": "has",
+     "s": 0.461,
+     "e": 0.691
+    },
+    {
+     "w": "run",
+     "s": 0.691,
+     "e": 0.922
+    },
+    {
+     "w": "factories",
+     "s": 0.922,
+     "e": 1.613
+    },
+    {
+     "w": "like",
+     "s": 1.613,
+     "e": 1.843
+    },
+    {
+     "w": "this",
+     "s": 1.843,
+     "e": 2.074
+    },
+    {
+     "w": "since",
+     "s": 2.074,
+     "e": 2.304
+    },
+    {
+     "w": "2001.",
+     "s": 2.304,
+     "e": 3.364
+    },
+    {
+     "w": "Its",
+     "s": 3.364,
+     "e": 3.594
+    },
+    {
+     "w": "robots",
+     "s": 3.594,
+     "e": 4.055
+    },
+    {
+     "w": "can",
+     "s": 4.055,
+     "e": 4.285
+    },
+    {
+     "w": "work",
+     "s": 4.285,
+     "e": 4.516
+    },
+    {
+     "w": "for",
+     "s": 4.516,
+     "e": 4.746
+    },
+    {
+     "w": "up",
+     "s": 4.746,
+     "e": 4.977
+    },
+    {
+     "w": "to",
+     "s": 4.977,
+     "e": 5.207
+    },
+    {
+     "w": "thirty",
+     "s": 5.207,
+     "e": 5.668
+    },
+    {
+     "w": "days",
+     "s": 5.668,
+     "e": 5.898
+    },
+    {
+     "w": "without",
+     "s": 5.898,
+     "e": 6.359
+    },
+    {
+     "w": "a",
+     "s": 6.359,
+     "e": 6.589
+    },
+    {
+     "w": "human",
+     "s": 6.589,
+     "e": 7.05
+    },
+    {
+     "w": "checking",
+     "s": 7.05,
+     "e": 7.511
+    },
+    {
+     "w": "on",
+     "s": 7.511,
+     "e": 7.741
+    },
+    {
+     "w": "them.",
+     "s": 7.741,
+     "e": 8.11
+    }
+   ]
+  },
+  {
+   "text": "So here's the question everyone is quietly asking: if robots can work in the dark, do they still need us?",
+   "dir": "curious, direct question to the viewer",
+   "start": 18.762,
+   "vo": 6.76,
+   "dur": 7.06,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.235
+    },
+    {
+     "w": "here's",
+     "s": 0.235,
+     "e": 0.704
+    },
+    {
+     "w": "the",
+     "s": 0.704,
+     "e": 0.939
+    },
+    {
+     "w": "question",
+     "s": 0.939,
+     "e": 1.408
+    },
+    {
+     "w": "everyone",
+     "s": 1.408,
+     "e": 2.112
+    },
+    {
+     "w": "is",
+     "s": 2.112,
+     "e": 2.347
+    },
+    {
+     "w": "quietly",
+     "s": 2.347,
+     "e": 2.817
+    },
+    {
+     "w": "asking:",
+     "s": 2.817,
+     "e": 3.427
+    },
+    {
+     "w": "if",
+     "s": 3.427,
+     "e": 3.662
+    },
+    {
+     "w": "robots",
+     "s": 3.662,
+     "e": 4.131
+    },
+    {
+     "w": "can",
+     "s": 4.131,
+     "e": 4.366
+    },
+    {
+     "w": "work",
+     "s": 4.366,
+     "e": 4.601
+    },
+    {
+     "w": "in",
+     "s": 4.601,
+     "e": 4.835
+    },
+    {
+     "w": "the",
+     "s": 4.835,
+     "e": 5.07
+    },
+    {
+     "w": "dark,",
+     "s": 5.07,
+     "e": 5.446
+    },
+    {
+     "w": "do",
+     "s": 5.446,
+     "e": 5.68
+    },
+    {
+     "w": "they",
+     "s": 5.68,
+     "e": 5.915
+    },
+    {
+     "w": "still",
+     "s": 5.915,
+     "e": 6.15
+    },
+    {
+     "w": "need",
+     "s": 6.15,
+     "e": 6.384
+    },
+    {
+     "w": "us?",
+     "s": 6.384,
+     "e": 6.76
+    }
+   ]
+  },
+  {
+   "text": "The answer is stranger than yes or no. And it starts with a machine you probably used last week.",
+   "dir": "teasing, confident",
+   "start": 25.822,
+   "vo": 5.874,
+   "dur": 6.174,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.224
+    },
+    {
+     "w": "answer",
+     "s": 0.224,
+     "e": 0.673
+    },
+    {
+     "w": "is",
+     "s": 0.673,
+     "e": 0.897
+    },
+    {
+     "w": "stranger",
+     "s": 0.897,
+     "e": 1.345
+    },
+    {
+     "w": "than",
+     "s": 1.345,
+     "e": 1.569
+    },
+    {
+     "w": "yes",
+     "s": 1.569,
+     "e": 1.794
+    },
+    {
+     "w": "or",
+     "s": 1.794,
+     "e": 2.018
+    },
+    {
+     "w": "no.",
+     "s": 2.018,
+     "e": 2.377
+    },
+    {
+     "w": "And",
+     "s": 2.377,
+     "e": 2.601
+    },
+    {
+     "w": "it",
+     "s": 2.601,
+     "e": 2.825
+    },
+    {
+     "w": "starts",
+     "s": 2.825,
+     "e": 3.049
+    },
+    {
+     "w": "with",
+     "s": 3.049,
+     "e": 3.273
+    },
+    {
+     "w": "a",
+     "s": 3.273,
+     "e": 3.497
+    },
+    {
+     "w": "machine",
+     "s": 3.497,
+     "e": 3.946
+    },
+    {
+     "w": "you",
+     "s": 3.946,
+     "e": 4.17
+    },
+    {
+     "w": "probably",
+     "s": 4.17,
+     "e": 4.843
+    },
+    {
+     "w": "used",
+     "s": 4.843,
+     "e": 5.291
+    },
+    {
+     "w": "last",
+     "s": 5.291,
+     "e": 5.515
+    },
+    {
+     "w": "week.",
+     "s": 5.515,
+     "e": 5.874
+    }
+   ]
+  },
+  {
+   "text": "First, the scale. At the end of 2025, about five million industrial robots were working in factories around the world. A new record.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "How many robots are there?",
+   "start": 31.996,
+   "vo": 9.172,
+   "dur": 9.472,
+   "words": [
+    {
+     "w": "First,",
+     "s": 0.0,
+     "e": 0.376
+    },
+    {
+     "w": "the",
+     "s": 0.376,
+     "e": 0.611
+    },
+    {
+     "w": "scale.",
+     "s": 0.611,
+     "e": 0.988
+    },
+    {
+     "w": "At",
+     "s": 0.988,
+     "e": 1.223
+    },
+    {
+     "w": "the",
+     "s": 1.223,
+     "e": 1.458
+    },
+    {
+     "w": "end",
+     "s": 1.458,
+     "e": 1.693
+    },
+    {
+     "w": "of",
+     "s": 1.693,
+     "e": 1.928
+    },
+    {
+     "w": "2025,",
+     "s": 1.928,
+     "e": 3.01
+    },
+    {
+     "w": "about",
+     "s": 3.01,
+     "e": 3.481
+    },
+    {
+     "w": "five",
+     "s": 3.481,
+     "e": 3.716
+    },
+    {
+     "w": "million",
+     "s": 3.716,
+     "e": 4.186
+    },
+    {
+     "w": "industrial",
+     "s": 4.186,
+     "e": 4.892
+    },
+    {
+     "w": "robots",
+     "s": 4.892,
+     "e": 5.362
+    },
+    {
+     "w": "were",
+     "s": 5.362,
+     "e": 5.597
+    },
+    {
+     "w": "working",
+     "s": 5.597,
+     "e": 6.068
+    },
+    {
+     "w": "in",
+     "s": 6.068,
+     "e": 6.303
+    },
+    {
+     "w": "factories",
+     "s": 6.303,
+     "e": 7.008
+    },
+    {
+     "w": "around",
+     "s": 7.008,
+     "e": 7.479
+    },
+    {
+     "w": "the",
+     "s": 7.479,
+     "e": 7.714
+    },
+    {
+     "w": "world.",
+     "s": 7.714,
+     "e": 8.09
+    },
+    {
+     "w": "A",
+     "s": 8.09,
+     "e": 8.325
+    },
+    {
+     "w": "new",
+     "s": 8.325,
+     "e": 8.561
+    },
+    {
+     "w": "record.",
+     "s": 8.561,
+     "e": 9.172
+    }
+   ]
+  },
+  {
+   "text": "In 2025 alone, factories installed more than six hundred thousand new ones.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 41.468,
+   "vo": 5.507,
+   "dur": 5.807,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.0,
+     "e": 0.228
+    },
+    {
+     "w": "2025",
+     "s": 0.228,
+     "e": 1.138
+    },
+    {
+     "w": "alone,",
+     "s": 1.138,
+     "e": 1.729
+    },
+    {
+     "w": "factories",
+     "s": 1.729,
+     "e": 2.412
+    },
+    {
+     "w": "installed",
+     "s": 2.412,
+     "e": 3.095
+    },
+    {
+     "w": "more",
+     "s": 3.095,
+     "e": 3.322
+    },
+    {
+     "w": "than",
+     "s": 3.322,
+     "e": 3.55
+    },
+    {
+     "w": "six",
+     "s": 3.55,
+     "e": 3.777
+    },
+    {
+     "w": "hundred",
+     "s": 3.777,
+     "e": 4.233
+    },
+    {
+     "w": "thousand",
+     "s": 4.233,
+     "e": 4.688
+    },
+    {
+     "w": "new",
+     "s": 4.688,
+     "e": 4.915
+    },
+    {
+     "w": "ones.",
+     "s": 4.915,
+     "e": 5.507
+    }
+   ]
+  },
+  {
+   "text": "China installed fifty-nine percent of them. More than the rest of the world combined.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 47.275,
+   "vo": 5.165,
+   "dur": 5.465,
+   "words": [
+    {
+     "w": "China",
+     "s": 0.0,
+     "e": 0.445
+    },
+    {
+     "w": "installed",
+     "s": 0.445,
+     "e": 1.113
+    },
+    {
+     "w": "fifty-nine",
+     "s": 1.113,
+     "e": 1.781
+    },
+    {
+     "w": "percent",
+     "s": 1.781,
+     "e": 2.226
+    },
+    {
+     "w": "of",
+     "s": 2.226,
+     "e": 2.449
+    },
+    {
+     "w": "them.",
+     "s": 2.449,
+     "e": 2.805
+    },
+    {
+     "w": "More",
+     "s": 2.805,
+     "e": 3.028
+    },
+    {
+     "w": "than",
+     "s": 3.028,
+     "e": 3.251
+    },
+    {
+     "w": "the",
+     "s": 3.251,
+     "e": 3.473
+    },
+    {
+     "w": "rest",
+     "s": 3.473,
+     "e": 3.696
+    },
+    {
+     "w": "of",
+     "s": 3.696,
+     "e": 3.919
+    },
+    {
+     "w": "the",
+     "s": 3.919,
+     "e": 4.141
+    },
+    {
+     "w": "world",
+     "s": 4.141,
+     "e": 4.364
+    },
+    {
+     "w": "combined.",
+     "s": 4.364,
+     "e": 5.165
+    }
+   ]
+  },
+  {
+   "text": "And India? About ten thousand five hundred in a single year. Another record, and sixth in the world.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 52.74,
+   "vo": 6.872,
+   "dur": 7.172,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.0,
+     "e": 0.251
+    },
+    {
+     "w": "India?",
+     "s": 0.251,
+     "e": 0.903
+    },
+    {
+     "w": "About",
+     "s": 0.903,
+     "e": 1.404
+    },
+    {
+     "w": "ten",
+     "s": 1.404,
+     "e": 1.655
+    },
+    {
+     "w": "thousand",
+     "s": 1.655,
+     "e": 2.157
+    },
+    {
+     "w": "five",
+     "s": 2.157,
+     "e": 2.408
+    },
+    {
+     "w": "hundred",
+     "s": 2.408,
+     "e": 2.909
+    },
+    {
+     "w": "in",
+     "s": 2.909,
+     "e": 3.16
+    },
+    {
+     "w": "a",
+     "s": 3.16,
+     "e": 3.411
+    },
+    {
+     "w": "single",
+     "s": 3.411,
+     "e": 3.662
+    },
+    {
+     "w": "year.",
+     "s": 3.662,
+     "e": 4.063
+    },
+    {
+     "w": "Another",
+     "s": 4.063,
+     "e": 4.815
+    },
+    {
+     "w": "record,",
+     "s": 4.815,
+     "e": 5.467
+    },
+    {
+     "w": "and",
+     "s": 5.467,
+     "e": 5.718
+    },
+    {
+     "w": "sixth",
+     "s": 5.718,
+     "e": 5.969
+    },
+    {
+     "w": "in",
+     "s": 5.969,
+     "e": 6.22
+    },
+    {
+     "w": "the",
+     "s": 6.22,
+     "e": 6.47
+    },
+    {
+     "w": "world.",
+     "s": 6.47,
+     "e": 6.872
+    }
+   ]
+  },
+  {
+   "text": "Outside factories, Amazon says it now runs more than one million robots across its warehouse network.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 59.912,
+   "vo": 6.027,
+   "dur": 6.327,
+   "words": [
+    {
+     "w": "Outside",
+     "s": 0.0,
+     "e": 0.413
+    },
+    {
+     "w": "factories,",
+     "s": 0.413,
+     "e": 1.156
+    },
+    {
+     "w": "Amazon",
+     "s": 1.156,
+     "e": 1.775
+    },
+    {
+     "w": "says",
+     "s": 1.775,
+     "e": 1.981
+    },
+    {
+     "w": "it",
+     "s": 1.981,
+     "e": 2.188
+    },
+    {
+     "w": "now",
+     "s": 2.188,
+     "e": 2.394
+    },
+    {
+     "w": "runs",
+     "s": 2.394,
+     "e": 2.601
+    },
+    {
+     "w": "more",
+     "s": 2.601,
+     "e": 2.807
+    },
+    {
+     "w": "than",
+     "s": 2.807,
+     "e": 3.013
+    },
+    {
+     "w": "one",
+     "s": 3.013,
+     "e": 3.426
+    },
+    {
+     "w": "million",
+     "s": 3.426,
+     "e": 3.839
+    },
+    {
+     "w": "robots",
+     "s": 3.839,
+     "e": 4.252
+    },
+    {
+     "w": "across",
+     "s": 4.252,
+     "e": 4.665
+    },
+    {
+     "w": "its",
+     "s": 4.665,
+     "e": 4.871
+    },
+    {
+     "w": "warehouse",
+     "s": 4.871,
+     "e": 5.49
+    },
+    {
+     "w": "network.",
+     "s": 5.49,
+     "e": 6.027
+    }
+   ]
+  },
+  {
+   "text": "Internal documents reported by The New York Times suggest automation could let Amazon avoid hiring about six hundred thousand people by 2033.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 66.239,
+   "vo": 8.63,
+   "dur": 8.93,
+   "words": [
+    {
+     "w": "Internal",
+     "s": 0.0,
+     "e": 0.594
+    },
+    {
+     "w": "documents",
+     "s": 0.594,
+     "e": 1.188
+    },
+    {
+     "w": "reported",
+     "s": 1.188,
+     "e": 1.781
+    },
+    {
+     "w": "by",
+     "s": 1.781,
+     "e": 1.979
+    },
+    {
+     "w": "The",
+     "s": 1.979,
+     "e": 2.177
+    },
+    {
+     "w": "New",
+     "s": 2.177,
+     "e": 2.375
+    },
+    {
+     "w": "York",
+     "s": 2.375,
+     "e": 2.573
+    },
+    {
+     "w": "Times",
+     "s": 2.573,
+     "e": 2.969
+    },
+    {
+     "w": "suggest",
+     "s": 2.969,
+     "e": 3.365
+    },
+    {
+     "w": "automation",
+     "s": 3.365,
+     "e": 4.157
+    },
+    {
+     "w": "could",
+     "s": 4.157,
+     "e": 4.355
+    },
+    {
+     "w": "let",
+     "s": 4.355,
+     "e": 4.553
+    },
+    {
+     "w": "Amazon",
+     "s": 4.553,
+     "e": 5.146
+    },
+    {
+     "w": "avoid",
+     "s": 5.146,
+     "e": 5.542
+    },
+    {
+     "w": "hiring",
+     "s": 5.542,
+     "e": 5.938
+    },
+    {
+     "w": "about",
+     "s": 5.938,
+     "e": 6.334
+    },
+    {
+     "w": "six",
+     "s": 6.334,
+     "e": 6.532
+    },
+    {
+     "w": "hundred",
+     "s": 6.532,
+     "e": 6.928
+    },
+    {
+     "w": "thousand",
+     "s": 6.928,
+     "e": 7.324
+    },
+    {
+     "w": "people",
+     "s": 7.324,
+     "e": 7.522
+    },
+    {
+     "w": "by",
+     "s": 7.522,
+     "e": 7.719
+    },
+    {
+     "w": "2033.",
+     "s": 7.719,
+     "e": 8.63
+    }
+   ]
+  },
+  {
+   "text": "Amazon says those papers reflect one team, not its hiring plan.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 75.169,
+   "vo": 3.43,
+   "dur": 3.73,
+   "words": [
+    {
+     "w": "Amazon",
+     "s": 0.0,
+     "e": 0.565
+    },
+    {
+     "w": "says",
+     "s": 0.565,
+     "e": 0.754
+    },
+    {
+     "w": "those",
+     "s": 0.754,
+     "e": 0.942
+    },
+    {
+     "w": "papers",
+     "s": 0.942,
+     "e": 1.319
+    },
+    {
+     "w": "reflect",
+     "s": 1.319,
+     "e": 1.696
+    },
+    {
+     "w": "one",
+     "s": 1.696,
+     "e": 2.073
+    },
+    {
+     "w": "team,",
+     "s": 2.073,
+     "e": 2.375
+    },
+    {
+     "w": "not",
+     "s": 2.375,
+     "e": 2.563
+    },
+    {
+     "w": "its",
+     "s": 2.563,
+     "e": 2.752
+    },
+    {
+     "w": "hiring",
+     "s": 2.752,
+     "e": 3.128
+    },
+    {
+     "w": "plan.",
+     "s": 3.128,
+     "e": 3.43
+    }
+   ]
+  },
+  {
+   "text": "So yes, the robots are real, and they're multiplying. But here's what the headlines miss.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 78.899,
+   "vo": 4.85,
+   "dur": 5.15,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.199
+    },
+    {
+     "w": "yes,",
+     "s": 0.199,
+     "e": 0.517
+    },
+    {
+     "w": "the",
+     "s": 0.517,
+     "e": 0.716
+    },
+    {
+     "w": "robots",
+     "s": 0.716,
+     "e": 1.113
+    },
+    {
+     "w": "are",
+     "s": 1.113,
+     "e": 1.511
+    },
+    {
+     "w": "real,",
+     "s": 1.511,
+     "e": 1.829
+    },
+    {
+     "w": "and",
+     "s": 1.829,
+     "e": 2.027
+    },
+    {
+     "w": "they're",
+     "s": 2.027,
+     "e": 2.226
+    },
+    {
+     "w": "multiplying.",
+     "s": 2.226,
+     "e": 2.942
+    },
+    {
+     "w": "But",
+     "s": 2.942,
+     "e": 3.141
+    },
+    {
+     "w": "here's",
+     "s": 3.141,
+     "e": 3.538
+    },
+    {
+     "w": "what",
+     "s": 3.538,
+     "e": 3.737
+    },
+    {
+     "w": "the",
+     "s": 3.737,
+     "e": 3.936
+    },
+    {
+     "w": "headlines",
+     "s": 3.936,
+     "e": 4.532
+    },
+    {
+     "w": "miss.",
+     "s": 4.532,
+     "e": 4.85
+    }
+   ]
+  },
+  {
+   "text": "Robots are brilliant at things we find hard\u2026 and terrible at things we find easy.",
+   "dir": "turning point, lean in",
+   "chapter": "What robots still can't do",
+   "start": 84.049,
+   "vo": 4.995,
+   "dur": 5.295,
+   "words": [
+    {
+     "w": "Robots",
+     "s": 0.0,
+     "e": 0.485
+    },
+    {
+     "w": "are",
+     "s": 0.485,
+     "e": 0.97
+    },
+    {
+     "w": "brilliant",
+     "s": 0.97,
+     "e": 1.455
+    },
+    {
+     "w": "at",
+     "s": 1.455,
+     "e": 1.697
+    },
+    {
+     "w": "things",
+     "s": 1.697,
+     "e": 1.94
+    },
+    {
+     "w": "we",
+     "s": 1.94,
+     "e": 2.182
+    },
+    {
+     "w": "find",
+     "s": 2.182,
+     "e": 2.425
+    },
+    {
+     "w": "hard\u2026",
+     "s": 2.425,
+     "e": 2.667
+    },
+    {
+     "w": "and",
+     "s": 2.667,
+     "e": 2.909
+    },
+    {
+     "w": "terrible",
+     "s": 2.909,
+     "e": 3.394
+    },
+    {
+     "w": "at",
+     "s": 3.394,
+     "e": 3.637
+    },
+    {
+     "w": "things",
+     "s": 3.637,
+     "e": 3.879
+    },
+    {
+     "w": "we",
+     "s": 3.879,
+     "e": 4.122
+    },
+    {
+     "w": "find",
+     "s": 4.122,
+     "e": 4.364
+    },
+    {
+     "w": "easy.",
+     "s": 4.364,
+     "e": 4.995
+    }
+   ]
+  },
+  {
+   "text": "A robot arm can weld a car door in seconds, exactly the same way, thousands of times a day.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 89.344,
+   "vo": 5.035,
+   "dur": 5.335,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.0,
+     "e": 0.188
+    },
+    {
+     "w": "robot",
+     "s": 0.188,
+     "e": 0.564
+    },
+    {
+     "w": "arm",
+     "s": 0.564,
+     "e": 0.752
+    },
+    {
+     "w": "can",
+     "s": 0.752,
+     "e": 0.939
+    },
+    {
+     "w": "weld",
+     "s": 0.939,
+     "e": 1.127
+    },
+    {
+     "w": "a",
+     "s": 1.127,
+     "e": 1.315
+    },
+    {
+     "w": "car",
+     "s": 1.315,
+     "e": 1.503
+    },
+    {
+     "w": "door",
+     "s": 1.503,
+     "e": 1.691
+    },
+    {
+     "w": "in",
+     "s": 1.691,
+     "e": 1.879
+    },
+    {
+     "w": "seconds,",
+     "s": 1.879,
+     "e": 2.367
+    },
+    {
+     "w": "exactly",
+     "s": 2.367,
+     "e": 2.931
+    },
+    {
+     "w": "the",
+     "s": 2.931,
+     "e": 3.119
+    },
+    {
+     "w": "same",
+     "s": 3.119,
+     "e": 3.307
+    },
+    {
+     "w": "way,",
+     "s": 3.307,
+     "e": 3.607
+    },
+    {
+     "w": "thousands",
+     "s": 3.607,
+     "e": 3.983
+    },
+    {
+     "w": "of",
+     "s": 3.983,
+     "e": 4.171
+    },
+    {
+     "w": "times",
+     "s": 4.171,
+     "e": 4.547
+    },
+    {
+     "w": "a",
+     "s": 4.547,
+     "e": 4.735
+    },
+    {
+     "w": "day.",
+     "s": 4.735,
+     "e": 5.035
+    }
+   ]
+  },
+  {
+   "text": "But ask it to fold a towel, or find one sock in a messy laundry basket, and it struggles.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 94.679,
+   "vo": 4.959,
+   "dur": 5.259,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.0,
+     "e": 0.185
+    },
+    {
+     "w": "ask",
+     "s": 0.185,
+     "e": 0.37
+    },
+    {
+     "w": "it",
+     "s": 0.37,
+     "e": 0.555
+    },
+    {
+     "w": "to",
+     "s": 0.555,
+     "e": 0.74
+    },
+    {
+     "w": "fold",
+     "s": 0.74,
+     "e": 0.925
+    },
+    {
+     "w": "a",
+     "s": 0.925,
+     "e": 1.11
+    },
+    {
+     "w": "towel,",
+     "s": 1.11,
+     "e": 1.591
+    },
+    {
+     "w": "or",
+     "s": 1.591,
+     "e": 1.776
+    },
+    {
+     "w": "find",
+     "s": 1.776,
+     "e": 1.961
+    },
+    {
+     "w": "one",
+     "s": 1.961,
+     "e": 2.331
+    },
+    {
+     "w": "sock",
+     "s": 2.331,
+     "e": 2.516
+    },
+    {
+     "w": "in",
+     "s": 2.516,
+     "e": 2.701
+    },
+    {
+     "w": "a",
+     "s": 2.701,
+     "e": 2.886
+    },
+    {
+     "w": "messy",
+     "s": 2.886,
+     "e": 3.256
+    },
+    {
+     "w": "laundry",
+     "s": 3.256,
+     "e": 3.626
+    },
+    {
+     "w": "basket,",
+     "s": 3.626,
+     "e": 4.107
+    },
+    {
+     "w": "and",
+     "s": 4.107,
+     "e": 4.292
+    },
+    {
+     "w": "it",
+     "s": 4.292,
+     "e": 4.477
+    },
+    {
+     "w": "struggles.",
+     "s": 4.477,
+     "e": 4.959
+    }
+   ]
+  },
+  {
+   "text": "Scientists call this Moravec's paradox. Seeing, grasping, walking through a cluttered room: the skills evolution spent millions of years building are the hardest ones to copy.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 99.937,
+   "vo": 9.591,
+   "dur": 9.891,
+   "words": [
+    {
+     "w": "Scientists",
+     "s": 0.0,
+     "e": 0.408
+    },
+    {
+     "w": "call",
+     "s": 0.408,
+     "e": 0.612
+    },
+    {
+     "w": "this",
+     "s": 0.612,
+     "e": 0.816
+    },
+    {
+     "w": "Moravec's",
+     "s": 0.816,
+     "e": 1.428
+    },
+    {
+     "w": "paradox.",
+     "s": 1.428,
+     "e": 2.163
+    },
+    {
+     "w": "Seeing,",
+     "s": 2.163,
+     "e": 2.49
+    },
+    {
+     "w": "grasping,",
+     "s": 2.49,
+     "e": 3.02
+    },
+    {
+     "w": "walking",
+     "s": 3.02,
+     "e": 3.428
+    },
+    {
+     "w": "through",
+     "s": 3.428,
+     "e": 3.632
+    },
+    {
+     "w": "a",
+     "s": 3.632,
+     "e": 3.836
+    },
+    {
+     "w": "cluttered",
+     "s": 3.836,
+     "e": 4.449
+    },
+    {
+     "w": "room:",
+     "s": 4.449,
+     "e": 4.775
+    },
+    {
+     "w": "the",
+     "s": 4.775,
+     "e": 4.979
+    },
+    {
+     "w": "skills",
+     "s": 4.979,
+     "e": 5.183
+    },
+    {
+     "w": "evolution",
+     "s": 5.183,
+     "e": 6.0
+    },
+    {
+     "w": "spent",
+     "s": 6.0,
+     "e": 6.204
+    },
+    {
+     "w": "millions",
+     "s": 6.204,
+     "e": 6.612
+    },
+    {
+     "w": "of",
+     "s": 6.612,
+     "e": 6.816
+    },
+    {
+     "w": "years",
+     "s": 6.816,
+     "e": 7.02
+    },
+    {
+     "w": "building",
+     "s": 7.02,
+     "e": 7.428
+    },
+    {
+     "w": "are",
+     "s": 7.428,
+     "e": 7.836
+    },
+    {
+     "w": "the",
+     "s": 7.836,
+     "e": 8.04
+    },
+    {
+     "w": "hardest",
+     "s": 8.04,
+     "e": 8.448
+    },
+    {
+     "w": "ones",
+     "s": 8.448,
+     "e": 8.856
+    },
+    {
+     "w": "to",
+     "s": 8.856,
+     "e": 9.06
+    },
+    {
+     "w": "copy.",
+     "s": 9.06,
+     "e": 9.591
+    }
+   ]
+  },
+  {
+   "text": "That's why the new humanoid robots, the ones shaped like people, still do narrow jobs. Moving boxes. Loading metal parts. Carrying totes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 109.828,
+   "vo": 7.62,
+   "dur": 7.92,
+   "words": [
+    {
+     "w": "That's",
+     "s": 0.0,
+     "e": 0.203
+    },
+    {
+     "w": "why",
+     "s": 0.203,
+     "e": 0.405
+    },
+    {
+     "w": "the",
+     "s": 0.405,
+     "e": 0.608
+    },
+    {
+     "w": "new",
+     "s": 0.608,
+     "e": 0.811
+    },
+    {
+     "w": "humanoid",
+     "s": 0.811,
+     "e": 1.419
+    },
+    {
+     "w": "robots,",
+     "s": 1.419,
+     "e": 1.946
+    },
+    {
+     "w": "the",
+     "s": 1.946,
+     "e": 2.148
+    },
+    {
+     "w": "ones",
+     "s": 2.148,
+     "e": 2.554
+    },
+    {
+     "w": "shaped",
+     "s": 2.554,
+     "e": 2.959
+    },
+    {
+     "w": "like",
+     "s": 2.959,
+     "e": 3.161
+    },
+    {
+     "w": "people,",
+     "s": 3.161,
+     "e": 3.486
+    },
+    {
+     "w": "still",
+     "s": 3.486,
+     "e": 3.688
+    },
+    {
+     "w": "do",
+     "s": 3.688,
+     "e": 3.891
+    },
+    {
+     "w": "narrow",
+     "s": 3.891,
+     "e": 4.296
+    },
+    {
+     "w": "jobs.",
+     "s": 4.296,
+     "e": 4.621
+    },
+    {
+     "w": "Moving",
+     "s": 4.621,
+     "e": 5.026
+    },
+    {
+     "w": "boxes.",
+     "s": 5.026,
+     "e": 5.553
+    },
+    {
+     "w": "Loading",
+     "s": 5.553,
+     "e": 5.958
+    },
+    {
+     "w": "metal",
+     "s": 5.958,
+     "e": 6.364
+    },
+    {
+     "w": "parts.",
+     "s": 6.364,
+     "e": 6.688
+    },
+    {
+     "w": "Carrying",
+     "s": 6.688,
+     "e": 7.093
+    },
+    {
+     "w": "totes.",
+     "s": 7.093,
+     "e": 7.62
+    }
+   ]
+  },
+  {
+   "text": "Figure's humanoids spent months loading sheet-metal parts at a BMW plant in the US. Agility says its robot, Digit, has moved more than a hundred thousand totes in a warehouse.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 117.748,
+   "vo": 10.407,
+   "dur": 10.707,
+   "words": [
+    {
+     "w": "Figure's",
+     "s": 0.0,
+     "e": 0.619
+    },
+    {
+     "w": "humanoids",
+     "s": 0.619,
+     "e": 1.239
+    },
+    {
+     "w": "spent",
+     "s": 1.239,
+     "e": 1.445
+    },
+    {
+     "w": "months",
+     "s": 1.445,
+     "e": 1.652
+    },
+    {
+     "w": "loading",
+     "s": 1.652,
+     "e": 2.065
+    },
+    {
+     "w": "sheet-metal",
+     "s": 2.065,
+     "e": 2.684
+    },
+    {
+     "w": "parts",
+     "s": 2.684,
+     "e": 2.891
+    },
+    {
+     "w": "at",
+     "s": 2.891,
+     "e": 3.097
+    },
+    {
+     "w": "a",
+     "s": 3.097,
+     "e": 3.304
+    },
+    {
+     "w": "BMW",
+     "s": 3.304,
+     "e": 3.51
+    },
+    {
+     "w": "plant",
+     "s": 3.51,
+     "e": 3.717
+    },
+    {
+     "w": "in",
+     "s": 3.717,
+     "e": 3.923
+    },
+    {
+     "w": "the",
+     "s": 3.923,
+     "e": 4.13
+    },
+    {
+     "w": "US.",
+     "s": 4.13,
+     "e": 4.46
+    },
+    {
+     "w": "Agility",
+     "s": 4.46,
+     "e": 5.286
+    },
+    {
+     "w": "says",
+     "s": 5.286,
+     "e": 5.492
+    },
+    {
+     "w": "its",
+     "s": 5.492,
+     "e": 5.699
+    },
+    {
+     "w": "robot,",
+     "s": 5.699,
+     "e": 6.236
+    },
+    {
+     "w": "Digit,",
+     "s": 6.236,
+     "e": 6.773
+    },
+    {
+     "w": "has",
+     "s": 6.773,
+     "e": 6.979
+    },
+    {
+     "w": "moved",
+     "s": 6.979,
+     "e": 7.392
+    },
+    {
+     "w": "more",
+     "s": 7.392,
+     "e": 7.599
+    },
+    {
+     "w": "than",
+     "s": 7.599,
+     "e": 7.805
+    },
+    {
+     "w": "a",
+     "s": 7.805,
+     "e": 8.012
+    },
+    {
+     "w": "hundred",
+     "s": 8.012,
+     "e": 8.425
+    },
+    {
+     "w": "thousand",
+     "s": 8.425,
+     "e": 8.838
+    },
+    {
+     "w": "totes",
+     "s": 8.838,
+     "e": 9.25
+    },
+    {
+     "w": "in",
+     "s": 9.25,
+     "e": 9.457
+    },
+    {
+     "w": "a",
+     "s": 9.457,
+     "e": 9.663
+    },
+    {
+     "w": "warehouse.",
+     "s": 9.663,
+     "e": 10.407
+    }
+   ]
+  },
+  {
+   "text": "Impressive. But a long way from replacing a mechanic, a nurse or an electrician.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 128.455,
+   "vo": 3.779,
+   "dur": 4.079,
+   "words": [
+    {
+     "w": "Impressive.",
+     "s": 0.0,
+     "e": 0.549
+    },
+    {
+     "w": "But",
+     "s": 0.549,
+     "e": 0.701
+    },
+    {
+     "w": "a",
+     "s": 0.701,
+     "e": 0.853
+    },
+    {
+     "w": "long",
+     "s": 0.853,
+     "e": 1.006
+    },
+    {
+     "w": "way",
+     "s": 1.006,
+     "e": 1.158
+    },
+    {
+     "w": "from",
+     "s": 1.158,
+     "e": 1.311
+    },
+    {
+     "w": "replacing",
+     "s": 1.311,
+     "e": 1.768
+    },
+    {
+     "w": "a",
+     "s": 1.768,
+     "e": 1.92
+    },
+    {
+     "w": "mechanic,",
+     "s": 1.92,
+     "e": 2.469
+    },
+    {
+     "w": "a",
+     "s": 2.469,
+     "e": 2.621
+    },
+    {
+     "w": "nurse",
+     "s": 2.621,
+     "e": 2.774
+    },
+    {
+     "w": "or",
+     "s": 2.774,
+     "e": 2.926
+    },
+    {
+     "w": "an",
+     "s": 2.926,
+     "e": 3.078
+    },
+    {
+     "w": "electrician.",
+     "s": 3.078,
+     "e": 3.779
+    }
+   ]
+  },
+  {
+   "text": "Now, that machine you used last week. The ATM.",
+   "dir": "playful callback",
+   "chapter": "The ATM story",
+   "start": 132.534,
+   "vo": 2.799,
+   "dur": 3.099,
+   "words": [
+    {
+     "w": "Now,",
+     "s": 0.0,
+     "e": 0.35
+    },
+    {
+     "w": "that",
+     "s": 0.35,
+     "e": 0.569
+    },
+    {
+     "w": "machine",
+     "s": 0.569,
+     "e": 1.006
+    },
+    {
+     "w": "you",
+     "s": 1.006,
+     "e": 1.225
+    },
+    {
+     "w": "used",
+     "s": 1.225,
+     "e": 1.662
+    },
+    {
+     "w": "last",
+     "s": 1.662,
+     "e": 1.881
+    },
+    {
+     "w": "week.",
+     "s": 1.881,
+     "e": 2.231
+    },
+    {
+     "w": "The",
+     "s": 2.231,
+     "e": 2.45
+    },
+    {
+     "w": "ATM.",
+     "s": 2.45,
+     "e": 2.799
+    }
+   ]
+  },
+  {
+   "text": "When ATMs arrived, people said bank tellers were finished. A machine that hands out cash all day, with no lunch break.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 135.634,
+   "vo": 5.774,
+   "dur": 6.074,
+   "words": [
+    {
+     "w": "When",
+     "s": 0.0,
+     "e": 0.196
+    },
+    {
+     "w": "ATMs",
+     "s": 0.196,
+     "e": 0.393
+    },
+    {
+     "w": "arrived,",
+     "s": 0.393,
+     "e": 1.1
+    },
+    {
+     "w": "people",
+     "s": 1.1,
+     "e": 1.296
+    },
+    {
+     "w": "said",
+     "s": 1.296,
+     "e": 1.493
+    },
+    {
+     "w": "bank",
+     "s": 1.493,
+     "e": 1.689
+    },
+    {
+     "w": "tellers",
+     "s": 1.689,
+     "e": 2.082
+    },
+    {
+     "w": "were",
+     "s": 2.082,
+     "e": 2.278
+    },
+    {
+     "w": "finished.",
+     "s": 2.278,
+     "e": 2.985
+    },
+    {
+     "w": "A",
+     "s": 2.985,
+     "e": 3.181
+    },
+    {
+     "w": "machine",
+     "s": 3.181,
+     "e": 3.574
+    },
+    {
+     "w": "that",
+     "s": 3.574,
+     "e": 3.771
+    },
+    {
+     "w": "hands",
+     "s": 3.771,
+     "e": 3.967
+    },
+    {
+     "w": "out",
+     "s": 3.967,
+     "e": 4.163
+    },
+    {
+     "w": "cash",
+     "s": 4.163,
+     "e": 4.36
+    },
+    {
+     "w": "all",
+     "s": 4.36,
+     "e": 4.556
+    },
+    {
+     "w": "day,",
+     "s": 4.556,
+     "e": 4.87
+    },
+    {
+     "w": "with",
+     "s": 4.87,
+     "e": 5.067
+    },
+    {
+     "w": "no",
+     "s": 5.067,
+     "e": 5.263
+    },
+    {
+     "w": "lunch",
+     "s": 5.263,
+     "e": 5.46
+    },
+    {
+     "w": "break.",
+     "s": 5.46,
+     "e": 5.774
+    }
+   ]
+  },
+  {
+   "text": "What actually happened? ATMs made each branch cheaper to run. So banks opened more branches.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 141.708,
+   "vo": 5.461,
+   "dur": 5.761,
+   "words": [
+    {
+     "w": "What",
+     "s": 0.0,
+     "e": 0.22
+    },
+    {
+     "w": "actually",
+     "s": 0.22,
+     "e": 0.881
+    },
+    {
+     "w": "happened?",
+     "s": 0.881,
+     "e": 1.674
+    },
+    {
+     "w": "ATMs",
+     "s": 1.674,
+     "e": 1.894
+    },
+    {
+     "w": "made",
+     "s": 1.894,
+     "e": 2.114
+    },
+    {
+     "w": "each",
+     "s": 2.114,
+     "e": 2.334
+    },
+    {
+     "w": "branch",
+     "s": 2.334,
+     "e": 2.554
+    },
+    {
+     "w": "cheaper",
+     "s": 2.554,
+     "e": 2.995
+    },
+    {
+     "w": "to",
+     "s": 2.995,
+     "e": 3.215
+    },
+    {
+     "w": "run.",
+     "s": 3.215,
+     "e": 3.567
+    },
+    {
+     "w": "So",
+     "s": 3.567,
+     "e": 3.787
+    },
+    {
+     "w": "banks",
+     "s": 3.787,
+     "e": 4.008
+    },
+    {
+     "w": "opened",
+     "s": 4.008,
+     "e": 4.668
+    },
+    {
+     "w": "more",
+     "s": 4.668,
+     "e": 4.888
+    },
+    {
+     "w": "branches.",
+     "s": 4.888,
+     "e": 5.461
+    }
+   ]
+  },
+  {
+   "text": "Each branch needed fewer tellers. But there were many more branches.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 147.469,
+   "vo": 3.7,
+   "dur": 4.0,
+   "words": [
+    {
+     "w": "Each",
+     "s": 0.0,
+     "e": 0.215
+    },
+    {
+     "w": "branch",
+     "s": 0.215,
+     "e": 0.43
+    },
+    {
+     "w": "needed",
+     "s": 0.43,
+     "e": 0.86
+    },
+    {
+     "w": "fewer",
+     "s": 0.86,
+     "e": 1.291
+    },
+    {
+     "w": "tellers.",
+     "s": 1.291,
+     "e": 1.85
+    },
+    {
+     "w": "But",
+     "s": 1.85,
+     "e": 2.065
+    },
+    {
+     "w": "there",
+     "s": 2.065,
+     "e": 2.28
+    },
+    {
+     "w": "were",
+     "s": 2.28,
+     "e": 2.495
+    },
+    {
+     "w": "many",
+     "s": 2.495,
+     "e": 2.926
+    },
+    {
+     "w": "more",
+     "s": 2.926,
+     "e": 3.141
+    },
+    {
+     "w": "branches.",
+     "s": 3.141,
+     "e": 3.7
+    }
+   ]
+  },
+  {
+   "text": "In the US, teller jobs didn't collapse. By 2018 there were more tellers than in 2000.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 151.469,
+   "vo": 6.542,
+   "dur": 6.842,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.0,
+     "e": 0.244
+    },
+    {
+     "w": "the",
+     "s": 0.244,
+     "e": 0.488
+    },
+    {
+     "w": "US,",
+     "s": 0.488,
+     "e": 0.879
+    },
+    {
+     "w": "teller",
+     "s": 0.879,
+     "e": 1.367
+    },
+    {
+     "w": "jobs",
+     "s": 1.367,
+     "e": 1.611
+    },
+    {
+     "w": "didn't",
+     "s": 1.611,
+     "e": 1.855
+    },
+    {
+     "w": "collapse.",
+     "s": 1.855,
+     "e": 2.49
+    },
+    {
+     "w": "By",
+     "s": 2.49,
+     "e": 2.734
+    },
+    {
+     "w": "2018",
+     "s": 2.734,
+     "e": 3.711
+    },
+    {
+     "w": "there",
+     "s": 3.711,
+     "e": 3.955
+    },
+    {
+     "w": "were",
+     "s": 3.955,
+     "e": 4.199
+    },
+    {
+     "w": "more",
+     "s": 4.199,
+     "e": 4.443
+    },
+    {
+     "w": "tellers",
+     "s": 4.443,
+     "e": 4.931
+    },
+    {
+     "w": "than",
+     "s": 4.931,
+     "e": 5.175
+    },
+    {
+     "w": "in",
+     "s": 5.175,
+     "e": 5.419
+    },
+    {
+     "w": "2000.",
+     "s": 5.419,
+     "e": 6.542
+    }
+   ]
+  },
+  {
+   "text": "And the job changed. Less counting cash. More helping customers, selling loans, solving problems.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 158.311,
+   "vo": 6.289,
+   "dur": 6.589,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.0,
+     "e": 0.252
+    },
+    {
+     "w": "the",
+     "s": 0.252,
+     "e": 0.503
+    },
+    {
+     "w": "job",
+     "s": 0.503,
+     "e": 0.755
+    },
+    {
+     "w": "changed.",
+     "s": 0.755,
+     "e": 1.409
+    },
+    {
+     "w": "Less",
+     "s": 1.409,
+     "e": 1.66
+    },
+    {
+     "w": "counting",
+     "s": 1.66,
+     "e": 2.163
+    },
+    {
+     "w": "cash.",
+     "s": 2.163,
+     "e": 2.566
+    },
+    {
+     "w": "More",
+     "s": 2.566,
+     "e": 2.817
+    },
+    {
+     "w": "helping",
+     "s": 2.817,
+     "e": 3.32
+    },
+    {
+     "w": "customers,",
+     "s": 3.32,
+     "e": 4.226
+    },
+    {
+     "w": "selling",
+     "s": 4.226,
+     "e": 4.729
+    },
+    {
+     "w": "loans,",
+     "s": 4.729,
+     "e": 5.132
+    },
+    {
+     "w": "solving",
+     "s": 5.132,
+     "e": 5.635
+    },
+    {
+     "w": "problems.",
+     "s": 5.635,
+     "e": 6.289
+    }
+   ]
+  },
+  {
+   "text": "Economists see this pattern again and again: machines take over tasks, not whole jobs.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 164.9,
+   "vo": 6.15,
+   "dur": 6.45,
+   "words": [
+    {
+     "w": "Economists",
+     "s": 0.0,
+     "e": 0.992
+    },
+    {
+     "w": "see",
+     "s": 0.992,
+     "e": 1.24
+    },
+    {
+     "w": "this",
+     "s": 1.24,
+     "e": 1.488
+    },
+    {
+     "w": "pattern",
+     "s": 1.488,
+     "e": 1.984
+    },
+    {
+     "w": "again",
+     "s": 1.984,
+     "e": 2.48
+    },
+    {
+     "w": "and",
+     "s": 2.48,
+     "e": 2.728
+    },
+    {
+     "w": "again:",
+     "s": 2.728,
+     "e": 3.373
+    },
+    {
+     "w": "machines",
+     "s": 3.373,
+     "e": 4.116
+    },
+    {
+     "w": "take",
+     "s": 4.116,
+     "e": 4.364
+    },
+    {
+     "w": "over",
+     "s": 4.364,
+     "e": 4.86
+    },
+    {
+     "w": "tasks,",
+     "s": 4.86,
+     "e": 5.257
+    },
+    {
+     "w": "not",
+     "s": 5.257,
+     "e": 5.505
+    },
+    {
+     "w": "whole",
+     "s": 5.505,
+     "e": 5.753
+    },
+    {
+     "w": "jobs.",
+     "s": 5.753,
+     "e": 6.15
+    }
+   ]
+  },
+  {
+   "text": "But here's the twist. The story didn't end there.",
+   "dir": "twist, slow down",
+   "start": 171.35,
+   "vo": 3.083,
+   "dur": 3.383,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.0,
+     "e": 0.253
+    },
+    {
+     "w": "here's",
+     "s": 0.253,
+     "e": 0.758
+    },
+    {
+     "w": "the",
+     "s": 0.758,
+     "e": 1.011
+    },
+    {
+     "w": "twist.",
+     "s": 1.011,
+     "e": 1.415
+    },
+    {
+     "w": "The",
+     "s": 1.415,
+     "e": 1.668
+    },
+    {
+     "w": "story",
+     "s": 1.668,
+     "e": 2.174
+    },
+    {
+     "w": "didn't",
+     "s": 2.174,
+     "e": 2.426
+    },
+    {
+     "w": "end",
+     "s": 2.426,
+     "e": 2.679
+    },
+    {
+     "w": "there.",
+     "s": 2.679,
+     "e": 3.083
+    }
+   ]
+  },
+  {
+   "text": "Today, the World Economic Forum lists bank tellers among the fastest-declining jobs on the planet. Not because of the ATM. Because of the phone in your pocket.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 174.733,
+   "vo": 8.968,
+   "dur": 9.268,
+   "words": [
+    {
+     "w": "Today,",
+     "s": 0.0,
+     "e": 0.525
+    },
+    {
+     "w": "the",
+     "s": 0.525,
+     "e": 0.727
+    },
+    {
+     "w": "World",
+     "s": 0.727,
+     "e": 0.929
+    },
+    {
+     "w": "Economic",
+     "s": 0.929,
+     "e": 1.737
+    },
+    {
+     "w": "Forum",
+     "s": 1.737,
+     "e": 2.141
+    },
+    {
+     "w": "lists",
+     "s": 2.141,
+     "e": 2.343
+    },
+    {
+     "w": "bank",
+     "s": 2.343,
+     "e": 2.545
+    },
+    {
+     "w": "tellers",
+     "s": 2.545,
+     "e": 2.949
+    },
+    {
+     "w": "among",
+     "s": 2.949,
+     "e": 3.353
+    },
+    {
+     "w": "the",
+     "s": 3.353,
+     "e": 3.555
+    },
+    {
+     "w": "fastest-declining",
+     "s": 3.555,
+     "e": 4.565
+    },
+    {
+     "w": "jobs",
+     "s": 4.565,
+     "e": 4.767
+    },
+    {
+     "w": "on",
+     "s": 4.767,
+     "e": 4.969
+    },
+    {
+     "w": "the",
+     "s": 4.969,
+     "e": 5.171
+    },
+    {
+     "w": "planet.",
+     "s": 5.171,
+     "e": 5.696
+    },
+    {
+     "w": "Not",
+     "s": 5.696,
+     "e": 5.898
+    },
+    {
+     "w": "because",
+     "s": 5.898,
+     "e": 6.302
+    },
+    {
+     "w": "of",
+     "s": 6.302,
+     "e": 6.504
+    },
+    {
+     "w": "the",
+     "s": 6.504,
+     "e": 6.706
+    },
+    {
+     "w": "ATM.",
+     "s": 6.706,
+     "e": 7.029
+    },
+    {
+     "w": "Because",
+     "s": 7.029,
+     "e": 7.433
+    },
+    {
+     "w": "of",
+     "s": 7.433,
+     "e": 7.635
+    },
+    {
+     "w": "the",
+     "s": 7.635,
+     "e": 7.837
+    },
+    {
+     "w": "phone",
+     "s": 7.837,
+     "e": 8.039
+    },
+    {
+     "w": "in",
+     "s": 8.039,
+     "e": 8.241
+    },
+    {
+     "w": "your",
+     "s": 8.241,
+     "e": 8.443
+    },
+    {
+     "w": "pocket.",
+     "s": 8.443,
+     "e": 8.968
+    }
+   ]
+  },
+  {
+   "text": "In India you already know what that looks like: you scan a QR code, and you never meet a cashier at all.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 184.001,
+   "vo": 5.835,
+   "dur": 6.135,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.0,
+     "e": 0.203
+    },
+    {
+     "w": "India",
+     "s": 0.203,
+     "e": 0.608
+    },
+    {
+     "w": "you",
+     "s": 0.608,
+     "e": 0.81
+    },
+    {
+     "w": "already",
+     "s": 0.81,
+     "e": 1.418
+    },
+    {
+     "w": "know",
+     "s": 1.418,
+     "e": 1.621
+    },
+    {
+     "w": "what",
+     "s": 1.621,
+     "e": 1.824
+    },
+    {
+     "w": "that",
+     "s": 1.824,
+     "e": 2.026
+    },
+    {
+     "w": "looks",
+     "s": 2.026,
+     "e": 2.229
+    },
+    {
+     "w": "like:",
+     "s": 2.229,
+     "e": 2.553
+    },
+    {
+     "w": "you",
+     "s": 2.553,
+     "e": 2.756
+    },
+    {
+     "w": "scan",
+     "s": 2.756,
+     "e": 2.958
+    },
+    {
+     "w": "a",
+     "s": 2.958,
+     "e": 3.161
+    },
+    {
+     "w": "QR",
+     "s": 3.161,
+     "e": 3.363
+    },
+    {
+     "w": "code,",
+     "s": 3.363,
+     "e": 3.688
+    },
+    {
+     "w": "and",
+     "s": 3.688,
+     "e": 3.89
+    },
+    {
+     "w": "you",
+     "s": 3.89,
+     "e": 4.093
+    },
+    {
+     "w": "never",
+     "s": 4.093,
+     "e": 4.498
+    },
+    {
+     "w": "meet",
+     "s": 4.498,
+     "e": 4.701
+    },
+    {
+     "w": "a",
+     "s": 4.701,
+     "e": 4.903
+    },
+    {
+     "w": "cashier",
+     "s": 4.903,
+     "e": 5.308
+    },
+    {
+     "w": "at",
+     "s": 5.308,
+     "e": 5.511
+    },
+    {
+     "w": "all.",
+     "s": 5.511,
+     "e": 5.835
+    }
+   ]
+  },
+  {
+   "text": "So the lesson isn't \"technology never takes jobs\". It's this: the first machine rarely kills a job. The next one can.",
+   "dir": "firm, memorable line",
+   "start": 190.136,
+   "vo": 8.21,
+   "dur": 8.51,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.246
+    },
+    {
+     "w": "the",
+     "s": 0.246,
+     "e": 0.492
+    },
+    {
+     "w": "lesson",
+     "s": 0.492,
+     "e": 0.983
+    },
+    {
+     "w": "isn't",
+     "s": 0.983,
+     "e": 1.229
+    },
+    {
+     "w": "\"technology",
+     "s": 1.229,
+     "e": 2.212
+    },
+    {
+     "w": "never",
+     "s": 2.212,
+     "e": 2.704
+    },
+    {
+     "w": "takes",
+     "s": 2.704,
+     "e": 3.196
+    },
+    {
+     "w": "jobs\".",
+     "s": 3.196,
+     "e": 3.589
+    },
+    {
+     "w": "It's",
+     "s": 3.589,
+     "e": 3.835
+    },
+    {
+     "w": "this:",
+     "s": 3.835,
+     "e": 4.228
+    },
+    {
+     "w": "the",
+     "s": 4.228,
+     "e": 4.474
+    },
+    {
+     "w": "first",
+     "s": 4.474,
+     "e": 4.72
+    },
+    {
+     "w": "machine",
+     "s": 4.72,
+     "e": 5.211
+    },
+    {
+     "w": "rarely",
+     "s": 5.211,
+     "e": 5.949
+    },
+    {
+     "w": "kills",
+     "s": 5.949,
+     "e": 6.194
+    },
+    {
+     "w": "a",
+     "s": 6.194,
+     "e": 6.44
+    },
+    {
+     "w": "job.",
+     "s": 6.44,
+     "e": 6.833
+    },
+    {
+     "w": "The",
+     "s": 6.833,
+     "e": 7.079
+    },
+    {
+     "w": "next",
+     "s": 7.079,
+     "e": 7.325
+    },
+    {
+     "w": "one",
+     "s": 7.325,
+     "e": 7.817
+    },
+    {
+     "w": "can.",
+     "s": 7.817,
+     "e": 8.21
+    }
+   ]
+  },
+  {
+   "text": "So what do the big studies predict?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "What the big studies say",
+   "start": 198.646,
+   "vo": 1.828,
+   "dur": 2.128,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.19
+    },
+    {
+     "w": "what",
+     "s": 0.19,
+     "e": 0.381
+    },
+    {
+     "w": "do",
+     "s": 0.381,
+     "e": 0.571
+    },
+    {
+     "w": "the",
+     "s": 0.571,
+     "e": 0.762
+    },
+    {
+     "w": "big",
+     "s": 0.762,
+     "e": 0.952
+    },
+    {
+     "w": "studies",
+     "s": 0.952,
+     "e": 1.333
+    },
+    {
+     "w": "predict?",
+     "s": 1.333,
+     "e": 1.828
+    }
+   ]
+  },
+  {
+   "text": "The World Economic Forum surveyed more than a thousand of the world's largest employers.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 200.774,
+   "vo": 4.277,
+   "dur": 4.577,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.189
+    },
+    {
+     "w": "World",
+     "s": 0.189,
+     "e": 0.379
+    },
+    {
+     "w": "Economic",
+     "s": 0.379,
+     "e": 1.136
+    },
+    {
+     "w": "Forum",
+     "s": 1.136,
+     "e": 1.514
+    },
+    {
+     "w": "surveyed",
+     "s": 1.514,
+     "e": 1.893
+    },
+    {
+     "w": "more",
+     "s": 1.893,
+     "e": 2.082
+    },
+    {
+     "w": "than",
+     "s": 2.082,
+     "e": 2.271
+    },
+    {
+     "w": "a",
+     "s": 2.271,
+     "e": 2.46
+    },
+    {
+     "w": "thousand",
+     "s": 2.46,
+     "e": 2.839
+    },
+    {
+     "w": "of",
+     "s": 2.839,
+     "e": 3.028
+    },
+    {
+     "w": "the",
+     "s": 3.028,
+     "e": 3.218
+    },
+    {
+     "w": "world's",
+     "s": 3.218,
+     "e": 3.407
+    },
+    {
+     "w": "largest",
+     "s": 3.407,
+     "e": 3.785
+    },
+    {
+     "w": "employers.",
+     "s": 3.785,
+     "e": 4.277
+    }
+   ]
+  },
+  {
+   "text": "Their forecast: by 2030, about ninety-two million jobs displaced\u2026 and one hundred and seventy million new ones created.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 205.352,
+   "vo": 7.428,
+   "dur": 7.728,
+   "words": [
+    {
+     "w": "Their",
+     "s": 0.0,
+     "e": 0.191
+    },
+    {
+     "w": "forecast:",
+     "s": 0.191,
+     "e": 0.881
+    },
+    {
+     "w": "by",
+     "s": 0.881,
+     "e": 1.072
+    },
+    {
+     "w": "2030,",
+     "s": 1.072,
+     "e": 1.953
+    },
+    {
+     "w": "about",
+     "s": 1.953,
+     "e": 2.336
+    },
+    {
+     "w": "ninety-two",
+     "s": 2.336,
+     "e": 3.101
+    },
+    {
+     "w": "million",
+     "s": 3.101,
+     "e": 3.484
+    },
+    {
+     "w": "jobs",
+     "s": 3.484,
+     "e": 3.676
+    },
+    {
+     "w": "displaced\u2026",
+     "s": 3.676,
+     "e": 4.25
+    },
+    {
+     "w": "and",
+     "s": 4.25,
+     "e": 4.442
+    },
+    {
+     "w": "one",
+     "s": 4.442,
+     "e": 4.825
+    },
+    {
+     "w": "hundred",
+     "s": 4.825,
+     "e": 5.207
+    },
+    {
+     "w": "and",
+     "s": 5.207,
+     "e": 5.399
+    },
+    {
+     "w": "seventy",
+     "s": 5.399,
+     "e": 5.973
+    },
+    {
+     "w": "million",
+     "s": 5.973,
+     "e": 6.356
+    },
+    {
+     "w": "new",
+     "s": 6.356,
+     "e": 6.548
+    },
+    {
+     "w": "ones",
+     "s": 6.548,
+     "e": 6.93
+    },
+    {
+     "w": "created.",
+     "s": 6.93,
+     "e": 7.428
+    }
+   ]
+  },
+  {
+   "text": "That's a net gain of seventy-eight million jobs. But a global total hides millions of people forced to switch careers.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 213.08,
+   "vo": 6.212,
+   "dur": 6.512,
+   "words": [
+    {
+     "w": "That's",
+     "s": 0.0,
+     "e": 0.206
+    },
+    {
+     "w": "a",
+     "s": 0.206,
+     "e": 0.411
+    },
+    {
+     "w": "net",
+     "s": 0.411,
+     "e": 0.617
+    },
+    {
+     "w": "gain",
+     "s": 0.617,
+     "e": 0.823
+    },
+    {
+     "w": "of",
+     "s": 0.823,
+     "e": 1.029
+    },
+    {
+     "w": "seventy-eight",
+     "s": 1.029,
+     "e": 1.646
+    },
+    {
+     "w": "million",
+     "s": 1.646,
+     "e": 2.057
+    },
+    {
+     "w": "jobs.",
+     "s": 2.057,
+     "e": 2.386
+    },
+    {
+     "w": "But",
+     "s": 2.386,
+     "e": 2.592
+    },
+    {
+     "w": "a",
+     "s": 2.592,
+     "e": 2.798
+    },
+    {
+     "w": "global",
+     "s": 2.798,
+     "e": 3.209
+    },
+    {
+     "w": "total",
+     "s": 3.209,
+     "e": 3.62
+    },
+    {
+     "w": "hides",
+     "s": 3.62,
+     "e": 4.032
+    },
+    {
+     "w": "millions",
+     "s": 4.032,
+     "e": 4.443
+    },
+    {
+     "w": "of",
+     "s": 4.443,
+     "e": 4.649
+    },
+    {
+     "w": "people",
+     "s": 4.649,
+     "e": 4.855
+    },
+    {
+     "w": "forced",
+     "s": 4.855,
+     "e": 5.266
+    },
+    {
+     "w": "to",
+     "s": 5.266,
+     "e": 5.472
+    },
+    {
+     "w": "switch",
+     "s": 5.472,
+     "e": 5.677
+    },
+    {
+     "w": "careers.",
+     "s": 5.677,
+     "e": 6.212
+    }
+   ]
+  },
+  {
+   "text": "The roles shrinking fastest: cashiers, clerks, data entry, bank tellers.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 219.592,
+   "vo": 4.601,
+   "dur": 4.901,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.23
+    },
+    {
+     "w": "roles",
+     "s": 0.23,
+     "e": 0.69
+    },
+    {
+     "w": "shrinking",
+     "s": 0.69,
+     "e": 1.15
+    },
+    {
+     "w": "fastest:",
+     "s": 1.15,
+     "e": 1.748
+    },
+    {
+     "w": "cashiers,",
+     "s": 1.748,
+     "e": 2.347
+    },
+    {
+     "w": "clerks,",
+     "s": 2.347,
+     "e": 2.715
+    },
+    {
+     "w": "data",
+     "s": 2.715,
+     "e": 3.175
+    },
+    {
+     "w": "entry,",
+     "s": 3.175,
+     "e": 3.773
+    },
+    {
+     "w": "bank",
+     "s": 3.773,
+     "e": 4.003
+    },
+    {
+     "w": "tellers.",
+     "s": 4.003,
+     "e": 4.601
+    }
+   ]
+  },
+  {
+   "text": "The roles growing fastest: AI and machine learning specialists, big data specialists, fintech engineers.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 224.493,
+   "vo": 6.49,
+   "dur": 6.79,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.221
+    },
+    {
+     "w": "roles",
+     "s": 0.221,
+     "e": 0.662
+    },
+    {
+     "w": "growing",
+     "s": 0.662,
+     "e": 1.104
+    },
+    {
+     "w": "fastest:",
+     "s": 1.104,
+     "e": 1.678
+    },
+    {
+     "w": "AI",
+     "s": 1.678,
+     "e": 1.898
+    },
+    {
+     "w": "and",
+     "s": 1.898,
+     "e": 2.119
+    },
+    {
+     "w": "machine",
+     "s": 2.119,
+     "e": 2.561
+    },
+    {
+     "w": "learning",
+     "s": 2.561,
+     "e": 3.002
+    },
+    {
+     "w": "specialists,",
+     "s": 3.002,
+     "e": 3.797
+    },
+    {
+     "w": "big",
+     "s": 3.797,
+     "e": 4.017
+    },
+    {
+     "w": "data",
+     "s": 4.017,
+     "e": 4.459
+    },
+    {
+     "w": "specialists,",
+     "s": 4.459,
+     "e": 5.254
+    },
+    {
+     "w": "fintech",
+     "s": 5.254,
+     "e": 5.695
+    },
+    {
+     "w": "engineers.",
+     "s": 5.695,
+     "e": 6.49
+    }
+   ]
+  },
+  {
+   "text": "And the biggest growth in raw numbers? Not tech at all. Farmworkers, delivery drivers, construction workers.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 231.283,
+   "vo": 6.468,
+   "dur": 6.768,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.0,
+     "e": 0.216
+    },
+    {
+     "w": "the",
+     "s": 0.216,
+     "e": 0.431
+    },
+    {
+     "w": "biggest",
+     "s": 0.431,
+     "e": 0.862
+    },
+    {
+     "w": "growth",
+     "s": 0.862,
+     "e": 1.078
+    },
+    {
+     "w": "in",
+     "s": 1.078,
+     "e": 1.294
+    },
+    {
+     "w": "raw",
+     "s": 1.294,
+     "e": 1.509
+    },
+    {
+     "w": "numbers?",
+     "s": 1.509,
+     "e": 2.07
+    },
+    {
+     "w": "Not",
+     "s": 2.07,
+     "e": 2.285
+    },
+    {
+     "w": "tech",
+     "s": 2.285,
+     "e": 2.501
+    },
+    {
+     "w": "at",
+     "s": 2.501,
+     "e": 2.716
+    },
+    {
+     "w": "all.",
+     "s": 2.716,
+     "e": 3.061
+    },
+    {
+     "w": "Farmworkers,",
+     "s": 3.061,
+     "e": 3.837
+    },
+    {
+     "w": "delivery",
+     "s": 3.837,
+     "e": 4.7
+    },
+    {
+     "w": "drivers,",
+     "s": 4.7,
+     "e": 5.26
+    },
+    {
+     "w": "construction",
+     "s": 5.26,
+     "e": 5.907
+    },
+    {
+     "w": "workers.",
+     "s": 5.907,
+     "e": 6.468
+    }
+   ]
+  },
+  {
+   "text": "The IMF adds another angle: almost forty percent of jobs worldwide are exposed to AI. In rich countries, about sixty percent.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 238.051,
+   "vo": 8.474,
+   "dur": 8.774,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.233
+    },
+    {
+     "w": "IMF",
+     "s": 0.233,
+     "e": 0.466
+    },
+    {
+     "w": "adds",
+     "s": 0.466,
+     "e": 0.698
+    },
+    {
+     "w": "another",
+     "s": 0.698,
+     "e": 1.397
+    },
+    {
+     "w": "angle:",
+     "s": 1.397,
+     "e": 1.769
+    },
+    {
+     "w": "almost",
+     "s": 1.769,
+     "e": 2.235
+    },
+    {
+     "w": "forty",
+     "s": 2.235,
+     "e": 2.701
+    },
+    {
+     "w": "percent",
+     "s": 2.701,
+     "e": 3.166
+    },
+    {
+     "w": "of",
+     "s": 3.166,
+     "e": 3.399
+    },
+    {
+     "w": "jobs",
+     "s": 3.399,
+     "e": 3.632
+    },
+    {
+     "w": "worldwide",
+     "s": 3.632,
+     "e": 4.097
+    },
+    {
+     "w": "are",
+     "s": 4.097,
+     "e": 4.563
+    },
+    {
+     "w": "exposed",
+     "s": 4.563,
+     "e": 5.261
+    },
+    {
+     "w": "to",
+     "s": 5.261,
+     "e": 5.494
+    },
+    {
+     "w": "AI.",
+     "s": 5.494,
+     "e": 5.867
+    },
+    {
+     "w": "In",
+     "s": 5.867,
+     "e": 6.099
+    },
+    {
+     "w": "rich",
+     "s": 6.099,
+     "e": 6.332
+    },
+    {
+     "w": "countries,",
+     "s": 6.332,
+     "e": 6.938
+    },
+    {
+     "w": "about",
+     "s": 6.938,
+     "e": 7.403
+    },
+    {
+     "w": "sixty",
+     "s": 7.403,
+     "e": 7.869
+    },
+    {
+     "w": "percent.",
+     "s": 7.869,
+     "e": 8.474
+    }
+   ]
+  },
+  {
+   "text": "Exposed doesn't mean replaced. The IMF says roughly half of those jobs could benefit, because AI makes the worker more productive.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 246.825,
+   "vo": 7.27,
+   "dur": 7.57,
+   "words": [
+    {
+     "w": "Exposed",
+     "s": 0.0,
+     "e": 0.627
+    },
+    {
+     "w": "doesn't",
+     "s": 0.627,
+     "e": 0.836
+    },
+    {
+     "w": "mean",
+     "s": 0.836,
+     "e": 1.045
+    },
+    {
+     "w": "replaced.",
+     "s": 1.045,
+     "e": 1.797
+    },
+    {
+     "w": "The",
+     "s": 1.797,
+     "e": 2.006
+    },
+    {
+     "w": "IMF",
+     "s": 2.006,
+     "e": 2.214
+    },
+    {
+     "w": "says",
+     "s": 2.214,
+     "e": 2.423
+    },
+    {
+     "w": "roughly",
+     "s": 2.423,
+     "e": 2.841
+    },
+    {
+     "w": "half",
+     "s": 2.841,
+     "e": 3.05
+    },
+    {
+     "w": "of",
+     "s": 3.05,
+     "e": 3.259
+    },
+    {
+     "w": "those",
+     "s": 3.259,
+     "e": 3.468
+    },
+    {
+     "w": "jobs",
+     "s": 3.468,
+     "e": 3.677
+    },
+    {
+     "w": "could",
+     "s": 3.677,
+     "e": 3.886
+    },
+    {
+     "w": "benefit,",
+     "s": 3.886,
+     "e": 4.638
+    },
+    {
+     "w": "because",
+     "s": 4.638,
+     "e": 5.056
+    },
+    {
+     "w": "AI",
+     "s": 5.056,
+     "e": 5.265
+    },
+    {
+     "w": "makes",
+     "s": 5.265,
+     "e": 5.682
+    },
+    {
+     "w": "the",
+     "s": 5.682,
+     "e": 5.891
+    },
+    {
+     "w": "worker",
+     "s": 5.891,
+     "e": 6.309
+    },
+    {
+     "w": "more",
+     "s": 6.309,
+     "e": 6.518
+    },
+    {
+     "w": "productive.",
+     "s": 6.518,
+     "e": 7.27
+    }
+   ]
+  },
+  {
+   "text": "The other half could see less hiring and lower pay.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 254.395,
+   "vo": 2.509,
+   "dur": 2.809,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.184
+    },
+    {
+     "w": "other",
+     "s": 0.184,
+     "e": 0.553
+    },
+    {
+     "w": "half",
+     "s": 0.553,
+     "e": 0.738
+    },
+    {
+     "w": "could",
+     "s": 0.738,
+     "e": 0.922
+    },
+    {
+     "w": "see",
+     "s": 0.922,
+     "e": 1.107
+    },
+    {
+     "w": "less",
+     "s": 1.107,
+     "e": 1.291
+    },
+    {
+     "w": "hiring",
+     "s": 1.291,
+     "e": 1.66
+    },
+    {
+     "w": "and",
+     "s": 1.66,
+     "e": 1.845
+    },
+    {
+     "w": "lower",
+     "s": 1.845,
+     "e": 2.214
+    },
+    {
+     "w": "pay.",
+     "s": 2.214,
+     "e": 2.509
+    }
+   ]
+  },
+  {
+   "text": "So what does this mean for India?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "chapter": "What it means for India",
+   "start": 257.204,
+   "vo": 1.683,
+   "dur": 1.983,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.196
+    },
+    {
+     "w": "what",
+     "s": 0.196,
+     "e": 0.391
+    },
+    {
+     "w": "does",
+     "s": 0.391,
+     "e": 0.587
+    },
+    {
+     "w": "this",
+     "s": 0.587,
+     "e": 0.783
+    },
+    {
+     "w": "mean",
+     "s": 0.783,
+     "e": 0.978
+    },
+    {
+     "w": "for",
+     "s": 0.978,
+     "e": 1.174
+    },
+    {
+     "w": "India?",
+     "s": 1.174,
+     "e": 1.683
+    }
+   ]
+  },
+  {
+   "text": "India's factories are automating fast, mostly car plants. Automotive takes almost half of India's new industrial robots.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 259.187,
+   "vo": 6.74,
+   "dur": 7.04,
+   "words": [
+    {
+     "w": "India's",
+     "s": 0.0,
+     "e": 0.377
+    },
+    {
+     "w": "factories",
+     "s": 0.377,
+     "e": 0.941
+    },
+    {
+     "w": "are",
+     "s": 0.941,
+     "e": 1.318
+    },
+    {
+     "w": "automating",
+     "s": 1.318,
+     "e": 2.071
+    },
+    {
+     "w": "fast,",
+     "s": 2.071,
+     "e": 2.372
+    },
+    {
+     "w": "mostly",
+     "s": 2.372,
+     "e": 2.749
+    },
+    {
+     "w": "car",
+     "s": 2.749,
+     "e": 2.937
+    },
+    {
+     "w": "plants.",
+     "s": 2.937,
+     "e": 3.238
+    },
+    {
+     "w": "Automotive",
+     "s": 3.238,
+     "e": 3.991
+    },
+    {
+     "w": "takes",
+     "s": 3.991,
+     "e": 4.368
+    },
+    {
+     "w": "almost",
+     "s": 4.368,
+     "e": 4.744
+    },
+    {
+     "w": "half",
+     "s": 4.744,
+     "e": 4.933
+    },
+    {
+     "w": "of",
+     "s": 4.933,
+     "e": 5.121
+    },
+    {
+     "w": "India's",
+     "s": 5.121,
+     "e": 5.497
+    },
+    {
+     "w": "new",
+     "s": 5.497,
+     "e": 5.686
+    },
+    {
+     "w": "industrial",
+     "s": 5.686,
+     "e": 6.251
+    },
+    {
+     "w": "robots.",
+     "s": 6.251,
+     "e": 6.74
+    }
+   ]
+  },
+  {
+   "text": "But India's biggest job engine isn't the assembly line. It's services. IT, customer support, back office.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 266.227,
+   "vo": 6.11,
+   "dur": 6.41,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.0,
+     "e": 0.204
+    },
+    {
+     "w": "India's",
+     "s": 0.204,
+     "e": 0.611
+    },
+    {
+     "w": "biggest",
+     "s": 0.611,
+     "e": 1.018
+    },
+    {
+     "w": "job",
+     "s": 1.018,
+     "e": 1.222
+    },
+    {
+     "w": "engine",
+     "s": 1.222,
+     "e": 1.629
+    },
+    {
+     "w": "isn't",
+     "s": 1.629,
+     "e": 1.833
+    },
+    {
+     "w": "the",
+     "s": 1.833,
+     "e": 2.037
+    },
+    {
+     "w": "assembly",
+     "s": 2.037,
+     "e": 2.648
+    },
+    {
+     "w": "line.",
+     "s": 2.648,
+     "e": 2.974
+    },
+    {
+     "w": "It's",
+     "s": 2.974,
+     "e": 3.177
+    },
+    {
+     "w": "services.",
+     "s": 3.177,
+     "e": 3.91
+    },
+    {
+     "w": "IT,",
+     "s": 3.91,
+     "e": 4.236
+    },
+    {
+     "w": "customer",
+     "s": 4.236,
+     "e": 4.847
+    },
+    {
+     "w": "support,",
+     "s": 4.847,
+     "e": 5.377
+    },
+    {
+     "w": "back",
+     "s": 5.377,
+     "e": 5.58
+    },
+    {
+     "w": "office.",
+     "s": 5.58,
+     "e": 6.11
+    }
+   ]
+  },
+  {
+   "text": "And that's exactly where AI, not robots, is moving in. Software that writes code, answers tickets and reads documents.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 272.637,
+   "vo": 6.238,
+   "dur": 6.538,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.0,
+     "e": 0.195
+    },
+    {
+     "w": "that's",
+     "s": 0.195,
+     "e": 0.39
+    },
+    {
+     "w": "exactly",
+     "s": 0.39,
+     "e": 0.975
+    },
+    {
+     "w": "where",
+     "s": 0.975,
+     "e": 1.17
+    },
+    {
+     "w": "AI,",
+     "s": 1.17,
+     "e": 1.482
+    },
+    {
+     "w": "not",
+     "s": 1.482,
+     "e": 1.676
+    },
+    {
+     "w": "robots,",
+     "s": 1.676,
+     "e": 2.183
+    },
+    {
+     "w": "is",
+     "s": 2.183,
+     "e": 2.378
+    },
+    {
+     "w": "moving",
+     "s": 2.378,
+     "e": 2.768
+    },
+    {
+     "w": "in.",
+     "s": 2.768,
+     "e": 3.08
+    },
+    {
+     "w": "Software",
+     "s": 3.08,
+     "e": 3.47
+    },
+    {
+     "w": "that",
+     "s": 3.47,
+     "e": 3.665
+    },
+    {
+     "w": "writes",
+     "s": 3.665,
+     "e": 4.055
+    },
+    {
+     "w": "code,",
+     "s": 4.055,
+     "e": 4.367
+    },
+    {
+     "w": "answers",
+     "s": 4.367,
+     "e": 4.756
+    },
+    {
+     "w": "tickets",
+     "s": 4.756,
+     "e": 5.146
+    },
+    {
+     "w": "and",
+     "s": 5.146,
+     "e": 5.341
+    },
+    {
+     "w": "reads",
+     "s": 5.341,
+     "e": 5.536
+    },
+    {
+     "w": "documents.",
+     "s": 5.536,
+     "e": 6.238
+    }
+   ]
+  },
+  {
+   "text": "It's the ATM pattern again: the routine tasks go first. Checking, copying, sorting, repeating.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 279.175,
+   "vo": 5.895,
+   "dur": 6.195,
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.0,
+     "e": 0.23
+    },
+    {
+     "w": "the",
+     "s": 0.23,
+     "e": 0.461
+    },
+    {
+     "w": "ATM",
+     "s": 0.461,
+     "e": 0.691
+    },
+    {
+     "w": "pattern",
+     "s": 0.691,
+     "e": 1.151
+    },
+    {
+     "w": "again:",
+     "s": 1.151,
+     "e": 1.75
+    },
+    {
+     "w": "the",
+     "s": 1.75,
+     "e": 1.98
+    },
+    {
+     "w": "routine",
+     "s": 1.98,
+     "e": 2.441
+    },
+    {
+     "w": "tasks",
+     "s": 2.441,
+     "e": 2.671
+    },
+    {
+     "w": "go",
+     "s": 2.671,
+     "e": 2.902
+    },
+    {
+     "w": "first.",
+     "s": 2.902,
+     "e": 3.27
+    },
+    {
+     "w": "Checking,",
+     "s": 3.27,
+     "e": 3.869
+    },
+    {
+     "w": "copying,",
+     "s": 3.869,
+     "e": 4.468
+    },
+    {
+     "w": "sorting,",
+     "s": 4.468,
+     "e": 5.066
+    },
+    {
+     "w": "repeating.",
+     "s": 5.066,
+     "e": 5.895
+    }
+   ]
+  },
+  {
+   "text": "The work that stays is the work around the machine: designing it, fixing it, checking what it produces, and dealing with people.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 285.37,
+   "vo": 6.425,
+   "dur": 6.725,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.189
+    },
+    {
+     "w": "work",
+     "s": 0.189,
+     "e": 0.378
+    },
+    {
+     "w": "that",
+     "s": 0.378,
+     "e": 0.567
+    },
+    {
+     "w": "stays",
+     "s": 0.567,
+     "e": 0.756
+    },
+    {
+     "w": "is",
+     "s": 0.756,
+     "e": 0.945
+    },
+    {
+     "w": "the",
+     "s": 0.945,
+     "e": 1.134
+    },
+    {
+     "w": "work",
+     "s": 1.134,
+     "e": 1.323
+    },
+    {
+     "w": "around",
+     "s": 1.323,
+     "e": 1.701
+    },
+    {
+     "w": "the",
+     "s": 1.701,
+     "e": 1.89
+    },
+    {
+     "w": "machine:",
+     "s": 1.89,
+     "e": 2.381
+    },
+    {
+     "w": "designing",
+     "s": 2.381,
+     "e": 2.948
+    },
+    {
+     "w": "it,",
+     "s": 2.948,
+     "e": 3.251
+    },
+    {
+     "w": "fixing",
+     "s": 3.251,
+     "e": 3.628
+    },
+    {
+     "w": "it,",
+     "s": 3.628,
+     "e": 3.931
+    },
+    {
+     "w": "checking",
+     "s": 3.931,
+     "e": 4.309
+    },
+    {
+     "w": "what",
+     "s": 4.309,
+     "e": 4.498
+    },
+    {
+     "w": "it",
+     "s": 4.498,
+     "e": 4.687
+    },
+    {
+     "w": "produces,",
+     "s": 4.687,
+     "e": 5.367
+    },
+    {
+     "w": "and",
+     "s": 5.367,
+     "e": 5.556
+    },
+    {
+     "w": "dealing",
+     "s": 5.556,
+     "e": 5.934
+    },
+    {
+     "w": "with",
+     "s": 5.934,
+     "e": 6.123
+    },
+    {
+     "w": "people.",
+     "s": 6.123,
+     "e": 6.425
+    }
+   ]
+  },
+  {
+   "text": "So, will robots replace human jobs?",
+   "dir": "reflective, the big question",
+   "chapter": "So, will robots replace us?",
+   "start": 292.096,
+   "vo": 2.4,
+   "dur": 2.7,
+   "words": [
+    {
+     "w": "So,",
+     "s": 0.0,
+     "e": 0.376
+    },
+    {
+     "w": "will",
+     "s": 0.376,
+     "e": 0.612
+    },
+    {
+     "w": "robots",
+     "s": 0.612,
+     "e": 1.082
+    },
+    {
+     "w": "replace",
+     "s": 1.082,
+     "e": 1.553
+    },
+    {
+     "w": "human",
+     "s": 1.553,
+     "e": 2.024
+    },
+    {
+     "w": "jobs?",
+     "s": 2.024,
+     "e": 2.4
+    }
+   ]
+  },
+  {
+   "text": "Some, yes. A job that is one repetitive task from start to finish is in real danger.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 294.796,
+   "vo": 5.536,
+   "dur": 5.836,
+   "words": [
+    {
+     "w": "Some,",
+     "s": 0.0,
+     "e": 0.357
+    },
+    {
+     "w": "yes.",
+     "s": 0.357,
+     "e": 0.714
+    },
+    {
+     "w": "A",
+     "s": 0.714,
+     "e": 0.937
+    },
+    {
+     "w": "job",
+     "s": 0.937,
+     "e": 1.161
+    },
+    {
+     "w": "that",
+     "s": 1.161,
+     "e": 1.384
+    },
+    {
+     "w": "is",
+     "s": 1.384,
+     "e": 1.607
+    },
+    {
+     "w": "one",
+     "s": 1.607,
+     "e": 2.054
+    },
+    {
+     "w": "repetitive",
+     "s": 2.054,
+     "e": 2.946
+    },
+    {
+     "w": "task",
+     "s": 2.946,
+     "e": 3.17
+    },
+    {
+     "w": "from",
+     "s": 3.17,
+     "e": 3.393
+    },
+    {
+     "w": "start",
+     "s": 3.393,
+     "e": 3.616
+    },
+    {
+     "w": "to",
+     "s": 3.616,
+     "e": 3.839
+    },
+    {
+     "w": "finish",
+     "s": 3.839,
+     "e": 4.286
+    },
+    {
+     "w": "is",
+     "s": 4.286,
+     "e": 4.509
+    },
+    {
+     "w": "in",
+     "s": 4.509,
+     "e": 4.732
+    },
+    {
+     "w": "real",
+     "s": 4.732,
+     "e": 4.955
+    },
+    {
+     "w": "danger.",
+     "s": 4.955,
+     "e": 5.536
+    }
+   ]
+  },
+  {
+   "text": "But most jobs are a bundle of tasks. Machines take the predictable ones, and leave the messy, human ones.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 300.631,
+   "vo": 5.515,
+   "dur": 5.815,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.0,
+     "e": 0.181
+    },
+    {
+     "w": "most",
+     "s": 0.181,
+     "e": 0.363
+    },
+    {
+     "w": "jobs",
+     "s": 0.363,
+     "e": 0.544
+    },
+    {
+     "w": "are",
+     "s": 0.544,
+     "e": 0.907
+    },
+    {
+     "w": "a",
+     "s": 0.907,
+     "e": 1.089
+    },
+    {
+     "w": "bundle",
+     "s": 1.089,
+     "e": 1.27
+    },
+    {
+     "w": "of",
+     "s": 1.27,
+     "e": 1.451
+    },
+    {
+     "w": "tasks.",
+     "s": 1.451,
+     "e": 1.742
+    },
+    {
+     "w": "Machines",
+     "s": 1.742,
+     "e": 2.286
+    },
+    {
+     "w": "take",
+     "s": 2.286,
+     "e": 2.467
+    },
+    {
+     "w": "the",
+     "s": 2.467,
+     "e": 2.649
+    },
+    {
+     "w": "predictable",
+     "s": 2.649,
+     "e": 3.193
+    },
+    {
+     "w": "ones,",
+     "s": 3.193,
+     "e": 3.665
+    },
+    {
+     "w": "and",
+     "s": 3.665,
+     "e": 3.846
+    },
+    {
+     "w": "leave",
+     "s": 3.846,
+     "e": 4.028
+    },
+    {
+     "w": "the",
+     "s": 4.028,
+     "e": 4.209
+    },
+    {
+     "w": "messy,",
+     "s": 4.209,
+     "e": 4.681
+    },
+    {
+     "w": "human",
+     "s": 4.681,
+     "e": 5.043
+    },
+    {
+     "w": "ones.",
+     "s": 5.043,
+     "e": 5.515
+    }
+   ]
+  },
+  {
+   "text": "Remember that dark factory in Japan? Someone designed those robots. Someone programs them. And when one breaks down at three in the morning, a human still gets the call.",
+   "dir": "warm callback to the opening",
+   "start": 306.447,
+   "vo": 8.705,
+   "dur": 9.005,
+   "words": [
+    {
+     "w": "Remember",
+     "s": 0.0,
+     "e": 0.568
+    },
+    {
+     "w": "that",
+     "s": 0.568,
+     "e": 0.757
+    },
+    {
+     "w": "dark",
+     "s": 0.757,
+     "e": 0.946
+    },
+    {
+     "w": "factory",
+     "s": 0.946,
+     "e": 1.514
+    },
+    {
+     "w": "in",
+     "s": 1.514,
+     "e": 1.703
+    },
+    {
+     "w": "Japan?",
+     "s": 1.703,
+     "e": 2.195
+    },
+    {
+     "w": "Someone",
+     "s": 2.195,
+     "e": 2.574
+    },
+    {
+     "w": "designed",
+     "s": 2.574,
+     "e": 3.141
+    },
+    {
+     "w": "those",
+     "s": 3.141,
+     "e": 3.331
+    },
+    {
+     "w": "robots.",
+     "s": 3.331,
+     "e": 3.823
+    },
+    {
+     "w": "Someone",
+     "s": 3.823,
+     "e": 4.201
+    },
+    {
+     "w": "programs",
+     "s": 4.201,
+     "e": 4.58
+    },
+    {
+     "w": "them.",
+     "s": 4.58,
+     "e": 4.882
+    },
+    {
+     "w": "And",
+     "s": 4.882,
+     "e": 5.072
+    },
+    {
+     "w": "when",
+     "s": 5.072,
+     "e": 5.261
+    },
+    {
+     "w": "one",
+     "s": 5.261,
+     "e": 5.639
+    },
+    {
+     "w": "breaks",
+     "s": 5.639,
+     "e": 5.829
+    },
+    {
+     "w": "down",
+     "s": 5.829,
+     "e": 6.018
+    },
+    {
+     "w": "at",
+     "s": 6.018,
+     "e": 6.207
+    },
+    {
+     "w": "three",
+     "s": 6.207,
+     "e": 6.396
+    },
+    {
+     "w": "in",
+     "s": 6.396,
+     "e": 6.586
+    },
+    {
+     "w": "the",
+     "s": 6.586,
+     "e": 6.775
+    },
+    {
+     "w": "morning,",
+     "s": 6.775,
+     "e": 7.267
+    },
+    {
+     "w": "a",
+     "s": 7.267,
+     "e": 7.456
+    },
+    {
+     "w": "human",
+     "s": 7.456,
+     "e": 7.835
+    },
+    {
+     "w": "still",
+     "s": 7.835,
+     "e": 8.024
+    },
+    {
+     "w": "gets",
+     "s": 8.024,
+     "e": 8.213
+    },
+    {
+     "w": "the",
+     "s": 8.213,
+     "e": 8.402
+    },
+    {
+     "w": "call.",
+     "s": 8.402,
+     "e": 8.705
+    }
+   ]
+  },
+  {
+   "text": "So the better question isn't \"Will a robot take my job?\" It's \"Which part of my job could a robot do\u2026 and what will I do instead?\"",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 315.452,
+   "vo": 6.927,
+   "dur": 7.227,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.216
+    },
+    {
+     "w": "the",
+     "s": 0.216,
+     "e": 0.433
+    },
+    {
+     "w": "better",
+     "s": 0.433,
+     "e": 0.866
+    },
+    {
+     "w": "question",
+     "s": 0.866,
+     "e": 1.299
+    },
+    {
+     "w": "isn't",
+     "s": 1.299,
+     "e": 1.515
+    },
+    {
+     "w": "\"Will",
+     "s": 1.515,
+     "e": 1.732
+    },
+    {
+     "w": "a",
+     "s": 1.732,
+     "e": 1.948
+    },
+    {
+     "w": "robot",
+     "s": 1.948,
+     "e": 2.381
+    },
+    {
+     "w": "take",
+     "s": 2.381,
+     "e": 2.598
+    },
+    {
+     "w": "my",
+     "s": 2.598,
+     "e": 2.814
+    },
+    {
+     "w": "job?\"",
+     "s": 2.814,
+     "e": 3.031
+    },
+    {
+     "w": "It's",
+     "s": 3.031,
+     "e": 3.247
+    },
+    {
+     "w": "\"Which",
+     "s": 3.247,
+     "e": 3.464
+    },
+    {
+     "w": "part",
+     "s": 3.464,
+     "e": 3.68
+    },
+    {
+     "w": "of",
+     "s": 3.68,
+     "e": 3.897
+    },
+    {
+     "w": "my",
+     "s": 3.897,
+     "e": 4.113
+    },
+    {
+     "w": "job",
+     "s": 4.113,
+     "e": 4.33
+    },
+    {
+     "w": "could",
+     "s": 4.33,
+     "e": 4.546
+    },
+    {
+     "w": "a",
+     "s": 4.546,
+     "e": 4.763
+    },
+    {
+     "w": "robot",
+     "s": 4.763,
+     "e": 5.196
+    },
+    {
+     "w": "do\u2026",
+     "s": 5.196,
+     "e": 5.412
+    },
+    {
+     "w": "and",
+     "s": 5.412,
+     "e": 5.628
+    },
+    {
+     "w": "what",
+     "s": 5.628,
+     "e": 5.845
+    },
+    {
+     "w": "will",
+     "s": 5.845,
+     "e": 6.061
+    },
+    {
+     "w": "I",
+     "s": 6.061,
+     "e": 6.278
+    },
+    {
+     "w": "do",
+     "s": 6.278,
+     "e": 6.494
+    },
+    {
+     "w": "instead?\"",
+     "s": 6.494,
+     "e": 6.927
+    }
+   ]
+  },
+  {
+   "text": "Answer that before your boss does, and you're already ahead.",
+   "dir": "confident, upbeat",
+   "start": 322.679,
+   "vo": 2.41,
+   "dur": 2.71,
+   "words": [
+    {
+     "w": "Answer",
+     "s": 0.0,
+     "e": 0.298
+    },
+    {
+     "w": "that",
+     "s": 0.298,
+     "e": 0.446
+    },
+    {
+     "w": "before",
+     "s": 0.446,
+     "e": 0.744
+    },
+    {
+     "w": "your",
+     "s": 0.744,
+     "e": 0.893
+    },
+    {
+     "w": "boss",
+     "s": 0.893,
+     "e": 1.041
+    },
+    {
+     "w": "does,",
+     "s": 1.041,
+     "e": 1.279
+    },
+    {
+     "w": "and",
+     "s": 1.279,
+     "e": 1.428
+    },
+    {
+     "w": "you're",
+     "s": 1.428,
+     "e": 1.577
+    },
+    {
+     "w": "already",
+     "s": 1.577,
+     "e": 2.023
+    },
+    {
+     "w": "ahead.",
+     "s": 2.023,
+     "e": 2.41
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "friendly sign-off",
+   "start": 325.389,
+   "vo": 3.18,
+   "dur": 4.68,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.0,
+     "e": 0.393
+    },
+    {
+     "w": "to",
+     "s": 0.393,
+     "e": 0.589
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.589,
+     "e": 1.374
+    },
+    {
+     "w": "with",
+     "s": 1.374,
+     "e": 1.57
+    },
+    {
+     "w": "Max",
+     "s": 1.57,
+     "e": 1.767
+    },
+    {
+     "w": "for",
+     "s": 1.767,
+     "e": 1.963
+    },
+    {
+     "w": "more",
+     "s": 1.963,
+     "e": 2.159
+    },
+    {
+     "w": "tech,",
+     "s": 2.159,
+     "e": 2.473
+    },
+    {
+     "w": "decoded.",
+     "s": 2.473,
+     "e": 3.18
+    }
+   ]
+  }
+ ]
+}

@@ -5,7 +5,10 @@ import numpy as np
 sys.path.insert(0, 'tools')
 import audio
 k, idx = sys.argv[1], sorted(int(x) for x in sys.argv[2:])
-ep = json.load(open(f'episodes/{k}/short.json'))
+import os
+k = k.rstrip('/').split('/')[-1]
+epf = f'episodes/{k}/short.json' if os.path.exists(f'episodes/{k}/short.json') else f'episodes/{k}/long.json'
+ep = json.load(open(epf))
 tp = f"src/episodes/{ep['id']}.timeline.json"
 t = json.load(open(tp)); sr = audio.SR
 x = audio.read('public/' + t['vo'])
