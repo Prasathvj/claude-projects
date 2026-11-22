@@ -2,8 +2,10 @@
 Scenes follow the script's visual directions: blank page hook, activity log, magnifier reveal, title slam,
 one-stream conveyor, memory vault, no-fix stamp + CTA. Max is composited on top afterwards (max_layer.html).
 Usage: python3 tools/hf_ep01_short.py"""
-import json, re, subprocess, wave
+import json, re, subprocess, sys, wave
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import theme
 
 ROOT = Path(__file__).resolve().parent.parent
 P = ROOT / 'hf/ep01-short'
@@ -59,7 +61,7 @@ CARD_CSS = """
 """
 
 def scene(sid, body, script, extra_css=''):
-    return f"""<template>
+    return theme.apply(f"""<template>
   <style>
 {FONTS}{CSSVARS}{CARD_CSS}
 #root {{ position:absolute; inset:0; overflow:hidden; }}
@@ -74,7 +76,7 @@ def scene(sid, body, script, extra_css=''):
     window.__timelines["{sid}"] = tl;
   </script>
 </template>
-"""
+""")
 
 FLY_IN = '    tl.fromTo("{sel}", {{ opacity:0, scale:.72, rotationX:{rx}, rotationY:{ry}, y:140, filter:"blur(16px)" }}, {{ opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.62, ease:"expo.out" }}, {t});'
 BLUR_OUT = '    tl.to("{sel}", {{ opacity:0, filter:"blur(12px)", scale:1.04, duration:.16, ease:"power3.in" }}, {t});'
@@ -218,7 +220,7 @@ def s3():
     css = """
 .paper { height:470px; border-radius:24px; background:#FFFFFF; position:relative; overflow:hidden; }
 .layer { position:absolute; inset:0; padding:34px 40px; }
-.pv { font:700 40px 'SD Display'; color:#2A1A12; margin-bottom:6px; } .pv + .pv { font:500 32px 'SD Text'; color:#7A6558; }
+.pv { font:700 40px 'SD Display'; color:#1E120C; margin-bottom:6px; } .pv + .pv { font:500 32px 'SD Text'; color:#7A6558; }
 .hidden { margin-top:40px; font:700 40px 'SD Mono'; line-height:1.45; }
 .hidden.w { color:#FFFFFF; } .hidden.d { color:#E0261B; }
 .reveal { background:#FFFFFF; clip-path:circle(0px at 120px 300px); }
@@ -339,7 +341,7 @@ def s6():
     <div class="fol" id="s6-fol">FOLLOWS YOU INTO FUTURE CHATS</div>
 {bit_block(sid, [('n', {'state': 'normal'}), ('u', {'state': 'gasp', 'arms': 'hug', 'extra': ['sweat']})], 70, 1370, 280)}"""
     css = """
-.note { padding:20px 26px; margin:10px 0; border-radius:18px; background:#F3E6DC; color:#2A1A12; font:600 32px 'SD Text'; }
+.note { padding:20px 26px; margin:10px 0; border-radius:18px; background:#F3E6DC; color:#1E120C; font:600 32px 'SD Text'; }
 .note.x { background:#2A0D0A; border:3px solid var(--red); color:#FF6B5E; font:700 30px 'SD Mono'; line-height:1.35; }
 .chs { position:absolute; left:90px; right:90px; top:900px; display:flex; gap:16px; }
 .cht { flex:1; height:96px; border-radius:22px; background:#1A0F0A; border:2px solid var(--edge); display:flex; align-items:center; justify-content:space-between; padding:0 20px;
@@ -488,7 +490,7 @@ def index():
     <script src="assets/gsap.min.js"></script>
     <style>
       * {{ margin:0; padding:0; box-sizing:border-box; }}
-      html, body {{ margin:0; width:{W}px; height:{H}px; overflow:hidden; background:#0C0704; }}
+      html, body {{ margin:0; width:{W}px; height:{H}px; overflow:hidden; background:{'#0C0704' if theme.name() == 'dark' else theme.GROUND[theme.name()]}; }}
       #root {{ position:relative; width:100%; height:100%; }}
     </style>
   </head>
