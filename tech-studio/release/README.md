@@ -17,7 +17,11 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 8 | [08_job03](08_job03) | AI got blamed for 120,000 layoffs. Then they stopped. | 0:40 | **Fri 27 Nov, 6:30 PM** | Uploads 24 Nov |
 | 9 | [09_net01](09_net01) | What if the internet disappeared? | 0:55 | **Sat 28 Nov, 12:30 PM** | Uploads 24 Nov |
 | 10 | [10_robo01](10_robo01) | Robots that work 24/7 — in the dark | 0:45 | **Sun 29 Nov, 12:30 PM** | Uploads 25 Nov |
+| 12 | [12_upi01](12_upi01) | Your UPI money doesn't actually move (in those 2 seconds) | 0:58 | **Mon 30 Nov, 6:30 PM** | Ready |
+| 13 | [13_ai01](13_ai01) | ChatGPT doesn't know what it's going to say next | 0:59 | **Tue 1 Dec, 6:30 PM** | Ready |
 | 11 | [11_ep02_long](11_ep02_long) | Will Robots Replace Human Jobs? The Real Data | 6:01 | **Wed 2 Dec, 6:30 PM** | Ready (long video) |
+| 14 | [14_face01](14_face01) | Your phone checks your face with 30,000 invisible dots | 0:56 | **Thu 3 Dec, 6:30 PM** | Ready |
+| 15 | [15_del01](15_del01) | Deleting a file doesn't delete it | 0:59 | **Fri 4 Dec, 6:30 PM** | Ready |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.
