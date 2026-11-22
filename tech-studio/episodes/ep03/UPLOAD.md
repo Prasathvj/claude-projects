@@ -1,5 +1,5 @@
 # ep03 long video: AI Agents Can Now Spend Your Money
-File: `out/TechDecoded_ep03_long.mp4` (1920×1080, 5:10) · Thumbnail: `thumbnail.jpg` · Theme: cream
+File: `out/TechDecoded_ep03_long.mp4` (1920×1080, 5:12) · Thumbnail: `thumbnail.jpg` · Theme: cream
 Teaser Short: pay01 (Sun 6 Dec, 12:30 PM) · Planned release: **Sat 5 Dec 2026, 12:30 PM IST**
 
 **Title:** AI Agents Can Now Spend Your Money (What Could Go Wrong?)
