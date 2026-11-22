@@ -1,0 +1,613 @@
+{
+ "id": "job03-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 38.763,
+ "vo": "job03/job03-short-vo.wav",
+ "music": "job03/job03-short-music.wav",
+ "beats": [
+  {
+   "text": "Companies blamed AI for over a hundred and twenty thousand US job cuts this year. Then they suddenly stopped.",
+   "dir": "gripping mystery hook; clear pause between sentences",
+   "start": 0.25,
+   "vo": 6.56,
+   "dur": 6.71,
+   "words": [
+    {
+     "w": "Companies",
+     "s": 0.28,
+     "e": 0.65
+    },
+    {
+     "w": "blamed",
+     "s": 0.65,
+     "e": 0.92
+    },
+    {
+     "w": "AI",
+     "s": 0.92,
+     "e": 1.3
+    },
+    {
+     "w": "for",
+     "s": 1.3,
+     "e": 1.48
+    },
+    {
+     "w": "over",
+     "s": 1.48,
+     "e": 1.76
+    },
+    {
+     "w": "a",
+     "s": 1.76,
+     "e": 1.8
+    },
+    {
+     "w": "hundred",
+     "s": 1.8,
+     "e": 2.3
+    },
+    {
+     "w": "and",
+     "s": 2.3,
+     "e": 2.4
+    },
+    {
+     "w": "twenty",
+     "s": 2.4,
+     "e": 2.76
+    },
+    {
+     "w": "thousand",
+     "s": 2.76,
+     "e": 3.2
+    },
+    {
+     "w": "US",
+     "s": 3.2,
+     "e": 3.5
+    },
+    {
+     "w": "job",
+     "s": 3.5,
+     "e": 4.02
+    },
+    {
+     "w": "cuts",
+     "s": 4.02,
+     "e": 4.16
+    },
+    {
+     "w": "this",
+     "s": 4.16,
+     "e": 4.33
+    },
+    {
+     "w": "year.",
+     "s": 4.33,
+     "e": 4.59
+    },
+    {
+     "w": "Then",
+     "s": 4.92,
+     "e": 5.24
+    },
+    {
+     "w": "they",
+     "s": 5.24,
+     "e": 5.52
+    },
+    {
+     "w": "suddenly",
+     "s": 5.52,
+     "e": 5.96
+    },
+    {
+     "w": "stopped.",
+     "s": 5.96,
+     "e": 6.53
+    }
+   ]
+  },
+  {
+   "text": "That number comes from Challenger, Gray and Christmas, which tracks layoff announcements across America.",
+   "dir": "factual; clear pause between sentences",
+   "start": 6.96,
+   "vo": 4.33,
+   "dur": 4.48,
+   "words": [
+    {
+     "w": "That",
+     "s": 0.21,
+     "e": 0.38
+    },
+    {
+     "w": "number",
+     "s": 0.38,
+     "e": 0.57
+    },
+    {
+     "w": "comes",
+     "s": 0.57,
+     "e": 0.83
+    },
+    {
+     "w": "from",
+     "s": 0.83,
+     "e": 0.99
+    },
+    {
+     "w": "Challenger,",
+     "s": 0.99,
+     "e": 1.47
+    },
+    {
+     "w": "Gray",
+     "s": 1.47,
+     "e": 1.74
+    },
+    {
+     "w": "and",
+     "s": 1.74,
+     "e": 1.86
+    },
+    {
+     "w": "Christmas,",
+     "s": 1.86,
+     "e": 2.39
+    },
+    {
+     "w": "which",
+     "s": 2.39,
+     "e": 2.6
+    },
+    {
+     "w": "tracks",
+     "s": 2.6,
+     "e": 2.88
+    },
+    {
+     "w": "layoff",
+     "s": 2.88,
+     "e": 3.16
+    },
+    {
+     "w": "announcements",
+     "s": 3.16,
+     "e": 3.57
+    },
+    {
+     "w": "across",
+     "s": 3.57,
+     "e": 3.87
+    },
+    {
+     "w": "America.",
+     "s": 3.87,
+     "e": 4.25
+    }
+   ]
+  },
+  {
+   "text": "From March to July, AI was the number one reason companies gave.",
+   "dir": "building; clear pause between sentences",
+   "start": 11.44,
+   "vo": 3.25,
+   "dur": 3.4,
+   "words": [
+    {
+     "w": "From",
+     "s": 0.25,
+     "e": 0.4
+    },
+    {
+     "w": "March",
+     "s": 0.4,
+     "e": 0.61
+    },
+    {
+     "w": "to",
+     "s": 0.61,
+     "e": 0.73
+    },
+    {
+     "w": "July,",
+     "s": 0.73,
+     "e": 1.09
+    },
+    {
+     "w": "AI",
+     "s": 1.21,
+     "e": 1.52
+    },
+    {
+     "w": "was",
+     "s": 1.52,
+     "e": 1.74
+    },
+    {
+     "w": "the",
+     "s": 1.74,
+     "e": 1.83
+    },
+    {
+     "w": "number",
+     "s": 1.83,
+     "e": 2.18
+    },
+    {
+     "w": "one",
+     "s": 2.18,
+     "e": 2.33
+    },
+    {
+     "w": "reason",
+     "s": 2.33,
+     "e": 2.65
+    },
+    {
+     "w": "companies",
+     "s": 2.65,
+     "e": 3.0
+    },
+    {
+     "w": "gave.",
+     "s": 3.0,
+     "e": 3.22
+    }
+   ]
+  },
+  {
+   "text": "By August, it had dropped to fourth.",
+   "dir": "twist; clear pause between sentences",
+   "start": 14.84,
+   "vo": 2.07,
+   "dur": 2.22,
+   "words": [
+    {
+     "w": "By",
+     "s": -0.02,
+     "e": 0.13
+    },
+    {
+     "w": "August,",
+     "s": 0.24,
+     "e": 0.68
+    },
+    {
+     "w": "it",
+     "s": 0.68,
+     "e": 0.93
+    },
+    {
+     "w": "had",
+     "s": 0.93,
+     "e": 1.03
+    },
+    {
+     "w": "dropped",
+     "s": 1.03,
+     "e": 1.37
+    },
+    {
+     "w": "to",
+     "s": 1.37,
+     "e": 1.48
+    },
+    {
+     "w": "fourth.",
+     "s": 1.48,
+     "e": 2.03
+    }
+   ]
+  },
+  {
+   "text": "Now the top reason is market and economic conditions.",
+   "dir": "factual; clear pause between sentences",
+   "start": 17.06,
+   "vo": 3.348,
+   "dur": 3.498,
+   "words": [
+    {
+     "w": "Now",
+     "s": 0.0,
+     "e": 0.34
+    },
+    {
+     "w": "the",
+     "s": 0.45,
+     "e": 0.54
+    },
+    {
+     "w": "top",
+     "s": 0.54,
+     "e": 0.95
+    },
+    {
+     "w": "reason",
+     "s": 0.95,
+     "e": 1.28
+    },
+    {
+     "w": "is",
+     "s": 1.28,
+     "e": 1.52
+    },
+    {
+     "w": "market",
+     "s": 1.52,
+     "e": 2.01
+    },
+    {
+     "w": "and",
+     "s": 2.01,
+     "e": 2.25
+    },
+    {
+     "w": "economic",
+     "s": 2.25,
+     "e": 2.75
+    },
+    {
+     "w": "conditions.",
+     "s": 2.75,
+     "e": 3.32
+    }
+   ]
+  },
+  {
+   "text": "So did AI stop replacing jobs? Not exactly.",
+   "dir": "curious, knowing; clear pause between sentences",
+   "start": 20.558,
+   "vo": 3.503,
+   "dur": 3.653,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.18
+    },
+    {
+     "w": "did",
+     "s": 0.18,
+     "e": 0.35
+    },
+    {
+     "w": "AI",
+     "s": 0.35,
+     "e": 0.72
+    },
+    {
+     "w": "stop",
+     "s": 0.72,
+     "e": 1.17
+    },
+    {
+     "w": "replacing",
+     "s": 1.17,
+     "e": 1.63
+    },
+    {
+     "w": "jobs?",
+     "s": 1.63,
+     "e": 2.07
+    },
+    {
+     "w": "Not",
+     "s": 2.51,
+     "e": 2.82
+    },
+    {
+     "w": "exactly.",
+     "s": 2.82,
+     "e": 3.47
+    }
+   ]
+  },
+  {
+   "text": "Saying AI sounds like progress. Saying the economy sounds like trouble. And which story companies tell can change with the headlines.",
+   "dir": "thoughtful, slightly wry; clear pause between sentences",
+   "start": 24.21,
+   "vo": 8.662,
+   "dur": 8.812,
+   "words": [
+    {
+     "w": "Saying",
+     "s": 0.0,
+     "e": 0.48
+    },
+    {
+     "w": "AI",
+     "s": 0.48,
+     "e": 1.07
+    },
+    {
+     "w": "sounds",
+     "s": 1.07,
+     "e": 1.6
+    },
+    {
+     "w": "like",
+     "s": 1.6,
+     "e": 1.76
+    },
+    {
+     "w": "progress.",
+     "s": 1.76,
+     "e": 2.5
+    },
+    {
+     "w": "Saying",
+     "s": 2.84,
+     "e": 3.14
+    },
+    {
+     "w": "the",
+     "s": 3.14,
+     "e": 3.27
+    },
+    {
+     "w": "economy",
+     "s": 3.27,
+     "e": 3.96
+    },
+    {
+     "w": "sounds",
+     "s": 4.08,
+     "e": 4.39
+    },
+    {
+     "w": "like",
+     "s": 4.39,
+     "e": 4.54
+    },
+    {
+     "w": "trouble.",
+     "s": 4.54,
+     "e": 5.08
+    },
+    {
+     "w": "And",
+     "s": 5.45,
+     "e": 5.59
+    },
+    {
+     "w": "which",
+     "s": 5.59,
+     "e": 5.84
+    },
+    {
+     "w": "story",
+     "s": 5.84,
+     "e": 6.17
+    },
+    {
+     "w": "companies",
+     "s": 6.17,
+     "e": 6.59
+    },
+    {
+     "w": "tell",
+     "s": 6.59,
+     "e": 6.98
+    },
+    {
+     "w": "can",
+     "s": 6.98,
+     "e": 7.17
+    },
+    {
+     "w": "change",
+     "s": 7.17,
+     "e": 7.69
+    },
+    {
+     "w": "with",
+     "s": 7.69,
+     "e": 7.85
+    },
+    {
+     "w": "the",
+     "s": 7.85,
+     "e": 7.91
+    },
+    {
+     "w": "headlines.",
+     "s": 7.91,
+     "e": 8.64
+    }
+   ]
+  },
+  {
+   "text": "So when you read a layoff headline, check the reason \u2014 and who's really saying it.",
+   "dir": "confident payoff; clear pause between sentences",
+   "start": 33.023,
+   "vo": 4.39,
+   "dur": 5.74,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.18,
+     "e": 0.46
+    },
+    {
+     "w": "when",
+     "s": 0.46,
+     "e": 0.83
+    },
+    {
+     "w": "you",
+     "s": 0.83,
+     "e": 0.91
+    },
+    {
+     "w": "read",
+     "s": 0.91,
+     "e": 1.07
+    },
+    {
+     "w": "a",
+     "s": 1.07,
+     "e": 1.1
+    },
+    {
+     "w": "layoff",
+     "s": 1.1,
+     "e": 1.39
+    },
+    {
+     "w": "headline,",
+     "s": 1.39,
+     "e": 1.92
+    },
+    {
+     "w": "check",
+     "s": 1.92,
+     "e": 2.22
+    },
+    {
+     "w": "the",
+     "s": 2.22,
+     "e": 2.34
+    },
+    {
+     "w": "reason",
+     "s": 2.34,
+     "e": 3.0
+    },
+    {
+     "w": "\u2014",
+     "s": 3.0,
+     "e": 3.22
+    },
+    {
+     "w": "and",
+     "s": 3.22,
+     "e": 3.39
+    },
+    {
+     "w": "who's",
+     "s": 3.39,
+     "e": 3.63
+    },
+    {
+     "w": "really",
+     "s": 3.63,
+     "e": 3.97
+    },
+    {
+     "w": "saying",
+     "s": 3.97,
+     "e": 4.29
+    },
+    {
+     "w": "it.",
+     "s": 4.29,
+     "e": 4.36
+    }
+   ]
+  }
+ ]
+}

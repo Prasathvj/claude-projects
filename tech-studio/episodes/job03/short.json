@@ -1,0 +1,42 @@
+{
+ "id": "job03-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "beats": [
+  {
+   "text": "Companies blamed AI for over a hundred and twenty thousand US job cuts this year. Then they suddenly stopped.",
+   "dir": "gripping mystery hook; clear pause between sentences"
+  },
+  {
+   "text": "That number comes from Challenger, Gray and Christmas, which tracks layoff announcements across America.",
+   "dir": "factual; clear pause between sentences"
+  },
+  {
+   "text": "From March to July, AI was the number one reason companies gave.",
+   "dir": "building; clear pause between sentences"
+  },
+  {
+   "text": "By August, it had dropped to fourth.",
+   "dir": "twist; clear pause between sentences"
+  },
+  {
+   "text": "Now the top reason is market and economic conditions.",
+   "dir": "factual; clear pause between sentences"
+  },
+  {
+   "text": "So did AI stop replacing jobs? Not exactly.",
+   "dir": "curious, knowing; clear pause between sentences"
+  },
+  {
+   "text": "Saying AI sounds like progress. Saying the economy sounds like trouble. And which story companies tell can change with the headlines.",
+   "dir": "thoughtful, slightly wry; clear pause between sentences"
+  },
+  {
+   "text": "So when you read a layoff headline, check the reason \u2014 and who's really saying it.",
+   "dir": "confident payoff; clear pause between sentences"
+  }
+ ]
+}

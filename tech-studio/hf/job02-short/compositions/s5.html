@@ -1,0 +1,51 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 200px 'SD Display'; color:var(--accent); letter-spacing:-5px; line-height:1; text-shadow:0 0 50px rgba(248,119,54,.4); }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }.gg { position:absolute; left:190px; top:450px; } .wk { top:900px; font:900 120px 'SD Display'; color:var(--red); opacity:0; }
+  </style>
+  <div id="root" data-composition-id="s5" data-width="1080" data-height="1920">
+    <div class="all" id="s5-all">
+<div class="center kk" style="top:360px">IT SERVICES DEMAND</div>
+<svg class="gg" width="700" height="400" viewBox="0 0 200 110"><path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="#EFE4DA" stroke-width="18"/>
+<path d="M20 100 A80 80 0 0 1 60 31" fill="none" stroke="#FF3B30" stroke-width="18"/><path d="M60 31 A80 80 0 0 1 140 31" fill="none" stroke="#F87736" stroke-width="18"/><path d="M140 31 A80 80 0 0 1 180 100" fill="none" stroke="#3DDC97" stroke-width="18"/>
+<g id="s5-nd" style="transform-origin:100px 100px"><path d="M100 100 L100 30" stroke="#2A2018" stroke-width="7" stroke-linecap="round"/><circle cx="100" cy="100" r="9" fill="#2A2018"/></g></svg>
+<div class="center wk" id="s5-wk">WEAK</div><div class="src" style="top:1100px">PER COMPANY COMMENTARY, AS REPORTED (OCT 2026)</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s5-nd", { rotation:30 }, { rotation:-62, duration:.8, ease:"back.out(1.5)" }, 1.15);
+    tl.fromTo("#s5-wk", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 1.75);
+    tl.to("#s5-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 2.037);
+    window.__timelines["s5"] = tl;
+  </script>
+</template>

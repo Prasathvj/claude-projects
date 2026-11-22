@@ -33,6 +33,9 @@ def name():
     return os.environ.get('THEME', 'dark')
 
 GRIDS = {
+    'diagonal': ('background-image:url("data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%2756%27 height=%2756%27><path d=%27M-14 14L14 -14M0 56L56 0M42 70L70 42%27 stroke=%27%23E86E3C%27 stroke-opacity=%27.30%27 stroke-width=%272.5%27 fill=%27none%27/></svg>"); background-size:56px 56px;'),
+    'hex': ('background-image:url("data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%2784%27 height=%2748%27><path d=%27M14 0L0 24L14 48M14 0H42L56 24L42 48H14M56 24H84%27 stroke=%27%23E86E3C%27 stroke-opacity=%27.30%27 stroke-width=%272.5%27 fill=%27none%27/></svg>"); background-size:84px 48px;'),
+    'waves': ('background-image:url("data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2740%27><path d=%27M0 20 C20 4 40 4 60 20 S100 36 120 20%27 stroke=%27%23E86E3C%27 stroke-opacity=%27.30%27 stroke-width=%272.5%27 fill=%27none%27/></svg>"); background-size:120px 40px;'),
     'plus': ('background-image:url("data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%2764%27 height=%2764%27><path d=%27M32 23v18M23 32h18%27 stroke=%27%23E86E3C%27 stroke-opacity=%27.45%27 stroke-width=%273%27 stroke-linecap=%27round%27/></svg>"); '
              'background-size:64px 64px;'),  # background pattern variants (env GRID); 'lines' keeps the house grid
     'dots': 'background-image:radial-gradient(rgba(232,110,60,.38) 2.5px, transparent 3px); background-size:48px 48px;',

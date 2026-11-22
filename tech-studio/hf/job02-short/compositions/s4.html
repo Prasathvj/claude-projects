@@ -1,0 +1,62 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 200px 'SD Display'; color:var(--accent); letter-spacing:-5px; line-height:1; text-shadow:0 0 50px rgba(248,119,54,.4); }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }.bk { position:absolute; left:280px; top:440px; opacity:0; } .din, .dout { position:absolute; width:34px; height:46px; border-radius:50% 50% 50% 50% / 60% 60% 40% 40%; background:#1C7ED6; opacity:0; }
+.din { top:330px; } .dout { left:575px; top:940px; } .lbl { position:absolute; font:900 44px 'SD Display'; color:var(--green); } .lbl.r { color:var(--red); }
+  </style>
+  <div id="root" data-composition-id="s4" data-width="1080" data-height="1920">
+    <div class="all" id="s4-all">
+<div class="bk" id="s4-b"><svg width="520" height="560" viewBox="0 0 260 280"><path d="M40 60 L220 60 L196 250 L64 250 Z" fill="#F3E6DC" stroke="#F87736" stroke-width="8" stroke-linejoin="round"/>
+<rect id="s4-w" x="52" y="150" width="156" height="96" fill="#1C7ED6" opacity=".75"/><circle cx="150" cy="250" r="10" fill="#F4EDE3"/></svg></div><i class="din" id="s4-i0" style="left:470px"></i><i class="din" id="s4-i1" style="left:510px"></i><i class="din" id="s4-i2" style="left:550px"></i><i class="din" id="s4-i3" style="left:470px"></i><i class="din" id="s4-i4" style="left:510px"></i><i class="din" id="s4-i5" style="left:550px"></i><i class="dout" id="s4-o0"></i><i class="dout" id="s4-o1"></i><i class="dout" id="s4-o2"></i><i class="dout" id="s4-o3"></i><i class="dout" id="s4-o4"></i><i class="dout" id="s4-o5"></i>
+<div class="lbl" style="left:120px; top:360px">FRESHERS IN ↓</div><div class="lbl r" style="left:620px; top:1080px">PEOPLE LEAVING ↓</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s4-b", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.05);
+    tl.fromTo("#s4-i0", { opacity:1, y:0 }, { opacity:0, y:300, duration:.6, ease:"power2.in", immediateRender:false }, 1.71);
+    tl.fromTo("#s4-o0", { opacity:1, y:0 }, { opacity:0, y:220, duration:.6, ease:"power2.in", immediateRender:false }, 3.7);
+    tl.fromTo("#s4-i1", { opacity:1, y:0 }, { opacity:0, y:300, duration:.6, ease:"power2.in", immediateRender:false }, 1.93);
+    tl.fromTo("#s4-o1", { opacity:1, y:0 }, { opacity:0, y:220, duration:.6, ease:"power2.in", immediateRender:false }, 3.92);
+    tl.fromTo("#s4-i2", { opacity:1, y:0 }, { opacity:0, y:300, duration:.6, ease:"power2.in", immediateRender:false }, 2.15);
+    tl.fromTo("#s4-o2", { opacity:1, y:0 }, { opacity:0, y:220, duration:.6, ease:"power2.in", immediateRender:false }, 4.14);
+    tl.fromTo("#s4-i3", { opacity:1, y:0 }, { opacity:0, y:300, duration:.6, ease:"power2.in", immediateRender:false }, 2.37);
+    tl.fromTo("#s4-o3", { opacity:1, y:0 }, { opacity:0, y:220, duration:.6, ease:"power2.in", immediateRender:false }, 4.36);
+    tl.fromTo("#s4-i4", { opacity:1, y:0 }, { opacity:0, y:300, duration:.6, ease:"power2.in", immediateRender:false }, 2.59);
+    tl.fromTo("#s4-o4", { opacity:1, y:0 }, { opacity:0, y:220, duration:.6, ease:"power2.in", immediateRender:false }, 4.58);
+    tl.fromTo("#s4-i5", { opacity:1, y:0 }, { opacity:0, y:300, duration:.6, ease:"power2.in", immediateRender:false }, 2.81);
+    tl.fromTo("#s4-o5", { opacity:1, y:0 }, { opacity:0, y:220, duration:.6, ease:"power2.in", immediateRender:false }, 4.8);
+    tl.fromTo("#s4-w", { y:0 }, { y:-6, duration:.3, yoyo:true, repeat:5, ease:"sine.inOut", immediateRender:false }, 1.71);
+    tl.to("#s4-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 4.607);
+    window.__timelines["s4"] = tl;
+  </script>
+</template>

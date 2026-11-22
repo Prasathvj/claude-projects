@@ -1,0 +1,53 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 200px 'SD Display'; color:var(--accent); letter-spacing:-5px; line-height:1; text-shadow:0 0 50px rgba(248,119,54,.4); }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }.cols { position:absolute; left:90px; right:90px; top:460px; height:480px; display:flex; gap:24px; align-items:flex-end; }
+.mc { flex:1; display:flex; flex-direction:column; align-items:center; gap:10px; opacity:0; } .cr { font:900 44px 'SD Display'; color:var(--accent); } .bar { width:100%; height:300px; border-radius:16px; background:var(--accent); }
+.mc span { font:800 34px 'SD Display'; color:var(--ink); } .ai { top:1000px; font:900 54px 'SD Display'; color:var(--accent); opacity:0; }
+  </style>
+  <div id="root" data-composition-id="s2" data-width="1080" data-height="1920">
+    <div class="all" id="s2-all">
+<div class="center kk" style="top:360px">TOP REASON GIVEN FOR CUTS</div><div class="cols"><div class="mc" id="s2-m0"><div class="cr">#1</div><div class="bar"></div><span>MAR</span></div><div class="mc" id="s2-m1"><div class="cr">#1</div><div class="bar"></div><span>APR</span></div><div class="mc" id="s2-m2"><div class="cr">#1</div><div class="bar"></div><span>MAY</span></div><div class="mc" id="s2-m3"><div class="cr">#1</div><div class="bar"></div><span>JUN</span></div><div class="mc" id="s2-m4"><div class="cr">#1</div><div class="bar"></div><span>JUL</span></div></div><div class="center ai" id="s2-ai">AI · #1 FIVE MONTHS RUNNING</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-m0", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.32);
+    tl.fromTo("#s2-m1", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.47);
+    tl.fromTo("#s2-m2", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.62);
+    tl.fromTo("#s2-m3", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.77);
+    tl.fromTo("#s2-m4", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.92);
+    tl.fromTo("#s2-ai", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 1.95);
+    tl.to("#s2-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 3.24);
+    window.__timelines["s2"] = tl;
+  </script>
+</template>

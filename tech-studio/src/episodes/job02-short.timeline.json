@@ -1,0 +1,658 @@
+{
+ "id": "job02-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 40.395,
+ "vo": "job02/job02-short-vo.wav",
+ "music": "job02/job02-short-music.wav",
+ "beats": [
+  {
+   "text": "TCS and Infosys plan to bring in around forty-five thousand freshers. So why did India's top five IT firms add just sixteen thousand people in six months?",
+   "dir": "gripping mystery hook",
+   "start": 0.25,
+   "vo": 9.973,
+   "dur": 10.123,
+   "words": [
+    {
+     "w": "TCS",
+     "s": 0.0,
+     "e": 0.49
+    },
+    {
+     "w": "and",
+     "s": 0.49,
+     "e": 0.74
+    },
+    {
+     "w": "Infosys",
+     "s": 0.74,
+     "e": 1.62
+    },
+    {
+     "w": "plan",
+     "s": 1.62,
+     "e": 1.86
+    },
+    {
+     "w": "to",
+     "s": 1.86,
+     "e": 1.92
+    },
+    {
+     "w": "bring",
+     "s": 1.92,
+     "e": 2.21
+    },
+    {
+     "w": "in",
+     "s": 2.21,
+     "e": 2.33
+    },
+    {
+     "w": "around",
+     "s": 2.33,
+     "e": 2.7
+    },
+    {
+     "w": "forty-five",
+     "s": 2.7,
+     "e": 3.58
+    },
+    {
+     "w": "thousand",
+     "s": 3.58,
+     "e": 4.58
+    },
+    {
+     "w": "freshers.",
+     "s": 4.58,
+     "e": 4.99
+    },
+    {
+     "w": "So",
+     "s": 4.99,
+     "e": 5.13
+    },
+    {
+     "w": "why",
+     "s": 5.13,
+     "e": 5.39
+    },
+    {
+     "w": "did",
+     "s": 5.39,
+     "e": 5.56
+    },
+    {
+     "w": "India's",
+     "s": 5.56,
+     "e": 5.94
+    },
+    {
+     "w": "top",
+     "s": 5.94,
+     "e": 6.33
+    },
+    {
+     "w": "five",
+     "s": 6.33,
+     "e": 6.7
+    },
+    {
+     "w": "IT",
+     "s": 6.7,
+     "e": 7.02
+    },
+    {
+     "w": "firms",
+     "s": 7.02,
+     "e": 7.37
+    },
+    {
+     "w": "add",
+     "s": 7.37,
+     "e": 7.59
+    },
+    {
+     "w": "just",
+     "s": 7.59,
+     "e": 7.87
+    },
+    {
+     "w": "sixteen",
+     "s": 7.87,
+     "e": 8.4
+    },
+    {
+     "w": "thousand",
+     "s": 8.4,
+     "e": 8.94
+    },
+    {
+     "w": "people",
+     "s": 8.94,
+     "e": 9.28
+    },
+    {
+     "w": "in",
+     "s": 9.28,
+     "e": 9.35
+    },
+    {
+     "w": "six",
+     "s": 9.35,
+     "e": 9.61
+    },
+    {
+     "w": "months?",
+     "s": 9.61,
+     "e": 9.95
+    }
+   ]
+  },
+  {
+   "text": "TCS made about twenty-five thousand fresher offers for this year.",
+   "dir": "factual",
+   "start": 10.373,
+   "vo": 3.196,
+   "dur": 3.346,
+   "words": [
+    {
+     "w": "TCS",
+     "s": 0.0,
+     "e": 0.52
+    },
+    {
+     "w": "made",
+     "s": 0.52,
+     "e": 0.69
+    },
+    {
+     "w": "about",
+     "s": 0.69,
+     "e": 0.89
+    },
+    {
+     "w": "twenty-five",
+     "s": 0.89,
+     "e": 1.66
+    },
+    {
+     "w": "thousand",
+     "s": 1.66,
+     "e": 2.06
+    },
+    {
+     "w": "fresher",
+     "s": 2.06,
+     "e": 2.44
+    },
+    {
+     "w": "offers",
+     "s": 2.44,
+     "e": 2.72
+    },
+    {
+     "w": "for",
+     "s": 2.72,
+     "e": 2.8
+    },
+    {
+     "w": "this",
+     "s": 2.8,
+     "e": 2.99
+    },
+    {
+     "w": "year.",
+     "s": 2.99,
+     "e": 3.15
+    }
+   ]
+  },
+  {
+   "text": "Infosys is targeting around twenty thousand, and hired over eight thousand last quarter alone.",
+   "dir": "factual, brisk",
+   "start": 13.719,
+   "vo": 4.725,
+   "dur": 4.875,
+   "words": [
+    {
+     "w": "Infosys",
+     "s": 0.0,
+     "e": 0.36
+    },
+    {
+     "w": "is",
+     "s": 0.36,
+     "e": 0.61
+    },
+    {
+     "w": "targeting",
+     "s": 0.61,
+     "e": 1.12
+    },
+    {
+     "w": "around",
+     "s": 1.12,
+     "e": 1.35
+    },
+    {
+     "w": "twenty",
+     "s": 1.35,
+     "e": 1.79
+    },
+    {
+     "w": "thousand,",
+     "s": 1.79,
+     "e": 2.19
+    },
+    {
+     "w": "and",
+     "s": 2.34,
+     "e": 2.44
+    },
+    {
+     "w": "hired",
+     "s": 2.44,
+     "e": 2.69
+    },
+    {
+     "w": "over",
+     "s": 2.69,
+     "e": 2.98
+    },
+    {
+     "w": "eight",
+     "s": 2.98,
+     "e": 3.1
+    },
+    {
+     "w": "thousand",
+     "s": 3.1,
+     "e": 3.59
+    },
+    {
+     "w": "last",
+     "s": 3.59,
+     "e": 3.93
+    },
+    {
+     "w": "quarter",
+     "s": 3.93,
+     "e": 4.23
+    },
+    {
+     "w": "alone.",
+     "s": 4.23,
+     "e": 4.7
+    }
+   ]
+  },
+  {
+   "text": "But across the top five firms, total headcount grew by just sixteen thousand fifty-five from April to September.",
+   "dir": "reveal, slower on the number",
+   "start": 18.594,
+   "vo": 6.059,
+   "dur": 6.209,
+   "words": [
+    {
+     "w": "But",
+     "s": -0.01,
+     "e": 0.13
+    },
+    {
+     "w": "across",
+     "s": 0.13,
+     "e": 0.48
+    },
+    {
+     "w": "the",
+     "s": 0.48,
+     "e": 0.56
+    },
+    {
+     "w": "top",
+     "s": 0.56,
+     "e": 0.81
+    },
+    {
+     "w": "five",
+     "s": 0.81,
+     "e": 1.08
+    },
+    {
+     "w": "firms,",
+     "s": 1.08,
+     "e": 1.42
+    },
+    {
+     "w": "total",
+     "s": 1.42,
+     "e": 1.86
+    },
+    {
+     "w": "headcount",
+     "s": 1.86,
+     "e": 2.27
+    },
+    {
+     "w": "grew",
+     "s": 2.27,
+     "e": 2.48
+    },
+    {
+     "w": "by",
+     "s": 2.48,
+     "e": 2.62
+    },
+    {
+     "w": "just",
+     "s": 2.62,
+     "e": 2.81
+    },
+    {
+     "w": "sixteen",
+     "s": 2.81,
+     "e": 3.49
+    },
+    {
+     "w": "thousand",
+     "s": 3.49,
+     "e": 4.0
+    },
+    {
+     "w": "fifty-five",
+     "s": 4.0,
+     "e": 4.54
+    },
+    {
+     "w": "from",
+     "s": 4.54,
+     "e": 4.8
+    },
+    {
+     "w": "April",
+     "s": 4.8,
+     "e": 5.09
+    },
+    {
+     "w": "to",
+     "s": 5.41,
+     "e": 5.49
+    },
+    {
+     "w": "September.",
+     "s": 5.49,
+     "e": 5.99
+    }
+   ]
+  },
+  {
+   "text": "Think of a bucket with a hole: freshers pour in, but people leave almost as fast.",
+   "dir": "vivid comparison",
+   "start": 24.803,
+   "vo": 4.617,
+   "dur": 4.767,
+   "words": [
+    {
+     "w": "Think",
+     "s": 0.06,
+     "e": 0.22
+    },
+    {
+     "w": "of",
+     "s": 0.22,
+     "e": 0.31
+    },
+    {
+     "w": "a",
+     "s": 0.31,
+     "e": 0.36
+    },
+    {
+     "w": "bucket",
+     "s": 0.36,
+     "e": 0.78
+    },
+    {
+     "w": "with",
+     "s": 0.78,
+     "e": 0.92
+    },
+    {
+     "w": "a",
+     "s": 0.92,
+     "e": 0.95
+    },
+    {
+     "w": "hole:",
+     "s": 0.95,
+     "e": 1.42
+    },
+    {
+     "w": "freshers",
+     "s": 1.42,
+     "e": 1.59
+    },
+    {
+     "w": "pour",
+     "s": 1.59,
+     "e": 1.87
+    },
+    {
+     "w": "in,",
+     "s": 2.38,
+     "e": 2.61
+    },
+    {
+     "w": "but",
+     "s": 2.61,
+     "e": 2.77
+    },
+    {
+     "w": "people",
+     "s": 2.77,
+     "e": 3.32
+    },
+    {
+     "w": "leave",
+     "s": 3.58,
+     "e": 3.69
+    },
+    {
+     "w": "almost",
+     "s": 3.69,
+     "e": 3.96
+    },
+    {
+     "w": "as",
+     "s": 3.96,
+     "e": 4.08
+    },
+    {
+     "w": "fast.",
+     "s": 4.08,
+     "e": 4.6
+    }
+   ]
+  },
+  {
+   "text": "And companies say demand is still weak.",
+   "dir": "serious",
+   "start": 29.57,
+   "vo": 2.047,
+   "dur": 2.197,
+   "words": [
+    {
+     "w": "And",
+     "s": -0.01,
+     "e": 0.08
+    },
+    {
+     "w": "companies",
+     "s": 0.08,
+     "e": 0.47
+    },
+    {
+     "w": "say",
+     "s": 0.47,
+     "e": 0.68
+    },
+    {
+     "w": "demand",
+     "s": 0.68,
+     "e": 1.17
+    },
+    {
+     "w": "is",
+     "s": 1.17,
+     "e": 1.29
+    },
+    {
+     "w": "still",
+     "s": 1.29,
+     "e": 1.63
+    },
+    {
+     "w": "weak.",
+     "s": 1.63,
+     "e": 2.02
+    }
+   ]
+  },
+  {
+   "text": "So the door is open \u2014 but it's a revolving door.",
+   "dir": "memorable line",
+   "start": 31.767,
+   "vo": 2.884,
+   "dur": 3.034,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.0,
+     "e": 0.14
+    },
+    {
+     "w": "the",
+     "s": 0.14,
+     "e": 0.22
+    },
+    {
+     "w": "door",
+     "s": 0.22,
+     "e": 0.52
+    },
+    {
+     "w": "is",
+     "s": 0.52,
+     "e": 0.65
+    },
+    {
+     "w": "open",
+     "s": 0.65,
+     "e": 1.02
+    },
+    {
+     "w": "\u2014",
+     "s": 1.02,
+     "e": 1.39
+    },
+    {
+     "w": "but",
+     "s": 1.39,
+     "e": 1.64
+    },
+    {
+     "w": "it's",
+     "s": 1.64,
+     "e": 1.99
+    },
+    {
+     "w": "a",
+     "s": 1.99,
+     "e": 2.03
+    },
+    {
+     "w": "revolving",
+     "s": 2.03,
+     "e": 2.63
+    },
+    {
+     "w": "door.",
+     "s": 2.63,
+     "e": 2.74
+    }
+   ]
+  },
+  {
+   "text": "Getting in is step one. AI and cloud skills decide who stays.",
+   "dir": "confident, helpful payoff",
+   "start": 34.801,
+   "vo": 4.244,
+   "dur": 5.594,
+   "words": [
+    {
+     "w": "Getting",
+     "s": 0.02,
+     "e": 0.64
+    },
+    {
+     "w": "in",
+     "s": 0.64,
+     "e": 0.72
+    },
+    {
+     "w": "is",
+     "s": 0.72,
+     "e": 0.81
+    },
+    {
+     "w": "step",
+     "s": 0.81,
+     "e": 1.16
+    },
+    {
+     "w": "one.",
+     "s": 1.16,
+     "e": 1.45
+    },
+    {
+     "w": "AI",
+     "s": 1.97,
+     "e": 2.33
+    },
+    {
+     "w": "and",
+     "s": 2.33,
+     "e": 2.46
+    },
+    {
+     "w": "cloud",
+     "s": 2.46,
+     "e": 2.79
+    },
+    {
+     "w": "skills",
+     "s": 2.79,
+     "e": 3.18
+    },
+    {
+     "w": "decide",
+     "s": 3.18,
+     "e": 3.57
+    },
+    {
+     "w": "who",
+     "s": 3.57,
+     "e": 3.7
+    },
+    {
+     "w": "stays.",
+     "s": 3.7,
+     "e": 4.21
+    }
+   ]
+  }
+ ]
+}

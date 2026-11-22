@@ -1,0 +1,42 @@
+{
+ "id": "job02-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "beats": [
+  {
+   "text": "TCS and Infosys plan to bring in around forty-five thousand freshers. So why did India's top five IT firms add just sixteen thousand people in six months?",
+   "dir": "gripping mystery hook"
+  },
+  {
+   "text": "TCS made about twenty-five thousand fresher offers for this year.",
+   "dir": "factual"
+  },
+  {
+   "text": "Infosys is targeting around twenty thousand, and hired over eight thousand last quarter alone.",
+   "dir": "factual, brisk"
+  },
+  {
+   "text": "But across the top five firms, total headcount grew by just sixteen thousand fifty-five from April to September.",
+   "dir": "reveal, slower on the number"
+  },
+  {
+   "text": "Think of a bucket with a hole: freshers pour in, but people leave almost as fast.",
+   "dir": "vivid comparison"
+  },
+  {
+   "text": "And companies say demand is still weak.",
+   "dir": "serious"
+  },
+  {
+   "text": "So the door is open \u2014 but it's a revolving door.",
+   "dir": "memorable line"
+  },
+  {
+   "text": "Getting in is step one. AI and cloud skills decide who stays.",
+   "dir": "confident, helpful payoff"
+  }
+ ]
+}

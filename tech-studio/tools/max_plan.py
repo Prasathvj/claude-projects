@@ -3,7 +3,34 @@ Usage: python3 tools/max_plan.py ep01-short  (segments are defined in SEGS below
 import json, subprocess, sys
 import numpy as np
 
-SEGS = {'tip01-short': [
+SEGS = {'job03-short': [
+    (6.84, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
+    (11.32, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (14.72, 'duo', {"brows": "focused", "arms": "chin"}),
+    (16.94, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock"}),
+    (20.44, 'duo', {"brows": "worried", "eyes": "worried"}),
+    (24.09, 'duo', {"brows": "skeptic", "eyes": "squint", "mouth": "smirk", "arms": "chin", "extra": ["question"]}),
+    (32.9, 'duo', {"brows": "skeptic", "mouth": "smirk", "arms": "shrug", "tilt": -5}),
+    (99, 'duo', {"brows": "up", "eyes": "happy", "mouth": "smile", "arms": "point", "look": [-1, -0.3]}),
+], 'job02-short': [
+    (10.25, 'duo', {"brows": "skeptic", "eyes": "squint", "arms": "chin", "extra": ["question"]}),
+    (13.6, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (18.47, 'duo', {"brows": "up", "eyes": "happy", "arms": "thumbs"}),
+    (24.68, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "extra": ["bang"]}),
+    (29.45, 'duo', {"brows": "focused", "arms": "point", "look": [-1, -0.6]}),
+    (31.65, 'duo', {"brows": "worried", "eyes": "worried", "extra": ["sweat"]}),
+    (34.68, 'duo', {"brows": "skeptic", "mouth": "smirk", "arms": "shrug"}),
+    (99, 'duo', {"brows": "up", "eyes": "happy", "mouth": "smile", "arms": "thumbs"}),
+], 'job01-short': [
+    (6.82, 'duo', {"brows": "skeptic", "eyes": "squint", "arms": "chin", "extra": ["question"]}),
+    (10.03, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),
+    (11.72, 'duo', {"brows": "focused", "arms": "chin", "look": [-1, -0.6]}),
+    (13.78, 'duo', {"brows": "high", "eyes": "wide", "mouth": "shock", "arms": "hands-up"}),
+    (16.22, 'duo', {"brows": "up", "eyes": "happy", "mouth": "grin", "arms": "thumbs"}),
+    (27.99, 'duo', {"brows": "worried", "eyes": "worried", "extra": ["sweat"]}),
+    (29.65, 'duo', {"brows": "up", "mouth": "smirk", "arms": "shrug", "tilt": -5}),
+    (99, 'duo', {"brows": "up", "eyes": "happy", "mouth": "smile", "arms": "point", "look": [-1, -0.3]}),
+], 'tip01-short': [
     (5.41, 'duo', {"brows": "worried", "eyes": "wide", "mouth": "shock", "arms": "hands-up", "extra": ["bang"]}),
     (9.19, 'duo', {"brows": "skeptic", "eyes": "squint", "mouth": "smirk", "arms": "chin", "look": [-1, -0.6]}),
     (14.33, 'duo', {"brows": "up", "arms": "point", "look": [-1, -0.6]}),

@@ -1,0 +1,42 @@
+{
+ "id": "job01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "beats": [
+  {
+   "text": "AI is writing more code than ever. So why are software job postings going up?",
+   "dir": "gripping, puzzled hook; clear pause between sentences"
+  },
+  {
+   "text": "Indeed's job data shows US software postings rising again since mid-2025.",
+   "dir": "factual, quick; clear pause between sentences"
+  },
+  {
+   "text": "But look at who they're hiring.",
+   "dir": "conspiratorial lean-in; clear pause between sentences"
+  },
+  {
+   "text": "Seventy-one percent of the growth came from senior roles.",
+   "dir": "punchy reveal; clear pause between sentences"
+  },
+  {
+   "text": "And over a third came from jobs with AI in the title.",
+   "dir": "punchy reveal; clear pause between sentences"
+  },
+  {
+   "text": "Meanwhile, total postings are still about a quarter below pre-pandemic levels.",
+   "dir": "serious; clear pause between sentences"
+  },
+  {
+   "text": "So the market isn't dead. It's picky.",
+   "dir": "confident, memorable; clear pause between sentences"
+  },
+  {
+   "text": "The fastest way in? Show you can build with AI, not just next to it.",
+   "dir": "helpful, energetic payoff; clear pause between sentences"
+  }
+ ]
+}
