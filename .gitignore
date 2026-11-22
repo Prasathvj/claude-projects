@@ -10,3 +10,5 @@ tech-studio/hf/*-short/out/
 tech-studio/hf/*-short/render.log
 tech-studio/hf/*-short/maxframes/
 tech-studio/hf/*-short/.hyperframes/
+tech-studio/hf/*/maxframes/
+tech-studio/hf/*/render.log
