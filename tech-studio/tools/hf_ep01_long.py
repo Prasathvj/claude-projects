@@ -2,19 +2,20 @@
 beat's "v" spec in episodes/ep01/long.json. Max (host) is composited on the right third afterwards; Bit acts
 inside the scenes. Uses the real narration timeline when it matches the script, else a provisional one.
 Usage: python3 tools/hf_ep01_long.py"""
-import html, json, re, subprocess, sys, wave
+import html, json, os, re, subprocess, sys, wave
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'tools'))
 import theme
-P = ROOT / 'hf/ep01-long'
-EP = json.loads((ROOT / 'episodes/ep01/long.json').read_text())
+EPID = os.environ.get('EPID', 'ep01')   # reused by later long videos (tools/hf_ep02_long.py)
+P = ROOT / f'hf/{EPID}-long'
+EP = json.loads((ROOT / f'episodes/{EPID}/long.json').read_text())
 W, H = 1920, 1080
 TAIL = 2.0
 
 def timeline():
-    real = ROOT / 'src/episodes/ep01-long.timeline.json'
+    real = ROOT / f'src/episodes/{EPID}-long.timeline.json'
     if real.exists():
         t = json.loads(real.read_text())
         if [b['text'] for b in t['beats']] == [b['text'] for b in EP['beats']]:
@@ -30,7 +31,7 @@ def timeline():
 TL, PROVISIONAL = timeline()
 BE = TL['beats']
 for b, e in zip(BE, EP['beats']):
-    b['v'] = e['v']; b['chapter'] = e.get('chapter')
+    b['v'] = e.get('v'); b['chapter'] = e.get('chapter')
 DUR = round(TL['duration'] + TAIL, 3)
 WORDS = [(w['w'], round(b['start'] + w['s'], 3), round(b['start'] + w['e'], 3)) for b in BE for w in b['words']]
 CUT = [0.0] + [round(b['start'] - 0.12, 3) for b in BE[1:]] + [DUR]
@@ -446,7 +447,7 @@ def t_memory(i, sid, v):
 
 def t_quote(i, sid, v):
     body = f"""<div class="center qm" style="top:80px">“</div><div class="center qt" id="{sid}-q" style="top:250px">{E(v['text'])}</div>
-<div class="center qw" id="{sid}-w" style="top:470px">— {E(v['who'])} · {E(v['when'])}</div>"""
+<div class="center qw" id="{sid}-w" style="top:470px">— {E(v['who'])}{(' · ' + E(v['when'])) if v.get('when') else ''}</div>"""
     css = """.qm { font:900 220px 'SD Serif'; color:var(--accent); line-height:1; } .qt { font:600 italic 92px 'SD Serif'; color:var(--ink); padding:0 80px; line-height:1.1; }
 .qw { font:600 32px 'SD Text'; color:var(--dim); letter-spacing:1px; }"""
     sc = [f'    tl.fromTo("#{sid}-q", {{ opacity:0, y:40, filter:"blur(12px)" }}, {{ opacity:1, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }}, {wfrac(i, 0.1)});', pop(f'#{sid}-w', wfrac(i, 0.3))]
