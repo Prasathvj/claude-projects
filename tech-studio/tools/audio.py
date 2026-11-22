@@ -220,11 +220,13 @@ def narrate(chunk, voice, profile):
     """One request for the chunk; if the split fails on every model, fall back to one request per line."""
     for m in MODELS:
         try:
-            return gtts.say_batch(chunk, voice=voice, model=m, profile=profile)
+            return gtts.say_batch(chunk, voice=voice, model=m, profile=profile, keep_partial=len(MODELS) == 1)
         except (ValueError, gtts.DailyQuota, RuntimeError) as e:
             print(f"    batch on {m}: {e}")
     out = []
     for text, d in chunk:
+        if len(MODELS) == 1:   # locked model: don't spend the day's quota line by line; stop and resume later
+            raise gtts.DailyQuota("batch failed on the locked model; resume later")
         out.append(gtts.say(text, d, voice=voice, model=MODELS, profile=profile))
     return out
 

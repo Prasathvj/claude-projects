@@ -193,13 +193,13 @@ def _split(pcm, n, lens):
     return takes
 
 
-def say_batch(lines, voice="Fenrir", model=MODEL, profile=CALM_PROFILE):
+def say_batch(lines, voice="Fenrir", model=MODEL, profile=CALM_PROFILE, keep_partial=False):
     """Read several lines in ONE request, then split. lines: [(text, direction)]. Returns [(wav, seconds)]."""
     if isinstance(model, (list, tuple)):
         errors = []
         for m in model:
             try:
-                return say_batch(lines, voice, m, profile)
+                return say_batch(lines, voice, m, profile, keep_partial)
             except DailyQuota as e:
                 errors.append(f"{m}: {e}")
         raise DailyQuota("; ".join(errors))
@@ -227,6 +227,9 @@ def say_batch(lines, voice="Fenrir", model=MODEL, profile=CALM_PROFILE):
         if not bad:
             return [(p, wav_duration(p)) for p in paths]
         last = f"takes {bad} came out too fast or too slow"
+        if keep_partial and len(bad) <= 2:       # keep the good takes; the caller re-records only the bad lines
+            print(f"    kept batch; re-record takes {bad} separately")
+            return [(p, wav_duration(p)) for p in paths]
         for p in paths:
             p.unlink(missing_ok=True)
     raise ValueError(f"narration batch failed after 3 tries: {last}")
