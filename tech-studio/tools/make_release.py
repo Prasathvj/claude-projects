@@ -32,6 +32,7 @@ PLAN = [
  ('24_lst01', 'lst01', None, None, 'Wed 16 Dec 2026, 12:30 PM', 'Schedule'),
  ('25_ast01', 'ast01', None, None, 'Post now (trending)', 'Publish'),
  ('26_ep08_long', 'ep08', None, None, 'Post soon (trending)', 'Publish'),
+ ('27_myst01_long', 'myst01', None, None, 'Owner to choose', 'Publish'),
 ]
 for folder, ep, vid, thumb, when, status in PLAN:
     d = REL/folder; d.mkdir(parents=True, exist_ok=True)
