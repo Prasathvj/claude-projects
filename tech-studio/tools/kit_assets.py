@@ -90,9 +90,38 @@ def _paperize(name, seed=7):
     return out
 
 
-def sticker(name, project, w=520, extra='', cls='stk'):
-    """papercut photo sticker <img>, copied into the project; records the credit"""
-    src = _paperize(name)
+def _print(name, crop=None, seed=3):
+    """busy photos (rooms, scenes): a torn-edge PAPER PRINT with white border, grain and cut shadow (no cut-out)"""
+    out = CUT / (Path(name).stem + '_print.png')
+    if out.exists():
+        return out
+    CUT.mkdir(parents=True, exist_ok=True)
+    from PIL import Image, ImageFilter, ImageDraw
+    import random
+    rnd = random.Random(seed)
+    im = Image.open(IMG / name).convert('RGB')
+    if crop:
+        w, h = im.size; im = im.crop((int(crop[0] * w), int(crop[1] * h), int(crop[2] * w), int(crop[3] * h)))
+    im.thumbnail((1000, 1000))
+    b = 26; W, H = im.size[0] + 2 * b, im.size[1] + 2 * b
+    def torn(W, H, amp):
+        pts = [(x, rnd.uniform(0, amp)) for x in range(0, W + 1, 18)] + [(W - rnd.uniform(0, amp), y) for y in range(0, H + 1, 18)]
+        pts += [(x, H - rnd.uniform(0, amp)) for x in range(W, -1, -18)] + [(rnd.uniform(0, amp), y) for y in range(H, -1, -18)]
+        m = Image.new('L', (W, H), 0); ImageDraw.Draw(m).polygon(pts, fill=255); return m
+    card = Image.new('RGBA', (W, H), (255, 250, 242, 255)); card.putalpha(torn(W, H, 9))
+    card.paste(im, (b, b))
+    res = Image.new('RGBA', (W + 30, H + 34), (0, 0, 0, 0))
+    sh = Image.new('RGBA', (W, H), (74, 50, 28, 0)); sh.putalpha(card.split()[3].point(lambda v: int(v * .42)).filter(ImageFilter.GaussianBlur(9)))
+    res.alpha_composite(sh, (12, 20)); res.alpha_composite(card, (0, 0))
+    g = Image.effect_noise(res.size, 28).convert('L')
+    res.alpha_composite(Image.merge('RGBA', (g, g, g, res.split()[3].point(lambda v: int(v * .08)))))
+    res.save(out)
+    return out
+
+
+def sticker(name, project, w=520, extra='', cls='stk', mode='cut', crop=None):
+    """papercut photo <img>: mode 'cut' = cut-out sticker (clean objects), 'print' = torn paper print (busy photos)"""
+    src = _paperize(name) if mode == 'cut' else _print(name, crop)
     dst = Path(project) / 'assets/img'; dst.mkdir(parents=True, exist_ok=True)
     shutil.copy(src, dst / src.name)
     cr = json.loads((IMG / 'credits.json').read_text()) if (IMG / 'credits.json').exists() else {}

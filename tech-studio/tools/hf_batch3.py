@@ -610,7 +610,7 @@ def qnt():
     body = f"""<div class="kpi" id="s0-g" style="left:96px; top:270px">{KA.paper_icon('logos:google-icon', 70, pad=24)}</div>
 {chip}
 <div class="qcard" id="s0-c" style="left:110px; top:740px; width:400px"><div class="qrow">{KA.icon('ph:clock-countdown-fill', 70, '#F87736')}<div><div class="qlab">QUANTUM CHIP</div><div class="qbig" style="font-size:96px"><span id="s0-m">0</span> MIN</div></div></div></div>
-<div id="s0-f" style="position:absolute; left:560px; top:300px">{KA.sticker('frontier.jpg', P, 470)}</div>
+<div id="s0-f" style="position:absolute; left:560px; top:300px">{KA.sticker('frontier.jpg', P, 470, extra='transform:rotate(4deg)', mode='print')}</div>
 <div class="qtag" id="s0-ft" style="left:600px; top:690px">a top supercomputer</div>
 <div class="qcard" id="s0-y" style="left:40px; top:960px; width:1000px; text-align:center"><div class="qrow" style="justify-content:center">{KA.icon('ph:hourglass-high-fill', 64, '#E0471C')}<div class="qlab">SUPERCOMPUTER</div></div><div class="qbig" style="font-size:60px; letter-spacing:-1px" id="s0-n">10,000,000,000,000,000,000,000,000</div><div class="qlab" style="color:#E0471C">YEARS</div></div>"""
     sc = [pop('#s0-g', 0.02), qdrop(cid, 0.12), pop('#s0-c', W(0, 'five')), counter('#s0-m', W(0, 'five') + .15, ['1', '2', '3', '4', '5']),
@@ -618,7 +618,7 @@ def qnt():
           pop('#s0-ft', W(0, 'supercomputer') + .3), slam('#s0-y', W(0, 'ten')), shake('#s0-y', W(0, 'years'))]
     out_.append(mk(0, body, sc, css))
     # ---- s1: Hubble deep field (universe) vs runaway bar
-    body = f"""<div id="s1-u" style="position:absolute; left:80px; top:290px">{KA.sticker('deepfield.jpg', P, 440)}</div>
+    body = f"""<div id="s1-u" style="position:absolute; left:80px; top:290px">{KA.sticker('deepfield.jpg', P, 440, extra='transform:rotate(-5deg)', mode='print', crop=(.15,.15,.85,.85))}</div>
 <div class="qcard" id="s1-uc" style="left:560px; top:330px; width:450px"><div class="qrow">{KA.icon('ph:planet-fill', 60, '#7A5CFF')}<div class="qlab">THE UNIVERSE</div></div><div class="qbig" style="font-size:76px">13.8 <span>billion</span> yrs</div></div>
 <div class="qlab" style="position:absolute; left:80px; top:800px">universe's age</div><div class="qbar" id="s1-b1" style="left:80px; top:840px; width:60px; background:#7A5CFF"></div>
 <div class="qlab" style="position:absolute; left:80px; top:950px">supercomputer job</div><div class="qbar" id="s1-b2" style="left:80px; top:990px; width:1200px; background:#E0471C; transform-origin:left center"></div>
