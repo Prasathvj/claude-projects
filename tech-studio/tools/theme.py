@@ -58,8 +58,9 @@ def apply(html):
     if g in GRIDS:
         html = re.sub(r'background-image:linear-gradient\(rgba\(248,119,54,\.(?:09|10)\) 2px, transparent 2px\), linear-gradient\(90deg, rgba\(248,119,54,\.(?:09|10)\) 2px, transparent 2px\); background-size:\d+px \d+px;', GRIDS[g], html)
     t = name()
-    if t == 'dark':
-        return html
-    m = {**MAPS[t], '#0C0704': GROUND[t]}
-    pat = re.compile('|'.join(re.escape(k) for k in sorted(m, key=len, reverse=True)), re.I)
-    return pat.sub(lambda x: m[next(k for k in m if k.lower() == x.group(0).lower())], html)
+    if t != 'dark':
+        m = {**MAPS[t], '#0C0704': GROUND[t]}
+        pat = re.compile('|'.join(re.escape(k) for k in sorted(m, key=len, reverse=True)), re.I)
+        html = pat.sub(lambda x: m[next(k for k in m if k.lower() == x.group(0).lower())], html)
+    import kit_paper   # STYLE=paper: papercut layer (no-op otherwise)
+    return kit_paper.paperize(html)

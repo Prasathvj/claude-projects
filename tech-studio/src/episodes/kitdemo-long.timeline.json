@@ -1,0 +1,670 @@
+{
+ "id": "ep05-long",
+ "format": "horizontal",
+ "captions": "big",
+ "fps": 30,
+ "duration": 46.693,
+ "vo": "kitdemo/kitdemo-long-vo.wav",
+ "music": "ep05/ep05-long-music.wav",
+ "beats": [
+  {
+   "text": "Right now, as ChatGPT writes its answer to you, it has no idea how its own sentence is going to end.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 0.25,
+   "vo": 6.922,
+   "dur": 7.222,
+   "words": [
+    {
+     "w": "Right",
+     "s": 0.05,
+     "e": 0.27
+    },
+    {
+     "w": "now,",
+     "s": 0.27,
+     "e": 0.73
+    },
+    {
+     "w": "as",
+     "s": 0.86,
+     "e": 1.15
+    },
+    {
+     "w": "ChatGPT",
+     "s": 1.15,
+     "e": 1.2
+    },
+    {
+     "w": "writes",
+     "s": 1.15,
+     "e": 1.41
+    },
+    {
+     "w": "its",
+     "s": 1.41,
+     "e": 1.58
+    },
+    {
+     "w": "answer",
+     "s": 1.58,
+     "e": 1.76
+    },
+    {
+     "w": "to",
+     "s": 1.76,
+     "e": 1.82
+    },
+    {
+     "w": "you,",
+     "s": 1.82,
+     "e": 2.0
+    },
+    {
+     "w": "it",
+     "s": 2.0,
+     "e": 2.41
+    },
+    {
+     "w": "has",
+     "s": 2.41,
+     "e": 2.67
+    },
+    {
+     "w": "no",
+     "s": 2.67,
+     "e": 2.73
+    },
+    {
+     "w": "idea",
+     "s": 2.73,
+     "e": 3.13
+    },
+    {
+     "w": "how",
+     "s": 3.53,
+     "e": 3.72
+    },
+    {
+     "w": "its",
+     "s": 3.72,
+     "e": 3.87
+    },
+    {
+     "w": "own",
+     "s": 3.87,
+     "e": 4.06
+    },
+    {
+     "w": "sentence",
+     "s": 4.56,
+     "e": 5.09
+    },
+    {
+     "w": "is",
+     "s": 5.32,
+     "e": 5.52
+    },
+    {
+     "w": "going",
+     "s": 5.52,
+     "e": 5.65
+    },
+    {
+     "w": "to",
+     "s": 5.65,
+     "e": 6.24
+    },
+    {
+     "w": "end.",
+     "s": 6.24,
+     "e": 6.78
+    }
+   ]
+  },
+  {
+   "text": "It doesn't plan the paragraph. It doesn't even plan the next sentence. It picks one small piece of a word, then the next, then the next.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 7.472,
+   "vo": 8.673,
+   "dur": 8.973,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.08,
+     "e": 0.21
+    },
+    {
+     "w": "doesn't",
+     "s": 0.21,
+     "e": 0.58
+    },
+    {
+     "w": "plan",
+     "s": 0.58,
+     "e": 0.96
+    },
+    {
+     "w": "the",
+     "s": 0.96,
+     "e": 1.05
+    },
+    {
+     "w": "paragraph.",
+     "s": 1.05,
+     "e": 1.88
+    },
+    {
+     "w": "It",
+     "s": 2.15,
+     "e": 2.25
+    },
+    {
+     "w": "doesn't",
+     "s": 2.25,
+     "e": 2.52
+    },
+    {
+     "w": "even",
+     "s": 2.52,
+     "e": 2.74
+    },
+    {
+     "w": "plan",
+     "s": 2.74,
+     "e": 3.03
+    },
+    {
+     "w": "the",
+     "s": 3.03,
+     "e": 3.09
+    },
+    {
+     "w": "next",
+     "s": 3.09,
+     "e": 3.3
+    },
+    {
+     "w": "sentence.",
+     "s": 3.3,
+     "e": 3.94
+    },
+    {
+     "w": "It",
+     "s": 4.44,
+     "e": 4.56
+    },
+    {
+     "w": "picks",
+     "s": 4.56,
+     "e": 4.82
+    },
+    {
+     "w": "one",
+     "s": 4.82,
+     "e": 5.19
+    },
+    {
+     "w": "small",
+     "s": 5.19,
+     "e": 5.59
+    },
+    {
+     "w": "piece",
+     "s": 5.59,
+     "e": 5.88
+    },
+    {
+     "w": "of",
+     "s": 5.88,
+     "e": 5.99
+    },
+    {
+     "w": "a",
+     "s": 5.99,
+     "e": 6.02
+    },
+    {
+     "w": "word,",
+     "s": 6.02,
+     "e": 6.49
+    },
+    {
+     "w": "then",
+     "s": 6.77,
+     "e": 6.94
+    },
+    {
+     "w": "the",
+     "s": 6.94,
+     "e": 7.0
+    },
+    {
+     "w": "next,",
+     "s": 7.0,
+     "e": 7.57
+    },
+    {
+     "w": "then",
+     "s": 7.79,
+     "e": 7.98
+    },
+    {
+     "w": "the",
+     "s": 7.98,
+     "e": 8.04
+    },
+    {
+     "w": "next.",
+     "s": 8.04,
+     "e": 8.54
+    }
+   ]
+  },
+  {
+   "text": "And yet about a billion people use it every week, to write emails, fix code and explain homework.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 16.445,
+   "vo": 6.687,
+   "dur": 6.987,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.08,
+     "e": 0.24
+    },
+    {
+     "w": "yet",
+     "s": 0.24,
+     "e": 0.55
+    },
+    {
+     "w": "about",
+     "s": 0.55,
+     "e": 0.85
+    },
+    {
+     "w": "a",
+     "s": 0.85,
+     "e": 0.9
+    },
+    {
+     "w": "billion",
+     "s": 0.9,
+     "e": 1.54
+    },
+    {
+     "w": "people",
+     "s": 1.54,
+     "e": 1.95
+    },
+    {
+     "w": "use",
+     "s": 1.95,
+     "e": 2.22
+    },
+    {
+     "w": "it",
+     "s": 2.22,
+     "e": 2.43
+    },
+    {
+     "w": "every",
+     "s": 2.43,
+     "e": 2.77
+    },
+    {
+     "w": "week,",
+     "s": 2.77,
+     "e": 3.21
+    },
+    {
+     "w": "to",
+     "s": 3.46,
+     "e": 3.57
+    },
+    {
+     "w": "write",
+     "s": 3.57,
+     "e": 3.83
+    },
+    {
+     "w": "emails,",
+     "s": 3.83,
+     "e": 4.52
+    },
+    {
+     "w": "fix",
+     "s": 4.52,
+     "e": 4.81
+    },
+    {
+     "w": "code",
+     "s": 4.81,
+     "e": 5.31
+    },
+    {
+     "w": "and",
+     "s": 5.31,
+     "e": 5.63
+    },
+    {
+     "w": "explain",
+     "s": 5.63,
+     "e": 6.0
+    },
+    {
+     "w": "homework.",
+     "s": 6.0,
+     "e": 6.53
+    }
+   ]
+  },
+  {
+   "text": "So how can something that is basically guessing, one word at a time, sound so smart? Let's open the box.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 23.432,
+   "vo": 7.314,
+   "dur": 7.614,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.05,
+     "e": 0.41
+    },
+    {
+     "w": "how",
+     "s": 0.41,
+     "e": 0.67
+    },
+    {
+     "w": "can",
+     "s": 0.67,
+     "e": 0.85
+    },
+    {
+     "w": "something",
+     "s": 0.85,
+     "e": 1.26
+    },
+    {
+     "w": "that",
+     "s": 1.26,
+     "e": 1.38
+    },
+    {
+     "w": "is",
+     "s": 1.38,
+     "e": 1.5
+    },
+    {
+     "w": "basically",
+     "s": 1.5,
+     "e": 2.1
+    },
+    {
+     "w": "guessing,",
+     "s": 2.1,
+     "e": 2.87
+    },
+    {
+     "w": "one",
+     "s": 3.02,
+     "e": 3.36
+    },
+    {
+     "w": "word",
+     "s": 3.36,
+     "e": 3.59
+    },
+    {
+     "w": "at",
+     "s": 3.59,
+     "e": 3.71
+    },
+    {
+     "w": "a",
+     "s": 3.71,
+     "e": 3.75
+    },
+    {
+     "w": "time,",
+     "s": 3.75,
+     "e": 4.3
+    },
+    {
+     "w": "sound",
+     "s": 4.45,
+     "e": 4.76
+    },
+    {
+     "w": "so",
+     "s": 4.76,
+     "e": 4.94
+    },
+    {
+     "w": "smart?",
+     "s": 4.94,
+     "e": 5.53
+    },
+    {
+     "w": "Let's",
+     "s": 6.08,
+     "e": 6.29
+    },
+    {
+     "w": "open",
+     "s": 6.29,
+     "e": 6.52
+    },
+    {
+     "w": "the",
+     "s": 6.52,
+     "e": 6.59
+    },
+    {
+     "w": "box.",
+     "s": 6.59,
+     "e": 7.11
+    }
+   ]
+  },
+  {
+   "text": "First, ChatGPT doesn't actually read words. It reads tokens.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 31.047,
+   "vo": 5.251,
+   "dur": 5.551,
+   "words": [
+    {
+     "w": "First,",
+     "s": 0.05,
+     "e": 0.61
+    },
+    {
+     "w": "ChatGPT",
+     "s": 0.61,
+     "e": 0.75
+    },
+    {
+     "w": "doesn't",
+     "s": 0.75,
+     "e": 1.2
+    },
+    {
+     "w": "actually",
+     "s": 1.2,
+     "e": 1.39
+    },
+    {
+     "w": "read",
+     "s": 1.53,
+     "e": 1.8
+    },
+    {
+     "w": "words.",
+     "s": 1.8,
+     "e": 1.96
+    },
+    {
+     "w": "It",
+     "s": 2.21,
+     "e": 2.38
+    },
+    {
+     "w": "reads",
+     "s": 2.38,
+     "e": 2.96
+    },
+    {
+     "w": "tokens.",
+     "s": 2.96,
+     "e": 3.65
+    }
+   ]
+  },
+  {
+   "text": "A token is a chunk of text. Sometimes a whole word, sometimes just a piece of one. On average, a hundred tokens make about seventy-five English words.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "start": 36.597,
+   "vo": 9.796,
+   "dur": 10.096,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.09,
+     "e": 0.17
+    },
+    {
+     "w": "token",
+     "s": 0.17,
+     "e": 0.7
+    },
+    {
+     "w": "is",
+     "s": 0.7,
+     "e": 0.91
+    },
+    {
+     "w": "a",
+     "s": 0.91,
+     "e": 0.96
+    },
+    {
+     "w": "chunk",
+     "s": 0.96,
+     "e": 1.26
+    },
+    {
+     "w": "of",
+     "s": 1.26,
+     "e": 1.36
+    },
+    {
+     "w": "text.",
+     "s": 1.36,
+     "e": 1.97
+    },
+    {
+     "w": "Sometimes",
+     "s": 2.29,
+     "e": 2.78
+    },
+    {
+     "w": "a",
+     "s": 2.78,
+     "e": 2.82
+    },
+    {
+     "w": "whole",
+     "s": 2.82,
+     "e": 3.09
+    },
+    {
+     "w": "word,",
+     "s": 3.09,
+     "e": 3.55
+    },
+    {
+     "w": "sometimes",
+     "s": 3.74,
+     "e": 4.33
+    },
+    {
+     "w": "just",
+     "s": 4.33,
+     "e": 4.55
+    },
+    {
+     "w": "a",
+     "s": 4.55,
+     "e": 4.59
+    },
+    {
+     "w": "piece",
+     "s": 4.59,
+     "e": 4.88
+    },
+    {
+     "w": "of",
+     "s": 4.88,
+     "e": 5.0
+    },
+    {
+     "w": "one.",
+     "s": 5.0,
+     "e": 5.22
+    },
+    {
+     "w": "On",
+     "s": 5.81,
+     "e": 5.97
+    },
+    {
+     "w": "average,",
+     "s": 5.97,
+     "e": 6.51
+    },
+    {
+     "w": "a",
+     "s": 6.55,
+     "e": 6.63
+    },
+    {
+     "w": "hundred",
+     "s": 6.63,
+     "e": 7.05
+    },
+    {
+     "w": "tokens",
+     "s": 7.05,
+     "e": 7.51
+    },
+    {
+     "w": "make",
+     "s": 7.51,
+     "e": 7.71
+    },
+    {
+     "w": "about",
+     "s": 7.71,
+     "e": 8.27
+    },
+    {
+     "w": "seventy-five",
+     "s": 8.27,
+     "e": 8.32
+    },
+    {
+     "w": "English",
+     "s": 8.27,
+     "e": 9.13
+    },
+    {
+     "w": "words.",
+     "s": 9.13,
+     "e": 9.65
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "id": "kitdemo-long",
+ "format": "horizontal",
+ "profile": "explainer",
+ "gap": 0.3,
+ "captions": "big",
+ "voice": "Eric",
+ "batch": 48,
+ "max_tempo": 1.05,
+ "engine": "vidiq",
+ "voice_id": "cjVigY5qzO86Huf0OWal",
+ "host_beats": [
+  0,
+  1,
+  3
+ ],
+ "beats": [
+  {
+   "text": "Right now, as ChatGPT writes its answer to you, it has no idea how its own sentence is going to end.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "chat",
+    "label": "CHATGPT \u00b7 ILLUSTRATION",
+    "msgs": [
+     {
+      "from": "you",
+      "text": "Write a poem about chai"
+     },
+     {
+      "from": "agent",
+      "text": "Chai\u2026"
+     }
+    ]
+   },
+   "chapter": "No plan, one word at a time"
+  },
+  {
+   "text": "It doesn't plan the paragraph. It doesn't even plan the next sentence. It picks one small piece of a word, then the next, then the next.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "loop",
+    "steps": [
+     "Pick one piece",
+     "Add it",
+     "Look again",
+     "Pick the next"
+    ],
+    "upto": 3
+   }
+  },
+  {
+   "text": "And yet about a billion people use it every week, to write emails, fix code and explain homework.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vstat",
+    "kicker": "CHATGPT \u00b7 WEEKLY USERS",
+    "num": "1",
+    "unit": "BILLION",
+    "sub": "people use it every week",
+    "hi": "every week",
+    "source": "OpenAI, September 2026: \u2248 1 billion weekly users",
+    "note": "that's 1 in 8 people on Earth*",
+    "foot": "*approx., world population \u2248 8.2 billion",
+    "sx": 760,
+    "sy": 560,
+    "nx": 60,
+    "ny": 580
+   }
+  },
+  {
+   "text": "So how can something that is basically guessing, one word at a time, sound so smart? Let's open the box.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "slam",
+    "text": "Let's open the box"
+   }
+  },
+  {
+   "text": "First, ChatGPT doesn't actually read words. It reads tokens.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "split",
+    "left": {
+     "icon": "doc",
+     "title": "Words",
+     "body": "What you see"
+    },
+    "right": {
+     "icon": "code",
+     "title": "Tokens",
+     "body": "What it reads"
+    },
+    "merge": "It reads TOKENS"
+   },
+   "chapter": "Words become tokens"
+  },
+  {
+   "text": "A token is a chunk of text. Sometimes a whole word, sometimes just a piece of one. On average, a hundred tokens make about seventy-five English words.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vdoc",
+    "label": "OPENAI TOKENIZER GUIDE",
+    "lines": [
+     "A token is a chunk of text:",
+     "a whole word or a piece of one.",
+     "\u2248 100 tokens \u2248 75 English words"
+    ],
+    "hi": [
+     2,
+     "75 English words"
+    ],
+    "circle": [
+     1,
+     "piece"
+    ],
+    "note": "not letters!",
+    "nx": 1010,
+    "ny": 430
+   }
+  }
+ ]
+}
