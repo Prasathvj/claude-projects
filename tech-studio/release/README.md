@@ -26,6 +26,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 16 | [16_pay01](16_pay01) | Why you shouldn't give AI your credit card yet | 0:39 | **Sun 6 Dec, 12:30 PM** (after the EP03 long video) | Ready |
 | 18 | [18_ep04_long](18_ep04_long) | AI Writes 75% of Google's New Code. So Why Are Developer Jobs Growing? | 8:21 | **Tue 8 Dec, 6:30 PM** | Ready (long video) |
 | 19 | [19_ep05_long](19_ep05_long) | ChatGPT Doesn't Know What It's Going to Say Next | 7:15 | **Thu 10 Dec, 6:30 PM** | Ready (long video) |
+| 20 | [20_ep06_long](20_ep06_long) | Google's Quantum Chip Did 10 Septillion Years of Work in 5 Minutes. Here's How | 7:00 | **Sat 12 Dec, 12:30 PM** | Ready (long video, papercut) |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.
