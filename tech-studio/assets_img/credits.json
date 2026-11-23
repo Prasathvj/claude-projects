@@ -5,5 +5,17 @@
   "artist": "NASA",
   "credit": "https://www.egraphicbd.com [dead link] (Wayback Machine)",
   "page": "https://commons.wikimedia.org/wiki/File:GPS_Satellite_NASA_art-iif.jpg"
+ },
+ "frontier.jpg": {
+  "title": "File:Frontier Supercomputer (2).jpg",
+  "license": "CC BY 2.0",
+  "artist": "OLCF at ORNL",
+  "page": "https://commons.wikimedia.org/wiki/File:Frontier_Supercomputer_(2).jpg"
+ },
+ "deepfield.jpg": {
+  "title": "File:Hubble ultra deep field.jpg",
+  "license": "Public domain",
+  "artist": "NASA and the European Space Agency.",
+  "page": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg"
  }
 }
