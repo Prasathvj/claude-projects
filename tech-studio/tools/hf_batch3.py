@@ -22,6 +22,7 @@ CSS = BASE + """
 
 def mk(i, body, sc, css=''):
     sid = f's{i}'
+    sc = [y for x in sc for y in (x if isinstance(x, list) else [x])]
     return scene(sid, f'<div id="{sid}-all" class="all">{body}</div>', sc_join(sid, sc + [out(sid)]), CSS + css)
 
 def tween(sel, t, frm, to, d=.4, ease='back.out(1.8)'):
@@ -593,11 +594,12 @@ QCSS = """.qcard { position:absolute; background:#FFFAF2; border-radius:26px; pa
 .qrow { display:flex; align-items:center; gap:22px; }
 .qbar { position:absolute; height:74px; border-radius:14px; }
 .qclip { position:absolute; background:#F4ECDD; padding:30px 34px; width:860px; box-shadow:0 18px 40px rgba(74,50,28,.25); }
-.qclip .hd { font:900 64px Georgia, serif; color:#2A2018; line-height:1.05; } .qclip .by { font:600 24px 'SD Text'; color:#8C6B5A; letter-spacing:2px; margin-bottom:14px; }
+.qclip .qhd { font:900 64px Georgia, serif; color:#2A2018; line-height:1.05; } .qclip .qby { font:600 24px 'SD Text'; color:#8C6B5A; letter-spacing:2px; margin-bottom:14px; }
 .stamp { position:absolute; font:900 170px 'SD Display'; color:#E0471C; border:14px solid #E0471C; border-radius:24px; padding:0 34px; transform:rotate(-12deg); letter-spacing:6px; background:rgba(255,250,242,.55); }
 .ghost { position:absolute; opacity:.35; }
 .kpi { position:absolute; }
-.qsnow { position:absolute; opacity:.85; }"""
+.qsnow { position:absolute; opacity:.85; }
+.qlbl { position:absolute; left:80px; font:800 40px 'SD Text'; color:#2A2018; }"""
 def at(sid, sel, t, frm, to, d=.4, ease='back.out(1.7)'):
     return tween(sel, t, frm, to, d, ease)
 def qnt():
@@ -607,12 +609,12 @@ def qnt():
     css = KPR.CSS + PAYCSS + QCSS
     # ---- s0: Google chip, 5-minute counter, Frontier supercomputer, septillion years
     cid, chip = qp('s0', 0, 'chip', 120, 330, 1.05, text='Willow')
-    body = f"""<div class="kpi" id="s0-g" style="left:96px; top:270px">{KA.paper_icon('logos:google-icon', 70, pad=24)}</div>
+    body = f"""<div class="kpi" id="s0-g" style="left:330px; top:520px">{KA.paper_icon('logos:google-icon', 70, pad=24)}</div>
 {chip}
-<div class="qcard" id="s0-c" style="left:110px; top:740px; width:400px"><div class="qrow">{KA.icon('ph:clock-countdown-fill', 70, '#F87736')}<div><div class="qlab">QUANTUM CHIP</div><div class="qbig" style="font-size:96px"><span id="s0-m">0</span> MIN</div></div></div></div>
+<div class="qcard" id="s0-c" style="left:90px; top:740px; width:470px; white-space:nowrap"><div class="qrow">{KA.icon('ph:clock-countdown-fill', 70, '#F87736')}<div><div class="qlab">QUANTUM CHIP</div><div class="qbig" style="font-size:96px"><span id="s0-m">0</span> MIN</div></div></div></div>
 <div id="s0-f" style="position:absolute; left:560px; top:300px">{KA.sticker('frontier.jpg', P, 470, extra='transform:rotate(4deg)', mode='print')}</div>
 <div class="qtag" id="s0-ft" style="left:600px; top:690px">a top supercomputer</div>
-<div class="qcard" id="s0-y" style="left:40px; top:960px; width:1000px; text-align:center"><div class="qrow" style="justify-content:center">{KA.icon('ph:hourglass-high-fill', 64, '#E0471C')}<div class="qlab">SUPERCOMPUTER</div></div><div class="qbig" style="font-size:60px; letter-spacing:-1px" id="s0-n">10,000,000,000,000,000,000,000,000</div><div class="qlab" style="color:#E0471C">YEARS</div></div>"""
+<div class="qcard" id="s0-y" style="left:30px; top:1010px; width:1020px; text-align:center"><div class="qrow" style="justify-content:center">{KA.icon('ph:hourglass-high-fill', 64, '#E0471C')}<div class="qlab">SUPERCOMPUTER</div></div><div class="qbig" style="font-size:50px; letter-spacing:-1px" id="s0-n">10,000,000,000,000,000,000,000,000</div><div class="qlab" style="color:#E0471C">YEARS</div></div>"""
     sc = [pop('#s0-g', 0.02), qdrop(cid, 0.12), pop('#s0-c', W(0, 'five')), counter('#s0-m', W(0, 'five') + .15, ['1', '2', '3', '4', '5']),
           at('s0', '#s0-f', W(0, 'supercomputer'), 'x:700, rotation:14, opacity:0', 'x:0, rotation:0, opacity:1', .45),
           pop('#s0-ft', W(0, 'supercomputer') + .3), slam('#s0-y', W(0, 'ten')), shake('#s0-y', W(0, 'years'))]
@@ -620,8 +622,8 @@ def qnt():
     # ---- s1: Hubble deep field (universe) vs runaway bar
     body = f"""<div id="s1-u" style="position:absolute; left:80px; top:290px">{KA.sticker('deepfield.jpg', P, 440, extra='transform:rotate(-5deg)', mode='print', crop=(.15,.15,.85,.85))}</div>
 <div class="qcard" id="s1-uc" style="left:560px; top:330px; width:450px"><div class="qrow">{KA.icon('ph:planet-fill', 60, '#7A5CFF')}<div class="qlab">THE UNIVERSE</div></div><div class="qbig" style="font-size:76px">13.8 <span>billion</span> yrs</div></div>
-<div class="qlab" style="position:absolute; left:80px; top:800px">universe's age</div><div class="qbar" id="s1-b1" style="left:80px; top:840px; width:60px; background:#7A5CFF"></div>
-<div class="qlab" style="position:absolute; left:80px; top:950px">supercomputer job</div><div class="qbar" id="s1-b2" style="left:80px; top:990px; width:1200px; background:#E0471C; transform-origin:left center"></div>
+<div class="qlbl" style="top:790px">The universe's age</div><div class="qbar" id="s1-b1" style="left:80px; top:840px; width:60px; background:#7A5CFF"></div>
+<div class="qlbl" style="top:940px">The supercomputer's job</div><div class="qbar" id="s1-b2" style="left:80px; top:990px; width:1200px; background:#E0471C; transform-origin:left center"></div>
 <div class="qtag" id="s1-x" style="left:560px; top:1090px; font-size:64px; background:#E0471C">×700 trillion</div>"""
     sc = [at('s1', '#s1-u', 0.02, 'scale:0, rotation:-20, opacity:0', 'scale:1, rotation:0, opacity:1', .45), pop('#s1-uc', W(1, 'universe') - .6),
           tween('#s1-b1', W(1, 'hundreds'), 'scaleX:0', 'scaleX:1', .3, 'power2.out'), tween('#s1-b2', W(1, 'trillions'), 'scaleX:0', 'scaleX:1', 1.1, 'power2.in'),
@@ -629,8 +631,9 @@ def qnt():
     out_.append(mk(1, body, sc, css))
     # ---- s2: real dilution fridge + temperature drop
     snow = ''.join(f'<div class="qsnow" id="s2-sn{k}" style="left:{560 + (k * 97) % 420}px; top:{280 + (k * 173) % 300}px">{KA.icon("ph:snowflake-bold", 46 + (k % 3) * 14, "#5AA9E6")}</div>' for k in range(7))
-    body = f"""<div id="s2-f" style="position:absolute; left:60px; top:260px">{KA.sticker('cryostat.png', P, 470)}</div>
-<div class="qtag" id="s2-ft" style="left:90px; top:1100px">real quantum fridge</div>{snow}
+    fid, fridge = qp('s2', 0, 'fridge', 60, 280, 1.05)
+    body = f"""<div id="s2-f" style="position:absolute; left:0; top:0">{fridge}</div>
+<div class="qtag" id="s2-ft" style="left:90px; top:1100px">quantum fridge</div>{snow}
 <div class="qcard" id="s2-t" style="left:560px; top:620px; width:470px"><div class="qrow">{KA.icon('ph:thermometer-cold-fill', 80, '#1C7ED6')}<div><div class="qlab" id="s2-l">OUTER SPACE</div><div class="qbig" style="font-size:100px;color:#1C7ED6" id="s2-k">2.7 K</div></div></div></div>
 <div class="qtag" id="s2-x" style="left:600px; top:930px; font-size:60px; background:#1C7ED6">270× colder</div>"""
     sc = [at('s2', '#s2-f', 0.02, 'y:-1200, rotation:-8, opacity:1', 'y:0, rotation:0, opacity:1', .5), pop('#s2-ft', W(2, 'runs')),
@@ -643,7 +646,7 @@ def qnt():
     mid, maze = qp('s3', 0, 'maze', 260, 640, 1.25)
     ghosts = ''.join(qp('s3', 10 + k, 'bit', 300 + (k % 3) * 160, 690 + (k // 3) * 150, .32)[1].replace('class="pp"', 'class="pp ghost"', 1) for k in range(6))
     gids = [f's3-p{10 + k}' for k in range(6)]
-    body = f"""<div class="qclip" id="s3-c" style="left:110px; top:270px"><div class="by">THE POPULAR CLAIM</div><div class="hd">"Quantum computers try <u style="text-decoration-color:#F87736;text-decoration-thickness:10px">every answer at once</u>"</div></div>
+    body = f"""<div class="qclip" id="s3-c" style="left:110px; top:270px"><div class="qby">THE POPULAR CLAIM</div><div class="qhd">"Quantum computers try <u style="text-decoration-color:#F87736;text-decoration-thickness:10px">every answer at once</u>"</div></div>
 {maze}{ghosts}<div class="stamp" id="s3-s" style="left:230px; top:760px">MYTH</div>"""
     sc = [pop('#s3-c', 0.02), qdrop(mid, W(3, 'try'))] + [pop('#' + g, W(3, 'every') + k * .07) for k, g in enumerate(gids)]
     sc += [tween('#s3-s', W(3, 'myth') - .25, 'scale:3, opacity:0, rotation:10', 'scale:1, opacity:1, rotation:-12', .22, 'power4.in'), shake('#s3-all', W(3, 'myth'))]
