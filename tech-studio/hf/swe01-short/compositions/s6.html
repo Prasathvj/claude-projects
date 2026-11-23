@@ -1,0 +1,79 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.center { position:absolute; left:40px; right:40px; text-align:center; }
+.kk { font:600 32px 'SD Text'; letter-spacing:4px; color:var(--dim); }
+.big { font:900 180px 'SD Display'; color:var(--accent); letter-spacing:-4px; line-height:1; }
+.box { position:absolute; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.35); }
+.src { position:absolute; left:96px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.ph { position:relative; border-radius:28px; overflow:hidden; border:8px solid #FFFFFF; box-shadow:0 30px 70px rgba(0,0,0,.35); background:#F7F1EB; }
+.ph img { width:100%; height:100%; object-fit:cover; display:block; } .ph.fb { display:flex; align-items:center; justify-content:center; }
+.chip { display:inline-flex; align-items:center; gap:12px; padding:16px 26px; border-radius:24px; background:#F3E6DC; color:#1E120C; font:800 38px 'SD Display'; }
+.hl { color:var(--accent); }
+.card { position:absolute; border-radius:36px; border:3px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); box-shadow:0 30px 70px rgba(0,0,0,.30); }
+.h1 { position:absolute; left:40px; right:40px; text-align:center; font:900 96px 'SD Display'; color:var(--ink); line-height:1.02; letter-spacing:-2px; }
+.h1 span { color:var(--accent); }
+.lab { font:700 30px 'SD Mono'; letter-spacing:4px; color:var(--accent); }
+.mono { font-family:'SD Mono'; }
+.tag2 { position:absolute; padding:14px 26px; border-radius:18px; font:900 44px 'SD Display'; }
+.ok { background:#3DDC97; color:#0E3B26; } .bad { background:#FF3B30; color:#FFFFFF; }
+.ill { position:absolute; left:0; right:0; text-align:center; top:1240px; font:600 22px 'SD Text'; letter-spacing:2px; color:var(--dim); }.gcard { position:absolute; width:620px; height:380px; border-radius:36px; background:linear-gradient(135deg,#FFD89A,#F87736 60%,#C85019); box-shadow:0 30px 90px rgba(248,119,54,.55); padding:44px; }
+.chip3 { width:110px; height:80px; border-radius:16px; background:linear-gradient(135deg,#FFF1C9,#E0B25A); } .gnum { margin-top:70px; font:900 56px 'SD Mono'; color:#FFFFFF; letter-spacing:4px; }
+.gnm { font:800 30px 'SD Display'; color:#100804; margin-top:10px; letter-spacing:3px; }
+.cap3 { position:absolute; left:40px; right:40px; text-align:center; font:900 78px 'SD Display'; color:var(--ink); line-height:1.02; } .cap3 span { color:var(--accent); }.ed2 { position:absolute; left:90px; top:300px; width:900px; height:560px; border-radius:30px; background:#1E1A24; box-shadow:0 30px 80px rgba(60,30,10,.35); overflow:hidden; }
+.eb2 { height:64px; background:#2A2533; padding:0 26px; display:flex; align-items:center; font:700 24px 'SD Mono'; color:#A59DB3; }
+.el2 { font:600 30px 'SD Mono'; color:#E8E2F0; line-height:1.9; white-space:pre; padding-left:30px; opacity:0; }
+.pc2 { position:absolute; left:640px; top:720px; width:360px; padding:26px; border-radius:30px; background:#FFFFFF; box-shadow:0 30px 70px rgba(90,50,20,.25); text-align:center; }
+.pc2 small { display:block; font:800 22px 'SD Mono'; color:#9C8576; letter-spacing:1px; } .pc2 b { font:900 130px 'SD Display'; color:#F87736; line-height:1.05; }
+.vbar { position:absolute; bottom:760px; width:300px; border-radius:26px 26px 8px 8px; transform-origin:bottom; } .vlab { position:absolute; top:1180px; width:400px; text-align:center; font:900 50px 'SD Display'; color:var(--ink); }
+.vval { position:absolute; width:400px; text-align:center; font:900 76px 'SD Display'; opacity:0; } .axis2 { position:absolute; left:100px; right:100px; top:1160px; height:6px; background:#E6D5C6; }
+.rg2 { position:absolute; left:240px; width:600px; height:96px; border-radius:22px; background:#FFFFFF; box-shadow:0 14px 30px rgba(90,50,20,.15); display:flex; align-items:center; justify-content:center; font:800 40px 'SD Display'; color:#2A2018; }
+.rg2.low { background:#FFE3DC; color:#D93025; border:4px dashed #FF3B30; } .rail2 { position:absolute; top:280px; width:26px; height:800px; border-radius:13px; background:#C9A98E; }
+.ln2 { position:absolute; left:90px; width:900px; font:800 44px 'SD Display'; color:var(--ink); } .tr2 { height:110px; border-radius:55px; background:#FFFFFF; margin-top:14px; overflow:hidden; box-shadow:0 12px 30px rgba(90,50,20,.12); }
+.tr2 i { display:block; height:100%; width:0; border-radius:55px; }
+.vc2 { position:absolute; left:110px; top:330px; width:860px; padding:24px; border-radius:30px; background:#FFFFFF; box-shadow:0 30px 70px rgba(90,50,20,.25); }
+.th2 { height:440px; border-radius:22px; background:linear-gradient(135deg,#FFE9D9,#F8B48C); position:relative; display:flex; align-items:center; justify-content:center; }
+.th2 b { position:absolute; left:30px; right:30px; top:26px; font:900 58px 'SD Display'; color:#1E120C; line-height:1.05; } .pl2 { width:160px; height:160px; border-radius:80px; background:#FF3B30; color:#fff; font:900 76px 'SD Display'; display:flex; align-items:center; justify-content:center; margin-top:120px; }
+.mt2 { font:700 32px 'SD Text'; color:#9C8576; margin-top:18px; }
+  </style>
+  <div id="root" data-composition-id="s6" data-width="1080" data-height="1920">
+    <div class="all" id="s6-all">
+<div id="s6-all" class="all"><div class="vc2" id="s6-v"><div class="th2"><b>AI Writes 75% of Google's New Code. So Why Are Developer Jobs Growing?</b><div class="pl2">▶</div></div><div class="mt2">TechDecoded with Max · new video</div></div>
+<div class="cap3" id="s6-t" style="top:1000px">FULL STORY<br><span>👆 WATCH NEXT</span></div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s6-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo("#s6-v", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
+    tl.fromTo("#s6-t", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 1.414);
+    tl.fromTo("#s6-t", { y:0 }, { y:-18, duration:.35, yoyo:true, repeat:5, ease:"sine.inOut", immediateRender:false }, 1.969);
+    tl.to("#s6-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 3.688);
+    window.__timelines["s6"] = tl;
+  </script>
+</template>
