@@ -1,0 +1,12091 @@
+{
+ "id": "ep07-long",
+ "format": "horizontal",
+ "captions": "big",
+ "fps": 30,
+ "duration": 661.135,
+ "vo": "ep07/ep07-long-vo.wav",
+ "music": "ep07/ep07-long-music.wav",
+ "beats": [
+  {
+   "text": "You mention running shoes to a friend over dinner. You never search for them. And the next morning, your Instagram is full of running shoe ads.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "dinner",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:fork-knife-fill",
+      "size": 150,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "friend",
+      "x": 260,
+      "y": 60,
+      "ref": "ph:users-three-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "shoes",
+      "x": 480,
+      "y": 40,
+      "ref": "ph:sneaker-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "never",
+      "x": 40,
+      "y": 330,
+      "text": "never searched",
+      "bg": "#2F9E44",
+      "size": 36
+     },
+     {
+      "k": "logo",
+      "at": "instagram",
+      "x": 760,
+      "y": 40,
+      "ref": "logos:instagram-icon",
+      "size": 160,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "ads",
+      "x": 760,
+      "y": 280,
+      "text": "running shoe AD",
+      "bg": "#F87736",
+      "size": 28,
+      "id": "a0",
+      "in": "drop"
+     },
+     {
+      "k": "tag",
+      "at": "ads",
+      "x": 980,
+      "y": 350,
+      "text": "running shoe AD",
+      "bg": "#F87736",
+      "size": 28,
+      "id": "a1",
+      "in": "drop"
+     },
+     {
+      "k": "tag",
+      "at": "ads",
+      "x": 760,
+      "y": 420,
+      "text": "running shoe AD",
+      "bg": "#F87736",
+      "size": 28,
+      "id": "a2",
+      "in": "drop"
+     },
+     {
+      "k": "tag",
+      "at": "ads",
+      "x": 980,
+      "y": 490,
+      "text": "running shoe AD",
+      "bg": "#F87736",
+      "size": 28,
+      "id": "a3",
+      "in": "drop"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The dinner conversation",
+   "start": 0.25,
+   "vo": 8.904,
+   "dur": 9.304,
+   "words": [
+    {
+     "w": "You",
+     "s": 0.06,
+     "e": 0.2
+    },
+    {
+     "w": "mention",
+     "s": 0.2,
+     "e": 0.55
+    },
+    {
+     "w": "running",
+     "s": 0.55,
+     "e": 0.93
+    },
+    {
+     "w": "shoes",
+     "s": 0.93,
+     "e": 1.3
+    },
+    {
+     "w": "to",
+     "s": 1.3,
+     "e": 1.47
+    },
+    {
+     "w": "a",
+     "s": 1.47,
+     "e": 1.51
+    },
+    {
+     "w": "friend",
+     "s": 1.51,
+     "e": 1.92
+    },
+    {
+     "w": "over",
+     "s": 1.92,
+     "e": 2.13
+    },
+    {
+     "w": "dinner.",
+     "s": 2.13,
+     "e": 2.62
+    },
+    {
+     "w": "You",
+     "s": 3.02,
+     "e": 3.14
+    },
+    {
+     "w": "never",
+     "s": 3.14,
+     "e": 3.66
+    },
+    {
+     "w": "search",
+     "s": 3.66,
+     "e": 4.02
+    },
+    {
+     "w": "for",
+     "s": 4.02,
+     "e": 4.17
+    },
+    {
+     "w": "them.",
+     "s": 4.17,
+     "e": 4.45
+    },
+    {
+     "w": "And",
+     "s": 4.94,
+     "e": 5.06
+    },
+    {
+     "w": "the",
+     "s": 5.06,
+     "e": 5.12
+    },
+    {
+     "w": "next",
+     "s": 5.12,
+     "e": 5.35
+    },
+    {
+     "w": "morning,",
+     "s": 5.35,
+     "e": 5.92
+    },
+    {
+     "w": "your",
+     "s": 5.92,
+     "e": 6.11
+    },
+    {
+     "w": "Instagram",
+     "s": 6.11,
+     "e": 6.77
+    },
+    {
+     "w": "is",
+     "s": 6.77,
+     "e": 6.98
+    },
+    {
+     "w": "full",
+     "s": 6.98,
+     "e": 7.48
+    },
+    {
+     "w": "of",
+     "s": 7.48,
+     "e": 7.61
+    },
+    {
+     "w": "running",
+     "s": 7.61,
+     "e": 7.92
+    },
+    {
+     "w": "shoe",
+     "s": 7.92,
+     "e": 8.23
+    },
+    {
+     "w": "ads.",
+     "s": 8.23,
+     "e": 8.7
+    }
+   ]
+  },
+  {
+   "text": "It feels like proof. Your phone heard you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "proof",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:device-mobile-fill",
+      "size": 230,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "heard",
+      "x": 360,
+      "y": 60,
+      "ref": "ph:ear-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "heard",
+      "x": 40,
+      "y": 420,
+      "text": "Your phone *heard* you?",
+      "size": 96,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 9.554,
+   "vo": 3.337,
+   "dur": 3.737,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.04,
+     "e": 0.17
+    },
+    {
+     "w": "feels",
+     "s": 0.17,
+     "e": 0.59
+    },
+    {
+     "w": "like",
+     "s": 0.59,
+     "e": 0.79
+    },
+    {
+     "w": "proof.",
+     "s": 0.79,
+     "e": 1.49
+    },
+    {
+     "w": "Your",
+     "s": 1.87,
+     "e": 1.99
+    },
+    {
+     "w": "phone",
+     "s": 1.99,
+     "e": 2.43
+    },
+    {
+     "w": "heard",
+     "s": 2.43,
+     "e": 2.82
+    },
+    {
+     "w": "you.",
+     "s": 2.82,
+     "e": 3.14
+    }
+   ]
+  },
+  {
+   "text": "Millions of people believe this. Some put tape over their microphones. Some say a product name out loud, just to see if the ads follow.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "millions",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:users-four-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "millions",
+      "x": 300,
+      "y": 60,
+      "big": "MILLIONS",
+      "label": "BELIEVE IT",
+      "color": "#E0471C",
+      "icon": "ph:megaphone-fill"
+     },
+     {
+      "k": "icon",
+      "at": "tape",
+      "x": 60,
+      "y": 340,
+      "ref": "ph:microphone-slash-fill",
+      "size": 160,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "tape",
+      "x": 260,
+      "y": 380,
+      "text": "tape over the mic",
+      "bg": "#2A2018",
+      "size": 36
+     },
+     {
+      "k": "icon",
+      "at": "product",
+      "x": 700,
+      "y": 300,
+      "ref": "ph:chat-circle-dots-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "product",
+      "x": 700,
+      "y": 520,
+      "text": "\"\u2026running shoes!\"",
+      "bg": "#F87736",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 13.291,
+   "vo": 8.645,
+   "dur": 9.045,
+   "words": [
+    {
+     "w": "Millions",
+     "s": 0.05,
+     "e": 0.72
+    },
+    {
+     "w": "of",
+     "s": 0.72,
+     "e": 0.81
+    },
+    {
+     "w": "people",
+     "s": 0.81,
+     "e": 1.17
+    },
+    {
+     "w": "believe",
+     "s": 1.17,
+     "e": 1.56
+    },
+    {
+     "w": "this.",
+     "s": 1.56,
+     "e": 1.93
+    },
+    {
+     "w": "Some",
+     "s": 2.38,
+     "e": 2.69
+    },
+    {
+     "w": "put",
+     "s": 2.69,
+     "e": 2.89
+    },
+    {
+     "w": "tape",
+     "s": 2.89,
+     "e": 3.26
+    },
+    {
+     "w": "over",
+     "s": 3.26,
+     "e": 3.46
+    },
+    {
+     "w": "their",
+     "s": 3.46,
+     "e": 3.58
+    },
+    {
+     "w": "microphones.",
+     "s": 3.58,
+     "e": 4.4
+    },
+    {
+     "w": "Some",
+     "s": 4.82,
+     "e": 5.09
+    },
+    {
+     "w": "say",
+     "s": 5.09,
+     "e": 5.3
+    },
+    {
+     "w": "a",
+     "s": 5.3,
+     "e": 5.37
+    },
+    {
+     "w": "product",
+     "s": 5.37,
+     "e": 5.81
+    },
+    {
+     "w": "name",
+     "s": 5.81,
+     "e": 6.04
+    },
+    {
+     "w": "out",
+     "s": 6.04,
+     "e": 6.22
+    },
+    {
+     "w": "loud,",
+     "s": 6.22,
+     "e": 6.74
+    },
+    {
+     "w": "just",
+     "s": 6.74,
+     "e": 7.1
+    },
+    {
+     "w": "to",
+     "s": 7.1,
+     "e": 7.21
+    },
+    {
+     "w": "see",
+     "s": 7.21,
+     "e": 7.44
+    },
+    {
+     "w": "if",
+     "s": 7.44,
+     "e": 7.55
+    },
+    {
+     "w": "the",
+     "s": 7.55,
+     "e": 7.73
+    },
+    {
+     "w": "ads",
+     "s": 7.73,
+     "e": 7.99
+    },
+    {
+     "w": "follow.",
+     "s": 7.99,
+     "e": 8.5
+    }
+   ]
+  },
+  {
+   "text": "So let's decode it properly: the scientists who tested it, the marketing company that bragged about doing it, the times devices really did record people, and how ads seem to read your mind without hearing a single word.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "decode",
+      "x": 40,
+      "y": 10,
+      "text": "Let's *decode* it",
+      "size": 84
+     },
+     {
+      "k": "icon",
+      "at": "scientists",
+      "x": 40,
+      "y": 170,
+      "ref": "ph:flask-fill",
+      "size": 140,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "scientists",
+      "x": 30,
+      "y": 400,
+      "text": "the scientists",
+      "bg": "#2A2018",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "marketing",
+      "x": 360,
+      "y": 170,
+      "ref": "ph:megaphone-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "marketing",
+      "x": 340,
+      "y": 400,
+      "text": "the bragging company",
+      "bg": "#2A2018",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "record",
+      "x": 680,
+      "y": 170,
+      "ref": "ph:record-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "record",
+      "x": 660,
+      "y": 400,
+      "text": "real recordings",
+      "bg": "#2A2018",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "mind",
+      "x": 1000,
+      "y": 170,
+      "ref": "ph:brain-fill",
+      "size": 140,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "mind",
+      "x": 980,
+      "y": 400,
+      "text": "how ads \"read minds\"",
+      "bg": "#2A2018",
+      "size": 30
+     }
+    ],
+    "acts": []
+   },
+   "start": 22.336,
+   "vo": 15.323,
+   "dur": 15.723,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.03,
+     "e": 0.47
+    },
+    {
+     "w": "let's",
+     "s": 0.47,
+     "e": 0.76
+    },
+    {
+     "w": "decode",
+     "s": 0.76,
+     "e": 1.16
+    },
+    {
+     "w": "it",
+     "s": 1.16,
+     "e": 1.27
+    },
+    {
+     "w": "properly:",
+     "s": 1.27,
+     "e": 1.95
+    },
+    {
+     "w": "the",
+     "s": 2.58,
+     "e": 2.67
+    },
+    {
+     "w": "scientists",
+     "s": 2.67,
+     "e": 3.38
+    },
+    {
+     "w": "who",
+     "s": 3.38,
+     "e": 3.5
+    },
+    {
+     "w": "tested",
+     "s": 3.5,
+     "e": 3.98
+    },
+    {
+     "w": "it,",
+     "s": 3.98,
+     "e": 4.23
+    },
+    {
+     "w": "the",
+     "s": 4.61,
+     "e": 4.69
+    },
+    {
+     "w": "marketing",
+     "s": 4.69,
+     "e": 5.2
+    },
+    {
+     "w": "company",
+     "s": 5.2,
+     "e": 5.64
+    },
+    {
+     "w": "that",
+     "s": 5.64,
+     "e": 5.81
+    },
+    {
+     "w": "bragged",
+     "s": 5.81,
+     "e": 6.27
+    },
+    {
+     "w": "about",
+     "s": 6.27,
+     "e": 6.51
+    },
+    {
+     "w": "doing",
+     "s": 6.51,
+     "e": 6.86
+    },
+    {
+     "w": "it,",
+     "s": 6.86,
+     "e": 7.11
+    },
+    {
+     "w": "the",
+     "s": 7.54,
+     "e": 7.64
+    },
+    {
+     "w": "times",
+     "s": 7.64,
+     "e": 8.06
+    },
+    {
+     "w": "devices",
+     "s": 8.06,
+     "e": 8.62
+    },
+    {
+     "w": "really",
+     "s": 8.62,
+     "e": 9.04
+    },
+    {
+     "w": "did",
+     "s": 9.04,
+     "e": 9.41
+    },
+    {
+     "w": "record",
+     "s": 9.41,
+     "e": 9.86
+    },
+    {
+     "w": "people,",
+     "s": 9.86,
+     "e": 10.34
+    },
+    {
+     "w": "and",
+     "s": 10.75,
+     "e": 11.17
+    },
+    {
+     "w": "how",
+     "s": 11.17,
+     "e": 11.6
+    },
+    {
+     "w": "ads",
+     "s": 11.6,
+     "e": 11.98
+    },
+    {
+     "w": "seem",
+     "s": 11.98,
+     "e": 12.26
+    },
+    {
+     "w": "to",
+     "s": 12.26,
+     "e": 12.37
+    },
+    {
+     "w": "read",
+     "s": 12.37,
+     "e": 12.72
+    },
+    {
+     "w": "your",
+     "s": 12.72,
+     "e": 12.84
+    },
+    {
+     "w": "mind",
+     "s": 12.84,
+     "e": 13.27
+    },
+    {
+     "w": "without",
+     "s": 13.27,
+     "e": 13.6
+    },
+    {
+     "w": "hearing",
+     "s": 13.6,
+     "e": 14.04
+    },
+    {
+     "w": "a",
+     "s": 14.04,
+     "e": 14.08
+    },
+    {
+     "w": "single",
+     "s": 14.08,
+     "e": 14.7
+    },
+    {
+     "w": "word.",
+     "s": 14.7,
+     "e": 15.09
+    }
+   ]
+  },
+  {
+   "text": "But first, let's run the famous home experiment. Our host Max is going to try it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "experiment",
+      "x": 40,
+      "y": 30,
+      "text": "The *cat food* test",
+      "size": 100,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "max",
+      "x": 60,
+      "y": 260,
+      "ref": "ph:device-mobile-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "stamp",
+      "at": "try",
+      "x": 700,
+      "y": 280,
+      "text": "HYPOTHETICAL",
+      "size": 60,
+      "color": "#8C6B5A",
+      "rot": -6,
+      "id": "hy"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "FUN: the cat food test",
+   "start": 38.06,
+   "vo": 5.585,
+   "dur": 5.985,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.04,
+     "e": 0.21
+    },
+    {
+     "w": "first,",
+     "s": 0.21,
+     "e": 0.79
+    },
+    {
+     "w": "let's",
+     "s": 0.89,
+     "e": 1.22
+    },
+    {
+     "w": "run",
+     "s": 1.22,
+     "e": 1.48
+    },
+    {
+     "w": "the",
+     "s": 1.48,
+     "e": 1.56
+    },
+    {
+     "w": "famous",
+     "s": 1.56,
+     "e": 2.05
+    },
+    {
+     "w": "home",
+     "s": 2.05,
+     "e": 2.42
+    },
+    {
+     "w": "experiment.",
+     "s": 2.42,
+     "e": 3.17
+    },
+    {
+     "w": "Our",
+     "s": 3.59,
+     "e": 3.75
+    },
+    {
+     "w": "host",
+     "s": 3.75,
+     "e": 4.04
+    },
+    {
+     "w": "Max",
+     "s": 4.04,
+     "e": 4.48
+    },
+    {
+     "w": "is",
+     "s": 4.48,
+     "e": 4.6
+    },
+    {
+     "w": "going",
+     "s": 4.6,
+     "e": 4.83
+    },
+    {
+     "w": "to",
+     "s": 4.83,
+     "e": 4.91
+    },
+    {
+     "w": "try",
+     "s": 4.91,
+     "e": 5.23
+    },
+    {
+     "w": "it.",
+     "s": 5.23,
+     "e": 5.39
+    }
+   ]
+  },
+  {
+   "text": "Max doesn't own a cat. So for one week, he says \"cat food\" near his phone. At breakfast. On the bus. Very loudly, in the office lift.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "cat",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:cat-fill",
+      "size": 180,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "stamp",
+      "at": "own",
+      "x": 60,
+      "y": 120,
+      "text": "NO CAT",
+      "size": 60,
+      "rot": -10,
+      "id": "nc"
+     },
+     {
+      "k": "icon",
+      "at": "breakfast",
+      "x": 360,
+      "y": 40,
+      "ref": "ph:coffee-fill",
+      "size": 130,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "breakfast",
+      "x": 330,
+      "y": 230,
+      "text": "breakfast",
+      "bg": "#2A2018",
+      "size": 28
+     },
+     {
+      "k": "icon",
+      "at": "bus",
+      "x": 600,
+      "y": 40,
+      "ref": "ph:bus-fill",
+      "size": 130,
+      "color": "#F5B400",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "bus",
+      "x": 600,
+      "y": 230,
+      "text": "bus",
+      "bg": "#2A2018",
+      "size": 28
+     },
+     {
+      "k": "icon",
+      "at": "lift",
+      "x": 840,
+      "y": 40,
+      "ref": "ph:elevator-fill",
+      "size": 130,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "loudly",
+      "x": 800,
+      "y": 230,
+      "text": "office lift",
+      "bg": "#2A2018",
+      "size": 28
+     },
+     {
+      "k": "big",
+      "at": "loudly",
+      "x": 300,
+      "y": 400,
+      "text": "\"CAT FOOD!\"",
+      "size": 120,
+      "color": "#E0471C",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 44.045,
+   "vo": 11.146,
+   "dur": 11.546,
+   "words": [
+    {
+     "w": "Max",
+     "s": 0.02,
+     "e": 0.44
+    },
+    {
+     "w": "doesn't",
+     "s": 0.44,
+     "e": 0.8
+    },
+    {
+     "w": "own",
+     "s": 0.8,
+     "e": 1.06
+    },
+    {
+     "w": "a",
+     "s": 1.06,
+     "e": 1.1
+    },
+    {
+     "w": "cat.",
+     "s": 1.1,
+     "e": 1.57
+    },
+    {
+     "w": "So",
+     "s": 2.03,
+     "e": 2.42
+    },
+    {
+     "w": "for",
+     "s": 2.42,
+     "e": 2.63
+    },
+    {
+     "w": "one",
+     "s": 2.63,
+     "e": 2.96
+    },
+    {
+     "w": "week,",
+     "s": 2.96,
+     "e": 3.26
+    },
+    {
+     "w": "he",
+     "s": 3.26,
+     "e": 3.58
+    },
+    {
+     "w": "says",
+     "s": 3.58,
+     "e": 3.9
+    },
+    {
+     "w": "\"cat",
+     "s": 3.9,
+     "e": 4.29
+    },
+    {
+     "w": "food\"",
+     "s": 4.29,
+     "e": 4.74
+    },
+    {
+     "w": "near",
+     "s": 4.74,
+     "e": 4.93
+    },
+    {
+     "w": "his",
+     "s": 4.93,
+     "e": 5.12
+    },
+    {
+     "w": "phone.",
+     "s": 5.12,
+     "e": 5.53
+    },
+    {
+     "w": "At",
+     "s": 6.11,
+     "e": 6.27
+    },
+    {
+     "w": "breakfast.",
+     "s": 6.27,
+     "e": 6.98
+    },
+    {
+     "w": "On",
+     "s": 7.26,
+     "e": 7.49
+    },
+    {
+     "w": "the",
+     "s": 7.49,
+     "e": 7.55
+    },
+    {
+     "w": "bus.",
+     "s": 7.55,
+     "e": 8.1
+    },
+    {
+     "w": "Very",
+     "s": 8.48,
+     "e": 9.05
+    },
+    {
+     "w": "loudly,",
+     "s": 9.05,
+     "e": 9.8
+    },
+    {
+     "w": "in",
+     "s": 9.8,
+     "e": 9.93
+    },
+    {
+     "w": "the",
+     "s": 9.93,
+     "e": 10.06
+    },
+    {
+     "w": "office",
+     "s": 10.06,
+     "e": 10.46
+    },
+    {
+     "w": "lift.",
+     "s": 10.46,
+     "e": 10.99
+    }
+   ]
+  },
+  {
+   "text": "Day one, nothing. Day two, nothing. Day four, there it is: a cat food ad. Max gasps. Case closed?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "one",
+      "x": 40,
+      "y": 40,
+      "big": "DAY 1",
+      "label": "MAX'S PHONE",
+      "color": "#1C7ED6",
+      "id": "day",
+      "icon": "ph:calendar-fill",
+      "w": 360
+     },
+     {
+      "k": "tag",
+      "at": "nothing",
+      "x": 60,
+      "y": 250,
+      "text": "nothing\u2026",
+      "bg": "#8C6B5A",
+      "size": 36
+     },
+     {
+      "k": "prop",
+      "at": "four",
+      "x": 560,
+      "y": 40,
+      "p": "phone",
+      "s": 0.9,
+      "id": "ph",
+      "in": "slide"
+     },
+     {
+      "k": "tag",
+      "at": "ad",
+      "x": 520,
+      "y": 420,
+      "text": "AD: Cat food, 50% off!",
+      "bg": "#F87736",
+      "size": 40,
+      "in": "slam"
+     },
+     {
+      "k": "big",
+      "at": "closed",
+      "x": 60,
+      "y": 520,
+      "text": "Case *closed*?",
+      "size": 90
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "day",
+      "at": "one",
+      "values": [
+       "DAY 1",
+       "DAY 2",
+       "DAY 3",
+       "DAY 4"
+      ],
+      "dt": 0.7
+     },
+     {
+      "do": "shake",
+      "id": "ph",
+      "at": "gasps"
+     }
+    ]
+   },
+   "start": 55.591,
+   "vo": 11.142,
+   "dur": 11.542,
+   "words": [
+    {
+     "w": "Day",
+     "s": 0.05,
+     "e": 0.29
+    },
+    {
+     "w": "one,",
+     "s": 0.29,
+     "e": 0.7
+    },
+    {
+     "w": "nothing.",
+     "s": 1.17,
+     "e": 1.75
+    },
+    {
+     "w": "Day",
+     "s": 2.26,
+     "e": 2.46
+    },
+    {
+     "w": "two,",
+     "s": 2.46,
+     "e": 2.94
+    },
+    {
+     "w": "nothing.",
+     "s": 3.3,
+     "e": 3.91
+    },
+    {
+     "w": "Day",
+     "s": 4.46,
+     "e": 4.65
+    },
+    {
+     "w": "four,",
+     "s": 4.65,
+     "e": 5.26
+    },
+    {
+     "w": "there",
+     "s": 5.59,
+     "e": 5.99
+    },
+    {
+     "w": "it",
+     "s": 5.99,
+     "e": 6.06
+    },
+    {
+     "w": "is:",
+     "s": 6.06,
+     "e": 6.52
+    },
+    {
+     "w": "a",
+     "s": 6.76,
+     "e": 6.85
+    },
+    {
+     "w": "cat",
+     "s": 6.85,
+     "e": 7.18
+    },
+    {
+     "w": "food",
+     "s": 7.18,
+     "e": 7.49
+    },
+    {
+     "w": "ad.",
+     "s": 7.49,
+     "e": 7.85
+    },
+    {
+     "w": "Max",
+     "s": 8.26,
+     "e": 8.72
+    },
+    {
+     "w": "gasps.",
+     "s": 8.72,
+     "e": 9.51
+    },
+    {
+     "w": "Case",
+     "s": 10.0,
+     "e": 10.28
+    },
+    {
+     "w": "closed?",
+     "s": 10.28,
+     "e": 10.96
+    }
+   ]
+  },
+  {
+   "text": "Not quite. Max saw about a thousand other ads that week and doesn't remember a single one. And on day three, he searched \"why does my cat food test not work\". Oops.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 40,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f0"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 240,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f1"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 440,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f2"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 640,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f3"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 840,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f4"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 40,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f5"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 240,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f6"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 440,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f7"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 640,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f8"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 840,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f9"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 40,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f10"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 240,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f11"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 440,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f12"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 640,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f13"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 840,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f14"
+     },
+     {
+      "k": "card",
+      "at": "thousand",
+      "x": 40,
+      "y": 280,
+      "big": "~1,000 ads",
+      "label": "FORGOTTEN THIS WEEK",
+      "color": "#8C6B5A",
+      "icon": "ph:eye-slash-fill"
+     },
+     {
+      "k": "card",
+      "at": "searched",
+      "x": 40,
+      "y": 470,
+      "icon": "ph:magnifying-glass-bold",
+      "label": "MAX SEARCHED",
+      "big": "\"why does my cat food test not work\"",
+      "bsize": 40,
+      "color": "#E0471C",
+      "id": "sr",
+      "in": "fly"
+     },
+     {
+      "k": "big",
+      "at": "oops",
+      "x": 900,
+      "y": 300,
+      "text": "Oops.",
+      "size": 110,
+      "color": "#E0471C",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 67.133,
+   "vo": 12.735,
+   "dur": 13.135,
+   "words": [
+    {
+     "w": "Not",
+     "s": 0.07,
+     "e": 0.36
+    },
+    {
+     "w": "quite.",
+     "s": 0.36,
+     "e": 0.91
+    },
+    {
+     "w": "Max",
+     "s": 1.48,
+     "e": 1.86
+    },
+    {
+     "w": "saw",
+     "s": 1.86,
+     "e": 2.04
+    },
+    {
+     "w": "about",
+     "s": 2.04,
+     "e": 2.34
+    },
+    {
+     "w": "a",
+     "s": 2.34,
+     "e": 2.39
+    },
+    {
+     "w": "thousand",
+     "s": 2.39,
+     "e": 3.05
+    },
+    {
+     "w": "other",
+     "s": 3.05,
+     "e": 3.42
+    },
+    {
+     "w": "ads",
+     "s": 3.42,
+     "e": 3.71
+    },
+    {
+     "w": "that",
+     "s": 3.71,
+     "e": 3.89
+    },
+    {
+     "w": "week",
+     "s": 3.89,
+     "e": 4.27
+    },
+    {
+     "w": "and",
+     "s": 4.27,
+     "e": 4.46
+    },
+    {
+     "w": "doesn't",
+     "s": 4.46,
+     "e": 4.78
+    },
+    {
+     "w": "remember",
+     "s": 4.78,
+     "e": 5.27
+    },
+    {
+     "w": "a",
+     "s": 5.27,
+     "e": 5.32
+    },
+    {
+     "w": "single",
+     "s": 5.32,
+     "e": 5.92
+    },
+    {
+     "w": "one.",
+     "s": 5.92,
+     "e": 6.36
+    },
+    {
+     "w": "And",
+     "s": 6.93,
+     "e": 7.07
+    },
+    {
+     "w": "on",
+     "s": 7.07,
+     "e": 7.21
+    },
+    {
+     "w": "day",
+     "s": 7.21,
+     "e": 7.41
+    },
+    {
+     "w": "three,",
+     "s": 7.41,
+     "e": 7.92
+    },
+    {
+     "w": "he",
+     "s": 7.92,
+     "e": 8.18
+    },
+    {
+     "w": "searched",
+     "s": 8.18,
+     "e": 8.73
+    },
+    {
+     "w": "\"why",
+     "s": 9.05,
+     "e": 9.33
+    },
+    {
+     "w": "does",
+     "s": 9.33,
+     "e": 9.51
+    },
+    {
+     "w": "my",
+     "s": 9.51,
+     "e": 9.66
+    },
+    {
+     "w": "cat",
+     "s": 9.66,
+     "e": 10.0
+    },
+    {
+     "w": "food",
+     "s": 10.0,
+     "e": 10.29
+    },
+    {
+     "w": "test",
+     "s": 10.29,
+     "e": 10.65
+    },
+    {
+     "w": "not",
+     "s": 10.65,
+     "e": 10.88
+    },
+    {
+     "w": "work\".",
+     "s": 10.88,
+     "e": 11.41
+    },
+    {
+     "w": "Oops.",
+     "s": 12.0,
+     "e": 12.55
+    }
+   ]
+  },
+  {
+   "text": "That's the problem with testing it yourself. You count the hits and forget the misses. So let's look at people who tested it properly.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "bars",
+      "at": "count",
+      "x": 40,
+      "y": 60,
+      "w": 800,
+      "id": "b",
+      "rows": [
+       [
+        "hits you remember",
+        0.1,
+        "#2F9E44"
+       ],
+       [
+        "misses you forget",
+        1.0,
+        "#8C6B5A"
+       ]
+      ],
+      "gap": 0.6
+     },
+     {
+      "k": "icon",
+      "at": "properly",
+      "x": 960,
+      "y": 60,
+      "ref": "ph:flask-fill",
+      "size": 170,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "properly",
+      "x": 900,
+      "y": 330,
+      "text": "test it properly \u2192",
+      "bg": "#7A5CFF",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 80.267,
+   "vo": 8.645,
+   "dur": 9.045,
+   "words": [
+    {
+     "w": "That's",
+     "s": 0.07,
+     "e": 0.34
+    },
+    {
+     "w": "the",
+     "s": 0.34,
+     "e": 0.47
+    },
+    {
+     "w": "problem",
+     "s": 0.47,
+     "e": 0.98
+    },
+    {
+     "w": "with",
+     "s": 0.98,
+     "e": 1.15
+    },
+    {
+     "w": "testing",
+     "s": 1.15,
+     "e": 1.56
+    },
+    {
+     "w": "it",
+     "s": 1.56,
+     "e": 1.63
+    },
+    {
+     "w": "yourself.",
+     "s": 1.63,
+     "e": 2.36
+    },
+    {
+     "w": "You",
+     "s": 2.77,
+     "e": 2.89
+    },
+    {
+     "w": "count",
+     "s": 2.89,
+     "e": 3.18
+    },
+    {
+     "w": "the",
+     "s": 3.18,
+     "e": 3.29
+    },
+    {
+     "w": "hits",
+     "s": 3.29,
+     "e": 3.81
+    },
+    {
+     "w": "and",
+     "s": 3.81,
+     "e": 4.0
+    },
+    {
+     "w": "forget",
+     "s": 4.0,
+     "e": 4.41
+    },
+    {
+     "w": "the",
+     "s": 4.41,
+     "e": 4.51
+    },
+    {
+     "w": "misses.",
+     "s": 4.51,
+     "e": 5.14
+    },
+    {
+     "w": "So",
+     "s": 5.67,
+     "e": 5.98
+    },
+    {
+     "w": "let's",
+     "s": 5.98,
+     "e": 6.43
+    },
+    {
+     "w": "look",
+     "s": 6.43,
+     "e": 6.63
+    },
+    {
+     "w": "at",
+     "s": 6.63,
+     "e": 6.72
+    },
+    {
+     "w": "people",
+     "s": 6.72,
+     "e": 7.1
+    },
+    {
+     "w": "who",
+     "s": 7.1,
+     "e": 7.24
+    },
+    {
+     "w": "tested",
+     "s": 7.24,
+     "e": 7.66
+    },
+    {
+     "w": "it",
+     "s": 7.66,
+     "e": 7.77
+    },
+    {
+     "w": "properly.",
+     "s": 7.77,
+     "e": 8.45
+    }
+   ]
+  },
+  {
+   "text": "In twenty eighteen, researchers at Northeastern University in Boston set out to catch phones in the act.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "researchers",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:graduation-cap-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "northeastern",
+      "x": 280,
+      "y": 60,
+      "text": "Northeastern *University*",
+      "size": 80
+     },
+     {
+      "k": "tag",
+      "at": "boston",
+      "x": 300,
+      "y": 190,
+      "text": "Boston \u00b7 2018",
+      "bg": "#2A2018",
+      "size": 36
+     },
+     {
+      "k": "icon",
+      "at": "act",
+      "x": 700,
+      "y": 330,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 200,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "prop",
+      "at": "phones",
+      "x": 60,
+      "y": 330,
+      "p": "phone",
+      "s": 0.8,
+      "id": "ph"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The scientists tested it",
+   "start": 89.312,
+   "vo": 6.8,
+   "dur": 7.2,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.06,
+     "e": 0.22
+    },
+    {
+     "w": "twenty",
+     "s": 0.22,
+     "e": 0.62
+    },
+    {
+     "w": "eighteen,",
+     "s": 0.62,
+     "e": 1.25
+    },
+    {
+     "w": "researchers",
+     "s": 1.5,
+     "e": 2.18
+    },
+    {
+     "w": "at",
+     "s": 2.18,
+     "e": 2.28
+    },
+    {
+     "w": "Northeastern",
+     "s": 2.28,
+     "e": 3.03
+    },
+    {
+     "w": "University",
+     "s": 3.03,
+     "e": 3.66
+    },
+    {
+     "w": "in",
+     "s": 3.66,
+     "e": 3.8
+    },
+    {
+     "w": "Boston",
+     "s": 3.8,
+     "e": 4.45
+    },
+    {
+     "w": "set",
+     "s": 4.45,
+     "e": 4.73
+    },
+    {
+     "w": "out",
+     "s": 4.73,
+     "e": 4.89
+    },
+    {
+     "w": "to",
+     "s": 4.89,
+     "e": 5.0
+    },
+    {
+     "w": "catch",
+     "s": 5.0,
+     "e": 5.45
+    },
+    {
+     "w": "phones",
+     "s": 5.45,
+     "e": 5.92
+    },
+    {
+     "w": "in",
+     "s": 5.92,
+     "e": 6.09
+    },
+    {
+     "w": "the",
+     "s": 6.09,
+     "e": 6.25
+    },
+    {
+     "w": "act.",
+     "s": 6.25,
+     "e": 6.69
+    }
+   ]
+  },
+  {
+   "text": "They used automated software to run more than seventeen thousand popular Android apps, including Facebook's own apps, and they captured every piece of data those apps sent out.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "android",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:android-icon",
+      "size": 150,
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "seventeen",
+      "x": 280,
+      "y": 40,
+      "big": "0 apps",
+      "label": "TESTED AUTOMATICALLY",
+      "color": "#1C7ED6",
+      "id": "n",
+      "icon": "ph:robot-fill",
+      "w": 560
+     },
+     {
+      "k": "logo",
+      "at": "facebook",
+      "x": 980,
+      "y": 40,
+      "ref": "logos:facebook",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "captured",
+      "x": 60,
+      "y": 360,
+      "ref": "ph:package-fill",
+      "size": 120,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "captured",
+      "x": 240,
+      "y": 400,
+      "w": 380,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "data",
+      "x": 680,
+      "y": 330,
+      "ref": "ph:database-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "n",
+      "at": "seventeen",
+      "values": [
+       "1,000 apps",
+       "5,000 apps",
+       "10,000 apps",
+       "17,260 apps"
+      ],
+      "dt": 0.18
+     }
+    ]
+   },
+   "start": 96.512,
+   "vo": 11.855,
+   "dur": 12.255,
+   "words": [
+    {
+     "w": "They",
+     "s": 0.03,
+     "e": 0.18
+    },
+    {
+     "w": "used",
+     "s": 0.18,
+     "e": 0.54
+    },
+    {
+     "w": "automated",
+     "s": 0.54,
+     "e": 1.16
+    },
+    {
+     "w": "software",
+     "s": 1.16,
+     "e": 1.83
+    },
+    {
+     "w": "to",
+     "s": 1.83,
+     "e": 1.96
+    },
+    {
+     "w": "run",
+     "s": 1.96,
+     "e": 2.2
+    },
+    {
+     "w": "more",
+     "s": 2.2,
+     "e": 2.41
+    },
+    {
+     "w": "than",
+     "s": 2.41,
+     "e": 2.59
+    },
+    {
+     "w": "seventeen",
+     "s": 2.59,
+     "e": 3.43
+    },
+    {
+     "w": "thousand",
+     "s": 3.43,
+     "e": 4.11
+    },
+    {
+     "w": "popular",
+     "s": 4.11,
+     "e": 4.7
+    },
+    {
+     "w": "Android",
+     "s": 4.7,
+     "e": 5.14
+    },
+    {
+     "w": "apps,",
+     "s": 5.14,
+     "e": 5.57
+    },
+    {
+     "w": "including",
+     "s": 5.78,
+     "e": 6.31
+    },
+    {
+     "w": "Facebook's",
+     "s": 6.31,
+     "e": 6.85
+    },
+    {
+     "w": "own",
+     "s": 6.85,
+     "e": 7.16
+    },
+    {
+     "w": "apps,",
+     "s": 7.16,
+     "e": 7.56
+    },
+    {
+     "w": "and",
+     "s": 7.96,
+     "e": 8.4
+    },
+    {
+     "w": "they",
+     "s": 8.4,
+     "e": 8.57
+    },
+    {
+     "w": "captured",
+     "s": 8.57,
+     "e": 9.12
+    },
+    {
+     "w": "every",
+     "s": 9.22,
+     "e": 9.64
+    },
+    {
+     "w": "piece",
+     "s": 9.64,
+     "e": 9.98
+    },
+    {
+     "w": "of",
+     "s": 9.98,
+     "e": 10.08
+    },
+    {
+     "w": "data",
+     "s": 10.08,
+     "e": 10.47
+    },
+    {
+     "w": "those",
+     "s": 10.47,
+     "e": 10.76
+    },
+    {
+     "w": "apps",
+     "s": 10.76,
+     "e": 11.06
+    },
+    {
+     "w": "sent",
+     "s": 11.06,
+     "e": 11.37
+    },
+    {
+     "w": "out.",
+     "s": 11.37,
+     "e": 11.7
+    }
+   ]
+  },
+  {
+   "text": "They were looking for audio leaving the phone. They found none. Not one app secretly switched on the microphone and sent recordings.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "audio",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:waveform-bold",
+      "size": 200,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "none",
+      "x": 340,
+      "y": 60,
+      "big": "AUDIO SENT: 0",
+      "label": "RESULT",
+      "color": "#2F9E44",
+      "in": "slam",
+      "icon": "ph:microphone-slash-fill"
+     },
+     {
+      "k": "stamp",
+      "at": "secretly",
+      "x": 360,
+      "y": 360,
+      "text": "NOT ONE APP",
+      "size": 90,
+      "color": "#2F9E44",
+      "rot": -5,
+      "id": "st",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 108.767,
+   "vo": 8.563,
+   "dur": 8.963,
+   "words": [
+    {
+     "w": "They",
+     "s": 0.06,
+     "e": 0.19
+    },
+    {
+     "w": "were",
+     "s": 0.19,
+     "e": 0.33
+    },
+    {
+     "w": "looking",
+     "s": 0.33,
+     "e": 0.69
+    },
+    {
+     "w": "for",
+     "s": 0.69,
+     "e": 0.89
+    },
+    {
+     "w": "audio",
+     "s": 0.89,
+     "e": 1.36
+    },
+    {
+     "w": "leaving",
+     "s": 1.36,
+     "e": 1.8
+    },
+    {
+     "w": "the",
+     "s": 1.8,
+     "e": 1.86
+    },
+    {
+     "w": "phone.",
+     "s": 1.86,
+     "e": 2.44
+    },
+    {
+     "w": "They",
+     "s": 2.82,
+     "e": 2.94
+    },
+    {
+     "w": "found",
+     "s": 2.94,
+     "e": 3.32
+    },
+    {
+     "w": "none.",
+     "s": 3.32,
+     "e": 3.75
+    },
+    {
+     "w": "Not",
+     "s": 4.21,
+     "e": 4.52
+    },
+    {
+     "w": "one",
+     "s": 4.52,
+     "e": 4.91
+    },
+    {
+     "w": "app",
+     "s": 4.91,
+     "e": 5.26
+    },
+    {
+     "w": "secretly",
+     "s": 5.26,
+     "e": 5.94
+    },
+    {
+     "w": "switched",
+     "s": 5.94,
+     "e": 6.38
+    },
+    {
+     "w": "on",
+     "s": 6.38,
+     "e": 6.51
+    },
+    {
+     "w": "the",
+     "s": 6.51,
+     "e": 6.57
+    },
+    {
+     "w": "microphone",
+     "s": 6.57,
+     "e": 7.23
+    },
+    {
+     "w": "and",
+     "s": 7.23,
+     "e": 7.35
+    },
+    {
+     "w": "sent",
+     "s": 7.35,
+     "e": 7.6
+    },
+    {
+     "w": "recordings.",
+     "s": 7.6,
+     "e": 8.38
+    }
+   ]
+  },
+  {
+   "text": "The researchers were careful to say this doesn't prove it never happens. But it was one of the biggest tests of its kind, and it came up empty.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "careful",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:warning-circle-fill",
+      "size": 170,
+      "color": "#F5B400",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "careful",
+      "x": 40,
+      "y": 260,
+      "text": "doesn't prove it never happens",
+      "bg": "#8C6B5A",
+      "size": 36
+     },
+     {
+      "k": "card",
+      "at": "biggest",
+      "x": 560,
+      "y": 60,
+      "big": "one of the biggest",
+      "label": "TESTS OF ITS KIND",
+      "color": "#F5B400",
+      "icon": "ph:trophy-fill"
+     },
+     {
+      "k": "big",
+      "at": "empty",
+      "x": 560,
+      "y": 330,
+      "text": "came up *empty*",
+      "size": 84,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 117.73,
+   "vo": 9.666,
+   "dur": 10.066,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.02,
+     "e": 0.15
+    },
+    {
+     "w": "researchers",
+     "s": 0.15,
+     "e": 0.83
+    },
+    {
+     "w": "were",
+     "s": 0.83,
+     "e": 0.99
+    },
+    {
+     "w": "careful",
+     "s": 0.99,
+     "e": 1.53
+    },
+    {
+     "w": "to",
+     "s": 1.53,
+     "e": 1.66
+    },
+    {
+     "w": "say",
+     "s": 1.66,
+     "e": 2.09
+    },
+    {
+     "w": "this",
+     "s": 2.09,
+     "e": 2.38
+    },
+    {
+     "w": "doesn't",
+     "s": 2.38,
+     "e": 2.78
+    },
+    {
+     "w": "prove",
+     "s": 2.78,
+     "e": 3.13
+    },
+    {
+     "w": "it",
+     "s": 3.13,
+     "e": 3.25
+    },
+    {
+     "w": "never",
+     "s": 3.25,
+     "e": 3.72
+    },
+    {
+     "w": "happens.",
+     "s": 3.72,
+     "e": 4.39
+    },
+    {
+     "w": "But",
+     "s": 4.87,
+     "e": 5.19
+    },
+    {
+     "w": "it",
+     "s": 5.19,
+     "e": 5.34
+    },
+    {
+     "w": "was",
+     "s": 5.34,
+     "e": 5.55
+    },
+    {
+     "w": "one",
+     "s": 5.55,
+     "e": 5.74
+    },
+    {
+     "w": "of",
+     "s": 5.74,
+     "e": 5.83
+    },
+    {
+     "w": "the",
+     "s": 5.83,
+     "e": 5.93
+    },
+    {
+     "w": "biggest",
+     "s": 5.93,
+     "e": 6.49
+    },
+    {
+     "w": "tests",
+     "s": 6.49,
+     "e": 6.84
+    },
+    {
+     "w": "of",
+     "s": 6.84,
+     "e": 6.95
+    },
+    {
+     "w": "its",
+     "s": 6.95,
+     "e": 7.1
+    },
+    {
+     "w": "kind,",
+     "s": 7.1,
+     "e": 7.87
+    },
+    {
+     "w": "and",
+     "s": 7.87,
+     "e": 8.31
+    },
+    {
+     "w": "it",
+     "s": 8.46,
+     "e": 8.59
+    },
+    {
+     "w": "came",
+     "s": 8.59,
+     "e": 8.9
+    },
+    {
+     "w": "up",
+     "s": 8.9,
+     "e": 9.04
+    },
+    {
+     "w": "empty.",
+     "s": 9.04,
+     "e": 9.46
+    }
+   ]
+  },
+  {
+   "text": "And they did find something creepy. Some apps were quietly recording the screen and sending videos of what users were doing to other companies.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "creepy",
+      "x": 40,
+      "y": 30,
+      "text": "Something *creepy*",
+      "size": 90,
+      "in": "slam"
+     },
+     {
+      "k": "prop",
+      "at": "recording",
+      "x": 60,
+      "y": 200,
+      "p": "phone",
+      "s": 0.8,
+      "id": "ph"
+     },
+     {
+      "k": "icon",
+      "at": "recording",
+      "x": 380,
+      "y": 220,
+      "ref": "ph:record-fill",
+      "size": 130,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "sending",
+      "x": 560,
+      "y": 280,
+      "w": 300,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "companies",
+      "x": 900,
+      "y": 200,
+      "ref": "ph:buildings-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "videos",
+      "x": 380,
+      "y": 450,
+      "text": "videos of your screen",
+      "bg": "#E0471C",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 127.796,
+   "vo": 9.584,
+   "dur": 9.984,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.09,
+     "e": 0.32
+    },
+    {
+     "w": "they",
+     "s": 0.32,
+     "e": 0.44
+    },
+    {
+     "w": "did",
+     "s": 0.44,
+     "e": 0.85
+    },
+    {
+     "w": "find",
+     "s": 0.85,
+     "e": 1.2
+    },
+    {
+     "w": "something",
+     "s": 1.2,
+     "e": 1.59
+    },
+    {
+     "w": "creepy.",
+     "s": 1.59,
+     "e": 2.14
+    },
+    {
+     "w": "Some",
+     "s": 2.8,
+     "e": 3.19
+    },
+    {
+     "w": "apps",
+     "s": 3.19,
+     "e": 3.51
+    },
+    {
+     "w": "were",
+     "s": 3.51,
+     "e": 3.69
+    },
+    {
+     "w": "quietly",
+     "s": 3.69,
+     "e": 4.34
+    },
+    {
+     "w": "recording",
+     "s": 4.34,
+     "e": 4.97
+    },
+    {
+     "w": "the",
+     "s": 4.97,
+     "e": 5.03
+    },
+    {
+     "w": "screen",
+     "s": 5.03,
+     "e": 5.64
+    },
+    {
+     "w": "and",
+     "s": 5.64,
+     "e": 5.9
+    },
+    {
+     "w": "sending",
+     "s": 5.9,
+     "e": 6.3
+    },
+    {
+     "w": "videos",
+     "s": 6.3,
+     "e": 6.87
+    },
+    {
+     "w": "of",
+     "s": 6.87,
+     "e": 7.0
+    },
+    {
+     "w": "what",
+     "s": 7.0,
+     "e": 7.15
+    },
+    {
+     "w": "users",
+     "s": 7.15,
+     "e": 7.61
+    },
+    {
+     "w": "were",
+     "s": 7.61,
+     "e": 7.77
+    },
+    {
+     "w": "doing",
+     "s": 7.77,
+     "e": 8.27
+    },
+    {
+     "w": "to",
+     "s": 8.27,
+     "e": 8.42
+    },
+    {
+     "w": "other",
+     "s": 8.42,
+     "e": 8.7
+    },
+    {
+     "w": "companies.",
+     "s": 8.7,
+     "e": 9.44
+    }
+   ]
+  },
+  {
+   "text": "One food delivery app, GoPuff, was sending screen recordings to an analytics firm without telling users. It stopped after the researchers got in touch. No microphone needed.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "delivery",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:moped-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "gopuff",
+      "x": 40,
+      "y": 250,
+      "text": "GoPuff app",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "arrow",
+      "at": "sending",
+      "x": 300,
+      "y": 120,
+      "w": 300,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "analytics",
+      "x": 640,
+      "y": 40,
+      "ref": "ph:chart-bar-fill",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "analytics",
+      "x": 620,
+      "y": 250,
+      "text": "analytics firm",
+      "bg": "#2A2018",
+      "size": 34
+     },
+     {
+      "k": "tag",
+      "at": "stopped",
+      "x": 300,
+      "y": 400,
+      "text": "stopped after researchers got in touch",
+      "bg": "#2F9E44",
+      "size": 34
+     },
+     {
+      "k": "big",
+      "at": "needed",
+      "x": 300,
+      "y": 500,
+      "text": "No *microphone* needed",
+      "size": 80
+     }
+    ],
+    "acts": []
+   },
+   "start": 137.78,
+   "vo": 11.94,
+   "dur": 12.34,
+   "words": [
+    {
+     "w": "One",
+     "s": 0.01,
+     "e": 0.33
+    },
+    {
+     "w": "food",
+     "s": 0.33,
+     "e": 0.62
+    },
+    {
+     "w": "delivery",
+     "s": 0.62,
+     "e": 1.11
+    },
+    {
+     "w": "app,",
+     "s": 1.11,
+     "e": 1.6
+    },
+    {
+     "w": "GoPuff,",
+     "s": 1.6,
+     "e": 2.07
+    },
+    {
+     "w": "was",
+     "s": 2.07,
+     "e": 2.41
+    },
+    {
+     "w": "sending",
+     "s": 2.81,
+     "e": 3.27
+    },
+    {
+     "w": "screen",
+     "s": 3.27,
+     "e": 3.71
+    },
+    {
+     "w": "recordings",
+     "s": 3.71,
+     "e": 4.32
+    },
+    {
+     "w": "to",
+     "s": 4.32,
+     "e": 4.47
+    },
+    {
+     "w": "an",
+     "s": 4.47,
+     "e": 4.6
+    },
+    {
+     "w": "analytics",
+     "s": 4.6,
+     "e": 5.25
+    },
+    {
+     "w": "firm",
+     "s": 5.25,
+     "e": 5.61
+    },
+    {
+     "w": "without",
+     "s": 5.61,
+     "e": 5.99
+    },
+    {
+     "w": "telling",
+     "s": 5.99,
+     "e": 6.39
+    },
+    {
+     "w": "users.",
+     "s": 6.39,
+     "e": 7.03
+    },
+    {
+     "w": "It",
+     "s": 7.5,
+     "e": 7.66
+    },
+    {
+     "w": "stopped",
+     "s": 7.66,
+     "e": 8.13
+    },
+    {
+     "w": "after",
+     "s": 8.13,
+     "e": 8.39
+    },
+    {
+     "w": "the",
+     "s": 8.39,
+     "e": 8.5
+    },
+    {
+     "w": "researchers",
+     "s": 8.5,
+     "e": 9.1
+    },
+    {
+     "w": "got",
+     "s": 9.1,
+     "e": 9.31
+    },
+    {
+     "w": "in",
+     "s": 9.31,
+     "e": 9.41
+    },
+    {
+     "w": "touch.",
+     "s": 9.41,
+     "e": 9.9
+    },
+    {
+     "w": "No",
+     "s": 10.3,
+     "e": 10.56
+    },
+    {
+     "w": "microphone",
+     "s": 10.56,
+     "e": 11.17
+    },
+    {
+     "w": "needed.",
+     "s": 11.17,
+     "e": 11.55
+    }
+   ]
+  },
+  {
+   "text": "Facebook has also said, on the record, since twenty sixteen, that it does not use your phone's microphone to choose your ads.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "facebook",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:facebook",
+      "size": 160,
+      "paper": true
+     },
+     {
+      "k": "clip",
+      "at": "record",
+      "x": 300,
+      "y": 40,
+      "by": "FACEBOOK, JUNE 2016",
+      "text": "\"Facebook does not use your phone's microphone to inform ads\"",
+      "hi": "does not use",
+      "w": 880,
+      "id": "cl"
+     },
+     {
+      "k": "icon",
+      "at": "choose",
+      "x": 60,
+      "y": 380,
+      "ref": "ph:microphone-slash-fill",
+      "size": 150,
+      "color": "#2F9E44",
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "start": 150.12,
+   "vo": 8.192,
+   "dur": 8.592,
+   "words": [
+    {
+     "w": "Facebook",
+     "s": 0.04,
+     "e": 0.58
+    },
+    {
+     "w": "has",
+     "s": 0.58,
+     "e": 0.74
+    },
+    {
+     "w": "also",
+     "s": 0.74,
+     "e": 1.21
+    },
+    {
+     "w": "said,",
+     "s": 1.21,
+     "e": 1.69
+    },
+    {
+     "w": "on",
+     "s": 1.83,
+     "e": 2.09
+    },
+    {
+     "w": "the",
+     "s": 2.09,
+     "e": 2.17
+    },
+    {
+     "w": "record,",
+     "s": 2.17,
+     "e": 2.82
+    },
+    {
+     "w": "since",
+     "s": 2.82,
+     "e": 3.15
+    },
+    {
+     "w": "twenty",
+     "s": 3.15,
+     "e": 3.46
+    },
+    {
+     "w": "sixteen,",
+     "s": 3.46,
+     "e": 4.11
+    },
+    {
+     "w": "that",
+     "s": 4.47,
+     "e": 4.61
+    },
+    {
+     "w": "it",
+     "s": 4.61,
+     "e": 4.7
+    },
+    {
+     "w": "does",
+     "s": 4.7,
+     "e": 4.95
+    },
+    {
+     "w": "not",
+     "s": 4.95,
+     "e": 5.31
+    },
+    {
+     "w": "use",
+     "s": 5.31,
+     "e": 5.62
+    },
+    {
+     "w": "your",
+     "s": 5.62,
+     "e": 5.74
+    },
+    {
+     "w": "phone's",
+     "s": 5.74,
+     "e": 6.14
+    },
+    {
+     "w": "microphone",
+     "s": 6.14,
+     "e": 6.83
+    },
+    {
+     "w": "to",
+     "s": 6.83,
+     "e": 6.94
+    },
+    {
+     "w": "choose",
+     "s": 6.94,
+     "e": 7.28
+    },
+    {
+     "w": "your",
+     "s": 7.28,
+     "e": 7.45
+    },
+    {
+     "w": "ads.",
+     "s": 7.45,
+     "e": 8.01
+    }
+   ]
+  },
+  {
+   "text": "Then, in twenty twenty-four, a leak seemed to prove the opposite.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "leak",
+      "x": 40,
+      "y": 60,
+      "text": "Then\u2026 a *leak*",
+      "size": 120,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "leak",
+      "x": 700,
+      "y": 60,
+      "ref": "ph:file-text-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "twenty-four",
+      "x": 60,
+      "y": 260,
+      "text": "2024",
+      "bg": "#2A2018",
+      "size": 48
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The leak",
+   "start": 158.713,
+   "vo": 4.729,
+   "dur": 5.129,
+   "words": [
+    {
+     "w": "Then,",
+     "s": 0.02,
+     "e": 0.56
+    },
+    {
+     "w": "in",
+     "s": 0.71,
+     "e": 0.9
+    },
+    {
+     "w": "twenty",
+     "s": 0.9,
+     "e": 1.23
+    },
+    {
+     "w": "twenty-four,",
+     "s": 1.23,
+     "e": 1.32
+    },
+    {
+     "w": "a",
+     "s": 1.32,
+     "e": 1.38
+    },
+    {
+     "w": "leak",
+     "s": 1.38,
+     "e": 1.54
+    },
+    {
+     "w": "seemed",
+     "s": 1.54,
+     "e": 1.81
+    },
+    {
+     "w": "to",
+     "s": 1.81,
+     "e": 2.08
+    },
+    {
+     "w": "prove",
+     "s": 2.33,
+     "e": 2.68
+    },
+    {
+     "w": "the",
+     "s": 2.68,
+     "e": 2.78
+    },
+    {
+     "w": "opposite.",
+     "s": 2.78,
+     "e": 3.35
+    }
+   ]
+  },
+  {
+   "text": "The news site 404 Media published a sales pitch deck from Cox Media Group, a big American marketing company. It advertised something called \"Active Listening\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "clip",
+      "at": "published",
+      "x": 40,
+      "y": 40,
+      "by": "404 MEDIA \u00b7 SEPTEMBER 2024",
+      "text": "Cox Media Group pitch deck: \"Active Listening\"",
+      "hi": "\"Active Listening\"",
+      "w": 760,
+      "id": "cl"
+     },
+     {
+      "k": "icon",
+      "at": "marketing",
+      "x": 900,
+      "y": 40,
+      "ref": "ph:megaphone-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "company",
+      "x": 880,
+      "y": 260,
+      "text": "big US marketing company",
+      "bg": "#2A2018",
+      "size": 30
+     }
+    ],
+    "acts": []
+   },
+   "start": 163.842,
+   "vo": 11.254,
+   "dur": 11.654,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.04,
+     "e": 0.17
+    },
+    {
+     "w": "news",
+     "s": 0.17,
+     "e": 0.46
+    },
+    {
+     "w": "site",
+     "s": 0.46,
+     "e": 0.81
+    },
+    {
+     "w": "404",
+     "s": 0.81,
+     "e": 1.57
+    },
+    {
+     "w": "Media",
+     "s": 1.57,
+     "e": 2.13
+    },
+    {
+     "w": "published",
+     "s": 2.13,
+     "e": 2.65
+    },
+    {
+     "w": "a",
+     "s": 2.65,
+     "e": 2.69
+    },
+    {
+     "w": "sales",
+     "s": 2.69,
+     "e": 3.17
+    },
+    {
+     "w": "pitch",
+     "s": 3.17,
+     "e": 3.5
+    },
+    {
+     "w": "deck",
+     "s": 3.5,
+     "e": 3.77
+    },
+    {
+     "w": "from",
+     "s": 3.77,
+     "e": 4.0
+    },
+    {
+     "w": "Cox",
+     "s": 4.0,
+     "e": 4.45
+    },
+    {
+     "w": "Media",
+     "s": 4.45,
+     "e": 4.82
+    },
+    {
+     "w": "Group,",
+     "s": 4.82,
+     "e": 5.18
+    },
+    {
+     "w": "a",
+     "s": 5.56,
+     "e": 5.64
+    },
+    {
+     "w": "big",
+     "s": 5.64,
+     "e": 6.01
+    },
+    {
+     "w": "American",
+     "s": 6.01,
+     "e": 6.54
+    },
+    {
+     "w": "marketing",
+     "s": 6.54,
+     "e": 7.01
+    },
+    {
+     "w": "company.",
+     "s": 7.01,
+     "e": 7.51
+    },
+    {
+     "w": "It",
+     "s": 8.11,
+     "e": 8.24
+    },
+    {
+     "w": "advertised",
+     "s": 8.24,
+     "e": 8.88
+    },
+    {
+     "w": "something",
+     "s": 8.88,
+     "e": 9.28
+    },
+    {
+     "w": "called",
+     "s": 9.28,
+     "e": 9.7
+    },
+    {
+     "w": "\"Active",
+     "s": 9.94,
+     "e": 10.45
+    },
+    {
+     "w": "Listening\".",
+     "s": 10.45,
+     "e": 10.99
+    }
+   ]
+  },
+  {
+   "text": "The deck claimed it could use voice data from smart devices to find people who were talking about products, and then target those people with ads.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "smart",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:speaker-hifi-fill",
+      "size": 160,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "voice",
+      "x": 260,
+      "y": 60,
+      "ref": "ph:waveform-bold",
+      "size": 160,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "find",
+      "x": 460,
+      "y": 120,
+      "w": 260,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "target",
+      "x": 780,
+      "y": 40,
+      "ref": "ph:target-bold",
+      "size": 190,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "claimed",
+      "x": 60,
+      "y": 330,
+      "text": "THE CLAIM (sales deck)",
+      "bg": "#8C6B5A",
+      "size": 40
+     }
+    ],
+    "acts": []
+   },
+   "start": 175.496,
+   "vo": 8.648,
+   "dur": 9.048,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.07,
+     "e": 0.18
+    },
+    {
+     "w": "deck",
+     "s": 0.18,
+     "e": 0.55
+    },
+    {
+     "w": "claimed",
+     "s": 0.55,
+     "e": 0.97
+    },
+    {
+     "w": "it",
+     "s": 0.97,
+     "e": 1.06
+    },
+    {
+     "w": "could",
+     "s": 1.06,
+     "e": 1.21
+    },
+    {
+     "w": "use",
+     "s": 1.21,
+     "e": 1.5
+    },
+    {
+     "w": "voice",
+     "s": 1.5,
+     "e": 1.87
+    },
+    {
+     "w": "data",
+     "s": 1.87,
+     "e": 2.21
+    },
+    {
+     "w": "from",
+     "s": 2.21,
+     "e": 2.43
+    },
+    {
+     "w": "smart",
+     "s": 2.43,
+     "e": 2.83
+    },
+    {
+     "w": "devices",
+     "s": 2.83,
+     "e": 3.48
+    },
+    {
+     "w": "to",
+     "s": 3.48,
+     "e": 3.6
+    },
+    {
+     "w": "find",
+     "s": 3.6,
+     "e": 4.0
+    },
+    {
+     "w": "people",
+     "s": 4.0,
+     "e": 4.36
+    },
+    {
+     "w": "who",
+     "s": 4.36,
+     "e": 4.47
+    },
+    {
+     "w": "were",
+     "s": 4.47,
+     "e": 4.6
+    },
+    {
+     "w": "talking",
+     "s": 4.6,
+     "e": 5.08
+    },
+    {
+     "w": "about",
+     "s": 5.08,
+     "e": 5.31
+    },
+    {
+     "w": "products,",
+     "s": 5.31,
+     "e": 6.0
+    },
+    {
+     "w": "and",
+     "s": 6.28,
+     "e": 6.44
+    },
+    {
+     "w": "then",
+     "s": 6.44,
+     "e": 6.6
+    },
+    {
+     "w": "target",
+     "s": 6.6,
+     "e": 7.07
+    },
+    {
+     "w": "those",
+     "s": 7.07,
+     "e": 7.3
+    },
+    {
+     "w": "people",
+     "s": 7.3,
+     "e": 7.68
+    },
+    {
+     "w": "with",
+     "s": 7.68,
+     "e": 7.83
+    },
+    {
+     "w": "ads.",
+     "s": 7.83,
+     "e": 8.44
+    }
+   ]
+  },
+  {
+   "text": "Google removed the company from its advertising partner program. Amazon said it had nothing to do with it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "google",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:google-icon",
+      "size": 150,
+      "paper": true
+     },
+     {
+      "k": "stamp",
+      "at": "removed",
+      "x": 30,
+      "y": 240,
+      "text": "REMOVED",
+      "size": 70,
+      "rot": -8,
+      "id": "rm",
+      "in": "slam"
+     },
+     {
+      "k": "logo",
+      "at": "amazon",
+      "x": 600,
+      "y": 40,
+      "ref": "simple-icons:amazon",
+      "size": 150,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "nothing",
+      "x": 560,
+      "y": 260,
+      "text": "\"nothing to do with it\"",
+      "bg": "#2A2018",
+      "size": 34
+     }
+    ],
+    "acts": []
+   },
+   "start": 184.544,
+   "vo": 6.884,
+   "dur": 7.284,
+   "words": [
+    {
+     "w": "Google",
+     "s": 0.06,
+     "e": 0.48
+    },
+    {
+     "w": "removed",
+     "s": 0.48,
+     "e": 1.02
+    },
+    {
+     "w": "the",
+     "s": 1.02,
+     "e": 1.11
+    },
+    {
+     "w": "company",
+     "s": 1.11,
+     "e": 1.61
+    },
+    {
+     "w": "from",
+     "s": 1.61,
+     "e": 1.82
+    },
+    {
+     "w": "its",
+     "s": 1.82,
+     "e": 1.95
+    },
+    {
+     "w": "advertising",
+     "s": 1.95,
+     "e": 2.76
+    },
+    {
+     "w": "partner",
+     "s": 2.76,
+     "e": 3.11
+    },
+    {
+     "w": "program.",
+     "s": 3.11,
+     "e": 3.73
+    },
+    {
+     "w": "Amazon",
+     "s": 4.23,
+     "e": 4.83
+    },
+    {
+     "w": "said",
+     "s": 4.83,
+     "e": 5.14
+    },
+    {
+     "w": "it",
+     "s": 5.14,
+     "e": 5.27
+    },
+    {
+     "w": "had",
+     "s": 5.27,
+     "e": 5.48
+    },
+    {
+     "w": "nothing",
+     "s": 5.48,
+     "e": 5.95
+    },
+    {
+     "w": "to",
+     "s": 5.95,
+     "e": 6.06
+    },
+    {
+     "w": "do",
+     "s": 6.06,
+     "e": 6.27
+    },
+    {
+     "w": "with",
+     "s": 6.27,
+     "e": 6.46
+    },
+    {
+     "w": "it.",
+     "s": 6.46,
+     "e": 6.7
+    }
+   ]
+  },
+  {
+   "text": "But a sales deck is not evidence. Nobody has shown that this product worked as advertised, or that it ever ran at any real scale.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "deck",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:presentation-chart-fill",
+      "size": 200,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "evidence",
+      "x": 360,
+      "y": 80,
+      "text": "\u2260",
+      "size": 200,
+      "color": "#E0471C"
+     },
+     {
+      "k": "icon",
+      "at": "evidence",
+      "x": 560,
+      "y": 60,
+      "ref": "ph:seal-check-fill",
+      "size": 200,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "nobody",
+      "x": 60,
+      "y": 400,
+      "text": "never shown to work at real scale",
+      "bg": "#E0471C",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 191.828,
+   "vo": 9.157,
+   "dur": 9.557,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.04,
+     "e": 0.2
+    },
+    {
+     "w": "a",
+     "s": 0.2,
+     "e": 0.25
+    },
+    {
+     "w": "sales",
+     "s": 0.25,
+     "e": 0.77
+    },
+    {
+     "w": "deck",
+     "s": 0.77,
+     "e": 1.09
+    },
+    {
+     "w": "is",
+     "s": 1.09,
+     "e": 1.35
+    },
+    {
+     "w": "not",
+     "s": 1.35,
+     "e": 1.75
+    },
+    {
+     "w": "evidence.",
+     "s": 1.75,
+     "e": 2.47
+    },
+    {
+     "w": "Nobody",
+     "s": 2.98,
+     "e": 3.4
+    },
+    {
+     "w": "has",
+     "s": 3.4,
+     "e": 3.57
+    },
+    {
+     "w": "shown",
+     "s": 3.57,
+     "e": 3.99
+    },
+    {
+     "w": "that",
+     "s": 3.99,
+     "e": 4.12
+    },
+    {
+     "w": "this",
+     "s": 4.12,
+     "e": 4.3
+    },
+    {
+     "w": "product",
+     "s": 4.3,
+     "e": 4.74
+    },
+    {
+     "w": "worked",
+     "s": 4.74,
+     "e": 5.1
+    },
+    {
+     "w": "as",
+     "s": 5.1,
+     "e": 5.26
+    },
+    {
+     "w": "advertised,",
+     "s": 5.26,
+     "e": 6.1
+    },
+    {
+     "w": "or",
+     "s": 6.1,
+     "e": 6.54
+    },
+    {
+     "w": "that",
+     "s": 6.54,
+     "e": 6.72
+    },
+    {
+     "w": "it",
+     "s": 6.72,
+     "e": 6.92
+    },
+    {
+     "w": "ever",
+     "s": 6.92,
+     "e": 7.25
+    },
+    {
+     "w": "ran",
+     "s": 7.25,
+     "e": 7.63
+    },
+    {
+     "w": "at",
+     "s": 7.63,
+     "e": 7.79
+    },
+    {
+     "w": "any",
+     "s": 7.79,
+     "e": 8.07
+    },
+    {
+     "w": "real",
+     "s": 8.07,
+     "e": 8.37
+    },
+    {
+     "w": "scale.",
+     "s": 8.37,
+     "e": 8.94
+    }
+   ]
+  },
+  {
+   "text": "And here's a strange twist: phones have listened to ads before. Just not to you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "twist",
+      "x": 40,
+      "y": 60,
+      "text": "A strange *twist*",
+      "size": 110,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "ads",
+      "x": 60,
+      "y": 300,
+      "ref": "ph:television-simple-fill",
+      "size": 180,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "listened",
+      "x": 340,
+      "y": 300,
+      "ref": "ph:ear-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "you",
+      "x": 600,
+      "y": 360,
+      "text": "\u2026just not to you",
+      "bg": "#2A2018",
+      "size": 44
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Secret TV whistles",
+   "start": 201.385,
+   "vo": 6.12,
+   "dur": 6.52,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.05,
+     "e": 0.32
+    },
+    {
+     "w": "here's",
+     "s": 0.32,
+     "e": 0.59
+    },
+    {
+     "w": "a",
+     "s": 0.59,
+     "e": 0.62
+    },
+    {
+     "w": "strange",
+     "s": 0.62,
+     "e": 1.24
+    },
+    {
+     "w": "twist:",
+     "s": 1.24,
+     "e": 1.86
+    },
+    {
+     "w": "phones",
+     "s": 2.27,
+     "e": 2.76
+    },
+    {
+     "w": "have",
+     "s": 2.76,
+     "e": 2.93
+    },
+    {
+     "w": "listened",
+     "s": 2.93,
+     "e": 3.34
+    },
+    {
+     "w": "to",
+     "s": 3.34,
+     "e": 3.42
+    },
+    {
+     "w": "ads",
+     "s": 3.42,
+     "e": 3.86
+    },
+    {
+     "w": "before.",
+     "s": 3.86,
+     "e": 4.4
+    },
+    {
+     "w": "Just",
+     "s": 4.9,
+     "e": 5.19
+    },
+    {
+     "w": "not",
+     "s": 5.19,
+     "e": 5.41
+    },
+    {
+     "w": "to",
+     "s": 5.41,
+     "e": 5.53
+    },
+    {
+     "w": "you.",
+     "s": 5.53,
+     "e": 5.89
+    }
+   ]
+  },
+  {
+   "text": "Around twenty fifteen, a company called SilverPush made code for apps that listened for secret sounds hidden inside TV ads. Whistles too high for humans to hear, but not too high for a phone.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "silverpush",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:television-simple-fill",
+      "size": 190,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "prop",
+      "at": "sounds",
+      "x": 280,
+      "y": 60,
+      "p": "waves",
+      "s": 0.8,
+      "id": "wv"
+     },
+     {
+      "k": "icon",
+      "at": "humans",
+      "x": 700,
+      "y": 40,
+      "ref": "ph:ear-slash-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "humans",
+      "x": 660,
+      "y": 230,
+      "text": "humans: can't hear",
+      "bg": "#E0471C",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "phone",
+      "x": 960,
+      "y": 40,
+      "ref": "ph:device-mobile-fill",
+      "size": 150,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "phone",
+      "x": 940,
+      "y": 230,
+      "text": "phone: hears it",
+      "bg": "#2F9E44",
+      "size": 30
+     },
+     {
+      "k": "tag",
+      "at": "silverpush",
+      "x": 60,
+      "y": 330,
+      "text": "SilverPush",
+      "bg": "#F87736",
+      "size": 44
+     }
+    ],
+    "acts": []
+   },
+   "start": 207.905,
+   "vo": 13.326,
+   "dur": 13.726,
+   "words": [
+    {
+     "w": "Around",
+     "s": 0.1,
+     "e": 0.44
+    },
+    {
+     "w": "twenty",
+     "s": 0.44,
+     "e": 0.75
+    },
+    {
+     "w": "fifteen,",
+     "s": 0.75,
+     "e": 1.55
+    },
+    {
+     "w": "a",
+     "s": 1.77,
+     "e": 1.84
+    },
+    {
+     "w": "company",
+     "s": 1.84,
+     "e": 2.23
+    },
+    {
+     "w": "called",
+     "s": 2.23,
+     "e": 2.76
+    },
+    {
+     "w": "SilverPush",
+     "s": 2.76,
+     "e": 2.81
+    },
+    {
+     "w": "made",
+     "s": 2.76,
+     "e": 2.85
+    },
+    {
+     "w": "code",
+     "s": 2.85,
+     "e": 2.94
+    },
+    {
+     "w": "for",
+     "s": 2.94,
+     "e": 3.04
+    },
+    {
+     "w": "apps",
+     "s": 3.04,
+     "e": 3.2
+    },
+    {
+     "w": "that",
+     "s": 3.2,
+     "e": 3.54
+    },
+    {
+     "w": "listened",
+     "s": 3.54,
+     "e": 3.9
+    },
+    {
+     "w": "for",
+     "s": 3.9,
+     "e": 4.17
+    },
+    {
+     "w": "secret",
+     "s": 4.17,
+     "e": 4.43
+    },
+    {
+     "w": "sounds",
+     "s": 4.43,
+     "e": 4.8
+    },
+    {
+     "w": "hidden",
+     "s": 4.8,
+     "e": 5.11
+    },
+    {
+     "w": "inside",
+     "s": 5.11,
+     "e": 5.43
+    },
+    {
+     "w": "TV",
+     "s": 5.59,
+     "e": 6.0
+    },
+    {
+     "w": "ads.",
+     "s": 6.0,
+     "e": 6.3
+    },
+    {
+     "w": "Whistles",
+     "s": 6.55,
+     "e": 7.5
+    },
+    {
+     "w": "too",
+     "s": 7.5,
+     "e": 7.72
+    },
+    {
+     "w": "high",
+     "s": 7.72,
+     "e": 7.79
+    },
+    {
+     "w": "for",
+     "s": 7.79,
+     "e": 7.88
+    },
+    {
+     "w": "humans",
+     "s": 7.88,
+     "e": 8.47
+    },
+    {
+     "w": "to",
+     "s": 9.59,
+     "e": 9.9
+    },
+    {
+     "w": "hear,",
+     "s": 9.9,
+     "e": 10.14
+    },
+    {
+     "w": "but",
+     "s": 10.14,
+     "e": 10.45
+    },
+    {
+     "w": "not",
+     "s": 10.45,
+     "e": 10.79
+    },
+    {
+     "w": "too",
+     "s": 10.79,
+     "e": 10.92
+    },
+    {
+     "w": "high",
+     "s": 10.92,
+     "e": 11.04
+    },
+    {
+     "w": "for",
+     "s": 11.04,
+     "e": 11.35
+    },
+    {
+     "w": "a",
+     "s": 12.02,
+     "e": 12.38
+    },
+    {
+     "w": "phone.",
+     "s": 12.38,
+     "e": 12.62
+    }
+   ]
+  },
+  {
+   "text": "If your phone heard the whistle, the app knew you had just watched that ad.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "whistle",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:waveform-bold",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "app",
+      "x": 290,
+      "y": 120,
+      "w": 220,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "knew",
+      "x": 560,
+      "y": 40,
+      "ref": "ph:check-circle-fill",
+      "size": 190,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "watched",
+      "x": 60,
+      "y": 380,
+      "text": "You *watched* that ad",
+      "size": 90
+     }
+    ],
+    "acts": []
+   },
+   "start": 221.631,
+   "vo": 4.731,
+   "dur": 5.131,
+   "words": [
+    {
+     "w": "If",
+     "s": 0.03,
+     "e": 0.21
+    },
+    {
+     "w": "your",
+     "s": 0.21,
+     "e": 0.32
+    },
+    {
+     "w": "phone",
+     "s": 0.32,
+     "e": 0.72
+    },
+    {
+     "w": "heard",
+     "s": 0.72,
+     "e": 1.01
+    },
+    {
+     "w": "the",
+     "s": 1.01,
+     "e": 1.07
+    },
+    {
+     "w": "whistle,",
+     "s": 1.07,
+     "e": 1.69
+    },
+    {
+     "w": "the",
+     "s": 1.96,
+     "e": 2.14
+    },
+    {
+     "w": "app",
+     "s": 2.14,
+     "e": 2.45
+    },
+    {
+     "w": "knew",
+     "s": 2.45,
+     "e": 2.83
+    },
+    {
+     "w": "you",
+     "s": 2.83,
+     "e": 3.03
+    },
+    {
+     "w": "had",
+     "s": 3.03,
+     "e": 3.19
+    },
+    {
+     "w": "just",
+     "s": 3.19,
+     "e": 3.56
+    },
+    {
+     "w": "watched",
+     "s": 3.56,
+     "e": 3.94
+    },
+    {
+     "w": "that",
+     "s": 3.94,
+     "e": 4.16
+    },
+    {
+     "w": "ad.",
+     "s": 4.16,
+     "e": 4.48
+    }
+   ]
+  },
+  {
+   "text": "In twenty sixteen, the US Federal Trade Commission sent warning letters to twelve app developers whose apps contained that code, because users were never told.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "commission",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:scales-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "clip",
+      "at": "letters",
+      "x": 300,
+      "y": 40,
+      "by": "US FEDERAL TRADE COMMISSION \u00b7 MARCH 2016",
+      "text": "Warning letters to 12 app developers using SilverPush code",
+      "hi": "12 app developers",
+      "w": 820,
+      "id": "cl"
+     },
+     {
+      "k": "tag",
+      "at": "told",
+      "x": 320,
+      "y": 330,
+      "text": "users were never told",
+      "bg": "#E0471C",
+      "size": 40
+     }
+    ],
+    "acts": []
+   },
+   "start": 226.762,
+   "vo": 10.205,
+   "dur": 10.605,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.06,
+     "e": 0.22
+    },
+    {
+     "w": "twenty",
+     "s": 0.22,
+     "e": 0.52
+    },
+    {
+     "w": "sixteen,",
+     "s": 0.52,
+     "e": 1.33
+    },
+    {
+     "w": "the",
+     "s": 1.51,
+     "e": 1.6
+    },
+    {
+     "w": "US",
+     "s": 1.6,
+     "e": 1.99
+    },
+    {
+     "w": "Federal",
+     "s": 1.99,
+     "e": 2.38
+    },
+    {
+     "w": "Trade",
+     "s": 2.38,
+     "e": 2.74
+    },
+    {
+     "w": "Commission",
+     "s": 2.74,
+     "e": 3.24
+    },
+    {
+     "w": "sent",
+     "s": 3.24,
+     "e": 3.49
+    },
+    {
+     "w": "warning",
+     "s": 3.49,
+     "e": 3.97
+    },
+    {
+     "w": "letters",
+     "s": 3.97,
+     "e": 4.37
+    },
+    {
+     "w": "to",
+     "s": 4.37,
+     "e": 4.5
+    },
+    {
+     "w": "twelve",
+     "s": 4.5,
+     "e": 5.06
+    },
+    {
+     "w": "app",
+     "s": 5.06,
+     "e": 5.36
+    },
+    {
+     "w": "developers",
+     "s": 5.36,
+     "e": 6.07
+    },
+    {
+     "w": "whose",
+     "s": 6.07,
+     "e": 6.31
+    },
+    {
+     "w": "apps",
+     "s": 6.31,
+     "e": 6.67
+    },
+    {
+     "w": "contained",
+     "s": 6.67,
+     "e": 7.27
+    },
+    {
+     "w": "that",
+     "s": 7.27,
+     "e": 7.47
+    },
+    {
+     "w": "code,",
+     "s": 7.47,
+     "e": 7.92
+    },
+    {
+     "w": "because",
+     "s": 8.25,
+     "e": 8.58
+    },
+    {
+     "w": "users",
+     "s": 8.58,
+     "e": 9.02
+    },
+    {
+     "w": "were",
+     "s": 9.02,
+     "e": 9.16
+    },
+    {
+     "w": "never",
+     "s": 9.16,
+     "e": 9.53
+    },
+    {
+     "w": "told.",
+     "s": 9.53,
+     "e": 10.07
+    }
+   ]
+  },
+  {
+   "text": "So the technology to listen is real. What scientists haven't found is phones quietly recording your conversations to sell you shoes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "real",
+      "x": 40,
+      "y": 40,
+      "big": "REAL",
+      "label": "TECH TO LISTEN",
+      "color": "#2F9E44",
+      "icon": "ph:check-circle-fill"
+     },
+     {
+      "k": "card",
+      "at": "found",
+      "x": 560,
+      "y": 40,
+      "big": "NOT FOUND",
+      "label": "SECRET CONVERSATION RECORDING",
+      "color": "#E0471C",
+      "icon": "ph:x-circle-fill"
+     },
+     {
+      "k": "icon",
+      "at": "shoes",
+      "x": 400,
+      "y": 330,
+      "ref": "ph:sneaker-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "start": 237.368,
+   "vo": 9.332,
+   "dur": 9.732,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.03,
+     "e": 0.39
+    },
+    {
+     "w": "the",
+     "s": 0.39,
+     "e": 0.57
+    },
+    {
+     "w": "technology",
+     "s": 0.57,
+     "e": 1.26
+    },
+    {
+     "w": "to",
+     "s": 1.26,
+     "e": 1.39
+    },
+    {
+     "w": "listen",
+     "s": 1.39,
+     "e": 1.99
+    },
+    {
+     "w": "is",
+     "s": 1.99,
+     "e": 2.2
+    },
+    {
+     "w": "real.",
+     "s": 2.2,
+     "e": 2.67
+    },
+    {
+     "w": "What",
+     "s": 3.26,
+     "e": 3.41
+    },
+    {
+     "w": "scientists",
+     "s": 3.41,
+     "e": 4.05
+    },
+    {
+     "w": "haven't",
+     "s": 4.05,
+     "e": 4.51
+    },
+    {
+     "w": "found",
+     "s": 4.51,
+     "e": 4.98
+    },
+    {
+     "w": "is",
+     "s": 4.98,
+     "e": 5.28
+    },
+    {
+     "w": "phones",
+     "s": 5.28,
+     "e": 5.66
+    },
+    {
+     "w": "quietly",
+     "s": 5.66,
+     "e": 6.26
+    },
+    {
+     "w": "recording",
+     "s": 6.26,
+     "e": 6.78
+    },
+    {
+     "w": "your",
+     "s": 6.78,
+     "e": 6.89
+    },
+    {
+     "w": "conversations",
+     "s": 6.89,
+     "e": 7.87
+    },
+    {
+     "w": "to",
+     "s": 7.87,
+     "e": 8.0
+    },
+    {
+     "w": "sell",
+     "s": 8.0,
+     "e": 8.26
+    },
+    {
+     "w": "you",
+     "s": 8.26,
+     "e": 8.43
+    },
+    {
+     "w": "shoes.",
+     "s": 8.43,
+     "e": 9.14
+    }
+   ]
+  },
+  {
+   "text": "There is one place where devices really did record people, though. Voice assistants.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "voice",
+      "x": 40,
+      "y": 40,
+      "text": "Voice *assistants*",
+      "size": 110,
+      "in": "slam"
+     },
+     {
+      "k": "logo",
+      "at": "voice",
+      "x": 60,
+      "y": 260,
+      "ref": "logos:apple",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "logo",
+      "at": "voice",
+      "x": 280,
+      "y": 260,
+      "ref": "logos:google-icon",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "logo",
+      "at": "voice",
+      "x": 500,
+      "y": 260,
+      "ref": "simple-icons:amazon",
+      "size": 130,
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "When devices DID record",
+   "start": 247.1,
+   "vo": 6.032,
+   "dur": 6.432,
+   "words": [
+    {
+     "w": "There",
+     "s": 0.07,
+     "e": 0.29
+    },
+    {
+     "w": "is",
+     "s": 0.29,
+     "e": 0.57
+    },
+    {
+     "w": "one",
+     "s": 0.57,
+     "e": 0.96
+    },
+    {
+     "w": "place",
+     "s": 0.96,
+     "e": 1.35
+    },
+    {
+     "w": "where",
+     "s": 1.35,
+     "e": 1.52
+    },
+    {
+     "w": "devices",
+     "s": 1.52,
+     "e": 2.11
+    },
+    {
+     "w": "really",
+     "s": 2.11,
+     "e": 2.64
+    },
+    {
+     "w": "did",
+     "s": 2.64,
+     "e": 3.02
+    },
+    {
+     "w": "record",
+     "s": 3.02,
+     "e": 3.46
+    },
+    {
+     "w": "people,",
+     "s": 3.46,
+     "e": 3.82
+    },
+    {
+     "w": "though.",
+     "s": 3.82,
+     "e": 4.13
+    },
+    {
+     "w": "Voice",
+     "s": 4.72,
+     "e": 5.04
+    },
+    {
+     "w": "assistants.",
+     "s": 5.04,
+     "e": 5.81
+    }
+   ]
+  },
+  {
+   "text": "Your phone listens for one thing only: a wake word, like \"Hey Siri\" or \"Hey Google\". A tiny part of the phone checks for it, right on the device.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "hey",
+      "x": 40,
+      "y": 60,
+      "text": "\"Hey Siri\"",
+      "bg": "#2A2018",
+      "size": 60
+     },
+     {
+      "k": "tag",
+      "at": "hey",
+      "x": 440,
+      "y": 60,
+      "text": "\"Hey Google\"",
+      "bg": "#1C7ED6",
+      "size": 60,
+      "id": "hg"
+     },
+     {
+      "k": "prop",
+      "at": "tiny",
+      "x": 60,
+      "y": 240,
+      "p": "chip",
+      "text": "wake",
+      "s": 0.8,
+      "id": "ch"
+     },
+     {
+      "k": "tag",
+      "at": "device",
+      "x": 340,
+      "y": 330,
+      "text": "checked right on the device",
+      "bg": "#2F9E44",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 253.532,
+   "vo": 10.638,
+   "dur": 11.038,
+   "words": [
+    {
+     "w": "Your",
+     "s": 0.06,
+     "e": 0.2
+    },
+    {
+     "w": "phone",
+     "s": 0.2,
+     "e": 0.61
+    },
+    {
+     "w": "listens",
+     "s": 0.61,
+     "e": 1.08
+    },
+    {
+     "w": "for",
+     "s": 1.08,
+     "e": 1.24
+    },
+    {
+     "w": "one",
+     "s": 1.24,
+     "e": 1.64
+    },
+    {
+     "w": "thing",
+     "s": 1.64,
+     "e": 1.93
+    },
+    {
+     "w": "only:",
+     "s": 1.93,
+     "e": 2.45
+    },
+    {
+     "w": "a",
+     "s": 2.92,
+     "e": 2.98
+    },
+    {
+     "w": "wake",
+     "s": 2.98,
+     "e": 3.35
+    },
+    {
+     "w": "word,",
+     "s": 3.35,
+     "e": 3.71
+    },
+    {
+     "w": "like",
+     "s": 3.88,
+     "e": 4.32
+    },
+    {
+     "w": "\"Hey",
+     "s": 4.43,
+     "e": 4.62
+    },
+    {
+     "w": "Siri\"",
+     "s": 4.62,
+     "e": 5.17
+    },
+    {
+     "w": "or",
+     "s": 5.21,
+     "e": 5.65
+    },
+    {
+     "w": "\"Hey",
+     "s": 5.74,
+     "e": 5.94
+    },
+    {
+     "w": "Google\".",
+     "s": 5.94,
+     "e": 6.42
+    },
+    {
+     "w": "A",
+     "s": 7.15,
+     "e": 7.23
+    },
+    {
+     "w": "tiny",
+     "s": 7.23,
+     "e": 7.7
+    },
+    {
+     "w": "part",
+     "s": 7.7,
+     "e": 7.95
+    },
+    {
+     "w": "of",
+     "s": 7.95,
+     "e": 8.06
+    },
+    {
+     "w": "the",
+     "s": 8.06,
+     "e": 8.14
+    },
+    {
+     "w": "phone",
+     "s": 8.14,
+     "e": 8.49
+    },
+    {
+     "w": "checks",
+     "s": 8.49,
+     "e": 8.83
+    },
+    {
+     "w": "for",
+     "s": 8.83,
+     "e": 9.12
+    },
+    {
+     "w": "it,",
+     "s": 9.12,
+     "e": 9.18
+    },
+    {
+     "w": "right",
+     "s": 9.36,
+     "e": 9.66
+    },
+    {
+     "w": "on",
+     "s": 9.66,
+     "e": 9.79
+    },
+    {
+     "w": "the",
+     "s": 9.79,
+     "e": 9.87
+    },
+    {
+     "w": "device.",
+     "s": 9.87,
+     "e": 10.44
+    }
+   ]
+  },
+  {
+   "text": "But sometimes it mishears. Someone says \"seriously\" and Siri thinks you called her. It wakes up and records a private conversation by mistake.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "seriously",
+      "x": 40,
+      "y": 40,
+      "icon": "ph:chat-circle-dots-fill",
+      "label": "SOMEONE SAYS",
+      "big": "\"Seriously\u2026\"",
+      "color": "#F87736",
+      "id": "s"
+     },
+     {
+      "k": "logo",
+      "at": "siri",
+      "x": 620,
+      "y": 40,
+      "ref": "logos:apple",
+      "size": 140,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "called",
+      "x": 600,
+      "y": 240,
+      "text": "Siri: \"You called?\"",
+      "bg": "#2A2018",
+      "size": 40,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "records",
+      "x": 60,
+      "y": 330,
+      "ref": "ph:record-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "mistake",
+      "x": 260,
+      "y": 380,
+      "text": "records by mistake",
+      "bg": "#E0471C",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 264.57,
+   "vo": 10.374,
+   "dur": 10.774,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.07,
+     "e": 0.22
+    },
+    {
+     "w": "sometimes",
+     "s": 0.22,
+     "e": 1.0
+    },
+    {
+     "w": "it",
+     "s": 1.0,
+     "e": 1.19
+    },
+    {
+     "w": "mishears.",
+     "s": 1.19,
+     "e": 1.24
+    },
+    {
+     "w": "Someone",
+     "s": 1.19,
+     "e": 1.37
+    },
+    {
+     "w": "says",
+     "s": 1.37,
+     "e": 1.52
+    },
+    {
+     "w": "\"seriously\"",
+     "s": 1.52,
+     "e": 2.06
+    },
+    {
+     "w": "and",
+     "s": 2.62,
+     "e": 2.9
+    },
+    {
+     "w": "Siri",
+     "s": 2.9,
+     "e": 3.17
+    },
+    {
+     "w": "thinks",
+     "s": 3.17,
+     "e": 3.61
+    },
+    {
+     "w": "you",
+     "s": 3.61,
+     "e": 3.99
+    },
+    {
+     "w": "called",
+     "s": 3.99,
+     "e": 4.21
+    },
+    {
+     "w": "her.",
+     "s": 4.56,
+     "e": 4.62
+    },
+    {
+     "w": "It",
+     "s": 4.62,
+     "e": 4.91
+    },
+    {
+     "w": "wakes",
+     "s": 5.0,
+     "e": 5.23
+    },
+    {
+     "w": "up",
+     "s": 5.23,
+     "e": 5.29
+    },
+    {
+     "w": "and",
+     "s": 5.29,
+     "e": 5.44
+    },
+    {
+     "w": "records",
+     "s": 5.44,
+     "e": 5.94
+    },
+    {
+     "w": "a",
+     "s": 7.17,
+     "e": 7.34
+    },
+    {
+     "w": "private",
+     "s": 7.34,
+     "e": 8.06
+    },
+    {
+     "w": "conversation",
+     "s": 8.06,
+     "e": 9.37
+    },
+    {
+     "w": "by",
+     "s": 9.37,
+     "e": 9.5
+    },
+    {
+     "w": "mistake.",
+     "s": 9.5,
+     "e": 10.22
+    }
+   ]
+  },
+  {
+   "text": "And once the wake word is heard, your request goes to the company's servers to be understood. That's the moment a recording can be stored.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "wake",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:device-mobile-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "request",
+      "x": 260,
+      "y": 120,
+      "w": 320,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "servers",
+      "x": 640,
+      "y": 40,
+      "ref": "ph:hard-drives-fill",
+      "size": 200,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "stored",
+      "x": 600,
+      "y": 330,
+      "text": "where a recording can be stored",
+      "bg": "#F87736",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 275.344,
+   "vo": 8.477,
+   "dur": 8.877,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.01,
+     "e": 0.23
+    },
+    {
+     "w": "once",
+     "s": 0.23,
+     "e": 0.47
+    },
+    {
+     "w": "the",
+     "s": 0.47,
+     "e": 0.56
+    },
+    {
+     "w": "wake",
+     "s": 0.56,
+     "e": 0.89
+    },
+    {
+     "w": "word",
+     "s": 0.89,
+     "e": 1.08
+    },
+    {
+     "w": "is",
+     "s": 1.08,
+     "e": 1.23
+    },
+    {
+     "w": "heard,",
+     "s": 1.23,
+     "e": 1.81
+    },
+    {
+     "w": "your",
+     "s": 2.06,
+     "e": 2.2
+    },
+    {
+     "w": "request",
+     "s": 2.2,
+     "e": 2.73
+    },
+    {
+     "w": "goes",
+     "s": 2.73,
+     "e": 3.02
+    },
+    {
+     "w": "to",
+     "s": 3.02,
+     "e": 3.13
+    },
+    {
+     "w": "the",
+     "s": 3.13,
+     "e": 3.21
+    },
+    {
+     "w": "company's",
+     "s": 3.21,
+     "e": 3.67
+    },
+    {
+     "w": "servers",
+     "s": 3.67,
+     "e": 4.27
+    },
+    {
+     "w": "to",
+     "s": 4.27,
+     "e": 4.37
+    },
+    {
+     "w": "be",
+     "s": 4.37,
+     "e": 4.55
+    },
+    {
+     "w": "understood.",
+     "s": 4.55,
+     "e": 5.24
+    },
+    {
+     "w": "That's",
+     "s": 5.73,
+     "e": 6.13
+    },
+    {
+     "w": "the",
+     "s": 6.13,
+     "e": 6.22
+    },
+    {
+     "w": "moment",
+     "s": 6.22,
+     "e": 6.73
+    },
+    {
+     "w": "a",
+     "s": 6.73,
+     "e": 6.76
+    },
+    {
+     "w": "recording",
+     "s": 6.76,
+     "e": 7.46
+    },
+    {
+     "w": "can",
+     "s": 7.46,
+     "e": 7.64
+    },
+    {
+     "w": "be",
+     "s": 7.64,
+     "e": 7.74
+    },
+    {
+     "w": "stored.",
+     "s": 7.74,
+     "e": 8.34
+    }
+   ]
+  },
+  {
+   "text": "In twenty twenty-five, Apple agreed to pay ninety-five million dollars to settle a US lawsuit over accidental Siri recordings. Google later agreed to pay sixty-eight million dollars over the same problem with Google Assistant. Neither company admitted wrongdoing.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "apple",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:apple",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "ninety-five",
+      "x": 220,
+      "y": 40,
+      "big": "$95 million",
+      "label": "APPLE \u00b7 SIRI \u00b7 2025",
+      "color": "#2F9E44",
+      "in": "slam",
+      "icon": "ph:currency-dollar-bold"
+     },
+     {
+      "k": "logo",
+      "at": "google",
+      "x": 40,
+      "y": 290,
+      "ref": "logos:google-icon",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "sixty-eight",
+      "x": 220,
+      "y": 290,
+      "big": "$68 million",
+      "label": "GOOGLE \u00b7 ASSISTANT",
+      "color": "#2F9E44",
+      "in": "slam",
+      "icon": "ph:currency-dollar-bold"
+     },
+     {
+      "k": "tag",
+      "at": "admitted",
+      "x": 760,
+      "y": 500,
+      "text": "no wrongdoing admitted",
+      "bg": "#8C6B5A",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 284.221,
+   "vo": 17.337,
+   "dur": 17.737,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.08,
+     "e": 0.24
+    },
+    {
+     "w": "twenty",
+     "s": 0.24,
+     "e": 0.84
+    },
+    {
+     "w": "twenty-five,",
+     "s": 0.84,
+     "e": 1.61
+    },
+    {
+     "w": "Apple",
+     "s": 1.61,
+     "e": 1.96
+    },
+    {
+     "w": "agreed",
+     "s": 1.96,
+     "e": 2.32
+    },
+    {
+     "w": "to",
+     "s": 2.32,
+     "e": 2.41
+    },
+    {
+     "w": "pay",
+     "s": 2.41,
+     "e": 2.66
+    },
+    {
+     "w": "ninety-five",
+     "s": 2.66,
+     "e": 2.71
+    },
+    {
+     "w": "million",
+     "s": 2.66,
+     "e": 3.11
+    },
+    {
+     "w": "dollars",
+     "s": 3.11,
+     "e": 3.45
+    },
+    {
+     "w": "to",
+     "s": 3.45,
+     "e": 3.51
+    },
+    {
+     "w": "settle",
+     "s": 3.51,
+     "e": 3.8
+    },
+    {
+     "w": "a",
+     "s": 3.8,
+     "e": 3.83
+    },
+    {
+     "w": "US",
+     "s": 3.83,
+     "e": 4.03
+    },
+    {
+     "w": "lawsuit",
+     "s": 4.03,
+     "e": 5.27
+    },
+    {
+     "w": "over",
+     "s": 5.27,
+     "e": 5.38
+    },
+    {
+     "w": "accidental",
+     "s": 5.38,
+     "e": 5.81
+    },
+    {
+     "w": "Siri",
+     "s": 5.81,
+     "e": 6.12
+    },
+    {
+     "w": "recordings.",
+     "s": 6.28,
+     "e": 7.41
+    },
+    {
+     "w": "Google",
+     "s": 7.45,
+     "e": 8.03
+    },
+    {
+     "w": "later",
+     "s": 9.12,
+     "e": 9.77
+    },
+    {
+     "w": "agreed",
+     "s": 9.77,
+     "e": 10.09
+    },
+    {
+     "w": "to",
+     "s": 10.09,
+     "e": 10.17
+    },
+    {
+     "w": "pay",
+     "s": 10.17,
+     "e": 10.4
+    },
+    {
+     "w": "sixty-eight",
+     "s": 10.4,
+     "e": 11.23
+    },
+    {
+     "w": "million",
+     "s": 11.23,
+     "e": 11.62
+    },
+    {
+     "w": "dollars",
+     "s": 11.62,
+     "e": 12.07
+    },
+    {
+     "w": "over",
+     "s": 12.07,
+     "e": 12.28
+    },
+    {
+     "w": "the",
+     "s": 12.28,
+     "e": 12.39
+    },
+    {
+     "w": "same",
+     "s": 12.39,
+     "e": 12.84
+    },
+    {
+     "w": "problem",
+     "s": 12.84,
+     "e": 13.32
+    },
+    {
+     "w": "with",
+     "s": 13.32,
+     "e": 13.5
+    },
+    {
+     "w": "Google",
+     "s": 13.5,
+     "e": 13.87
+    },
+    {
+     "w": "Assistant.",
+     "s": 13.87,
+     "e": 14.53
+    },
+    {
+     "w": "Neither",
+     "s": 15.09,
+     "e": 15.46
+    },
+    {
+     "w": "company",
+     "s": 15.46,
+     "e": 16.03
+    },
+    {
+     "w": "admitted",
+     "s": 16.03,
+     "e": 16.48
+    },
+    {
+     "w": "wrongdoing.",
+     "s": 16.48,
+     "e": 17.09
+    }
+   ]
+  },
+  {
+   "text": "Smart speakers have their own stories. In twenty nineteen, Bloomberg reported that thousands of Amazon workers and contractors were listening to Alexa clips to improve it, some reviewing up to a thousand clips a shift.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "smart",
+      "x": 40,
+      "y": 40,
+      "ref": "simple-icons:amazon",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "clip",
+      "at": "bloomberg",
+      "x": 240,
+      "y": 40,
+      "by": "BLOOMBERG \u00b7 APRIL 2019",
+      "text": "Thousands of Amazon staff listen to Alexa clips",
+      "hi": "listen to Alexa clips",
+      "w": 780,
+      "id": "cl"
+     },
+     {
+      "k": "icon",
+      "at": "listening",
+      "x": 60,
+      "y": 330,
+      "ref": "ph:headphones-fill",
+      "size": 160,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "thousand",
+      "x": 300,
+      "y": 330,
+      "big": "up to 1,000",
+      "label": "CLIPS PER SHIFT",
+      "color": "#E0471C",
+      "icon": "ph:list-numbers-bold"
+     }
+    ],
+    "acts": []
+   },
+   "start": 301.958,
+   "vo": 14.378,
+   "dur": 14.778,
+   "words": [
+    {
+     "w": "Smart",
+     "s": 0.04,
+     "e": 0.41
+    },
+    {
+     "w": "speakers",
+     "s": 0.41,
+     "e": 0.91
+    },
+    {
+     "w": "have",
+     "s": 0.91,
+     "e": 1.12
+    },
+    {
+     "w": "their",
+     "s": 1.12,
+     "e": 1.31
+    },
+    {
+     "w": "own",
+     "s": 1.31,
+     "e": 1.6
+    },
+    {
+     "w": "stories.",
+     "s": 1.6,
+     "e": 2.26
+    },
+    {
+     "w": "In",
+     "s": 2.74,
+     "e": 2.88
+    },
+    {
+     "w": "twenty",
+     "s": 2.88,
+     "e": 3.18
+    },
+    {
+     "w": "nineteen,",
+     "s": 3.18,
+     "e": 3.92
+    },
+    {
+     "w": "Bloomberg",
+     "s": 4.12,
+     "e": 4.66
+    },
+    {
+     "w": "reported",
+     "s": 4.66,
+     "e": 5.19
+    },
+    {
+     "w": "that",
+     "s": 5.19,
+     "e": 5.34
+    },
+    {
+     "w": "thousands",
+     "s": 5.34,
+     "e": 6.08
+    },
+    {
+     "w": "of",
+     "s": 6.08,
+     "e": 6.18
+    },
+    {
+     "w": "Amazon",
+     "s": 6.18,
+     "e": 6.72
+    },
+    {
+     "w": "workers",
+     "s": 6.72,
+     "e": 7.19
+    },
+    {
+     "w": "and",
+     "s": 7.19,
+     "e": 7.32
+    },
+    {
+     "w": "contractors",
+     "s": 7.32,
+     "e": 8.17
+    },
+    {
+     "w": "were",
+     "s": 8.39,
+     "e": 8.6
+    },
+    {
+     "w": "listening",
+     "s": 8.6,
+     "e": 9.07
+    },
+    {
+     "w": "to",
+     "s": 9.07,
+     "e": 9.2
+    },
+    {
+     "w": "Alexa",
+     "s": 9.2,
+     "e": 9.69
+    },
+    {
+     "w": "clips",
+     "s": 9.69,
+     "e": 10.05
+    },
+    {
+     "w": "to",
+     "s": 10.05,
+     "e": 10.21
+    },
+    {
+     "w": "improve",
+     "s": 10.21,
+     "e": 10.65
+    },
+    {
+     "w": "it,",
+     "s": 10.65,
+     "e": 10.84
+    },
+    {
+     "w": "some",
+     "s": 11.27,
+     "e": 11.64
+    },
+    {
+     "w": "reviewing",
+     "s": 11.64,
+     "e": 12.11
+    },
+    {
+     "w": "up",
+     "s": 12.11,
+     "e": 12.29
+    },
+    {
+     "w": "to",
+     "s": 12.29,
+     "e": 12.46
+    },
+    {
+     "w": "a",
+     "s": 12.46,
+     "e": 12.5
+    },
+    {
+     "w": "thousand",
+     "s": 12.5,
+     "e": 13.16
+    },
+    {
+     "w": "clips",
+     "s": 13.16,
+     "e": 13.53
+    },
+    {
+     "w": "a",
+     "s": 13.53,
+     "e": 13.58
+    },
+    {
+     "w": "shift.",
+     "s": 13.58,
+     "e": 14.23
+    }
+   ]
+  },
+  {
+   "text": "And in twenty twenty-three, Amazon paid twenty-five million dollars to settle US charges that it kept children's Alexa voice recordings for years, even after parents asked for them to be deleted. Amazon denied breaking the law.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "children",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:baby-fill",
+      "size": 160,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "twenty-five",
+      "x": 260,
+      "y": 40,
+      "big": "$25 million",
+      "label": "AMAZON \u00b7 FTC \u00b7 2023",
+      "color": "#E0471C",
+      "in": "slam",
+      "icon": "ph:gavel-fill"
+     },
+     {
+      "k": "tag",
+      "at": "deleted",
+      "x": 260,
+      "y": 280,
+      "text": "kept kids' recordings after delete requests",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "tag",
+      "at": "denied",
+      "x": 260,
+      "y": 380,
+      "text": "Amazon denied breaking the law",
+      "bg": "#8C6B5A",
+      "size": 30
+     }
+    ],
+    "acts": []
+   },
+   "start": 316.736,
+   "vo": 15.603,
+   "dur": 16.003,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.06,
+     "e": 0.23
+    },
+    {
+     "w": "in",
+     "s": 0.23,
+     "e": 0.35
+    },
+    {
+     "w": "twenty",
+     "s": 0.35,
+     "e": 1.0
+    },
+    {
+     "w": "twenty-three,",
+     "s": 1.0,
+     "e": 1.79
+    },
+    {
+     "w": "Amazon",
+     "s": 1.79,
+     "e": 2.33
+    },
+    {
+     "w": "paid",
+     "s": 2.33,
+     "e": 2.75
+    },
+    {
+     "w": "twenty-five",
+     "s": 2.75,
+     "e": 3.42
+    },
+    {
+     "w": "million",
+     "s": 3.42,
+     "e": 4.01
+    },
+    {
+     "w": "dollars",
+     "s": 4.01,
+     "e": 4.53
+    },
+    {
+     "w": "to",
+     "s": 4.53,
+     "e": 4.66
+    },
+    {
+     "w": "settle",
+     "s": 4.66,
+     "e": 5.0
+    },
+    {
+     "w": "US",
+     "s": 5.0,
+     "e": 5.46
+    },
+    {
+     "w": "charges",
+     "s": 5.46,
+     "e": 6.04
+    },
+    {
+     "w": "that",
+     "s": 6.37,
+     "e": 6.51
+    },
+    {
+     "w": "it",
+     "s": 6.51,
+     "e": 6.61
+    },
+    {
+     "w": "kept",
+     "s": 6.61,
+     "e": 6.89
+    },
+    {
+     "w": "children's",
+     "s": 6.89,
+     "e": 7.5
+    },
+    {
+     "w": "Alexa",
+     "s": 7.5,
+     "e": 7.97
+    },
+    {
+     "w": "voice",
+     "s": 7.97,
+     "e": 8.34
+    },
+    {
+     "w": "recordings",
+     "s": 8.34,
+     "e": 8.92
+    },
+    {
+     "w": "for",
+     "s": 8.92,
+     "e": 9.09
+    },
+    {
+     "w": "years,",
+     "s": 9.09,
+     "e": 9.81
+    },
+    {
+     "w": "even",
+     "s": 10.16,
+     "e": 10.49
+    },
+    {
+     "w": "after",
+     "s": 10.49,
+     "e": 10.96
+    },
+    {
+     "w": "parents",
+     "s": 10.96,
+     "e": 11.36
+    },
+    {
+     "w": "asked",
+     "s": 11.36,
+     "e": 11.66
+    },
+    {
+     "w": "for",
+     "s": 11.66,
+     "e": 11.79
+    },
+    {
+     "w": "them",
+     "s": 11.79,
+     "e": 11.98
+    },
+    {
+     "w": "to",
+     "s": 11.98,
+     "e": 12.09
+    },
+    {
+     "w": "be",
+     "s": 12.09,
+     "e": 12.24
+    },
+    {
+     "w": "deleted.",
+     "s": 12.24,
+     "e": 12.81
+    },
+    {
+     "w": "Amazon",
+     "s": 13.37,
+     "e": 13.94
+    },
+    {
+     "w": "denied",
+     "s": 13.94,
+     "e": 14.49
+    },
+    {
+     "w": "breaking",
+     "s": 14.49,
+     "e": 14.91
+    },
+    {
+     "w": "the",
+     "s": 14.91,
+     "e": 14.97
+    },
+    {
+     "w": "law.",
+     "s": 14.97,
+     "e": 15.41
+    }
+   ]
+  },
+  {
+   "text": "So the risk is real. But those were accidents, and data kept too long. Not an ad machine listening to your dinner.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "real",
+      "x": 40,
+      "y": 40,
+      "big": "risk is real",
+      "label": "VERDICT",
+      "color": "#E0471C",
+      "icon": "ph:warning-fill"
+     },
+     {
+      "k": "tag",
+      "at": "accidents",
+      "x": 40,
+      "y": 280,
+      "text": "accidents",
+      "bg": "#F87736",
+      "size": 48
+     },
+     {
+      "k": "tag",
+      "at": "long",
+      "x": 340,
+      "y": 280,
+      "text": "data kept too long",
+      "bg": "#F87736",
+      "size": 48
+     },
+     {
+      "k": "stamp",
+      "at": "machine",
+      "x": 400,
+      "y": 420,
+      "text": "NOT AN AD MACHINE",
+      "size": 70,
+      "color": "#2F9E44",
+      "rot": -4,
+      "id": "st",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 332.739,
+   "vo": 8.196,
+   "dur": 8.596,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.03,
+     "e": 0.48
+    },
+    {
+     "w": "the",
+     "s": 0.48,
+     "e": 0.6
+    },
+    {
+     "w": "risk",
+     "s": 0.6,
+     "e": 1.07
+    },
+    {
+     "w": "is",
+     "s": 1.07,
+     "e": 1.26
+    },
+    {
+     "w": "real.",
+     "s": 1.26,
+     "e": 1.82
+    },
+    {
+     "w": "But",
+     "s": 2.34,
+     "e": 2.48
+    },
+    {
+     "w": "those",
+     "s": 2.48,
+     "e": 2.75
+    },
+    {
+     "w": "were",
+     "s": 2.75,
+     "e": 2.91
+    },
+    {
+     "w": "accidents,",
+     "s": 2.91,
+     "e": 3.81
+    },
+    {
+     "w": "and",
+     "s": 3.81,
+     "e": 4.07
+    },
+    {
+     "w": "data",
+     "s": 4.07,
+     "e": 4.37
+    },
+    {
+     "w": "kept",
+     "s": 4.37,
+     "e": 4.66
+    },
+    {
+     "w": "too",
+     "s": 4.66,
+     "e": 4.85
+    },
+    {
+     "w": "long.",
+     "s": 4.85,
+     "e": 5.16
+    },
+    {
+     "w": "Not",
+     "s": 5.66,
+     "e": 5.88
+    },
+    {
+     "w": "an",
+     "s": 5.88,
+     "e": 6.03
+    },
+    {
+     "w": "ad",
+     "s": 6.03,
+     "e": 6.36
+    },
+    {
+     "w": "machine",
+     "s": 6.36,
+     "e": 6.81
+    },
+    {
+     "w": "listening",
+     "s": 6.81,
+     "e": 7.23
+    },
+    {
+     "w": "to",
+     "s": 7.23,
+     "e": 7.34
+    },
+    {
+     "w": "your",
+     "s": 7.34,
+     "e": 7.49
+    },
+    {
+     "w": "dinner.",
+     "s": 7.49,
+     "e": 8.08
+    }
+   ]
+  },
+  {
+   "text": "So why don't experts believe your phone is recording everything you say?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "experts",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:user-focus-fill",
+      "size": 190,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "everything",
+      "x": 300,
+      "y": 100,
+      "text": "Recording *everything*?",
+      "size": 90
+     },
+     {
+      "k": "icon",
+      "at": "why",
+      "x": 1050,
+      "y": 300,
+      "ref": "ph:question-fill",
+      "size": 160,
+      "color": "#F87736",
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Why it is unlikely",
+   "start": 341.336,
+   "vo": 4.642,
+   "dur": 5.042,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.02,
+     "e": 0.39
+    },
+    {
+     "w": "why",
+     "s": 0.39,
+     "e": 0.85
+    },
+    {
+     "w": "don't",
+     "s": 0.85,
+     "e": 1.07
+    },
+    {
+     "w": "experts",
+     "s": 1.07,
+     "e": 1.67
+    },
+    {
+     "w": "believe",
+     "s": 1.67,
+     "e": 2.2
+    },
+    {
+     "w": "your",
+     "s": 2.2,
+     "e": 2.32
+    },
+    {
+     "w": "phone",
+     "s": 2.32,
+     "e": 2.68
+    },
+    {
+     "w": "is",
+     "s": 2.68,
+     "e": 2.8
+    },
+    {
+     "w": "recording",
+     "s": 2.8,
+     "e": 3.34
+    },
+    {
+     "w": "everything",
+     "s": 3.34,
+     "e": 3.89
+    },
+    {
+     "w": "you",
+     "s": 3.89,
+     "e": 4.0
+    },
+    {
+     "w": "say?",
+     "s": 4.0,
+     "e": 4.55
+    }
+   ]
+  },
+  {
+   "text": "Let's do some quick maths. Even compressed, voice audio uses roughly sixteen kilobits every second. Over one day, that's about one hundred and seventy megabytes, from every phone, every day.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "sixteen",
+      "x": 40,
+      "y": 40,
+      "big": "16 kbps",
+      "label": "COMPRESSED VOICE",
+      "color": "#1C7ED6",
+      "icon": "ph:waveform-bold"
+     },
+     {
+      "k": "arrow",
+      "at": "day",
+      "x": 560,
+      "y": 110,
+      "w": 200,
+      "id": "ar"
+     },
+     {
+      "k": "card",
+      "at": "hundred",
+      "x": 800,
+      "y": 40,
+      "big": "0 MB",
+      "label": "PER PHONE, PER DAY",
+      "color": "#E0471C",
+      "id": "mb",
+      "icon": "ph:database-fill"
+     },
+     {
+      "k": "tag",
+      "at": "every",
+      "x": 40,
+      "y": 330,
+      "text": "example calculation: 16 kbps \u00d7 24 h",
+      "bg": "#8C6B5A",
+      "size": 30
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "mb",
+      "at": "hundred",
+      "values": [
+       "20 MB",
+       "60 MB",
+       "110 MB",
+       "170 MB"
+      ],
+      "dt": 0.2
+     }
+    ]
+   },
+   "start": 346.378,
+   "vo": 13.759,
+   "dur": 14.159,
+   "words": [
+    {
+     "w": "Let's",
+     "s": 0.04,
+     "e": 0.27
+    },
+    {
+     "w": "do",
+     "s": 0.27,
+     "e": 0.46
+    },
+    {
+     "w": "some",
+     "s": 0.46,
+     "e": 0.67
+    },
+    {
+     "w": "quick",
+     "s": 0.67,
+     "e": 0.94
+    },
+    {
+     "w": "maths.",
+     "s": 0.94,
+     "e": 1.88
+    },
+    {
+     "w": "Even",
+     "s": 1.88,
+     "e": 2.19
+    },
+    {
+     "w": "compressed,",
+     "s": 2.19,
+     "e": 3.03
+    },
+    {
+     "w": "voice",
+     "s": 3.17,
+     "e": 3.54
+    },
+    {
+     "w": "audio",
+     "s": 3.54,
+     "e": 3.97
+    },
+    {
+     "w": "uses",
+     "s": 3.97,
+     "e": 4.41
+    },
+    {
+     "w": "roughly",
+     "s": 4.41,
+     "e": 4.79
+    },
+    {
+     "w": "sixteen",
+     "s": 4.79,
+     "e": 5.5
+    },
+    {
+     "w": "kilobits",
+     "s": 5.5,
+     "e": 6.17
+    },
+    {
+     "w": "every",
+     "s": 6.17,
+     "e": 6.52
+    },
+    {
+     "w": "second.",
+     "s": 6.52,
+     "e": 7.06
+    },
+    {
+     "w": "Over",
+     "s": 7.56,
+     "e": 7.87
+    },
+    {
+     "w": "one",
+     "s": 7.87,
+     "e": 8.17
+    },
+    {
+     "w": "day,",
+     "s": 8.17,
+     "e": 8.6
+    },
+    {
+     "w": "that's",
+     "s": 8.67,
+     "e": 8.9
+    },
+    {
+     "w": "about",
+     "s": 8.9,
+     "e": 9.17
+    },
+    {
+     "w": "one",
+     "s": 9.17,
+     "e": 9.52
+    },
+    {
+     "w": "hundred",
+     "s": 9.52,
+     "e": 9.89
+    },
+    {
+     "w": "and",
+     "s": 9.89,
+     "e": 9.99
+    },
+    {
+     "w": "seventy",
+     "s": 9.99,
+     "e": 10.45
+    },
+    {
+     "w": "megabytes,",
+     "s": 10.45,
+     "e": 11.26
+    },
+    {
+     "w": "from",
+     "s": 11.5,
+     "e": 11.74
+    },
+    {
+     "w": "every",
+     "s": 11.74,
+     "e": 12.13
+    },
+    {
+     "w": "phone,",
+     "s": 12.13,
+     "e": 12.65
+    },
+    {
+     "w": "every",
+     "s": 12.89,
+     "e": 13.28
+    },
+    {
+     "w": "day.",
+     "s": 13.28,
+     "e": 13.66
+    }
+   ]
+  },
+  {
+   "text": "Your data pack would notice. Your battery would notice. And security researchers who watch app traffic for a living would definitely notice.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "data",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:cell-signal-full-bold",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "data",
+      "x": 40,
+      "y": 270,
+      "text": "data pack",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "icon",
+      "at": "battery",
+      "x": 360,
+      "y": 60,
+      "ref": "ph:battery-warning-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "battery",
+      "x": 360,
+      "y": 270,
+      "text": "battery",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "icon",
+      "at": "researchers",
+      "x": 680,
+      "y": 60,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "definitely",
+      "x": 660,
+      "y": 270,
+      "text": "researchers",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "big",
+      "at": "notice",
+      "x": 200,
+      "y": 400,
+      "text": "Everyone would *notice*",
+      "size": 90,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 360.537,
+   "vo": 8.989,
+   "dur": 9.389,
+   "words": [
+    {
+     "w": "Your",
+     "s": 0.04,
+     "e": 0.21
+    },
+    {
+     "w": "data",
+     "s": 0.21,
+     "e": 0.56
+    },
+    {
+     "w": "pack",
+     "s": 0.56,
+     "e": 0.91
+    },
+    {
+     "w": "would",
+     "s": 0.91,
+     "e": 1.05
+    },
+    {
+     "w": "notice.",
+     "s": 1.05,
+     "e": 1.68
+    },
+    {
+     "w": "Your",
+     "s": 1.9,
+     "e": 2.06
+    },
+    {
+     "w": "battery",
+     "s": 2.06,
+     "e": 2.65
+    },
+    {
+     "w": "would",
+     "s": 2.65,
+     "e": 2.86
+    },
+    {
+     "w": "notice.",
+     "s": 2.86,
+     "e": 3.47
+    },
+    {
+     "w": "And",
+     "s": 3.86,
+     "e": 4.04
+    },
+    {
+     "w": "security",
+     "s": 4.04,
+     "e": 4.59
+    },
+    {
+     "w": "researchers",
+     "s": 4.59,
+     "e": 5.3
+    },
+    {
+     "w": "who",
+     "s": 5.3,
+     "e": 5.42
+    },
+    {
+     "w": "watch",
+     "s": 5.42,
+     "e": 5.71
+    },
+    {
+     "w": "app",
+     "s": 5.71,
+     "e": 5.99
+    },
+    {
+     "w": "traffic",
+     "s": 5.99,
+     "e": 6.41
+    },
+    {
+     "w": "for",
+     "s": 6.41,
+     "e": 6.6
+    },
+    {
+     "w": "a",
+     "s": 6.6,
+     "e": 6.63
+    },
+    {
+     "w": "living",
+     "s": 6.63,
+     "e": 7.06
+    },
+    {
+     "w": "would",
+     "s": 7.06,
+     "e": 7.54
+    },
+    {
+     "w": "definitely",
+     "s": 7.54,
+     "e": 8.21
+    },
+    {
+     "w": "notice.",
+     "s": 8.21,
+     "e": 8.81
+    }
+   ]
+  },
+  {
+   "text": "Phones also warn you now. On an iPhone, an orange dot appears when an app is using the microphone. On Android, a green dot appears, and you can tap it to see which app it is.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "prop",
+      "at": "iphone",
+      "x": 40,
+      "y": 40,
+      "p": "phone",
+      "s": 0.85,
+      "id": "ip"
+     },
+     {
+      "k": "big",
+      "at": "orange",
+      "x": 120,
+      "y": 60,
+      "text": "\u25cf",
+      "size": 90,
+      "color": "#F87736",
+      "id": "od",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "iphone",
+      "x": 40,
+      "y": 450,
+      "text": "iPhone: orange dot = microphone",
+      "bg": "#F87736",
+      "size": 30
+     },
+     {
+      "k": "prop",
+      "at": "android",
+      "x": 640,
+      "y": 40,
+      "p": "phone",
+      "s": 0.85,
+      "id": "an"
+     },
+     {
+      "k": "big",
+      "at": "green",
+      "x": 720,
+      "y": 60,
+      "text": "\u25cf",
+      "size": 90,
+      "color": "#2F9E44",
+      "id": "gd",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "android",
+      "x": 600,
+      "y": 450,
+      "text": "Android: green dot \u2192 tap to see app",
+      "bg": "#2F9E44",
+      "size": 30
+     }
+    ],
+    "acts": []
+   },
+   "start": 369.926,
+   "vo": 11.94,
+   "dur": 12.34,
+   "words": [
+    {
+     "w": "Phones",
+     "s": 0.02,
+     "e": 0.5
+    },
+    {
+     "w": "also",
+     "s": 0.5,
+     "e": 0.98
+    },
+    {
+     "w": "warn",
+     "s": 0.98,
+     "e": 1.32
+    },
+    {
+     "w": "you",
+     "s": 1.32,
+     "e": 1.44
+    },
+    {
+     "w": "now.",
+     "s": 1.44,
+     "e": 1.76
+    },
+    {
+     "w": "On",
+     "s": 2.28,
+     "e": 2.45
+    },
+    {
+     "w": "an",
+     "s": 2.45,
+     "e": 2.55
+    },
+    {
+     "w": "iPhone,",
+     "s": 2.55,
+     "e": 3.24
+    },
+    {
+     "w": "an",
+     "s": 3.31,
+     "e": 3.47
+    },
+    {
+     "w": "orange",
+     "s": 3.47,
+     "e": 3.97
+    },
+    {
+     "w": "dot",
+     "s": 3.97,
+     "e": 4.27
+    },
+    {
+     "w": "appears",
+     "s": 4.27,
+     "e": 4.78
+    },
+    {
+     "w": "when",
+     "s": 4.78,
+     "e": 4.93
+    },
+    {
+     "w": "an",
+     "s": 4.93,
+     "e": 5.05
+    },
+    {
+     "w": "app",
+     "s": 5.05,
+     "e": 5.35
+    },
+    {
+     "w": "is",
+     "s": 5.35,
+     "e": 5.53
+    },
+    {
+     "w": "using",
+     "s": 5.53,
+     "e": 5.84
+    },
+    {
+     "w": "the",
+     "s": 5.84,
+     "e": 5.9
+    },
+    {
+     "w": "microphone.",
+     "s": 5.9,
+     "e": 6.56
+    },
+    {
+     "w": "On",
+     "s": 7.06,
+     "e": 7.25
+    },
+    {
+     "w": "Android,",
+     "s": 7.25,
+     "e": 7.97
+    },
+    {
+     "w": "a",
+     "s": 8.04,
+     "e": 8.11
+    },
+    {
+     "w": "green",
+     "s": 8.11,
+     "e": 8.51
+    },
+    {
+     "w": "dot",
+     "s": 8.51,
+     "e": 8.72
+    },
+    {
+     "w": "appears,",
+     "s": 8.72,
+     "e": 9.32
+    },
+    {
+     "w": "and",
+     "s": 9.47,
+     "e": 9.64
+    },
+    {
+     "w": "you",
+     "s": 9.64,
+     "e": 9.72
+    },
+    {
+     "w": "can",
+     "s": 9.72,
+     "e": 9.89
+    },
+    {
+     "w": "tap",
+     "s": 9.89,
+     "e": 10.23
+    },
+    {
+     "w": "it",
+     "s": 10.23,
+     "e": 10.37
+    },
+    {
+     "w": "to",
+     "s": 10.37,
+     "e": 10.49
+    },
+    {
+     "w": "see",
+     "s": 10.49,
+     "e": 10.73
+    },
+    {
+     "w": "which",
+     "s": 10.73,
+     "e": 11.01
+    },
+    {
+     "w": "app",
+     "s": 11.01,
+     "e": 11.23
+    },
+    {
+     "w": "it",
+     "s": 11.23,
+     "e": 11.34
+    },
+    {
+     "w": "is.",
+     "s": 11.34,
+     "e": 11.7
+    }
+   ]
+  },
+  {
+   "text": "And it would be a bad deal for advertisers anyway. They already know far more about you than one sentence at dinner could ever tell them.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "advertisers",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:megaphone-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "know",
+      "x": 300,
+      "y": 60,
+      "big": "a whole profile",
+      "label": "ADVERTISERS ALREADY HAVE",
+      "color": "#1C7ED6",
+      "icon": "ph:identification-card-fill"
+     },
+     {
+      "k": "tag",
+      "at": "sentence",
+      "x": 300,
+      "y": 300,
+      "text": "vs one sentence at dinner",
+      "bg": "#8C6B5A",
+      "size": 40
+     }
+    ],
+    "acts": []
+   },
+   "start": 382.266,
+   "vo": 8.023,
+   "dur": 8.423,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.07,
+     "e": 0.22
+    },
+    {
+     "w": "it",
+     "s": 0.22,
+     "e": 0.28
+    },
+    {
+     "w": "would",
+     "s": 0.28,
+     "e": 0.45
+    },
+    {
+     "w": "be",
+     "s": 0.45,
+     "e": 0.6
+    },
+    {
+     "w": "a",
+     "s": 0.6,
+     "e": 0.65
+    },
+    {
+     "w": "bad",
+     "s": 0.65,
+     "e": 1.08
+    },
+    {
+     "w": "deal",
+     "s": 1.08,
+     "e": 1.34
+    },
+    {
+     "w": "for",
+     "s": 1.34,
+     "e": 1.54
+    },
+    {
+     "w": "advertisers",
+     "s": 1.54,
+     "e": 2.28
+    },
+    {
+     "w": "anyway.",
+     "s": 2.28,
+     "e": 2.85
+    },
+    {
+     "w": "They",
+     "s": 3.28,
+     "e": 3.46
+    },
+    {
+     "w": "already",
+     "s": 3.46,
+     "e": 3.75
+    },
+    {
+     "w": "know",
+     "s": 3.75,
+     "e": 3.96
+    },
+    {
+     "w": "far",
+     "s": 3.96,
+     "e": 4.47
+    },
+    {
+     "w": "more",
+     "s": 4.47,
+     "e": 4.75
+    },
+    {
+     "w": "about",
+     "s": 4.75,
+     "e": 5.05
+    },
+    {
+     "w": "you",
+     "s": 5.05,
+     "e": 5.26
+    },
+    {
+     "w": "than",
+     "s": 5.26,
+     "e": 5.43
+    },
+    {
+     "w": "one",
+     "s": 5.43,
+     "e": 5.76
+    },
+    {
+     "w": "sentence",
+     "s": 5.76,
+     "e": 6.21
+    },
+    {
+     "w": "at",
+     "s": 6.21,
+     "e": 6.28
+    },
+    {
+     "w": "dinner",
+     "s": 6.28,
+     "e": 6.69
+    },
+    {
+     "w": "could",
+     "s": 6.69,
+     "e": 6.98
+    },
+    {
+     "w": "ever",
+     "s": 6.98,
+     "e": 7.29
+    },
+    {
+     "w": "tell",
+     "s": 7.29,
+     "e": 7.56
+    },
+    {
+     "w": "them.",
+     "s": 7.56,
+     "e": 7.74
+    }
+   ]
+  },
+  {
+   "text": "So how did the running shoe ad find you? Usually through one of four routes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "shoe",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:sneaker-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "four",
+      "x": 320,
+      "y": 60,
+      "text": "*4* routes",
+      "size": 140,
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "routes",
+      "x": 320,
+      "y": 280,
+      "text": "ROUTE 1",
+      "bg": "#1C7ED6",
+      "size": 34,
+      "id": "r0"
+     },
+     {
+      "k": "tag",
+      "at": "routes",
+      "x": 520,
+      "y": 280,
+      "text": "ROUTE 2",
+      "bg": "#7A5CFF",
+      "size": 34,
+      "id": "r1"
+     },
+     {
+      "k": "tag",
+      "at": "routes",
+      "x": 720,
+      "y": 280,
+      "text": "ROUTE 3",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "r2"
+     },
+     {
+      "k": "tag",
+      "at": "routes",
+      "x": 920,
+      "y": 280,
+      "text": "ROUTE 4",
+      "bg": "#2F9E44",
+      "size": 34,
+      "id": "r3"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The four routes",
+   "start": 390.689,
+   "vo": 5.327,
+   "dur": 5.727,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.01,
+     "e": 0.49
+    },
+    {
+     "w": "how",
+     "s": 0.49,
+     "e": 0.79
+    },
+    {
+     "w": "did",
+     "s": 0.79,
+     "e": 0.95
+    },
+    {
+     "w": "the",
+     "s": 0.95,
+     "e": 1.03
+    },
+    {
+     "w": "running",
+     "s": 1.03,
+     "e": 1.44
+    },
+    {
+     "w": "shoe",
+     "s": 1.44,
+     "e": 1.72
+    },
+    {
+     "w": "ad",
+     "s": 1.72,
+     "e": 1.96
+    },
+    {
+     "w": "find",
+     "s": 1.96,
+     "e": 2.33
+    },
+    {
+     "w": "you?",
+     "s": 2.33,
+     "e": 2.55
+    },
+    {
+     "w": "Usually",
+     "s": 3.05,
+     "e": 3.6
+    },
+    {
+     "w": "through",
+     "s": 3.6,
+     "e": 3.86
+    },
+    {
+     "w": "one",
+     "s": 3.86,
+     "e": 4.09
+    },
+    {
+     "w": "of",
+     "s": 4.09,
+     "e": 4.18
+    },
+    {
+     "w": "four",
+     "s": 4.18,
+     "e": 4.55
+    },
+    {
+     "w": "routes.",
+     "s": 4.55,
+     "e": 5.11
+    }
+   ]
+  },
+  {
+   "text": "Route one: the people around you. Your friend looked up those shoes after dinner, on the same Wi-Fi. Facebook says it can estimate your location from your internet connection, even with location services off. So ad systems can guess who you spend time with.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "route",
+      "x": 40,
+      "y": 20,
+      "text": "ROUTE 1 \u00b7 the people around you",
+      "bg": "#1C7ED6",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "friend",
+      "x": 40,
+      "y": 140,
+      "ref": "ph:user-fill",
+      "size": 140,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "looked",
+      "x": 220,
+      "y": 140,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 120,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "wi-fi",
+      "x": 460,
+      "y": 140,
+      "ref": "ph:wifi-high-bold",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "logo",
+      "at": "facebook",
+      "x": 760,
+      "y": 140,
+      "ref": "logos:facebook",
+      "size": 140,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "location",
+      "x": 700,
+      "y": 340,
+      "text": "location guessed from your connection",
+      "bg": "#2A2018",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "spend",
+      "x": 60,
+      "y": 380,
+      "ref": "ph:users-three-fill",
+      "size": 150,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "time",
+      "x": 240,
+      "y": 430,
+      "text": "who you spend time with",
+      "bg": "#7A5CFF",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 396.416,
+   "vo": 17.163,
+   "dur": 17.563,
+   "words": [
+    {
+     "w": "Route",
+     "s": 0.11,
+     "e": 0.37
+    },
+    {
+     "w": "one:",
+     "s": 0.37,
+     "e": 0.87
+    },
+    {
+     "w": "the",
+     "s": 1.3,
+     "e": 1.41
+    },
+    {
+     "w": "people",
+     "s": 1.41,
+     "e": 1.85
+    },
+    {
+     "w": "around",
+     "s": 1.85,
+     "e": 2.24
+    },
+    {
+     "w": "you.",
+     "s": 2.24,
+     "e": 2.46
+    },
+    {
+     "w": "Your",
+     "s": 3.12,
+     "e": 3.24
+    },
+    {
+     "w": "friend",
+     "s": 3.24,
+     "e": 3.56
+    },
+    {
+     "w": "looked",
+     "s": 3.56,
+     "e": 3.79
+    },
+    {
+     "w": "up",
+     "s": 3.79,
+     "e": 3.94
+    },
+    {
+     "w": "those",
+     "s": 3.94,
+     "e": 4.15
+    },
+    {
+     "w": "shoes",
+     "s": 4.15,
+     "e": 4.63
+    },
+    {
+     "w": "after",
+     "s": 4.63,
+     "e": 4.91
+    },
+    {
+     "w": "dinner,",
+     "s": 4.91,
+     "e": 5.43
+    },
+    {
+     "w": "on",
+     "s": 5.55,
+     "e": 5.77
+    },
+    {
+     "w": "the",
+     "s": 5.77,
+     "e": 5.83
+    },
+    {
+     "w": "same",
+     "s": 5.83,
+     "e": 6.17
+    },
+    {
+     "w": "Wi-Fi.",
+     "s": 6.17,
+     "e": 6.75
+    },
+    {
+     "w": "Facebook",
+     "s": 7.3,
+     "e": 7.76
+    },
+    {
+     "w": "says",
+     "s": 7.76,
+     "e": 8.09
+    },
+    {
+     "w": "it",
+     "s": 8.09,
+     "e": 8.16
+    },
+    {
+     "w": "can",
+     "s": 8.16,
+     "e": 8.32
+    },
+    {
+     "w": "estimate",
+     "s": 8.32,
+     "e": 8.83
+    },
+    {
+     "w": "your",
+     "s": 8.83,
+     "e": 8.97
+    },
+    {
+     "w": "location",
+     "s": 8.97,
+     "e": 9.64
+    },
+    {
+     "w": "from",
+     "s": 9.64,
+     "e": 9.85
+    },
+    {
+     "w": "your",
+     "s": 9.85,
+     "e": 10.01
+    },
+    {
+     "w": "internet",
+     "s": 10.01,
+     "e": 10.5
+    },
+    {
+     "w": "connection,",
+     "s": 10.5,
+     "e": 11.04
+    },
+    {
+     "w": "even",
+     "s": 11.33,
+     "e": 11.6
+    },
+    {
+     "w": "with",
+     "s": 11.6,
+     "e": 11.78
+    },
+    {
+     "w": "location",
+     "s": 11.78,
+     "e": 12.33
+    },
+    {
+     "w": "services",
+     "s": 12.33,
+     "e": 12.91
+    },
+    {
+     "w": "off.",
+     "s": 12.91,
+     "e": 13.43
+    },
+    {
+     "w": "So",
+     "s": 13.95,
+     "e": 14.41
+    },
+    {
+     "w": "ad",
+     "s": 14.41,
+     "e": 14.75
+    },
+    {
+     "w": "systems",
+     "s": 14.75,
+     "e": 15.25
+    },
+    {
+     "w": "can",
+     "s": 15.25,
+     "e": 15.52
+    },
+    {
+     "w": "guess",
+     "s": 15.52,
+     "e": 15.88
+    },
+    {
+     "w": "who",
+     "s": 15.88,
+     "e": 16.04
+    },
+    {
+     "w": "you",
+     "s": 16.04,
+     "e": 16.15
+    },
+    {
+     "w": "spend",
+     "s": 16.15,
+     "e": 16.44
+    },
+    {
+     "w": "time",
+     "s": 16.44,
+     "e": 16.73
+    },
+    {
+     "w": "with.",
+     "s": 16.73,
+     "e": 17.04
+    }
+   ]
+  },
+  {
+   "text": "Route two: the trail you leave. Many websites carry a tiny piece of code called the Meta Pixel. When you visit a page, it can report that visit back to Meta, even if you never click anything, and even if you don't have an account.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "route",
+      "x": 40,
+      "y": 20,
+      "text": "ROUTE 2 \u00b7 the trail you leave",
+      "bg": "#7A5CFF",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "websites",
+      "x": 40,
+      "y": 140,
+      "ref": "ph:browser-fill",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "code",
+      "x": 300,
+      "y": 150,
+      "icon": "ph:code-bold",
+      "label": "HIDDEN ON THE PAGE",
+      "big": "Meta Pixel",
+      "color": "#7A5CFF",
+      "id": "px"
+     },
+     {
+      "k": "arrow",
+      "at": "report",
+      "x": 300,
+      "y": 380,
+      "w": 300,
+      "id": "ar"
+     },
+     {
+      "k": "logo",
+      "at": "meta",
+      "x": 660,
+      "y": 330,
+      "ref": "logos:meta-icon",
+      "size": 170,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "account",
+      "x": 40,
+      "y": 520,
+      "text": "\u2026even if you don't have an account",
+      "bg": "#E0471C",
+      "size": 32
+     }
+    ],
+    "acts": []
+   },
+   "start": 413.979,
+   "vo": 16.028,
+   "dur": 16.428,
+   "words": [
+    {
+     "w": "Route",
+     "s": 0.09,
+     "e": 0.36
+    },
+    {
+     "w": "two:",
+     "s": 0.36,
+     "e": 0.86
+    },
+    {
+     "w": "the",
+     "s": 1.28,
+     "e": 1.41
+    },
+    {
+     "w": "trail",
+     "s": 1.41,
+     "e": 1.86
+    },
+    {
+     "w": "you",
+     "s": 1.86,
+     "e": 2.04
+    },
+    {
+     "w": "leave.",
+     "s": 2.04,
+     "e": 2.45
+    },
+    {
+     "w": "Many",
+     "s": 3.17,
+     "e": 3.46
+    },
+    {
+     "w": "websites",
+     "s": 3.46,
+     "e": 4.07
+    },
+    {
+     "w": "carry",
+     "s": 4.07,
+     "e": 4.43
+    },
+    {
+     "w": "a",
+     "s": 4.43,
+     "e": 4.49
+    },
+    {
+     "w": "tiny",
+     "s": 4.49,
+     "e": 4.97
+    },
+    {
+     "w": "piece",
+     "s": 4.97,
+     "e": 5.3
+    },
+    {
+     "w": "of",
+     "s": 5.3,
+     "e": 5.41
+    },
+    {
+     "w": "code",
+     "s": 5.41,
+     "e": 5.86
+    },
+    {
+     "w": "called",
+     "s": 5.86,
+     "e": 6.17
+    },
+    {
+     "w": "the",
+     "s": 6.17,
+     "e": 6.24
+    },
+    {
+     "w": "Meta",
+     "s": 6.24,
+     "e": 6.64
+    },
+    {
+     "w": "Pixel.",
+     "s": 6.64,
+     "e": 7.22
+    },
+    {
+     "w": "When",
+     "s": 7.82,
+     "e": 7.95
+    },
+    {
+     "w": "you",
+     "s": 7.95,
+     "e": 8.06
+    },
+    {
+     "w": "visit",
+     "s": 8.06,
+     "e": 8.34
+    },
+    {
+     "w": "a",
+     "s": 8.34,
+     "e": 8.38
+    },
+    {
+     "w": "page,",
+     "s": 8.38,
+     "e": 8.97
+    },
+    {
+     "w": "it",
+     "s": 9.1,
+     "e": 9.19
+    },
+    {
+     "w": "can",
+     "s": 9.19,
+     "e": 9.31
+    },
+    {
+     "w": "report",
+     "s": 9.31,
+     "e": 9.81
+    },
+    {
+     "w": "that",
+     "s": 9.81,
+     "e": 10.04
+    },
+    {
+     "w": "visit",
+     "s": 10.04,
+     "e": 10.35
+    },
+    {
+     "w": "back",
+     "s": 10.35,
+     "e": 10.7
+    },
+    {
+     "w": "to",
+     "s": 10.7,
+     "e": 10.84
+    },
+    {
+     "w": "Meta,",
+     "s": 10.84,
+     "e": 11.13
+    },
+    {
+     "w": "even",
+     "s": 11.63,
+     "e": 11.9
+    },
+    {
+     "w": "if",
+     "s": 11.9,
+     "e": 12.02
+    },
+    {
+     "w": "you",
+     "s": 12.02,
+     "e": 12.15
+    },
+    {
+     "w": "never",
+     "s": 12.15,
+     "e": 12.58
+    },
+    {
+     "w": "click",
+     "s": 12.58,
+     "e": 12.9
+    },
+    {
+     "w": "anything,",
+     "s": 12.9,
+     "e": 13.38
+    },
+    {
+     "w": "and",
+     "s": 13.57,
+     "e": 14.01
+    },
+    {
+     "w": "even",
+     "s": 14.01,
+     "e": 14.39
+    },
+    {
+     "w": "if",
+     "s": 14.39,
+     "e": 14.52
+    },
+    {
+     "w": "you",
+     "s": 14.52,
+     "e": 14.66
+    },
+    {
+     "w": "don't",
+     "s": 14.66,
+     "e": 14.95
+    },
+    {
+     "w": "have",
+     "s": 14.95,
+     "e": 15.17
+    },
+    {
+     "w": "an",
+     "s": 15.17,
+     "e": 15.24
+    },
+    {
+     "w": "account.",
+     "s": 15.24,
+     "e": 15.82
+    }
+   ]
+  },
+  {
+   "text": "Shops can also upload customer email addresses and phone numbers, and Meta matches them to profiles. That's how a store you bought from once keeps finding you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "shops",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:storefront-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "email",
+      "x": 280,
+      "y": 60,
+      "ref": "ph:envelope-simple-fill",
+      "size": 140,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "phone",
+      "x": 460,
+      "y": 60,
+      "ref": "ph:phone-fill",
+      "size": 140,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "matches",
+      "x": 640,
+      "y": 120,
+      "w": 200,
+      "id": "ar"
+     },
+     {
+      "k": "logo",
+      "at": "meta",
+      "x": 900,
+      "y": 40,
+      "ref": "logos:meta-icon",
+      "size": 160,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "store",
+      "x": 60,
+      "y": 330,
+      "text": "that store keeps finding you",
+      "bg": "#2A2018",
+      "size": 36
+     }
+    ],
+    "acts": []
+   },
+   "start": 430.407,
+   "vo": 10.041,
+   "dur": 10.441,
+   "words": [
+    {
+     "w": "Shops",
+     "s": 0.03,
+     "e": 0.43
+    },
+    {
+     "w": "can",
+     "s": 0.43,
+     "e": 0.62
+    },
+    {
+     "w": "also",
+     "s": 0.62,
+     "e": 1.1
+    },
+    {
+     "w": "upload",
+     "s": 1.1,
+     "e": 1.5
+    },
+    {
+     "w": "customer",
+     "s": 1.5,
+     "e": 1.98
+    },
+    {
+     "w": "email",
+     "s": 1.98,
+     "e": 2.44
+    },
+    {
+     "w": "addresses",
+     "s": 2.44,
+     "e": 3.02
+    },
+    {
+     "w": "and",
+     "s": 3.02,
+     "e": 3.14
+    },
+    {
+     "w": "phone",
+     "s": 3.14,
+     "e": 3.45
+    },
+    {
+     "w": "numbers,",
+     "s": 3.45,
+     "e": 4.03
+    },
+    {
+     "w": "and",
+     "s": 4.18,
+     "e": 4.39
+    },
+    {
+     "w": "Meta",
+     "s": 4.39,
+     "e": 4.72
+    },
+    {
+     "w": "matches",
+     "s": 4.72,
+     "e": 5.26
+    },
+    {
+     "w": "them",
+     "s": 5.26,
+     "e": 5.45
+    },
+    {
+     "w": "to",
+     "s": 5.45,
+     "e": 5.55
+    },
+    {
+     "w": "profiles.",
+     "s": 5.55,
+     "e": 6.35
+    },
+    {
+     "w": "That's",
+     "s": 6.82,
+     "e": 7.1
+    },
+    {
+     "w": "how",
+     "s": 7.1,
+     "e": 7.29
+    },
+    {
+     "w": "a",
+     "s": 7.29,
+     "e": 7.33
+    },
+    {
+     "w": "store",
+     "s": 7.33,
+     "e": 7.68
+    },
+    {
+     "w": "you",
+     "s": 7.68,
+     "e": 7.83
+    },
+    {
+     "w": "bought",
+     "s": 7.83,
+     "e": 8.07
+    },
+    {
+     "w": "from",
+     "s": 8.07,
+     "e": 8.37
+    },
+    {
+     "w": "once",
+     "s": 8.37,
+     "e": 8.84
+    },
+    {
+     "w": "keeps",
+     "s": 8.84,
+     "e": 9.18
+    },
+    {
+     "w": "finding",
+     "s": 9.18,
+     "e": 9.63
+    },
+    {
+     "w": "you.",
+     "s": 9.63,
+     "e": 9.83
+    }
+   ]
+  },
+  {
+   "text": "Route three: data brokers and your location. Some apps sell where you go. If your phone visits a gym three times a week, you look like someone who might buy running shoes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "route",
+      "x": 40,
+      "y": 20,
+      "text": "ROUTE 3 \u00b7 brokers & location",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "brokers",
+      "x": 40,
+      "y": 140,
+      "ref": "ph:briefcase-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "where",
+      "x": 300,
+      "y": 140,
+      "ref": "ph:map-pin-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "gym",
+      "x": 560,
+      "y": 140,
+      "ref": "ph:barbell-fill",
+      "size": 160,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "three",
+      "x": 540,
+      "y": 360,
+      "text": "gym \u00d7 3 a week",
+      "bg": "#F87736",
+      "size": 36
+     },
+     {
+      "k": "icon",
+      "at": "shoes",
+      "x": 900,
+      "y": 140,
+      "ref": "ph:sneaker-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "start": 440.848,
+   "vo": 11.851,
+   "dur": 12.251,
+   "words": [
+    {
+     "w": "Route",
+     "s": 0.09,
+     "e": 0.35
+    },
+    {
+     "w": "three:",
+     "s": 0.35,
+     "e": 0.81
+    },
+    {
+     "w": "data",
+     "s": 1.41,
+     "e": 1.71
+    },
+    {
+     "w": "brokers",
+     "s": 1.71,
+     "e": 2.36
+    },
+    {
+     "w": "and",
+     "s": 2.36,
+     "e": 2.54
+    },
+    {
+     "w": "your",
+     "s": 2.54,
+     "e": 2.7
+    },
+    {
+     "w": "location.",
+     "s": 2.7,
+     "e": 3.38
+    },
+    {
+     "w": "Some",
+     "s": 4.0,
+     "e": 4.36
+    },
+    {
+     "w": "apps",
+     "s": 4.36,
+     "e": 4.8
+    },
+    {
+     "w": "sell",
+     "s": 4.8,
+     "e": 5.22
+    },
+    {
+     "w": "where",
+     "s": 5.22,
+     "e": 5.38
+    },
+    {
+     "w": "you",
+     "s": 5.38,
+     "e": 5.54
+    },
+    {
+     "w": "go.",
+     "s": 5.54,
+     "e": 6.01
+    },
+    {
+     "w": "If",
+     "s": 6.48,
+     "e": 6.64
+    },
+    {
+     "w": "your",
+     "s": 6.64,
+     "e": 6.74
+    },
+    {
+     "w": "phone",
+     "s": 6.74,
+     "e": 7.12
+    },
+    {
+     "w": "visits",
+     "s": 7.12,
+     "e": 7.51
+    },
+    {
+     "w": "a",
+     "s": 7.51,
+     "e": 7.54
+    },
+    {
+     "w": "gym",
+     "s": 7.54,
+     "e": 7.97
+    },
+    {
+     "w": "three",
+     "s": 7.97,
+     "e": 8.2
+    },
+    {
+     "w": "times",
+     "s": 8.2,
+     "e": 8.53
+    },
+    {
+     "w": "a",
+     "s": 8.53,
+     "e": 8.57
+    },
+    {
+     "w": "week,",
+     "s": 8.57,
+     "e": 9.05
+    },
+    {
+     "w": "you",
+     "s": 9.22,
+     "e": 9.42
+    },
+    {
+     "w": "look",
+     "s": 9.42,
+     "e": 9.63
+    },
+    {
+     "w": "like",
+     "s": 9.63,
+     "e": 9.81
+    },
+    {
+     "w": "someone",
+     "s": 9.81,
+     "e": 10.19
+    },
+    {
+     "w": "who",
+     "s": 10.19,
+     "e": 10.34
+    },
+    {
+     "w": "might",
+     "s": 10.34,
+     "e": 10.61
+    },
+    {
+     "w": "buy",
+     "s": 10.61,
+     "e": 10.8
+    },
+    {
+     "w": "running",
+     "s": 10.8,
+     "e": 11.16
+    },
+    {
+     "w": "shoes.",
+     "s": 11.16,
+     "e": 11.66
+    }
+   ]
+  },
+  {
+   "text": "Route four: your own brain. You see hundreds of ads every day and forget almost all of them. The one that matches a conversation is the one you remember. Psychologists call it the frequency illusion. Just ask Max and his imaginary cat.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "route",
+      "x": 40,
+      "y": 20,
+      "text": "ROUTE 4 \u00b7 your own brain",
+      "bg": "#2F9E44",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "brain",
+      "x": 40,
+      "y": 140,
+      "ref": "ph:brain-fill",
+      "size": 180,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "illusion",
+      "x": 300,
+      "y": 150,
+      "big": "frequency illusion",
+      "label": "PSYCHOLOGISTS CALL IT",
+      "color": "#2F9E44",
+      "icon": "ph:eye-fill"
+     },
+     {
+      "k": "icon",
+      "at": "cat",
+      "x": 900,
+      "y": 330,
+      "ref": "ph:cat-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "max",
+      "x": 860,
+      "y": 520,
+      "text": "Max's imaginary cat",
+      "bg": "#2A2018",
+      "size": 30
+     }
+    ],
+    "acts": []
+   },
+   "start": 453.099,
+   "vo": 17.166,
+   "dur": 17.566,
+   "words": [
+    {
+     "w": "Route",
+     "s": 0.06,
+     "e": 0.32
+    },
+    {
+     "w": "four:",
+     "s": 0.32,
+     "e": 0.9
+    },
+    {
+     "w": "your",
+     "s": 1.29,
+     "e": 1.56
+    },
+    {
+     "w": "own",
+     "s": 1.56,
+     "e": 1.82
+    },
+    {
+     "w": "brain.",
+     "s": 1.82,
+     "e": 2.28
+    },
+    {
+     "w": "You",
+     "s": 3.04,
+     "e": 3.18
+    },
+    {
+     "w": "see",
+     "s": 3.18,
+     "e": 3.4
+    },
+    {
+     "w": "hundreds",
+     "s": 3.4,
+     "e": 4.06
+    },
+    {
+     "w": "of",
+     "s": 4.06,
+     "e": 4.16
+    },
+    {
+     "w": "ads",
+     "s": 4.16,
+     "e": 4.62
+    },
+    {
+     "w": "every",
+     "s": 4.62,
+     "e": 5.02
+    },
+    {
+     "w": "day",
+     "s": 5.02,
+     "e": 5.5
+    },
+    {
+     "w": "and",
+     "s": 5.5,
+     "e": 5.73
+    },
+    {
+     "w": "forget",
+     "s": 5.73,
+     "e": 6.19
+    },
+    {
+     "w": "almost",
+     "s": 6.19,
+     "e": 6.6
+    },
+    {
+     "w": "all",
+     "s": 6.6,
+     "e": 6.92
+    },
+    {
+     "w": "of",
+     "s": 6.92,
+     "e": 7.04
+    },
+    {
+     "w": "them.",
+     "s": 7.04,
+     "e": 7.31
+    },
+    {
+     "w": "The",
+     "s": 7.91,
+     "e": 7.98
+    },
+    {
+     "w": "one",
+     "s": 7.98,
+     "e": 8.22
+    },
+    {
+     "w": "that",
+     "s": 8.22,
+     "e": 8.34
+    },
+    {
+     "w": "matches",
+     "s": 8.34,
+     "e": 8.78
+    },
+    {
+     "w": "a",
+     "s": 8.78,
+     "e": 8.83
+    },
+    {
+     "w": "conversation",
+     "s": 8.83,
+     "e": 9.84
+    },
+    {
+     "w": "is",
+     "s": 9.84,
+     "e": 10.09
+    },
+    {
+     "w": "the",
+     "s": 10.09,
+     "e": 10.16
+    },
+    {
+     "w": "one",
+     "s": 10.16,
+     "e": 10.38
+    },
+    {
+     "w": "you",
+     "s": 10.38,
+     "e": 10.49
+    },
+    {
+     "w": "remember.",
+     "s": 10.49,
+     "e": 11.06
+    },
+    {
+     "w": "Psychologists",
+     "s": 11.6,
+     "e": 12.32
+    },
+    {
+     "w": "call",
+     "s": 12.32,
+     "e": 12.66
+    },
+    {
+     "w": "it",
+     "s": 12.66,
+     "e": 12.79
+    },
+    {
+     "w": "the",
+     "s": 12.79,
+     "e": 12.92
+    },
+    {
+     "w": "frequency",
+     "s": 12.92,
+     "e": 13.62
+    },
+    {
+     "w": "illusion.",
+     "s": 13.62,
+     "e": 14.12
+    },
+    {
+     "w": "Just",
+     "s": 14.71,
+     "e": 14.98
+    },
+    {
+     "w": "ask",
+     "s": 14.98,
+     "e": 15.24
+    },
+    {
+     "w": "Max",
+     "s": 15.24,
+     "e": 15.71
+    },
+    {
+     "w": "and",
+     "s": 15.71,
+     "e": 15.84
+    },
+    {
+     "w": "his",
+     "s": 15.84,
+     "e": 16.01
+    },
+    {
+     "w": "imaginary",
+     "s": 16.01,
+     "e": 16.59
+    },
+    {
+     "w": "cat.",
+     "s": 16.59,
+     "e": 16.97
+    }
+   ]
+  },
+  {
+   "text": "And there's a bonus trick advertisers love: lookalikes. If people who bought running shoes look a lot like you, same age, same city, same apps, you get the ad too. They don't need to know you. They just need to know people like you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "bonus",
+      "x": 40,
+      "y": 20,
+      "text": "BONUS \u00b7 lookalikes",
+      "bg": "#E0471C",
+      "size": 44
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 40,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u0"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 190,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u1"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 340,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u2"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 490,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u3"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 640,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u4"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 790,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u5"
+     },
+     {
+      "k": "icon",
+      "at": "you",
+      "x": 960,
+      "y": 130,
+      "ref": "ph:user-circle-fill",
+      "size": 160,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "age",
+      "x": 40,
+      "y": 330,
+      "text": "same age \u00b7 same city \u00b7 same apps",
+      "bg": "#2A2018",
+      "size": 34
+     },
+     {
+      "k": "big",
+      "at": "like",
+      "x": 40,
+      "y": 440,
+      "text": "people *like you*",
+      "size": 90,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 470.665,
+   "vo": 16.028,
+   "dur": 16.428,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.06,
+     "e": 0.22
+    },
+    {
+     "w": "there's",
+     "s": 0.22,
+     "e": 0.42
+    },
+    {
+     "w": "a",
+     "s": 0.42,
+     "e": 0.48
+    },
+    {
+     "w": "bonus",
+     "s": 0.48,
+     "e": 1.01
+    },
+    {
+     "w": "trick",
+     "s": 1.01,
+     "e": 1.31
+    },
+    {
+     "w": "advertisers",
+     "s": 1.31,
+     "e": 2.18
+    },
+    {
+     "w": "love:",
+     "s": 2.18,
+     "e": 2.62
+    },
+    {
+     "w": "lookalikes.",
+     "s": 2.62,
+     "e": 2.67
+    },
+    {
+     "w": "If",
+     "s": 2.62,
+     "e": 2.78
+    },
+    {
+     "w": "people",
+     "s": 3.34,
+     "e": 3.74
+    },
+    {
+     "w": "who",
+     "s": 4.91,
+     "e": 5.37
+    },
+    {
+     "w": "bought",
+     "s": 5.37,
+     "e": 5.64
+    },
+    {
+     "w": "running",
+     "s": 5.64,
+     "e": 6.03
+    },
+    {
+     "w": "shoes",
+     "s": 6.03,
+     "e": 6.46
+    },
+    {
+     "w": "look",
+     "s": 6.46,
+     "e": 6.63
+    },
+    {
+     "w": "a",
+     "s": 6.63,
+     "e": 6.66
+    },
+    {
+     "w": "lot",
+     "s": 6.66,
+     "e": 6.94
+    },
+    {
+     "w": "like",
+     "s": 6.94,
+     "e": 7.22
+    },
+    {
+     "w": "you,",
+     "s": 7.22,
+     "e": 7.69
+    },
+    {
+     "w": "same",
+     "s": 7.96,
+     "e": 8.27
+    },
+    {
+     "w": "age,",
+     "s": 8.27,
+     "e": 8.75
+    },
+    {
+     "w": "same",
+     "s": 8.75,
+     "e": 9.08
+    },
+    {
+     "w": "city,",
+     "s": 9.08,
+     "e": 9.61
+    },
+    {
+     "w": "same",
+     "s": 9.61,
+     "e": 9.94
+    },
+    {
+     "w": "apps,",
+     "s": 9.94,
+     "e": 10.4
+    },
+    {
+     "w": "you",
+     "s": 10.82,
+     "e": 11.0
+    },
+    {
+     "w": "get",
+     "s": 11.0,
+     "e": 11.2
+    },
+    {
+     "w": "the",
+     "s": 11.2,
+     "e": 11.38
+    },
+    {
+     "w": "ad",
+     "s": 11.38,
+     "e": 11.59
+    },
+    {
+     "w": "too.",
+     "s": 11.59,
+     "e": 11.94
+    },
+    {
+     "w": "They",
+     "s": 12.49,
+     "e": 12.62
+    },
+    {
+     "w": "don't",
+     "s": 12.62,
+     "e": 12.79
+    },
+    {
+     "w": "need",
+     "s": 12.79,
+     "e": 12.97
+    },
+    {
+     "w": "to",
+     "s": 12.97,
+     "e": 13.07
+    },
+    {
+     "w": "know",
+     "s": 13.07,
+     "e": 13.36
+    },
+    {
+     "w": "you.",
+     "s": 13.36,
+     "e": 13.73
+    },
+    {
+     "w": "They",
+     "s": 13.98,
+     "e": 14.13
+    },
+    {
+     "w": "just",
+     "s": 14.13,
+     "e": 14.36
+    },
+    {
+     "w": "need",
+     "s": 14.36,
+     "e": 14.56
+    },
+    {
+     "w": "to",
+     "s": 14.56,
+     "e": 14.67
+    },
+    {
+     "w": "know",
+     "s": 14.67,
+     "e": 14.86
+    },
+    {
+     "w": "people",
+     "s": 14.86,
+     "e": 15.29
+    },
+    {
+     "w": "like",
+     "s": 15.29,
+     "e": 15.64
+    },
+    {
+     "w": "you.",
+     "s": 15.64,
+     "e": 15.89
+    }
+   ]
+  },
+  {
+   "text": "Put together, the system doesn't need to hear you. It predicts what you're about to want, sometimes before you even say it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "predicts",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:sparkle-fill",
+      "size": 220,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "hear",
+      "x": 340,
+      "y": 80,
+      "text": "doesn't need to *hear* you",
+      "size": 84
+     },
+     {
+      "k": "tag",
+      "at": "want",
+      "x": 340,
+      "y": 260,
+      "text": "it predicts what you want next",
+      "bg": "#7A5CFF",
+      "size": 40
+     }
+    ],
+    "acts": []
+   },
+   "start": 487.093,
+   "vo": 7.851,
+   "dur": 8.251,
+   "words": [
+    {
+     "w": "Put",
+     "s": 0.02,
+     "e": 0.21
+    },
+    {
+     "w": "together,",
+     "s": 0.21,
+     "e": 0.86
+    },
+    {
+     "w": "the",
+     "s": 0.99,
+     "e": 1.09
+    },
+    {
+     "w": "system",
+     "s": 1.09,
+     "e": 1.61
+    },
+    {
+     "w": "doesn't",
+     "s": 1.61,
+     "e": 1.97
+    },
+    {
+     "w": "need",
+     "s": 1.97,
+     "e": 2.19
+    },
+    {
+     "w": "to",
+     "s": 2.19,
+     "e": 2.28
+    },
+    {
+     "w": "hear",
+     "s": 2.28,
+     "e": 2.67
+    },
+    {
+     "w": "you.",
+     "s": 2.67,
+     "e": 2.96
+    },
+    {
+     "w": "It",
+     "s": 3.41,
+     "e": 3.57
+    },
+    {
+     "w": "predicts",
+     "s": 3.57,
+     "e": 4.13
+    },
+    {
+     "w": "what",
+     "s": 4.13,
+     "e": 4.3
+    },
+    {
+     "w": "you're",
+     "s": 4.3,
+     "e": 4.48
+    },
+    {
+     "w": "about",
+     "s": 4.48,
+     "e": 4.83
+    },
+    {
+     "w": "to",
+     "s": 4.83,
+     "e": 4.94
+    },
+    {
+     "w": "want,",
+     "s": 4.94,
+     "e": 5.45
+    },
+    {
+     "w": "sometimes",
+     "s": 5.74,
+     "e": 6.39
+    },
+    {
+     "w": "before",
+     "s": 6.39,
+     "e": 6.74
+    },
+    {
+     "w": "you",
+     "s": 6.74,
+     "e": 6.92
+    },
+    {
+     "w": "even",
+     "s": 6.92,
+     "e": 7.12
+    },
+    {
+     "w": "say",
+     "s": 7.12,
+     "e": 7.49
+    },
+    {
+     "w": "it.",
+     "s": 7.49,
+     "e": 7.66
+    }
+   ]
+  },
+  {
+   "text": "Quick game. Real or fake? I say a phone myth, you decide.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "game",
+      "x": 40,
+      "y": 40,
+      "text": "REAL or *FAKE*?",
+      "size": 130,
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "real",
+      "x": 60,
+      "y": 300,
+      "text": "REAL",
+      "bg": "#2F9E44",
+      "size": 70
+     },
+     {
+      "k": "tag",
+      "at": "fake",
+      "x": 400,
+      "y": 300,
+      "text": "FAKE",
+      "bg": "#E0471C",
+      "size": 70
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "FUN: Real or fake?",
+   "start": 495.344,
+   "vo": 4.9,
+   "dur": 5.3,
+   "words": [
+    {
+     "w": "Quick",
+     "s": 0.1,
+     "e": 0.3
+    },
+    {
+     "w": "game.",
+     "s": 0.3,
+     "e": 0.69
+    },
+    {
+     "w": "Real",
+     "s": 1.02,
+     "e": 1.46
+    },
+    {
+     "w": "or",
+     "s": 1.46,
+     "e": 1.61
+    },
+    {
+     "w": "fake?",
+     "s": 1.61,
+     "e": 2.13
+    },
+    {
+     "w": "I",
+     "s": 2.52,
+     "e": 2.68
+    },
+    {
+     "w": "say",
+     "s": 2.68,
+     "e": 2.92
+    },
+    {
+     "w": "a",
+     "s": 2.92,
+     "e": 2.97
+    },
+    {
+     "w": "phone",
+     "s": 2.97,
+     "e": 3.31
+    },
+    {
+     "w": "myth,",
+     "s": 3.31,
+     "e": 3.69
+    },
+    {
+     "w": "you",
+     "s": 3.89,
+     "e": 4.13
+    },
+    {
+     "w": "decide.",
+     "s": 4.13,
+     "e": 4.65
+    }
+   ]
+  },
+  {
+   "text": "Myth one: airplane mode stops all tracking. Fake. Many apps simply save what you did and send it the moment you reconnect.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "airplane",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:airplane-tilt-fill",
+      "size": 190,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "one",
+      "x": 300,
+      "y": 60,
+      "text": "MYTH 1",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "big",
+      "at": "tracking",
+      "x": 300,
+      "y": 140,
+      "text": "stops all tracking?",
+      "size": 72
+     },
+     {
+      "k": "stamp",
+      "at": "fake",
+      "x": 300,
+      "y": 300,
+      "text": "FAKE",
+      "size": 110,
+      "id": "f",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "reconnect",
+      "x": 60,
+      "y": 470,
+      "text": "apps send it when you reconnect",
+      "bg": "#8C6B5A",
+      "size": 32
+     }
+    ],
+    "acts": []
+   },
+   "start": 500.645,
+   "vo": 9.671,
+   "dur": 10.071,
+   "words": [
+    {
+     "w": "Myth",
+     "s": 0.06,
+     "e": 0.35
+    },
+    {
+     "w": "one:",
+     "s": 0.35,
+     "e": 0.74
+    },
+    {
+     "w": "airplane",
+     "s": 1.28,
+     "e": 1.76
+    },
+    {
+     "w": "mode",
+     "s": 1.76,
+     "e": 2.08
+    },
+    {
+     "w": "stops",
+     "s": 2.08,
+     "e": 2.52
+    },
+    {
+     "w": "all",
+     "s": 2.52,
+     "e": 2.9
+    },
+    {
+     "w": "tracking.",
+     "s": 2.9,
+     "e": 3.39
+    },
+    {
+     "w": "Fake.",
+     "s": 4.04,
+     "e": 4.62
+    },
+    {
+     "w": "Many",
+     "s": 5.17,
+     "e": 5.46
+    },
+    {
+     "w": "apps",
+     "s": 5.46,
+     "e": 5.83
+    },
+    {
+     "w": "simply",
+     "s": 5.83,
+     "e": 6.21
+    },
+    {
+     "w": "save",
+     "s": 6.21,
+     "e": 6.69
+    },
+    {
+     "w": "what",
+     "s": 6.69,
+     "e": 6.8
+    },
+    {
+     "w": "you",
+     "s": 6.8,
+     "e": 6.96
+    },
+    {
+     "w": "did",
+     "s": 6.96,
+     "e": 7.41
+    },
+    {
+     "w": "and",
+     "s": 7.41,
+     "e": 7.61
+    },
+    {
+     "w": "send",
+     "s": 7.61,
+     "e": 7.97
+    },
+    {
+     "w": "it",
+     "s": 7.97,
+     "e": 8.11
+    },
+    {
+     "w": "the",
+     "s": 8.11,
+     "e": 8.21
+    },
+    {
+     "w": "moment",
+     "s": 8.21,
+     "e": 8.72
+    },
+    {
+     "w": "you",
+     "s": 8.72,
+     "e": 8.87
+    },
+    {
+     "w": "reconnect.",
+     "s": 8.87,
+     "e": 9.57
+    }
+   ]
+  },
+  {
+   "text": "Myth two: incognito mode hides you from websites. Fake. It only stops your own phone from saving your history. Websites, and your network, can still see you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "incognito",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:detective-fill",
+      "size": 190,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "two",
+      "x": 300,
+      "y": 60,
+      "text": "MYTH 2",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "big",
+      "at": "hides",
+      "x": 300,
+      "y": 140,
+      "text": "hides you from websites?",
+      "size": 72
+     },
+     {
+      "k": "stamp",
+      "at": "fake",
+      "x": 300,
+      "y": 300,
+      "text": "FAKE",
+      "size": 110,
+      "id": "f",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "history",
+      "x": 60,
+      "y": 470,
+      "text": "only your own history is not saved",
+      "bg": "#8C6B5A",
+      "size": 32
+     }
+    ],
+    "acts": []
+   },
+   "start": 510.715,
+   "vo": 12.028,
+   "dur": 12.428,
+   "words": [
+    {
+     "w": "Myth",
+     "s": 0.05,
+     "e": 0.34
+    },
+    {
+     "w": "two:",
+     "s": 0.34,
+     "e": 0.85
+    },
+    {
+     "w": "incognito",
+     "s": 1.34,
+     "e": 2.08
+    },
+    {
+     "w": "mode",
+     "s": 2.08,
+     "e": 2.39
+    },
+    {
+     "w": "hides",
+     "s": 2.39,
+     "e": 2.91
+    },
+    {
+     "w": "you",
+     "s": 2.91,
+     "e": 3.04
+    },
+    {
+     "w": "from",
+     "s": 3.04,
+     "e": 3.28
+    },
+    {
+     "w": "websites.",
+     "s": 3.28,
+     "e": 3.99
+    },
+    {
+     "w": "Fake.",
+     "s": 4.51,
+     "e": 5.13
+    },
+    {
+     "w": "It",
+     "s": 5.59,
+     "e": 5.71
+    },
+    {
+     "w": "only",
+     "s": 5.71,
+     "e": 5.96
+    },
+    {
+     "w": "stops",
+     "s": 5.96,
+     "e": 6.34
+    },
+    {
+     "w": "your",
+     "s": 6.34,
+     "e": 6.52
+    },
+    {
+     "w": "own",
+     "s": 6.52,
+     "e": 6.86
+    },
+    {
+     "w": "phone",
+     "s": 6.86,
+     "e": 7.21
+    },
+    {
+     "w": "from",
+     "s": 7.21,
+     "e": 7.39
+    },
+    {
+     "w": "saving",
+     "s": 7.39,
+     "e": 7.8
+    },
+    {
+     "w": "your",
+     "s": 7.8,
+     "e": 7.89
+    },
+    {
+     "w": "history.",
+     "s": 7.89,
+     "e": 8.5
+    },
+    {
+     "w": "Websites,",
+     "s": 8.88,
+     "e": 9.67
+    },
+    {
+     "w": "and",
+     "s": 9.67,
+     "e": 9.97
+    },
+    {
+     "w": "your",
+     "s": 9.97,
+     "e": 10.08
+    },
+    {
+     "w": "network,",
+     "s": 10.08,
+     "e": 10.75
+    },
+    {
+     "w": "can",
+     "s": 10.75,
+     "e": 10.99
+    },
+    {
+     "w": "still",
+     "s": 10.99,
+     "e": 11.34
+    },
+    {
+     "w": "see",
+     "s": 11.34,
+     "e": 11.59
+    },
+    {
+     "w": "you.",
+     "s": 11.59,
+     "e": 11.83
+    }
+   ]
+  },
+  {
+   "text": "Myth three: your phone is always listening for one thing. Real. The wake word. That's why turning it off is one of the simplest privacy wins.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "listening",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:ear-fill",
+      "size": 190,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "three",
+      "x": 300,
+      "y": 60,
+      "text": "MYTH 3",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "big",
+      "at": "always",
+      "x": 300,
+      "y": 140,
+      "text": "always listening for one thing?",
+      "size": 64
+     },
+     {
+      "k": "stamp",
+      "at": "real",
+      "x": 300,
+      "y": 300,
+      "text": "REAL",
+      "size": 110,
+      "color": "#2F9E44",
+      "id": "r",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "wake",
+      "x": 60,
+      "y": 470,
+      "text": "the wake word \u00b7 turn it off = easy win",
+      "bg": "#2F9E44",
+      "size": 32
+     }
+    ],
+    "acts": []
+   },
+   "start": 523.144,
+   "vo": 10.546,
+   "dur": 10.946,
+   "words": [
+    {
+     "w": "Myth",
+     "s": 0.05,
+     "e": 0.28
+    },
+    {
+     "w": "three:",
+     "s": 0.28,
+     "e": 0.84
+    },
+    {
+     "w": "your",
+     "s": 1.35,
+     "e": 1.49
+    },
+    {
+     "w": "phone",
+     "s": 1.49,
+     "e": 1.89
+    },
+    {
+     "w": "is",
+     "s": 1.89,
+     "e": 2.1
+    },
+    {
+     "w": "always",
+     "s": 2.1,
+     "e": 2.67
+    },
+    {
+     "w": "listening",
+     "s": 2.67,
+     "e": 3.13
+    },
+    {
+     "w": "for",
+     "s": 3.13,
+     "e": 3.31
+    },
+    {
+     "w": "one",
+     "s": 3.31,
+     "e": 3.73
+    },
+    {
+     "w": "thing.",
+     "s": 3.73,
+     "e": 4.18
+    },
+    {
+     "w": "Real.",
+     "s": 4.74,
+     "e": 5.25
+    },
+    {
+     "w": "The",
+     "s": 5.63,
+     "e": 5.74
+    },
+    {
+     "w": "wake",
+     "s": 5.74,
+     "e": 6.14
+    },
+    {
+     "w": "word.",
+     "s": 6.14,
+     "e": 6.54
+    },
+    {
+     "w": "That's",
+     "s": 7.01,
+     "e": 7.23
+    },
+    {
+     "w": "why",
+     "s": 7.23,
+     "e": 7.4
+    },
+    {
+     "w": "turning",
+     "s": 7.4,
+     "e": 7.78
+    },
+    {
+     "w": "it",
+     "s": 7.78,
+     "e": 7.89
+    },
+    {
+     "w": "off",
+     "s": 7.89,
+     "e": 8.22
+    },
+    {
+     "w": "is",
+     "s": 8.22,
+     "e": 8.38
+    },
+    {
+     "w": "one",
+     "s": 8.38,
+     "e": 8.54
+    },
+    {
+     "w": "of",
+     "s": 8.54,
+     "e": 8.63
+    },
+    {
+     "w": "the",
+     "s": 8.63,
+     "e": 8.73
+    },
+    {
+     "w": "simplest",
+     "s": 8.73,
+     "e": 9.4
+    },
+    {
+     "w": "privacy",
+     "s": 9.4,
+     "e": 9.93
+    },
+    {
+     "w": "wins.",
+     "s": 9.93,
+     "e": 10.43
+    }
+   ]
+  },
+  {
+   "text": "Myth four: a sticker on your camera also blocks the microphone. Fake. They're separate parts. The sticker does nothing for the mic.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "camera",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:camera-slash-fill",
+      "size": 190,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "four",
+      "x": 300,
+      "y": 60,
+      "text": "MYTH 4",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "big",
+      "at": "blocks",
+      "x": 300,
+      "y": 140,
+      "text": "camera sticker blocks the mic?",
+      "size": 64
+     },
+     {
+      "k": "stamp",
+      "at": "fake",
+      "x": 300,
+      "y": 300,
+      "text": "FAKE",
+      "size": 110,
+      "id": "f",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "mic",
+      "x": 900,
+      "y": 330,
+      "ref": "ph:microphone-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "start": 534.09,
+   "vo": 9.583,
+   "dur": 9.983,
+   "words": [
+    {
+     "w": "Myth",
+     "s": 0.07,
+     "e": 0.31
+    },
+    {
+     "w": "four:",
+     "s": 0.31,
+     "e": 0.96
+    },
+    {
+     "w": "a",
+     "s": 1.39,
+     "e": 1.46
+    },
+    {
+     "w": "sticker",
+     "s": 1.46,
+     "e": 1.94
+    },
+    {
+     "w": "on",
+     "s": 1.94,
+     "e": 2.08
+    },
+    {
+     "w": "your",
+     "s": 2.08,
+     "e": 2.2
+    },
+    {
+     "w": "camera",
+     "s": 2.2,
+     "e": 2.75
+    },
+    {
+     "w": "also",
+     "s": 2.75,
+     "e": 3.29
+    },
+    {
+     "w": "blocks",
+     "s": 3.29,
+     "e": 3.67
+    },
+    {
+     "w": "the",
+     "s": 3.67,
+     "e": 3.75
+    },
+    {
+     "w": "microphone.",
+     "s": 3.75,
+     "e": 4.37
+    },
+    {
+     "w": "Fake.",
+     "s": 4.98,
+     "e": 5.59
+    },
+    {
+     "w": "They're",
+     "s": 5.91,
+     "e": 6.06
+    },
+    {
+     "w": "separate",
+     "s": 6.06,
+     "e": 6.54
+    },
+    {
+     "w": "parts.",
+     "s": 6.54,
+     "e": 7.13
+    },
+    {
+     "w": "The",
+     "s": 7.47,
+     "e": 7.57
+    },
+    {
+     "w": "sticker",
+     "s": 7.57,
+     "e": 7.97
+    },
+    {
+     "w": "does",
+     "s": 7.97,
+     "e": 8.22
+    },
+    {
+     "w": "nothing",
+     "s": 8.22,
+     "e": 8.77
+    },
+    {
+     "w": "for",
+     "s": 8.77,
+     "e": 8.91
+    },
+    {
+     "w": "the",
+     "s": 8.91,
+     "e": 9.0
+    },
+    {
+     "w": "mic.",
+     "s": 9.0,
+     "e": 9.4
+    }
+   ]
+  },
+  {
+   "text": "What about India? Our data protection law, the DPDP Act, finally has its rules in place since November twenty twenty-five.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "india",
+      "x": 40,
+      "y": 40,
+      "ref": "circle-flags:in",
+      "size": 180,
+      "in": "drop"
+     },
+     {
+      "k": "clip",
+      "at": "dpdp",
+      "x": 280,
+      "y": 40,
+      "by": "INDIA \u00b7 DATA PROTECTION",
+      "text": "DPDP Act rules in place since November 2025",
+      "hi": "November 2025",
+      "w": 820,
+      "id": "cl"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "What about India?",
+   "start": 544.073,
+   "vo": 8.99,
+   "dur": 9.39,
+   "words": [
+    {
+     "w": "What",
+     "s": 0.03,
+     "e": 0.26
+    },
+    {
+     "w": "about",
+     "s": 0.26,
+     "e": 0.52
+    },
+    {
+     "w": "India?",
+     "s": 0.52,
+     "e": 1.01
+    },
+    {
+     "w": "Our",
+     "s": 1.59,
+     "e": 1.79
+    },
+    {
+     "w": "data",
+     "s": 1.79,
+     "e": 2.09
+    },
+    {
+     "w": "protection",
+     "s": 2.09,
+     "e": 2.65
+    },
+    {
+     "w": "law,",
+     "s": 2.65,
+     "e": 3.04
+    },
+    {
+     "w": "the",
+     "s": 3.37,
+     "e": 4.02
+    },
+    {
+     "w": "DPDP",
+     "s": 4.02,
+     "e": 4.31
+    },
+    {
+     "w": "Act,",
+     "s": 4.31,
+     "e": 4.76
+    },
+    {
+     "w": "finally",
+     "s": 5.04,
+     "e": 5.59
+    },
+    {
+     "w": "has",
+     "s": 5.59,
+     "e": 5.88
+    },
+    {
+     "w": "its",
+     "s": 5.88,
+     "e": 6.03
+    },
+    {
+     "w": "rules",
+     "s": 6.03,
+     "e": 6.41
+    },
+    {
+     "w": "in",
+     "s": 6.41,
+     "e": 6.54
+    },
+    {
+     "w": "place",
+     "s": 6.54,
+     "e": 6.94
+    },
+    {
+     "w": "since",
+     "s": 6.94,
+     "e": 7.19
+    },
+    {
+     "w": "November",
+     "s": 7.19,
+     "e": 7.73
+    },
+    {
+     "w": "twenty",
+     "s": 7.73,
+     "e": 8.07
+    },
+    {
+     "w": "twenty-five.",
+     "s": 8.07,
+     "e": 8.99
+    }
+   ]
+  },
+  {
+   "text": "They roll out in phases until twenty twenty-seven. Companies will have to tell you clearly what data they collect and why, and let you withdraw your consent easily.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "bars",
+      "at": "phases",
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "id": "b",
+      "rows": [
+       [
+        "Nov 2025 \u00b7 rules notified",
+        0.3,
+        "#1C7ED6"
+       ],
+       [
+        "Nov 2026 \u00b7 consent managers",
+        0.6,
+        "#7A5CFF"
+       ],
+       [
+        "May 2027 \u00b7 full compliance",
+        1.0,
+        "#2F9E44"
+       ]
+      ],
+      "gap": 0.5
+     },
+     {
+      "k": "icon",
+      "at": "withdraw",
+      "x": 900,
+      "y": 60,
+      "ref": "ph:toggle-left-fill",
+      "size": 200,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "consent",
+      "x": 860,
+      "y": 300,
+      "text": "withdraw consent easily",
+      "bg": "#2F9E44",
+      "size": 32
+     }
+    ],
+    "acts": []
+   },
+   "start": 553.463,
+   "vo": 10.889,
+   "dur": 11.289,
+   "words": [
+    {
+     "w": "They",
+     "s": 0.05,
+     "e": 0.21
+    },
+    {
+     "w": "roll",
+     "s": 0.21,
+     "e": 0.54
+    },
+    {
+     "w": "out",
+     "s": 0.54,
+     "e": 0.72
+    },
+    {
+     "w": "in",
+     "s": 0.72,
+     "e": 0.85
+    },
+    {
+     "w": "phases",
+     "s": 0.85,
+     "e": 1.56
+    },
+    {
+     "w": "until",
+     "s": 1.56,
+     "e": 1.87
+    },
+    {
+     "w": "twenty",
+     "s": 1.87,
+     "e": 2.24
+    },
+    {
+     "w": "twenty-seven.",
+     "s": 2.24,
+     "e": 2.29
+    },
+    {
+     "w": "Companies",
+     "s": 2.24,
+     "e": 2.75
+    },
+    {
+     "w": "will",
+     "s": 3.85,
+     "e": 4.25
+    },
+    {
+     "w": "have",
+     "s": 4.25,
+     "e": 4.49
+    },
+    {
+     "w": "to",
+     "s": 4.49,
+     "e": 4.62
+    },
+    {
+     "w": "tell",
+     "s": 4.62,
+     "e": 4.83
+    },
+    {
+     "w": "you",
+     "s": 4.83,
+     "e": 5.03
+    },
+    {
+     "w": "clearly",
+     "s": 5.03,
+     "e": 5.64
+    },
+    {
+     "w": "what",
+     "s": 5.64,
+     "e": 6.0
+    },
+    {
+     "w": "data",
+     "s": 6.0,
+     "e": 6.31
+    },
+    {
+     "w": "they",
+     "s": 6.31,
+     "e": 6.44
+    },
+    {
+     "w": "collect",
+     "s": 6.44,
+     "e": 7.0
+    },
+    {
+     "w": "and",
+     "s": 7.0,
+     "e": 7.21
+    },
+    {
+     "w": "why,",
+     "s": 7.21,
+     "e": 7.78
+    },
+    {
+     "w": "and",
+     "s": 8.16,
+     "e": 8.57
+    },
+    {
+     "w": "let",
+     "s": 8.57,
+     "e": 8.81
+    },
+    {
+     "w": "you",
+     "s": 8.81,
+     "e": 8.96
+    },
+    {
+     "w": "withdraw",
+     "s": 8.96,
+     "e": 9.39
+    },
+    {
+     "w": "your",
+     "s": 9.39,
+     "e": 9.56
+    },
+    {
+     "w": "consent",
+     "s": 9.56,
+     "e": 10.11
+    },
+    {
+     "w": "easily.",
+     "s": 10.11,
+     "e": 10.64
+    }
+   ]
+  },
+  {
+   "text": "Until then, here is what you can do today, in about five minutes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "today",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:timer-fill",
+      "size": 220,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "five",
+      "x": 320,
+      "y": 100,
+      "text": "*5 minutes*, 5 steps",
+      "size": 96,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Five things to do today",
+   "start": 564.752,
+   "vo": 4.469,
+   "dur": 4.869,
+   "words": [
+    {
+     "w": "Until",
+     "s": 0.05,
+     "e": 0.46
+    },
+    {
+     "w": "then,",
+     "s": 0.46,
+     "e": 0.83
+    },
+    {
+     "w": "here",
+     "s": 1.05,
+     "e": 1.4
+    },
+    {
+     "w": "is",
+     "s": 1.4,
+     "e": 1.53
+    },
+    {
+     "w": "what",
+     "s": 1.53,
+     "e": 1.67
+    },
+    {
+     "w": "you",
+     "s": 1.67,
+     "e": 1.84
+    },
+    {
+     "w": "can",
+     "s": 1.84,
+     "e": 2.0
+    },
+    {
+     "w": "do",
+     "s": 2.0,
+     "e": 2.18
+    },
+    {
+     "w": "today,",
+     "s": 2.18,
+     "e": 2.82
+    },
+    {
+     "w": "in",
+     "s": 3.01,
+     "e": 3.12
+    },
+    {
+     "w": "about",
+     "s": 3.12,
+     "e": 3.41
+    },
+    {
+     "w": "five",
+     "s": 3.41,
+     "e": 3.78
+    },
+    {
+     "w": "minutes.",
+     "s": 3.78,
+     "e": 4.27
+    }
+   ]
+  },
+  {
+   "text": "One. Check which apps can use your microphone. On iPhone, go to Settings, Privacy and Security, Microphone. On Android, open the Privacy dashboard. Switch off anything that doesn't need it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "one",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 1 \u00b7 microphone permissions",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "card",
+      "at": "iphone",
+      "x": 40,
+      "y": 140,
+      "icon": "ph:gear-six-fill",
+      "label": "IPHONE",
+      "big": "Settings \u203a Privacy & Security \u203a Microphone",
+      "bsize": 36,
+      "color": "#2A2018",
+      "id": "i"
+     },
+     {
+      "k": "card",
+      "at": "android",
+      "x": 40,
+      "y": 330,
+      "icon": "ph:shield-check-fill",
+      "label": "ANDROID",
+      "big": "Privacy dashboard",
+      "bsize": 44,
+      "color": "#2F9E44",
+      "id": "a"
+     },
+     {
+      "k": "icon",
+      "at": "switch",
+      "x": 960,
+      "y": 300,
+      "ref": "ph:toggle-left-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "start": 569.621,
+   "vo": 14.383,
+   "dur": 14.783,
+   "words": [
+    {
+     "w": "One.",
+     "s": 0.06,
+     "e": 0.46
+    },
+    {
+     "w": "Check",
+     "s": 1.02,
+     "e": 1.35
+    },
+    {
+     "w": "which",
+     "s": 1.35,
+     "e": 1.63
+    },
+    {
+     "w": "apps",
+     "s": 1.63,
+     "e": 2.01
+    },
+    {
+     "w": "can",
+     "s": 2.01,
+     "e": 2.22
+    },
+    {
+     "w": "use",
+     "s": 2.22,
+     "e": 2.47
+    },
+    {
+     "w": "your",
+     "s": 2.47,
+     "e": 2.59
+    },
+    {
+     "w": "microphone.",
+     "s": 2.59,
+     "e": 3.29
+    },
+    {
+     "w": "On",
+     "s": 3.76,
+     "e": 3.97
+    },
+    {
+     "w": "iPhone,",
+     "s": 3.97,
+     "e": 4.63
+    },
+    {
+     "w": "go",
+     "s": 4.81,
+     "e": 4.99
+    },
+    {
+     "w": "to",
+     "s": 4.99,
+     "e": 5.06
+    },
+    {
+     "w": "Settings,",
+     "s": 5.06,
+     "e": 5.78
+    },
+    {
+     "w": "Privacy",
+     "s": 6.02,
+     "e": 6.6
+    },
+    {
+     "w": "and",
+     "s": 6.6,
+     "e": 6.69
+    },
+    {
+     "w": "Security,",
+     "s": 6.69,
+     "e": 7.41
+    },
+    {
+     "w": "Microphone.",
+     "s": 7.73,
+     "e": 8.4
+    },
+    {
+     "w": "On",
+     "s": 8.89,
+     "e": 9.07
+    },
+    {
+     "w": "Android,",
+     "s": 9.07,
+     "e": 9.73
+    },
+    {
+     "w": "open",
+     "s": 10.02,
+     "e": 10.34
+    },
+    {
+     "w": "the",
+     "s": 10.34,
+     "e": 10.43
+    },
+    {
+     "w": "Privacy",
+     "s": 10.43,
+     "e": 10.97
+    },
+    {
+     "w": "dashboard.",
+     "s": 10.97,
+     "e": 11.69
+    },
+    {
+     "w": "Switch",
+     "s": 12.03,
+     "e": 12.39
+    },
+    {
+     "w": "off",
+     "s": 12.39,
+     "e": 12.62
+    },
+    {
+     "w": "anything",
+     "s": 12.74,
+     "e": 13.29
+    },
+    {
+     "w": "that",
+     "s": 13.29,
+     "e": 13.4
+    },
+    {
+     "w": "doesn't",
+     "s": 13.4,
+     "e": 13.74
+    },
+    {
+     "w": "need",
+     "s": 13.74,
+     "e": 13.95
+    },
+    {
+     "w": "it.",
+     "s": 13.95,
+     "e": 14.22
+    }
+   ]
+  },
+  {
+   "text": "Does your torch app need your microphone? Does your calculator? No. Switch them off.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "torch",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:flashlight-fill",
+      "size": 180,
+      "color": "#F5B400",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "torch",
+      "x": 40,
+      "y": 290,
+      "text": "torch app",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "icon",
+      "at": "calculator",
+      "x": 360,
+      "y": 60,
+      "ref": "ph:calculator-fill",
+      "size": 180,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "calculator",
+      "x": 360,
+      "y": 290,
+      "text": "calculator",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "icon",
+      "at": "microphone",
+      "x": 700,
+      "y": 60,
+      "ref": "ph:microphone-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "stamp",
+      "at": "no",
+      "x": 680,
+      "y": 280,
+      "text": "NO!",
+      "size": 110,
+      "id": "n",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 584.404,
+   "vo": 5.947,
+   "dur": 6.347,
+   "words": [
+    {
+     "w": "Does",
+     "s": 0.1,
+     "e": 0.32
+    },
+    {
+     "w": "your",
+     "s": 0.32,
+     "e": 0.48
+    },
+    {
+     "w": "torch",
+     "s": 0.48,
+     "e": 0.91
+    },
+    {
+     "w": "app",
+     "s": 0.91,
+     "e": 1.18
+    },
+    {
+     "w": "need",
+     "s": 1.18,
+     "e": 1.42
+    },
+    {
+     "w": "your",
+     "s": 1.42,
+     "e": 1.54
+    },
+    {
+     "w": "microphone?",
+     "s": 1.54,
+     "e": 2.26
+    },
+    {
+     "w": "Does",
+     "s": 2.64,
+     "e": 2.83
+    },
+    {
+     "w": "your",
+     "s": 2.83,
+     "e": 2.94
+    },
+    {
+     "w": "calculator?",
+     "s": 2.94,
+     "e": 3.75
+    },
+    {
+     "w": "No.",
+     "s": 4.1,
+     "e": 4.51
+    },
+    {
+     "w": "Switch",
+     "s": 4.81,
+     "e": 5.17
+    },
+    {
+     "w": "them",
+     "s": 5.17,
+     "e": 5.34
+    },
+    {
+     "w": "off.",
+     "s": 5.34,
+     "e": 5.74
+    }
+   ]
+  },
+  {
+   "text": "Two. Watch for the dot. If the orange or green dot appears when you're not on a call or recording, find out which app is using it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "two",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 2 \u00b7 watch the dot",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "prop",
+      "at": "dot",
+      "x": 60,
+      "y": 120,
+      "p": "phone",
+      "s": 0.85,
+      "id": "ph"
+     },
+     {
+      "k": "big",
+      "at": "orange",
+      "x": 150,
+      "y": 150,
+      "text": "\u25cf",
+      "size": 80,
+      "color": "#F87736",
+      "id": "od",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "call",
+      "x": 560,
+      "y": 160,
+      "ref": "ph:phone-slash-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "which",
+      "x": 560,
+      "y": 380,
+      "text": "not on a call? find the app",
+      "bg": "#E0471C",
+      "size": 34
+     }
+    ],
+    "acts": []
+   },
+   "start": 590.751,
+   "vo": 9.497,
+   "dur": 9.897,
+   "words": [
+    {
+     "w": "Two.",
+     "s": 0.02,
+     "e": 0.51
+    },
+    {
+     "w": "Watch",
+     "s": 0.97,
+     "e": 1.38
+    },
+    {
+     "w": "for",
+     "s": 1.38,
+     "e": 1.54
+    },
+    {
+     "w": "the",
+     "s": 1.54,
+     "e": 1.65
+    },
+    {
+     "w": "dot.",
+     "s": 1.65,
+     "e": 2.24
+    },
+    {
+     "w": "If",
+     "s": 2.78,
+     "e": 2.94
+    },
+    {
+     "w": "the",
+     "s": 2.94,
+     "e": 3.1
+    },
+    {
+     "w": "orange",
+     "s": 3.1,
+     "e": 3.57
+    },
+    {
+     "w": "or",
+     "s": 3.57,
+     "e": 3.65
+    },
+    {
+     "w": "green",
+     "s": 3.65,
+     "e": 4.09
+    },
+    {
+     "w": "dot",
+     "s": 4.09,
+     "e": 4.37
+    },
+    {
+     "w": "appears",
+     "s": 4.37,
+     "e": 4.9
+    },
+    {
+     "w": "when",
+     "s": 4.9,
+     "e": 5.09
+    },
+    {
+     "w": "you're",
+     "s": 5.09,
+     "e": 5.21
+    },
+    {
+     "w": "not",
+     "s": 5.21,
+     "e": 5.62
+    },
+    {
+     "w": "on",
+     "s": 5.62,
+     "e": 5.76
+    },
+    {
+     "w": "a",
+     "s": 5.76,
+     "e": 5.84
+    },
+    {
+     "w": "call",
+     "s": 5.84,
+     "e": 6.29
+    },
+    {
+     "w": "or",
+     "s": 6.29,
+     "e": 6.42
+    },
+    {
+     "w": "recording,",
+     "s": 6.42,
+     "e": 7.08
+    },
+    {
+     "w": "find",
+     "s": 7.46,
+     "e": 7.77
+    },
+    {
+     "w": "out",
+     "s": 7.77,
+     "e": 7.92
+    },
+    {
+     "w": "which",
+     "s": 7.92,
+     "e": 8.21
+    },
+    {
+     "w": "app",
+     "s": 8.21,
+     "e": 8.56
+    },
+    {
+     "w": "is",
+     "s": 8.56,
+     "e": 8.76
+    },
+    {
+     "w": "using",
+     "s": 8.76,
+     "e": 9.11
+    },
+    {
+     "w": "it.",
+     "s": 9.11,
+     "e": 9.35
+    }
+   ]
+  },
+  {
+   "text": "Three. Limit ad tracking. On iPhone, choose \"Ask App Not to Track\". On Android, delete your advertising ID in Settings.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "three",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 3 \u00b7 limit ad tracking",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "logo",
+      "at": "iphone",
+      "x": 40,
+      "y": 140,
+      "ref": "logos:apple",
+      "size": 120,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "ask",
+      "x": 220,
+      "y": 170,
+      "text": "\"Ask App Not to Track\"",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "logo",
+      "at": "android",
+      "x": 40,
+      "y": 330,
+      "ref": "logos:android-icon",
+      "size": 120,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "delete",
+      "x": 220,
+      "y": 360,
+      "text": "Delete advertising ID",
+      "bg": "#2F9E44",
+      "size": 40
+     }
+    ],
+    "acts": []
+   },
+   "start": 600.648,
+   "vo": 10.552,
+   "dur": 10.952,
+   "words": [
+    {
+     "w": "Three.",
+     "s": 0.03,
+     "e": 0.57
+    },
+    {
+     "w": "Limit",
+     "s": 1.01,
+     "e": 1.46
+    },
+    {
+     "w": "ad",
+     "s": 1.46,
+     "e": 1.81
+    },
+    {
+     "w": "tracking.",
+     "s": 1.81,
+     "e": 2.4
+    },
+    {
+     "w": "On",
+     "s": 2.85,
+     "e": 3.06
+    },
+    {
+     "w": "iPhone,",
+     "s": 3.06,
+     "e": 3.74
+    },
+    {
+     "w": "choose",
+     "s": 3.86,
+     "e": 4.32
+    },
+    {
+     "w": "\"Ask",
+     "s": 4.46,
+     "e": 4.84
+    },
+    {
+     "w": "App",
+     "s": 4.84,
+     "e": 5.18
+    },
+    {
+     "w": "Not",
+     "s": 5.18,
+     "e": 5.55
+    },
+    {
+     "w": "to",
+     "s": 5.55,
+     "e": 5.7
+    },
+    {
+     "w": "Track\".",
+     "s": 5.7,
+     "e": 6.25
+    },
+    {
+     "w": "On",
+     "s": 6.63,
+     "e": 6.84
+    },
+    {
+     "w": "Android,",
+     "s": 6.84,
+     "e": 7.53
+    },
+    {
+     "w": "delete",
+     "s": 7.68,
+     "e": 8.07
+    },
+    {
+     "w": "your",
+     "s": 8.07,
+     "e": 8.23
+    },
+    {
+     "w": "advertising",
+     "s": 8.23,
+     "e": 9.01
+    },
+    {
+     "w": "ID",
+     "s": 9.01,
+     "e": 9.55
+    },
+    {
+     "w": "in",
+     "s": 9.55,
+     "e": 9.69
+    },
+    {
+     "w": "Settings.",
+     "s": 9.69,
+     "e": 10.4
+    }
+   ]
+  },
+  {
+   "text": "Four. On Facebook and Instagram, open your activity off Meta technologies, and disconnect the websites that report on you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "four",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 4 \u00b7 off-Meta activity",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "logo",
+      "at": "facebook",
+      "x": 40,
+      "y": 140,
+      "ref": "logos:facebook",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "logo",
+      "at": "instagram",
+      "x": 240,
+      "y": 140,
+      "ref": "logos:instagram-icon",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "activity",
+      "x": 480,
+      "y": 150,
+      "icon": "ph:list-bullets-bold",
+      "label": "SETTINGS",
+      "big": "Your activity off Meta technologies",
+      "bsize": 36,
+      "color": "#7A5CFF",
+      "id": "c"
+     },
+     {
+      "k": "icon",
+      "at": "disconnect",
+      "x": 480,
+      "y": 360,
+      "ref": "ph:link-break-bold",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "start": 611.6,
+   "vo": 8.478,
+   "dur": 8.878,
+   "words": [
+    {
+     "w": "Four.",
+     "s": 0.04,
+     "e": 0.64
+    },
+    {
+     "w": "On",
+     "s": 1.01,
+     "e": 1.18
+    },
+    {
+     "w": "Facebook",
+     "s": 1.18,
+     "e": 1.72
+    },
+    {
+     "w": "and",
+     "s": 1.72,
+     "e": 1.82
+    },
+    {
+     "w": "Instagram,",
+     "s": 1.82,
+     "e": 2.53
+    },
+    {
+     "w": "open",
+     "s": 2.84,
+     "e": 3.16
+    },
+    {
+     "w": "your",
+     "s": 3.16,
+     "e": 3.34
+    },
+    {
+     "w": "activity",
+     "s": 3.34,
+     "e": 3.95
+    },
+    {
+     "w": "off",
+     "s": 3.95,
+     "e": 4.35
+    },
+    {
+     "w": "Meta",
+     "s": 4.35,
+     "e": 4.68
+    },
+    {
+     "w": "technologies,",
+     "s": 4.68,
+     "e": 5.65
+    },
+    {
+     "w": "and",
+     "s": 5.77,
+     "e": 5.98
+    },
+    {
+     "w": "disconnect",
+     "s": 5.98,
+     "e": 6.57
+    },
+    {
+     "w": "the",
+     "s": 6.57,
+     "e": 6.65
+    },
+    {
+     "w": "websites",
+     "s": 6.65,
+     "e": 7.28
+    },
+    {
+     "w": "that",
+     "s": 7.28,
+     "e": 7.41
+    },
+    {
+     "w": "report",
+     "s": 7.41,
+     "e": 7.94
+    },
+    {
+     "w": "on",
+     "s": 7.94,
+     "e": 8.07
+    },
+    {
+     "w": "you.",
+     "s": 8.07,
+     "e": 8.26
+    }
+   ]
+  },
+  {
+   "text": "Five. If voice assistants worry you, turn off the wake word, and review or delete your saved voice recordings.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "five",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 5 \u00b7 voice assistants",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "wake",
+      "x": 40,
+      "y": 150,
+      "ref": "ph:microphone-slash-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "wake",
+      "x": 260,
+      "y": 190,
+      "text": "wake word: OFF",
+      "bg": "#E0471C",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "delete",
+      "x": 40,
+      "y": 370,
+      "ref": "ph:trash-fill",
+      "size": 160,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "delete",
+      "x": 260,
+      "y": 410,
+      "text": "delete saved recordings",
+      "bg": "#2A2018",
+      "size": 40
+     }
+    ],
+    "acts": []
+   },
+   "start": 620.478,
+   "vo": 7.769,
+   "dur": 8.169,
+   "words": [
+    {
+     "w": "Five.",
+     "s": 0.02,
+     "e": 0.57
+    },
+    {
+     "w": "If",
+     "s": 1.11,
+     "e": 1.33
+    },
+    {
+     "w": "voice",
+     "s": 1.33,
+     "e": 1.63
+    },
+    {
+     "w": "assistants",
+     "s": 1.63,
+     "e": 2.2
+    },
+    {
+     "w": "worry",
+     "s": 2.2,
+     "e": 2.56
+    },
+    {
+     "w": "you,",
+     "s": 2.56,
+     "e": 2.9
+    },
+    {
+     "w": "turn",
+     "s": 3.24,
+     "e": 3.52
+    },
+    {
+     "w": "off",
+     "s": 3.52,
+     "e": 3.72
+    },
+    {
+     "w": "the",
+     "s": 3.72,
+     "e": 3.81
+    },
+    {
+     "w": "wake",
+     "s": 3.81,
+     "e": 4.14
+    },
+    {
+     "w": "word,",
+     "s": 4.14,
+     "e": 4.39
+    },
+    {
+     "w": "and",
+     "s": 4.61,
+     "e": 4.84
+    },
+    {
+     "w": "review",
+     "s": 4.84,
+     "e": 5.29
+    },
+    {
+     "w": "or",
+     "s": 5.29,
+     "e": 5.59
+    },
+    {
+     "w": "delete",
+     "s": 5.59,
+     "e": 6.05
+    },
+    {
+     "w": "your",
+     "s": 6.05,
+     "e": 6.21
+    },
+    {
+     "w": "saved",
+     "s": 6.21,
+     "e": 6.6
+    },
+    {
+     "w": "voice",
+     "s": 6.6,
+     "e": 6.92
+    },
+    {
+     "w": "recordings.",
+     "s": 6.92,
+     "e": 7.64
+    }
+   ]
+  },
+  {
+   "text": "So, is your phone secretly listening to you? Almost certainly not, at least not for ads.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "phone",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:device-mobile-fill",
+      "size": 200,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "listening",
+      "x": 320,
+      "y": 80,
+      "text": "Listening for ads?",
+      "size": 96
+     },
+     {
+      "k": "stamp",
+      "at": "almost",
+      "x": 340,
+      "y": 260,
+      "text": "ALMOST CERTAINLY NOT",
+      "size": 70,
+      "color": "#2F9E44",
+      "rot": -4,
+      "id": "n",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The verdict",
+   "start": 628.647,
+   "vo": 7.085,
+   "dur": 7.485,
+   "words": [
+    {
+     "w": "So,",
+     "s": 0.02,
+     "e": 0.61
+    },
+    {
+     "w": "is",
+     "s": 0.78,
+     "e": 1.0
+    },
+    {
+     "w": "your",
+     "s": 1.0,
+     "e": 1.15
+    },
+    {
+     "w": "phone",
+     "s": 1.15,
+     "e": 1.57
+    },
+    {
+     "w": "secretly",
+     "s": 1.57,
+     "e": 2.23
+    },
+    {
+     "w": "listening",
+     "s": 2.23,
+     "e": 2.72
+    },
+    {
+     "w": "to",
+     "s": 2.72,
+     "e": 2.83
+    },
+    {
+     "w": "you?",
+     "s": 2.83,
+     "e": 3.1
+    },
+    {
+     "w": "Almost",
+     "s": 3.6,
+     "e": 4.03
+    },
+    {
+     "w": "certainly",
+     "s": 4.03,
+     "e": 4.58
+    },
+    {
+     "w": "not,",
+     "s": 4.58,
+     "e": 5.11
+    },
+    {
+     "w": "at",
+     "s": 5.33,
+     "e": 5.49
+    },
+    {
+     "w": "least",
+     "s": 5.49,
+     "e": 5.89
+    },
+    {
+     "w": "not",
+     "s": 5.89,
+     "e": 6.17
+    },
+    {
+     "w": "for",
+     "s": 6.17,
+     "e": 6.36
+    },
+    {
+     "w": "ads.",
+     "s": 6.36,
+     "e": 6.92
+    }
+   ]
+  },
+  {
+   "text": "The uncomfortable truth is that it doesn't need to. Your searches, your location and the people around you already tell the story.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "shoe",
+      "x": 480,
+      "y": 30,
+      "ref": "ph:sneaker-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "searches",
+      "x": 60,
+      "y": 300,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 140,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "location",
+      "x": 360,
+      "y": 300,
+      "ref": "ph:map-pin-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 660,
+      "y": 300,
+      "ref": "ph:users-three-fill",
+      "size": 140,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "story",
+      "x": 200,
+      "y": 520,
+      "text": "already tell the *story*",
+      "size": 80
+     }
+    ],
+    "acts": []
+   },
+   "start": 636.132,
+   "vo": 8.898,
+   "dur": 9.298,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.1,
+     "e": 0.26
+    },
+    {
+     "w": "uncomfortable",
+     "s": 0.26,
+     "e": 0.94
+    },
+    {
+     "w": "truth",
+     "s": 0.94,
+     "e": 1.51
+    },
+    {
+     "w": "is",
+     "s": 1.51,
+     "e": 1.7
+    },
+    {
+     "w": "that",
+     "s": 1.7,
+     "e": 1.96
+    },
+    {
+     "w": "it",
+     "s": 2.08,
+     "e": 2.23
+    },
+    {
+     "w": "doesn't",
+     "s": 2.23,
+     "e": 2.58
+    },
+    {
+     "w": "need",
+     "s": 2.58,
+     "e": 2.84
+    },
+    {
+     "w": "to.",
+     "s": 2.84,
+     "e": 3.15
+    },
+    {
+     "w": "Your",
+     "s": 3.7,
+     "e": 3.87
+    },
+    {
+     "w": "searches,",
+     "s": 3.87,
+     "e": 4.7
+    },
+    {
+     "w": "your",
+     "s": 4.7,
+     "e": 4.89
+    },
+    {
+     "w": "location",
+     "s": 4.89,
+     "e": 5.77
+    },
+    {
+     "w": "and",
+     "s": 5.77,
+     "e": 6.08
+    },
+    {
+     "w": "the",
+     "s": 6.08,
+     "e": 6.16
+    },
+    {
+     "w": "people",
+     "s": 6.16,
+     "e": 6.52
+    },
+    {
+     "w": "around",
+     "s": 6.52,
+     "e": 6.92
+    },
+    {
+     "w": "you",
+     "s": 6.92,
+     "e": 7.15
+    },
+    {
+     "w": "already",
+     "s": 7.15,
+     "e": 7.82
+    },
+    {
+     "w": "tell",
+     "s": 7.82,
+     "e": 8.07
+    },
+    {
+     "w": "the",
+     "s": 8.07,
+     "e": 8.15
+    },
+    {
+     "w": "story.",
+     "s": 8.15,
+     "e": 8.72
+    }
+   ]
+  },
+  {
+   "text": "And Max? He's buying cat food anyway. The ads won.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "cat",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:cat-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "buying",
+      "x": 300,
+      "y": 60,
+      "ref": "ph:shopping-bag-fill",
+      "size": 190,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "won",
+      "x": 60,
+      "y": 380,
+      "text": "The ads *won*.",
+      "size": 120,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "start": 645.43,
+   "vo": 4.19,
+   "dur": 4.59,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.08,
+     "e": 0.22
+    },
+    {
+     "w": "Max?",
+     "s": 0.22,
+     "e": 0.84
+    },
+    {
+     "w": "He's",
+     "s": 1.17,
+     "e": 1.38
+    },
+    {
+     "w": "buying",
+     "s": 1.38,
+     "e": 1.68
+    },
+    {
+     "w": "cat",
+     "s": 1.68,
+     "e": 1.96
+    },
+    {
+     "w": "food",
+     "s": 1.96,
+     "e": 2.22
+    },
+    {
+     "w": "anyway.",
+     "s": 2.22,
+     "e": 2.73
+    },
+    {
+     "w": "The",
+     "s": 3.02,
+     "e": 3.22
+    },
+    {
+     "w": "ads",
+     "s": 3.22,
+     "e": 3.55
+    },
+    {
+     "w": "won.",
+     "s": 3.55,
+     "e": 3.99
+    }
+   ]
+  },
+  {
+   "text": "Tell me in the comments: what's the creepiest ad you've ever seen?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "comments",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:youtube-icon",
+      "size": 180,
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "comments",
+      "x": 280,
+      "y": 40,
+      "ref": "ph:chat-circle-text-fill",
+      "size": 180,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "creepiest",
+      "x": 40,
+      "y": 300,
+      "icon": "ph:user-circle-fill",
+      "label": "YOUR COMMENT",
+      "big": "The creepiest ad I ever saw\u2026",
+      "color": "#F87736",
+      "id": "cm",
+      "in": "fly"
+     }
+    ],
+    "acts": []
+   },
+   "start": 650.02,
+   "vo": 4.389,
+   "dur": 4.789,
+   "words": [
+    {
+     "w": "Tell",
+     "s": 0.07,
+     "e": 0.25
+    },
+    {
+     "w": "me",
+     "s": 0.25,
+     "e": 0.39
+    },
+    {
+     "w": "in",
+     "s": 0.39,
+     "e": 0.48
+    },
+    {
+     "w": "the",
+     "s": 0.48,
+     "e": 0.57
+    },
+    {
+     "w": "comments:",
+     "s": 0.57,
+     "e": 1.25
+    },
+    {
+     "w": "what's",
+     "s": 1.62,
+     "e": 1.86
+    },
+    {
+     "w": "the",
+     "s": 1.86,
+     "e": 1.99
+    },
+    {
+     "w": "creepiest",
+     "s": 1.99,
+     "e": 2.35
+    },
+    {
+     "w": "ad",
+     "s": 2.35,
+     "e": 2.47
+    },
+    {
+     "w": "you've",
+     "s": 2.47,
+     "e": 2.73
+    },
+    {
+     "w": "ever",
+     "s": 2.73,
+     "e": 3.06
+    },
+    {
+     "w": "seen?",
+     "s": 3.72,
+     "e": 4.13
+    }
+   ]
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "end",
+    "sub": "More tech, decoded."
+   },
+   "start": 654.809,
+   "vo": 4.725,
+   "dur": 6.325,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.04,
+     "e": 0.23
+    },
+    {
+     "w": "subscribe",
+     "s": 0.23,
+     "e": 0.81
+    },
+    {
+     "w": "to",
+     "s": 0.81,
+     "e": 0.98
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.98,
+     "e": 1.73
+    },
+    {
+     "w": "with",
+     "s": 1.73,
+     "e": 1.94
+    },
+    {
+     "w": "Max",
+     "s": 1.94,
+     "e": 2.51
+    },
+    {
+     "w": "for",
+     "s": 2.51,
+     "e": 2.78
+    },
+    {
+     "w": "more",
+     "s": 2.78,
+     "e": 3.04
+    },
+    {
+     "w": "tech,",
+     "s": 3.04,
+     "e": 3.51
+    },
+    {
+     "w": "decoded.",
+     "s": 3.76,
+     "e": 4.43
+    }
+   ]
+  }
+ ]
+}

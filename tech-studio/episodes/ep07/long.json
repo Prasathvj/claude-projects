@@ -1,0 +1,3861 @@
+{
+ "id": "ep07-long",
+ "format": "horizontal",
+ "profile": "explainer",
+ "gap": 0.4,
+ "captions": "big",
+ "voice": "Eric",
+ "batch": 66,
+ "max_tempo": 1.05,
+ "slow": 0.92,
+ "engine": "vidiq",
+ "voice_id": "cjVigY5qzO86Huf0OWal",
+ "host_beats": [
+  0,
+  1,
+  4,
+  5,
+  6,
+  7,
+  8,
+  16,
+  17,
+  39,
+  40,
+  47,
+  48,
+  55,
+  61,
+  62,
+  63,
+  64,
+  65
+ ],
+ "beats": [
+  {
+   "text": "You mention running shoes to a friend over dinner. You never search for them. And the next morning, your Instagram is full of running shoe ads.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "dinner",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:fork-knife-fill",
+      "size": 150,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "friend",
+      "x": 260,
+      "y": 60,
+      "ref": "ph:users-three-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "shoes",
+      "x": 480,
+      "y": 40,
+      "ref": "ph:sneaker-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "never",
+      "x": 40,
+      "y": 330,
+      "text": "never searched",
+      "bg": "#2F9E44",
+      "size": 36
+     },
+     {
+      "k": "logo",
+      "at": "instagram",
+      "x": 760,
+      "y": 40,
+      "ref": "logos:instagram-icon",
+      "size": 160,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "ads",
+      "x": 760,
+      "y": 280,
+      "text": "running shoe AD",
+      "bg": "#F87736",
+      "size": 28,
+      "id": "a0",
+      "in": "drop"
+     },
+     {
+      "k": "tag",
+      "at": "ads",
+      "x": 980,
+      "y": 350,
+      "text": "running shoe AD",
+      "bg": "#F87736",
+      "size": 28,
+      "id": "a1",
+      "in": "drop"
+     },
+     {
+      "k": "tag",
+      "at": "ads",
+      "x": 760,
+      "y": 420,
+      "text": "running shoe AD",
+      "bg": "#F87736",
+      "size": 28,
+      "id": "a2",
+      "in": "drop"
+     },
+     {
+      "k": "tag",
+      "at": "ads",
+      "x": 980,
+      "y": 490,
+      "text": "running shoe AD",
+      "bg": "#F87736",
+      "size": 28,
+      "id": "a3",
+      "in": "drop"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The dinner conversation"
+  },
+  {
+   "text": "It feels like proof. Your phone heard you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "proof",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:device-mobile-fill",
+      "size": 230,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "heard",
+      "x": 360,
+      "y": 60,
+      "ref": "ph:ear-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "heard",
+      "x": 40,
+      "y": 420,
+      "text": "Your phone *heard* you?",
+      "size": 96,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Millions of people believe this. Some put tape over their microphones. Some say a product name out loud, just to see if the ads follow.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "millions",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:users-four-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "millions",
+      "x": 300,
+      "y": 60,
+      "big": "MILLIONS",
+      "label": "BELIEVE IT",
+      "color": "#E0471C",
+      "icon": "ph:megaphone-fill"
+     },
+     {
+      "k": "icon",
+      "at": "tape",
+      "x": 60,
+      "y": 340,
+      "ref": "ph:microphone-slash-fill",
+      "size": 160,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "tape",
+      "x": 260,
+      "y": 380,
+      "text": "tape over the mic",
+      "bg": "#2A2018",
+      "size": 36
+     },
+     {
+      "k": "icon",
+      "at": "product",
+      "x": 700,
+      "y": 300,
+      "ref": "ph:chat-circle-dots-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "product",
+      "x": 700,
+      "y": 520,
+      "text": "\"…running shoes!\"",
+      "bg": "#F87736",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So let's decode it properly: the scientists who tested it, the marketing company that bragged about doing it, the times devices really did record people, and how ads seem to read your mind without hearing a single word.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "decode",
+      "x": 40,
+      "y": 10,
+      "text": "Let's *decode* it",
+      "size": 84
+     },
+     {
+      "k": "icon",
+      "at": "scientists",
+      "x": 40,
+      "y": 170,
+      "ref": "ph:flask-fill",
+      "size": 140,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "scientists",
+      "x": 30,
+      "y": 400,
+      "text": "the scientists",
+      "bg": "#2A2018",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "marketing",
+      "x": 360,
+      "y": 170,
+      "ref": "ph:megaphone-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "marketing",
+      "x": 340,
+      "y": 400,
+      "text": "the bragging company",
+      "bg": "#2A2018",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "record",
+      "x": 680,
+      "y": 170,
+      "ref": "ph:record-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "record",
+      "x": 660,
+      "y": 400,
+      "text": "real recordings",
+      "bg": "#2A2018",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "mind",
+      "x": 1000,
+      "y": 170,
+      "ref": "ph:brain-fill",
+      "size": 140,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "mind",
+      "x": 980,
+      "y": 400,
+      "text": "how ads \"read minds\"",
+      "bg": "#2A2018",
+      "size": 30
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "But first, let's run the famous home experiment. Our host Max is going to try it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "experiment",
+      "x": 40,
+      "y": 30,
+      "text": "The *cat food* test",
+      "size": 100,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "max",
+      "x": 60,
+      "y": 260,
+      "ref": "ph:device-mobile-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "stamp",
+      "at": "try",
+      "x": 700,
+      "y": 280,
+      "text": "HYPOTHETICAL",
+      "size": 60,
+      "color": "#8C6B5A",
+      "rot": -6,
+      "id": "hy"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "FUN: the cat food test"
+  },
+  {
+   "text": "Max doesn't own a cat. So for one week, he says \"cat food\" near his phone. At breakfast. On the bus. Very loudly, in the office lift.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "cat",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:cat-fill",
+      "size": 180,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "stamp",
+      "at": "own",
+      "x": 60,
+      "y": 120,
+      "text": "NO CAT",
+      "size": 60,
+      "rot": -10,
+      "id": "nc"
+     },
+     {
+      "k": "icon",
+      "at": "breakfast",
+      "x": 360,
+      "y": 40,
+      "ref": "ph:coffee-fill",
+      "size": 130,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "breakfast",
+      "x": 330,
+      "y": 230,
+      "text": "breakfast",
+      "bg": "#2A2018",
+      "size": 28
+     },
+     {
+      "k": "icon",
+      "at": "bus",
+      "x": 600,
+      "y": 40,
+      "ref": "ph:bus-fill",
+      "size": 130,
+      "color": "#F5B400",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "bus",
+      "x": 600,
+      "y": 230,
+      "text": "bus",
+      "bg": "#2A2018",
+      "size": 28
+     },
+     {
+      "k": "icon",
+      "at": "lift",
+      "x": 840,
+      "y": 40,
+      "ref": "ph:elevator-fill",
+      "size": 130,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "loudly",
+      "x": 800,
+      "y": 230,
+      "text": "office lift",
+      "bg": "#2A2018",
+      "size": 28
+     },
+     {
+      "k": "big",
+      "at": "loudly",
+      "x": 300,
+      "y": 400,
+      "text": "\"CAT FOOD!\"",
+      "size": 120,
+      "color": "#E0471C",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Day one, nothing. Day two, nothing. Day four, there it is: a cat food ad. Max gasps. Case closed?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "one",
+      "x": 40,
+      "y": 40,
+      "big": "DAY 1",
+      "label": "MAX'S PHONE",
+      "color": "#1C7ED6",
+      "id": "day",
+      "icon": "ph:calendar-fill",
+      "w": 360
+     },
+     {
+      "k": "tag",
+      "at": "nothing",
+      "x": 60,
+      "y": 250,
+      "text": "nothing…",
+      "bg": "#8C6B5A",
+      "size": 36
+     },
+     {
+      "k": "prop",
+      "at": "four",
+      "x": 560,
+      "y": 40,
+      "p": "phone",
+      "s": 0.9,
+      "id": "ph",
+      "in": "slide"
+     },
+     {
+      "k": "tag",
+      "at": "ad",
+      "x": 520,
+      "y": 420,
+      "text": "AD: Cat food, 50% off!",
+      "bg": "#F87736",
+      "size": 40,
+      "in": "slam"
+     },
+     {
+      "k": "big",
+      "at": "closed",
+      "x": 60,
+      "y": 520,
+      "text": "Case *closed*?",
+      "size": 90
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "day",
+      "at": "one",
+      "values": [
+       "DAY 1",
+       "DAY 2",
+       "DAY 3",
+       "DAY 4"
+      ],
+      "dt": 0.7
+     },
+     {
+      "do": "shake",
+      "id": "ph",
+      "at": "gasps"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Not quite. Max saw about a thousand other ads that week and doesn't remember a single one. And on day three, he searched \"why does my cat food test not work\". Oops.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 40,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f0"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 240,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f1"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 440,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f2"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 640,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f3"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 840,
+      "y": 40,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f4"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 40,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f5"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 240,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f6"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 440,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f7"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 640,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f8"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 840,
+      "y": 110,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f9"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 40,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f10"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 240,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f11"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 440,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f12"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 640,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f13"
+     },
+     {
+      "k": "tag",
+      "at": "thousand",
+      "x": 840,
+      "y": 180,
+      "text": "ad",
+      "bg": "#C9A57A",
+      "size": 26,
+      "id": "f14"
+     },
+     {
+      "k": "card",
+      "at": "thousand",
+      "x": 40,
+      "y": 280,
+      "big": "~1,000 ads",
+      "label": "FORGOTTEN THIS WEEK",
+      "color": "#8C6B5A",
+      "icon": "ph:eye-slash-fill"
+     },
+     {
+      "k": "card",
+      "at": "searched",
+      "x": 40,
+      "y": 470,
+      "icon": "ph:magnifying-glass-bold",
+      "label": "MAX SEARCHED",
+      "big": "\"why does my cat food test not work\"",
+      "bsize": 40,
+      "color": "#E0471C",
+      "id": "sr",
+      "in": "fly"
+     },
+     {
+      "k": "big",
+      "at": "oops",
+      "x": 900,
+      "y": 300,
+      "text": "Oops.",
+      "size": 110,
+      "color": "#E0471C",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "That's the problem with testing it yourself. You count the hits and forget the misses. So let's look at people who tested it properly.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "bars",
+      "at": "count",
+      "x": 40,
+      "y": 60,
+      "w": 800,
+      "id": "b",
+      "rows": [
+       [
+        "hits you remember",
+        0.1,
+        "#2F9E44"
+       ],
+       [
+        "misses you forget",
+        1.0,
+        "#8C6B5A"
+       ]
+      ],
+      "gap": 0.6
+     },
+     {
+      "k": "icon",
+      "at": "properly",
+      "x": 960,
+      "y": 60,
+      "ref": "ph:flask-fill",
+      "size": 170,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "properly",
+      "x": 900,
+      "y": 330,
+      "text": "test it properly →",
+      "bg": "#7A5CFF",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "In twenty eighteen, researchers at Northeastern University in Boston set out to catch phones in the act.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "researchers",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:graduation-cap-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "northeastern",
+      "x": 280,
+      "y": 60,
+      "text": "Northeastern *University*",
+      "size": 80
+     },
+     {
+      "k": "tag",
+      "at": "boston",
+      "x": 300,
+      "y": 190,
+      "text": "Boston · 2018",
+      "bg": "#2A2018",
+      "size": 36
+     },
+     {
+      "k": "icon",
+      "at": "act",
+      "x": 700,
+      "y": 330,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 200,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "prop",
+      "at": "phones",
+      "x": 60,
+      "y": 330,
+      "p": "phone",
+      "s": 0.8,
+      "id": "ph"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The scientists tested it"
+  },
+  {
+   "text": "They used automated software to run more than seventeen thousand popular Android apps, including Facebook's own apps, and they captured every piece of data those apps sent out.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "android",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:android-icon",
+      "size": 150,
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "seventeen",
+      "x": 280,
+      "y": 40,
+      "big": "0 apps",
+      "label": "TESTED AUTOMATICALLY",
+      "color": "#1C7ED6",
+      "id": "n",
+      "icon": "ph:robot-fill",
+      "w": 560
+     },
+     {
+      "k": "logo",
+      "at": "facebook",
+      "x": 980,
+      "y": 40,
+      "ref": "logos:facebook",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "captured",
+      "x": 60,
+      "y": 360,
+      "ref": "ph:package-fill",
+      "size": 120,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "captured",
+      "x": 240,
+      "y": 400,
+      "w": 380,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "data",
+      "x": 680,
+      "y": 330,
+      "ref": "ph:database-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "n",
+      "at": "seventeen",
+      "values": [
+       "1,000 apps",
+       "5,000 apps",
+       "10,000 apps",
+       "17,260 apps"
+      ],
+      "dt": 0.18
+     }
+    ]
+   }
+  },
+  {
+   "text": "They were looking for audio leaving the phone. They found none. Not one app secretly switched on the microphone and sent recordings.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "audio",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:waveform-bold",
+      "size": 200,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "none",
+      "x": 340,
+      "y": 60,
+      "big": "AUDIO SENT: 0",
+      "label": "RESULT",
+      "color": "#2F9E44",
+      "in": "slam",
+      "icon": "ph:microphone-slash-fill"
+     },
+     {
+      "k": "stamp",
+      "at": "secretly",
+      "x": 360,
+      "y": 360,
+      "text": "NOT ONE APP",
+      "size": 90,
+      "color": "#2F9E44",
+      "rot": -5,
+      "id": "st",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "The researchers were careful to say this doesn't prove it never happens. But it was one of the biggest tests of its kind, and it came up empty.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "careful",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:warning-circle-fill",
+      "size": 170,
+      "color": "#F5B400",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "careful",
+      "x": 40,
+      "y": 260,
+      "text": "doesn't prove it never happens",
+      "bg": "#8C6B5A",
+      "size": 36
+     },
+     {
+      "k": "card",
+      "at": "biggest",
+      "x": 560,
+      "y": 60,
+      "big": "one of the biggest",
+      "label": "TESTS OF ITS KIND",
+      "color": "#F5B400",
+      "icon": "ph:trophy-fill"
+     },
+     {
+      "k": "big",
+      "at": "empty",
+      "x": 40,
+      "y": 420,
+      "text": "came up *empty*",
+      "size": 84,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And they did find something creepy. Some apps were quietly recording the screen and sending videos of what users were doing to other companies.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "creepy",
+      "x": 40,
+      "y": 30,
+      "text": "Something *creepy*",
+      "size": 90,
+      "in": "slam"
+     },
+     {
+      "k": "prop",
+      "at": "recording",
+      "x": 60,
+      "y": 200,
+      "p": "phone",
+      "s": 0.8,
+      "id": "ph"
+     },
+     {
+      "k": "icon",
+      "at": "recording",
+      "x": 380,
+      "y": 220,
+      "ref": "ph:record-fill",
+      "size": 130,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "sending",
+      "x": 560,
+      "y": 280,
+      "w": 300,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "companies",
+      "x": 900,
+      "y": 200,
+      "ref": "ph:buildings-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "videos",
+      "x": 380,
+      "y": 450,
+      "text": "videos of your screen",
+      "bg": "#E0471C",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "One food delivery app, GoPuff, was sending screen recordings to an analytics firm without telling users. It stopped after the researchers got in touch. No microphone needed.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "delivery",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:moped-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "gopuff",
+      "x": 40,
+      "y": 250,
+      "text": "GoPuff app",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "arrow",
+      "at": "sending",
+      "x": 300,
+      "y": 120,
+      "w": 300,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "analytics",
+      "x": 640,
+      "y": 40,
+      "ref": "ph:chart-bar-fill",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "analytics",
+      "x": 620,
+      "y": 250,
+      "text": "analytics firm",
+      "bg": "#2A2018",
+      "size": 34
+     },
+     {
+      "k": "tag",
+      "at": "stopped",
+      "x": 300,
+      "y": 400,
+      "text": "stopped after researchers got in touch",
+      "bg": "#2F9E44",
+      "size": 34
+     },
+     {
+      "k": "big",
+      "at": "needed",
+      "x": 300,
+      "y": 500,
+      "text": "No *microphone* needed",
+      "size": 80
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Facebook has also said, on the record, since twenty sixteen, that it does not use your phone's microphone to choose your ads.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "facebook",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:facebook",
+      "size": 160,
+      "paper": true
+     },
+     {
+      "k": "clip",
+      "at": "record",
+      "x": 300,
+      "y": 40,
+      "by": "FACEBOOK, JUNE 2016",
+      "text": "\"Facebook does not use your phone's microphone to inform ads\"",
+      "hi": "does not use",
+      "w": 880,
+      "id": "cl"
+     },
+     {
+      "k": "icon",
+      "at": "choose",
+      "x": 60,
+      "y": 380,
+      "ref": "ph:microphone-slash-fill",
+      "size": 150,
+      "color": "#2F9E44",
+      "paper": true
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Then, in twenty twenty-four, a leak seemed to prove the opposite.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "leak",
+      "x": 40,
+      "y": 60,
+      "text": "Then… a *leak*",
+      "size": 120,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "leak",
+      "x": 980,
+      "y": 60,
+      "ref": "ph:file-text-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "twenty-four",
+      "x": 60,
+      "y": 260,
+      "text": "2024",
+      "bg": "#2A2018",
+      "size": 48
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The leak"
+  },
+  {
+   "text": "The news site 404 Media published a sales pitch deck from Cox Media Group, a big American marketing company. It advertised something called \"Active Listening\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "clip",
+      "at": "published",
+      "x": 40,
+      "y": 40,
+      "by": "404 MEDIA · SEPTEMBER 2024",
+      "text": "Cox Media Group pitch deck: \"Active Listening\"",
+      "hi": "\"Active Listening\"",
+      "w": 760,
+      "id": "cl"
+     },
+     {
+      "k": "icon",
+      "at": "marketing",
+      "x": 900,
+      "y": 40,
+      "ref": "ph:megaphone-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "company",
+      "x": 880,
+      "y": 260,
+      "text": "big US marketing company",
+      "bg": "#2A2018",
+      "size": 30
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "The deck claimed it could use voice data from smart devices to find people who were talking about products, and then target those people with ads.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "smart",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:speaker-hifi-fill",
+      "size": 160,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "voice",
+      "x": 260,
+      "y": 60,
+      "ref": "ph:waveform-bold",
+      "size": 160,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "find",
+      "x": 460,
+      "y": 120,
+      "w": 260,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "target",
+      "x": 780,
+      "y": 40,
+      "ref": "ph:target-bold",
+      "size": 190,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "claimed",
+      "x": 60,
+      "y": 330,
+      "text": "THE CLAIM (sales deck)",
+      "bg": "#8C6B5A",
+      "size": 40
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Google removed the company from its advertising partner program. Amazon said it had nothing to do with it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "google",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:google-icon",
+      "size": 150,
+      "paper": true
+     },
+     {
+      "k": "stamp",
+      "at": "removed",
+      "x": 30,
+      "y": 240,
+      "text": "REMOVED",
+      "size": 70,
+      "rot": -8,
+      "id": "rm",
+      "in": "slam"
+     },
+     {
+      "k": "logo",
+      "at": "amazon",
+      "x": 600,
+      "y": 40,
+      "ref": "simple-icons:amazon",
+      "size": 150,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "nothing",
+      "x": 560,
+      "y": 260,
+      "text": "\"nothing to do with it\"",
+      "bg": "#2A2018",
+      "size": 34
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "But a sales deck is not evidence. Nobody has shown that this product worked as advertised, or that it ever ran at any real scale.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "deck",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:presentation-chart-fill",
+      "size": 200,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "evidence",
+      "x": 360,
+      "y": 80,
+      "text": "≠",
+      "size": 200,
+      "color": "#E0471C"
+     },
+     {
+      "k": "icon",
+      "at": "evidence",
+      "x": 560,
+      "y": 60,
+      "ref": "ph:seal-check-fill",
+      "size": 200,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "nobody",
+      "x": 60,
+      "y": 400,
+      "text": "never shown to work at real scale",
+      "bg": "#E0471C",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And here's a strange twist: phones have listened to ads before. Just not to you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "twist",
+      "x": 40,
+      "y": 60,
+      "text": "A strange *twist*",
+      "size": 110,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "ads",
+      "x": 60,
+      "y": 300,
+      "ref": "ph:television-simple-fill",
+      "size": 180,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "listened",
+      "x": 340,
+      "y": 300,
+      "ref": "ph:ear-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "you",
+      "x": 600,
+      "y": 360,
+      "text": "…just not to you",
+      "bg": "#2A2018",
+      "size": 44
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Secret TV whistles"
+  },
+  {
+   "text": "Around twenty fifteen, a company called SilverPush made code for apps that listened for secret sounds hidden inside TV ads. Whistles too high for humans to hear, but not too high for a phone.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "silverpush",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:television-simple-fill",
+      "size": 190,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "prop",
+      "at": "sounds",
+      "x": 280,
+      "y": 60,
+      "p": "waves",
+      "s": 0.6,
+      "id": "wv"
+     },
+     {
+      "k": "icon",
+      "at": "humans",
+      "x": 700,
+      "y": 40,
+      "ref": "ph:ear-slash-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "humans",
+      "x": 660,
+      "y": 230,
+      "text": "humans: can't hear",
+      "bg": "#E0471C",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "phone",
+      "x": 960,
+      "y": 40,
+      "ref": "ph:device-mobile-fill",
+      "size": 150,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "phone",
+      "x": 940,
+      "y": 230,
+      "text": "phone: hears it",
+      "bg": "#2F9E44",
+      "size": 30
+     },
+     {
+      "k": "tag",
+      "at": "silverpush",
+      "x": 60,
+      "y": 330,
+      "text": "SilverPush",
+      "bg": "#F87736",
+      "size": 44
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "If your phone heard the whistle, the app knew you had just watched that ad.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "whistle",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:waveform-bold",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "app",
+      "x": 290,
+      "y": 120,
+      "w": 220,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "knew",
+      "x": 560,
+      "y": 40,
+      "ref": "ph:check-circle-fill",
+      "size": 190,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "watched",
+      "x": 60,
+      "y": 380,
+      "text": "You *watched* that ad",
+      "size": 90
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "In twenty sixteen, the US Federal Trade Commission sent warning letters to twelve app developers whose apps contained that code, because users were never told.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "commission",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:scales-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "clip",
+      "at": "letters",
+      "x": 300,
+      "y": 40,
+      "by": "US FEDERAL TRADE COMMISSION · MARCH 2016",
+      "text": "Warning letters to 12 app developers using SilverPush code",
+      "hi": "12 app developers",
+      "w": 820,
+      "id": "cl"
+     },
+     {
+      "k": "tag",
+      "at": "told",
+      "x": 320,
+      "y": 330,
+      "text": "users were never told",
+      "bg": "#E0471C",
+      "size": 40
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So the technology to listen is real. What scientists haven't found is phones quietly recording your conversations to sell you shoes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "real",
+      "x": 40,
+      "y": 40,
+      "big": "REAL",
+      "label": "TECH TO LISTEN",
+      "color": "#2F9E44",
+      "icon": "ph:check-circle-fill"
+     },
+     {
+      "k": "card",
+      "at": "found",
+      "x": 560,
+      "y": 40,
+      "big": "NOT FOUND",
+      "label": "SECRET CONVERSATION RECORDING",
+      "color": "#E0471C",
+      "icon": "ph:x-circle-fill"
+     },
+     {
+      "k": "icon",
+      "at": "shoes",
+      "x": 400,
+      "y": 330,
+      "ref": "ph:sneaker-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "There is one place where devices really did record people, though. Voice assistants.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "voice",
+      "x": 40,
+      "y": 40,
+      "text": "Voice *assistants*",
+      "size": 110,
+      "in": "slam"
+     },
+     {
+      "k": "logo",
+      "at": "voice",
+      "x": 60,
+      "y": 260,
+      "ref": "logos:apple",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "logo",
+      "at": "voice",
+      "x": 280,
+      "y": 260,
+      "ref": "logos:google-icon",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "logo",
+      "at": "voice",
+      "x": 500,
+      "y": 260,
+      "ref": "simple-icons:amazon",
+      "size": 130,
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "When devices DID record"
+  },
+  {
+   "text": "Your phone listens for one thing only: a wake word, like \"Hey Siri\" or \"Hey Google\". A tiny part of the phone checks for it, right on the device.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "hey",
+      "x": 40,
+      "y": 60,
+      "text": "\"Hey Siri\"",
+      "bg": "#2A2018",
+      "size": 60
+     },
+     {
+      "k": "tag",
+      "at": "hey",
+      "x": 440,
+      "y": 60,
+      "text": "\"Hey Google\"",
+      "bg": "#1C7ED6",
+      "size": 60,
+      "id": "hg"
+     },
+     {
+      "k": "prop",
+      "at": "tiny",
+      "x": 60,
+      "y": 240,
+      "p": "chip",
+      "text": "wake",
+      "s": 0.8,
+      "id": "ch"
+     },
+     {
+      "k": "tag",
+      "at": "device",
+      "x": 340,
+      "y": 330,
+      "text": "checked right on the device",
+      "bg": "#2F9E44",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "But sometimes it mishears. Someone says \"seriously\" and Siri thinks you called her. It wakes up and records a private conversation by mistake.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "seriously",
+      "x": 40,
+      "y": 40,
+      "icon": "ph:chat-circle-dots-fill",
+      "label": "SOMEONE SAYS",
+      "big": "\"Seriously…\"",
+      "color": "#F87736",
+      "id": "s"
+     },
+     {
+      "k": "logo",
+      "at": "siri",
+      "x": 860,
+      "y": 40,
+      "ref": "logos:apple",
+      "size": 140,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "called",
+      "x": 760,
+      "y": 260,
+      "text": "Siri: \"You called?\"",
+      "bg": "#2A2018",
+      "size": 40,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "records",
+      "x": 60,
+      "y": 330,
+      "ref": "ph:record-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "mistake",
+      "x": 260,
+      "y": 380,
+      "text": "records by mistake",
+      "bg": "#E0471C",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And once the wake word is heard, your request goes to the company's servers to be understood. That's the moment a recording can be stored.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "wake",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:device-mobile-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "request",
+      "x": 260,
+      "y": 120,
+      "w": 320,
+      "id": "ar"
+     },
+     {
+      "k": "icon",
+      "at": "servers",
+      "x": 640,
+      "y": 40,
+      "ref": "ph:hard-drives-fill",
+      "size": 200,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "stored",
+      "x": 600,
+      "y": 330,
+      "text": "where a recording can be stored",
+      "bg": "#F87736",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "In twenty twenty-five, Apple agreed to pay ninety-five million dollars to settle a US lawsuit over accidental Siri recordings. Google later agreed to pay sixty-eight million dollars over the same problem with Google Assistant. Neither company admitted wrongdoing.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "apple",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:apple",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "ninety-five",
+      "x": 220,
+      "y": 40,
+      "big": "$95 million",
+      "label": "APPLE · SIRI · 2025",
+      "color": "#2F9E44",
+      "in": "slam",
+      "icon": "ph:currency-dollar-bold"
+     },
+     {
+      "k": "logo",
+      "at": "google",
+      "x": 40,
+      "y": 290,
+      "ref": "logos:google-icon",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "sixty-eight",
+      "x": 220,
+      "y": 290,
+      "big": "$68 million",
+      "label": "GOOGLE · ASSISTANT",
+      "color": "#2F9E44",
+      "in": "slam",
+      "icon": "ph:currency-dollar-bold"
+     },
+     {
+      "k": "tag",
+      "at": "admitted",
+      "x": 760,
+      "y": 500,
+      "text": "no wrongdoing admitted",
+      "bg": "#8C6B5A",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Smart speakers have their own stories. In twenty nineteen, Bloomberg reported that thousands of Amazon workers and contractors were listening to Alexa clips to improve it, some reviewing up to a thousand clips a shift.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "smart",
+      "x": 40,
+      "y": 40,
+      "ref": "simple-icons:amazon",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "clip",
+      "at": "bloomberg",
+      "x": 240,
+      "y": 40,
+      "by": "BLOOMBERG · APRIL 2019",
+      "text": "Thousands of Amazon staff listen to Alexa clips",
+      "hi": "listen to Alexa clips",
+      "w": 780,
+      "id": "cl"
+     },
+     {
+      "k": "icon",
+      "at": "listening",
+      "x": 60,
+      "y": 330,
+      "ref": "ph:headphones-fill",
+      "size": 160,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "thousand",
+      "x": 300,
+      "y": 330,
+      "big": "up to 1,000",
+      "label": "CLIPS PER SHIFT",
+      "color": "#E0471C",
+      "icon": "ph:list-numbers-bold"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And in twenty twenty-three, Amazon paid twenty-five million dollars to settle US charges that it kept children's Alexa voice recordings for years, even after parents asked for them to be deleted. Amazon denied breaking the law.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "children",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:baby-fill",
+      "size": 160,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "twenty-five",
+      "x": 260,
+      "y": 40,
+      "big": "$25 million",
+      "label": "AMAZON · FTC · 2023",
+      "color": "#E0471C",
+      "in": "slam",
+      "icon": "ph:gavel-fill"
+     },
+     {
+      "k": "tag",
+      "at": "deleted",
+      "x": 260,
+      "y": 280,
+      "text": "kept kids' recordings after delete requests",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "tag",
+      "at": "denied",
+      "x": 260,
+      "y": 380,
+      "text": "Amazon denied breaking the law",
+      "bg": "#8C6B5A",
+      "size": 30
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So the risk is real. But those were accidents, and data kept too long. Not an ad machine listening to your dinner.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "real",
+      "x": 40,
+      "y": 40,
+      "big": "risk is real",
+      "label": "VERDICT",
+      "color": "#E0471C",
+      "icon": "ph:warning-fill"
+     },
+     {
+      "k": "tag",
+      "at": "accidents",
+      "x": 40,
+      "y": 280,
+      "text": "accidents",
+      "bg": "#F87736",
+      "size": 48
+     },
+     {
+      "k": "tag",
+      "at": "long",
+      "x": 340,
+      "y": 280,
+      "text": "data kept too long",
+      "bg": "#F87736",
+      "size": 48
+     },
+     {
+      "k": "stamp",
+      "at": "machine",
+      "x": 400,
+      "y": 420,
+      "text": "NOT AN AD MACHINE",
+      "size": 70,
+      "color": "#2F9E44",
+      "rot": -4,
+      "id": "st",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So why don't experts believe your phone is recording everything you say?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "experts",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:user-focus-fill",
+      "size": 190,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "everything",
+      "x": 300,
+      "y": 100,
+      "text": "Recording *everything*?",
+      "size": 90
+     },
+     {
+      "k": "icon",
+      "at": "why",
+      "x": 1050,
+      "y": 300,
+      "ref": "ph:question-fill",
+      "size": 160,
+      "color": "#F87736",
+      "paper": true
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Why it is unlikely"
+  },
+  {
+   "text": "Let's do some quick maths. Even compressed, voice audio uses roughly sixteen kilobits every second. Over one day, that's about one hundred and seventy megabytes, from every phone, every day.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "sixteen",
+      "x": 40,
+      "y": 40,
+      "big": "16 kbps",
+      "label": "COMPRESSED VOICE",
+      "color": "#1C7ED6",
+      "icon": "ph:waveform-bold"
+     },
+     {
+      "k": "arrow",
+      "at": "day",
+      "x": 560,
+      "y": 110,
+      "w": 200,
+      "id": "ar"
+     },
+     {
+      "k": "card",
+      "at": "hundred",
+      "x": 800,
+      "y": 40,
+      "big": "0 MB",
+      "label": "PER PHONE, PER DAY",
+      "color": "#E0471C",
+      "id": "mb",
+      "icon": "ph:database-fill"
+     },
+     {
+      "k": "tag",
+      "at": "every",
+      "x": 40,
+      "y": 330,
+      "text": "example calculation: 16 kbps × 24 h",
+      "bg": "#8C6B5A",
+      "size": 30
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "mb",
+      "at": "hundred",
+      "values": [
+       "20 MB",
+       "60 MB",
+       "110 MB",
+       "170 MB"
+      ],
+      "dt": 0.2
+     }
+    ]
+   }
+  },
+  {
+   "text": "Your data pack would notice. Your battery would notice. And security researchers who watch app traffic for a living would definitely notice.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "data",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:cell-signal-full-bold",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "data",
+      "x": 40,
+      "y": 270,
+      "text": "data pack",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "icon",
+      "at": "battery",
+      "x": 360,
+      "y": 60,
+      "ref": "ph:battery-warning-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "battery",
+      "x": 360,
+      "y": 270,
+      "text": "battery",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "icon",
+      "at": "researchers",
+      "x": 680,
+      "y": 60,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "definitely",
+      "x": 660,
+      "y": 270,
+      "text": "researchers",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "big",
+      "at": "notice",
+      "x": 200,
+      "y": 400,
+      "text": "Everyone would *notice*",
+      "size": 90,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Phones also warn you now. On an iPhone, an orange dot appears when an app is using the microphone. On Android, a green dot appears, and you can tap it to see which app it is.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "prop",
+      "at": "iphone",
+      "x": 40,
+      "y": 40,
+      "p": "phone",
+      "s": 0.85,
+      "id": "ip"
+     },
+     {
+      "k": "big",
+      "at": "orange",
+      "x": 120,
+      "y": 60,
+      "text": "●",
+      "size": 90,
+      "color": "#F87736",
+      "id": "od",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "iphone",
+      "x": 40,
+      "y": 450,
+      "text": "iPhone: orange dot = microphone",
+      "bg": "#F87736",
+      "size": 30
+     },
+     {
+      "k": "prop",
+      "at": "android",
+      "x": 640,
+      "y": 40,
+      "p": "phone",
+      "s": 0.85,
+      "id": "an"
+     },
+     {
+      "k": "big",
+      "at": "green",
+      "x": 720,
+      "y": 60,
+      "text": "●",
+      "size": 90,
+      "color": "#2F9E44",
+      "id": "gd",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "android",
+      "x": 600,
+      "y": 450,
+      "text": "Android: green dot → tap to see app",
+      "bg": "#2F9E44",
+      "size": 30
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And it would be a bad deal for advertisers anyway. They already know far more about you than one sentence at dinner could ever tell them.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "advertisers",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:megaphone-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "know",
+      "x": 300,
+      "y": 60,
+      "big": "a whole profile",
+      "label": "ADVERTISERS ALREADY HAVE",
+      "color": "#1C7ED6",
+      "icon": "ph:identification-card-fill"
+     },
+     {
+      "k": "tag",
+      "at": "sentence",
+      "x": 300,
+      "y": 300,
+      "text": "vs one sentence at dinner",
+      "bg": "#8C6B5A",
+      "size": 40
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So how did the running shoe ad find you? Usually through one of four routes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "shoe",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:sneaker-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "four",
+      "x": 320,
+      "y": 60,
+      "text": "*4* routes",
+      "size": 140,
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "routes",
+      "x": 320,
+      "y": 280,
+      "text": "ROUTE 1",
+      "bg": "#1C7ED6",
+      "size": 34,
+      "id": "r0"
+     },
+     {
+      "k": "tag",
+      "at": "routes",
+      "x": 520,
+      "y": 280,
+      "text": "ROUTE 2",
+      "bg": "#7A5CFF",
+      "size": 34,
+      "id": "r1"
+     },
+     {
+      "k": "tag",
+      "at": "routes",
+      "x": 720,
+      "y": 280,
+      "text": "ROUTE 3",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "r2"
+     },
+     {
+      "k": "tag",
+      "at": "routes",
+      "x": 920,
+      "y": 280,
+      "text": "ROUTE 4",
+      "bg": "#2F9E44",
+      "size": 34,
+      "id": "r3"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The four routes"
+  },
+  {
+   "text": "Route one: the people around you. Your friend looked up those shoes after dinner, on the same Wi-Fi. Facebook says it can estimate your location from your internet connection, even with location services off. So ad systems can guess who you spend time with.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "route",
+      "x": 40,
+      "y": 20,
+      "text": "ROUTE 1 · the people around you",
+      "bg": "#1C7ED6",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "friend",
+      "x": 40,
+      "y": 140,
+      "ref": "ph:user-fill",
+      "size": 140,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "looked",
+      "x": 220,
+      "y": 140,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 120,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "wi-fi",
+      "x": 460,
+      "y": 140,
+      "ref": "ph:wifi-high-bold",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "logo",
+      "at": "facebook",
+      "x": 760,
+      "y": 140,
+      "ref": "logos:facebook",
+      "size": 140,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "location",
+      "x": 700,
+      "y": 340,
+      "text": "location guessed from your connection",
+      "bg": "#2A2018",
+      "size": 30
+     },
+     {
+      "k": "icon",
+      "at": "spend",
+      "x": 60,
+      "y": 380,
+      "ref": "ph:users-three-fill",
+      "size": 150,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "time",
+      "x": 240,
+      "y": 430,
+      "text": "who you spend time with",
+      "bg": "#7A5CFF",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Route two: the trail you leave. Many websites carry a tiny piece of code called the Meta Pixel. When you visit a page, it can report that visit back to Meta, even if you never click anything, and even if you don't have an account.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "route",
+      "x": 40,
+      "y": 20,
+      "text": "ROUTE 2 · the trail you leave",
+      "bg": "#7A5CFF",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "websites",
+      "x": 40,
+      "y": 140,
+      "ref": "ph:browser-fill",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "code",
+      "x": 300,
+      "y": 150,
+      "icon": "ph:code-bold",
+      "label": "HIDDEN ON THE PAGE",
+      "big": "Meta Pixel",
+      "color": "#7A5CFF",
+      "id": "px"
+     },
+     {
+      "k": "arrow",
+      "at": "report",
+      "x": 300,
+      "y": 380,
+      "w": 300,
+      "id": "ar"
+     },
+     {
+      "k": "logo",
+      "at": "meta",
+      "x": 660,
+      "y": 330,
+      "ref": "logos:meta-icon",
+      "size": 170,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "account",
+      "x": 40,
+      "y": 520,
+      "text": "…even if you don't have an account",
+      "bg": "#E0471C",
+      "size": 32
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Shops can also upload customer email addresses and phone numbers, and Meta matches them to profiles. That's how a store you bought from once keeps finding you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "shops",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:storefront-fill",
+      "size": 170,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "email",
+      "x": 280,
+      "y": 60,
+      "ref": "ph:envelope-simple-fill",
+      "size": 140,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "phone",
+      "x": 460,
+      "y": 60,
+      "ref": "ph:phone-fill",
+      "size": 140,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "arrow",
+      "at": "matches",
+      "x": 640,
+      "y": 120,
+      "w": 200,
+      "id": "ar"
+     },
+     {
+      "k": "logo",
+      "at": "meta",
+      "x": 900,
+      "y": 40,
+      "ref": "logos:meta-icon",
+      "size": 160,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "store",
+      "x": 60,
+      "y": 330,
+      "text": "that store keeps finding you",
+      "bg": "#2A2018",
+      "size": 36
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Route three: data brokers and your location. Some apps sell where you go. If your phone visits a gym three times a week, you look like someone who might buy running shoes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "route",
+      "x": 40,
+      "y": 20,
+      "text": "ROUTE 3 · brokers & location",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "brokers",
+      "x": 40,
+      "y": 140,
+      "ref": "ph:briefcase-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "where",
+      "x": 300,
+      "y": 140,
+      "ref": "ph:map-pin-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "gym",
+      "x": 560,
+      "y": 140,
+      "ref": "ph:barbell-fill",
+      "size": 160,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "three",
+      "x": 540,
+      "y": 360,
+      "text": "gym × 3 a week",
+      "bg": "#F87736",
+      "size": 36
+     },
+     {
+      "k": "icon",
+      "at": "shoes",
+      "x": 900,
+      "y": 140,
+      "ref": "ph:sneaker-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Route four: your own brain. You see hundreds of ads every day and forget almost all of them. The one that matches a conversation is the one you remember. Psychologists call it the frequency illusion. Just ask Max and his imaginary cat.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "route",
+      "x": 40,
+      "y": 20,
+      "text": "ROUTE 4 · your own brain",
+      "bg": "#2F9E44",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "brain",
+      "x": 40,
+      "y": 140,
+      "ref": "ph:brain-fill",
+      "size": 180,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "illusion",
+      "x": 300,
+      "y": 150,
+      "big": "frequency illusion",
+      "label": "PSYCHOLOGISTS CALL IT",
+      "color": "#2F9E44",
+      "icon": "ph:eye-fill"
+     },
+     {
+      "k": "icon",
+      "at": "cat",
+      "x": 900,
+      "y": 330,
+      "ref": "ph:cat-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "max",
+      "x": 860,
+      "y": 520,
+      "text": "Max's imaginary cat",
+      "bg": "#2A2018",
+      "size": 30
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And there's a bonus trick advertisers love: lookalikes. If people who bought running shoes look a lot like you, same age, same city, same apps, you get the ad too. They don't need to know you. They just need to know people like you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "bonus",
+      "x": 40,
+      "y": 20,
+      "text": "BONUS · lookalikes",
+      "bg": "#E0471C",
+      "size": 44
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 40,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u0"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 190,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u1"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 340,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u2"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 490,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u3"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 640,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u4"
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 790,
+      "y": 150,
+      "ref": "ph:user-fill",
+      "size": 110,
+      "color": "#8C6B5A",
+      "paper": false,
+      "id": "u5"
+     },
+     {
+      "k": "icon",
+      "at": "you",
+      "x": 960,
+      "y": 130,
+      "ref": "ph:user-circle-fill",
+      "size": 160,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "age",
+      "x": 40,
+      "y": 330,
+      "text": "same age · same city · same apps",
+      "bg": "#2A2018",
+      "size": 34
+     },
+     {
+      "k": "big",
+      "at": "like",
+      "x": 40,
+      "y": 440,
+      "text": "people *like you*",
+      "size": 90,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Put together, the system doesn't need to hear you. It predicts what you're about to want, sometimes before you even say it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "predicts",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:sparkle-fill",
+      "size": 220,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "hear",
+      "x": 340,
+      "y": 80,
+      "text": "doesn't need to *hear* you",
+      "size": 84
+     },
+     {
+      "k": "tag",
+      "at": "want",
+      "x": 340,
+      "y": 260,
+      "text": "it predicts what you want next",
+      "bg": "#7A5CFF",
+      "size": 40
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Quick game. Real or fake? I say a phone myth, you decide.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "game",
+      "x": 40,
+      "y": 40,
+      "text": "REAL or *FAKE*?",
+      "size": 130,
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "real",
+      "x": 60,
+      "y": 300,
+      "text": "REAL",
+      "bg": "#2F9E44",
+      "size": 70
+     },
+     {
+      "k": "tag",
+      "at": "fake",
+      "x": 400,
+      "y": 300,
+      "text": "FAKE",
+      "bg": "#E0471C",
+      "size": 70
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "FUN: Real or fake?"
+  },
+  {
+   "text": "Myth one: airplane mode stops all tracking. Fake. Many apps simply save what you did and send it the moment you reconnect.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "airplane",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:airplane-tilt-fill",
+      "size": 190,
+      "color": "#1C7ED6",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "one",
+      "x": 300,
+      "y": 60,
+      "text": "MYTH 1",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "big",
+      "at": "tracking",
+      "x": 300,
+      "y": 140,
+      "text": "stops all tracking?",
+      "size": 72
+     },
+     {
+      "k": "stamp",
+      "at": "fake",
+      "x": 300,
+      "y": 300,
+      "text": "FAKE",
+      "size": 110,
+      "id": "f",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "reconnect",
+      "x": 60,
+      "y": 470,
+      "text": "apps send it when you reconnect",
+      "bg": "#8C6B5A",
+      "size": 32
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Myth two: incognito mode hides you from websites. Fake. It only stops your own phone from saving your history. Websites, and your network, can still see you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "incognito",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:detective-fill",
+      "size": 190,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "two",
+      "x": 300,
+      "y": 60,
+      "text": "MYTH 2",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "big",
+      "at": "hides",
+      "x": 300,
+      "y": 140,
+      "text": "hides you from websites?",
+      "size": 72
+     },
+     {
+      "k": "stamp",
+      "at": "fake",
+      "x": 300,
+      "y": 300,
+      "text": "FAKE",
+      "size": 110,
+      "id": "f",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "history",
+      "x": 60,
+      "y": 470,
+      "text": "only your own history is not saved",
+      "bg": "#8C6B5A",
+      "size": 32
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Myth three: your phone is always listening for one thing. Real. The wake word. That's why turning it off is one of the simplest privacy wins.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "listening",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:ear-fill",
+      "size": 190,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "three",
+      "x": 300,
+      "y": 60,
+      "text": "MYTH 3",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "big",
+      "at": "always",
+      "x": 300,
+      "y": 140,
+      "text": "always listening for one thing?",
+      "size": 64
+     },
+     {
+      "k": "stamp",
+      "at": "real",
+      "x": 300,
+      "y": 300,
+      "text": "REAL",
+      "size": 110,
+      "color": "#2F9E44",
+      "id": "r",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "wake",
+      "x": 60,
+      "y": 470,
+      "text": "the wake word · turn it off = easy win",
+      "bg": "#2F9E44",
+      "size": 32
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Myth four: a sticker on your camera also blocks the microphone. Fake. They're separate parts. The sticker does nothing for the mic.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "camera",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:camera-slash-fill",
+      "size": 190,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "four",
+      "x": 300,
+      "y": 60,
+      "text": "MYTH 4",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "big",
+      "at": "blocks",
+      "x": 300,
+      "y": 140,
+      "text": "camera sticker blocks the mic?",
+      "size": 64
+     },
+     {
+      "k": "stamp",
+      "at": "fake",
+      "x": 300,
+      "y": 300,
+      "text": "FAKE",
+      "size": 110,
+      "id": "f",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "mic",
+      "x": 900,
+      "y": 330,
+      "ref": "ph:microphone-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "What about India? Our data protection law, the DPDP Act, finally has its rules in place since November twenty twenty-five.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "india",
+      "x": 40,
+      "y": 40,
+      "ref": "circle-flags:in",
+      "size": 180,
+      "in": "drop"
+     },
+     {
+      "k": "clip",
+      "at": "dpdp",
+      "x": 280,
+      "y": 40,
+      "by": "INDIA · DATA PROTECTION",
+      "text": "DPDP Act rules in place since November 2025",
+      "hi": "November 2025",
+      "w": 820,
+      "id": "cl"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "What about India?"
+  },
+  {
+   "text": "They roll out in phases until twenty twenty-seven. Companies will have to tell you clearly what data they collect and why, and let you withdraw your consent easily.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "bars",
+      "at": "phases",
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "id": "b",
+      "rows": [
+       [
+        "Nov 2025 · rules notified",
+        0.3,
+        "#1C7ED6"
+       ],
+       [
+        "Nov 2026 · consent managers",
+        0.6,
+        "#7A5CFF"
+       ],
+       [
+        "May 2027 · full compliance",
+        1.0,
+        "#2F9E44"
+       ]
+      ],
+      "gap": 0.5
+     },
+     {
+      "k": "icon",
+      "at": "withdraw",
+      "x": 900,
+      "y": 60,
+      "ref": "ph:toggle-left-fill",
+      "size": 200,
+      "color": "#2F9E44",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "consent",
+      "x": 860,
+      "y": 300,
+      "text": "withdraw consent easily",
+      "bg": "#2F9E44",
+      "size": 32
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Until then, here is what you can do today, in about five minutes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "today",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:timer-fill",
+      "size": 220,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "five",
+      "x": 400,
+      "y": 100,
+      "text": "*5 minutes*, 5 steps",
+      "size": 96,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Five things to do today"
+  },
+  {
+   "text": "One. Check which apps can use your microphone. On iPhone, go to Settings, Privacy and Security, Microphone. On Android, open the Privacy dashboard. Switch off anything that doesn't need it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "one",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 1 · microphone permissions",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "card",
+      "at": "iphone",
+      "x": 40,
+      "y": 140,
+      "icon": "ph:gear-six-fill",
+      "label": "IPHONE",
+      "big": "Settings › Privacy & Security › Microphone",
+      "bsize": 36,
+      "color": "#2A2018",
+      "id": "i"
+     },
+     {
+      "k": "card",
+      "at": "android",
+      "x": 40,
+      "y": 330,
+      "icon": "ph:shield-check-fill",
+      "label": "ANDROID",
+      "big": "Privacy dashboard",
+      "bsize": 44,
+      "color": "#2F9E44",
+      "id": "a"
+     },
+     {
+      "k": "icon",
+      "at": "switch",
+      "x": 960,
+      "y": 300,
+      "ref": "ph:toggle-left-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Does your torch app need your microphone? Does your calculator? No. Switch them off.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "torch",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:flashlight-fill",
+      "size": 180,
+      "color": "#F5B400",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "torch",
+      "x": 40,
+      "y": 290,
+      "text": "torch app",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "icon",
+      "at": "calculator",
+      "x": 360,
+      "y": 60,
+      "ref": "ph:calculator-fill",
+      "size": 180,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "calculator",
+      "x": 360,
+      "y": 290,
+      "text": "calculator",
+      "bg": "#2A2018",
+      "size": 32
+     },
+     {
+      "k": "icon",
+      "at": "microphone",
+      "x": 700,
+      "y": 60,
+      "ref": "ph:microphone-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "stamp",
+      "at": "no",
+      "x": 680,
+      "y": 280,
+      "text": "NO!",
+      "size": 110,
+      "id": "n",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Two. Watch for the dot. If the orange or green dot appears when you're not on a call or recording, find out which app is using it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "two",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 2 · watch the dot",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "prop",
+      "at": "dot",
+      "x": 60,
+      "y": 120,
+      "p": "phone",
+      "s": 0.85,
+      "id": "ph"
+     },
+     {
+      "k": "big",
+      "at": "orange",
+      "x": 150,
+      "y": 150,
+      "text": "●",
+      "size": 80,
+      "color": "#F87736",
+      "id": "od",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "call",
+      "x": 560,
+      "y": 160,
+      "ref": "ph:phone-slash-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "which",
+      "x": 560,
+      "y": 380,
+      "text": "not on a call? find the app",
+      "bg": "#E0471C",
+      "size": 34
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Three. Limit ad tracking. On iPhone, choose \"Ask App Not to Track\". On Android, delete your advertising ID in Settings.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "three",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 3 · limit ad tracking",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "logo",
+      "at": "iphone",
+      "x": 40,
+      "y": 140,
+      "ref": "logos:apple",
+      "size": 120,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "ask",
+      "x": 220,
+      "y": 170,
+      "text": "\"Ask App Not to Track\"",
+      "bg": "#2A2018",
+      "size": 40
+     },
+     {
+      "k": "logo",
+      "at": "android",
+      "x": 40,
+      "y": 330,
+      "ref": "logos:android-icon",
+      "size": 120,
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "delete",
+      "x": 220,
+      "y": 360,
+      "text": "Delete advertising ID",
+      "bg": "#2F9E44",
+      "size": 40
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Four. On Facebook and Instagram, open your activity off Meta technologies, and disconnect the websites that report on you.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "four",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 4 · off-Meta activity",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "logo",
+      "at": "facebook",
+      "x": 40,
+      "y": 140,
+      "ref": "logos:facebook",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "logo",
+      "at": "instagram",
+      "x": 240,
+      "y": 140,
+      "ref": "logos:instagram-icon",
+      "size": 130,
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "activity",
+      "x": 480,
+      "y": 150,
+      "icon": "ph:list-bullets-bold",
+      "label": "SETTINGS",
+      "big": "Your activity off Meta technologies",
+      "bsize": 36,
+      "color": "#7A5CFF",
+      "id": "c"
+     },
+     {
+      "k": "icon",
+      "at": "disconnect",
+      "x": 480,
+      "y": 360,
+      "ref": "ph:link-break-bold",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Five. If voice assistants worry you, turn off the wake word, and review or delete your saved voice recordings.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "five",
+      "x": 40,
+      "y": 20,
+      "text": "STEP 5 · voice assistants",
+      "bg": "#F87736",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "wake",
+      "x": 40,
+      "y": 150,
+      "ref": "ph:microphone-slash-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "wake",
+      "x": 260,
+      "y": 190,
+      "text": "wake word: OFF",
+      "bg": "#E0471C",
+      "size": 40
+     },
+     {
+      "k": "icon",
+      "at": "delete",
+      "x": 40,
+      "y": 370,
+      "ref": "ph:trash-fill",
+      "size": 160,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "tag",
+      "at": "delete",
+      "x": 260,
+      "y": 410,
+      "text": "delete saved recordings",
+      "bg": "#2A2018",
+      "size": 40
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So, is your phone secretly listening to you? Almost certainly not, at least not for ads.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "phone",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:device-mobile-fill",
+      "size": 200,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "listening",
+      "x": 320,
+      "y": 80,
+      "text": "Listening for ads?",
+      "size": 96
+     },
+     {
+      "k": "stamp",
+      "at": "almost",
+      "x": 340,
+      "y": 260,
+      "text": "ALMOST CERTAINLY NOT",
+      "size": 70,
+      "color": "#2F9E44",
+      "rot": -4,
+      "id": "n",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The verdict"
+  },
+  {
+   "text": "The uncomfortable truth is that it doesn't need to. Your searches, your location and the people around you already tell the story.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "shoe",
+      "x": 480,
+      "y": 30,
+      "ref": "ph:sneaker-fill",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "searches",
+      "x": 60,
+      "y": 300,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 140,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "location",
+      "x": 360,
+      "y": 300,
+      "ref": "ph:map-pin-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "people",
+      "x": 660,
+      "y": 300,
+      "ref": "ph:users-three-fill",
+      "size": 140,
+      "color": "#7A5CFF",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "story",
+      "x": 200,
+      "y": 560,
+      "text": "already tell the *story*",
+      "size": 80
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And Max? He's buying cat food anyway. The ads won.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "cat",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:cat-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "buying",
+      "x": 300,
+      "y": 60,
+      "ref": "ph:shopping-bag-fill",
+      "size": 190,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "big",
+      "at": "won",
+      "x": 60,
+      "y": 380,
+      "text": "The ads *won*.",
+      "size": 120,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Tell me in the comments: what's the creepiest ad you've ever seen?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "comments",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:youtube-icon",
+      "size": 180,
+      "paper": true
+     },
+     {
+      "k": "icon",
+      "at": "comments",
+      "x": 280,
+      "y": 40,
+      "ref": "ph:chat-circle-text-fill",
+      "size": 180,
+      "color": "#F87736",
+      "paper": true
+     },
+     {
+      "k": "card",
+      "at": "creepiest",
+      "x": 40,
+      "y": 300,
+      "icon": "ph:user-circle-fill",
+      "label": "YOUR COMMENT",
+      "big": "The creepiest ad I ever saw…",
+      "color": "#F87736",
+      "id": "cm",
+      "in": "fly"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "end",
+    "sub": "More tech, decoded."
+   }
+  }
+ ]
+}

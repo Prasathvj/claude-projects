@@ -35,7 +35,7 @@ CSS = KPR.CSS + """
 .mclip .cb { font:600 20px 'SD Text'; color:#8C6B5A; letter-spacing:2px; margin-bottom:10px; }
 .mclip .ct { font:900 52px Georgia, serif; color:#2A2018; line-height:1.08; }
 .mclip .ct u { text-decoration-color:#F87736; text-decoration-thickness:9px; text-underline-offset:6px; }
-.mstamp { position:absolute; font:900 120px 'SD Display'; border:12px solid; border-radius:20px; padding:0 28px; letter-spacing:5px; background:rgba(255,250,242,.55); }
+.mstamp { position:absolute; white-space:nowrap; font:900 120px 'SD Display'; border:12px solid; border-radius:20px; padding:0 28px; letter-spacing:5px; background:rgba(255,250,242,.55); }
 .mbars .bl { font:800 30px 'SD Text'; color:#2A2018; margin:14px 0 8px; } .mbars .bt { height:54px; border-radius:12px; transform-origin:left center; }"""
 
 FROM = {'pop': 'scale:0, rotation:-10, opacity:1', 'drop': 'y:-800, rotation:-8, opacity:1', 'slide': 'x:1500, rotation:10, opacity:1',
