@@ -756,8 +756,147 @@ def lst():
                 (S['s6'][0], 'whoosh', .5), (tc + S['s6'][0], 'click', .9), (tc + S['s6'][0] + 0.1, 'ding', .7)]
     return out_, sfx
 
+# ================================================================= ast01 (stand-alone Short, owner 2026-11-23): professional product-demo look
+# (dark brand theme, app windows, an agent cursor that clicks by itself, a rendered ChatGPT-style exchange clip), no paper discs.
+ASTCSS = """.win { position:absolute; background:#17110D; border:2px solid #2E1B13; border-radius:26px; box-shadow:0 40px 90px rgba(0,0,0,.55); overflow:hidden; }
+.wbar { height:58px; background:#211812; display:flex; align-items:center; gap:12px; padding:0 22px; font:700 24px 'SD Text'; color:#B8A598; }
+.wbar i { width:16px; height:16px; border-radius:8px; display:inline-block; } .wbar .r { background:#FF5F57; } .wbar .y { background:#FEBC2E; } .wbar .g { background:#28C840; }
+.cell { position:absolute; height:52px; border-right:1px solid #2E1B13; border-bottom:1px solid #2E1B13; font:600 24px 'SD Mono'; color:#E9DED6; display:flex; align-items:center; padding-left:12px; }
+.bar3 { position:absolute; bottom:0; width:70px; border-radius:10px 10px 0 0; background:linear-gradient(180deg,#FFB27A,#F87736); transform-origin:bottom; }
+.toast { position:absolute; padding:20px 28px; border-radius:18px; background:#1E3B2A; border:2px solid #2F9E44; font:800 34px 'SD Text'; color:#CFF5DA; display:flex; gap:14px; align-items:center; }
+.kin { position:absolute; left:50px; right:50px; text-align:center; font:900 104px 'SD Display'; color:#F6EDE6; line-height:1; letter-spacing:-2px; } .kin span { color:#F87736; }
+.chip9 { position:absolute; padding:14px 26px; border-radius:16px; background:#211812; border:2px solid #3E2217; font:800 34px 'SD Text'; color:#F6EDE6; display:flex; gap:12px; align-items:center; }
+.tile9 { position:absolute; width:150px; height:150px; border-radius:36px; background:#211812; border:2px solid #3E2217; display:flex; align-items:center; justify-content:center; box-shadow:0 18px 40px rgba(0,0,0,.4); }
+.seg { position:absolute; display:flex; background:#0F0A07; border-radius:22px; padding:8px; border:2px solid #2E1B13; } .seg b { padding:16px 40px; border-radius:16px; font:800 38px 'SD Text'; color:#8C7A6E; }
+.menu { position:absolute; background:#1E1611; border:2px solid #3E2217; border-radius:22px; padding:12px; box-shadow:0 30px 70px rgba(0,0,0,.55); }
+.mi { padding:18px 26px; border-radius:14px; font:700 34px 'SD Text'; color:#E9DED6; display:flex; justify-content:space-between; align-items:center; gap:30px; } .mi small { font:600 24px 'SD Text'; color:#8C7A6E; }
+.tog { width:110px; height:60px; border-radius:30px; background:#3A2A20; position:relative; } .tog i { position:absolute; left:6px; top:6px; width:48px; height:48px; border-radius:24px; background:#B8A598; }
+.ibox { position:absolute; background:#211812; border:2px solid #3E2217; border-radius:28px; padding:28px 30px; font:600 38px 'SD Text'; color:#F6EDE6; line-height:1.35; }
+.atc { background:rgba(77,163,255,.22); color:#8EC5FF; border-radius:10px; padding:2px 10px; }
+.dlg { position:absolute; background:#1E1611; border:2px solid #3E2217; border-radius:30px; padding:40px; box-shadow:0 40px 90px rgba(0,0,0,.6); }
+.btn9 { display:inline-block; padding:18px 30px; border-radius:16px; font:800 32px 'SD Text'; margin-right:18px; } .btn9.p { background:#F87736; color:#1A0A04; } .btn9.s { background:#2E2119; color:#E9DED6; }
+.pcard { position:absolute; width:440px; padding:30px; border-radius:28px; background:#17110D; border:2px solid #2E1B13; } .pcard.hi { border-color:#F87736; box-shadow:0 0 60px rgba(248,119,54,.35); }
+.pcard h4 { font:900 50px 'SD Display'; color:#F6EDE6; } .pcard p { font:700 30px 'SD Text'; color:#B8A598; margin-top:8px; } .pcard em { position:absolute; right:26px; top:24px; font:900 54px 'SD Display'; font-style:normal; }
+.illu { position:absolute; right:40px; top:200px; font:700 22px 'SD Mono'; letter-spacing:3px; color:#6E5444; }
+.cur9 { position:absolute; left:0; top:0; z-index:20; } .cur9 .lbl { position:absolute; left:46px; top:40px; background:#4DA3FF; color:#fff; font:800 26px 'SD Text'; padding:6px 14px; border-radius:12px; white-space:nowrap; }
+.ring9 { position:absolute; width:80px; height:80px; border-radius:40px; border:5px solid #4DA3FF; opacity:0; z-index:19; }"""
+CURSOR = '<svg width="56" height="64" viewBox="0 0 28 32"><path d="M2 2 L2 26 L8.5 19.5 L13 30 L17.5 28 L13 18 L22 18 Z" fill="#FFFFFF" stroke="#111" stroke-width="2" stroke-linejoin="round"/></svg>'
+def cursor(sid, pts, label='Astra'):
+    """agent cursor: pts = [(x, y, t, click?)]; returns (html, script lines)"""
+    x0, y0 = pts[0][0], pts[0][1]
+    html = f'<div class="cur9" id="{sid}-cur" style="transform:translate({x0}px,{y0}px)">{CURSOR}<div class="lbl">{label}</div></div><div class="ring9" id="{sid}-ring"></div>'
+    sc = [f'    tl.fromTo("#{sid}-cur", {{ opacity:0 }}, {{ opacity:1, duration:.2 }}, {max(0.02, pts[0][2] - .2)});']
+    for k, (x, y, t, click) in enumerate(pts[1:], 1):
+        px, py, pt = pts[k - 1][0], pts[k - 1][1], pts[k - 1][2]
+        sc.append(f'    tl.fromTo("#{sid}-cur", {{ x:{px}, y:{py} }}, {{ x:{x}, y:{y}, duration:{max(.25, min(.6, t - pt - .05)):.2f}, ease:"power3.inOut", immediateRender:false }}, {round(max(0.02, t - max(.25, min(.6, t - pt - .05))), 3)});')
+        if click:
+            sc.append(f'    tl.fromTo("#{sid}-cur svg", {{ scale:1 }}, {{ scale:.82, duration:.08, yoyo:true, repeat:1, immediateRender:false }}, {round(t, 3)});')
+            sc.append(f'    tl.set("#{sid}-ring", {{ x:{x - 32}, y:{y - 32} }}, {round(t, 3)}); tl.fromTo("#{sid}-ring", {{ opacity:1, scale:.3 }}, {{ opacity:0, scale:1.6, duration:.5, ease:"expo.out", immediateRender:false }}, {round(t, 3)});')
+    return html, sc
+def tile(ref, size=96, col='#F6EDE6'):
+    return KA.icon(ref, size, col)
+def ast():
+    out_ = []
+    W = lambda i, w, n=0: max(0.02, wl(i, w, n) - 0.08)
+    css = ASTCSS
+    # ---- s0 hook: spreadsheet window, agent cursor makes a chart + PDF, "nobody touches the mouse"
+    rows = [('Month', 'Sales'), ('Jan', '42'), ('Feb', '55'), ('Mar', '61'), ('Apr', '74'), ('May', '88')]
+    cells = ''.join(f'<div class="cell" style="left:{20 + c * 210}px; top:{78 + r * 52}px; width:210px; {"color:#F87736; font-weight:800;" if r == 0 else ""}">{v}</div>' for r, row in enumerate(rows) for c, v in enumerate(row))
+    bars = ''.join(f'<div class="bar3" id="s0-b{k}" style="left:{40 + k * 92}px; height:{h}px"></div>' for k, h in enumerate([96, 126, 140, 170, 200]))
+    cur, csc = cursor('s0', [(820, 420, W(0, 'an'), False), (640, 140, W(0, 'builds'), True), (740, 140, W(0, 'saves'), True)])
+    body = f"""<div class="illu">ILLUSTRATION</div><div class="win" id="s0-w" style="left:60px; top:260px; width:960px; height:820px">
+<div class="wbar"><i class="r"></i><i class="y"></i><i class="g"></i>&nbsp; sales.xlsx</div>{cells}
+<div class="chip9" style="left:560px; top:80px; font-size:28px; padding:10px 18px">Insert ▸ Chart</div><div class="chip9" style="left:560px; top:150px; font-size:28px; padding:10px 18px">Save as PDF</div>
+<div id="s0-ch" style="position:absolute; left:480px; top:420px; width:470px; height:300px; border-left:3px solid #3E2217; border-bottom:3px solid #3E2217">{bars}</div></div>
+<div class="toast" id="s0-t" style="left:150px; top:1110px">{KA.icon('ph:check-circle-fill', 46, '#2F9E44')} sales_report.pdf saved</div>
+{cur}<div class="tile9" id="s0-m" style="left:465px; top:1010px; width:150px">{tile('ph:mouse-simple-fill', 90, '#F6EDE6')}<div style="position:absolute; width:150px; height:10px; background:#E0471C; transform:rotate(-40deg); border-radius:5px"></div></div>"""
+    sc = [fly('#s0-w', 0.02)] + csc + [tween(f'#s0-b{k}', W(0, 'chart') + k * .08, 'scaleY:0', 'scaleY:1', .4, 'back.out(1.4)') for k in range(5)]
+    sc += [pop('#s0-t', W(0, 'pdf')), f'    tl.to("#s0-t", {{ opacity:0, y:-40, duration:.25 }}, {W(0, "nobody") - .1});', pop('#s0-m', W(0, 'nobody')), shake('#s0-m', W(0, 'mouse'))]
+    out_.append(mk(0, body, sc, css))
+    # ---- s1: GPT-6 Astra title, strengths, India top market
+    body = f"""<div class="tile9" id="s1-oa" style="left:465px; top:250px">{tile('logos:openai-icon', 96, '#F6EDE6')}</div>
+<div class="kin" id="s1-t" style="top:450px; font-size:124px; white-space:nowrap">GPT-6 <span>ASTRA</span></div>
+<div class="chip9" id="s1-c1" style="left:70px; top:660px">{KA.icon('ph:cursor-click-fill', 40, '#4DA3FF')} Uses your computer</div>
+<div class="chip9" id="s1-c2" style="left:70px; top:760px">{KA.icon('ph:code-bold', 40, '#F87736')} Writes code</div>
+<div class="chip9" id="s1-c3" style="left:520px; top:760px">{KA.icon('ph:flask-fill', 40, '#B57BFF')} Research</div>
+<div class="chip9" id="s1-in" style="left:70px; top:900px; font-size:40px">{KA.icon('circle-flags:in', 56)} India: #1 search market</div>
+<div id="s1-bars" style="position:absolute; left:90px; top:1010px; width:900px">""" + ''.join(f'<div style="display:flex; align-items:center; gap:18px; margin:10px 0"><b style="width:70px; font:800 30px SD Text; color:#B8A598">{c}</b><i id="s1-g{k}" style="display:block; height:34px; width:{w}px; border-radius:10px; background:{col}; transform-origin:left"></i><b style="font:800 30px SD Text; color:#F6EDE6">{pct}</b></div>' for k, (c, w, col, pct) in enumerate([('IN', 600, '#F87736', '20%'), ('US', 360, '#6E5444', '12%'), ('PK', 270, '#6E5444', '9%')])) + """</div><div class="illu" style="top:1180px">SHARE OF SEARCHES · VIDIQ</div>"""
+    sc = [pop('#s1-oa', 0.02), slam('#s1-t', W(1, 'astra')), pop('#s1-c1', W(1, 'most')), pop('#s1-c2', W(1, 'powerful')), pop('#s1-c3', W(1, 'model')),
+          pop('#s1-in', W(1, 'india'))] + [tween(f'#s1-g{k}', W(1, 'searches') + k * .15, 'scaleX:0', 'scaleX:1', .5, 'power3.out') for k in range(3)]
+    out_.append(mk(1, body, sc, css))
+    # ---- s2: model list search "Astra" -> no results (chat clip takes over at "Here's")
+    body = f"""<div class="illu">ILLUSTRATION</div><div class="menu" id="s2-m" style="left:140px; top:330px; width:800px">
+<div class="mi" style="border:2px solid #3E2217">{KA.icon('ph:magnifying-glass-bold', 38, '#8C7A6E')} <span id="s2-q" style="flex:1">Search models</span></div>
+<div class="mi">GPT-5.6 Sol <small>everyday</small></div><div class="mi">GPT-5.6 Luna <small>fast</small></div>
+<div class="mi" id="s2-nr" style="color:#E0471C; opacity:0">No results for "Astra"</div></div>
+<div class="kin" id="s2-t" style="top:900px; font-size:90px">CAN'T <span>FIND IT?</span></div>"""
+    sc = [fly('#s2-m', 0.02), counter('#s2-q', W(2, 'people'), ['A', 'As', 'Ast', 'Astr', 'Astra'], .07), f'    tl.to("#s2-nr", {{ opacity:1, duration:.15 }}, {W(2, "find")});', shake('#s2-m', W(2, 'find')), slam('#s2-t', W(2, 'even'))]
+    out_.append(mk(2, body, sc, css))
+    # ---- s3: transparent (ChatGPT-style exchange clip plays at index level)
+    out_.append(mk(3, '<div class="illu" style="top:120px">ILLUSTRATION</div>', [], css))
+    # ---- s4 step 1: desktop app, switch Chat -> Work
+    cur, csc = cursor('s4', [(760, 900, W(4, 'open'), False), (700, 562, W(4, 'work'), True)])
+    body = f"""<div class="illu">ILLUSTRATION</div><div class="chip9" id="s4-st" style="left:70px; top:250px; background:#F87736; color:#1A0A04; border:0">STEP 1</div>
+<div class="win" id="s4-w" style="left:60px; top:380px; width:960px; height:640px"><div class="wbar"><i class="r"></i><i class="y"></i><i class="g"></i>&nbsp; ChatGPT · desktop app</div></div>
+<div class="seg" id="s4-seg" style="left:290px; top:500px"><b id="s4-a" style="background:#3A2A20; color:#F6EDE6">Chat</b><b id="s4-b">Work</b></div>
+<div class="kin" id="s4-t" style="top:1100px; font-size:84px">Chat → <span>Work</span></div>{cur}"""
+    sc = [pop('#s4-st', 0.02), fly('#s4-w', 0.1), pop('#s4-seg', W(4, 'desktop'))] + csc + [
+          f'    tl.to("#s4-a", {{ backgroundColor:"rgba(0,0,0,0)", color:"#8C7A6E", duration:.2 }}, {W(4, "work")}); tl.to("#s4-b", {{ backgroundColor:"#F87736", color:"#1A0A04", duration:.2 }}, {W(4, "work")});', slam('#s4-t', W(4, 'work') + .1)]
+    out_.append(mk(4, body, sc, css))
+    # ---- s5 step 2: choose Astra, Computer Use toggle
+    cur, csc = cursor('s5', [(860, 980, 0.1, False), (560, 520, W(5, 'astra'), True), (840, 900, W(5, 'use'), True)])
+    body = f"""<div class="illu">ILLUSTRATION</div><div class="chip9" id="s5-st" style="left:70px; top:250px; background:#F87736; color:#1A0A04; border:0">STEP 2</div>
+<div class="menu" id="s5-m" style="left:90px; top:360px; width:900px"><div class="mi">GPT-6.2 Sol <small>everyday work</small></div><div class="mi" id="s5-a">GPT-6.2 Astra <small>hardest tasks</small></div></div>
+<div class="menu" id="s5-p" style="left:90px; top:760px; width:900px"><div class="mi" style="color:#8C7A6E; font-size:26px">PLUGINS</div><div class="mi">{KA.icon('ph:cursor-click-fill', 46, '#4DA3FF')} Computer Use <div class="tog" id="s5-tg"><i id="s5-ti"></i></div></div></div>{cur}"""
+    sc = [pop('#s5-st', 0.02), fly('#s5-m', 0.05)] + csc + [f'    tl.to("#s5-a", {{ backgroundColor:"#3A2A20", color:"#F87736", duration:.2 }}, {W(5, "astra")});',
+          pop('#s5-p', W(5, 'turn')), f'    tl.to("#s5-tg", {{ backgroundColor:"#2F9E44", duration:.2 }}, {W(5, "use")}); tl.to("#s5-ti", {{ x:50, backgroundColor:"#FFFFFF", duration:.2 }}, {W(5, "use")});']
+    out_.append(mk(5, body, sc, css))
+    # ---- s6 step 3: type the request with @Computer
+    txt = 'Open sales.xlsx, chart the monthly totals and save it as a PDF on my Desktop.'
+    steps_ = [txt[:n] for n in range(4, len(txt) + 1, 4)] + [txt]
+    body = f"""<div class="illu">ILLUSTRATION</div><div class="chip9" id="s6-st" style="left:70px; top:250px; background:#F87736; color:#1A0A04; border:0">STEP 3</div>
+<div class="ibox" id="s6-b" style="left:70px; top:380px; width:940px; min-height:330px"><span class="atc" id="s6-at">@Computer</span> <span id="s6-tx"></span></div>
+<div class="chip9" id="s6-d" style="left:70px; top:780px; border-color:#2F9E44">{KA.icon('ph:flag-checkered-fill', 40, '#2F9E44')} Say what "done" looks like</div>"""
+    sc = [pop('#s6-st', 0.02), fly('#s6-b', 0.05), pop('#s6-at', W(6, 'at')), counter('#s6-tx', W(6, 'computer') + .2, steps_, .045), pop('#s6-d', W(6, 'finished')), shake('#s6-d', W(6, 'like'))]
+    out_.append(mk(6, body, sc, css))
+    # ---- s7 permission dialog + watch every click
+    cur, csc = cursor('s7', [(800, 1050, 0.15, False), (300, 760, W(7, 'touches'), True), (520, 1050, W(7, 'click'), True)])
+    body = f"""<div class="illu">ILLUSTRATION</div><div class="dlg" id="s7-d" style="left:90px; top:420px; width:900px">
+<div style="display:flex; gap:22px; align-items:center">{KA.icon('ph:shield-check-fill', 70, '#F87736')}<div style="font:900 44px SD Display; color:#F6EDE6">Allow ChatGPT to use Excel?</div></div>
+<div style="font:600 30px SD Text; color:#B8A598; margin:18px 0 30px">Astra wants to control this app for your task.</div>
+<span class="btn9 p" id="s7-b1">Allow once</span><span class="btn9 s">Always allow</span><span class="btn9 s">Deny</span></div>
+<div class="chip9" id="s7-e" style="left:250px; top:900px; font-size:40px">{KA.icon('ph:eye-fill', 50, '#4DA3FF')} You watch every click</div>{cur}"""
+    sc = [fly('#s7-d', 0.02)] + csc + [pop('#s7-e', W(7, 'watch'))]
+    out_.append(mk(7, body, sc, css))
+    # ---- s8 price + limits
+    cards = [('Free', '₹0', '✗', '#E0471C', 'free', False), ('Go', '₹399/mo', '✗', '#E0471C', 'go', False), ('Plus', '~₹1,999/mo', '✓', '#2F9E44', 'plus', True), ('Pro', 'much more', '✓', '#2F9E44', 'plus', False)]
+    body = '<div class="illu">PRICES INCL. GST · CHECK CHATGPT.COM/PRICING</div>' + ''.join(
+        f'<div class="pcard{" hi" if hi else ""}" id="s8-c{k}" style="left:{70 + (k % 2) * 500}px; top:{280 + (k // 2) * 250}px"><h4>{n}</h4><p>{pr}</p><em style="color:{col}">{mk_}</em></div>' for k, (n, pr, mk_, col, w, hi) in enumerate(cards))
+    body += f"""<div class="ibox" id="s8-l" style="left:70px; top:820px; width:940px; text-align:center">{KA.icon('ph:hourglass-high-fill', 60, '#F87736')}<div style="font:900 80px SD Display; color:#F6EDE6" id="s8-n">5–45</div><div style="font:700 32px SD Text; color:#B8A598">Astra messages every 5 hours on Plus (OpenAI estimate)</div></div>"""
+    sc = [pop('#s8-c2', 0.02), pop('#s8-c3', W(8, 'month')), pop('#s8-c0', W(8, 'free')), pop('#s8-c1', W(8, 'go')), fly('#s8-l', W(8, 'estimates')), shake('#s8-c0', W(8, 'include')), shake('#s8-c1', W(8, 'include'))]
+    out_.append(mk(8, body, sc, css))
+    # ---- s9 scam
+    body = f"""<div class="win" id="s9-w" style="left:90px; top:360px; width:900px; height:520px"><div class="wbar"><i class="r"></i><i class="y"></i><i class="g"></i>&nbsp; free-gpt6-astra.apk.xyz</div>
+<div style="padding:40px; text-align:center"><div style="font:900 70px SD Display; color:#F6EDE6">FREE GPT-6 ASTRA</div><div style="font:800 40px SD Text; color:#FEBC2E; margin:14px 0 30px">Unlimited · No login</div>
+<span class="btn9 p" style="font-size:40px">⬇ Download APK</span></div></div>
+<div class="stamp" id="s9-s" style="left:270px; top:560px; font-size:150px; white-space:nowrap">SCAM</div>"""
+    sc = [fly('#s9-w', 0.02), shake('#s9-w', W(9, 'free')), tween('#s9-s', W(9, 'scam') - .2, 'scale:3, opacity:0, rotation:10', 'scale:1, opacity:1, rotation:-12', .22, 'power4.in')]
+    out_.append(mk(9, body, sc, css + QCSS))
+    s, tc = subscribe_scene(10); out_.append(s)
+    def sfx(g):
+        A_ = lambda i, w, n=0: S[f's{i}'][0] + W(i, w, n)
+        return [(0.02, 'whoosh', .5), (A_(0, 'builds'), 'click', .7), (A_(0, 'chart'), 'pop', .45), (A_(0, 'saves'), 'click', .7), (A_(0, 'pdf'), 'ding', .5), (A_(0, 'nobody'), 'impact', .55),
+                (S['s1'][0], 'whoosh', .45), (A_(1, 'astra'), 'impact', .6), (A_(1, 'india'), 'pop', .45),
+                (S['s2'][0], 'whoosh', .4), (A_(2, 'find'), 'error', .45), (S['s3'][0] - 2.0, 'whoosh', .4),
+                (S['s4'][0], 'pop', .4), (A_(4, 'work'), 'click', .7), (A_(5, 'astra'), 'click', .7), (A_(5, 'use'), 'switch', .6),
+                (A_(6, 'computer'), 'type', .45), (A_(6, 'finished'), 'ding', .4), (S['s7'][0], 'notify', .5), (A_(7, 'touches'), 'click', .7),
+                (S['s8'][0], 'pop', .45), (A_(8, 'estimates'), 'tick', .45), (A_(8, 'include'), 'error', .4),
+                (S['s9'][0], 'glitch', .45), (A_(9, 'scam') - .2, 'stamp', .8),
+                (S['s10'][0], 'whoosh', .5), (tc + S['s10'][0], 'click', .9), (tc + S['s10'][0] + 0.1, 'ding', .7)]
+    return out_, sfx
+
 if __name__ == '__main__':
-    scenes, sfx = {'upi01': upi, 'ai01': ai, 'del01': dele, 'face01': face, 'pay01': pay, 'swe01': swe, 'qnt01': qnt, 'lst01': lst}[K]()
+    scenes, sfx = {'upi01': upi, 'ai01': ai, 'del01': dele, 'face01': face, 'pay01': pay, 'swe01': swe, 'qnt01': qnt, 'lst01': lst, 'ast01': ast}[K]()
     L.sfx_list = lambda: sorted(sfx(lambda i, w: S[f's{i}'][0] + wl(i, w)))
     comp = L.P / 'compositions'; comp.mkdir(parents=True, exist_ok=True)
     for f in comp.glob('*.html'): f.unlink()

@@ -1,0 +1,57 @@
+{
+ "id": "ast01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.2,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 6,
+ "max_tempo": 1.0,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "Watch this. An AI opens a spreadsheet, builds a chart and saves it as a PDF. Nobody touches the mouse.",
+   "dir": "gripping, amazed hook, natural pace"
+  },
+  {
+   "text": "It's GPT-6 Astra, OpenAI's most powerful model. And India searches for it more than any other country.",
+   "dir": "excited, clear"
+  },
+  {
+   "text": "But most people can't even find it. Here's how it works, in one minute.",
+   "dir": "confident, inviting"
+  },
+  {
+   "text": "Astra isn't in the normal chat list. On ChatGPT Plus, it lives inside two places: Work and Codex.",
+   "dir": "clear explainer"
+  },
+  {
+   "text": "Step one: open the ChatGPT desktop app and switch from Chat to Work.",
+   "dir": "clear, step by step"
+  },
+  {
+   "text": "Step two: choose Astra, then turn on Computer Use in Plugins.",
+   "dir": "clear, step by step"
+  },
+  {
+   "text": "Step three: start your request with at Computer, and say exactly what the finished job looks like.",
+   "dir": "clear, step by step"
+  },
+  {
+   "text": "Astra asks your permission before it touches any app, and you can watch every single click.",
+   "dir": "reassuring"
+  },
+  {
+   "text": "On Plus, about nineteen ninety-nine rupees a month in India, OpenAI estimates five to forty-five Astra messages every five hours. Free and Go don't include it.",
+   "dir": "informative, honest"
+  },
+  {
+   "text": "And any site promising free Astra? Skip it. That's a scam.",
+   "dir": "firm warning"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm sign-off"
+  }
+ ]
+}

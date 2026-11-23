@@ -1,0 +1,970 @@
+{
+ "id": "ast01-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 64.175,
+ "vo": "ast01/ast01-short-vo.wav",
+ "music": "ast01/ast01-short-music.wav",
+ "beats": [
+  {
+   "text": "Watch this. An AI opens a spreadsheet, builds a chart and saves it as a PDF. Nobody touches the mouse.",
+   "dir": "gripping, amazed hook, natural pace",
+   "start": 0.25,
+   "vo": 7.903,
+   "dur": 8.103,
+   "words": [
+    {
+     "w": "Watch",
+     "s": 0.0,
+     "e": 0.5
+    },
+    {
+     "w": "this.",
+     "s": 0.5,
+     "e": 0.85
+    },
+    {
+     "w": "An",
+     "s": 0.85,
+     "e": 1.22
+    },
+    {
+     "w": "AI",
+     "s": 1.37,
+     "e": 1.82
+    },
+    {
+     "w": "opens",
+     "s": 1.99,
+     "e": 2.31
+    },
+    {
+     "w": "a",
+     "s": 2.31,
+     "e": 2.37
+    },
+    {
+     "w": "spreadsheet,",
+     "s": 2.37,
+     "e": 3.04
+    },
+    {
+     "w": "builds",
+     "s": 3.04,
+     "e": 3.55
+    },
+    {
+     "w": "a",
+     "s": 3.55,
+     "e": 3.61
+    },
+    {
+     "w": "chart",
+     "s": 3.61,
+     "e": 4.11
+    },
+    {
+     "w": "and",
+     "s": 4.11,
+     "e": 4.27
+    },
+    {
+     "w": "saves",
+     "s": 4.27,
+     "e": 4.79
+    },
+    {
+     "w": "it",
+     "s": 4.79,
+     "e": 4.89
+    },
+    {
+     "w": "as",
+     "s": 4.89,
+     "e": 5.06
+    },
+    {
+     "w": "a",
+     "s": 5.06,
+     "e": 5.1
+    },
+    {
+     "w": "PDF.",
+     "s": 5.1,
+     "e": 5.95
+    },
+    {
+     "w": "Nobody",
+     "s": 6.31,
+     "e": 6.99
+    },
+    {
+     "w": "touches",
+     "s": 6.99,
+     "e": 7.39
+    },
+    {
+     "w": "the",
+     "s": 7.39,
+     "e": 7.47
+    },
+    {
+     "w": "mouse.",
+     "s": 7.47,
+     "e": 7.88
+    }
+   ]
+  },
+  {
+   "text": "It's GPT-6 Astra, OpenAI's most powerful model. And India searches for it more than any other country.",
+   "dir": "excited, clear",
+   "start": 8.353,
+   "vo": 7.183,
+   "dur": 7.383,
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.61,
+     "e": 1.04
+    },
+    {
+     "w": "GPT-6",
+     "s": 1.04,
+     "e": 1.37
+    },
+    {
+     "w": "Astra,",
+     "s": 1.37,
+     "e": 1.86
+    },
+    {
+     "w": "OpenAI's",
+     "s": 1.86,
+     "e": 2.71
+    },
+    {
+     "w": "most",
+     "s": 2.71,
+     "e": 2.98
+    },
+    {
+     "w": "powerful",
+     "s": 2.98,
+     "e": 3.62
+    },
+    {
+     "w": "model.",
+     "s": 3.62,
+     "e": 4.0
+    },
+    {
+     "w": "And",
+     "s": 4.28,
+     "e": 4.45
+    },
+    {
+     "w": "India",
+     "s": 4.45,
+     "e": 4.87
+    },
+    {
+     "w": "searches",
+     "s": 4.87,
+     "e": 5.35
+    },
+    {
+     "w": "for",
+     "s": 5.35,
+     "e": 5.52
+    },
+    {
+     "w": "it",
+     "s": 5.52,
+     "e": 5.58
+    },
+    {
+     "w": "more",
+     "s": 5.58,
+     "e": 5.78
+    },
+    {
+     "w": "than",
+     "s": 5.78,
+     "e": 5.9
+    },
+    {
+     "w": "any",
+     "s": 6.09,
+     "e": 6.34
+    },
+    {
+     "w": "other",
+     "s": 6.51,
+     "e": 6.73
+    },
+    {
+     "w": "country.",
+     "s": 6.73,
+     "e": 7.18
+    }
+   ]
+  },
+  {
+   "text": "But most people can't even find it. Here's how it works, in one minute.",
+   "dir": "confident, inviting",
+   "start": 15.736,
+   "vo": 4.126,
+   "dur": 4.326,
+   "words": [
+    {
+     "w": "But",
+     "s": -0.02,
+     "e": 0.1
+    },
+    {
+     "w": "most",
+     "s": 0.1,
+     "e": 0.54
+    },
+    {
+     "w": "people",
+     "s": 0.54,
+     "e": 0.83
+    },
+    {
+     "w": "can't",
+     "s": 0.83,
+     "e": 1.13
+    },
+    {
+     "w": "even",
+     "s": 1.13,
+     "e": 1.34
+    },
+    {
+     "w": "find",
+     "s": 1.34,
+     "e": 1.77
+    },
+    {
+     "w": "it.",
+     "s": 1.77,
+     "e": 1.93
+    },
+    {
+     "w": "Here's",
+     "s": 2.39,
+     "e": 2.66
+    },
+    {
+     "w": "how",
+     "s": 2.66,
+     "e": 2.83
+    },
+    {
+     "w": "it",
+     "s": 2.83,
+     "e": 2.89
+    },
+    {
+     "w": "works,",
+     "s": 2.89,
+     "e": 3.23
+    },
+    {
+     "w": "in",
+     "s": 3.35,
+     "e": 3.47
+    },
+    {
+     "w": "one",
+     "s": 3.47,
+     "e": 3.85
+    },
+    {
+     "w": "minute.",
+     "s": 3.85,
+     "e": 4.11
+    }
+   ]
+  },
+  {
+   "text": "Astra isn't in the normal chat list. On ChatGPT Plus, it lives inside two places: Work and Codex.",
+   "dir": "clear explainer",
+   "start": 20.063,
+   "vo": 6.835,
+   "dur": 7.035,
+   "words": [
+    {
+     "w": "Astra",
+     "s": 0.01,
+     "e": 0.39
+    },
+    {
+     "w": "isn't",
+     "s": 0.55,
+     "e": 0.86
+    },
+    {
+     "w": "in",
+     "s": 0.86,
+     "e": 0.99
+    },
+    {
+     "w": "the",
+     "s": 0.99,
+     "e": 1.05
+    },
+    {
+     "w": "normal",
+     "s": 1.05,
+     "e": 1.45
+    },
+    {
+     "w": "chat",
+     "s": 1.45,
+     "e": 1.76
+    },
+    {
+     "w": "list.",
+     "s": 1.76,
+     "e": 2.06
+    },
+    {
+     "w": "On",
+     "s": 2.37,
+     "e": 2.52
+    },
+    {
+     "w": "ChatGPT",
+     "s": 2.52,
+     "e": 3.19
+    },
+    {
+     "w": "Plus,",
+     "s": 3.19,
+     "e": 3.62
+    },
+    {
+     "w": "it",
+     "s": 3.78,
+     "e": 3.9
+    },
+    {
+     "w": "lives",
+     "s": 3.9,
+     "e": 4.17
+    },
+    {
+     "w": "inside",
+     "s": 4.17,
+     "e": 4.52
+    },
+    {
+     "w": "two",
+     "s": 4.52,
+     "e": 4.83
+    },
+    {
+     "w": "places:",
+     "s": 4.83,
+     "e": 5.33
+    },
+    {
+     "w": "Work",
+     "s": 5.59,
+     "e": 5.99
+    },
+    {
+     "w": "and",
+     "s": 5.99,
+     "e": 6.36
+    },
+    {
+     "w": "Codex.",
+     "s": 6.36,
+     "e": 6.835
+    }
+   ]
+  },
+  {
+   "text": "Step one: open the ChatGPT desktop app and switch from Chat to Work.",
+   "dir": "clear, step by step",
+   "start": 27.098,
+   "vo": 4.366,
+   "dur": 4.566,
+   "words": [
+    {
+     "w": "Step",
+     "s": 0.01,
+     "e": 0.4
+    },
+    {
+     "w": "one:",
+     "s": 0.4,
+     "e": 0.66
+    },
+    {
+     "w": "open",
+     "s": 0.92,
+     "e": 1.2
+    },
+    {
+     "w": "the",
+     "s": 1.2,
+     "e": 1.27
+    },
+    {
+     "w": "ChatGPT",
+     "s": 1.27,
+     "e": 1.92
+    },
+    {
+     "w": "desktop",
+     "s": 1.92,
+     "e": 2.51
+    },
+    {
+     "w": "app",
+     "s": 2.51,
+     "e": 2.73
+    },
+    {
+     "w": "and",
+     "s": 2.73,
+     "e": 2.9
+    },
+    {
+     "w": "switch",
+     "s": 2.9,
+     "e": 3.18
+    },
+    {
+     "w": "from",
+     "s": 3.18,
+     "e": 3.35
+    },
+    {
+     "w": "Chat",
+     "s": 3.35,
+     "e": 3.75
+    },
+    {
+     "w": "to",
+     "s": 3.82,
+     "e": 3.93
+    },
+    {
+     "w": "Work.",
+     "s": 3.93,
+     "e": 4.24
+    }
+   ]
+  },
+  {
+   "text": "Step two: choose Astra, then turn on Computer Use in Plugins.",
+   "dir": "clear, step by step",
+   "start": 31.664,
+   "vo": 3.902,
+   "dur": 4.102,
+   "words": [
+    {
+     "w": "Step",
+     "s": 0.01,
+     "e": 0.32
+    },
+    {
+     "w": "two:",
+     "s": 0.32,
+     "e": 0.69
+    },
+    {
+     "w": "choose",
+     "s": 0.8,
+     "e": 1.07
+    },
+    {
+     "w": "Astra,",
+     "s": 1.07,
+     "e": 1.61
+    },
+    {
+     "w": "then",
+     "s": 1.61,
+     "e": 1.83
+    },
+    {
+     "w": "turn",
+     "s": 1.83,
+     "e": 2.02
+    },
+    {
+     "w": "on",
+     "s": 2.02,
+     "e": 2.33
+    },
+    {
+     "w": "Computer",
+     "s": 2.33,
+     "e": 2.94
+    },
+    {
+     "w": "Use",
+     "s": 2.94,
+     "e": 3.23
+    },
+    {
+     "w": "in",
+     "s": 3.23,
+     "e": 3.38
+    },
+    {
+     "w": "Plugins.",
+     "s": 3.38,
+     "e": 3.88
+    }
+   ]
+  },
+  {
+   "text": "Step three: start your request with at Computer, and say exactly what the finished job looks like.",
+   "dir": "clear, step by step",
+   "start": 35.766,
+   "vo": 5.315,
+   "dur": 5.515,
+   "words": [
+    {
+     "w": "Step",
+     "s": 0.0,
+     "e": 0.34
+    },
+    {
+     "w": "three:",
+     "s": 0.34,
+     "e": 0.8
+    },
+    {
+     "w": "start",
+     "s": 0.9,
+     "e": 1.23
+    },
+    {
+     "w": "your",
+     "s": 1.23,
+     "e": 1.37
+    },
+    {
+     "w": "request",
+     "s": 1.37,
+     "e": 1.81
+    },
+    {
+     "w": "with",
+     "s": 1.81,
+     "e": 1.96
+    },
+    {
+     "w": "at",
+     "s": 1.96,
+     "e": 2.32
+    },
+    {
+     "w": "Computer,",
+     "s": 2.32,
+     "e": 2.98
+    },
+    {
+     "w": "and",
+     "s": 2.98,
+     "e": 3.11
+    },
+    {
+     "w": "say",
+     "s": 3.11,
+     "e": 3.31
+    },
+    {
+     "w": "exactly",
+     "s": 3.31,
+     "e": 4.01
+    },
+    {
+     "w": "what",
+     "s": 4.01,
+     "e": 4.18
+    },
+    {
+     "w": "the",
+     "s": 4.18,
+     "e": 4.25
+    },
+    {
+     "w": "finished",
+     "s": 4.25,
+     "e": 4.58
+    },
+    {
+     "w": "job",
+     "s": 4.58,
+     "e": 4.79
+    },
+    {
+     "w": "looks",
+     "s": 4.79,
+     "e": 5.05
+    },
+    {
+     "w": "like.",
+     "s": 5.05,
+     "e": 5.29
+    }
+   ]
+  },
+  {
+   "text": "Astra asks your permission before it touches any app, and you can watch every single click.",
+   "dir": "reassuring",
+   "start": 41.281,
+   "vo": 4.916,
+   "dur": 5.116,
+   "words": [
+    {
+     "w": "Astra",
+     "s": 0.0,
+     "e": 0.4
+    },
+    {
+     "w": "asks",
+     "s": 0.4,
+     "e": 0.74
+    },
+    {
+     "w": "your",
+     "s": 0.74,
+     "e": 0.86
+    },
+    {
+     "w": "permission",
+     "s": 0.86,
+     "e": 1.58
+    },
+    {
+     "w": "before",
+     "s": 1.58,
+     "e": 1.98
+    },
+    {
+     "w": "it",
+     "s": 1.98,
+     "e": 2.05
+    },
+    {
+     "w": "touches",
+     "s": 2.05,
+     "e": 2.46
+    },
+    {
+     "w": "any",
+     "s": 2.46,
+     "e": 2.77
+    },
+    {
+     "w": "app,",
+     "s": 2.77,
+     "e": 3.03
+    },
+    {
+     "w": "and",
+     "s": 3.03,
+     "e": 3.24
+    },
+    {
+     "w": "you",
+     "s": 3.24,
+     "e": 3.35
+    },
+    {
+     "w": "can",
+     "s": 3.35,
+     "e": 3.46
+    },
+    {
+     "w": "watch",
+     "s": 3.46,
+     "e": 3.76
+    },
+    {
+     "w": "every",
+     "s": 3.87,
+     "e": 4.21
+    },
+    {
+     "w": "single",
+     "s": 4.21,
+     "e": 4.56
+    },
+    {
+     "w": "click.",
+     "s": 4.56,
+     "e": 4.82
+    }
+   ]
+  },
+  {
+   "text": "On Plus, about nineteen ninety-nine rupees a month in India, OpenAI estimates five to forty-five Astra messages every five hours. Free and Go don't include it.",
+   "dir": "informative, honest",
+   "start": 46.397,
+   "vo": 9.065,
+   "dur": 9.265,
+   "words": [
+    {
+     "w": "On",
+     "s": 0.0,
+     "e": 0.17
+    },
+    {
+     "w": "Plus,",
+     "s": 0.17,
+     "e": 0.72
+    },
+    {
+     "w": "about",
+     "s": 0.72,
+     "e": 1.01
+    },
+    {
+     "w": "nineteen",
+     "s": 1.01,
+     "e": 1.47
+    },
+    {
+     "w": "ninety-nine",
+     "s": 1.47,
+     "e": 1.52
+    },
+    {
+     "w": "rupees",
+     "s": 1.47,
+     "e": 1.73
+    },
+    {
+     "w": "a",
+     "s": 1.73,
+     "e": 1.86
+    },
+    {
+     "w": "month",
+     "s": 1.86,
+     "e": 2.08
+    },
+    {
+     "w": "in",
+     "s": 2.47,
+     "e": 2.56
+    },
+    {
+     "w": "India,",
+     "s": 2.56,
+     "e": 2.98
+    },
+    {
+     "w": "OpenAI",
+     "s": 2.98,
+     "e": 3.64
+    },
+    {
+     "w": "estimates",
+     "s": 3.64,
+     "e": 4.2
+    },
+    {
+     "w": "five",
+     "s": 4.2,
+     "e": 4.63
+    },
+    {
+     "w": "to",
+     "s": 4.63,
+     "e": 4.75
+    },
+    {
+     "w": "forty-five",
+     "s": 4.75,
+     "e": 5.27
+    },
+    {
+     "w": "Astra",
+     "s": 5.27,
+     "e": 5.8
+    },
+    {
+     "w": "messages",
+     "s": 5.8,
+     "e": 6.21
+    },
+    {
+     "w": "every",
+     "s": 6.33,
+     "e": 6.65
+    },
+    {
+     "w": "five",
+     "s": 6.65,
+     "e": 6.98
+    },
+    {
+     "w": "hours.",
+     "s": 6.98,
+     "e": 7.2
+    },
+    {
+     "w": "Free",
+     "s": 7.5,
+     "e": 7.96
+    },
+    {
+     "w": "and",
+     "s": 7.96,
+     "e": 8.13
+    },
+    {
+     "w": "Go",
+     "s": 8.13,
+     "e": 8.39
+    },
+    {
+     "w": "don't",
+     "s": 8.39,
+     "e": 8.64
+    },
+    {
+     "w": "include",
+     "s": 8.64,
+     "e": 9.0
+    },
+    {
+     "w": "it.",
+     "s": 9.0,
+     "e": 9.06
+    }
+   ]
+  },
+  {
+   "text": "And any site promising free Astra? Skip it. That's a scam.",
+   "dir": "firm warning",
+   "start": 55.662,
+   "vo": 3.847,
+   "dur": 4.047,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.0,
+     "e": 0.16
+    },
+    {
+     "w": "any",
+     "s": 0.16,
+     "e": 0.45
+    },
+    {
+     "w": "site",
+     "s": 0.45,
+     "e": 0.75
+    },
+    {
+     "w": "promising",
+     "s": 0.75,
+     "e": 1.18
+    },
+    {
+     "w": "free",
+     "s": 1.18,
+     "e": 1.69
+    },
+    {
+     "w": "Astra?",
+     "s": 1.69,
+     "e": 2.17
+    },
+    {
+     "w": "Skip",
+     "s": 2.38,
+     "e": 2.78
+    },
+    {
+     "w": "it.",
+     "s": 2.78,
+     "e": 2.99
+    },
+    {
+     "w": "That's",
+     "s": 2.99,
+     "e": 3.3
+    },
+    {
+     "w": "a",
+     "s": 3.3,
+     "e": 3.33
+    },
+    {
+     "w": "scam.",
+     "s": 3.33,
+     "e": 3.82
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm sign-off",
+   "start": 59.709,
+   "vo": 3.066,
+   "dur": 4.466,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.01,
+     "e": 0.48
+    },
+    {
+     "w": "to",
+     "s": 0.48,
+     "e": 0.55
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.55,
+     "e": 1.25
+    },
+    {
+     "w": "with",
+     "s": 1.25,
+     "e": 1.37
+    },
+    {
+     "w": "Max",
+     "s": 1.37,
+     "e": 1.77
+    },
+    {
+     "w": "for",
+     "s": 1.77,
+     "e": 1.87
+    },
+    {
+     "w": "more",
+     "s": 1.87,
+     "e": 2.12
+    },
+    {
+     "w": "tech,",
+     "s": 2.12,
+     "e": 2.53
+    },
+    {
+     "w": "decoded.",
+     "s": 2.53,
+     "e": 3.05
+    }
+   ]
+  }
+ ]
+}
