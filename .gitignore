@@ -15,3 +15,4 @@ tech-studio/hf/*/render.log
 tech-studio/hf/*/.hyperframes/video-state.json
 tech-studio/hf/*/.hyperframes/render-outputs.json
 tech-studio/hf/lib/node_modules/
+tech-studio/hf/*/.hyperframes/
