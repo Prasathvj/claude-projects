@@ -21,6 +21,7 @@ Actions: {'do': 'move', 'id':..., 'at':..., x/y/scale/rot/fade} · {'do': 'count
 import html as _h
 import kit_assets as KA
 import kit_props as KPR
+import kit_pro as PRO
 
 CSS = KPR.CSS + """
 .mx { position:absolute; }
@@ -40,8 +41,8 @@ CSS = KPR.CSS + """
 
 FROM = {'pop': 'scale:0, rotation:-10, opacity:1', 'drop': 'y:-800, rotation:-8, opacity:1', 'slide': 'x:1500, rotation:10, opacity:1',
         'left': 'x:-1500, rotation:-10, opacity:1', 'rise': 'y:900, rotation:6, opacity:1', 'fade': 'opacity:0',
-        'slam': 'scale:2.6, opacity:0', 'fly': 'opacity:0, scale:.75, rotationX:18, rotationY:-12, y:90'}
-EASE = {'slam': ('power4.in', .22), 'fly': ('expo.out', .6), 'fade': ('power2.out', .4)}
+        'slam': 'scale:2.6, opacity:0', 'fly': 'opacity:0, scale:.75, rotationX:18, rotationY:-12, y:90', 'grow': 'scaleY:0, opacity:1'}
+EASE = {'grow': ('back.out(1.4)', .45), 'slam': ('power4.in', .22), 'fly': ('expo.out', .6), 'fade': ('power2.out', .4)}
 
 
 def _star(t):
@@ -96,6 +97,8 @@ def register(B):
             it = dict(p='arrow', x=e.get('x', 0), y=e.get('y', 0), len=e.get('w', 300), c=e.get('c', 'o'), rot=e.get('rot', 0))
             pid, h = KPR.prop_html(sid, f'a{k}', it)
             return pid, h
+        if kind in PRO.KINDS:
+            return eid, PRO.el(eid, e, pos, rot)
         raise KeyError(kind)
 
     def t_mix(i, sid, v):
@@ -112,13 +115,21 @@ def register(B):
             ease, d = EASE.get(how, ('back.out(1.6)', .38))
             to = 'x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1'
             sc.append(f'    tl.set("#{eid}", {{ opacity:0 }}, 0);')
-            sc.append(f'    tl.fromTo("#{eid}", {{ {FROM[how]} }}, {{ {to}, duration:{d}, ease:"{ease}", immediateRender:false }}, {t});')
+            if e['k'] == 'cursor':
+                sc.append(f'    tl.fromTo("#{eid}", {{ opacity:0 }}, {{ opacity:1, duration:.2, immediateRender:false }}, {t});')
+            else:
+                sc.append(f'    tl.fromTo("#{eid}", {{ {FROM[how]} }}, {{ {to}, duration:{d}, ease:"{ease}", immediateRender:false }}, {t});')
+            if e['k'] in PRO.KINDS:
+                sc += PRO.dyn(eid, e, t, T, i)
             if e['k'] == 'bars':
                 for j in range(len(e['rows'])):
                     sc.append(f'    tl.fromTo("#{eid}-b{j}", {{ scaleX:0 }}, {{ scaleX:1, duration:{e.get("grow", [.5] * 9)[j] if isinstance(e.get("grow"), list) else .6}, ease:"power2.out", immediateRender:false }}, {round(t + .2 + j * e.get("gap", .35), 3)});')
                     sc.append(f'    tl.set("#{eid}-b{j}", {{ scaleX:0 }}, 0);')
         for a in v.get('acts', []):
             eid = ids[a['id']]; t = T(i, a['at']); do = a['do']
+            r = PRO.act(eid, a, t)
+            if r:
+                sc += r; continue
             if do == 'count':
                 vals = a['values']; dt = a.get('dt', .08)
                 for j, val in enumerate(vals):
@@ -137,7 +148,7 @@ def register(B):
                 sc.append(f'    tl.to("#{eid}", {{ opacity:0, scale:.6, duration:.25, ease:"power2.in" }}, {t});')
             elif do == 'ring':
                 sc.append(f'    tl.fromTo("#{eid}", {{ scale:1 }}, {{ scale:1.12, duration:.15, yoyo:true, repeat:1, ease:"power2.out", immediateRender:false }}, {t});')
-        return '\n'.join(body), sc, CSS
+        return '\n'.join(body), sc, CSS + PRO.CSS
 
     B.T['mix'] = t_mix
     B.SFX_BY_TYPE['mix'] = [(0.05, 'whoosh', .4), (0.35, 'pop', .4), (0.7, 'pop', .35)]

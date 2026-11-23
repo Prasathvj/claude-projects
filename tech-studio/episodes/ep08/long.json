@@ -1,0 +1,4973 @@
+{
+ "id": "ep08-long",
+ "format": "horizontal",
+ "profile": "explainer",
+ "gap": 0.4,
+ "captions": "big",
+ "voice": "Eric",
+ "batch": 64,
+ "max_tempo": 1.05,
+ "slow": 0.92,
+ "engine": "vidiq",
+ "voice_id": "cjVigY5qzO86Huf0OWal",
+ "host_beats": [
+  0,
+  2,
+  7,
+  8,
+  9,
+  15,
+  24,
+  36,
+  40,
+  47,
+  48,
+  54,
+  60,
+  61,
+  62,
+  63
+ ],
+ "beats": [
+  {
+   "text": "OpenAI's new model can open apps on your computer, click through them, and finish a task while you watch.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 20,
+      "w": 780,
+      "h": 560,
+      "title": "sales.xlsx",
+      "body": "<div style=\"position:absolute;left:16px;top:56px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">Month</div><div style=\"position:absolute;left:186px;top:56px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">Sales</div><div style=\"position:absolute;left:16px;top:100px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Jan</div><div style=\"position:absolute;left:186px;top:100px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">42</div><div style=\"position:absolute;left:16px;top:144px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Feb</div><div style=\"position:absolute;left:186px;top:144px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">55</div><div style=\"position:absolute;left:16px;top:188px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Mar</div><div style=\"position:absolute;left:186px;top:188px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">61</div><div style=\"position:absolute;left:16px;top:232px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Apr</div><div style=\"position:absolute;left:186px;top:232px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">74</div><div style=\"position:absolute;left:16px;top:276px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">May</div><div style=\"position:absolute;left:186px;top:276px;width:170px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">88</div>",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "chip",
+      "at": 0.3,
+      "x": 420,
+      "y": 90,
+      "text": "Insert ▸ Chart",
+      "color": "#F87736",
+      "size": 24,
+      "id": "ins"
+     },
+     {
+      "k": "chip",
+      "at": 0.35,
+      "x": 420,
+      "y": 150,
+      "text": "Save as PDF",
+      "color": "#F87736",
+      "size": 24,
+      "id": "pdfb"
+     },
+     {
+      "k": "html",
+      "at": "through",
+      "x": 470,
+      "y": 430,
+      "id": "cb0",
+      "html": "<div style=\"width:46px;height:110px;border-radius:8px 8px 0 0;background:linear-gradient(180deg,#FFB27A,#F87736);transform-origin:bottom\"></div>",
+      "in": "grow"
+     },
+     {
+      "k": "html",
+      "at": "through",
+      "x": 532,
+      "y": 390,
+      "id": "cb1",
+      "html": "<div style=\"width:46px;height:150px;border-radius:8px 8px 0 0;background:linear-gradient(180deg,#FFB27A,#F87736);transform-origin:bottom\"></div>",
+      "in": "grow"
+     },
+     {
+      "k": "html",
+      "at": "through",
+      "x": 594,
+      "y": 370,
+      "id": "cb2",
+      "html": "<div style=\"width:46px;height:170px;border-radius:8px 8px 0 0;background:linear-gradient(180deg,#FFB27A,#F87736);transform-origin:bottom\"></div>",
+      "in": "grow"
+     },
+     {
+      "k": "html",
+      "at": "through",
+      "x": 656,
+      "y": 330,
+      "id": "cb3",
+      "html": "<div style=\"width:46px;height:210px;border-radius:8px 8px 0 0;background:linear-gradient(180deg,#FFB27A,#F87736);transform-origin:bottom\"></div>",
+      "in": "grow"
+     },
+     {
+      "k": "html",
+      "at": "through",
+      "x": 718,
+      "y": 290,
+      "id": "cb4",
+      "html": "<div style=\"width:46px;height:250px;border-radius:8px 8px 0 0;background:linear-gradient(180deg,#FFB27A,#F87736);transform-origin:bottom\"></div>",
+      "in": "grow"
+     },
+     {
+      "k": "tile",
+      "at": "openais",
+      "x": 900,
+      "y": 40,
+      "ref": "logos:openai-icon",
+      "size": 110,
+      "id": "oa",
+      "in": "drop",
+      "label": "OpenAI"
+     },
+     {
+      "k": "chip",
+      "at": "apps",
+      "x": 880,
+      "y": 250,
+      "text": "Uses your computer",
+      "color": "#1C7ED6",
+      "size": 28,
+      "id": "uc",
+      "in": "slide",
+      "icon": "ph:cursor-click-fill"
+     },
+     {
+      "k": "toast",
+      "at": "finish",
+      "x": 860,
+      "y": 360,
+      "text": "sales_report.pdf saved",
+      "id": "t",
+      "in": "slide"
+     },
+     {
+      "k": "tag",
+      "at": "watch",
+      "x": 860,
+      "y": 470,
+      "text": "nobody touches the mouse",
+      "bg": "#F87736",
+      "size": 30,
+      "id": "nm",
+      "in": "slam"
+     },
+     {
+      "k": "cursor",
+      "at": 0.1,
+      "x": 0,
+      "y": 0,
+      "pts": [
+       [
+        1000,
+        650,
+        0.1,
+        false
+       ],
+       [
+        520,
+        110,
+        "click",
+        true
+       ],
+       [
+        560,
+        260,
+        "through",
+        true
+       ],
+       [
+        520,
+        170,
+        "finish",
+        true
+       ],
+       [
+        880,
+        420,
+        "watch",
+        false
+       ]
+      ],
+      "id": "c"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "It's called GPT-6 Astra. And right now, it's one of the most searched AI tools in India.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "called",
+      "x": 40,
+      "y": 30,
+      "ref": "logos:openai-icon",
+      "size": 100,
+      "id": "oa"
+     },
+     {
+      "k": "big",
+      "at": "astra",
+      "x": 210,
+      "y": 40,
+      "text": "GPT-6 *ASTRA*",
+      "size": 130,
+      "in": "slam"
+     },
+     {
+      "k": "chip",
+      "at": "searched",
+      "x": 40,
+      "y": 250,
+      "text": "One of the most searched AI tools",
+      "color": "#2F9E44",
+      "size": 28,
+      "id": "ms",
+      "icon": "ph:trend-up-bold"
+     },
+     {
+      "k": "chip",
+      "at": "most",
+      "x": 40,
+      "y": 340,
+      "text": "India: #1 search market",
+      "color": "#F87736",
+      "size": 34,
+      "id": "in",
+      "icon": "circle-flags:in"
+     },
+     {
+      "k": "bars",
+      "at": "searched",
+      "x": 40,
+      "y": 430,
+      "w": 720,
+      "id": "bars",
+      "rows": [
+       [
+        "India · 20% of searches",
+        0.9,
+        "#F87736"
+       ],
+       [
+        "USA · 12%",
+        0.54,
+        "#B09682"
+       ],
+       [
+        "Pakistan · 9%",
+        0.4,
+        "#B09682"
+       ]
+      ],
+      "gap": 0.25
+     },
+     {
+      "k": "tag",
+      "at": "india",
+      "x": 800,
+      "y": 700,
+      "text": "SHARE OF SEARCHES · vidIQ data",
+      "bg": "#EFE3D7",
+      "size": 20,
+      "color": "#8C6B5A"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "But most people hit the same wall. They open ChatGPT, look for Astra, and it simply isn't there.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 20,
+      "w": 640,
+      "h": 500,
+      "title": "ChatGPT",
+      "body": "",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "menu",
+      "at": 0.1,
+      "x": 80,
+      "y": 90,
+      "w": 560,
+      "search": "Search models",
+      "typeq": "Astra",
+      "qat": "look",
+      "items": [
+       [
+        "GPT-5.6 Sol",
+        "everyday"
+       ],
+       [
+        "GPT-5.6 Luna",
+        "fast"
+       ],
+       [
+        "No results for \"Astra\"",
+        "",
+        "#E0471C"
+       ]
+      ],
+      "id": "m"
+     },
+     {
+      "k": "big",
+      "at": "wall",
+      "x": 720,
+      "y": 120,
+      "text": "CAN'T",
+      "size": 110,
+      "in": "slam"
+     },
+     {
+      "k": "big",
+      "at": "look",
+      "x": 720,
+      "y": 250,
+      "text": "*FIND IT?*",
+      "size": 110,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So let's decode it: where Astra hides, how to switch it on, what it costs in India, and the free Astra trap. Stay for that one, it's catching a lot of people.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "decode",
+      "x": 40,
+      "y": 0,
+      "text": "Let's *decode* it",
+      "size": 84
+     },
+     {
+      "k": "tile",
+      "at": "hides",
+      "x": 60,
+      "y": 190,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 90,
+      "id": "a",
+      "label": "where it hides",
+      "color": "#2A2018"
+     },
+     {
+      "k": "tile",
+      "at": "switch",
+      "x": 360,
+      "y": 190,
+      "ref": "ph:toggle-right-fill",
+      "size": 90,
+      "id": "b",
+      "label": "switch it on",
+      "color": "#2F9E44"
+     },
+     {
+      "k": "tile",
+      "at": "costs",
+      "x": 660,
+      "y": 190,
+      "ref": "ph:currency-inr-bold",
+      "size": 90,
+      "id": "c",
+      "label": "India price",
+      "color": "#F87736"
+     },
+     {
+      "k": "tile",
+      "at": "trap",
+      "x": 960,
+      "y": 190,
+      "ref": "ph:warning-fill",
+      "size": 90,
+      "id": "d",
+      "label": "the free trap",
+      "color": "#E0471C"
+     },
+     {
+      "k": "tag",
+      "at": "stay",
+      "x": 930,
+      "y": 430,
+      "text": "STAY FOR THIS ONE",
+      "bg": "#E0471C",
+      "size": 30,
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "stay",
+      "x": 1040,
+      "y": 370,
+      "ref": "ph:arrow-up-bold",
+      "size": 50,
+      "color": "#E0471C",
+      "id": "ar"
+     }
+    ],
+    "acts": [
+     {
+      "do": "ring",
+      "id": "d",
+      "at": "catching"
+     },
+     {
+      "do": "shake",
+      "id": "d",
+      "at": "people"
+     }
+    ]
+   }
+  },
+  {
+   "text": "GPT-6 Astra is OpenAI's top model, launched in September twenty twenty-six, built for computer work, coding and long, demanding tasks.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "ref": "logos:openai-icon",
+      "size": 100,
+      "id": "oa"
+     },
+     {
+      "k": "big",
+      "at": "top",
+      "x": 210,
+      "y": 40,
+      "text": "OpenAI's *top* model",
+      "size": 84
+     },
+     {
+      "k": "card",
+      "at": "september",
+      "x": 40,
+      "y": 230,
+      "big": "SEP 2026",
+      "label": "LAUNCHED",
+      "color": "#1C7ED6",
+      "id": "l",
+      "in": "fly",
+      "icon": "ph:calendar-check-fill"
+     },
+     {
+      "k": "chip",
+      "at": "computer",
+      "x": 520,
+      "y": 250,
+      "text": "Computer work",
+      "color": "#1C7ED6",
+      "size": 28,
+      "id": "c1",
+      "icon": "ph:cursor-click-fill"
+     },
+     {
+      "k": "chip",
+      "at": "coding",
+      "x": 520,
+      "y": 340,
+      "text": "Coding",
+      "color": "#F87736",
+      "size": 28,
+      "id": "c2",
+      "icon": "ph:code-bold"
+     },
+     {
+      "k": "chip",
+      "at": "long",
+      "x": 520,
+      "y": 430,
+      "text": "Long, demanding tasks",
+      "color": "#7A5CFF",
+      "size": 28,
+      "id": "c3",
+      "icon": "ph:hourglass-high-fill"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "What Astra is"
+  },
+  {
+   "text": "On November seventeenth, OpenAI upgraded it to GPT-6.2 Astra, and added a cheaper sister model called Sol.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "chip",
+      "at": 0.02,
+      "x": 40,
+      "y": 40,
+      "text": "SEP 2026 · GPT-6 Astra",
+      "color": "#8C6B5A",
+      "size": 28,
+      "id": "a",
+      "icon": "ph:calendar-fill"
+     },
+     {
+      "k": "arrow",
+      "at": "november",
+      "x": 420,
+      "y": 60,
+      "w": 160,
+      "id": "ar"
+     },
+     {
+      "k": "chip",
+      "at": "november",
+      "x": 600,
+      "y": 40,
+      "text": "NOV 17 · GPT-6.2 Astra",
+      "color": "#F87736",
+      "size": 28,
+      "border": "#F87736",
+      "id": "b",
+      "in": "slide",
+      "icon": "ph:rocket-launch-fill"
+     },
+     {
+      "k": "stamp",
+      "at": "upgraded",
+      "x": 1000,
+      "y": 130,
+      "text": "UPGRADE",
+      "size": 54,
+      "color": "#2F9E44",
+      "rot": -8,
+      "id": "u"
+     },
+     {
+      "k": "pcard",
+      "at": "astra",
+      "x": 120,
+      "y": 260,
+      "name": "GPT-6.2 Astra",
+      "price": "the hardest tasks",
+      "w": 420,
+      "hi": true,
+      "id": "p1",
+      "in": "fly"
+     },
+     {
+      "k": "pcard",
+      "at": "sol",
+      "x": 640,
+      "y": 260,
+      "name": "GPT-6.2 Sol",
+      "price": "cheaper, everyday work",
+      "w": 420,
+      "id": "p2",
+      "in": "fly"
+     },
+     {
+      "k": "tag",
+      "at": "sister",
+      "x": 640,
+      "y": 440,
+      "text": "its cheaper \"sister model\"",
+      "bg": "#2F9E44",
+      "size": 30,
+      "id": "t"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Think of it like this. Sol is your fast, everyday assistant. Astra is the specialist you call for the hardest jobs.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "sol",
+      "x": 40,
+      "y": 60,
+      "big": "SOL",
+      "label": "FAST, EVERYDAY ASSISTANT",
+      "color": "#F5B400",
+      "id": "s",
+      "in": "left",
+      "icon": "ph:lightning-fill",
+      "w": 520
+     },
+     {
+      "k": "card",
+      "at": "astra",
+      "x": 700,
+      "y": 60,
+      "big": "ASTRA",
+      "label": "THE SPECIALIST",
+      "color": "#F87736",
+      "id": "a",
+      "in": "slide",
+      "icon": "ph:brain-fill",
+      "w": 520
+     },
+     {
+      "k": "big",
+      "at": "think",
+      "x": 590,
+      "y": 110,
+      "text": "vs",
+      "size": 70,
+      "color": "#8C6B5A"
+     },
+     {
+      "k": "chip",
+      "at": "fast",
+      "x": 60,
+      "y": 300,
+      "text": "quick questions",
+      "color": "#F5B400",
+      "size": 28,
+      "id": "q",
+      "icon": "ph:chat-circle-fill"
+     },
+     {
+      "k": "chip",
+      "at": "hardest",
+      "x": 720,
+      "y": 300,
+      "text": "the hardest jobs",
+      "color": "#F87736",
+      "size": 28,
+      "id": "h",
+      "icon": "ph:briefcase-fill"
+     },
+     {
+      "k": "icon",
+      "at": "assistant",
+      "x": 140,
+      "y": 420,
+      "ref": "ph:user-circle-fill",
+      "size": 140,
+      "color": "#8C6B5A",
+      "id": "u1"
+     },
+     {
+      "k": "icon",
+      "at": "specialist",
+      "x": 800,
+      "y": 420,
+      "ref": "ph:user-gear-fill",
+      "size": 140,
+      "color": "#F87736",
+      "id": "u2"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Our host Max had a big plan. Ask Astra to do his entire job, then take the afternoon off.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "HYPOTHETICAL SKIT",
+      "bg": "#EFE3D7",
+      "size": 20,
+      "color": "#8C6B5A",
+      "id": "hy"
+     },
+     {
+      "k": "win",
+      "at": "plan",
+      "x": 40,
+      "y": 50,
+      "w": 620,
+      "h": 420,
+      "title": "Max's plan.txt",
+      "body": "<div id=\"pl0\" style=\"position:absolute;left:24px;top:80px;font:600 30px 'SD Text';color:#2A2018;white-space:nowrap\">1.  Ask Astra to do my entire job</div><div id=\"pl1\" style=\"position:absolute;left:24px;top:150px;font:600 30px 'SD Text';color:#2A2018;white-space:nowrap\">2.  Take the afternoon off</div><div id=\"pl2\" style=\"position:absolute;left:24px;top:220px;font:600 30px 'SD Text';color:#2A2018;white-space:nowrap\">3.  Profit</div>",
+      "id": "w",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "job",
+      "x": 700,
+      "y": 70,
+      "ref": "ph:briefcase-fill",
+      "size": 140,
+      "color": "#F87736",
+      "id": "j"
+     },
+     {
+      "k": "icon",
+      "at": "afternoon",
+      "x": 880,
+      "y": 60,
+      "ref": "ph:sun-horizon-fill",
+      "size": 160,
+      "color": "#F5B400",
+      "id": "sun"
+     },
+     {
+      "k": "icon",
+      "at": "off",
+      "x": 1080,
+      "y": 90,
+      "ref": "ph:beach-ball-fill",
+      "size": 120,
+      "color": "#E0471C",
+      "id": "bb"
+     },
+     {
+      "k": "big",
+      "at": "big",
+      "x": 700,
+      "y": 330,
+      "text": "The *big* plan",
+      "size": 80
+     }
+    ],
+    "acts": [
+     {
+      "do": "bob",
+      "id": "bb",
+      "at": "off",
+      "n": 5
+     }
+    ]
+   },
+   "chapter": "Max can't find it"
+  },
+  {
+   "text": "He opened ChatGPT. No Astra. He refreshed. Still no Astra. He blamed his Wi-Fi.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 40,
+      "w": 560,
+      "h": 420,
+      "title": "ChatGPT",
+      "body": "",
+      "id": "w"
+     },
+     {
+      "k": "menu",
+      "at": 0.05,
+      "x": 70,
+      "y": 110,
+      "w": 500,
+      "items": [
+       [
+        "GPT-5.6 Sol",
+        "everyday"
+       ],
+       [
+        "GPT-5.6 Luna",
+        "fast"
+       ]
+      ],
+      "id": "m"
+     },
+     {
+      "k": "stamp",
+      "at": "no",
+      "x": 120,
+      "y": 330,
+      "text": "NO ASTRA",
+      "size": 70,
+      "color": "#E0471C",
+      "rot": -8,
+      "id": "n1",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "refreshed",
+      "x": 680,
+      "y": 60,
+      "ref": "ph:arrows-clockwise-bold",
+      "size": 150,
+      "color": "#1C7ED6",
+      "id": "rf"
+     },
+     {
+      "k": "stamp",
+      "at": "still",
+      "x": 620,
+      "y": 260,
+      "text": "STILL NO",
+      "size": 70,
+      "color": "#E0471C",
+      "rot": 6,
+      "id": "n2",
+      "in": "slam"
+     },
+     {
+      "k": "tile",
+      "at": "blamed",
+      "x": 980,
+      "y": 60,
+      "ref": "ph:wifi-slash-bold",
+      "size": 100,
+      "id": "wf",
+      "in": "drop",
+      "label": "blame the Wi-Fi",
+      "color": "#E0471C"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "rf",
+      "at": "refreshed",
+      "deg": 720,
+      "d": 1.2
+     },
+     {
+      "do": "shake",
+      "id": "wf",
+      "at": "wifi"
+     }
+    ]
+   }
+  },
+  {
+   "text": "The Wi-Fi was fine. Astra just doesn't live where most people look.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": 0.02,
+      "x": 40,
+      "y": 40,
+      "ref": "ph:wifi-high-bold",
+      "size": 100,
+      "id": "wf",
+      "label": "Wi-Fi",
+      "color": "#2F9E44"
+     },
+     {
+      "k": "toast",
+      "at": "fine",
+      "x": 260,
+      "y": 70,
+      "text": "Connected · all fine",
+      "id": "t",
+      "in": "slide"
+     },
+     {
+      "k": "big",
+      "at": "live",
+      "x": 40,
+      "y": 290,
+      "text": "Astra doesn't live",
+      "size": 90
+     },
+     {
+      "k": "big",
+      "at": "look",
+      "x": 40,
+      "y": 400,
+      "text": "where most people *look*",
+      "size": 90
+     },
+     {
+      "k": "icon",
+      "at": "look",
+      "x": 1000,
+      "y": 300,
+      "ref": "ph:binoculars-fill",
+      "size": 160,
+      "color": "#8C6B5A",
+      "id": "b"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "On the Plus plan, Astra sits inside two places: ChatGPT Work and Codex. Not the regular chat list.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "pcard",
+      "at": "plus",
+      "x": 40,
+      "y": 40,
+      "name": "Plus",
+      "price": "Astra included",
+      "ok": true,
+      "hi": true,
+      "w": 340,
+      "id": "p",
+      "in": "fly"
+     },
+     {
+      "k": "arrow",
+      "at": "inside",
+      "x": 420,
+      "y": 90,
+      "w": 150,
+      "id": "a1"
+     },
+     {
+      "k": "tile",
+      "at": "work",
+      "x": 620,
+      "y": 30,
+      "ref": "ph:briefcase-fill",
+      "size": 90,
+      "id": "w",
+      "label": "ChatGPT Work",
+      "color": "#F87736"
+     },
+     {
+      "k": "tile",
+      "at": "codex",
+      "x": 900,
+      "y": 30,
+      "ref": "ph:terminal-window-fill",
+      "size": 90,
+      "id": "c",
+      "label": "Codex",
+      "color": "#2A2018"
+     },
+     {
+      "k": "chip",
+      "at": "chat",
+      "x": 300,
+      "y": 380,
+      "text": "the regular chat list",
+      "color": "#8C6B5A",
+      "size": 34,
+      "id": "cl",
+      "icon": "ph:list-bullets-bold"
+     },
+     {
+      "k": "stamp",
+      "at": "not",
+      "x": 780,
+      "y": 360,
+      "text": "NOT HERE",
+      "size": 80,
+      "color": "#E0471C",
+      "rot": -6,
+      "id": "nh",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Who gets it"
+  },
+  {
+   "text": "On the Free and Go plans, it isn't included at all. Pro and business plans get it too, with much higher limits.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "pcard",
+      "at": "free",
+      "x": 40,
+      "y": 60,
+      "name": "Free",
+      "price": "₹0",
+      "ok": false,
+      "w": 280,
+      "id": "f",
+      "in": "fly"
+     },
+     {
+      "k": "pcard",
+      "at": "go",
+      "x": 350,
+      "y": 60,
+      "name": "Go",
+      "price": "₹399 / month",
+      "ok": false,
+      "w": 280,
+      "id": "g",
+      "in": "fly"
+     },
+     {
+      "k": "pcard",
+      "at": "pro",
+      "x": 660,
+      "y": 60,
+      "name": "Pro",
+      "price": "much more",
+      "ok": true,
+      "w": 280,
+      "id": "p",
+      "in": "fly"
+     },
+     {
+      "k": "pcard",
+      "at": "business",
+      "x": 970,
+      "y": 60,
+      "name": "Business",
+      "price": "per seat",
+      "ok": true,
+      "w": 300,
+      "id": "b",
+      "in": "fly"
+     },
+     {
+      "k": "tag",
+      "at": "included",
+      "x": 120,
+      "y": 260,
+      "text": "Astra not included",
+      "bg": "#E0471C",
+      "size": 30,
+      "id": "ni"
+     },
+     {
+      "k": "chip",
+      "at": "higher",
+      "x": 740,
+      "y": 270,
+      "text": "much higher limits",
+      "color": "#2F9E44",
+      "size": 28,
+      "id": "hl",
+      "icon": "ph:gauge-fill"
+     },
+     {
+      "k": "tag",
+      "at": "free",
+      "x": 40,
+      "y": 680,
+      "text": "Prices: check chatgpt.com/pricing",
+      "bg": "#EFE3D7",
+      "size": 20,
+      "color": "#8C6B5A"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And even on Plus, there's a limit. OpenAI estimates roughly five to forty-five Astra messages every five hours, depending on the task.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "pcard",
+      "at": 0.02,
+      "x": 40,
+      "y": 40,
+      "name": "Plus",
+      "price": "~₹1,999 / month",
+      "ok": true,
+      "w": 340,
+      "id": "p"
+     },
+     {
+      "k": "card",
+      "at": "five",
+      "x": 440,
+      "y": 40,
+      "big": "5",
+      "label": "ASTRA MESSAGES · EVERY 5 HOURS",
+      "color": "#F87736",
+      "id": "lim",
+      "in": "fly",
+      "icon": "ph:hourglass-high-fill",
+      "w": 640
+     },
+     {
+      "k": "tag",
+      "at": "estimates",
+      "x": 460,
+      "y": 250,
+      "text": "OpenAI's estimate, not a guarantee",
+      "bg": "#2A2018",
+      "size": 30,
+      "id": "e"
+     },
+     {
+      "k": "chip",
+      "at": "depending",
+      "x": 460,
+      "y": 340,
+      "text": "light task → more messages",
+      "color": "#2F9E44",
+      "size": 28,
+      "id": "l1",
+      "icon": "ph:feather-fill"
+     },
+     {
+      "k": "chip",
+      "at": "task",
+      "x": 460,
+      "y": 420,
+      "text": "heavy task → fewer",
+      "color": "#E0471C",
+      "size": 28,
+      "id": "l2",
+      "icon": "ph:barbell-fill"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "lim",
+      "at": "fortyfive",
+      "values": [
+       "5",
+       "5–15",
+       "5–30",
+       "5–45"
+      ],
+      "dt": 0.15
+     }
+    ]
+   }
+  },
+  {
+   "text": "So treat it like a precious resource. Big jobs only, not \"write me a birthday message\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "precious",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:diamond-fill",
+      "size": 100,
+      "id": "d",
+      "label": "precious",
+      "color": "#1C7ED6"
+     },
+     {
+      "k": "chip",
+      "at": "big",
+      "x": 40,
+      "y": 290,
+      "text": "Big jobs only",
+      "color": "#2F9E44",
+      "size": 36,
+      "id": "bj",
+      "icon": "ph:check-circle-fill"
+     },
+     {
+      "k": "phone",
+      "at": "not",
+      "x": 760,
+      "y": 10,
+      "w": 330,
+      "h": 600,
+      "msgs": [
+       [
+        "user",
+        "write me a birthday message",
+        "write"
+       ]
+      ],
+      "id": "ph",
+      "in": "slide"
+     },
+     {
+      "k": "stamp",
+      "at": "message",
+      "x": 40,
+      "y": 420,
+      "text": "NOT FOR ASTRA",
+      "size": 56,
+      "color": "#E0471C",
+      "rot": -8,
+      "id": "nf",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Before anything else, check which plan you're on in your ChatGPT settings. That decides everything.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 20,
+      "w": 700,
+      "h": 480,
+      "title": "ChatGPT · Settings",
+      "body": "",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "menu",
+      "at": 0.1,
+      "x": 70,
+      "y": 90,
+      "w": 640,
+      "items": [
+       [
+        "Account",
+        ""
+       ],
+       [
+        "Plan",
+        "Free · Go · Plus · Pro"
+       ],
+       [
+        "Data controls",
+        ""
+       ],
+       [
+        "Apps & Plugins",
+        ""
+       ]
+      ],
+      "id": "m"
+     },
+     {
+      "k": "cursor",
+      "at": 0.1,
+      "x": 0,
+      "y": 0,
+      "pts": [
+       [
+        700,
+        600,
+        0.1,
+        false
+       ],
+       [
+        300,
+        205,
+        "plan",
+        true
+       ]
+      ],
+      "id": "c"
+     },
+     {
+      "k": "big",
+      "at": "decides",
+      "x": 790,
+      "y": 160,
+      "text": "This",
+      "size": 90
+     },
+     {
+      "k": "big",
+      "at": "decides",
+      "x": 790,
+      "y": 260,
+      "text": "decides",
+      "size": 90
+     },
+     {
+      "k": "big",
+      "at": "everything",
+      "x": 790,
+      "y": 360,
+      "text": "*everything*",
+      "size": 90
+     }
+    ],
+    "acts": [
+     {
+      "do": "pick",
+      "id": "m",
+      "at": "plan",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Here's how to switch it on. Step one: install the ChatGPT desktop app, on Windows or Mac, and update it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "STEP 1",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "step",
+      "color": "#1A0A04"
+     },
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.05,
+      "x": 40,
+      "y": 70,
+      "w": 700,
+      "h": 460,
+      "title": "chatgpt.com/download",
+      "body": "<div style=\"position:absolute;left:24px;top:60px;font:600 40px 'SD Text';color:#2A2018;white-space:nowrap\">Download ChatGPT</div><div style=\"position:absolute;left:24px;top:116px;font:600 40px 'SD Text';color:#2A2018;white-space:nowrap\">for your computer</div>",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "tile",
+      "at": "windows",
+      "x": 80,
+      "y": 300,
+      "ref": "logos:microsoft-windows-icon",
+      "size": 80,
+      "id": "win",
+      "label": "Windows"
+     },
+     {
+      "k": "tile",
+      "at": "mac",
+      "x": 300,
+      "y": 300,
+      "ref": "logos:apple",
+      "size": 70,
+      "id": "mac",
+      "label": "Mac",
+      "box": 140
+     },
+     {
+      "k": "toast",
+      "at": "update",
+      "x": 790,
+      "y": 200,
+      "text": "Updated to the latest version",
+      "id": "t",
+      "in": "slide"
+     },
+     {
+      "k": "tile",
+      "at": "install",
+      "x": 820,
+      "y": 340,
+      "ref": "ph:download-simple-bold",
+      "size": 90,
+      "id": "dl",
+      "label": "install",
+      "color": "#F87736"
+     },
+     {
+      "k": "cursor",
+      "at": 0.2,
+      "x": 0,
+      "y": 0,
+      "pts": [
+       [
+        700,
+        650,
+        0.2,
+        false
+       ],
+       [
+        150,
+        370,
+        "windows",
+        true
+       ],
+       [
+        880,
+        390,
+        "install",
+        true
+       ]
+      ],
+      "id": "c"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Step by step"
+  },
+  {
+   "text": "Step two: at the top, switch from Chat to Work. Then pick Astra from the model menu.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "STEP 2",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "step",
+      "color": "#1A0A04"
+     },
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 70,
+      "w": 820,
+      "h": 560,
+      "title": "ChatGPT · desktop app",
+      "body": "",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "seg",
+      "at": 0.1,
+      "x": 300,
+      "y": 140,
+      "opts": [
+       "Chat",
+       "Work"
+      ],
+      "sel": 0,
+      "id": "sg"
+     },
+     {
+      "k": "menu",
+      "at": "pick",
+      "x": 200,
+      "y": 260,
+      "w": 520,
+      "items": [
+       [
+        "GPT-6.2 Sol",
+        "everyday work"
+       ],
+       [
+        "GPT-6.2 Astra",
+        "hardest tasks"
+       ]
+      ],
+      "id": "m"
+     },
+     {
+      "k": "tag",
+      "at": "work",
+      "x": 900,
+      "y": 160,
+      "text": "Chat → Work",
+      "bg": "#F87736",
+      "size": 44,
+      "id": "cw",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "menu",
+      "x": 900,
+      "y": 300,
+      "text": "model menu → Astra",
+      "bg": "#2A2018",
+      "size": 36,
+      "id": "mm"
+     },
+     {
+      "k": "cursor",
+      "at": 0.1,
+      "x": 0,
+      "y": 0,
+      "pts": [
+       [
+        700,
+        700,
+        0.1,
+        false
+       ],
+       [
+        520,
+        175,
+        "work",
+        true
+       ],
+       [
+        460,
+        350,
+        "astra",
+        true
+       ]
+      ],
+      "id": "c"
+     }
+    ],
+    "acts": [
+     {
+      "do": "sel",
+      "id": "sg",
+      "at": "work",
+      "n": 1
+     },
+     {
+      "do": "pick",
+      "id": "m",
+      "at": "astra",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "text": "Step three, the exciting part. Open Plugins, find Computer Use, install it and turn it on.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "STEP 3",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "step",
+      "color": "#1A0A04"
+     },
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 70,
+      "w": 760,
+      "h": 560,
+      "title": "ChatGPT · Plugins",
+      "body": "",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "menu",
+      "at": "plugins",
+      "x": 70,
+      "y": 140,
+      "w": 700,
+      "search": "Search plugins",
+      "typeq": "Computer Use",
+      "qat": "find",
+      "items": [],
+      "id": "m"
+     },
+     {
+      "k": "toggle",
+      "at": "install",
+      "x": 70,
+      "y": 260,
+      "w": 700,
+      "label": "Computer Use",
+      "icon": "ph:cursor-click-fill",
+      "id": "tg"
+     },
+     {
+      "k": "tag",
+      "at": "exciting",
+      "x": 880,
+      "y": 140,
+      "text": "the exciting part",
+      "bg": "#F87736",
+      "size": 36,
+      "id": "ex",
+      "in": "slam"
+     },
+     {
+      "k": "cursor",
+      "at": 0.2,
+      "x": 0,
+      "y": 0,
+      "pts": [
+       [
+        700,
+        700,
+        0.2,
+        false
+       ],
+       [
+        300,
+        180,
+        "find",
+        true
+       ],
+       [
+        690,
+        300,
+        "turn",
+        true
+       ]
+      ],
+      "id": "c"
+     }
+    ],
+    "acts": [
+     {
+      "do": "on",
+      "id": "tg",
+      "at": "on"
+     }
+    ]
+   }
+  },
+  {
+   "text": "On a Mac, allow Screen Recording and Accessibility. On Windows, keep the app you want it to use visible on screen.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "tile",
+      "at": "mac",
+      "x": 40,
+      "y": 30,
+      "ref": "logos:apple",
+      "size": 70,
+      "id": "mac",
+      "label": "Mac",
+      "box": 130
+     },
+     {
+      "k": "toggle",
+      "at": "screen",
+      "x": 200,
+      "y": 30,
+      "w": 460,
+      "label": "Screen Recording",
+      "icon": "ph:record-fill",
+      "color": "#E0471C",
+      "id": "t1"
+     },
+     {
+      "k": "toggle",
+      "at": "accessibility",
+      "x": 200,
+      "y": 130,
+      "w": 460,
+      "label": "Accessibility",
+      "icon": "ph:person-arms-spread-fill",
+      "id": "t2"
+     },
+     {
+      "k": "tile",
+      "at": "windows",
+      "x": 720,
+      "y": 30,
+      "ref": "logos:microsoft-windows-icon",
+      "size": 70,
+      "id": "win",
+      "label": "Windows",
+      "box": 130
+     },
+     {
+      "k": "win",
+      "at": "keep",
+      "x": 720,
+      "y": 230,
+      "w": 520,
+      "h": 320,
+      "title": "Excel · sales.xlsx",
+      "body": "<div style=\"position:absolute;left:16px;top:56px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">Month</div><div style=\"position:absolute;left:166px;top:56px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">Sales</div><div style=\"position:absolute;left:16px;top:100px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Jan</div><div style=\"position:absolute;left:166px;top:100px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">42</div><div style=\"position:absolute;left:16px;top:144px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Feb</div><div style=\"position:absolute;left:166px;top:144px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">55</div><div style=\"position:absolute;left:16px;top:188px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Mar</div><div style=\"position:absolute;left:166px;top:188px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">61</div><div style=\"position:absolute;left:16px;top:232px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Apr</div><div style=\"position:absolute;left:166px;top:232px;width:150px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">74</div>",
+      "id": "xw",
+      "in": "fly"
+     },
+     {
+      "k": "tag",
+      "at": "visible",
+      "x": 760,
+      "y": 580,
+      "text": "keep the app visible on screen",
+      "bg": "#2F9E44",
+      "size": 30,
+      "id": "kv"
+     }
+    ],
+    "acts": [
+     {
+      "do": "on",
+      "id": "t1",
+      "at": "recording"
+     },
+     {
+      "do": "on",
+      "id": "t2",
+      "at": "accessibility"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Step four: start your request with \"at Computer\" for desktop apps, or \"at Chrome\" for jobs in your browser.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "STEP 4",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "step",
+      "color": "#1A0A04"
+     },
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "type",
+      "at": "computer",
+      "x": 40,
+      "y": 90,
+      "w": 760,
+      "h": 110,
+      "prefix": "@Computer",
+      "text": "Open my sales sheet…",
+      "dur": 0.8,
+      "id": "t1"
+     },
+     {
+      "k": "tile",
+      "at": "desktop",
+      "x": 880,
+      "y": 80,
+      "ref": "ph:desktop-fill",
+      "size": 80,
+      "id": "d",
+      "label": "desktop apps",
+      "color": "#2A2018"
+     },
+     {
+      "k": "type",
+      "at": "chrome",
+      "x": 40,
+      "y": 330,
+      "w": 760,
+      "h": 110,
+      "prefix": "@Chrome",
+      "text": "Compare laptop prices on three sites…",
+      "dur": 1.0,
+      "id": "t2"
+     },
+     {
+      "k": "tile",
+      "at": "browser",
+      "x": 880,
+      "y": 320,
+      "ref": "logos:chrome",
+      "size": 80,
+      "id": "c",
+      "label": "your browser"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Then say exactly what done looks like. For example: \"Open my sales sheet, chart the monthly totals, and save it as a PDF on my desktop.\"",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "type",
+      "at": "example",
+      "x": 40,
+      "y": 30,
+      "w": 1240,
+      "h": 150,
+      "prefix": "@Computer",
+      "text": "Open my sales sheet, chart the monthly totals, and save it as a PDF on my desktop.",
+      "dur": 2.6,
+      "id": "p"
+     },
+     {
+      "k": "chip",
+      "at": "done",
+      "x": 40,
+      "y": 230,
+      "text": "Say exactly what \"done\" looks like",
+      "color": "#2F9E44",
+      "size": 32,
+      "id": "dn",
+      "icon": "ph:flag-checkered-fill"
+     },
+     {
+      "k": "tile",
+      "at": "sales",
+      "x": 80,
+      "y": 360,
+      "ref": "ph:file-xls-fill",
+      "size": 90,
+      "id": "a",
+      "label": "open the sheet",
+      "color": "#2F9E44"
+     },
+     {
+      "k": "arrow",
+      "at": "chart",
+      "x": 260,
+      "y": 410,
+      "w": 120,
+      "id": "a1"
+     },
+     {
+      "k": "tile",
+      "at": "chart",
+      "x": 420,
+      "y": 360,
+      "ref": "ph:chart-bar-fill",
+      "size": 90,
+      "id": "b",
+      "label": "make the chart",
+      "color": "#F87736"
+     },
+     {
+      "k": "arrow",
+      "at": "pdf",
+      "x": 600,
+      "y": 410,
+      "w": 120,
+      "id": "a2"
+     },
+     {
+      "k": "tile",
+      "at": "pdf",
+      "x": 760,
+      "y": 360,
+      "ref": "ph:file-pdf-fill",
+      "size": 90,
+      "id": "c",
+      "label": "save as PDF",
+      "color": "#E0471C"
+     },
+     {
+      "k": "tile",
+      "at": "desktop",
+      "x": 1040,
+      "y": 360,
+      "ref": "ph:desktop-fill",
+      "size": 90,
+      "id": "d",
+      "label": "on the desktop",
+      "color": "#2A2018"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Before it touches any app, ChatGPT asks your permission. And you can watch every click, and stop it any time.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "dialog",
+      "at": "permission",
+      "x": 40,
+      "y": 40,
+      "w": 700,
+      "title": "Allow ChatGPT to use Excel?",
+      "sub": "Astra wants to control this app for your task.",
+      "id": "dl",
+      "in": "fly"
+     },
+     {
+      "k": "chip",
+      "at": "watch",
+      "x": 820,
+      "y": 60,
+      "text": "You watch every click",
+      "color": "#1C7ED6",
+      "size": 32,
+      "id": "wc",
+      "icon": "ph:eye-fill"
+     },
+     {
+      "k": "chip",
+      "at": "stop",
+      "x": 820,
+      "y": 170,
+      "text": "Stop",
+      "color": "#E0471C",
+      "size": 40,
+      "border": "#E0471C",
+      "id": "sp",
+      "icon": "ph:stop-circle-fill"
+     },
+     {
+      "k": "cursor",
+      "at": 0.2,
+      "x": 0,
+      "y": 0,
+      "pts": [
+       [
+        700,
+        650,
+        0.2,
+        false
+       ],
+       [
+        130,
+        255,
+        0.45,
+        true
+       ],
+       [
+        400,
+        500,
+        "click",
+        false
+       ],
+       [
+        900,
+        200,
+        "stop",
+        true
+       ]
+      ],
+      "id": "c"
+     }
+    ],
+    "acts": [
+     {
+      "do": "press",
+      "id": "dl",
+      "at": 0.45,
+      "n": 0
+     },
+     {
+      "do": "ring",
+      "id": "sp",
+      "at": "time"
+     }
+    ]
+   }
+  },
+  {
+   "text": "It can't see your screen or use an app unless you allow it. You stay in control.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "screen",
+      "x": 60,
+      "y": 40,
+      "ref": "ph:eye-slash-fill",
+      "size": 90,
+      "id": "s",
+      "label": "can't see your screen",
+      "color": "#8C6B5A"
+     },
+     {
+      "k": "tile",
+      "at": "app",
+      "x": 440,
+      "y": 40,
+      "ref": "ph:lock-key-fill",
+      "size": 90,
+      "id": "a",
+      "label": "can't use an app",
+      "color": "#8C6B5A"
+     },
+     {
+      "k": "toggle",
+      "at": "allow",
+      "x": 800,
+      "y": 60,
+      "w": 440,
+      "label": "Allow Excel",
+      "icon": "ph:microsoft-excel-logo-fill",
+      "color": "#2F9E44",
+      "id": "t"
+     },
+     {
+      "k": "big",
+      "at": "control",
+      "x": 60,
+      "y": 380,
+      "text": "You stay in *control*",
+      "size": 110,
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "control",
+      "x": 1100,
+      "y": 360,
+      "ref": "ph:hand-palm-fill",
+      "size": 140,
+      "color": "#F87736",
+      "id": "h"
+     }
+    ],
+    "acts": [
+     {
+      "do": "on",
+      "id": "t",
+      "at": "allow"
+     }
+    ]
+   }
+  },
+  {
+   "text": "One catch. A Work task started on the website or the phone app runs in the cloud. It can't reach the files on your own computer.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": "catch",
+      "x": 0,
+      "y": 0,
+      "text": "ONE CATCH",
+      "bg": "#E0471C",
+      "size": 36,
+      "id": "oc",
+      "in": "slam"
+     },
+     {
+      "k": "tile",
+      "at": "website",
+      "x": 40,
+      "y": 120,
+      "ref": "ph:globe-fill",
+      "size": 80,
+      "id": "w",
+      "label": "website",
+      "color": "#1C7ED6"
+     },
+     {
+      "k": "tile",
+      "at": "phone",
+      "x": 40,
+      "y": 340,
+      "ref": "ph:device-mobile-fill",
+      "size": 80,
+      "id": "p",
+      "label": "phone app",
+      "color": "#2A2018"
+     },
+     {
+      "k": "arrow",
+      "at": "runs",
+      "x": 230,
+      "y": 260,
+      "w": 160,
+      "id": "a1"
+     },
+     {
+      "k": "tile",
+      "at": "cloud",
+      "x": 440,
+      "y": 200,
+      "ref": "ph:cloud-fill",
+      "size": 110,
+      "id": "cl",
+      "label": "runs in the cloud",
+      "color": "#1C7ED6",
+      "box": 190
+     },
+     {
+      "k": "tile",
+      "at": "cant",
+      "x": 900,
+      "y": 200,
+      "ref": "ph:laptop-fill",
+      "size": 110,
+      "id": "pc",
+      "label": "your own files",
+      "color": "#2A2018",
+      "box": 190
+     },
+     {
+      "k": "stamp",
+      "at": "reach",
+      "x": 820,
+      "y": 470,
+      "text": "CAN'T REACH",
+      "size": 64,
+      "color": "#E0471C",
+      "rot": -6,
+      "id": "cr",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So Max tried again, properly this time. And people are using Astra for jobs like these.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 760,
+      "h": 520,
+      "title": "ChatGPT · Work",
+      "body": "",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "seg",
+      "at": 0.05,
+      "x": 230,
+      "y": 100,
+      "opts": [
+       "Chat",
+       "Work"
+      ],
+      "sel": 1,
+      "id": "sg"
+     },
+     {
+      "k": "chip",
+      "at": "properly",
+      "x": 90,
+      "y": 220,
+      "text": "Model: GPT-6.2 Astra",
+      "color": "#F87736",
+      "size": 28,
+      "id": "m",
+      "icon": "ph:sparkle-fill"
+     },
+     {
+      "k": "toast",
+      "at": "time",
+      "x": 90,
+      "y": 330,
+      "text": "Astra is working on it…",
+      "icon": "ph:gear-six-fill",
+      "id": "t",
+      "in": "slide"
+     },
+     {
+      "k": "big",
+      "at": "jobs",
+      "x": 840,
+      "y": 150,
+      "text": "Real jobs",
+      "size": 84
+     },
+     {
+      "k": "big",
+      "at": "these",
+      "x": 840,
+      "y": 250,
+      "text": "*people try*",
+      "size": 84
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "What people use it for"
+  },
+  {
+   "text": "A folder of receipts, turned into one tidy expense sheet.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "folder",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:folder-open-fill",
+      "size": 100,
+      "id": "f",
+      "label": "receipts folder",
+      "color": "#F5B400"
+     },
+     {
+      "k": "icon",
+      "at": "receipts",
+      "x": 60,
+      "y": 300,
+      "ref": "ph:receipt-fill",
+      "size": 90,
+      "color": "#8C6B5A",
+      "id": "r0",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "receipts",
+      "x": 130,
+      "y": 340,
+      "ref": "ph:receipt-fill",
+      "size": 90,
+      "color": "#8C6B5A",
+      "id": "r1",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "receipts",
+      "x": 200,
+      "y": 300,
+      "ref": "ph:receipt-fill",
+      "size": 90,
+      "color": "#8C6B5A",
+      "id": "r2",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "receipts",
+      "x": 270,
+      "y": 340,
+      "ref": "ph:receipt-fill",
+      "size": 90,
+      "color": "#8C6B5A",
+      "id": "r3",
+      "in": "drop"
+     },
+     {
+      "k": "arrow",
+      "at": "turned",
+      "x": 380,
+      "y": 260,
+      "w": 180,
+      "id": "a"
+     },
+     {
+      "k": "win",
+      "at": "tidy",
+      "x": 620,
+      "y": 40,
+      "w": 640,
+      "h": 420,
+      "title": "expenses.xlsx",
+      "body": "<div style=\"position:absolute;left:16px;top:56px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">Date</div><div style=\"position:absolute;left:216px;top:56px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">Shop</div><div style=\"position:absolute;left:416px;top:56px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">₹</div><div style=\"position:absolute;left:16px;top:100px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">2 Nov</div><div style=\"position:absolute;left:216px;top:100px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Cafe</div><div style=\"position:absolute;left:416px;top:100px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">240</div><div style=\"position:absolute;left:16px;top:144px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">5 Nov</div><div style=\"position:absolute;left:216px;top:144px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Taxi</div><div style=\"position:absolute;left:416px;top:144px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">310</div><div style=\"position:absolute;left:16px;top:188px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">9 Nov</div><div style=\"position:absolute;left:216px;top:188px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Books</div><div style=\"position:absolute;left:416px;top:188px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">860</div><div style=\"position:absolute;left:16px;top:232px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Total</div><div style=\"position:absolute;left:216px;top:232px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\"></div><div style=\"position:absolute;left:416px;top:232px;width:200px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">1,410</div>",
+      "id": "x",
+      "in": "slide"
+     },
+     {
+      "k": "tag",
+      "at": "expense",
+      "x": 680,
+      "y": 500,
+      "text": "one tidy expense sheet",
+      "bg": "#2F9E44",
+      "size": 32,
+      "id": "t"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "A simple website built from a sketch, then opened in the browser to check it really works.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "win",
+      "at": "simple",
+      "x": 40,
+      "y": 40,
+      "w": 480,
+      "h": 400,
+      "title": "sketch.png",
+      "body": "<div style=\"position:absolute;left:30px;top:70px;width:420px;height:300px;border:4px dashed #A48A78;border-radius:14px\"></div><div style=\"position:absolute;left:60px;top:110px;font:600 28px 'SD Text';color:#8C6B5A;white-space:nowrap\">[ logo ]   menu</div><div style=\"position:absolute;left:60px;top:190px;font:600 28px 'SD Text';color:#8C6B5A;white-space:nowrap\">BIG HEADLINE</div><div style=\"position:absolute;left:60px;top:270px;font:600 28px 'SD Text';color:#8C6B5A;white-space:nowrap\">[ button ]</div>",
+      "id": "s",
+      "in": "left"
+     },
+     {
+      "k": "arrow",
+      "at": "built",
+      "x": 560,
+      "y": 220,
+      "w": 140,
+      "id": "a"
+     },
+     {
+      "k": "win",
+      "at": "browser",
+      "x": 740,
+      "y": 30,
+      "w": 540,
+      "h": 460,
+      "title": "localhost:3000",
+      "body": "<div style=\"position:absolute;left:0;top:46px;right:0;height:60px;background:#F87736\"></div><div style=\"position:absolute;left:40px;top:170px;font:600 34px 'SD Text';color:#2A2018;white-space:nowrap\">Fresh Bakes Daily</div><div style=\"position:absolute;left:40px;top:260px;font:600 34px 'SD Text';color:#2A2018;white-space:nowrap\">Order online →</div>",
+      "id": "b",
+      "in": "slide"
+     },
+     {
+      "k": "toast",
+      "at": "works",
+      "x": 780,
+      "y": 540,
+      "text": "Checked: it really works",
+      "id": "t",
+      "in": "slide"
+     },
+     {
+      "k": "cursor",
+      "at": "browser",
+      "x": 0,
+      "y": 0,
+      "pts": [
+       [
+        1100,
+        650,
+        "browser",
+        false
+       ],
+       [
+        930,
+        360,
+        "check",
+        true
+       ]
+      ],
+      "id": "c"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Even 3D apps like Blender. Researchers built a whole test, called BlenderWorld, to measure how well AI agents create 3D scenes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "blender",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:blender",
+      "size": 100,
+      "id": "bl",
+      "label": "Blender",
+      "box": 170
+     },
+     {
+      "k": "icon",
+      "at": "3d",
+      "x": 300,
+      "y": 60,
+      "ref": "ph:cube-fill",
+      "size": 150,
+      "color": "#F87736",
+      "id": "cube"
+     },
+     {
+      "k": "clip",
+      "at": "researchers",
+      "x": 520,
+      "y": 30,
+      "by": "RESEARCH PAPER · arXiv 2026",
+      "text": "BlenderWorld: a benchmark for AI agents creating 3D scenes",
+      "hi": "BlenderWorld",
+      "w": 740,
+      "id": "cl",
+      "in": "fly"
+     },
+     {
+      "k": "chip",
+      "at": "measure",
+      "x": 520,
+      "y": 330,
+      "text": "measures how well AI agents work",
+      "color": "#7A5CFF",
+      "size": 28,
+      "id": "m",
+      "icon": "ph:ruler-fill"
+     },
+     {
+      "k": "chip",
+      "at": "scenes",
+      "x": 520,
+      "y": 420,
+      "text": "create 3D scenes",
+      "color": "#2F9E44",
+      "size": 28,
+      "id": "sc",
+      "icon": "ph:mountains-fill"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "cube",
+      "at": "3d",
+      "deg": 360,
+      "d": 3
+     }
+    ]
+   }
+  },
+  {
+   "text": "And for coders, pick Astra inside Codex, and it can work through a whole project, run the tests and fix what breaks.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "tile",
+      "at": "coders",
+      "x": 40,
+      "y": 30,
+      "ref": "ph:terminal-window-fill",
+      "size": 90,
+      "id": "cx",
+      "label": "Codex",
+      "color": "#2A2018"
+     },
+     {
+      "k": "chip",
+      "at": "astra",
+      "x": 40,
+      "y": 260,
+      "text": "Model: GPT-6.2 Astra",
+      "color": "#F87736",
+      "size": 28,
+      "id": "m",
+      "icon": "ph:sparkle-fill"
+     },
+     {
+      "k": "win",
+      "at": "project",
+      "x": 420,
+      "y": 20,
+      "w": 860,
+      "h": 520,
+      "title": "codex · my-shop-app",
+      "body": "<div style=\"position:absolute;inset:46px 0 0 0;background:#2A2018\"></div>",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "html",
+      "at": "project",
+      "x": 450,
+      "y": 90,
+      "id": "l1",
+      "html": "<div style=\"font:600 26px 'SD Mono';color:#E9DED6\">› reading 48 files…</div>",
+      "in": "fade"
+     },
+     {
+      "k": "html",
+      "at": "tests",
+      "x": 450,
+      "y": 150,
+      "id": "l2",
+      "html": "<div style=\"font:600 26px 'SD Mono';color:#FF8A6B\">✗ 3 tests failed</div>",
+      "in": "fade"
+     },
+     {
+      "k": "html",
+      "at": "fix",
+      "x": 450,
+      "y": 210,
+      "id": "l3",
+      "html": "<div style=\"font:600 26px 'SD Mono';color:#E9DED6\">› fixing checkout.js …</div>",
+      "in": "fade"
+     },
+     {
+      "k": "html",
+      "at": "breaks",
+      "x": 450,
+      "y": 270,
+      "id": "l4",
+      "html": "<div style=\"font:600 26px 'SD Mono';color:#7EE29A\">✓ 51 tests passed</div>",
+      "in": "fade"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "It can also create real files, like documents, spreadsheets and presentations, not just text in a chat window.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "documents",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:file-doc-fill",
+      "size": 110,
+      "id": "d",
+      "label": "documents",
+      "color": "#1C7ED6",
+      "box": 190
+     },
+     {
+      "k": "tile",
+      "at": "spreadsheets",
+      "x": 380,
+      "y": 60,
+      "ref": "ph:file-xls-fill",
+      "size": 110,
+      "id": "s",
+      "label": "spreadsheets",
+      "color": "#2F9E44",
+      "box": 190
+     },
+     {
+      "k": "tile",
+      "at": "presentations",
+      "x": 700,
+      "y": 60,
+      "ref": "ph:file-ppt-fill",
+      "size": 110,
+      "id": "p",
+      "label": "presentations",
+      "color": "#F87736",
+      "box": 190
+     },
+     {
+      "k": "chip",
+      "at": "text",
+      "x": 300,
+      "y": 420,
+      "text": "not just text in a chat window",
+      "color": "#8C6B5A",
+      "size": 34,
+      "id": "t",
+      "icon": "ph:chat-text-fill"
+     },
+     {
+      "k": "big",
+      "at": "real",
+      "x": 1000,
+      "y": 80,
+      "text": "real",
+      "size": 80
+     },
+     {
+      "k": "big",
+      "at": "files",
+      "x": 1000,
+      "y": 170,
+      "text": "*files*",
+      "size": 80
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And through the API, it can read about a million tokens at once. That's a few thick books in one go.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "api",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:code-bold",
+      "size": 90,
+      "id": "api",
+      "label": "API",
+      "color": "#2A2018"
+     },
+     {
+      "k": "card",
+      "at": "million",
+      "x": 300,
+      "y": 40,
+      "big": "1,000",
+      "label": "READS AT ONCE (TOKENS)",
+      "color": "#F87736",
+      "id": "tk",
+      "in": "fly",
+      "icon": "ph:stack-fill",
+      "w": 640
+     },
+     {
+      "k": "icon",
+      "at": "books",
+      "x": 340,
+      "y": 330,
+      "ref": "ph:books-fill",
+      "size": 140,
+      "color": "#F87736",
+      "id": "b0",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "books",
+      "x": 510,
+      "y": 330,
+      "ref": "ph:books-fill",
+      "size": 140,
+      "color": "#1C7ED6",
+      "id": "b1",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "books",
+      "x": 680,
+      "y": 330,
+      "ref": "ph:books-fill",
+      "size": 140,
+      "color": "#2F9E44",
+      "id": "b2",
+      "in": "drop"
+     },
+     {
+      "k": "tag",
+      "at": "thick",
+      "x": 360,
+      "y": 540,
+      "text": "≈ a few thick books in one go",
+      "bg": "#2A2018",
+      "size": 34,
+      "id": "t"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "tk",
+      "at": "million",
+      "values": [
+       "10,000",
+       "100,000",
+       "500,000",
+       "~1,000,000"
+      ],
+      "dt": 0.14
+     }
+    ]
+   }
+  },
+  {
+   "text": "So, how good is it? On a computer-use test called OSWorld two point oh, OpenAI reports Astra finished about seventy-three percent of tasks.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "test",
+      "x": 40,
+      "y": 40,
+      "big": "OSWorld 2.0",
+      "label": "COMPUTER-USE TEST",
+      "color": "#1C7ED6",
+      "id": "o",
+      "in": "fly",
+      "icon": "ph:desktop-tower-fill"
+     },
+     {
+      "k": "bars",
+      "at": "finished",
+      "x": 40,
+      "y": 300,
+      "w": 900,
+      "id": "bars",
+      "rows": [
+       [
+        "GPT-6 Astra · 73% of tasks",
+        0.73,
+        "#F87736"
+       ]
+      ]
+     },
+     {
+      "k": "tag",
+      "at": "reports",
+      "x": 700,
+      "y": 70,
+      "text": "OpenAI's reported figures",
+      "bg": "#2A2018",
+      "size": 30,
+      "id": "r"
+     },
+     {
+      "k": "big",
+      "at": "percent",
+      "x": 980,
+      "y": 300,
+      "text": "*73%*",
+      "size": 120,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "How good is it?"
+  },
+  {
+   "text": "The previous top model managed about sixty-six percent, and took roughly seventy-five minutes per task, against about forty for Astra.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "bars",
+      "at": "previous",
+      "x": 40,
+      "y": 20,
+      "w": 900,
+      "id": "bars",
+      "rows": [
+       [
+        "GPT-6 Astra · 73%",
+        0.73,
+        "#F87736"
+       ],
+       [
+        "previous top model · 66%",
+        0.66,
+        "#B09682"
+       ]
+      ],
+      "gap": 0.3
+     },
+     {
+      "k": "card",
+      "at": "minutes",
+      "x": 40,
+      "y": 340,
+      "big": "75 MIN",
+      "label": "PREVIOUS MODEL · PER TASK",
+      "color": "#8C6B5A",
+      "id": "m1",
+      "in": "fly",
+      "icon": "ph:timer-fill",
+      "w": 520
+     },
+     {
+      "k": "card",
+      "at": "forty",
+      "x": 640,
+      "y": 340,
+      "big": "40 MIN",
+      "label": "ASTRA · PER TASK",
+      "color": "#F87736",
+      "id": "m2",
+      "in": "slam",
+      "icon": "ph:timer-fill",
+      "w": 520
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "That's OpenAI's own testing, so treat it as a strong claim, not a guarantee.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "clip",
+      "at": "testing",
+      "x": 40,
+      "y": 40,
+      "by": "HOW TO READ THIS",
+      "text": "OpenAI's own testing: a strong claim, not a guarantee",
+      "hi": "not a guarantee",
+      "w": 760,
+      "id": "cl",
+      "in": "fly"
+     },
+     {
+      "k": "stamp",
+      "at": "own",
+      "x": 850,
+      "y": 60,
+      "text": "OWN TEST",
+      "size": 70,
+      "color": "#8C6B5A",
+      "rot": -8,
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "claim",
+      "x": 120,
+      "y": 400,
+      "ref": "ph:megaphone-fill",
+      "size": 140,
+      "color": "#F87736",
+      "id": "m"
+     },
+     {
+      "k": "icon",
+      "at": "guarantee",
+      "x": 360,
+      "y": 400,
+      "ref": "ph:seal-question-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "id": "q"
+     },
+     {
+      "k": "tag",
+      "at": "guarantee",
+      "x": 560,
+      "y": 450,
+      "text": "independent results vary",
+      "bg": "#2A2018",
+      "size": 30,
+      "id": "t"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "OpenAI's launch chart even ranks Astra above Anthropic's Claude Fable 5.2. Again, that's OpenAI's own chart.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": 0.02,
+      "x": 40,
+      "y": 20,
+      "ref": "logos:openai-icon",
+      "size": 80,
+      "id": "oa",
+      "label": "OpenAI chart"
+     },
+     {
+      "k": "bars",
+      "at": "ranks",
+      "x": 260,
+      "y": 30,
+      "w": 780,
+      "id": "bars",
+      "rows": [
+       [
+        "GPT-6.2 Astra · 1,318",
+        1.0,
+        "#F87736"
+       ],
+       [
+        "Claude Fable 5.2 · 1,271",
+        0.96,
+        "#C98A5A"
+       ]
+      ],
+      "gap": 0.4
+     },
+     {
+      "k": "tile",
+      "at": "anthropics",
+      "x": 1100,
+      "y": 40,
+      "ref": "simple-icons:anthropic",
+      "size": 70,
+      "id": "an",
+      "label": "Anthropic",
+      "color": "#2A2018",
+      "box": 130
+     },
+     {
+      "k": "stamp",
+      "at": "again",
+      "x": 300,
+      "y": 420,
+      "text": "OPENAI'S OWN CHART",
+      "size": 64,
+      "color": "#8C6B5A",
+      "rot": -6,
+      "id": "s",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And it isn't instant. Big tasks can take many minutes. It's for jobs you'd hand to an assistant, not quick questions.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "stamp",
+      "at": "instant",
+      "x": 40,
+      "y": 30,
+      "text": "NOT INSTANT",
+      "size": 80,
+      "color": "#E0471C",
+      "rot": -6,
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "card",
+      "at": "minutes",
+      "x": 40,
+      "y": 230,
+      "big": "1 MIN",
+      "label": "A BIG TASK CAN TAKE",
+      "color": "#1C7ED6",
+      "id": "mn",
+      "in": "fly",
+      "icon": "ph:clock-fill",
+      "w": 480
+     },
+     {
+      "k": "tile",
+      "at": "assistant",
+      "x": 820,
+      "y": 60,
+      "ref": "ph:user-gear-fill",
+      "size": 100,
+      "id": "as",
+      "label": "jobs for an assistant",
+      "color": "#F87736",
+      "box": 180
+     },
+     {
+      "k": "chip",
+      "at": "quick",
+      "x": 640,
+      "y": 420,
+      "text": "quick questions → use Sol",
+      "color": "#F5B400",
+      "size": 32,
+      "id": "q",
+      "icon": "ph:lightning-fill"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "mn",
+      "at": "minutes",
+      "values": [
+       "3 MIN",
+       "8 MIN",
+       "15 MIN",
+       "20+ MIN"
+      ],
+      "dt": 0.2
+     }
+    ]
+   }
+  },
+  {
+   "text": "Quick game. Astra or Sol? I give you a job, you pick the model.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "game",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:game-controller-fill",
+      "size": 100,
+      "id": "g",
+      "label": "quick game",
+      "color": "#7A5CFF"
+     },
+     {
+      "k": "big",
+      "at": "astra",
+      "x": 260,
+      "y": 60,
+      "text": "ASTRA *or* SOL?",
+      "size": 120,
+      "in": "slam"
+     },
+     {
+      "k": "card",
+      "at": "pick",
+      "x": 260,
+      "y": 320,
+      "big": "ASTRA",
+      "label": "BUZZER A",
+      "color": "#F87736",
+      "id": "a",
+      "in": "left",
+      "icon": "ph:brain-fill",
+      "w": 380
+     },
+     {
+      "k": "card",
+      "at": "pick",
+      "x": 700,
+      "y": 320,
+      "big": "SOL",
+      "label": "BUZZER B",
+      "color": "#F5B400",
+      "id": "b",
+      "in": "slide",
+      "icon": "ph:lightning-fill",
+      "w": 380
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Astra or Sol?"
+  },
+  {
+   "text": "Summarise a long email. Sol. Fast and cheap is perfect.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "JOB 1",
+      "bg": "#7A5CFF",
+      "size": 34,
+      "id": "j"
+     },
+     {
+      "k": "win",
+      "at": "email",
+      "x": 40,
+      "y": 70,
+      "w": 640,
+      "h": 420,
+      "title": "Inbox · 1 long email",
+      "body": "<div style=\"position:absolute;left:24px;top:80px;font:600 28px 'SD Text';color:#2A2018;white-space:nowrap\">Re: Q3 plan (2,400 words)</div><div style=\"position:absolute;left:24px;top:150px;font:600 28px 'SD Text';color:#2A2018;white-space:nowrap\">…</div><div style=\"position:absolute;left:24px;top:220px;font:600 28px 'SD Text';color:#2A2018;white-space:nowrap\">Please summarise before 5 pm</div>",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "stamp",
+      "at": "sol",
+      "x": 760,
+      "y": 90,
+      "text": "SOL",
+      "size": 140,
+      "color": "#2F9E44",
+      "rot": -8,
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "chip",
+      "at": "fast",
+      "x": 760,
+      "y": 360,
+      "text": "fast",
+      "color": "#F5B400",
+      "size": 28,
+      "id": "f",
+      "icon": "ph:lightning-fill"
+     },
+     {
+      "k": "chip",
+      "at": "cheap",
+      "x": 960,
+      "y": 360,
+      "text": "cheap",
+      "color": "#2F9E44",
+      "size": 28,
+      "id": "c",
+      "icon": "ph:coins-fill"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Go through fifty invoices on your computer and fill a spreadsheet. Astra. That's real computer work.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "JOB 2",
+      "bg": "#7A5CFF",
+      "size": 34,
+      "id": "j"
+     },
+     {
+      "k": "card",
+      "at": "fifty",
+      "x": 40,
+      "y": 80,
+      "big": "0",
+      "label": "INVOICES ON YOUR COMPUTER",
+      "color": "#8C6B5A",
+      "id": "n",
+      "in": "fly",
+      "icon": "ph:receipt-fill",
+      "w": 520
+     },
+     {
+      "k": "win",
+      "at": "spreadsheet",
+      "x": 40,
+      "y": 330,
+      "w": 560,
+      "h": 300,
+      "title": "invoices.xlsx",
+      "body": "<div style=\"position:absolute;left:16px;top:56px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">No.</div><div style=\"position:absolute;left:196px;top:56px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">Vendor</div><div style=\"position:absolute;left:376px;top:56px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;color:#F87736;font-weight:800;\">₹</div><div style=\"position:absolute;left:16px;top:100px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">001</div><div style=\"position:absolute;left:196px;top:100px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Acme</div><div style=\"position:absolute;left:376px;top:100px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">4,200</div><div style=\"position:absolute;left:16px;top:144px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">002</div><div style=\"position:absolute;left:196px;top:144px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">Ravi Traders</div><div style=\"position:absolute;left:376px;top:144px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">1,150</div><div style=\"position:absolute;left:16px;top:188px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">…</div><div style=\"position:absolute;left:196px;top:188px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">…</div><div style=\"position:absolute;left:376px;top:188px;width:180px;height:44px;border-right:1px solid #EFE3D7;border-bottom:1px solid #EFE3D7;font:600 22px 'SD Mono';color:#2A2018;display:flex;align-items:center;padding-left:10px;\">…</div>",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "stamp",
+      "at": "astra",
+      "x": 700,
+      "y": 120,
+      "text": "ASTRA",
+      "size": 140,
+      "color": "#F87736",
+      "rot": -8,
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "real",
+      "x": 720,
+      "y": 400,
+      "text": "real computer work",
+      "bg": "#F87736",
+      "size": 36,
+      "id": "rw"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "n",
+      "at": "fifty",
+      "values": [
+       "10",
+       "25",
+       "40",
+       "50"
+      ],
+      "dt": 0.12
+     }
+    ]
+   }
+  },
+  {
+   "text": "Fix a bug across a big codebase. Astra, or Sol on a budget. OpenAI says Sol nearly matches Astra on ready-to-merge code, at about a fifth of the cost.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "JOB 3",
+      "bg": "#7A5CFF",
+      "size": 34,
+      "id": "j"
+     },
+     {
+      "k": "tile",
+      "at": "bug",
+      "x": 40,
+      "y": 80,
+      "ref": "ph:bug-fill",
+      "size": 100,
+      "id": "b",
+      "label": "bug in a big codebase",
+      "color": "#E0471C",
+      "box": 180
+     },
+     {
+      "k": "stamp",
+      "at": "astra",
+      "x": 320,
+      "y": 80,
+      "text": "ASTRA",
+      "size": 100,
+      "color": "#F87736",
+      "rot": -8,
+      "id": "s1",
+      "in": "slam"
+     },
+     {
+      "k": "stamp",
+      "at": "budget",
+      "x": 780,
+      "y": 110,
+      "text": "or SOL",
+      "size": 80,
+      "color": "#2F9E44",
+      "rot": 6,
+      "id": "s2",
+      "in": "slam"
+     },
+     {
+      "k": "card",
+      "at": "fifth",
+      "x": 320,
+      "y": 340,
+      "big": "1/5",
+      "label": "SOL · COST OF ASTRA",
+      "color": "#2F9E44",
+      "id": "c",
+      "in": "fly",
+      "icon": "ph:coins-fill",
+      "w": 420
+     },
+     {
+      "k": "clip",
+      "at": "matches",
+      "x": 800,
+      "y": 300,
+      "by": "OPENAI SAYS",
+      "text": "Sol nearly matches Astra on ready-to-merge code",
+      "hi": "nearly matches",
+      "w": 460,
+      "id": "cl",
+      "in": "slide"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "A birthday message for your friend. Please. Use Sol. Save Astra for the hard stuff.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 0,
+      "y": 0,
+      "text": "JOB 4",
+      "bg": "#7A5CFF",
+      "size": 34,
+      "id": "j"
+     },
+     {
+      "k": "phone",
+      "at": 0.05,
+      "x": 40,
+      "y": 60,
+      "w": 330,
+      "h": 600,
+      "msgs": [
+       [
+        "user",
+        "write a birthday message for Rahul",
+        "birthday"
+       ],
+       [
+        "ai",
+        "Happy birthday, Rahul! Wishing you a <b>brilliant</b> year ahead.",
+        "please"
+       ]
+      ],
+      "id": "ph",
+      "in": "fly"
+     },
+     {
+      "k": "icon",
+      "at": "friend",
+      "x": 440,
+      "y": 80,
+      "ref": "ph:cake-fill",
+      "size": 170,
+      "color": "#F87736",
+      "id": "ck"
+     },
+     {
+      "k": "stamp",
+      "at": "sol",
+      "x": 430,
+      "y": 330,
+      "text": "USE SOL",
+      "size": 110,
+      "color": "#2F9E44",
+      "rot": -8,
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "hard",
+      "x": 440,
+      "y": 560,
+      "text": "save Astra for the hard stuff",
+      "bg": "#2A2018",
+      "size": 32,
+      "id": "h"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Now, the money question for India. ChatGPT Go costs three hundred and ninety-nine rupees a month, but it doesn't include Astra.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "india",
+      "x": 40,
+      "y": 40,
+      "ref": "circle-flags:in",
+      "size": 90,
+      "id": "in",
+      "label": "India"
+     },
+     {
+      "k": "big",
+      "at": "money",
+      "x": 240,
+      "y": 50,
+      "text": "The money *question*",
+      "size": 96
+     },
+     {
+      "k": "pcard",
+      "at": "go",
+      "x": 240,
+      "y": 280,
+      "name": "ChatGPT Go",
+      "price": "₹399 / month",
+      "ok": false,
+      "w": 420,
+      "id": "g",
+      "in": "fly"
+     },
+     {
+      "k": "tag",
+      "at": "include",
+      "x": 740,
+      "y": 330,
+      "text": "no Astra",
+      "bg": "#E0471C",
+      "size": 44,
+      "id": "na",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Price in India"
+  },
+  {
+   "text": "Plus is about one thousand nine hundred and ninety-nine rupees a month in India, including GST. That's the cheapest way to get Astra.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "pcard",
+      "at": "plus",
+      "x": 40,
+      "y": 40,
+      "name": "ChatGPT Plus",
+      "price": "Astra in Work + Codex",
+      "ok": true,
+      "hi": true,
+      "w": 440,
+      "id": "p",
+      "in": "fly"
+     },
+     {
+      "k": "card",
+      "at": "thousand",
+      "x": 560,
+      "y": 40,
+      "big": "₹0",
+      "label": "PER MONTH · INDIA",
+      "color": "#F87736",
+      "id": "pr",
+      "in": "fly",
+      "icon": "ph:currency-inr-bold",
+      "w": 560
+     },
+     {
+      "k": "tag",
+      "at": "gst",
+      "x": 580,
+      "y": 280,
+      "text": "including GST",
+      "bg": "#2A2018",
+      "size": 34,
+      "id": "g"
+     },
+     {
+      "k": "chip",
+      "at": "cheapest",
+      "x": 40,
+      "y": 400,
+      "text": "the cheapest way to get Astra",
+      "color": "#2F9E44",
+      "size": 36,
+      "id": "c",
+      "icon": "ph:tag-fill"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "pr",
+      "at": "thousand",
+      "values": [
+       "₹500",
+       "₹1,000",
+       "₹1,500",
+       "~₹1,999"
+      ],
+      "dt": 0.15
+     }
+    ]
+   }
+  },
+  {
+   "text": "For many students that's a big monthly bill. If you mostly need help with writing and study, the free models or Go will do just fine.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "students",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:student-fill",
+      "size": 100,
+      "id": "s",
+      "label": "students",
+      "color": "#1C7ED6"
+     },
+     {
+      "k": "card",
+      "at": "bill",
+      "x": 300,
+      "y": 40,
+      "big": "≈ ₹24,000",
+      "label": "PLUS FOR A YEAR (12 × ₹1,999)",
+      "color": "#E0471C",
+      "id": "b",
+      "in": "fly",
+      "icon": "ph:wallet-fill",
+      "w": 600
+     },
+     {
+      "k": "chip",
+      "at": "writing",
+      "x": 60,
+      "y": 330,
+      "text": "writing",
+      "color": "#F87736",
+      "size": 28,
+      "id": "w",
+      "icon": "ph:pencil-simple-fill"
+     },
+     {
+      "k": "chip",
+      "at": "study",
+      "x": 300,
+      "y": 330,
+      "text": "study",
+      "color": "#1C7ED6",
+      "size": 28,
+      "id": "st",
+      "icon": "ph:book-open-fill"
+     },
+     {
+      "k": "pcard",
+      "at": "free",
+      "x": 620,
+      "y": 320,
+      "name": "Free",
+      "price": "everyday models",
+      "ok": true,
+      "w": 300,
+      "id": "f",
+      "in": "fly"
+     },
+     {
+      "k": "pcard",
+      "at": "go",
+      "x": 960,
+      "y": 320,
+      "name": "Go",
+      "price": "₹399 / month",
+      "ok": true,
+      "w": 300,
+      "id": "g",
+      "in": "fly"
+     },
+     {
+      "k": "tag",
+      "at": "fine",
+      "x": 620,
+      "y": 520,
+      "text": "will do just fine",
+      "bg": "#2F9E44",
+      "size": 32,
+      "id": "ok"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Prices change, so always check the official pricing page before you pay.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 760,
+      "h": 500,
+      "title": "chatgpt.com/pricing",
+      "body": "",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "pcard",
+      "at": 0.1,
+      "x": 70,
+      "y": 110,
+      "name": "Go",
+      "price": "₹399",
+      "w": 220,
+      "id": "a"
+     },
+     {
+      "k": "pcard",
+      "at": 0.15,
+      "x": 310,
+      "y": 110,
+      "name": "Plus",
+      "price": "~₹1,999",
+      "w": 220,
+      "hi": true,
+      "id": "b"
+     },
+     {
+      "k": "pcard",
+      "at": 0.2,
+      "x": 550,
+      "y": 110,
+      "name": "Pro",
+      "price": "much more",
+      "w": 220,
+      "id": "c"
+     },
+     {
+      "k": "icon",
+      "at": "change",
+      "x": 880,
+      "y": 60,
+      "ref": "ph:arrows-down-up-bold",
+      "size": 150,
+      "color": "#F87736",
+      "id": "ch"
+     },
+     {
+      "k": "tag",
+      "at": "change",
+      "x": 860,
+      "y": 260,
+      "text": "prices change",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "pc"
+     },
+     {
+      "k": "tag",
+      "at": "pay",
+      "x": 860,
+      "y": 360,
+      "text": "check before you pay",
+      "bg": "#2A2018",
+      "size": 34,
+      "id": "pp"
+     },
+     {
+      "k": "cursor",
+      "at": 0.2,
+      "x": 0,
+      "y": 0,
+      "pts": [
+       [
+        700,
+        650,
+        0.2,
+        false
+       ],
+       [
+        420,
+        190,
+        "check",
+        true
+       ]
+      ],
+      "id": "cu"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "For developers, the API costs eight dollars per million input tokens for Astra, and forty dollars out.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "developers",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:code-bold",
+      "size": 90,
+      "id": "d",
+      "label": "developers",
+      "color": "#2A2018"
+     },
+     {
+      "k": "card",
+      "at": "eight",
+      "x": 300,
+      "y": 40,
+      "big": "$8",
+      "label": "ASTRA · PER 1M INPUT TOKENS",
+      "color": "#1C7ED6",
+      "id": "i",
+      "in": "fly",
+      "icon": "ph:arrow-down-bold",
+      "w": 560
+     },
+     {
+      "k": "card",
+      "at": "forty",
+      "x": 300,
+      "y": 300,
+      "big": "$40",
+      "label": "ASTRA · PER 1M OUTPUT TOKENS",
+      "color": "#F87736",
+      "id": "o",
+      "in": "fly",
+      "icon": "ph:arrow-up-bold",
+      "w": 560
+     },
+     {
+      "k": "tag",
+      "at": "api",
+      "x": 940,
+      "y": 80,
+      "text": "API pricing (Nov 2026)",
+      "bg": "#EFE3D7",
+      "size": 22,
+      "color": "#8C6B5A"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Sol is two dollars in and ten out. So Astra costs about four times as much.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "card",
+      "at": "two",
+      "x": 40,
+      "y": 40,
+      "big": "$2 / $10",
+      "label": "SOL · IN / OUT PER 1M",
+      "color": "#F5B400",
+      "id": "s",
+      "in": "left",
+      "icon": "ph:lightning-fill",
+      "w": 520
+     },
+     {
+      "k": "card",
+      "at": 0.02,
+      "x": 640,
+      "y": 40,
+      "big": "$8 / $40",
+      "label": "ASTRA · IN / OUT PER 1M",
+      "color": "#F87736",
+      "id": "a",
+      "in": "slide",
+      "icon": "ph:brain-fill",
+      "w": 520
+     },
+     {
+      "k": "big",
+      "at": "four",
+      "x": 300,
+      "y": 320,
+      "text": "Astra = *4×* the price",
+      "size": 110,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Now, the trap I promised. \"GPT-6 Astra free\" is one of the biggest searches in India right now, and scammers follow the searches.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "win",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 760,
+      "h": 240,
+      "title": "Search",
+      "body": "",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "type",
+      "at": "free",
+      "x": 70,
+      "y": 100,
+      "w": 700,
+      "h": 90,
+      "text": "gpt 6 astra free",
+      "dur": 0.7,
+      "id": "q"
+     },
+     {
+      "k": "card",
+      "at": "biggest",
+      "x": 40,
+      "y": 330,
+      "big": "58K",
+      "label": "SEARCHES A MONTH · vidIQ",
+      "color": "#F87736",
+      "id": "n",
+      "in": "fly",
+      "icon": "ph:magnifying-glass-bold",
+      "w": 480
+     },
+     {
+      "k": "tile",
+      "at": "scammers",
+      "x": 880,
+      "y": 60,
+      "ref": "ph:detective-fill",
+      "size": 110,
+      "id": "sc",
+      "label": "scammers follow",
+      "color": "#E0471C",
+      "box": 190
+     },
+     {
+      "k": "icon",
+      "at": "follow",
+      "x": 900,
+      "y": 360,
+      "ref": "ph:footprints-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "id": "fp"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "The free Astra trap"
+  },
+  {
+   "text": "Websites and APK files promising free, unlimited Astra are a classic way to steal your account and card details.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "win",
+      "at": "websites",
+      "x": 40,
+      "y": 30,
+      "w": 760,
+      "h": 480,
+      "title": "free-gpt6-astra.apk.xyz",
+      "body": "<div style=\"text-align:center;padding-top:70px\"><div style=\"font:900 60px 'SD Display';color:#2A2018\">FREE GPT-6 ASTRA</div><div style=\"font:800 32px 'SD Text';color:#C98A00;margin:14px 0 30px\">Unlimited · No login</div><span class=\"pbtn p\" style=\"font-size:34px\">⬇ Download APK</span></div>",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "stamp",
+      "at": "steal",
+      "x": 180,
+      "y": 230,
+      "text": "SCAM",
+      "size": 160,
+      "color": "#E0471C",
+      "rot": -12,
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "tile",
+      "at": "account",
+      "x": 880,
+      "y": 40,
+      "ref": "ph:user-circle-minus-fill",
+      "size": 100,
+      "id": "ac",
+      "label": "your account",
+      "color": "#E0471C",
+      "box": 180
+     },
+     {
+      "k": "tile",
+      "at": "card",
+      "x": 880,
+      "y": 320,
+      "ref": "ph:credit-card-fill",
+      "size": 100,
+      "id": "cc",
+      "label": "card details",
+      "color": "#E0471C",
+      "box": 180
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "w",
+      "at": "promising"
+     }
+    ]
+   }
+  },
+  {
+   "text": "The only safe places are chatgpt.com, the official ChatGPT apps and OpenAI's own API. If a deal sounds too good, it is.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "chip",
+      "at": "safe",
+      "x": 40,
+      "y": 60,
+      "text": "chatgpt.com",
+      "color": "#2F9E44",
+      "size": 40,
+      "id": "a",
+      "in": "left",
+      "icon": "ph:lock-fill"
+     },
+     {
+      "k": "chip",
+      "at": "apps",
+      "x": 40,
+      "y": 180,
+      "text": "Official ChatGPT apps",
+      "color": "#2F9E44",
+      "size": 40,
+      "id": "b",
+      "in": "left",
+      "icon": "ph:seal-check-fill"
+     },
+     {
+      "k": "chip",
+      "at": "api",
+      "x": 40,
+      "y": 300,
+      "text": "OpenAI's own API",
+      "color": "#2F9E44",
+      "size": 40,
+      "id": "c",
+      "in": "left",
+      "icon": "ph:code-bold"
+     },
+     {
+      "k": "big",
+      "at": "deal",
+      "x": 620,
+      "y": 120,
+      "text": "Too good",
+      "size": 100
+     },
+     {
+      "k": "big",
+      "at": "good",
+      "x": 620,
+      "y": 240,
+      "text": "to be true?",
+      "size": 100
+     },
+     {
+      "k": "big",
+      "at": "is",
+      "x": 620,
+      "y": 360,
+      "text": "It *is*.",
+      "size": 100,
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And here's a warning from OpenAI itself. Astra is its first model rated \"Critical\" for cybersecurity, under its own safety framework.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "warning",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:shield-warning-fill",
+      "size": 100,
+      "id": "sh",
+      "label": "OpenAI warning",
+      "color": "#E0471C",
+      "box": 180
+     },
+     {
+      "k": "clip",
+      "at": "first",
+      "x": 300,
+      "y": 40,
+      "by": "OPENAI · PREPAREDNESS FRAMEWORK",
+      "text": "GPT-6 Astra: the first model rated \"Critical\" for cybersecurity",
+      "hi": "Critical",
+      "w": 820,
+      "id": "cl",
+      "in": "fly"
+     },
+     {
+      "k": "stamp",
+      "at": "critical",
+      "x": 380,
+      "y": 380,
+      "text": "CRITICAL",
+      "size": 130,
+      "color": "#E0471C",
+      "rot": -6,
+      "id": "s",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "s",
+      "at": "framework"
+     }
+    ]
+   },
+   "chapter": "OpenAI's own warning"
+  },
+  {
+   "text": "That means it could find serious security holes with very little human help. So OpenAI watches its tasks, and can pause them mid-run.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "holes",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:lock-open-fill",
+      "size": 100,
+      "id": "h",
+      "label": "serious security holes",
+      "color": "#E0471C",
+      "box": 180
+     },
+     {
+      "k": "chip",
+      "at": "little",
+      "x": 40,
+      "y": 330,
+      "text": "with very little human help",
+      "color": "#8C6B5A",
+      "size": 28,
+      "id": "lh",
+      "icon": "ph:user-minus-fill"
+     },
+     {
+      "k": "win",
+      "at": "watches",
+      "x": 560,
+      "y": 30,
+      "w": 700,
+      "h": 420,
+      "title": "Safety monitor · task #4812",
+      "body": "<div style=\"position:absolute;left:24px;top:80px;font:600 28px 'SD Text';color:#2A2018;white-space:nowrap\">Task: update records</div><div style=\"position:absolute;left:24px;top:140px;font:600 28px 'SD Text';color:#2A2018;white-space:nowrap\">Status: running</div>",
+      "id": "w",
+      "in": "slide"
+     },
+     {
+      "k": "icon",
+      "at": "watches",
+      "x": 1100,
+      "y": 120,
+      "ref": "ph:eye-fill",
+      "size": 110,
+      "color": "#1C7ED6",
+      "id": "ey"
+     },
+     {
+      "k": "toast",
+      "at": "pause",
+      "x": 600,
+      "y": 320,
+      "text": "Paused by safety monitor",
+      "icon": "ph:pause-circle-fill",
+      "id": "t",
+      "in": "slide"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "OpenAI even admits Astra is harder to monitor than its previous model. That's why it watches it so closely.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "clip",
+      "at": "admits",
+      "x": 40,
+      "y": 40,
+      "by": "OPENAI ADMITS",
+      "text": "Astra is harder to monitor than its previous model",
+      "hi": "harder to monitor",
+      "w": 760,
+      "id": "cl",
+      "in": "fly"
+     },
+     {
+      "k": "icon",
+      "at": "monitor",
+      "x": 900,
+      "y": 40,
+      "ref": "ph:binoculars-fill",
+      "size": 180,
+      "color": "#8C6B5A",
+      "id": "b"
+     },
+     {
+      "k": "chip",
+      "at": "closely",
+      "x": 40,
+      "y": 380,
+      "text": "so OpenAI watches it closely",
+      "color": "#1C7ED6",
+      "size": 36,
+      "id": "c",
+      "icon": "ph:eye-fill"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "For you, the lesson is simple. Give Astra only the apps and files a task really needs.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 1120,
+      "y": 0,
+      "text": "ILLUSTRATION",
+      "bg": "#EFE3D7",
+      "size": 18,
+      "color": "#A48A78",
+      "id": "ill",
+      "in": "fade"
+     },
+     {
+      "k": "toggle",
+      "at": "apps",
+      "x": 40,
+      "y": 40,
+      "w": 560,
+      "label": "Excel (needed)",
+      "icon": "ph:microsoft-excel-logo-fill",
+      "color": "#2F9E44",
+      "id": "t1"
+     },
+     {
+      "k": "toggle",
+      "at": "files",
+      "x": 40,
+      "y": 140,
+      "w": 560,
+      "label": "sales.xlsx (needed)",
+      "icon": "ph:file-xls-fill",
+      "color": "#2F9E44",
+      "id": "t2"
+     },
+     {
+      "k": "toggle",
+      "at": "only",
+      "x": 40,
+      "y": 240,
+      "w": 560,
+      "label": "Banking app",
+      "icon": "ph:bank-fill",
+      "color": "#E0471C",
+      "id": "t3"
+     },
+     {
+      "k": "toggle",
+      "at": "only",
+      "x": 40,
+      "y": 340,
+      "w": 560,
+      "label": "Passwords",
+      "icon": "ph:password-fill",
+      "color": "#E0471C",
+      "id": "t4"
+     },
+     {
+      "k": "big",
+      "at": "needs",
+      "x": 700,
+      "y": 120,
+      "text": "Only what",
+      "size": 96
+     },
+     {
+      "k": "big",
+      "at": "needs",
+      "x": 700,
+      "y": 230,
+      "text": "it *needs*",
+      "size": 96
+     }
+    ],
+    "acts": [
+     {
+      "do": "on",
+      "id": "t1",
+      "at": "apps"
+     },
+     {
+      "do": "on",
+      "id": "t2",
+      "at": "files"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Five quick tips before you start.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "tips",
+      "x": 40,
+      "y": 40,
+      "text": "FIVE *TIPS*",
+      "size": 150,
+      "in": "slam"
+     },
+     {
+      "k": "tile",
+      "at": 0.3,
+      "x": 40,
+      "y": 330,
+      "ref": "ph:target-bold",
+      "size": 80,
+      "id": "t0",
+      "color": "#F87736"
+     },
+     {
+      "k": "tile",
+      "at": 0.4,
+      "x": 290,
+      "y": 330,
+      "ref": "ph:bank-fill",
+      "size": 80,
+      "id": "t1",
+      "color": "#E0471C"
+     },
+     {
+      "k": "tile",
+      "at": 0.5,
+      "x": 540,
+      "y": 330,
+      "ref": "ph:stack-fill",
+      "size": 80,
+      "id": "t2",
+      "color": "#1C7ED6"
+     },
+     {
+      "k": "tile",
+      "at": 0.6,
+      "x": 790,
+      "y": 330,
+      "ref": "ph:lightning-fill",
+      "size": 80,
+      "id": "t3",
+      "color": "#F5B400"
+     },
+     {
+      "k": "tile",
+      "at": 0.7,
+      "x": 1040,
+      "y": 330,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 80,
+      "id": "t4",
+      "color": "#2A2018"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Five tips"
+  },
+  {
+   "text": "One. Give it the full picture. The goal, the files, and what finished looks like.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "one",
+      "x": 40,
+      "y": 20,
+      "text": "*1*",
+      "size": 220,
+      "in": "slam"
+     },
+     {
+      "k": "big",
+      "at": "picture",
+      "x": 260,
+      "y": 60,
+      "text": "the full picture",
+      "size": 80
+     },
+     {
+      "k": "chip",
+      "at": "goal",
+      "x": 260,
+      "y": 260,
+      "text": "the goal",
+      "color": "#F87736",
+      "size": 36,
+      "id": "a",
+      "icon": "ph:target-bold"
+     },
+     {
+      "k": "chip",
+      "at": "files",
+      "x": 560,
+      "y": 260,
+      "text": "the files",
+      "color": "#1C7ED6",
+      "size": 36,
+      "id": "b",
+      "icon": "ph:files-fill"
+     },
+     {
+      "k": "chip",
+      "at": "finished",
+      "x": 260,
+      "y": 380,
+      "text": "what \"finished\" looks like",
+      "color": "#2F9E44",
+      "size": 36,
+      "id": "c",
+      "icon": "ph:flag-checkered-fill"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Two. Never let it near banking apps, passwords or payment pages.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "two",
+      "x": 40,
+      "y": 20,
+      "text": "*2*",
+      "size": 220,
+      "in": "slam"
+     },
+     {
+      "k": "tile",
+      "at": "banking",
+      "x": 280,
+      "y": 60,
+      "ref": "ph:bank-fill",
+      "size": 90,
+      "id": "a",
+      "label": "banking apps",
+      "color": "#2A2018",
+      "box": 170
+     },
+     {
+      "k": "tile",
+      "at": "passwords",
+      "x": 580,
+      "y": 60,
+      "ref": "ph:password-fill",
+      "size": 90,
+      "id": "b",
+      "label": "passwords",
+      "color": "#2A2018",
+      "box": 170
+     },
+     {
+      "k": "tile",
+      "at": "payment",
+      "x": 880,
+      "y": 60,
+      "ref": "ph:credit-card-fill",
+      "size": 90,
+      "id": "c",
+      "label": "payment pages",
+      "color": "#2A2018",
+      "box": 170
+     },
+     {
+      "k": "stamp",
+      "at": "never",
+      "x": 420,
+      "y": 360,
+      "text": "NEVER",
+      "size": 140,
+      "color": "#E0471C",
+      "rot": -6,
+      "id": "s",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Three. Break huge jobs into stages, and check after each one.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "three",
+      "x": 40,
+      "y": 20,
+      "text": "*3*",
+      "size": 220,
+      "in": "slam"
+     },
+     {
+      "k": "chip",
+      "at": "stages",
+      "x": 280,
+      "y": 60,
+      "text": "Stage 1",
+      "color": "#1C7ED6",
+      "size": 36,
+      "id": "a",
+      "icon": "ph:number-circle-one-fill"
+     },
+     {
+      "k": "chip",
+      "at": "stages",
+      "x": 560,
+      "y": 140,
+      "text": "Stage 2",
+      "color": "#1C7ED6",
+      "size": 36,
+      "id": "b",
+      "icon": "ph:number-circle-two-fill"
+     },
+     {
+      "k": "chip",
+      "at": "stages",
+      "x": 840,
+      "y": 220,
+      "text": "Stage 3",
+      "color": "#1C7ED6",
+      "size": 36,
+      "id": "c",
+      "icon": "ph:number-circle-three-fill"
+     },
+     {
+      "k": "chip",
+      "at": "check",
+      "x": 280,
+      "y": 400,
+      "text": "check after each one",
+      "color": "#2F9E44",
+      "size": 40,
+      "id": "d",
+      "icon": "ph:check-circle-fill"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Four. Use Sol for small things, so your Astra limit lasts.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "four",
+      "x": 40,
+      "y": 20,
+      "text": "*4*",
+      "size": 220,
+      "in": "slam"
+     },
+     {
+      "k": "tile",
+      "at": "sol",
+      "x": 280,
+      "y": 60,
+      "ref": "ph:lightning-fill",
+      "size": 90,
+      "id": "s",
+      "label": "Sol: small things",
+      "color": "#F5B400",
+      "box": 180
+     },
+     {
+      "k": "card",
+      "at": "limit",
+      "x": 560,
+      "y": 60,
+      "big": "FULL",
+      "label": "YOUR ASTRA LIMIT",
+      "color": "#2F9E44",
+      "id": "l",
+      "in": "fly",
+      "icon": "ph:battery-full-fill",
+      "w": 520
+     },
+     {
+      "k": "tag",
+      "at": "lasts",
+      "x": 580,
+      "y": 320,
+      "text": "lasts for the big jobs",
+      "bg": "#2F9E44",
+      "size": 34,
+      "id": "t"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Five. Check its work. Even the smartest model can be confidently wrong.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "five",
+      "x": 40,
+      "y": 20,
+      "text": "*5*",
+      "size": 220,
+      "in": "slam"
+     },
+     {
+      "k": "tile",
+      "at": "check",
+      "x": 280,
+      "y": 60,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 90,
+      "id": "m",
+      "label": "check its work",
+      "color": "#2A2018",
+      "box": 180
+     },
+     {
+      "k": "phone",
+      "at": "smartest",
+      "x": 620,
+      "y": 0,
+      "w": 330,
+      "h": 600,
+      "msgs": [
+       [
+        "user",
+        "What is 17 × 24?",
+        "smartest"
+       ],
+       [
+        "ai",
+        "Definitely <b>418</b>!",
+        "confidently"
+       ]
+      ],
+      "id": "ph",
+      "in": "slide"
+     },
+     {
+      "k": "stamp",
+      "at": "wrong",
+      "x": 1010,
+      "y": 250,
+      "text": "WRONG",
+      "size": 60,
+      "color": "#E0471C",
+      "rot": 8,
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "wrong",
+      "x": 1010,
+      "y": 400,
+      "text": "answer: 408",
+      "bg": "#2F9E44",
+      "size": 30,
+      "id": "a"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "So, did Max get his afternoon off? Partly. Astra built his report while he watched, and he spent the time he saved checking it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "win",
+      "at": "report",
+      "x": 40,
+      "y": 30,
+      "w": 640,
+      "h": 460,
+      "title": "weekly_report.docx",
+      "body": "<div style=\"position:absolute;left:24px;top:80px;font:600 30px 'SD Text';color:#2A2018;white-space:nowrap\">Weekly sales report</div><div style=\"position:absolute;left:24px;top:150px;font:600 30px 'SD Text';color:#2A2018;white-space:nowrap\">Total: ₹4.2 lakh  ▲ 12%</div><div style=\"position:absolute;left:24px;top:220px;font:600 30px 'SD Text';color:#2A2018;white-space:nowrap\">Top region: South</div>",
+      "id": "w",
+      "in": "fly"
+     },
+     {
+      "k": "stamp",
+      "at": "partly",
+      "x": 720,
+      "y": 40,
+      "text": "PARTLY",
+      "size": 110,
+      "color": "#F87736",
+      "rot": -8,
+      "id": "p",
+      "in": "slam"
+     },
+     {
+      "k": "toast",
+      "at": "built",
+      "x": 80,
+      "y": 520,
+      "text": "Report built by Astra",
+      "id": "t",
+      "in": "slide"
+     },
+     {
+      "k": "chip",
+      "at": "checking",
+      "x": 720,
+      "y": 330,
+      "text": "time saved → checking it",
+      "color": "#1C7ED6",
+      "size": 34,
+      "id": "c",
+      "icon": "ph:magnifying-glass-bold"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Wrap-up"
+  },
+  {
+   "text": "GPT-6 Astra isn't magic, and it isn't free. But if your work lives on a computer, it can save you hours.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "stamp",
+      "at": "magic",
+      "x": 40,
+      "y": 40,
+      "text": "NOT MAGIC",
+      "size": 90,
+      "color": "#8C6B5A",
+      "rot": -8,
+      "id": "m",
+      "in": "slam"
+     },
+     {
+      "k": "stamp",
+      "at": "free",
+      "x": 40,
+      "y": 230,
+      "text": "NOT FREE",
+      "size": 90,
+      "color": "#E0471C",
+      "rot": 6,
+      "id": "f",
+      "in": "slam"
+     },
+     {
+      "k": "tile",
+      "at": "computer",
+      "x": 780,
+      "y": 40,
+      "ref": "ph:laptop-fill",
+      "size": 100,
+      "id": "pc",
+      "label": "work on a computer?",
+      "color": "#2A2018",
+      "box": 180
+     },
+     {
+      "k": "card",
+      "at": "hours",
+      "x": 640,
+      "y": 330,
+      "big": "HOURS",
+      "label": "IT CAN SAVE YOU",
+      "color": "#2F9E44",
+      "id": "h",
+      "in": "fly",
+      "icon": "ph:clock-countdown-fill",
+      "w": 520
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Tell me in the comments: what's the first job you'd hand to Astra?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "tile",
+      "at": "comments",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:youtube-icon",
+      "size": 90,
+      "id": "yt",
+      "label": "comments",
+      "box": 170
+     },
+     {
+      "k": "card",
+      "at": "first",
+      "x": 300,
+      "y": 60,
+      "icon": "ph:user-circle-fill",
+      "label": "YOUR COMMENT",
+      "big": "The first job I’d hand to Astra…",
+      "bsize": 46,
+      "color": "#F87736",
+      "id": "cm",
+      "in": "fly"
+     },
+     {
+      "k": "icon",
+      "at": "astra",
+      "x": 400,
+      "y": 360,
+      "ref": "ph:chat-circle-dots-fill",
+      "size": 160,
+      "color": "#F87736",
+      "id": "c"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "end",
+    "sub": "More tech, decoded."
+   }
+  }
+ ]
+}

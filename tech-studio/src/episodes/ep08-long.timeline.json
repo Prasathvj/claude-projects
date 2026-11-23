@@ -1,0 +1,6719 @@
+{
+ "id": "ep08-long",
+ "format": "horizontal",
+ "captions": "big",
+ "fps": 30,
+ "duration": 522.219,
+ "vo": "ep08/ep08-long-vo.wav",
+ "music": "ep08/ep08-long-music.wav",
+ "beats": [
+  {
+   "text": "OpenAI's new model can open apps on your computer, click through them, and finish a task while you watch.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 0.25,
+   "vo": 6.8,
+   "dur": 7.2,
+   "words": [
+    {
+     "w": "OpenAI's",
+     "s": 0.0,
+     "e": 0.81
+    },
+    {
+     "w": "new",
+     "s": 0.81,
+     "e": 1.04
+    },
+    {
+     "w": "model",
+     "s": 1.04,
+     "e": 1.48
+    },
+    {
+     "w": "can",
+     "s": 1.48,
+     "e": 1.7
+    },
+    {
+     "w": "open",
+     "s": 1.7,
+     "e": 2.07
+    },
+    {
+     "w": "apps",
+     "s": 2.07,
+     "e": 2.4
+    },
+    {
+     "w": "on",
+     "s": 2.4,
+     "e": 2.5
+    },
+    {
+     "w": "your",
+     "s": 2.5,
+     "e": 2.62
+    },
+    {
+     "w": "computer,",
+     "s": 2.62,
+     "e": 3.32
+    },
+    {
+     "w": "click",
+     "s": 3.52,
+     "e": 3.81
+    },
+    {
+     "w": "through",
+     "s": 3.81,
+     "e": 4.13
+    },
+    {
+     "w": "them,",
+     "s": 4.13,
+     "e": 4.44
+    },
+    {
+     "w": "and",
+     "s": 4.63,
+     "e": 4.78
+    },
+    {
+     "w": "finish",
+     "s": 4.78,
+     "e": 5.19
+    },
+    {
+     "w": "a",
+     "s": 5.19,
+     "e": 5.25
+    },
+    {
+     "w": "task",
+     "s": 5.25,
+     "e": 5.8
+    },
+    {
+     "w": "while",
+     "s": 5.8,
+     "e": 5.99
+    },
+    {
+     "w": "you",
+     "s": 5.99,
+     "e": 6.17
+    },
+    {
+     "w": "watch.",
+     "s": 6.17,
+     "e": 6.58
+    }
+   ]
+  },
+  {
+   "text": "It's called GPT-6 Astra. And right now, it's one of the most searched AI tools in India.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 7.45,
+   "vo": 6.976,
+   "dur": 7.376,
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.05,
+     "e": 0.23
+    },
+    {
+     "w": "called",
+     "s": 0.23,
+     "e": 0.62
+    },
+    {
+     "w": "GPT-6",
+     "s": 0.62,
+     "e": 1.97
+    },
+    {
+     "w": "Astra.",
+     "s": 1.97,
+     "e": 2.5
+    },
+    {
+     "w": "And",
+     "s": 2.98,
+     "e": 3.14
+    },
+    {
+     "w": "right",
+     "s": 3.14,
+     "e": 3.35
+    },
+    {
+     "w": "now,",
+     "s": 3.35,
+     "e": 3.79
+    },
+    {
+     "w": "it's",
+     "s": 3.79,
+     "e": 4.05
+    },
+    {
+     "w": "one",
+     "s": 4.05,
+     "e": 4.23
+    },
+    {
+     "w": "of",
+     "s": 4.23,
+     "e": 4.33
+    },
+    {
+     "w": "the",
+     "s": 4.33,
+     "e": 4.41
+    },
+    {
+     "w": "most",
+     "s": 4.41,
+     "e": 4.81
+    },
+    {
+     "w": "searched",
+     "s": 4.81,
+     "e": 5.4
+    },
+    {
+     "w": "AI",
+     "s": 5.4,
+     "e": 5.79
+    },
+    {
+     "w": "tools",
+     "s": 5.79,
+     "e": 6.2
+    },
+    {
+     "w": "in",
+     "s": 6.2,
+     "e": 6.3
+    },
+    {
+     "w": "India.",
+     "s": 6.3,
+     "e": 6.76
+    }
+   ]
+  },
+  {
+   "text": "But most people hit the same wall. They open ChatGPT, look for Astra, and it simply isn't there.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 14.825,
+   "vo": 7.51,
+   "dur": 7.91,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.03,
+     "e": 0.21
+    },
+    {
+     "w": "most",
+     "s": 0.21,
+     "e": 0.65
+    },
+    {
+     "w": "people",
+     "s": 0.65,
+     "e": 1.01
+    },
+    {
+     "w": "hit",
+     "s": 1.01,
+     "e": 1.21
+    },
+    {
+     "w": "the",
+     "s": 1.21,
+     "e": 1.31
+    },
+    {
+     "w": "same",
+     "s": 1.31,
+     "e": 1.78
+    },
+    {
+     "w": "wall.",
+     "s": 1.78,
+     "e": 2.35
+    },
+    {
+     "w": "They",
+     "s": 2.68,
+     "e": 2.84
+    },
+    {
+     "w": "open",
+     "s": 2.84,
+     "e": 3.15
+    },
+    {
+     "w": "ChatGPT,",
+     "s": 3.15,
+     "e": 3.2
+    },
+    {
+     "w": "look",
+     "s": 3.15,
+     "e": 3.24
+    },
+    {
+     "w": "for",
+     "s": 3.24,
+     "e": 3.31
+    },
+    {
+     "w": "Astra,",
+     "s": 3.31,
+     "e": 3.58
+    },
+    {
+     "w": "and",
+     "s": 3.58,
+     "e": 3.68
+    },
+    {
+     "w": "it",
+     "s": 3.68,
+     "e": 3.84
+    },
+    {
+     "w": "simply",
+     "s": 3.84,
+     "e": 4.22
+    },
+    {
+     "w": "isn't",
+     "s": 4.99,
+     "e": 5.44
+    },
+    {
+     "w": "there.",
+     "s": 6.87,
+     "e": 7.35
+    }
+   ]
+  },
+  {
+   "text": "So let's decode it: where Astra hides, how to switch it on, what it costs in India, and the free Astra trap. Stay for that one, it's catching a lot of people.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 22.735,
+   "vo": 12.285,
+   "dur": 12.685,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.02,
+     "e": 0.35
+    },
+    {
+     "w": "let's",
+     "s": 0.35,
+     "e": 0.77
+    },
+    {
+     "w": "decode",
+     "s": 0.77,
+     "e": 1.25
+    },
+    {
+     "w": "it:",
+     "s": 1.25,
+     "e": 1.53
+    },
+    {
+     "w": "where",
+     "s": 2.01,
+     "e": 2.38
+    },
+    {
+     "w": "Astra",
+     "s": 2.38,
+     "e": 2.78
+    },
+    {
+     "w": "hides,",
+     "s": 2.78,
+     "e": 3.48
+    },
+    {
+     "w": "how",
+     "s": 3.72,
+     "e": 3.91
+    },
+    {
+     "w": "to",
+     "s": 3.91,
+     "e": 3.98
+    },
+    {
+     "w": "switch",
+     "s": 3.98,
+     "e": 4.31
+    },
+    {
+     "w": "it",
+     "s": 4.31,
+     "e": 4.4
+    },
+    {
+     "w": "on,",
+     "s": 4.4,
+     "e": 4.77
+    },
+    {
+     "w": "what",
+     "s": 5.15,
+     "e": 5.33
+    },
+    {
+     "w": "it",
+     "s": 5.33,
+     "e": 5.41
+    },
+    {
+     "w": "costs",
+     "s": 5.41,
+     "e": 5.87
+    },
+    {
+     "w": "in",
+     "s": 5.87,
+     "e": 6.01
+    },
+    {
+     "w": "India,",
+     "s": 6.01,
+     "e": 6.6
+    },
+    {
+     "w": "and",
+     "s": 6.9,
+     "e": 7.32
+    },
+    {
+     "w": "the",
+     "s": 7.32,
+     "e": 7.51
+    },
+    {
+     "w": "free",
+     "s": 7.51,
+     "e": 7.99
+    },
+    {
+     "w": "Astra",
+     "s": 7.99,
+     "e": 8.48
+    },
+    {
+     "w": "trap.",
+     "s": 8.48,
+     "e": 8.89
+    },
+    {
+     "w": "Stay",
+     "s": 9.36,
+     "e": 9.64
+    },
+    {
+     "w": "for",
+     "s": 9.64,
+     "e": 9.81
+    },
+    {
+     "w": "that",
+     "s": 9.81,
+     "e": 10.02
+    },
+    {
+     "w": "one,",
+     "s": 10.02,
+     "e": 10.29
+    },
+    {
+     "w": "it's",
+     "s": 10.45,
+     "e": 10.7
+    },
+    {
+     "w": "catching",
+     "s": 10.7,
+     "e": 11.1
+    },
+    {
+     "w": "a",
+     "s": 11.1,
+     "e": 11.13
+    },
+    {
+     "w": "lot",
+     "s": 11.13,
+     "e": 11.5
+    },
+    {
+     "w": "of",
+     "s": 11.5,
+     "e": 11.62
+    },
+    {
+     "w": "people.",
+     "s": 11.62,
+     "e": 12.07
+    }
+   ]
+  },
+  {
+   "text": "GPT-6 Astra is OpenAI's top model, launched in September twenty twenty-six, built for computer work, coding and long, demanding tasks.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "What Astra is",
+   "start": 35.42,
+   "vo": 10.977,
+   "dur": 11.377,
+   "words": [
+    {
+     "w": "GPT-6",
+     "s": 0.0,
+     "e": 0.4
+    },
+    {
+     "w": "Astra",
+     "s": 0.4,
+     "e": 0.61
+    },
+    {
+     "w": "is",
+     "s": 0.61,
+     "e": 0.79
+    },
+    {
+     "w": "OpenAI's",
+     "s": 0.79,
+     "e": 0.84
+    },
+    {
+     "w": "top",
+     "s": 0.79,
+     "e": 1.09
+    },
+    {
+     "w": "model,",
+     "s": 1.09,
+     "e": 1.56
+    },
+    {
+     "w": "launched",
+     "s": 1.56,
+     "e": 1.73
+    },
+    {
+     "w": "in",
+     "s": 1.73,
+     "e": 1.85
+    },
+    {
+     "w": "September",
+     "s": 1.85,
+     "e": 2.24
+    },
+    {
+     "w": "twenty",
+     "s": 2.24,
+     "e": 2.8
+    },
+    {
+     "w": "twenty-six,",
+     "s": 2.8,
+     "e": 3.13
+    },
+    {
+     "w": "built",
+     "s": 3.13,
+     "e": 3.61
+    },
+    {
+     "w": "for",
+     "s": 4.07,
+     "e": 4.28
+    },
+    {
+     "w": "computer",
+     "s": 4.28,
+     "e": 4.99
+    },
+    {
+     "w": "work,",
+     "s": 4.99,
+     "e": 5.15
+    },
+    {
+     "w": "coding",
+     "s": 5.15,
+     "e": 5.46
+    },
+    {
+     "w": "and",
+     "s": 5.46,
+     "e": 6.28
+    },
+    {
+     "w": "long,",
+     "s": 6.75,
+     "e": 7.27
+    },
+    {
+     "w": "demanding",
+     "s": 8.17,
+     "e": 9.09
+    },
+    {
+     "w": "tasks.",
+     "s": 10.19,
+     "e": 10.86
+    }
+   ]
+  },
+  {
+   "text": "On November seventeenth, OpenAI upgraded it to GPT-6.2 Astra, and added a cheaper sister model called Sol.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 46.798,
+   "vo": 9.158,
+   "dur": 9.558,
+   "words": [
+    {
+     "w": "On",
+     "s": 0.09,
+     "e": 0.23
+    },
+    {
+     "w": "November",
+     "s": 0.23,
+     "e": 0.64
+    },
+    {
+     "w": "seventeenth,",
+     "s": 0.64,
+     "e": 1.58
+    },
+    {
+     "w": "OpenAI",
+     "s": 1.58,
+     "e": 1.71
+    },
+    {
+     "w": "upgraded",
+     "s": 1.71,
+     "e": 2.24
+    },
+    {
+     "w": "it",
+     "s": 2.76,
+     "e": 3.19
+    },
+    {
+     "w": "to",
+     "s": 3.19,
+     "e": 3.38
+    },
+    {
+     "w": "GPT-6.2",
+     "s": 3.38,
+     "e": 3.43
+    },
+    {
+     "w": "Astra,",
+     "s": 3.38,
+     "e": 3.56
+    },
+    {
+     "w": "and",
+     "s": 3.56,
+     "e": 3.7
+    },
+    {
+     "w": "added",
+     "s": 3.7,
+     "e": 3.84
+    },
+    {
+     "w": "a",
+     "s": 3.84,
+     "e": 3.87
+    },
+    {
+     "w": "cheaper",
+     "s": 3.87,
+     "e": 4.09
+    },
+    {
+     "w": "sister",
+     "s": 4.09,
+     "e": 4.5
+    },
+    {
+     "w": "model",
+     "s": 4.5,
+     "e": 4.94
+    },
+    {
+     "w": "called",
+     "s": 7.16,
+     "e": 7.31
+    },
+    {
+     "w": "Sol.",
+     "s": 7.31,
+     "e": 8.42
+    }
+   ]
+  },
+  {
+   "text": "Think of it like this. Sol is your fast, everyday assistant. Astra is the specialist you call for the hardest jobs.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 56.355,
+   "vo": 8.646,
+   "dur": 9.046,
+   "words": [
+    {
+     "w": "Think",
+     "s": 0.06,
+     "e": 0.3
+    },
+    {
+     "w": "of",
+     "s": 0.3,
+     "e": 0.39
+    },
+    {
+     "w": "it",
+     "s": 0.39,
+     "e": 0.49
+    },
+    {
+     "w": "like",
+     "s": 0.49,
+     "e": 0.73
+    },
+    {
+     "w": "this.",
+     "s": 0.73,
+     "e": 1.21
+    },
+    {
+     "w": "Sol",
+     "s": 1.67,
+     "e": 2.19
+    },
+    {
+     "w": "is",
+     "s": 2.19,
+     "e": 2.4
+    },
+    {
+     "w": "your",
+     "s": 2.4,
+     "e": 2.53
+    },
+    {
+     "w": "fast,",
+     "s": 2.53,
+     "e": 3.23
+    },
+    {
+     "w": "everyday",
+     "s": 3.32,
+     "e": 3.87
+    },
+    {
+     "w": "assistant.",
+     "s": 3.87,
+     "e": 4.53
+    },
+    {
+     "w": "Astra",
+     "s": 4.98,
+     "e": 5.62
+    },
+    {
+     "w": "is",
+     "s": 5.62,
+     "e": 5.84
+    },
+    {
+     "w": "the",
+     "s": 5.84,
+     "e": 5.96
+    },
+    {
+     "w": "specialist",
+     "s": 5.96,
+     "e": 6.68
+    },
+    {
+     "w": "you",
+     "s": 6.68,
+     "e": 6.79
+    },
+    {
+     "w": "call",
+     "s": 6.79,
+     "e": 7.1
+    },
+    {
+     "w": "for",
+     "s": 7.1,
+     "e": 7.26
+    },
+    {
+     "w": "the",
+     "s": 7.26,
+     "e": 7.34
+    },
+    {
+     "w": "hardest",
+     "s": 7.34,
+     "e": 7.92
+    },
+    {
+     "w": "jobs.",
+     "s": 7.92,
+     "e": 8.44
+    }
+   ]
+  },
+  {
+   "text": "Our host Max had a big plan. Ask Astra to do his entire job, then take the afternoon off.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "Max can't find it",
+   "start": 65.401,
+   "vo": 7.34,
+   "dur": 7.74,
+   "words": [
+    {
+     "w": "Our",
+     "s": 0.03,
+     "e": 0.2
+    },
+    {
+     "w": "host",
+     "s": 0.2,
+     "e": 0.57
+    },
+    {
+     "w": "Max",
+     "s": 0.57,
+     "e": 0.98
+    },
+    {
+     "w": "had",
+     "s": 0.98,
+     "e": 1.18
+    },
+    {
+     "w": "a",
+     "s": 1.18,
+     "e": 1.23
+    },
+    {
+     "w": "big",
+     "s": 1.23,
+     "e": 1.67
+    },
+    {
+     "w": "plan.",
+     "s": 1.67,
+     "e": 2.07
+    },
+    {
+     "w": "Ask",
+     "s": 2.67,
+     "e": 3.0
+    },
+    {
+     "w": "Astra",
+     "s": 3.0,
+     "e": 3.47
+    },
+    {
+     "w": "to",
+     "s": 3.47,
+     "e": 3.62
+    },
+    {
+     "w": "do",
+     "s": 3.62,
+     "e": 3.81
+    },
+    {
+     "w": "his",
+     "s": 3.81,
+     "e": 4.02
+    },
+    {
+     "w": "entire",
+     "s": 4.02,
+     "e": 4.63
+    },
+    {
+     "w": "job,",
+     "s": 4.63,
+     "e": 5.09
+    },
+    {
+     "w": "then",
+     "s": 5.45,
+     "e": 5.81
+    },
+    {
+     "w": "take",
+     "s": 5.81,
+     "e": 6.2
+    },
+    {
+     "w": "the",
+     "s": 6.2,
+     "e": 6.35
+    },
+    {
+     "w": "afternoon",
+     "s": 6.35,
+     "e": 6.82
+    },
+    {
+     "w": "off.",
+     "s": 6.82,
+     "e": 7.2
+    }
+   ]
+  },
+  {
+   "text": "He opened ChatGPT. No Astra. He refreshed. Still no Astra. He blamed his Wi-Fi.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 73.141,
+   "vo": 7.938,
+   "dur": 8.338,
+   "words": [
+    {
+     "w": "He",
+     "s": 0.02,
+     "e": 0.2
+    },
+    {
+     "w": "opened",
+     "s": 0.2,
+     "e": 1.83
+    },
+    {
+     "w": "ChatGPT.",
+     "s": 1.83,
+     "e": 2.25
+    },
+    {
+     "w": "No",
+     "s": 2.25,
+     "e": 2.52
+    },
+    {
+     "w": "Astra.",
+     "s": 2.52,
+     "e": 3.04
+    },
+    {
+     "w": "He",
+     "s": 3.6,
+     "e": 3.73
+    },
+    {
+     "w": "refreshed.",
+     "s": 3.73,
+     "e": 4.4
+    },
+    {
+     "w": "Still",
+     "s": 4.77,
+     "e": 5.3
+    },
+    {
+     "w": "no",
+     "s": 5.3,
+     "e": 5.5
+    },
+    {
+     "w": "Astra.",
+     "s": 5.5,
+     "e": 6.0
+    },
+    {
+     "w": "He",
+     "s": 6.51,
+     "e": 6.63
+    },
+    {
+     "w": "blamed",
+     "s": 6.63,
+     "e": 6.94
+    },
+    {
+     "w": "his",
+     "s": 6.94,
+     "e": 7.09
+    },
+    {
+     "w": "Wi-Fi.",
+     "s": 7.09,
+     "e": 7.75
+    }
+   ]
+  },
+  {
+   "text": "The Wi-Fi was fine. Astra just doesn't live where most people look.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 81.479,
+   "vo": 4.985,
+   "dur": 5.385,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.06,
+     "e": 0.17
+    },
+    {
+     "w": "Wi-Fi",
+     "s": 0.17,
+     "e": 0.63
+    },
+    {
+     "w": "was",
+     "s": 0.63,
+     "e": 0.86
+    },
+    {
+     "w": "fine.",
+     "s": 0.86,
+     "e": 1.33
+    },
+    {
+     "w": "Astra",
+     "s": 1.86,
+     "e": 2.35
+    },
+    {
+     "w": "just",
+     "s": 2.35,
+     "e": 2.77
+    },
+    {
+     "w": "doesn't",
+     "s": 2.77,
+     "e": 3.1
+    },
+    {
+     "w": "live",
+     "s": 3.1,
+     "e": 3.54
+    },
+    {
+     "w": "where",
+     "s": 3.54,
+     "e": 3.67
+    },
+    {
+     "w": "most",
+     "s": 3.67,
+     "e": 3.94
+    },
+    {
+     "w": "people",
+     "s": 3.94,
+     "e": 4.3
+    },
+    {
+     "w": "look.",
+     "s": 4.3,
+     "e": 4.77
+    }
+   ]
+  },
+  {
+   "text": "On the Plus plan, Astra sits inside two places: ChatGPT Work and Codex. Not the regular chat list.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "Who gets it",
+   "start": 86.864,
+   "vo": 8.811,
+   "dur": 9.211,
+   "words": [
+    {
+     "w": "On",
+     "s": 0.08,
+     "e": 0.23
+    },
+    {
+     "w": "the",
+     "s": 0.23,
+     "e": 0.32
+    },
+    {
+     "w": "Plus",
+     "s": 0.32,
+     "e": 0.66
+    },
+    {
+     "w": "plan,",
+     "s": 0.66,
+     "e": 1.15
+    },
+    {
+     "w": "Astra",
+     "s": 1.33,
+     "e": 1.77
+    },
+    {
+     "w": "sits",
+     "s": 1.77,
+     "e": 2.11
+    },
+    {
+     "w": "inside",
+     "s": 2.11,
+     "e": 2.59
+    },
+    {
+     "w": "two",
+     "s": 2.59,
+     "e": 2.86
+    },
+    {
+     "w": "places:",
+     "s": 2.86,
+     "e": 3.52
+    },
+    {
+     "w": "ChatGPT",
+     "s": 3.52,
+     "e": 4.16
+    },
+    {
+     "w": "Work",
+     "s": 4.16,
+     "e": 4.33
+    },
+    {
+     "w": "and",
+     "s": 4.33,
+     "e": 4.5
+    },
+    {
+     "w": "Codex.",
+     "s": 4.5,
+     "e": 4.55
+    },
+    {
+     "w": "Not",
+     "s": 4.5,
+     "e": 4.68
+    },
+    {
+     "w": "the",
+     "s": 4.68,
+     "e": 4.79
+    },
+    {
+     "w": "regular",
+     "s": 4.79,
+     "e": 5.15
+    },
+    {
+     "w": "chat",
+     "s": 5.46,
+     "e": 5.74
+    },
+    {
+     "w": "list.",
+     "s": 7.61,
+     "e": 7.98
+    }
+   ]
+  },
+  {
+   "text": "On the Free and Go plans, it isn't included at all. Pro and business plans get it too, with much higher limits.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 96.075,
+   "vo": 7.596,
+   "dur": 7.996,
+   "words": [
+    {
+     "w": "On",
+     "s": 0.07,
+     "e": 0.24
+    },
+    {
+     "w": "the",
+     "s": 0.24,
+     "e": 0.31
+    },
+    {
+     "w": "Free",
+     "s": 0.31,
+     "e": 0.62
+    },
+    {
+     "w": "and",
+     "s": 0.62,
+     "e": 0.76
+    },
+    {
+     "w": "Go",
+     "s": 0.76,
+     "e": 0.92
+    },
+    {
+     "w": "plans,",
+     "s": 0.92,
+     "e": 1.57
+    },
+    {
+     "w": "it",
+     "s": 1.66,
+     "e": 1.82
+    },
+    {
+     "w": "isn't",
+     "s": 1.82,
+     "e": 2.05
+    },
+    {
+     "w": "included",
+     "s": 2.05,
+     "e": 2.6
+    },
+    {
+     "w": "at",
+     "s": 2.6,
+     "e": 2.72
+    },
+    {
+     "w": "all.",
+     "s": 2.72,
+     "e": 3.16
+    },
+    {
+     "w": "Pro",
+     "s": 3.65,
+     "e": 4.04
+    },
+    {
+     "w": "and",
+     "s": 4.04,
+     "e": 4.2
+    },
+    {
+     "w": "business",
+     "s": 4.2,
+     "e": 4.66
+    },
+    {
+     "w": "plans",
+     "s": 4.66,
+     "e": 5.06
+    },
+    {
+     "w": "get",
+     "s": 5.06,
+     "e": 5.24
+    },
+    {
+     "w": "it",
+     "s": 5.24,
+     "e": 5.37
+    },
+    {
+     "w": "too,",
+     "s": 5.37,
+     "e": 5.78
+    },
+    {
+     "w": "with",
+     "s": 5.89,
+     "e": 6.14
+    },
+    {
+     "w": "much",
+     "s": 6.14,
+     "e": 6.61
+    },
+    {
+     "w": "higher",
+     "s": 6.61,
+     "e": 6.89
+    },
+    {
+     "w": "limits.",
+     "s": 6.89,
+     "e": 7.47
+    }
+   ]
+  },
+  {
+   "text": "And even on Plus, there's a limit. OpenAI estimates roughly five to forty-five Astra messages every five hours, depending on the task.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 104.072,
+   "vo": 9.87,
+   "dur": 10.27,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.09,
+     "e": 0.25
+    },
+    {
+     "w": "even",
+     "s": 0.25,
+     "e": 0.57
+    },
+    {
+     "w": "on",
+     "s": 0.57,
+     "e": 0.76
+    },
+    {
+     "w": "Plus,",
+     "s": 0.76,
+     "e": 1.37
+    },
+    {
+     "w": "there's",
+     "s": 1.37,
+     "e": 1.62
+    },
+    {
+     "w": "a",
+     "s": 1.62,
+     "e": 1.65
+    },
+    {
+     "w": "limit.",
+     "s": 1.65,
+     "e": 2.18
+    },
+    {
+     "w": "OpenAI",
+     "s": 2.18,
+     "e": 3.28
+    },
+    {
+     "w": "estimates",
+     "s": 3.28,
+     "e": 3.96
+    },
+    {
+     "w": "roughly",
+     "s": 3.96,
+     "e": 4.39
+    },
+    {
+     "w": "five",
+     "s": 4.39,
+     "e": 4.95
+    },
+    {
+     "w": "to",
+     "s": 4.95,
+     "e": 5.12
+    },
+    {
+     "w": "forty-five",
+     "s": 5.12,
+     "e": 5.77
+    },
+    {
+     "w": "Astra",
+     "s": 5.77,
+     "e": 6.36
+    },
+    {
+     "w": "messages",
+     "s": 6.36,
+     "e": 6.99
+    },
+    {
+     "w": "every",
+     "s": 6.99,
+     "e": 7.36
+    },
+    {
+     "w": "five",
+     "s": 7.36,
+     "e": 7.77
+    },
+    {
+     "w": "hours,",
+     "s": 7.77,
+     "e": 8.45
+    },
+    {
+     "w": "depending",
+     "s": 8.45,
+     "e": 8.92
+    },
+    {
+     "w": "on",
+     "s": 8.92,
+     "e": 9.04
+    },
+    {
+     "w": "the",
+     "s": 9.04,
+     "e": 9.11
+    },
+    {
+     "w": "task.",
+     "s": 9.11,
+     "e": 9.66
+    }
+   ]
+  },
+  {
+   "text": "So treat it like a precious resource. Big jobs only, not \"write me a birthday message\".",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 114.342,
+   "vo": 6.72,
+   "dur": 7.12,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.02,
+     "e": 0.38
+    },
+    {
+     "w": "treat",
+     "s": 0.38,
+     "e": 0.84
+    },
+    {
+     "w": "it",
+     "s": 0.84,
+     "e": 0.96
+    },
+    {
+     "w": "like",
+     "s": 0.96,
+     "e": 1.18
+    },
+    {
+     "w": "a",
+     "s": 1.18,
+     "e": 1.24
+    },
+    {
+     "w": "precious",
+     "s": 1.24,
+     "e": 1.84
+    },
+    {
+     "w": "resource.",
+     "s": 1.84,
+     "e": 2.65
+    },
+    {
+     "w": "Big",
+     "s": 3.02,
+     "e": 3.27
+    },
+    {
+     "w": "jobs",
+     "s": 3.27,
+     "e": 3.67
+    },
+    {
+     "w": "only,",
+     "s": 3.67,
+     "e": 4.15
+    },
+    {
+     "w": "not",
+     "s": 4.38,
+     "e": 4.73
+    },
+    {
+     "w": "\"write",
+     "s": 4.95,
+     "e": 5.32
+    },
+    {
+     "w": "me",
+     "s": 5.32,
+     "e": 5.48
+    },
+    {
+     "w": "a",
+     "s": 5.48,
+     "e": 5.52
+    },
+    {
+     "w": "birthday",
+     "s": 5.52,
+     "e": 5.94
+    },
+    {
+     "w": "message\".",
+     "s": 5.94,
+     "e": 6.52
+    }
+   ]
+  },
+  {
+   "text": "Before anything else, check which plan you're on in your ChatGPT settings. That decides everything.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 121.461,
+   "vo": 6.887,
+   "dur": 7.287,
+   "words": [
+    {
+     "w": "Before",
+     "s": 0.09,
+     "e": 0.46
+    },
+    {
+     "w": "anything",
+     "s": 0.46,
+     "e": 0.93
+    },
+    {
+     "w": "else,",
+     "s": 0.93,
+     "e": 1.39
+    },
+    {
+     "w": "check",
+     "s": 1.55,
+     "e": 1.89
+    },
+    {
+     "w": "which",
+     "s": 1.89,
+     "e": 2.1
+    },
+    {
+     "w": "plan",
+     "s": 2.1,
+     "e": 2.5
+    },
+    {
+     "w": "you're",
+     "s": 2.5,
+     "e": 2.72
+    },
+    {
+     "w": "on",
+     "s": 2.72,
+     "e": 2.94
+    },
+    {
+     "w": "in",
+     "s": 2.94,
+     "e": 3.1
+    },
+    {
+     "w": "your",
+     "s": 3.1,
+     "e": 3.26
+    },
+    {
+     "w": "ChatGPT",
+     "s": 3.26,
+     "e": 3.31
+    },
+    {
+     "w": "settings.",
+     "s": 3.26,
+     "e": 3.8
+    },
+    {
+     "w": "That",
+     "s": 3.8,
+     "e": 3.92
+    },
+    {
+     "w": "decides",
+     "s": 3.92,
+     "e": 4.8
+    },
+    {
+     "w": "everything.",
+     "s": 5.14,
+     "e": 5.67
+    }
+   ]
+  },
+  {
+   "text": "Here's how to switch it on. Step one: install the ChatGPT desktop app, on Windows or Mac, and update it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "Step by step",
+   "start": 128.749,
+   "vo": 8.471,
+   "dur": 8.871,
+   "words": [
+    {
+     "w": "Here's",
+     "s": 0.04,
+     "e": 0.37
+    },
+    {
+     "w": "how",
+     "s": 0.37,
+     "e": 0.5
+    },
+    {
+     "w": "to",
+     "s": 0.5,
+     "e": 0.57
+    },
+    {
+     "w": "switch",
+     "s": 0.57,
+     "e": 0.88
+    },
+    {
+     "w": "it",
+     "s": 0.88,
+     "e": 1.0
+    },
+    {
+     "w": "on.",
+     "s": 1.0,
+     "e": 1.31
+    },
+    {
+     "w": "Step",
+     "s": 1.87,
+     "e": 2.21
+    },
+    {
+     "w": "one:",
+     "s": 2.21,
+     "e": 2.51
+    },
+    {
+     "w": "install",
+     "s": 3.08,
+     "e": 3.63
+    },
+    {
+     "w": "the",
+     "s": 3.63,
+     "e": 3.72
+    },
+    {
+     "w": "ChatGPT",
+     "s": 3.72,
+     "e": 3.77
+    },
+    {
+     "w": "desktop",
+     "s": 3.72,
+     "e": 4.34
+    },
+    {
+     "w": "app,",
+     "s": 4.84,
+     "e": 4.98
+    },
+    {
+     "w": "on",
+     "s": 5.9,
+     "e": 6.18
+    },
+    {
+     "w": "Windows",
+     "s": 6.18,
+     "e": 6.66
+    },
+    {
+     "w": "or",
+     "s": 6.66,
+     "e": 6.88
+    },
+    {
+     "w": "Mac,",
+     "s": 6.88,
+     "e": 7.35
+    },
+    {
+     "w": "and",
+     "s": 7.49,
+     "e": 7.74
+    },
+    {
+     "w": "update",
+     "s": 7.74,
+     "e": 8.12
+    },
+    {
+     "w": "it.",
+     "s": 8.12,
+     "e": 8.37
+    }
+   ]
+  },
+  {
+   "text": "Step two: at the top, switch from Chat to Work. Then pick Astra from the model menu.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 137.619,
+   "vo": 7.425,
+   "dur": 7.825,
+   "words": [
+    {
+     "w": "Step",
+     "s": 0.06,
+     "e": 0.41
+    },
+    {
+     "w": "two:",
+     "s": 0.41,
+     "e": 0.89
+    },
+    {
+     "w": "at",
+     "s": 1.34,
+     "e": 1.5
+    },
+    {
+     "w": "the",
+     "s": 1.5,
+     "e": 1.61
+    },
+    {
+     "w": "top,",
+     "s": 1.61,
+     "e": 2.14
+    },
+    {
+     "w": "switch",
+     "s": 2.29,
+     "e": 2.69
+    },
+    {
+     "w": "from",
+     "s": 2.69,
+     "e": 2.95
+    },
+    {
+     "w": "Chat",
+     "s": 2.95,
+     "e": 3.47
+    },
+    {
+     "w": "to",
+     "s": 3.58,
+     "e": 3.72
+    },
+    {
+     "w": "Work.",
+     "s": 3.72,
+     "e": 4.28
+    },
+    {
+     "w": "Then",
+     "s": 4.79,
+     "e": 5.15
+    },
+    {
+     "w": "pick",
+     "s": 5.15,
+     "e": 5.43
+    },
+    {
+     "w": "Astra",
+     "s": 5.43,
+     "e": 6.12
+    },
+    {
+     "w": "from",
+     "s": 6.12,
+     "e": 6.37
+    },
+    {
+     "w": "the",
+     "s": 6.37,
+     "e": 6.43
+    },
+    {
+     "w": "model",
+     "s": 6.43,
+     "e": 6.79
+    },
+    {
+     "w": "menu.",
+     "s": 6.79,
+     "e": 7.19
+    }
+   ]
+  },
+  {
+   "text": "Step three, the exciting part. Open Plugins, find Computer Use, install it and turn it on.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 145.444,
+   "vo": 7.848,
+   "dur": 8.248,
+   "words": [
+    {
+     "w": "Step",
+     "s": 0.02,
+     "e": 0.31
+    },
+    {
+     "w": "three,",
+     "s": 0.31,
+     "e": 0.81
+    },
+    {
+     "w": "the",
+     "s": 1.18,
+     "e": 1.36
+    },
+    {
+     "w": "exciting",
+     "s": 1.36,
+     "e": 2.03
+    },
+    {
+     "w": "part.",
+     "s": 2.03,
+     "e": 2.44
+    },
+    {
+     "w": "Open",
+     "s": 2.98,
+     "e": 3.3
+    },
+    {
+     "w": "Plugins,",
+     "s": 3.3,
+     "e": 4.0
+    },
+    {
+     "w": "find",
+     "s": 4.21,
+     "e": 4.58
+    },
+    {
+     "w": "Computer",
+     "s": 4.58,
+     "e": 5.1
+    },
+    {
+     "w": "Use,",
+     "s": 5.1,
+     "e": 5.59
+    },
+    {
+     "w": "install",
+     "s": 5.95,
+     "e": 6.51
+    },
+    {
+     "w": "it",
+     "s": 6.51,
+     "e": 6.63
+    },
+    {
+     "w": "and",
+     "s": 6.76,
+     "e": 6.97
+    },
+    {
+     "w": "turn",
+     "s": 6.97,
+     "e": 7.24
+    },
+    {
+     "w": "it",
+     "s": 7.24,
+     "e": 7.34
+    },
+    {
+     "w": "on.",
+     "s": 7.34,
+     "e": 7.74
+    }
+   ]
+  },
+  {
+   "text": "On a Mac, allow Screen Recording and Accessibility. On Windows, keep the app you want it to use visible on screen.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 153.692,
+   "vo": 8.278,
+   "dur": 8.678,
+   "words": [
+    {
+     "w": "On",
+     "s": 0.07,
+     "e": 0.22
+    },
+    {
+     "w": "a",
+     "s": 0.22,
+     "e": 0.26
+    },
+    {
+     "w": "Mac,",
+     "s": 0.26,
+     "e": 0.87
+    },
+    {
+     "w": "allow",
+     "s": 1.0,
+     "e": 1.35
+    },
+    {
+     "w": "Screen",
+     "s": 1.35,
+     "e": 1.83
+    },
+    {
+     "w": "Recording",
+     "s": 1.83,
+     "e": 2.45
+    },
+    {
+     "w": "and",
+     "s": 2.45,
+     "e": 2.62
+    },
+    {
+     "w": "Accessibility.",
+     "s": 2.62,
+     "e": 3.56
+    },
+    {
+     "w": "On",
+     "s": 4.03,
+     "e": 4.27
+    },
+    {
+     "w": "Windows,",
+     "s": 4.27,
+     "e": 4.87
+    },
+    {
+     "w": "keep",
+     "s": 5.13,
+     "e": 5.42
+    },
+    {
+     "w": "the",
+     "s": 5.42,
+     "e": 5.61
+    },
+    {
+     "w": "app",
+     "s": 5.61,
+     "e": 5.8
+    },
+    {
+     "w": "you",
+     "s": 5.8,
+     "e": 5.94
+    },
+    {
+     "w": "want",
+     "s": 5.94,
+     "e": 6.15
+    },
+    {
+     "w": "it",
+     "s": 6.15,
+     "e": 6.23
+    },
+    {
+     "w": "to",
+     "s": 6.23,
+     "e": 6.35
+    },
+    {
+     "w": "use",
+     "s": 6.35,
+     "e": 6.78
+    },
+    {
+     "w": "visible",
+     "s": 6.78,
+     "e": 7.33
+    },
+    {
+     "w": "on",
+     "s": 7.33,
+     "e": 7.6
+    },
+    {
+     "w": "screen.",
+     "s": 7.6,
+     "e": 8.13
+    }
+   ]
+  },
+  {
+   "text": "Step four: start your request with \"at Computer\" for desktop apps, or \"at Chrome\" for jobs in your browser.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 162.371,
+   "vo": 8.563,
+   "dur": 8.963,
+   "words": [
+    {
+     "w": "Step",
+     "s": 0.03,
+     "e": 0.33
+    },
+    {
+     "w": "four:",
+     "s": 0.33,
+     "e": 0.92
+    },
+    {
+     "w": "start",
+     "s": 1.38,
+     "e": 1.78
+    },
+    {
+     "w": "your",
+     "s": 1.78,
+     "e": 1.91
+    },
+    {
+     "w": "request",
+     "s": 1.91,
+     "e": 2.47
+    },
+    {
+     "w": "with",
+     "s": 2.47,
+     "e": 2.83
+    },
+    {
+     "w": "\"at",
+     "s": 2.97,
+     "e": 3.22
+    },
+    {
+     "w": "Computer\"",
+     "s": 3.22,
+     "e": 4.02
+    },
+    {
+     "w": "for",
+     "s": 4.08,
+     "e": 4.24
+    },
+    {
+     "w": "desktop",
+     "s": 4.24,
+     "e": 4.83
+    },
+    {
+     "w": "apps,",
+     "s": 4.83,
+     "e": 5.28
+    },
+    {
+     "w": "or",
+     "s": 5.41,
+     "e": 5.96
+    },
+    {
+     "w": "\"at",
+     "s": 6.09,
+     "e": 6.3
+    },
+    {
+     "w": "Chrome\"",
+     "s": 6.3,
+     "e": 6.97
+    },
+    {
+     "w": "for",
+     "s": 7.09,
+     "e": 7.27
+    },
+    {
+     "w": "jobs",
+     "s": 7.27,
+     "e": 7.65
+    },
+    {
+     "w": "in",
+     "s": 7.65,
+     "e": 7.74
+    },
+    {
+     "w": "your",
+     "s": 7.74,
+     "e": 7.86
+    },
+    {
+     "w": "browser.",
+     "s": 7.86,
+     "e": 8.44
+    }
+   ]
+  },
+  {
+   "text": "Then say exactly what done looks like. For example: \"Open my sales sheet, chart the monthly totals, and save it as a PDF on my desktop.\"",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 171.334,
+   "vo": 10.21,
+   "dur": 10.61,
+   "words": [
+    {
+     "w": "Then",
+     "s": 0.04,
+     "e": 0.42
+    },
+    {
+     "w": "say",
+     "s": 0.42,
+     "e": 0.82
+    },
+    {
+     "w": "exactly",
+     "s": 0.82,
+     "e": 1.55
+    },
+    {
+     "w": "what",
+     "s": 1.55,
+     "e": 1.81
+    },
+    {
+     "w": "done",
+     "s": 1.81,
+     "e": 2.31
+    },
+    {
+     "w": "looks",
+     "s": 2.31,
+     "e": 2.63
+    },
+    {
+     "w": "like.",
+     "s": 2.63,
+     "e": 3.03
+    },
+    {
+     "w": "For",
+     "s": 3.51,
+     "e": 3.67
+    },
+    {
+     "w": "example:",
+     "s": 3.67,
+     "e": 4.19
+    },
+    {
+     "w": "\"Open",
+     "s": 4.79,
+     "e": 5.06
+    },
+    {
+     "w": "my",
+     "s": 5.06,
+     "e": 5.23
+    },
+    {
+     "w": "sales",
+     "s": 5.23,
+     "e": 5.62
+    },
+    {
+     "w": "sheet,",
+     "s": 5.62,
+     "e": 6.02
+    },
+    {
+     "w": "chart",
+     "s": 6.26,
+     "e": 6.58
+    },
+    {
+     "w": "the",
+     "s": 6.58,
+     "e": 6.65
+    },
+    {
+     "w": "monthly",
+     "s": 6.65,
+     "e": 7.03
+    },
+    {
+     "w": "totals,",
+     "s": 7.03,
+     "e": 7.66
+    },
+    {
+     "w": "and",
+     "s": 7.66,
+     "e": 7.92
+    },
+    {
+     "w": "save",
+     "s": 7.92,
+     "e": 8.22
+    },
+    {
+     "w": "it",
+     "s": 8.22,
+     "e": 8.3
+    },
+    {
+     "w": "as",
+     "s": 8.3,
+     "e": 8.47
+    },
+    {
+     "w": "a",
+     "s": 8.47,
+     "e": 8.52
+    },
+    {
+     "w": "PDF",
+     "s": 8.52,
+     "e": 9.16
+    },
+    {
+     "w": "on",
+     "s": 9.16,
+     "e": 9.25
+    },
+    {
+     "w": "my",
+     "s": 9.25,
+     "e": 9.39
+    },
+    {
+     "w": "desktop.\"",
+     "s": 9.39,
+     "e": 10.05
+    }
+   ]
+  },
+  {
+   "text": "Before it touches any app, ChatGPT asks your permission. And you can watch every click, and stop it any time.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 181.943,
+   "vo": 8.359,
+   "dur": 8.759,
+   "words": [
+    {
+     "w": "Before",
+     "s": 0.06,
+     "e": 0.47
+    },
+    {
+     "w": "it",
+     "s": 0.47,
+     "e": 0.56
+    },
+    {
+     "w": "touches",
+     "s": 0.56,
+     "e": 1.07
+    },
+    {
+     "w": "any",
+     "s": 1.07,
+     "e": 1.44
+    },
+    {
+     "w": "app,",
+     "s": 1.44,
+     "e": 1.82
+    },
+    {
+     "w": "ChatGPT",
+     "s": 1.82,
+     "e": 2.23
+    },
+    {
+     "w": "asks",
+     "s": 2.23,
+     "e": 2.49
+    },
+    {
+     "w": "your",
+     "s": 2.49,
+     "e": 2.62
+    },
+    {
+     "w": "permission.",
+     "s": 2.62,
+     "e": 3.11
+    },
+    {
+     "w": "And",
+     "s": 3.11,
+     "e": 3.57
+    },
+    {
+     "w": "you",
+     "s": 3.57,
+     "e": 3.75
+    },
+    {
+     "w": "can",
+     "s": 3.75,
+     "e": 4.0
+    },
+    {
+     "w": "watch",
+     "s": 4.0,
+     "e": 4.21
+    },
+    {
+     "w": "every",
+     "s": 4.89,
+     "e": 5.14
+    },
+    {
+     "w": "click,",
+     "s": 5.14,
+     "e": 5.68
+    },
+    {
+     "w": "and",
+     "s": 5.68,
+     "e": 5.94
+    },
+    {
+     "w": "stop",
+     "s": 5.94,
+     "e": 6.25
+    },
+    {
+     "w": "it",
+     "s": 6.25,
+     "e": 6.52
+    },
+    {
+     "w": "any",
+     "s": 6.71,
+     "e": 6.87
+    },
+    {
+     "w": "time.",
+     "s": 6.87,
+     "e": 7.24
+    }
+   ]
+  },
+  {
+   "text": "It can't see your screen or use an app unless you allow it. You stay in control.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 190.702,
+   "vo": 6.029,
+   "dur": 6.429,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.06,
+     "e": 0.2
+    },
+    {
+     "w": "can't",
+     "s": 0.2,
+     "e": 0.49
+    },
+    {
+     "w": "see",
+     "s": 0.49,
+     "e": 0.7
+    },
+    {
+     "w": "your",
+     "s": 0.7,
+     "e": 0.88
+    },
+    {
+     "w": "screen",
+     "s": 0.88,
+     "e": 1.46
+    },
+    {
+     "w": "or",
+     "s": 1.46,
+     "e": 1.8
+    },
+    {
+     "w": "use",
+     "s": 1.8,
+     "e": 2.1
+    },
+    {
+     "w": "an",
+     "s": 2.1,
+     "e": 2.21
+    },
+    {
+     "w": "app",
+     "s": 2.21,
+     "e": 2.69
+    },
+    {
+     "w": "unless",
+     "s": 2.69,
+     "e": 3.15
+    },
+    {
+     "w": "you",
+     "s": 3.15,
+     "e": 3.27
+    },
+    {
+     "w": "allow",
+     "s": 3.27,
+     "e": 3.65
+    },
+    {
+     "w": "it.",
+     "s": 3.65,
+     "e": 3.81
+    },
+    {
+     "w": "You",
+     "s": 4.31,
+     "e": 4.65
+    },
+    {
+     "w": "stay",
+     "s": 4.65,
+     "e": 5.01
+    },
+    {
+     "w": "in",
+     "s": 5.01,
+     "e": 5.14
+    },
+    {
+     "w": "control.",
+     "s": 5.14,
+     "e": 5.75
+    }
+   ]
+  },
+  {
+   "text": "One catch. A Work task started on the website or the phone app runs in the cloud. It can't reach the files on your own computer.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 197.132,
+   "vo": 8.99,
+   "dur": 9.39,
+   "words": [
+    {
+     "w": "One",
+     "s": 0.04,
+     "e": 0.33
+    },
+    {
+     "w": "catch.",
+     "s": 0.33,
+     "e": 0.85
+    },
+    {
+     "w": "A",
+     "s": 1.42,
+     "e": 1.47
+    },
+    {
+     "w": "Work",
+     "s": 1.47,
+     "e": 1.82
+    },
+    {
+     "w": "task",
+     "s": 1.82,
+     "e": 2.28
+    },
+    {
+     "w": "started",
+     "s": 2.28,
+     "e": 2.76
+    },
+    {
+     "w": "on",
+     "s": 2.76,
+     "e": 2.87
+    },
+    {
+     "w": "the",
+     "s": 2.87,
+     "e": 2.94
+    },
+    {
+     "w": "website",
+     "s": 2.94,
+     "e": 3.54
+    },
+    {
+     "w": "or",
+     "s": 3.54,
+     "e": 3.75
+    },
+    {
+     "w": "the",
+     "s": 3.75,
+     "e": 3.82
+    },
+    {
+     "w": "phone",
+     "s": 3.82,
+     "e": 4.19
+    },
+    {
+     "w": "app",
+     "s": 4.19,
+     "e": 4.46
+    },
+    {
+     "w": "runs",
+     "s": 4.56,
+     "e": 4.96
+    },
+    {
+     "w": "in",
+     "s": 4.96,
+     "e": 5.04
+    },
+    {
+     "w": "the",
+     "s": 5.04,
+     "e": 5.11
+    },
+    {
+     "w": "cloud.",
+     "s": 5.11,
+     "e": 5.73
+    },
+    {
+     "w": "It",
+     "s": 6.2,
+     "e": 6.35
+    },
+    {
+     "w": "can't",
+     "s": 6.35,
+     "e": 6.81
+    },
+    {
+     "w": "reach",
+     "s": 6.81,
+     "e": 7.06
+    },
+    {
+     "w": "the",
+     "s": 7.06,
+     "e": 7.15
+    },
+    {
+     "w": "files",
+     "s": 7.15,
+     "e": 7.67
+    },
+    {
+     "w": "on",
+     "s": 7.67,
+     "e": 7.76
+    },
+    {
+     "w": "your",
+     "s": 7.76,
+     "e": 7.94
+    },
+    {
+     "w": "own",
+     "s": 7.94,
+     "e": 8.16
+    },
+    {
+     "w": "computer.",
+     "s": 8.16,
+     "e": 8.89
+    }
+   ]
+  },
+  {
+   "text": "So Max tried again, properly this time. And people are using Astra for jobs like these.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "What people use it for",
+   "start": 206.522,
+   "vo": 6.375,
+   "dur": 6.775,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.07,
+     "e": 0.39
+    },
+    {
+     "w": "Max",
+     "s": 0.39,
+     "e": 0.73
+    },
+    {
+     "w": "tried",
+     "s": 0.73,
+     "e": 1.03
+    },
+    {
+     "w": "again,",
+     "s": 1.03,
+     "e": 1.47
+    },
+    {
+     "w": "properly",
+     "s": 1.86,
+     "e": 2.42
+    },
+    {
+     "w": "this",
+     "s": 2.42,
+     "e": 2.63
+    },
+    {
+     "w": "time.",
+     "s": 2.63,
+     "e": 2.99
+    },
+    {
+     "w": "And",
+     "s": 3.53,
+     "e": 3.7
+    },
+    {
+     "w": "people",
+     "s": 3.7,
+     "e": 4.02
+    },
+    {
+     "w": "are",
+     "s": 4.02,
+     "e": 4.08
+    },
+    {
+     "w": "using",
+     "s": 4.08,
+     "e": 4.5
+    },
+    {
+     "w": "Astra",
+     "s": 4.5,
+     "e": 5.0
+    },
+    {
+     "w": "for",
+     "s": 5.0,
+     "e": 5.17
+    },
+    {
+     "w": "jobs",
+     "s": 5.17,
+     "e": 5.54
+    },
+    {
+     "w": "like",
+     "s": 5.54,
+     "e": 5.76
+    },
+    {
+     "w": "these.",
+     "s": 5.76,
+     "e": 6.17
+    }
+   ]
+  },
+  {
+   "text": "A folder of receipts, turned into one tidy expense sheet.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 213.297,
+   "vo": 4.305,
+   "dur": 4.705,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.09,
+     "e": 0.15
+    },
+    {
+     "w": "folder",
+     "s": 0.15,
+     "e": 0.66
+    },
+    {
+     "w": "of",
+     "s": 0.66,
+     "e": 0.8
+    },
+    {
+     "w": "receipts,",
+     "s": 0.8,
+     "e": 1.5
+    },
+    {
+     "w": "turned",
+     "s": 1.67,
+     "e": 2.0
+    },
+    {
+     "w": "into",
+     "s": 2.0,
+     "e": 2.28
+    },
+    {
+     "w": "one",
+     "s": 2.28,
+     "e": 2.74
+    },
+    {
+     "w": "tidy",
+     "s": 2.74,
+     "e": 3.24
+    },
+    {
+     "w": "expense",
+     "s": 3.24,
+     "e": 3.74
+    },
+    {
+     "w": "sheet.",
+     "s": 3.74,
+     "e": 4.14
+    }
+   ]
+  },
+  {
+   "text": "A simple website built from a sketch, then opened in the browser to check it really works.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 218.002,
+   "vo": 5.864,
+   "dur": 6.264,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.08,
+     "e": 0.14
+    },
+    {
+     "w": "simple",
+     "s": 0.14,
+     "e": 0.61
+    },
+    {
+     "w": "website",
+     "s": 0.61,
+     "e": 1.14
+    },
+    {
+     "w": "built",
+     "s": 1.14,
+     "e": 1.45
+    },
+    {
+     "w": "from",
+     "s": 1.45,
+     "e": 1.67
+    },
+    {
+     "w": "a",
+     "s": 1.67,
+     "e": 1.7
+    },
+    {
+     "w": "sketch,",
+     "s": 1.7,
+     "e": 2.33
+    },
+    {
+     "w": "then",
+     "s": 2.59,
+     "e": 2.97
+    },
+    {
+     "w": "opened",
+     "s": 2.97,
+     "e": 3.38
+    },
+    {
+     "w": "in",
+     "s": 3.38,
+     "e": 3.47
+    },
+    {
+     "w": "the",
+     "s": 3.47,
+     "e": 3.54
+    },
+    {
+     "w": "browser",
+     "s": 3.54,
+     "e": 4.07
+    },
+    {
+     "w": "to",
+     "s": 4.07,
+     "e": 4.22
+    },
+    {
+     "w": "check",
+     "s": 4.22,
+     "e": 4.5
+    },
+    {
+     "w": "it",
+     "s": 4.5,
+     "e": 4.61
+    },
+    {
+     "w": "really",
+     "s": 4.61,
+     "e": 5.04
+    },
+    {
+     "w": "works.",
+     "s": 5.04,
+     "e": 5.61
+    }
+   ]
+  },
+  {
+   "text": "Even 3D apps like Blender. Researchers built a whole test, called BlenderWorld, to measure how well AI agents create 3D scenes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 224.267,
+   "vo": 9.666,
+   "dur": 10.066,
+   "words": [
+    {
+     "w": "Even",
+     "s": 0.04,
+     "e": 0.4
+    },
+    {
+     "w": "3D",
+     "s": 0.4,
+     "e": 0.9
+    },
+    {
+     "w": "apps",
+     "s": 0.9,
+     "e": 1.25
+    },
+    {
+     "w": "like",
+     "s": 1.25,
+     "e": 1.42
+    },
+    {
+     "w": "Blender.",
+     "s": 1.42,
+     "e": 2.11
+    },
+    {
+     "w": "Researchers",
+     "s": 2.66,
+     "e": 3.24
+    },
+    {
+     "w": "built",
+     "s": 3.24,
+     "e": 3.5
+    },
+    {
+     "w": "a",
+     "s": 3.5,
+     "e": 3.54
+    },
+    {
+     "w": "whole",
+     "s": 3.54,
+     "e": 3.96
+    },
+    {
+     "w": "test,",
+     "s": 3.96,
+     "e": 4.57
+    },
+    {
+     "w": "called",
+     "s": 4.57,
+     "e": 5.26
+    },
+    {
+     "w": "BlenderWorld,",
+     "s": 5.26,
+     "e": 5.31
+    },
+    {
+     "w": "to",
+     "s": 5.26,
+     "e": 5.72
+    },
+    {
+     "w": "measure",
+     "s": 6.14,
+     "e": 6.51
+    },
+    {
+     "w": "how",
+     "s": 6.51,
+     "e": 6.77
+    },
+    {
+     "w": "well",
+     "s": 6.77,
+     "e": 7.09
+    },
+    {
+     "w": "AI",
+     "s": 7.09,
+     "e": 7.48
+    },
+    {
+     "w": "agents",
+     "s": 7.48,
+     "e": 8.0
+    },
+    {
+     "w": "create",
+     "s": 8.0,
+     "e": 8.59
+    },
+    {
+     "w": "3D",
+     "s": 8.59,
+     "e": 8.86
+    },
+    {
+     "w": "scenes.",
+     "s": 8.86,
+     "e": 9.55
+    }
+   ]
+  },
+  {
+   "text": "And for coders, pick Astra inside Codex, and it can work through a whole project, run the tests and fix what breaks.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 234.333,
+   "vo": 8.106,
+   "dur": 8.506,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.07,
+     "e": 0.23
+    },
+    {
+     "w": "for",
+     "s": 0.23,
+     "e": 0.36
+    },
+    {
+     "w": "coders,",
+     "s": 0.36,
+     "e": 0.41
+    },
+    {
+     "w": "pick",
+     "s": 0.36,
+     "e": 0.53
+    },
+    {
+     "w": "Astra",
+     "s": 0.53,
+     "e": 0.8
+    },
+    {
+     "w": "inside",
+     "s": 0.8,
+     "e": 1.09
+    },
+    {
+     "w": "Codex,",
+     "s": 1.09,
+     "e": 1.5
+    },
+    {
+     "w": "and",
+     "s": 1.5,
+     "e": 1.86
+    },
+    {
+     "w": "it",
+     "s": 1.86,
+     "e": 1.92
+    },
+    {
+     "w": "can",
+     "s": 1.92,
+     "e": 2.18
+    },
+    {
+     "w": "work",
+     "s": 2.18,
+     "e": 2.34
+    },
+    {
+     "w": "through",
+     "s": 2.34,
+     "e": 2.47
+    },
+    {
+     "w": "a",
+     "s": 2.47,
+     "e": 2.57
+    },
+    {
+     "w": "whole",
+     "s": 2.69,
+     "e": 2.83
+    },
+    {
+     "w": "project,",
+     "s": 2.83,
+     "e": 3.3
+    },
+    {
+     "w": "run",
+     "s": 4.12,
+     "e": 4.4
+    },
+    {
+     "w": "the",
+     "s": 4.97,
+     "e": 5.04
+    },
+    {
+     "w": "tests",
+     "s": 5.04,
+     "e": 5.4
+    },
+    {
+     "w": "and",
+     "s": 5.78,
+     "e": 6.05
+    },
+    {
+     "w": "fix",
+     "s": 6.05,
+     "e": 6.58
+    },
+    {
+     "w": "what",
+     "s": 6.68,
+     "e": 6.92
+    },
+    {
+     "w": "breaks.",
+     "s": 6.92,
+     "e": 7.17
+    }
+   ]
+  },
+  {
+   "text": "It can also create real files, like documents, spreadsheets and presentations, not just text in a chat window.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 242.839,
+   "vo": 7.936,
+   "dur": 8.336,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.05,
+     "e": 0.22
+    },
+    {
+     "w": "can",
+     "s": 0.22,
+     "e": 0.36
+    },
+    {
+     "w": "also",
+     "s": 0.36,
+     "e": 0.76
+    },
+    {
+     "w": "create",
+     "s": 0.76,
+     "e": 1.2
+    },
+    {
+     "w": "real",
+     "s": 1.2,
+     "e": 1.63
+    },
+    {
+     "w": "files,",
+     "s": 1.63,
+     "e": 2.3
+    },
+    {
+     "w": "like",
+     "s": 2.38,
+     "e": 2.67
+    },
+    {
+     "w": "documents,",
+     "s": 2.67,
+     "e": 3.48
+    },
+    {
+     "w": "spreadsheets",
+     "s": 3.48,
+     "e": 4.29
+    },
+    {
+     "w": "and",
+     "s": 4.29,
+     "e": 4.43
+    },
+    {
+     "w": "presentations,",
+     "s": 4.43,
+     "e": 5.39
+    },
+    {
+     "w": "not",
+     "s": 5.78,
+     "e": 6.0
+    },
+    {
+     "w": "just",
+     "s": 6.0,
+     "e": 6.3
+    },
+    {
+     "w": "text",
+     "s": 6.3,
+     "e": 6.79
+    },
+    {
+     "w": "in",
+     "s": 6.79,
+     "e": 6.91
+    },
+    {
+     "w": "a",
+     "s": 6.91,
+     "e": 6.96
+    },
+    {
+     "w": "chat",
+     "s": 6.96,
+     "e": 7.27
+    },
+    {
+     "w": "window.",
+     "s": 7.27,
+     "e": 7.74
+    }
+   ]
+  },
+  {
+   "text": "And through the API, it can read about a million tokens at once. That's a few thick books in one go.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 251.175,
+   "vo": 7.167,
+   "dur": 7.567,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.09,
+     "e": 0.25
+    },
+    {
+     "w": "through",
+     "s": 0.25,
+     "e": 0.55
+    },
+    {
+     "w": "the",
+     "s": 0.55,
+     "e": 0.74
+    },
+    {
+     "w": "API,",
+     "s": 0.74,
+     "e": 1.55
+    },
+    {
+     "w": "it",
+     "s": 1.66,
+     "e": 1.76
+    },
+    {
+     "w": "can",
+     "s": 1.76,
+     "e": 1.9
+    },
+    {
+     "w": "read",
+     "s": 1.9,
+     "e": 2.15
+    },
+    {
+     "w": "about",
+     "s": 2.15,
+     "e": 2.4
+    },
+    {
+     "w": "a",
+     "s": 2.4,
+     "e": 2.43
+    },
+    {
+     "w": "million",
+     "s": 2.43,
+     "e": 3.11
+    },
+    {
+     "w": "tokens",
+     "s": 3.11,
+     "e": 3.6
+    },
+    {
+     "w": "at",
+     "s": 3.6,
+     "e": 3.66
+    },
+    {
+     "w": "once.",
+     "s": 3.66,
+     "e": 4.34
+    },
+    {
+     "w": "That's",
+     "s": 4.76,
+     "e": 4.96
+    },
+    {
+     "w": "a",
+     "s": 4.96,
+     "e": 5.03
+    },
+    {
+     "w": "few",
+     "s": 5.03,
+     "e": 5.4
+    },
+    {
+     "w": "thick",
+     "s": 5.4,
+     "e": 5.72
+    },
+    {
+     "w": "books",
+     "s": 5.72,
+     "e": 6.14
+    },
+    {
+     "w": "in",
+     "s": 6.14,
+     "e": 6.31
+    },
+    {
+     "w": "one",
+     "s": 6.31,
+     "e": 6.58
+    },
+    {
+     "w": "go.",
+     "s": 6.58,
+     "e": 7.02
+    }
+   ]
+  },
+  {
+   "text": "So, how good is it? On a computer-use test called OSWorld two point oh, OpenAI reports Astra finished about seventy-three percent of tasks.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "How good is it?",
+   "start": 258.741,
+   "vo": 10.716,
+   "dur": 11.116,
+   "words": [
+    {
+     "w": "So,",
+     "s": 0.01,
+     "e": 0.59
+    },
+    {
+     "w": "how",
+     "s": 0.72,
+     "e": 0.97
+    },
+    {
+     "w": "good",
+     "s": 0.97,
+     "e": 1.22
+    },
+    {
+     "w": "is",
+     "s": 1.22,
+     "e": 1.41
+    },
+    {
+     "w": "it?",
+     "s": 1.41,
+     "e": 1.57
+    },
+    {
+     "w": "On",
+     "s": 2.2,
+     "e": 2.9
+    },
+    {
+     "w": "a",
+     "s": 2.9,
+     "e": 3.09
+    },
+    {
+     "w": "computer-use",
+     "s": 3.09,
+     "e": 3.14
+    },
+    {
+     "w": "test",
+     "s": 3.09,
+     "e": 3.58
+    },
+    {
+     "w": "called",
+     "s": 3.58,
+     "e": 3.91
+    },
+    {
+     "w": "OSWorld",
+     "s": 3.91,
+     "e": 3.96
+    },
+    {
+     "w": "two",
+     "s": 3.91,
+     "e": 3.97
+    },
+    {
+     "w": "point",
+     "s": 3.97,
+     "e": 4.45
+    },
+    {
+     "w": "oh,",
+     "s": 4.45,
+     "e": 4.48
+    },
+    {
+     "w": "OpenAI",
+     "s": 4.48,
+     "e": 4.53
+    },
+    {
+     "w": "reports",
+     "s": 4.48,
+     "e": 5.31
+    },
+    {
+     "w": "Astra",
+     "s": 5.31,
+     "e": 5.62
+    },
+    {
+     "w": "finished",
+     "s": 6.22,
+     "e": 6.65
+    },
+    {
+     "w": "about",
+     "s": 6.65,
+     "e": 6.87
+    },
+    {
+     "w": "seventy-three",
+     "s": 6.87,
+     "e": 6.92
+    },
+    {
+     "w": "percent",
+     "s": 6.87,
+     "e": 7.64
+    },
+    {
+     "w": "of",
+     "s": 7.64,
+     "e": 7.84
+    },
+    {
+     "w": "tasks.",
+     "s": 7.84,
+     "e": 8.74
+    }
+   ]
+  },
+  {
+   "text": "The previous top model managed about sixty-six percent, and took roughly seventy-five minutes per task, against about forty for Astra.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 269.857,
+   "vo": 9.072,
+   "dur": 9.472,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.05,
+     "e": 0.17
+    },
+    {
+     "w": "previous",
+     "s": 0.17,
+     "e": 0.72
+    },
+    {
+     "w": "top",
+     "s": 0.72,
+     "e": 0.98
+    },
+    {
+     "w": "model",
+     "s": 0.98,
+     "e": 1.37
+    },
+    {
+     "w": "managed",
+     "s": 1.37,
+     "e": 1.82
+    },
+    {
+     "w": "about",
+     "s": 1.82,
+     "e": 2.09
+    },
+    {
+     "w": "sixty-six",
+     "s": 2.09,
+     "e": 2.14
+    },
+    {
+     "w": "percent,",
+     "s": 2.09,
+     "e": 2.81
+    },
+    {
+     "w": "and",
+     "s": 2.81,
+     "e": 2.92
+    },
+    {
+     "w": "took",
+     "s": 2.92,
+     "e": 3.06
+    },
+    {
+     "w": "roughly",
+     "s": 3.06,
+     "e": 3.33
+    },
+    {
+     "w": "seventy-five",
+     "s": 3.33,
+     "e": 3.79
+    },
+    {
+     "w": "minutes",
+     "s": 3.79,
+     "e": 4.06
+    },
+    {
+     "w": "per",
+     "s": 4.06,
+     "e": 4.15
+    },
+    {
+     "w": "task,",
+     "s": 4.15,
+     "e": 4.47
+    },
+    {
+     "w": "against",
+     "s": 4.47,
+     "e": 4.8
+    },
+    {
+     "w": "about",
+     "s": 4.8,
+     "e": 5.11
+    },
+    {
+     "w": "forty",
+     "s": 5.11,
+     "e": 5.82
+    },
+    {
+     "w": "for",
+     "s": 5.82,
+     "e": 6.0
+    },
+    {
+     "w": "Astra.",
+     "s": 6.0,
+     "e": 6.54
+    }
+   ]
+  },
+  {
+   "text": "That's OpenAI's own testing, so treat it as a strong claim, not a guarantee.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 279.329,
+   "vo": 5.95,
+   "dur": 6.35,
+   "words": [
+    {
+     "w": "That's",
+     "s": 0.05,
+     "e": 0.34
+    },
+    {
+     "w": "OpenAI's",
+     "s": 0.34,
+     "e": 0.39
+    },
+    {
+     "w": "own",
+     "s": 0.34,
+     "e": 0.55
+    },
+    {
+     "w": "testing,",
+     "s": 0.55,
+     "e": 0.84
+    },
+    {
+     "w": "so",
+     "s": 1.06,
+     "e": 1.47
+    },
+    {
+     "w": "treat",
+     "s": 1.52,
+     "e": 1.95
+    },
+    {
+     "w": "it",
+     "s": 1.95,
+     "e": 2.08
+    },
+    {
+     "w": "as",
+     "s": 2.35,
+     "e": 2.51
+    },
+    {
+     "w": "a",
+     "s": 2.51,
+     "e": 2.76
+    },
+    {
+     "w": "strong",
+     "s": 2.76,
+     "e": 3.06
+    },
+    {
+     "w": "claim,",
+     "s": 3.06,
+     "e": 3.18
+    },
+    {
+     "w": "not",
+     "s": 3.18,
+     "e": 3.62
+    },
+    {
+     "w": "a",
+     "s": 3.62,
+     "e": 3.65
+    },
+    {
+     "w": "guarantee.",
+     "s": 3.65,
+     "e": 4.37
+    }
+   ]
+  },
+  {
+   "text": "OpenAI's launch chart even ranks Astra above Anthropic's Claude Fable 5.2. Again, that's OpenAI's own chart.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 285.679,
+   "vo": 9.24,
+   "dur": 9.64,
+   "words": [
+    {
+     "w": "OpenAI's",
+     "s": 0.0,
+     "e": 0.65
+    },
+    {
+     "w": "launch",
+     "s": 0.65,
+     "e": 1.14
+    },
+    {
+     "w": "chart",
+     "s": 1.14,
+     "e": 1.47
+    },
+    {
+     "w": "even",
+     "s": 1.47,
+     "e": 1.85
+    },
+    {
+     "w": "ranks",
+     "s": 1.85,
+     "e": 2.2
+    },
+    {
+     "w": "Astra",
+     "s": 2.2,
+     "e": 2.8
+    },
+    {
+     "w": "above",
+     "s": 2.8,
+     "e": 3.15
+    },
+    {
+     "w": "Anthropic's",
+     "s": 3.15,
+     "e": 3.34
+    },
+    {
+     "w": "Claude",
+     "s": 3.34,
+     "e": 3.65
+    },
+    {
+     "w": "Fable",
+     "s": 3.65,
+     "e": 3.83
+    },
+    {
+     "w": "5.2.",
+     "s": 3.99,
+     "e": 5.32
+    },
+    {
+     "w": "Again,",
+     "s": 5.32,
+     "e": 5.84
+    },
+    {
+     "w": "that's",
+     "s": 6.7,
+     "e": 7.35
+    },
+    {
+     "w": "OpenAI's",
+     "s": 7.35,
+     "e": 7.4
+    },
+    {
+     "w": "own",
+     "s": 7.35,
+     "e": 7.73
+    },
+    {
+     "w": "chart.",
+     "s": 8.59,
+     "e": 9.13
+    }
+   ]
+  },
+  {
+   "text": "And it isn't instant. Big tasks can take many minutes. It's for jobs you'd hand to an assistant, not quick questions.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 295.319,
+   "vo": 8.73,
+   "dur": 9.13,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.08,
+     "e": 0.45
+    },
+    {
+     "w": "it",
+     "s": 0.45,
+     "e": 0.59
+    },
+    {
+     "w": "isn't",
+     "s": 0.59,
+     "e": 1.07
+    },
+    {
+     "w": "instant.",
+     "s": 1.07,
+     "e": 1.74
+    },
+    {
+     "w": "Big",
+     "s": 2.18,
+     "e": 2.52
+    },
+    {
+     "w": "tasks",
+     "s": 2.52,
+     "e": 3.06
+    },
+    {
+     "w": "can",
+     "s": 3.06,
+     "e": 3.27
+    },
+    {
+     "w": "take",
+     "s": 3.27,
+     "e": 3.49
+    },
+    {
+     "w": "many",
+     "s": 3.49,
+     "e": 3.94
+    },
+    {
+     "w": "minutes.",
+     "s": 3.94,
+     "e": 4.53
+    },
+    {
+     "w": "It's",
+     "s": 5.0,
+     "e": 5.18
+    },
+    {
+     "w": "for",
+     "s": 5.18,
+     "e": 5.32
+    },
+    {
+     "w": "jobs",
+     "s": 5.32,
+     "e": 5.71
+    },
+    {
+     "w": "you'd",
+     "s": 5.71,
+     "e": 5.85
+    },
+    {
+     "w": "hand",
+     "s": 5.85,
+     "e": 6.15
+    },
+    {
+     "w": "to",
+     "s": 6.15,
+     "e": 6.3
+    },
+    {
+     "w": "an",
+     "s": 6.3,
+     "e": 6.38
+    },
+    {
+     "w": "assistant,",
+     "s": 6.38,
+     "e": 7.2
+    },
+    {
+     "w": "not",
+     "s": 7.24,
+     "e": 7.52
+    },
+    {
+     "w": "quick",
+     "s": 7.52,
+     "e": 7.85
+    },
+    {
+     "w": "questions.",
+     "s": 7.85,
+     "e": 8.61
+    }
+   ]
+  },
+  {
+   "text": "Quick game. Astra or Sol? I give you a job, you pick the model.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "Astra or Sol?",
+   "start": 304.449,
+   "vo": 5.152,
+   "dur": 5.552,
+   "words": [
+    {
+     "w": "Quick",
+     "s": 0.09,
+     "e": 0.3
+    },
+    {
+     "w": "game.",
+     "s": 0.3,
+     "e": 0.73
+    },
+    {
+     "w": "Astra",
+     "s": 1.07,
+     "e": 1.64
+    },
+    {
+     "w": "or",
+     "s": 1.64,
+     "e": 1.87
+    },
+    {
+     "w": "Sol?",
+     "s": 1.87,
+     "e": 2.39
+    },
+    {
+     "w": "I",
+     "s": 2.81,
+     "e": 2.93
+    },
+    {
+     "w": "give",
+     "s": 2.93,
+     "e": 3.13
+    },
+    {
+     "w": "you",
+     "s": 3.13,
+     "e": 3.27
+    },
+    {
+     "w": "a",
+     "s": 3.27,
+     "e": 3.32
+    },
+    {
+     "w": "job,",
+     "s": 3.32,
+     "e": 3.81
+    },
+    {
+     "w": "you",
+     "s": 4.05,
+     "e": 4.28
+    },
+    {
+     "w": "pick",
+     "s": 4.28,
+     "e": 4.47
+    },
+    {
+     "w": "the",
+     "s": 4.47,
+     "e": 4.55
+    },
+    {
+     "w": "model.",
+     "s": 4.55,
+     "e": 5.03
+    }
+   ]
+  },
+  {
+   "text": "Summarise a long email. Sol. Fast and cheap is perfect.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 310.002,
+   "vo": 5.493,
+   "dur": 5.893,
+   "words": [
+    {
+     "w": "Summarise",
+     "s": 0.0,
+     "e": 0.16
+    },
+    {
+     "w": "a",
+     "s": 0.16,
+     "e": 0.79
+    },
+    {
+     "w": "long",
+     "s": 0.79,
+     "e": 1.32
+    },
+    {
+     "w": "email.",
+     "s": 1.32,
+     "e": 2.0
+    },
+    {
+     "w": "Sol.",
+     "s": 2.41,
+     "e": 2.91
+    },
+    {
+     "w": "Fast",
+     "s": 3.35,
+     "e": 3.77
+    },
+    {
+     "w": "and",
+     "s": 3.77,
+     "e": 3.9
+    },
+    {
+     "w": "cheap",
+     "s": 3.9,
+     "e": 4.25
+    },
+    {
+     "w": "is",
+     "s": 4.25,
+     "e": 4.56
+    },
+    {
+     "w": "perfect.",
+     "s": 4.56,
+     "e": 5.29
+    }
+   ]
+  },
+  {
+   "text": "Go through fifty invoices on your computer and fill a spreadsheet. Astra. That's real computer work.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 315.895,
+   "vo": 7.342,
+   "dur": 7.742,
+   "words": [
+    {
+     "w": "Go",
+     "s": 0.03,
+     "e": 0.26
+    },
+    {
+     "w": "through",
+     "s": 0.26,
+     "e": 0.5
+    },
+    {
+     "w": "fifty",
+     "s": 0.5,
+     "e": 1.06
+    },
+    {
+     "w": "invoices",
+     "s": 1.06,
+     "e": 1.7
+    },
+    {
+     "w": "on",
+     "s": 1.7,
+     "e": 1.82
+    },
+    {
+     "w": "your",
+     "s": 1.82,
+     "e": 1.93
+    },
+    {
+     "w": "computer",
+     "s": 1.93,
+     "e": 2.6
+    },
+    {
+     "w": "and",
+     "s": 2.6,
+     "e": 2.77
+    },
+    {
+     "w": "fill",
+     "s": 2.77,
+     "e": 3.0
+    },
+    {
+     "w": "a",
+     "s": 3.0,
+     "e": 3.03
+    },
+    {
+     "w": "spreadsheet.",
+     "s": 3.03,
+     "e": 3.7
+    },
+    {
+     "w": "Astra.",
+     "s": 4.19,
+     "e": 4.78
+    },
+    {
+     "w": "That's",
+     "s": 5.24,
+     "e": 5.69
+    },
+    {
+     "w": "real",
+     "s": 5.69,
+     "e": 6.27
+    },
+    {
+     "w": "computer",
+     "s": 6.27,
+     "e": 6.74
+    },
+    {
+     "w": "work.",
+     "s": 6.74,
+     "e": 7.17
+    }
+   ]
+  },
+  {
+   "text": "Fix a bug across a big codebase. Astra, or Sol on a budget. OpenAI says Sol nearly matches Astra on ready-to-merge code, at about a fifth of the cost.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 323.637,
+   "vo": 13.163,
+   "dur": 13.563,
+   "words": [
+    {
+     "w": "Fix",
+     "s": 0.03,
+     "e": 0.38
+    },
+    {
+     "w": "a",
+     "s": 0.38,
+     "e": 0.46
+    },
+    {
+     "w": "bug",
+     "s": 0.46,
+     "e": 0.88
+    },
+    {
+     "w": "across",
+     "s": 0.88,
+     "e": 1.28
+    },
+    {
+     "w": "a",
+     "s": 1.28,
+     "e": 1.33
+    },
+    {
+     "w": "big",
+     "s": 1.33,
+     "e": 1.77
+    },
+    {
+     "w": "codebase.",
+     "s": 1.77,
+     "e": 2.55
+    },
+    {
+     "w": "Astra,",
+     "s": 3.2,
+     "e": 3.67
+    },
+    {
+     "w": "or",
+     "s": 4.12,
+     "e": 4.57
+    },
+    {
+     "w": "Sol",
+     "s": 4.68,
+     "e": 5.24
+    },
+    {
+     "w": "on",
+     "s": 5.24,
+     "e": 5.39
+    },
+    {
+     "w": "a",
+     "s": 5.39,
+     "e": 5.43
+    },
+    {
+     "w": "budget.",
+     "s": 5.43,
+     "e": 5.83
+    },
+    {
+     "w": "OpenAI",
+     "s": 5.83,
+     "e": 7.11
+    },
+    {
+     "w": "says",
+     "s": 7.11,
+     "e": 7.47
+    },
+    {
+     "w": "Sol",
+     "s": 7.47,
+     "e": 7.95
+    },
+    {
+     "w": "nearly",
+     "s": 7.95,
+     "e": 8.47
+    },
+    {
+     "w": "matches",
+     "s": 8.47,
+     "e": 8.94
+    },
+    {
+     "w": "Astra",
+     "s": 8.94,
+     "e": 9.53
+    },
+    {
+     "w": "on",
+     "s": 9.53,
+     "e": 9.86
+    },
+    {
+     "w": "ready-to-merge",
+     "s": 9.86,
+     "e": 9.91
+    },
+    {
+     "w": "code,",
+     "s": 9.86,
+     "e": 10.16
+    },
+    {
+     "w": "at",
+     "s": 10.16,
+     "e": 10.23
+    },
+    {
+     "w": "about",
+     "s": 10.65,
+     "e": 10.97
+    },
+    {
+     "w": "a",
+     "s": 11.23,
+     "e": 11.64
+    },
+    {
+     "w": "fifth",
+     "s": 11.64,
+     "e": 12.17
+    },
+    {
+     "w": "of",
+     "s": 12.17,
+     "e": 12.3
+    },
+    {
+     "w": "the",
+     "s": 12.3,
+     "e": 12.37
+    },
+    {
+     "w": "cost.",
+     "s": 12.37,
+     "e": 12.96
+    }
+   ]
+  },
+  {
+   "text": "A birthday message for your friend. Please. Use Sol. Save Astra for the hard stuff.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 337.199,
+   "vo": 6.458,
+   "dur": 6.858,
+   "words": [
+    {
+     "w": "A",
+     "s": 0.04,
+     "e": 0.11
+    },
+    {
+     "w": "birthday",
+     "s": 0.11,
+     "e": 0.64
+    },
+    {
+     "w": "message",
+     "s": 0.64,
+     "e": 1.09
+    },
+    {
+     "w": "for",
+     "s": 1.09,
+     "e": 1.24
+    },
+    {
+     "w": "your",
+     "s": 1.24,
+     "e": 1.38
+    },
+    {
+     "w": "friend.",
+     "s": 1.38,
+     "e": 1.89
+    },
+    {
+     "w": "Please.",
+     "s": 2.28,
+     "e": 2.85
+    },
+    {
+     "w": "Use",
+     "s": 3.19,
+     "e": 3.45
+    },
+    {
+     "w": "Sol.",
+     "s": 3.45,
+     "e": 3.95
+    },
+    {
+     "w": "Save",
+     "s": 4.29,
+     "e": 4.64
+    },
+    {
+     "w": "Astra",
+     "s": 4.64,
+     "e": 5.16
+    },
+    {
+     "w": "for",
+     "s": 5.16,
+     "e": 5.33
+    },
+    {
+     "w": "the",
+     "s": 5.33,
+     "e": 5.41
+    },
+    {
+     "w": "hard",
+     "s": 5.41,
+     "e": 5.76
+    },
+    {
+     "w": "stuff.",
+     "s": 5.76,
+     "e": 6.28
+    }
+   ]
+  },
+  {
+   "text": "Now, the money question for India. ChatGPT Go costs three hundred and ninety-nine rupees a month, but it doesn't include Astra.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "Price in India",
+   "start": 344.057,
+   "vo": 9.671,
+   "dur": 10.071,
+   "words": [
+    {
+     "w": "Now,",
+     "s": 0.02,
+     "e": 0.55
+    },
+    {
+     "w": "the",
+     "s": 0.65,
+     "e": 0.79
+    },
+    {
+     "w": "money",
+     "s": 0.79,
+     "e": 1.19
+    },
+    {
+     "w": "question",
+     "s": 1.19,
+     "e": 1.71
+    },
+    {
+     "w": "for",
+     "s": 1.71,
+     "e": 1.91
+    },
+    {
+     "w": "India.",
+     "s": 1.91,
+     "e": 2.42
+    },
+    {
+     "w": "ChatGPT",
+     "s": 2.42,
+     "e": 3.99
+    },
+    {
+     "w": "Go",
+     "s": 3.99,
+     "e": 4.43
+    },
+    {
+     "w": "costs",
+     "s": 4.43,
+     "e": 4.99
+    },
+    {
+     "w": "three",
+     "s": 4.99,
+     "e": 5.26
+    },
+    {
+     "w": "hundred",
+     "s": 5.26,
+     "e": 5.65
+    },
+    {
+     "w": "and",
+     "s": 5.65,
+     "e": 6.35
+    },
+    {
+     "w": "ninety-nine",
+     "s": 6.35,
+     "e": 6.4
+    },
+    {
+     "w": "rupees",
+     "s": 6.35,
+     "e": 6.74
+    },
+    {
+     "w": "a",
+     "s": 6.74,
+     "e": 6.77
+    },
+    {
+     "w": "month,",
+     "s": 6.77,
+     "e": 7.3
+    },
+    {
+     "w": "but",
+     "s": 7.59,
+     "e": 7.87
+    },
+    {
+     "w": "it",
+     "s": 7.87,
+     "e": 8.1
+    },
+    {
+     "w": "doesn't",
+     "s": 8.1,
+     "e": 8.49
+    },
+    {
+     "w": "include",
+     "s": 8.49,
+     "e": 8.88
+    },
+    {
+     "w": "Astra.",
+     "s": 8.88,
+     "e": 9.47
+    }
+   ]
+  },
+  {
+   "text": "Plus is about one thousand nine hundred and ninety-nine rupees a month in India, including GST. That's the cheapest way to get Astra.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 354.128,
+   "vo": 8.728,
+   "dur": 9.128,
+   "words": [
+    {
+     "w": "Plus",
+     "s": 0.02,
+     "e": 0.47
+    },
+    {
+     "w": "is",
+     "s": 0.47,
+     "e": 0.7
+    },
+    {
+     "w": "about",
+     "s": 0.7,
+     "e": 0.97
+    },
+    {
+     "w": "one",
+     "s": 0.97,
+     "e": 1.33
+    },
+    {
+     "w": "thousand",
+     "s": 1.33,
+     "e": 1.83
+    },
+    {
+     "w": "nine",
+     "s": 1.83,
+     "e": 2.08
+    },
+    {
+     "w": "hundred",
+     "s": 2.08,
+     "e": 2.42
+    },
+    {
+     "w": "and",
+     "s": 2.42,
+     "e": 3.19
+    },
+    {
+     "w": "ninety-nine",
+     "s": 3.19,
+     "e": 3.24
+    },
+    {
+     "w": "rupees",
+     "s": 3.19,
+     "e": 3.56
+    },
+    {
+     "w": "a",
+     "s": 3.56,
+     "e": 3.61
+    },
+    {
+     "w": "month",
+     "s": 3.61,
+     "e": 4.05
+    },
+    {
+     "w": "in",
+     "s": 4.05,
+     "e": 4.18
+    },
+    {
+     "w": "India,",
+     "s": 4.18,
+     "e": 4.59
+    },
+    {
+     "w": "including",
+     "s": 4.78,
+     "e": 5.39
+    },
+    {
+     "w": "GST.",
+     "s": 5.39,
+     "e": 5.44
+    },
+    {
+     "w": "That's",
+     "s": 5.39,
+     "e": 5.79
+    },
+    {
+     "w": "the",
+     "s": 5.79,
+     "e": 6.07
+    },
+    {
+     "w": "cheapest",
+     "s": 6.93,
+     "e": 7.53
+    },
+    {
+     "w": "way",
+     "s": 7.53,
+     "e": 7.71
+    },
+    {
+     "w": "to",
+     "s": 7.71,
+     "e": 7.78
+    },
+    {
+     "w": "get",
+     "s": 7.78,
+     "e": 7.97
+    },
+    {
+     "w": "Astra.",
+     "s": 7.97,
+     "e": 8.51
+    }
+   ]
+  },
+  {
+   "text": "For many students that's a big monthly bill. If you mostly need help with writing and study, the free models or Go will do just fine.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 363.256,
+   "vo": 9.41,
+   "dur": 9.81,
+   "words": [
+    {
+     "w": "For",
+     "s": 0.05,
+     "e": 0.2
+    },
+    {
+     "w": "many",
+     "s": 0.2,
+     "e": 0.49
+    },
+    {
+     "w": "students",
+     "s": 0.49,
+     "e": 1.27
+    },
+    {
+     "w": "that's",
+     "s": 1.27,
+     "e": 1.55
+    },
+    {
+     "w": "a",
+     "s": 1.55,
+     "e": 1.62
+    },
+    {
+     "w": "big",
+     "s": 1.62,
+     "e": 2.14
+    },
+    {
+     "w": "monthly",
+     "s": 2.14,
+     "e": 2.54
+    },
+    {
+     "w": "bill.",
+     "s": 2.54,
+     "e": 3.0
+    },
+    {
+     "w": "If",
+     "s": 3.61,
+     "e": 3.75
+    },
+    {
+     "w": "you",
+     "s": 3.75,
+     "e": 3.88
+    },
+    {
+     "w": "mostly",
+     "s": 3.88,
+     "e": 4.34
+    },
+    {
+     "w": "need",
+     "s": 4.34,
+     "e": 4.55
+    },
+    {
+     "w": "help",
+     "s": 4.55,
+     "e": 4.81
+    },
+    {
+     "w": "with",
+     "s": 4.81,
+     "e": 4.96
+    },
+    {
+     "w": "writing",
+     "s": 4.96,
+     "e": 5.43
+    },
+    {
+     "w": "and",
+     "s": 5.43,
+     "e": 5.55
+    },
+    {
+     "w": "study,",
+     "s": 5.55,
+     "e": 6.13
+    },
+    {
+     "w": "the",
+     "s": 6.41,
+     "e": 6.51
+    },
+    {
+     "w": "free",
+     "s": 6.51,
+     "e": 6.82
+    },
+    {
+     "w": "models",
+     "s": 6.82,
+     "e": 7.35
+    },
+    {
+     "w": "or",
+     "s": 7.35,
+     "e": 7.55
+    },
+    {
+     "w": "Go",
+     "s": 7.55,
+     "e": 8.02
+    },
+    {
+     "w": "will",
+     "s": 8.02,
+     "e": 8.26
+    },
+    {
+     "w": "do",
+     "s": 8.26,
+     "e": 8.46
+    },
+    {
+     "w": "just",
+     "s": 8.46,
+     "e": 8.85
+    },
+    {
+     "w": "fine.",
+     "s": 8.85,
+     "e": 9.19
+    }
+   ]
+  },
+  {
+   "text": "Prices change, so always check the official pricing page before you pay.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 373.067,
+   "vo": 5.157,
+   "dur": 5.557,
+   "words": [
+    {
+     "w": "Prices",
+     "s": 0.08,
+     "e": 0.56
+    },
+    {
+     "w": "change,",
+     "s": 0.56,
+     "e": 1.12
+    },
+    {
+     "w": "so",
+     "s": 1.36,
+     "e": 1.58
+    },
+    {
+     "w": "always",
+     "s": 1.58,
+     "e": 2.17
+    },
+    {
+     "w": "check",
+     "s": 2.17,
+     "e": 2.42
+    },
+    {
+     "w": "the",
+     "s": 2.42,
+     "e": 2.57
+    },
+    {
+     "w": "official",
+     "s": 2.57,
+     "e": 3.04
+    },
+    {
+     "w": "pricing",
+     "s": 3.04,
+     "e": 3.51
+    },
+    {
+     "w": "page",
+     "s": 3.51,
+     "e": 3.83
+    },
+    {
+     "w": "before",
+     "s": 3.83,
+     "e": 4.32
+    },
+    {
+     "w": "you",
+     "s": 4.32,
+     "e": 4.46
+    },
+    {
+     "w": "pay.",
+     "s": 4.46,
+     "e": 4.82
+    }
+   ]
+  },
+  {
+   "text": "For developers, the API costs eight dollars per million input tokens for Astra, and forty dollars out.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 378.623,
+   "vo": 7.685,
+   "dur": 8.085,
+   "words": [
+    {
+     "w": "For",
+     "s": 0.06,
+     "e": 0.22
+    },
+    {
+     "w": "developers,",
+     "s": 0.22,
+     "e": 1.11
+    },
+    {
+     "w": "the",
+     "s": 1.25,
+     "e": 1.46
+    },
+    {
+     "w": "API",
+     "s": 1.46,
+     "e": 2.0
+    },
+    {
+     "w": "costs",
+     "s": 2.0,
+     "e": 2.58
+    },
+    {
+     "w": "eight",
+     "s": 2.66,
+     "e": 2.86
+    },
+    {
+     "w": "dollars",
+     "s": 2.86,
+     "e": 3.3
+    },
+    {
+     "w": "per",
+     "s": 3.3,
+     "e": 3.51
+    },
+    {
+     "w": "million",
+     "s": 3.51,
+     "e": 4.07
+    },
+    {
+     "w": "input",
+     "s": 4.07,
+     "e": 4.49
+    },
+    {
+     "w": "tokens",
+     "s": 4.49,
+     "e": 5.0
+    },
+    {
+     "w": "for",
+     "s": 5.0,
+     "e": 5.14
+    },
+    {
+     "w": "Astra,",
+     "s": 5.14,
+     "e": 5.69
+    },
+    {
+     "w": "and",
+     "s": 5.9,
+     "e": 6.24
+    },
+    {
+     "w": "forty",
+     "s": 6.24,
+     "e": 6.68
+    },
+    {
+     "w": "dollars",
+     "s": 6.68,
+     "e": 7.13
+    },
+    {
+     "w": "out.",
+     "s": 7.13,
+     "e": 7.56
+    }
+   ]
+  },
+  {
+   "text": "Sol is two dollars in and ten out. So Astra costs about four times as much.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 386.708,
+   "vo": 6.462,
+   "dur": 6.862,
+   "words": [
+    {
+     "w": "Sol",
+     "s": 0.04,
+     "e": 0.49
+    },
+    {
+     "w": "is",
+     "s": 0.49,
+     "e": 0.75
+    },
+    {
+     "w": "two",
+     "s": 0.75,
+     "e": 1.03
+    },
+    {
+     "w": "dollars",
+     "s": 1.03,
+     "e": 1.48
+    },
+    {
+     "w": "in",
+     "s": 1.48,
+     "e": 1.83
+    },
+    {
+     "w": "and",
+     "s": 1.83,
+     "e": 2.07
+    },
+    {
+     "w": "ten",
+     "s": 2.07,
+     "e": 2.45
+    },
+    {
+     "w": "out.",
+     "s": 2.45,
+     "e": 2.82
+    },
+    {
+     "w": "So",
+     "s": 3.27,
+     "e": 3.67
+    },
+    {
+     "w": "Astra",
+     "s": 3.67,
+     "e": 4.09
+    },
+    {
+     "w": "costs",
+     "s": 4.09,
+     "e": 4.55
+    },
+    {
+     "w": "about",
+     "s": 4.55,
+     "e": 4.84
+    },
+    {
+     "w": "four",
+     "s": 4.84,
+     "e": 5.23
+    },
+    {
+     "w": "times",
+     "s": 5.23,
+     "e": 5.66
+    },
+    {
+     "w": "as",
+     "s": 5.66,
+     "e": 5.79
+    },
+    {
+     "w": "much.",
+     "s": 5.79,
+     "e": 6.22
+    }
+   ]
+  },
+  {
+   "text": "Now, the trap I promised. \"GPT-6 Astra free\" is one of the biggest searches in India right now, and scammers follow the searches.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "The free Astra trap",
+   "start": 393.571,
+   "vo": 10.037,
+   "dur": 10.437,
+   "words": [
+    {
+     "w": "Now,",
+     "s": 0.03,
+     "e": 0.46
+    },
+    {
+     "w": "the",
+     "s": 0.66,
+     "e": 0.76
+    },
+    {
+     "w": "trap",
+     "s": 0.76,
+     "e": 1.15
+    },
+    {
+     "w": "I",
+     "s": 1.15,
+     "e": 1.24
+    },
+    {
+     "w": "promised.",
+     "s": 1.24,
+     "e": 1.86
+    },
+    {
+     "w": "\"GPT-6",
+     "s": 1.86,
+     "e": 3.48
+    },
+    {
+     "w": "Astra",
+     "s": 3.48,
+     "e": 4.02
+    },
+    {
+     "w": "free\"",
+     "s": 4.02,
+     "e": 4.69
+    },
+    {
+     "w": "is",
+     "s": 4.81,
+     "e": 4.99
+    },
+    {
+     "w": "one",
+     "s": 4.99,
+     "e": 5.15
+    },
+    {
+     "w": "of",
+     "s": 5.15,
+     "e": 5.26
+    },
+    {
+     "w": "the",
+     "s": 5.26,
+     "e": 5.33
+    },
+    {
+     "w": "biggest",
+     "s": 5.33,
+     "e": 5.87
+    },
+    {
+     "w": "searches",
+     "s": 5.87,
+     "e": 6.38
+    },
+    {
+     "w": "in",
+     "s": 6.38,
+     "e": 6.49
+    },
+    {
+     "w": "India",
+     "s": 6.49,
+     "e": 6.88
+    },
+    {
+     "w": "right",
+     "s": 6.88,
+     "e": 7.15
+    },
+    {
+     "w": "now,",
+     "s": 7.15,
+     "e": 7.49
+    },
+    {
+     "w": "and",
+     "s": 7.79,
+     "e": 7.97
+    },
+    {
+     "w": "scammers",
+     "s": 7.97,
+     "e": 8.65
+    },
+    {
+     "w": "follow",
+     "s": 8.65,
+     "e": 9.08
+    },
+    {
+     "w": "the",
+     "s": 9.08,
+     "e": 9.18
+    },
+    {
+     "w": "searches.",
+     "s": 9.18,
+     "e": 9.84
+    }
+   ]
+  },
+  {
+   "text": "Websites and APK files promising free, unlimited Astra are a classic way to steal your account and card details.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 404.008,
+   "vo": 8.274,
+   "dur": 8.674,
+   "words": [
+    {
+     "w": "Websites",
+     "s": 0.09,
+     "e": 0.74
+    },
+    {
+     "w": "and",
+     "s": 0.74,
+     "e": 0.87
+    },
+    {
+     "w": "APK",
+     "s": 0.87,
+     "e": 1.54
+    },
+    {
+     "w": "files",
+     "s": 1.54,
+     "e": 2.03
+    },
+    {
+     "w": "promising",
+     "s": 2.03,
+     "e": 2.59
+    },
+    {
+     "w": "free,",
+     "s": 2.59,
+     "e": 3.15
+    },
+    {
+     "w": "unlimited",
+     "s": 3.15,
+     "e": 3.95
+    },
+    {
+     "w": "Astra",
+     "s": 3.95,
+     "e": 4.55
+    },
+    {
+     "w": "are",
+     "s": 4.55,
+     "e": 4.77
+    },
+    {
+     "w": "a",
+     "s": 4.77,
+     "e": 4.8
+    },
+    {
+     "w": "classic",
+     "s": 4.8,
+     "e": 5.56
+    },
+    {
+     "w": "way",
+     "s": 5.56,
+     "e": 5.76
+    },
+    {
+     "w": "to",
+     "s": 5.76,
+     "e": 5.84
+    },
+    {
+     "w": "steal",
+     "s": 5.84,
+     "e": 6.2
+    },
+    {
+     "w": "your",
+     "s": 6.2,
+     "e": 6.41
+    },
+    {
+     "w": "account",
+     "s": 6.41,
+     "e": 6.9
+    },
+    {
+     "w": "and",
+     "s": 6.9,
+     "e": 7.1
+    },
+    {
+     "w": "card",
+     "s": 7.1,
+     "e": 7.43
+    },
+    {
+     "w": "details.",
+     "s": 7.43,
+     "e": 8.1
+    }
+   ]
+  },
+  {
+   "text": "The only safe places are chatgpt.com, the official ChatGPT apps and OpenAI's own API. If a deal sounds too good, it is.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 412.682,
+   "vo": 11.517,
+   "dur": 11.917,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.07,
+     "e": 0.24
+    },
+    {
+     "w": "only",
+     "s": 0.24,
+     "e": 0.64
+    },
+    {
+     "w": "safe",
+     "s": 0.64,
+     "e": 0.97
+    },
+    {
+     "w": "places",
+     "s": 0.97,
+     "e": 1.59
+    },
+    {
+     "w": "are",
+     "s": 1.59,
+     "e": 1.76
+    },
+    {
+     "w": "chatgpt.com,",
+     "s": 1.76,
+     "e": 2.69
+    },
+    {
+     "w": "the",
+     "s": 2.69,
+     "e": 2.93
+    },
+    {
+     "w": "official",
+     "s": 3.82,
+     "e": 4.28
+    },
+    {
+     "w": "ChatGPT",
+     "s": 4.28,
+     "e": 4.33
+    },
+    {
+     "w": "apps",
+     "s": 4.28,
+     "e": 4.45
+    },
+    {
+     "w": "and",
+     "s": 4.45,
+     "e": 4.71
+    },
+    {
+     "w": "OpenAI's",
+     "s": 4.71,
+     "e": 4.76
+    },
+    {
+     "w": "own",
+     "s": 4.71,
+     "e": 4.77
+    },
+    {
+     "w": "API.",
+     "s": 4.77,
+     "e": 5.47
+    },
+    {
+     "w": "If",
+     "s": 5.47,
+     "e": 5.71
+    },
+    {
+     "w": "a",
+     "s": 6.04,
+     "e": 6.25
+    },
+    {
+     "w": "deal",
+     "s": 6.25,
+     "e": 6.57
+    },
+    {
+     "w": "sounds",
+     "s": 6.8,
+     "e": 7.19
+    },
+    {
+     "w": "too",
+     "s": 7.64,
+     "e": 7.7
+    },
+    {
+     "w": "good,",
+     "s": 7.7,
+     "e": 7.98
+    },
+    {
+     "w": "it",
+     "s": 8.82,
+     "e": 9.13
+    },
+    {
+     "w": "is.",
+     "s": 9.13,
+     "e": 9.48
+    }
+   ]
+  },
+  {
+   "text": "And here's a warning from OpenAI itself. Astra is its first model rated \"Critical\" for cybersecurity, under its own safety framework.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "OpenAI's own warning",
+   "start": 424.599,
+   "vo": 9.586,
+   "dur": 9.986,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.03,
+     "e": 0.19
+    },
+    {
+     "w": "here's",
+     "s": 0.19,
+     "e": 0.49
+    },
+    {
+     "w": "a",
+     "s": 0.49,
+     "e": 0.53
+    },
+    {
+     "w": "warning",
+     "s": 0.53,
+     "e": 1.05
+    },
+    {
+     "w": "from",
+     "s": 1.05,
+     "e": 1.28
+    },
+    {
+     "w": "OpenAI",
+     "s": 1.28,
+     "e": 1.49
+    },
+    {
+     "w": "itself.",
+     "s": 1.49,
+     "e": 2.69
+    },
+    {
+     "w": "Astra",
+     "s": 3.23,
+     "e": 3.74
+    },
+    {
+     "w": "is",
+     "s": 3.74,
+     "e": 3.96
+    },
+    {
+     "w": "its",
+     "s": 3.96,
+     "e": 4.13
+    },
+    {
+     "w": "first",
+     "s": 4.13,
+     "e": 4.56
+    },
+    {
+     "w": "model",
+     "s": 4.56,
+     "e": 4.98
+    },
+    {
+     "w": "rated",
+     "s": 4.98,
+     "e": 5.36
+    },
+    {
+     "w": "\"Critical\"",
+     "s": 5.36,
+     "e": 6.07
+    },
+    {
+     "w": "for",
+     "s": 6.07,
+     "e": 6.28
+    },
+    {
+     "w": "cybersecurity,",
+     "s": 6.28,
+     "e": 6.33
+    },
+    {
+     "w": "under",
+     "s": 6.28,
+     "e": 6.64
+    },
+    {
+     "w": "its",
+     "s": 6.64,
+     "e": 7.22
+    },
+    {
+     "w": "own",
+     "s": 8.11,
+     "e": 8.39
+    },
+    {
+     "w": "safety",
+     "s": 8.39,
+     "e": 8.84
+    },
+    {
+     "w": "framework.",
+     "s": 8.84,
+     "e": 9.48
+    }
+   ]
+  },
+  {
+   "text": "That means it could find serious security holes with very little human help. So OpenAI watches its tasks, and can pause them mid-run.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 434.585,
+   "vo": 9.411,
+   "dur": 9.811,
+   "words": [
+    {
+     "w": "That",
+     "s": 0.05,
+     "e": 0.27
+    },
+    {
+     "w": "means",
+     "s": 0.27,
+     "e": 0.59
+    },
+    {
+     "w": "it",
+     "s": 0.59,
+     "e": 0.67
+    },
+    {
+     "w": "could",
+     "s": 0.67,
+     "e": 0.8
+    },
+    {
+     "w": "find",
+     "s": 0.8,
+     "e": 1.11
+    },
+    {
+     "w": "serious",
+     "s": 1.11,
+     "e": 1.78
+    },
+    {
+     "w": "security",
+     "s": 1.78,
+     "e": 2.32
+    },
+    {
+     "w": "holes",
+     "s": 2.32,
+     "e": 2.73
+    },
+    {
+     "w": "with",
+     "s": 2.73,
+     "e": 3.03
+    },
+    {
+     "w": "very",
+     "s": 3.03,
+     "e": 3.35
+    },
+    {
+     "w": "little",
+     "s": 3.35,
+     "e": 3.64
+    },
+    {
+     "w": "human",
+     "s": 3.64,
+     "e": 3.98
+    },
+    {
+     "w": "help.",
+     "s": 3.98,
+     "e": 4.36
+    },
+    {
+     "w": "So",
+     "s": 4.91,
+     "e": 5.38
+    },
+    {
+     "w": "OpenAI",
+     "s": 5.38,
+     "e": 6.12
+    },
+    {
+     "w": "watches",
+     "s": 6.12,
+     "e": 6.68
+    },
+    {
+     "w": "its",
+     "s": 6.68,
+     "e": 6.86
+    },
+    {
+     "w": "tasks,",
+     "s": 6.86,
+     "e": 7.48
+    },
+    {
+     "w": "and",
+     "s": 7.48,
+     "e": 7.74
+    },
+    {
+     "w": "can",
+     "s": 7.74,
+     "e": 7.91
+    },
+    {
+     "w": "pause",
+     "s": 7.91,
+     "e": 8.34
+    },
+    {
+     "w": "them",
+     "s": 8.34,
+     "e": 8.63
+    },
+    {
+     "w": "mid-run.",
+     "s": 8.63,
+     "e": 9.411
+    }
+   ]
+  },
+  {
+   "text": "OpenAI even admits Astra is harder to monitor than its previous model. That's why it watches it so closely.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 444.396,
+   "vo": 7.686,
+   "dur": 8.086,
+   "words": [
+    {
+     "w": "OpenAI",
+     "s": 0.0,
+     "e": 0.75
+    },
+    {
+     "w": "even",
+     "s": 0.75,
+     "e": 1.18
+    },
+    {
+     "w": "admits",
+     "s": 1.18,
+     "e": 1.77
+    },
+    {
+     "w": "Astra",
+     "s": 1.77,
+     "e": 2.29
+    },
+    {
+     "w": "is",
+     "s": 2.29,
+     "e": 2.46
+    },
+    {
+     "w": "harder",
+     "s": 2.46,
+     "e": 2.9
+    },
+    {
+     "w": "to",
+     "s": 2.9,
+     "e": 3.01
+    },
+    {
+     "w": "monitor",
+     "s": 3.01,
+     "e": 3.61
+    },
+    {
+     "w": "than",
+     "s": 3.61,
+     "e": 3.78
+    },
+    {
+     "w": "its",
+     "s": 3.78,
+     "e": 3.94
+    },
+    {
+     "w": "previous",
+     "s": 3.94,
+     "e": 4.48
+    },
+    {
+     "w": "model.",
+     "s": 4.48,
+     "e": 4.89
+    },
+    {
+     "w": "That's",
+     "s": 5.41,
+     "e": 5.66
+    },
+    {
+     "w": "why",
+     "s": 5.66,
+     "e": 5.88
+    },
+    {
+     "w": "it",
+     "s": 5.88,
+     "e": 5.96
+    },
+    {
+     "w": "watches",
+     "s": 5.96,
+     "e": 6.46
+    },
+    {
+     "w": "it",
+     "s": 6.46,
+     "e": 6.57
+    },
+    {
+     "w": "so",
+     "s": 6.57,
+     "e": 6.83
+    },
+    {
+     "w": "closely.",
+     "s": 6.83,
+     "e": 7.53
+    }
+   ]
+  },
+  {
+   "text": "For you, the lesson is simple. Give Astra only the apps and files a task really needs.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 452.481,
+   "vo": 6.804,
+   "dur": 7.204,
+   "words": [
+    {
+     "w": "For",
+     "s": 0.04,
+     "e": 0.21
+    },
+    {
+     "w": "you,",
+     "s": 0.21,
+     "e": 0.72
+    },
+    {
+     "w": "the",
+     "s": 0.9,
+     "e": 0.97
+    },
+    {
+     "w": "lesson",
+     "s": 0.97,
+     "e": 1.41
+    },
+    {
+     "w": "is",
+     "s": 1.41,
+     "e": 1.5
+    },
+    {
+     "w": "simple.",
+     "s": 1.5,
+     "e": 2.08
+    },
+    {
+     "w": "Give",
+     "s": 2.63,
+     "e": 2.9
+    },
+    {
+     "w": "Astra",
+     "s": 2.9,
+     "e": 3.42
+    },
+    {
+     "w": "only",
+     "s": 3.53,
+     "e": 3.91
+    },
+    {
+     "w": "the",
+     "s": 3.91,
+     "e": 4.08
+    },
+    {
+     "w": "apps",
+     "s": 4.08,
+     "e": 4.39
+    },
+    {
+     "w": "and",
+     "s": 4.39,
+     "e": 4.52
+    },
+    {
+     "w": "files",
+     "s": 4.52,
+     "e": 5.06
+    },
+    {
+     "w": "a",
+     "s": 5.06,
+     "e": 5.13
+    },
+    {
+     "w": "task",
+     "s": 5.13,
+     "e": 5.6
+    },
+    {
+     "w": "really",
+     "s": 5.6,
+     "e": 6.06
+    },
+    {
+     "w": "needs.",
+     "s": 6.06,
+     "e": 6.61
+    }
+   ]
+  },
+  {
+   "text": "Five quick tips before you start.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "Five tips",
+   "start": 459.685,
+   "vo": 2.371,
+   "dur": 2.771,
+   "words": [
+    {
+     "w": "Five",
+     "s": 0.03,
+     "e": 0.4
+    },
+    {
+     "w": "quick",
+     "s": 0.4,
+     "e": 0.74
+    },
+    {
+     "w": "tips",
+     "s": 0.74,
+     "e": 1.21
+    },
+    {
+     "w": "before",
+     "s": 1.21,
+     "e": 1.61
+    },
+    {
+     "w": "you",
+     "s": 1.61,
+     "e": 1.71
+    },
+    {
+     "w": "start.",
+     "s": 1.71,
+     "e": 2.26
+    }
+   ]
+  },
+  {
+   "text": "One. Give it the full picture. The goal, the files, and what finished looks like.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 462.456,
+   "vo": 6.629,
+   "dur": 7.029,
+   "words": [
+    {
+     "w": "One.",
+     "s": 0.06,
+     "e": 0.61
+    },
+    {
+     "w": "Give",
+     "s": 1.08,
+     "e": 1.25
+    },
+    {
+     "w": "it",
+     "s": 1.25,
+     "e": 1.37
+    },
+    {
+     "w": "the",
+     "s": 1.37,
+     "e": 1.5
+    },
+    {
+     "w": "full",
+     "s": 1.5,
+     "e": 1.93
+    },
+    {
+     "w": "picture.",
+     "s": 1.93,
+     "e": 2.53
+    },
+    {
+     "w": "The",
+     "s": 3.02,
+     "e": 3.1
+    },
+    {
+     "w": "goal,",
+     "s": 3.1,
+     "e": 3.66
+    },
+    {
+     "w": "the",
+     "s": 3.8,
+     "e": 3.91
+    },
+    {
+     "w": "files,",
+     "s": 3.91,
+     "e": 4.62
+    },
+    {
+     "w": "and",
+     "s": 4.69,
+     "e": 5.04
+    },
+    {
+     "w": "what",
+     "s": 5.04,
+     "e": 5.25
+    },
+    {
+     "w": "finished",
+     "s": 5.25,
+     "e": 5.85
+    },
+    {
+     "w": "looks",
+     "s": 5.85,
+     "e": 6.16
+    },
+    {
+     "w": "like.",
+     "s": 6.16,
+     "e": 6.51
+    }
+   ]
+  },
+  {
+   "text": "Two. Never let it near banking apps, passwords or payment pages.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 469.485,
+   "vo": 5.243,
+   "dur": 5.643,
+   "words": [
+    {
+     "w": "Two.",
+     "s": 0.08,
+     "e": 0.45
+    },
+    {
+     "w": "Never",
+     "s": 0.97,
+     "e": 1.39
+    },
+    {
+     "w": "let",
+     "s": 1.39,
+     "e": 1.58
+    },
+    {
+     "w": "it",
+     "s": 1.58,
+     "e": 1.7
+    },
+    {
+     "w": "near",
+     "s": 1.7,
+     "e": 1.9
+    },
+    {
+     "w": "banking",
+     "s": 1.9,
+     "e": 2.44
+    },
+    {
+     "w": "apps,",
+     "s": 2.44,
+     "e": 2.88
+    },
+    {
+     "w": "passwords",
+     "s": 2.88,
+     "e": 3.78
+    },
+    {
+     "w": "or",
+     "s": 3.78,
+     "e": 3.98
+    },
+    {
+     "w": "payment",
+     "s": 3.98,
+     "e": 4.43
+    },
+    {
+     "w": "pages.",
+     "s": 4.43,
+     "e": 5.04
+    }
+   ]
+  },
+  {
+   "text": "Three. Break huge jobs into stages, and check after each one.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 475.128,
+   "vo": 5.497,
+   "dur": 5.897,
+   "words": [
+    {
+     "w": "Three.",
+     "s": 0.04,
+     "e": 0.56
+    },
+    {
+     "w": "Break",
+     "s": 1.11,
+     "e": 1.39
+    },
+    {
+     "w": "huge",
+     "s": 1.39,
+     "e": 1.96
+    },
+    {
+     "w": "jobs",
+     "s": 1.96,
+     "e": 2.42
+    },
+    {
+     "w": "into",
+     "s": 2.42,
+     "e": 2.67
+    },
+    {
+     "w": "stages,",
+     "s": 2.67,
+     "e": 3.48
+    },
+    {
+     "w": "and",
+     "s": 3.59,
+     "e": 3.78
+    },
+    {
+     "w": "check",
+     "s": 3.78,
+     "e": 4.14
+    },
+    {
+     "w": "after",
+     "s": 4.14,
+     "e": 4.51
+    },
+    {
+     "w": "each",
+     "s": 4.51,
+     "e": 4.81
+    },
+    {
+     "w": "one.",
+     "s": 4.81,
+     "e": 5.16
+    }
+   ]
+  },
+  {
+   "text": "Four. Use Sol for small things, so your Astra limit lasts.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 481.025,
+   "vo": 5.161,
+   "dur": 5.561,
+   "words": [
+    {
+     "w": "Four.",
+     "s": 0.05,
+     "e": 0.61
+    },
+    {
+     "w": "Use",
+     "s": 1.11,
+     "e": 1.42
+    },
+    {
+     "w": "Sol",
+     "s": 1.42,
+     "e": 1.85
+    },
+    {
+     "w": "for",
+     "s": 1.85,
+     "e": 2.05
+    },
+    {
+     "w": "small",
+     "s": 2.05,
+     "e": 2.49
+    },
+    {
+     "w": "things,",
+     "s": 2.49,
+     "e": 3.02
+    },
+    {
+     "w": "so",
+     "s": 3.13,
+     "e": 3.32
+    },
+    {
+     "w": "your",
+     "s": 3.32,
+     "e": 3.52
+    },
+    {
+     "w": "Astra",
+     "s": 3.52,
+     "e": 3.96
+    },
+    {
+     "w": "limit",
+     "s": 3.96,
+     "e": 4.25
+    },
+    {
+     "w": "lasts.",
+     "s": 4.25,
+     "e": 4.96
+    }
+   ]
+  },
+  {
+   "text": "Five. Check its work. Even the smartest model can be confidently wrong.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 486.586,
+   "vo": 5.693,
+   "dur": 6.093,
+   "words": [
+    {
+     "w": "Five.",
+     "s": 0.02,
+     "e": 0.58
+    },
+    {
+     "w": "Check",
+     "s": 1.03,
+     "e": 1.3
+    },
+    {
+     "w": "its",
+     "s": 1.3,
+     "e": 1.46
+    },
+    {
+     "w": "work.",
+     "s": 1.46,
+     "e": 1.95
+    },
+    {
+     "w": "Even",
+     "s": 2.46,
+     "e": 2.71
+    },
+    {
+     "w": "the",
+     "s": 2.71,
+     "e": 2.83
+    },
+    {
+     "w": "smartest",
+     "s": 2.83,
+     "e": 3.54
+    },
+    {
+     "w": "model",
+     "s": 3.54,
+     "e": 3.9
+    },
+    {
+     "w": "can",
+     "s": 3.9,
+     "e": 4.1
+    },
+    {
+     "w": "be",
+     "s": 4.1,
+     "e": 4.22
+    },
+    {
+     "w": "confidently",
+     "s": 4.22,
+     "e": 5.02
+    },
+    {
+     "w": "wrong.",
+     "s": 5.02,
+     "e": 5.56
+    }
+   ]
+  },
+  {
+   "text": "So, did Max get his afternoon off? Partly. Astra built his report while he watched, and he spent the time he saved checking it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "chapter": "Wrap-up",
+   "start": 492.679,
+   "vo": 8.986,
+   "dur": 9.386,
+   "words": [
+    {
+     "w": "So,",
+     "s": 0.01,
+     "e": 0.71
+    },
+    {
+     "w": "did",
+     "s": 0.74,
+     "e": 0.95
+    },
+    {
+     "w": "Max",
+     "s": 0.95,
+     "e": 1.3
+    },
+    {
+     "w": "get",
+     "s": 1.3,
+     "e": 1.47
+    },
+    {
+     "w": "his",
+     "s": 1.47,
+     "e": 1.63
+    },
+    {
+     "w": "afternoon",
+     "s": 1.63,
+     "e": 2.09
+    },
+    {
+     "w": "off?",
+     "s": 2.09,
+     "e": 2.42
+    },
+    {
+     "w": "Partly.",
+     "s": 2.92,
+     "e": 3.52
+    },
+    {
+     "w": "Astra",
+     "s": 4.02,
+     "e": 4.42
+    },
+    {
+     "w": "built",
+     "s": 4.42,
+     "e": 4.69
+    },
+    {
+     "w": "his",
+     "s": 4.69,
+     "e": 4.85
+    },
+    {
+     "w": "report",
+     "s": 4.85,
+     "e": 5.32
+    },
+    {
+     "w": "while",
+     "s": 5.32,
+     "e": 5.53
+    },
+    {
+     "w": "he",
+     "s": 5.53,
+     "e": 5.63
+    },
+    {
+     "w": "watched,",
+     "s": 5.63,
+     "e": 6.26
+    },
+    {
+     "w": "and",
+     "s": 6.42,
+     "e": 6.74
+    },
+    {
+     "w": "he",
+     "s": 6.74,
+     "e": 6.92
+    },
+    {
+     "w": "spent",
+     "s": 6.92,
+     "e": 7.2
+    },
+    {
+     "w": "the",
+     "s": 7.2,
+     "e": 7.29
+    },
+    {
+     "w": "time",
+     "s": 7.29,
+     "e": 7.62
+    },
+    {
+     "w": "he",
+     "s": 7.62,
+     "e": 7.76
+    },
+    {
+     "w": "saved",
+     "s": 7.76,
+     "e": 8.22
+    },
+    {
+     "w": "checking",
+     "s": 8.22,
+     "e": 8.69
+    },
+    {
+     "w": "it.",
+     "s": 8.69,
+     "e": 8.82
+    }
+   ]
+  },
+  {
+   "text": "GPT-6 Astra isn't magic, and it isn't free. But if your work lives on a computer, it can save you hours.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 502.065,
+   "vo": 8.731,
+   "dur": 9.131,
+   "words": [
+    {
+     "w": "GPT-6",
+     "s": 0.0,
+     "e": 0.38
+    },
+    {
+     "w": "Astra",
+     "s": 0.38,
+     "e": 0.6
+    },
+    {
+     "w": "isn't",
+     "s": 0.6,
+     "e": 1.05
+    },
+    {
+     "w": "magic,",
+     "s": 1.05,
+     "e": 1.67
+    },
+    {
+     "w": "and",
+     "s": 1.67,
+     "e": 2.53
+    },
+    {
+     "w": "it",
+     "s": 2.91,
+     "e": 3.35
+    },
+    {
+     "w": "isn't",
+     "s": 3.35,
+     "e": 3.61
+    },
+    {
+     "w": "free.",
+     "s": 3.61,
+     "e": 4.13
+    },
+    {
+     "w": "But",
+     "s": 4.7,
+     "e": 4.82
+    },
+    {
+     "w": "if",
+     "s": 4.82,
+     "e": 4.96
+    },
+    {
+     "w": "your",
+     "s": 4.96,
+     "e": 5.07
+    },
+    {
+     "w": "work",
+     "s": 5.07,
+     "e": 5.44
+    },
+    {
+     "w": "lives",
+     "s": 5.44,
+     "e": 5.7
+    },
+    {
+     "w": "on",
+     "s": 5.7,
+     "e": 5.84
+    },
+    {
+     "w": "a",
+     "s": 5.84,
+     "e": 5.87
+    },
+    {
+     "w": "computer,",
+     "s": 5.87,
+     "e": 6.52
+    },
+    {
+     "w": "it",
+     "s": 6.85,
+     "e": 6.99
+    },
+    {
+     "w": "can",
+     "s": 6.99,
+     "e": 7.13
+    },
+    {
+     "w": "save",
+     "s": 7.13,
+     "e": 7.53
+    },
+    {
+     "w": "you",
+     "s": 7.53,
+     "e": 7.79
+    },
+    {
+     "w": "hours.",
+     "s": 7.86,
+     "e": 8.55
+    }
+   ]
+  },
+  {
+   "text": "Tell me in the comments: what's the first job you'd hand to Astra?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 511.195,
+   "vo": 4.298,
+   "dur": 4.698,
+   "words": [
+    {
+     "w": "Tell",
+     "s": 0.06,
+     "e": 0.24
+    },
+    {
+     "w": "me",
+     "s": 0.24,
+     "e": 0.37
+    },
+    {
+     "w": "in",
+     "s": 0.37,
+     "e": 0.46
+    },
+    {
+     "w": "the",
+     "s": 0.46,
+     "e": 0.55
+    },
+    {
+     "w": "comments:",
+     "s": 0.55,
+     "e": 1.21
+    },
+    {
+     "w": "what's",
+     "s": 1.6,
+     "e": 1.86
+    },
+    {
+     "w": "the",
+     "s": 1.86,
+     "e": 1.97
+    },
+    {
+     "w": "first",
+     "s": 1.97,
+     "e": 2.42
+    },
+    {
+     "w": "job",
+     "s": 2.42,
+     "e": 2.74
+    },
+    {
+     "w": "you'd",
+     "s": 2.74,
+     "e": 3.04
+    },
+    {
+     "w": "hand",
+     "s": 3.04,
+     "e": 3.31
+    },
+    {
+     "w": "to",
+     "s": 3.31,
+     "e": 3.39
+    },
+    {
+     "w": "Astra?",
+     "s": 3.39,
+     "e": 4.01
+    }
+   ]
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [],
+    "acts": []
+   },
+   "start": 515.893,
+   "vo": 4.725,
+   "dur": 6.325,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.05,
+     "e": 0.23
+    },
+    {
+     "w": "subscribe",
+     "s": 0.23,
+     "e": 0.81
+    },
+    {
+     "w": "to",
+     "s": 0.81,
+     "e": 0.98
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.98,
+     "e": 1.73
+    },
+    {
+     "w": "with",
+     "s": 1.73,
+     "e": 1.94
+    },
+    {
+     "w": "Max",
+     "s": 1.94,
+     "e": 2.51
+    },
+    {
+     "w": "for",
+     "s": 2.51,
+     "e": 2.78
+    },
+    {
+     "w": "more",
+     "s": 2.78,
+     "e": 3.04
+    },
+    {
+     "w": "tech,",
+     "s": 3.04,
+     "e": 3.51
+    },
+    {
+     "w": "decoded.",
+     "s": 3.76,
+     "e": 4.43
+    }
+   ]
+  }
+ ]
+}
