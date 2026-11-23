@@ -22,6 +22,7 @@ import html as _h
 import kit_assets as KA
 import kit_props as KPR
 import kit_pro as PRO
+import kit_myst as MY
 
 CSS = KPR.CSS + """
 .mx { position:absolute; }
@@ -99,6 +100,8 @@ def register(B):
             return pid, h
         if kind in PRO.KINDS:
             return eid, PRO.el(eid, e, pos, rot)
+        if kind in MY.KINDS:
+            return eid, MY.el(eid, e, pos, rot)
         raise KeyError(kind)
 
     def t_mix(i, sid, v):
@@ -115,19 +118,21 @@ def register(B):
             ease, d = EASE.get(how, ('back.out(1.6)', .38))
             to = 'x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1'
             sc.append(f'    tl.set("#{eid}", {{ opacity:0 }}, 0);')
-            if e['k'] == 'cursor':
+            if e['k'] in ('cursor', 'beam'):
                 sc.append(f'    tl.fromTo("#{eid}", {{ opacity:0 }}, {{ opacity:1, duration:.2, immediateRender:false }}, {t});')
             else:
                 sc.append(f'    tl.fromTo("#{eid}", {{ {FROM[how]} }}, {{ {to}, duration:{d}, ease:"{ease}", immediateRender:false }}, {t});')
             if e['k'] in PRO.KINDS:
                 sc += PRO.dyn(eid, e, t, T, i)
+            if e['k'] in MY.KINDS:
+                sc += MY.dyn(eid, e, t, T, i)
             if e['k'] == 'bars':
                 for j in range(len(e['rows'])):
                     sc.append(f'    tl.fromTo("#{eid}-b{j}", {{ scaleX:0 }}, {{ scaleX:1, duration:{e.get("grow", [.5] * 9)[j] if isinstance(e.get("grow"), list) else .6}, ease:"power2.out", immediateRender:false }}, {round(t + .2 + j * e.get("gap", .35), 3)});')
                     sc.append(f'    tl.set("#{eid}-b{j}", {{ scaleX:0 }}, 0);')
         for a in v.get('acts', []):
             eid = ids[a['id']]; t = T(i, a['at']); do = a['do']
-            r = PRO.act(eid, a, t)
+            r = PRO.act(eid, a, t) or MY.act(eid, a, t)
             if r:
                 sc += r; continue
             if do == 'count':
@@ -148,7 +153,7 @@ def register(B):
                 sc.append(f'    tl.to("#{eid}", {{ opacity:0, scale:.6, duration:.25, ease:"power2.in" }}, {t});')
             elif do == 'ring':
                 sc.append(f'    tl.fromTo("#{eid}", {{ scale:1 }}, {{ scale:1.12, duration:.15, yoyo:true, repeat:1, ease:"power2.out", immediateRender:false }}, {t});')
-        return '\n'.join(body), sc, CSS + PRO.CSS
+        return '\n'.join(body), sc, CSS + PRO.CSS + MY.CSS
 
     B.T['mix'] = t_mix
     B.SFX_BY_TYPE['mix'] = [(0.05, 'whoosh', .4), (0.35, 'pop', .4), (0.7, 'pop', .35)]

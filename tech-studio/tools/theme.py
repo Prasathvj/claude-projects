@@ -62,5 +62,5 @@ def apply(html):
         m = {**MAPS[t], '#0C0704': GROUND[t]}
         pat = re.compile('|'.join(re.escape(k) for k in sorted(m, key=len, reverse=True)), re.I)
         html = pat.sub(lambda x: m[next(k for k in m if k.lower() == x.group(0).lower())], html)
-    import kit_paper   # STYLE=paper: papercut layer (no-op otherwise)
-    return kit_paper.paperize(html)
+    import kit_paper, kit_myst   # STYLE=paper: papercut layer; STYLE=mystery: Tech Mysteries layer (no-ops otherwise)
+    return kit_myst.mysterize(kit_paper.paperize(html))

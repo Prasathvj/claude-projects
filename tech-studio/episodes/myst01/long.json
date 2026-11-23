@@ -22,7 +22,40 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 300,
+      "y": 120,
+      "text": "CASE FILE · SIGNAL INTRUSION",
+      "bg": "rgba(0,0,0,0)",
+      "size": 28,
+      "color": "#8FA3C2",
+      "in": "fade"
+     },
+     {
+      "k": "typer",
+      "at": 0.05,
+      "x": 190,
+      "y": 230,
+      "text": "NOV 22, 1987",
+      "size": 150,
+      "dur": 1.6,
+      "id": "dt"
+     },
+     {
+      "k": "tag",
+      "at": "chicago",
+      "x": 330,
+      "y": 470,
+      "text": "CHICAGO · SUNDAY NIGHT",
+      "bg": "rgba(0,0,0,0)",
+      "size": 34,
+      "color": "#8FA3C2",
+      "in": "fade"
+     }
+    ],
     "acts": []
    }
   },
@@ -31,7 +64,31 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 300,
+      "y": 30,
+      "w": 660,
+      "screen": "sports",
+      "id": "tv",
+      "in": "fly",
+      "label": "WGN-TV · CHANNEL 9"
+     },
+     {
+      "k": "card",
+      "at": "millions",
+      "x": 1000,
+      "y": 120,
+      "big": "MILLIONS",
+      "label": "WATCHING",
+      "color": "#8FA3C2",
+      "id": "m",
+      "in": "slide",
+      "icon": "ph:users-three-fill"
+     }
+    ],
     "acts": []
    }
   },
@@ -40,8 +97,42 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 300,
+      "y": 30,
+      "w": 660,
+      "screen": "sports",
+      "id": "tv"
+     },
+     {
+      "k": "typer",
+      "at": "fourteen",
+      "x": 1000,
+      "y": 120,
+      "text": "9:14 PM",
+      "size": 80,
+      "color": "#E5383B",
+      "dur": 0.6,
+      "id": "tm"
+     }
+    ],
+    "acts": [
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "black",
+      "screen": "static"
+     },
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": 0.97,
+      "screen": "black"
+     }
+    ]
    }
   },
   {
@@ -49,8 +140,37 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 300,
+      "y": 30,
+      "w": 660,
+      "screen": "black",
+      "id": "tv"
+     },
+     {
+      "k": "stamp",
+      "at": "supposed",
+      "x": 330,
+      "y": 600,
+      "text": "NOT SUPPOSED TO BE THERE",
+      "size": 44,
+      "color": "#E5383B",
+      "rot": -4,
+      "id": "s",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "appears",
+      "screen": "figure"
+     }
+    ]
    }
   },
   {
@@ -58,7 +178,46 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "figure",
+      "at": 0.02,
+      "x": 40,
+      "y": 40,
+      "w": 560,
+      "h": 420,
+      "id": "fg",
+      "in": "fade"
+     },
+     {
+      "k": "big",
+      "at": "nobody",
+      "x": 660,
+      "y": 120,
+      "text": "Nobody",
+      "size": 110,
+      "color": "#E8EDF5"
+     },
+     {
+      "k": "big",
+      "at": "knows",
+      "x": 660,
+      "y": 250,
+      "text": "knows who",
+      "size": 110,
+      "color": "#E8EDF5"
+     },
+     {
+      "k": "big",
+      "at": "was",
+      "x": 660,
+      "y": 380,
+      "text": "it *was*.",
+      "size": 110,
+      "color": "#E8EDF5",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -67,8 +226,60 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "card",
+      "at": "story",
+      "x": 40,
+      "y": 60,
+      "big": "1987",
+      "label": "TV HIJACK",
+      "color": "#8FA3C2",
+      "id": "y",
+      "in": "fly",
+      "icon": "ph:television-simple-fill",
+      "w": 420
+     },
+     {
+      "k": "card",
+      "at": "forty",
+      "x": 520,
+      "y": 60,
+      "big": "~40 YEARS",
+      "label": "STILL UNSOLVED",
+      "color": "#E5383B",
+      "id": "n",
+      "in": "fly",
+      "icon": "ph:hourglass-high-fill",
+      "w": 520
+     },
+     {
+      "k": "stamp",
+      "at": "unsolved",
+      "x": 360,
+      "y": 380,
+      "text": "UNSOLVED",
+      "size": 120,
+      "color": "#E5383B",
+      "rot": -8,
+      "id": "u",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "n",
+      "at": "forty",
+      "values": [
+       "10 YEARS",
+       "20 YEARS",
+       "30 YEARS",
+       "~40 YEARS"
+      ],
+      "dt": 0.15
+     }
+    ]
    }
   },
   {
@@ -76,7 +287,72 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "person",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:user-focus-fill",
+      "size": 170,
+      "color": "#E8EDF5",
+      "id": "p"
+     },
+     {
+      "k": "tag",
+      "at": "homemade",
+      "x": 20,
+      "y": 290,
+      "text": "homemade equipment",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "h"
+     },
+     {
+      "k": "icon",
+      "at": "homemade",
+      "x": 320,
+      "y": 70,
+      "ref": "ph:wrench-fill",
+      "size": 120,
+      "color": "#8FA3C2",
+      "id": "wr"
+     },
+     {
+      "k": "tv",
+      "at": "two",
+      "x": 560,
+      "y": 30,
+      "w": 340,
+      "screen": "figure",
+      "id": "t1",
+      "in": "slide",
+      "label": "WGN"
+     },
+     {
+      "k": "tv",
+      "at": "two",
+      "x": 940,
+      "y": 30,
+      "w": 340,
+      "screen": "figure",
+      "id": "t2",
+      "in": "slide",
+      "label": "WTTW"
+     },
+     {
+      "k": "tag",
+      "at": "america",
+      "x": 640,
+      "y": 420,
+      "text": "two of the biggest TV stations in America",
+      "bg": "#E5383B",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "b"
+     }
+    ],
     "acts": []
    }
   },
@@ -85,16 +361,90 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "file",
+      "at": "open",
+      "x": 60,
+      "y": 60,
+      "w": 820,
+      "title": "CASE 001 · BROADCAST SIGNAL INTRUSION",
+      "rows": [
+       [
+        "DATE",
+        "22 NOV 1987"
+       ],
+       [
+        "CITY",
+        "CHICAGO"
+       ],
+       [
+        "SUSPECT",
+        null
+       ],
+       [
+        "STATUS",
+        "OPEN"
+       ]
+      ],
+      "id": "cf",
+      "in": "drop"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "The first hijack"
   },
   {
    "text": "It's a Sunday night on WGN, channel nine. The sports anchor is reading the day's highlights.",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 640,
+      "screen": "sports",
+      "id": "tv",
+      "in": "fly",
+      "label": "WGN · CHANNEL 9 · 9 PM NEWS"
+     },
+     {
+      "k": "tag",
+      "at": "sunday",
+      "x": 760,
+      "y": 60,
+      "text": "SUNDAY · 22 NOV 1987",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "d"
+     },
+     {
+      "k": "icon",
+      "at": "sports",
+      "x": 760,
+      "y": 160,
+      "ref": "ph:football-fill",
+      "size": 140,
+      "color": "#8FA3C2",
+      "id": "f"
+     },
+     {
+      "k": "tag",
+      "at": "highlights",
+      "x": 760,
+      "y": 330,
+      "text": "reading the day's highlights",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "h"
+     }
+    ],
     "acts": []
    }
   },
@@ -103,8 +453,43 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 300,
+      "y": 30,
+      "w": 660,
+      "screen": "sports",
+      "id": "tv"
+     },
+     {
+      "k": "tag",
+      "at": "flickers",
+      "x": 1000,
+      "y": 160,
+      "text": "SIGNAL LOST",
+      "bg": "#E5383B",
+      "size": 34,
+      "color": "#E8EDF5",
+      "id": "sl",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "flickers",
+      "screen": "static"
+     },
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "disappears",
+      "screen": "black"
+     }
+    ]
    }
   },
   {
@@ -112,8 +497,45 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 300,
+      "y": 30,
+      "w": 660,
+      "screen": "figure",
+      "id": "tv"
+     },
+     {
+      "k": "tag",
+      "at": "mask",
+      "x": 1000,
+      "y": 120,
+      "text": "rubber mask",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "m"
+     },
+     {
+      "k": "icon",
+      "at": "rocking",
+      "x": 1020,
+      "y": 230,
+      "ref": "ph:arrows-left-right-bold",
+      "size": 110,
+      "color": "#E5383B",
+      "id": "r"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "tv",
+      "at": "rocking"
+     }
+    ]
    }
   },
   {
@@ -121,8 +543,48 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "figure",
+      "at": 0.02,
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "h": 520,
+      "id": "fg",
+      "in": "fade"
+     },
+     {
+      "k": "icon",
+      "at": "spinning",
+      "x": 880,
+      "y": 80,
+      "ref": "ph:spiral-bold",
+      "size": 160,
+      "color": "#8FA3C2",
+      "id": "sp"
+     },
+     {
+      "k": "tag",
+      "at": "metal",
+      "x": 860,
+      "y": 300,
+      "text": "a sheet of spinning metal",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "m"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "sp",
+      "at": "spinning",
+      "deg": 720,
+      "d": 3
+     }
+    ]
    }
   },
   {
@@ -130,7 +592,42 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "clip",
+      "at": "copies",
+      "x": 40,
+      "y": 40,
+      "by": "THE CHARACTER IT COPIED",
+      "text": "Max Headroom: a 1980s TV host who was \"computer-generated\", actually an actor in make-up",
+      "w": 680,
+      "id": "cl",
+      "in": "fly",
+      "hi": "an actor in make-up"
+     },
+     {
+      "k": "icon",
+      "at": "character",
+      "x": 120,
+      "y": 400,
+      "ref": "ph:robot-fill",
+      "size": 150,
+      "color": "#8FA3C2",
+      "id": "rb"
+     },
+     {
+      "k": "stamp",
+      "at": "relation",
+      "x": 400,
+      "y": 430,
+      "text": "NO RELATION",
+      "size": 80,
+      "color": "#3DDC97",
+      "rot": -6,
+      "id": "nr",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -139,8 +636,45 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 300,
+      "y": 30,
+      "w": 660,
+      "screen": "figure",
+      "id": "tv"
+     },
+     {
+      "k": "icon",
+      "at": "sound",
+      "x": 1000,
+      "y": 80,
+      "ref": "ph:speaker-x-fill",
+      "size": 140,
+      "color": "#E5383B",
+      "id": "s"
+     },
+     {
+      "k": "tag",
+      "at": "buzzing",
+      "x": 980,
+      "y": 280,
+      "text": "just a buzzing hum",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "b"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "tv",
+      "at": "buzzing"
+     }
+    ]
    }
   },
   {
@@ -148,8 +682,70 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "icon",
+      "at": "engineers",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:headset-fill",
+      "size": 150,
+      "color": "#8FA3C2",
+      "id": "e"
+     },
+     {
+      "k": "card",
+      "at": "half",
+      "x": 260,
+      "y": 60,
+      "big": "0 SEC",
+      "label": "TIME ON AIR",
+      "color": "#E5383B",
+      "id": "t",
+      "in": "fly",
+      "icon": "ph:timer-fill",
+      "w": 420
+     },
+     {
+      "k": "tag",
+      "at": "frequency",
+      "x": 40,
+      "y": 330,
+      "text": "change the link frequency",
+      "bg": "#3DDC97",
+      "size": 34,
+      "color": "#06130D",
+      "id": "f"
+     },
+     {
+      "k": "tv",
+      "at": "gone",
+      "x": 760,
+      "y": 60,
+      "w": 480,
+      "screen": "figure",
+      "id": "tv"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "t",
+      "at": "half",
+      "values": [
+       "10 SEC",
+       "20 SEC",
+       "~30 SEC"
+      ],
+      "dt": 0.25
+     },
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "gone",
+      "screen": "sports"
+     }
+    ]
    }
   },
   {
@@ -157,7 +753,30 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 600,
+      "screen": "sports",
+      "id": "tv",
+      "label": "BACK IN THE STUDIO"
+     },
+     {
+      "k": "clip",
+      "at": "says",
+      "x": 720,
+      "y": 80,
+      "by": "THE ANCHOR, LIVE ON AIR",
+      "text": "\"If you're wondering what's happened, so am I.\"",
+      "w": 560,
+      "id": "cl",
+      "in": "slide",
+      "hi": "so am I"
+     }
+    ],
     "acts": []
    }
   },
@@ -166,8 +785,54 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "card",
+      "at": "hours",
+      "x": 40,
+      "y": 60,
+      "big": "9:14",
+      "label": "CHICAGO TIME",
+      "color": "#8FA3C2",
+      "id": "c",
+      "in": "fly",
+      "icon": "ph:clock-fill",
+      "w": 420
+     },
+     {
+      "k": "skyline",
+      "at": 0.05,
+      "x": 0,
+      "y": 330,
+      "w": 1320,
+      "id": "sk",
+      "in": "rise"
+     },
+     {
+      "k": "big",
+      "at": "isnt",
+      "x": 600,
+      "y": 80,
+      "text": "It isn't.",
+      "size": 120,
+      "color": "#E5383B",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "c",
+      "at": "thinks",
+      "values": [
+       "9:30",
+       "10:00",
+       "10:30",
+       "11:00"
+      ],
+      "dt": 0.3
+     }
+    ]
    }
   },
   {
@@ -175,17 +840,97 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 300,
+      "y": 30,
+      "w": 660,
+      "screen": "drama",
+      "id": "tv",
+      "in": "fly",
+      "label": "WTTW · CHANNEL 11"
+     },
+     {
+      "k": "typer",
+      "at": "eleven",
+      "x": 1000,
+      "y": 120,
+      "text": "11:10 PM",
+      "size": 70,
+      "color": "#E5383B",
+      "dur": 0.6,
+      "id": "tm"
+     },
+     {
+      "k": "tag",
+      "at": "doctor",
+      "x": 1000,
+      "y": 260,
+      "text": "a sci-fi series",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "d"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "The second hijack"
   },
   {
    "text": "And the masked figure comes back. This time, with sound.",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 300,
+      "y": 30,
+      "w": 660,
+      "screen": "drama",
+      "id": "tv"
+     },
+     {
+      "k": "icon",
+      "at": "sound",
+      "x": 1000,
+      "y": 80,
+      "ref": "ph:speaker-high-fill",
+      "size": 140,
+      "color": "#E5383B",
+      "id": "s"
+     },
+     {
+      "k": "tag",
+      "at": "sound",
+      "x": 980,
+      "y": 270,
+      "text": "THIS TIME, WITH SOUND",
+      "bg": "#E5383B",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "w",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "masked",
+      "screen": "static"
+     },
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "comes",
+      "screen": "figure"
+     }
+    ]
    }
   },
   {
@@ -193,8 +938,57 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 560,
+      "screen": "figure",
+      "id": "tv"
+     },
+     {
+      "k": "icon",
+      "at": "distorted",
+      "x": 660,
+      "y": 60,
+      "ref": "ph:waveform-bold",
+      "size": 150,
+      "color": "#8FA3C2",
+      "id": "wf"
+     },
+     {
+      "k": "tag",
+      "at": "robotic",
+      "x": 840,
+      "y": 100,
+      "text": "distorted, robotic",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "r"
+     },
+     {
+      "k": "tag",
+      "at": "mocks",
+      "x": 660,
+      "y": 300,
+      "text": "mocks WGN, the station that cut him off",
+      "bg": "#E5383B",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "m",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "wf",
+      "at": "laughs"
+     }
+    ]
    }
   },
   {
@@ -202,8 +996,70 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "icon",
+      "at": "drink",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:beer-bottle-fill",
+      "size": 170,
+      "color": "#E5383B",
+      "id": "c"
+     },
+     {
+      "k": "tag",
+      "at": "slogan",
+      "x": 40,
+      "y": 300,
+      "text": "\"Catch the wave!\"",
+      "bg": "#141B29",
+      "size": 40,
+      "color": "#E8EDF5",
+      "id": "s",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "slogan",
+      "x": 40,
+      "y": 390,
+      "text": "an ad slogan of the time",
+      "bg": "rgba(0,0,0,0)",
+      "size": 26,
+      "color": "#8FA3C2",
+      "id": "s2"
+     },
+     {
+      "k": "icon",
+      "at": "hums",
+      "x": 600,
+      "y": 80,
+      "ref": "ph:music-notes-fill",
+      "size": 160,
+      "color": "#8FA3C2",
+      "id": "mn"
+     },
+     {
+      "k": "tag",
+      "at": "cartoon",
+      "x": 580,
+      "y": 300,
+      "text": "hums a cartoon theme",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "h"
+     }
+    ],
+    "acts": [
+     {
+      "do": "bob",
+      "id": "mn",
+      "at": "hums",
+      "n": 6
+     }
+    ]
    }
   },
   {
@@ -211,7 +1067,42 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "brother",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:users-fill",
+      "size": 170,
+      "color": "#8FA3C2",
+      "id": "b"
+     },
+     {
+      "k": "clip",
+      "at": "strange",
+      "x": 320,
+      "y": 60,
+      "by": "WHAT HE SAID",
+      "text": "\"My brother has the other one.\"",
+      "w": 620,
+      "id": "cl",
+      "in": "fly",
+      "hi": "the other one"
+     },
+     {
+      "k": "stamp",
+      "at": "one",
+      "x": 420,
+      "y": 380,
+      "text": "???",
+      "size": 120,
+      "color": "#E5383B",
+      "rot": 4,
+      "id": "q",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -220,7 +1111,50 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 560,
+      "screen": "figure",
+      "id": "tv"
+     },
+     {
+      "k": "icon",
+      "at": "someone",
+      "x": 680,
+      "y": 60,
+      "ref": "ph:user-plus-fill",
+      "size": 150,
+      "color": "#8FA3C2",
+      "id": "u"
+     },
+     {
+      "k": "tag",
+      "at": "frame",
+      "x": 660,
+      "y": 260,
+      "text": "a second person steps in",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "f"
+     },
+     {
+      "k": "tag",
+      "at": "flyswatter",
+      "x": 660,
+      "y": 340,
+      "text": "…holding a flyswatter",
+      "bg": "#E5383B",
+      "size": 34,
+      "color": "#E8EDF5",
+      "id": "fs",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -229,8 +1163,49 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "card",
+      "at": "ninety",
+      "x": 40,
+      "y": 60,
+      "big": "0 SEC",
+      "label": "ON AIR",
+      "color": "#E5383B",
+      "id": "t",
+      "in": "fly",
+      "icon": "ph:timer-fill",
+      "w": 420
+     },
+     {
+      "k": "tv",
+      "at": "cuts",
+      "x": 560,
+      "y": 30,
+      "w": 600,
+      "screen": "figure",
+      "id": "tv"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "t",
+      "at": "ninety",
+      "values": [
+       "30 SEC",
+       "60 SEC",
+       "~90 SEC"
+      ],
+      "dt": 0.25
+     },
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "cuts",
+      "screen": "drama"
+     }
+    ]
    }
   },
   {
@@ -238,7 +1213,52 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tower",
+      "at": 0.02,
+      "x": 200,
+      "y": 200,
+      "name": "SEARS TOWER · WTTW",
+      "w": 150,
+      "h": 500,
+      "id": "tw",
+      "in": "rise"
+     },
+     {
+      "k": "icon",
+      "at": "engineers",
+      "x": 600,
+      "y": 80,
+      "ref": "ph:user-circle-dashed-bold",
+      "size": 150,
+      "color": "#8FA3C2",
+      "id": "e"
+     },
+     {
+      "k": "stamp",
+      "at": "nobody",
+      "x": 560,
+      "y": 280,
+      "text": "NO ENGINEERS",
+      "size": 80,
+      "color": "#E5383B",
+      "rot": -8,
+      "id": "n",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "night",
+      "x": 600,
+      "y": 460,
+      "text": "nobody could stop him",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "s"
+     }
+    ],
     "acts": []
    }
   },
@@ -247,16 +1267,91 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "big",
+      "at": "hijack",
+      "x": 40,
+      "y": 80,
+      "text": "How do you",
+      "size": 110,
+      "color": "#E8EDF5"
+     },
+     {
+      "k": "big",
+      "at": "hijack",
+      "x": 40,
+      "y": 210,
+      "text": "*hijack* a TV station?",
+      "size": 110,
+      "color": "#E8EDF5",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "outside",
+      "x": 1000,
+      "y": 380,
+      "ref": "ph:broadcast-bold",
+      "size": 180,
+      "color": "#E5383B",
+      "id": "b"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "How it was done"
   },
   {
    "text": "In nineteen eighty-seven, a TV station's studio and its transmitter were often in different places.",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "studio",
+      "x": 60,
+      "y": 260,
+      "ref": "ph:video-camera-fill",
+      "size": 160,
+      "color": "#E8EDF5",
+      "id": "s"
+     },
+     {
+      "k": "tag",
+      "at": "studio",
+      "x": 40,
+      "y": 460,
+      "text": "STUDIO",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "sl"
+     },
+     {
+      "k": "tower",
+      "at": "transmitter",
+      "x": 1000,
+      "y": 160,
+      "name": "TRANSMITTER",
+      "w": 140,
+      "h": 520,
+      "id": "tw",
+      "in": "rise"
+     },
+     {
+      "k": "tag",
+      "at": "different",
+      "x": 420,
+      "y": 120,
+      "text": "different places",
+      "bg": "#E5383B",
+      "size": 34,
+      "color": "#E8EDF5",
+      "id": "d"
+     }
+    ],
     "acts": []
    }
   },
@@ -265,7 +1360,60 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": 0.02,
+      "x": 60,
+      "y": 260,
+      "ref": "ph:video-camera-fill",
+      "size": 160,
+      "color": "#E8EDF5",
+      "id": "s"
+     },
+     {
+      "k": "tower",
+      "at": 0.02,
+      "x": 1000,
+      "y": 160,
+      "name": "TOWER",
+      "w": 140,
+      "h": 520,
+      "id": "tw"
+     },
+     {
+      "k": "beam",
+      "at": "beam",
+      "x": 240,
+      "y": 330,
+      "x2": 1060,
+      "y2": 150,
+      "color": "#3DDC97",
+      "id": "bm"
+     },
+     {
+      "k": "tag",
+      "at": "microwave",
+      "x": 420,
+      "y": 420,
+      "text": "a narrow beam of microwave radio",
+      "bg": "#3DDC97",
+      "size": 30,
+      "color": "#06130D",
+      "id": "m"
+     },
+     {
+      "k": "tag",
+      "at": "cable",
+      "x": 420,
+      "y": 500,
+      "text": "≈ an invisible cable in the air",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "c"
+     }
+    ],
     "acts": []
    }
   },
@@ -274,7 +1422,40 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "skyline",
+      "at": 0.02,
+      "x": 0,
+      "y": 360,
+      "w": 1320,
+      "id": "sk",
+      "in": "fade"
+     },
+     {
+      "k": "tower",
+      "at": "hancock",
+      "x": 260,
+      "y": 230,
+      "name": "JOHN HANCOCK · WGN",
+      "w": 130,
+      "h": 470,
+      "id": "t1",
+      "in": "rise"
+     },
+     {
+      "k": "tower",
+      "at": "sears",
+      "x": 860,
+      "y": 190,
+      "name": "SEARS TOWER · WTTW",
+      "w": 160,
+      "h": 510,
+      "ant": 120,
+      "id": "t2",
+      "in": "rise"
+     }
+    ],
     "acts": []
    }
   },
@@ -283,7 +1464,72 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tower",
+      "at": 0.02,
+      "x": 560,
+      "y": 160,
+      "name": "TOWER",
+      "w": 150,
+      "h": 520,
+      "id": "tw"
+     },
+     {
+      "k": "beam",
+      "at": "arrived",
+      "x": 60,
+      "y": 330,
+      "x2": 600,
+      "y2": 150,
+      "color": "#3DDC97",
+      "id": "b1"
+     },
+     {
+      "k": "icon",
+      "at": "broadcast",
+      "x": 820,
+      "y": 180,
+      "ref": "ph:television-simple-fill",
+      "size": 100,
+      "color": "#8FA3C2",
+      "id": "h0",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "broadcast",
+      "x": 960,
+      "y": 240,
+      "ref": "ph:television-simple-fill",
+      "size": 100,
+      "color": "#8FA3C2",
+      "id": "h1",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "broadcast",
+      "x": 1100,
+      "y": 300,
+      "ref": "ph:television-simple-fill",
+      "size": 100,
+      "color": "#8FA3C2",
+      "id": "h2",
+      "in": "drop"
+     },
+     {
+      "k": "tag",
+      "at": "whatever",
+      "x": 760,
+      "y": 520,
+      "text": "broadcasts whatever arrives",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "t"
+     }
+    ],
     "acts": []
    }
   },
@@ -292,7 +1538,61 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tower",
+      "at": 0.02,
+      "x": 560,
+      "y": 160,
+      "name": "RECEIVER",
+      "w": 150,
+      "h": 520,
+      "id": "tw"
+     },
+     {
+      "k": "beam",
+      "at": 0.02,
+      "x": 60,
+      "y": 300,
+      "x2": 600,
+      "y2": 150,
+      "color": "#3DDC97",
+      "id": "b1"
+     },
+     {
+      "k": "beam",
+      "at": "stronger",
+      "x": 60,
+      "y": 520,
+      "x2": 600,
+      "y2": 160,
+      "color": "#E5383B",
+      "id": "b2"
+     },
+     {
+      "k": "tag",
+      "at": "stronger",
+      "x": 40,
+      "y": 600,
+      "text": "stronger signal",
+      "bg": "#E5383B",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "s"
+     },
+     {
+      "k": "stamp",
+      "at": "instead",
+      "x": 820,
+      "y": 260,
+      "text": "THEM INSTEAD",
+      "size": 70,
+      "color": "#E5383B",
+      "rot": -8,
+      "id": "i",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -301,7 +1601,104 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "transmitter",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:broadcast-bold",
+      "size": 120,
+      "color": "#8FA3C2",
+      "id": "a"
+     },
+     {
+      "k": "tag",
+      "at": "transmitter",
+      "x": 20,
+      "y": 210,
+      "text": "transmitter",
+      "bg": "#141B29",
+      "size": 28,
+      "color": "#E8EDF5",
+      "id": "at"
+     },
+     {
+      "k": "icon",
+      "at": "dish",
+      "x": 330,
+      "y": 60,
+      "ref": "mdi:satellite-uplink",
+      "size": 120,
+      "color": "#8FA3C2",
+      "id": "b"
+     },
+     {
+      "k": "tag",
+      "at": "dish",
+      "x": 330,
+      "y": 210,
+      "text": "dish",
+      "bg": "#141B29",
+      "size": 28,
+      "color": "#E8EDF5",
+      "id": "bt"
+     },
+     {
+      "k": "icon",
+      "at": "sight",
+      "x": 620,
+      "y": 60,
+      "ref": "ph:eye-bold",
+      "size": 120,
+      "color": "#8FA3C2",
+      "id": "c"
+     },
+     {
+      "k": "tag",
+      "at": "sight",
+      "x": 560,
+      "y": 210,
+      "text": "line of sight",
+      "bg": "#141B29",
+      "size": 28,
+      "color": "#E8EDF5",
+      "id": "ct"
+     },
+     {
+      "k": "icon",
+      "at": "knowledge",
+      "x": 920,
+      "y": 60,
+      "ref": "ph:brain-fill",
+      "size": 120,
+      "color": "#E5383B",
+      "id": "d"
+     },
+     {
+      "k": "tag",
+      "at": "knowledge",
+      "x": 860,
+      "y": 210,
+      "text": "expert knowledge",
+      "bg": "#E5383B",
+      "size": 28,
+      "color": "#E8EDF5",
+      "id": "dt"
+     },
+     {
+      "k": "stamp",
+      "at": "easy",
+      "x": 360,
+      "y": 400,
+      "text": "NOT EASY",
+      "size": 100,
+      "color": "#E5383B",
+      "rot": -6,
+      "id": "ne",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -310,7 +1707,51 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "kid",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:baby-fill",
+      "size": 160,
+      "color": "#8FA3C2",
+      "id": "k"
+     },
+     {
+      "k": "stamp",
+      "at": "prank",
+      "x": 40,
+      "y": 260,
+      "text": "NOT A PRANK",
+      "size": 70,
+      "color": "#8FA3C2",
+      "rot": -8,
+      "id": "np",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "knew",
+      "x": 660,
+      "y": 60,
+      "ref": "ph:user-gear-fill",
+      "size": 180,
+      "color": "#E5383B",
+      "id": "p"
+     },
+     {
+      "k": "tag",
+      "at": "exactly",
+      "x": 620,
+      "y": 400,
+      "text": "knew exactly how TV worked",
+      "bg": "#E5383B",
+      "size": 34,
+      "color": "#E8EDF5",
+      "id": "t"
+     }
+    ],
     "acts": []
    }
   },
@@ -319,16 +1760,76 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "card",
+      "at": "year",
+      "x": 40,
+      "y": 60,
+      "big": "1986",
+      "label": "ONE YEAR EARLIER",
+      "color": "#8FA3C2",
+      "id": "y",
+      "in": "fly",
+      "icon": "ph:calendar-fill",
+      "w": 480
+     },
+     {
+      "k": "tag",
+      "at": "catch",
+      "x": 40,
+      "y": 330,
+      "text": "should have been easy to catch",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "c"
+     },
+     {
+      "k": "icon",
+      "at": "similar",
+      "x": 760,
+      "y": 80,
+      "ref": "ph:copy-fill",
+      "size": 160,
+      "color": "#E5383B",
+      "id": "s"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "The one who got caught"
   },
   {
    "text": "In April nineteen eighty-six, a message appeared over a movie on HBO: \"Good evening HBO, from Captain Midnight.\"",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 600,
+      "screen": "bars",
+      "id": "tv",
+      "in": "fly",
+      "label": "HBO · APRIL 1986"
+     },
+     {
+      "k": "clip",
+      "at": "message",
+      "x": 700,
+      "y": 60,
+      "by": "ON SCREEN, OVER A MOVIE",
+      "text": "\"Good evening HBO, from Captain Midnight\"",
+      "w": 580,
+      "id": "cl",
+      "in": "slide",
+      "hi": "Captain Midnight"
+     }
+    ],
     "acts": []
    }
   },
@@ -337,7 +1838,43 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "card",
+      "at": "twelve",
+      "x": 40,
+      "y": 60,
+      "big": "$12.95",
+      "label": "HBO PER MONTH",
+      "color": "#E5383B",
+      "id": "p",
+      "in": "fly",
+      "icon": "ph:currency-dollar-bold",
+      "w": 480
+     },
+     {
+      "k": "clip",
+      "at": "protesting",
+      "x": 640,
+      "y": 60,
+      "by": "HIS MESSAGE ENDED",
+      "text": "\"$12.95/MONTH? NO WAY!\"",
+      "w": 600,
+      "id": "cl",
+      "in": "slide",
+      "hi": "NO WAY!"
+     },
+     {
+      "k": "icon",
+      "at": "protesting",
+      "x": 120,
+      "y": 330,
+      "ref": "ph:megaphone-fill",
+      "size": 150,
+      "color": "#8FA3C2",
+      "id": "m"
+     }
+    ],
     "acts": []
    }
   },
@@ -346,7 +1883,48 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "satellite",
+      "x": 60,
+      "y": 60,
+      "ref": "mdi:satellite-uplink",
+      "size": 160,
+      "color": "#8FA3C2",
+      "id": "s"
+     },
+     {
+      "k": "beam",
+      "at": "traced",
+      "x": 240,
+      "y": 160,
+      "x2": 780,
+      "y2": 400,
+      "color": "#3DDC97",
+      "id": "b"
+     },
+     {
+      "k": "radar",
+      "at": "florida",
+      "x": 760,
+      "y": 140,
+      "label": "FLORIDA",
+      "sub": "OCALA · SATELLITE UPLINK",
+      "id": "r"
+     },
+     {
+      "k": "tag",
+      "at": "technician",
+      "x": 40,
+      "y": 480,
+      "text": "a satellite technician: John MacDougall",
+      "bg": "#3DDC97",
+      "size": 30,
+      "color": "#06130D",
+      "id": "t"
+     }
+    ],
     "acts": []
    }
   },
@@ -355,7 +1933,46 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "stamp",
+      "at": "guilty",
+      "x": 40,
+      "y": 60,
+      "text": "GUILTY",
+      "size": 110,
+      "color": "#E5383B",
+      "rot": -8,
+      "id": "g",
+      "in": "slam"
+     },
+     {
+      "k": "card",
+      "at": "thousand",
+      "x": 620,
+      "y": 60,
+      "big": "$5,000",
+      "label": "FINE",
+      "color": "#8FA3C2",
+      "id": "f",
+      "in": "fly",
+      "icon": "ph:gavel-fill",
+      "w": 420
+     },
+     {
+      "k": "card",
+      "at": "probation",
+      "x": 620,
+      "y": 320,
+      "big": "1 YEAR",
+      "label": "PROBATION",
+      "color": "#8FA3C2",
+      "id": "p",
+      "in": "fly",
+      "icon": "ph:calendar-x-fill",
+      "w": 420
+     }
+    ],
     "acts": []
    }
   },
@@ -364,7 +1981,64 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "tag",
+      "at": 0.02,
+      "x": 40,
+      "y": 60,
+      "text": "CAPTAIN MIDNIGHT",
+      "bg": "#141B29",
+      "size": 34,
+      "color": "#E8EDF5",
+      "id": "a"
+     },
+     {
+      "k": "stamp",
+      "at": "caught",
+      "x": 40,
+      "y": 150,
+      "text": "CAUGHT",
+      "size": 90,
+      "color": "#3DDC97",
+      "rot": -6,
+      "id": "c",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "mask",
+      "x": 700,
+      "y": 60,
+      "text": "THE MAN IN THE MASK",
+      "bg": "#141B29",
+      "size": 34,
+      "color": "#E8EDF5",
+      "id": "b"
+     },
+     {
+      "k": "stamp",
+      "at": "wasnt",
+      "x": 700,
+      "y": 150,
+      "text": "?",
+      "size": 160,
+      "color": "#E5383B",
+      "rot": 6,
+      "id": "q",
+      "in": "slam"
+     },
+     {
+      "k": "figure",
+      "at": "mask",
+      "x": 700,
+      "y": 360,
+      "w": 420,
+      "h": 300,
+      "id": "fg",
+      "in": "fade"
+     }
+    ],
     "acts": []
    }
   },
@@ -373,17 +2047,114 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "file",
+      "at": "investigated",
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "title": "FCC · INVESTIGATION",
+      "rows": [
+       [
+        "CASE",
+        "SIGNAL INTRUSION"
+       ],
+       [
+        "LEADS",
+        null
+       ],
+       [
+        "SUSPECTS",
+        null
+       ]
+      ],
+      "id": "f",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "cold",
+      "x": 940,
+      "y": 120,
+      "ref": "ph:snowflake-bold",
+      "size": 170,
+      "color": "#8FA3C2",
+      "id": "s"
+     },
+     {
+      "k": "tag",
+      "at": "cold",
+      "x": 900,
+      "y": 340,
+      "text": "the trail went cold",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "t"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "Why the trail went cold"
   },
   {
    "text": "A microwave signal leaves no fingerprints. Once it stops, there is nothing left to trace.",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "beam",
+      "at": 0.02,
+      "x": 60,
+      "y": 200,
+      "x2": 760,
+      "y2": 200,
+      "color": "#3DDC97",
+      "id": "b"
+     },
+     {
+      "k": "icon",
+      "at": "fingerprints",
+      "x": 880,
+      "y": 80,
+      "ref": "ph:fingerprint-bold",
+      "size": 200,
+      "color": "#8FA3C2",
+      "id": "fp"
+     },
+     {
+      "k": "stamp",
+      "at": "fingerprints",
+      "x": 820,
+      "y": 330,
+      "text": "NO PRINTS",
+      "size": 80,
+      "color": "#E5383B",
+      "rot": -8,
+      "id": "np",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "stops",
+      "x": 60,
+      "y": 520,
+      "text": "once it stops: nothing left to trace",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "t"
+     }
+    ],
+    "acts": [
+     {
+      "do": "out",
+      "id": "b",
+      "at": "stops"
+     }
+    ]
    }
   },
   {
@@ -391,7 +2162,74 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "money",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:money-fill",
+      "size": 140,
+      "color": "#8FA3C2",
+      "id": "a"
+     },
+     {
+      "k": "stamp",
+      "at": "money",
+      "x": 20,
+      "y": 230,
+      "text": "NO MONEY",
+      "size": 46,
+      "color": "#E5383B",
+      "rot": -8,
+      "id": "a2",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "demand",
+      "x": 500,
+      "y": 60,
+      "ref": "ph:note-pencil-fill",
+      "size": 140,
+      "color": "#8FA3C2",
+      "id": "b"
+     },
+     {
+      "k": "stamp",
+      "at": "demand",
+      "x": 450,
+      "y": 230,
+      "text": "NO DEMAND",
+      "size": 46,
+      "color": "#E5383B",
+      "rot": 6,
+      "id": "b2",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "again",
+      "x": 960,
+      "y": 60,
+      "ref": "ph:arrow-counter-clockwise-bold",
+      "size": 140,
+      "color": "#8FA3C2",
+      "id": "c"
+     },
+     {
+      "k": "stamp",
+      "at": "again",
+      "x": 880,
+      "y": 230,
+      "text": "NEVER AGAIN",
+      "size": 46,
+      "color": "#E5383B",
+      "rot": -6,
+      "id": "c2",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -400,7 +2238,38 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "clip",
+      "at": "investigator",
+      "x": 40,
+      "y": 40,
+      "by": "AN INVESTIGATOR, LATER",
+      "text": "\"He wasn't a danger to public safety\"",
+      "w": 660,
+      "id": "cl",
+      "in": "fly",
+      "hi": "danger to public safety"
+     },
+     {
+      "k": "file",
+      "at": "priority",
+      "x": 780,
+      "y": 60,
+      "w": 460,
+      "title": "PRIORITY",
+      "rows": [
+       [
+        "LEVEL",
+        "LOW"
+       ]
+      ],
+      "stamp": "LOW",
+      "stamp_at": "never",
+      "id": "f",
+      "in": "slide"
+     }
+    ],
     "acts": []
    }
   },
@@ -409,16 +2278,112 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "big",
+      "at": "clues",
+      "x": 40,
+      "y": 80,
+      "text": "THE",
+      "size": 130,
+      "color": "#E8EDF5"
+     },
+     {
+      "k": "big",
+      "at": "clues",
+      "x": 40,
+      "y": 220,
+      "text": "*CLUES*",
+      "size": 160,
+      "color": "#E8EDF5",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "look",
+      "x": 640,
+      "y": 140,
+      "ref": "ph:magnifying-glass-bold",
+      "size": 200,
+      "color": "#E5383B",
+      "id": "m"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "The clues"
   },
   {
    "text": "Clue one. He hit two different stations on two different towers, on the same night. He knew where both beams were, and how to reach them.",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "clue",
+      "at": "one",
+      "x": 40,
+      "y": 40,
+      "n": 1,
+      "text": "Two stations, two towers, one night",
+      "w": 560,
+      "id": "c",
+      "in": "drop"
+     },
+     {
+      "k": "tower",
+      "at": "stations",
+      "x": 760,
+      "y": 200,
+      "name": "HANCOCK",
+      "w": 110,
+      "h": 440,
+      "id": "t1",
+      "in": "rise"
+     },
+     {
+      "k": "tower",
+      "at": "towers",
+      "x": 1020,
+      "y": 150,
+      "name": "SEARS",
+      "w": 130,
+      "h": 490,
+      "id": "t2",
+      "in": "rise"
+     },
+     {
+      "k": "beam",
+      "at": "beams",
+      "x": 180,
+      "y": 560,
+      "x2": 800,
+      "y2": 200,
+      "color": "#E5383B",
+      "id": "b1"
+     },
+     {
+      "k": "beam",
+      "at": "beams",
+      "x": 180,
+      "y": 560,
+      "x2": 1070,
+      "y2": 160,
+      "color": "#E5383B",
+      "id": "b2"
+     },
+     {
+      "k": "tag",
+      "at": "knew",
+      "x": 40,
+      "y": 360,
+      "text": "he knew where both beams were",
+      "bg": "#141B29",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "k"
+     }
+    ],
     "acts": []
    }
   },
@@ -427,7 +2392,45 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "clue",
+      "at": "two",
+      "x": 40,
+      "y": 40,
+      "n": 2,
+      "text": "Cheap costume. Serious technology.",
+      "w": 600,
+      "id": "c",
+      "in": "drop"
+     },
+     {
+      "k": "card",
+      "at": "cheap",
+      "x": 40,
+      "y": 300,
+      "big": "$",
+      "label": "MASK + METAL",
+      "color": "#8FA3C2",
+      "id": "a",
+      "in": "fly",
+      "icon": "ph:mask-happy-fill",
+      "w": 360
+     },
+     {
+      "k": "card",
+      "at": "technology",
+      "x": 460,
+      "y": 300,
+      "big": "$$$$",
+      "label": "TRANSMISSION GEAR",
+      "color": "#E5383B",
+      "id": "b",
+      "in": "slam",
+      "icon": "ph:broadcast-bold",
+      "w": 460
+     }
+    ],
     "acts": []
    }
   },
@@ -436,7 +2439,50 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "clue",
+      "at": "three",
+      "x": 40,
+      "y": 40,
+      "n": 3,
+      "text": "He mocked WGN after they cut him off",
+      "w": 620,
+      "id": "c",
+      "in": "drop"
+     },
+     {
+      "k": "tv",
+      "at": "watching",
+      "x": 760,
+      "y": 40,
+      "w": 440,
+      "screen": "sports",
+      "id": "tv",
+      "in": "slide",
+      "label": "WATCHING LIVE?"
+     },
+     {
+      "k": "skyline",
+      "at": 0.05,
+      "x": 0,
+      "y": 420,
+      "w": 1320,
+      "id": "sk",
+      "in": "fade"
+     },
+     {
+      "k": "icon",
+      "at": "city",
+      "x": 360,
+      "y": 300,
+      "ref": "ph:map-pin-fill",
+      "size": 90,
+      "color": "#E5383B",
+      "id": "pin",
+      "in": "drop"
+     }
+    ],
     "acts": []
    }
   },
@@ -445,7 +2491,40 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "clue",
+      "at": "four",
+      "x": 40,
+      "y": 40,
+      "n": 4,
+      "text": "\"My brother has the other one\"",
+      "w": 620,
+      "id": "c",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "second",
+      "x": 760,
+      "y": 60,
+      "ref": "ph:users-fill",
+      "size": 170,
+      "color": "#8FA3C2",
+      "id": "u"
+     },
+     {
+      "k": "tag",
+      "at": "flyswatter",
+      "x": 720,
+      "y": 290,
+      "text": "the flyswatter person?",
+      "bg": "#E5383B",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "f"
+     }
+    ],
     "acts": []
    }
   },
@@ -454,7 +2533,71 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "clue",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "n": 1,
+      "text": "two towers",
+      "w": 300,
+      "id": "c0"
+     },
+     {
+      "k": "clue",
+      "at": 0.07,
+      "x": 370,
+      "y": 30,
+      "n": 2,
+      "text": "serious gear",
+      "w": 300,
+      "id": "c1"
+     },
+     {
+      "k": "clue",
+      "at": 0.12000000000000001,
+      "x": 40,
+      "y": 180,
+      "n": 3,
+      "text": "watching live",
+      "w": 300,
+      "id": "c2"
+     },
+     {
+      "k": "clue",
+      "at": 0.17,
+      "x": 370,
+      "y": 180,
+      "n": 4,
+      "text": "a partner?",
+      "w": 300,
+      "id": "c3"
+     },
+     {
+      "k": "stamp",
+      "at": "insider",
+      "x": 760,
+      "y": 80,
+      "text": "INSIDER?",
+      "size": 100,
+      "color": "#E5383B",
+      "rot": -8,
+      "id": "i",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "forward",
+      "x": 720,
+      "y": 330,
+      "text": "nobody ever came forward",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "n"
+     }
+    ],
     "acts": []
    }
   },
@@ -463,16 +2606,89 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "solve",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:users-four-fill",
+      "size": 170,
+      "color": "#8FA3C2",
+      "id": "u"
+     },
+     {
+      "k": "icon",
+      "at": "years",
+      "x": 320,
+      "y": 60,
+      "ref": "ph:calendar-dots-fill",
+      "size": 150,
+      "color": "#8FA3C2",
+      "id": "c"
+     },
+     {
+      "k": "big",
+      "at": "themselves",
+      "x": 40,
+      "y": 300,
+      "text": "Internet detectives",
+      "size": 90,
+      "color": "#E8EDF5"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "The theories"
   },
   {
    "text": "In twenty ten, a post on Reddit claimed the culprits came from Chicago's local hacker scene. People who knew the equipment, and knew the city.",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "logo",
+      "at": "reddit",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:reddit-icon",
+      "size": 140,
+      "id": "r"
+     },
+     {
+      "k": "clip",
+      "at": "claimed",
+      "x": 260,
+      "y": 40,
+      "by": "REDDIT · 2010 · A THEORY, NOT PROOF",
+      "text": "The culprits came from Chicago's local hacker scene",
+      "w": 640,
+      "id": "cl",
+      "in": "fly",
+      "hi": "hacker scene"
+     },
+     {
+      "k": "icon",
+      "at": "equipment",
+      "x": 300,
+      "y": 380,
+      "ref": "ph:cpu-fill",
+      "size": 120,
+      "color": "#8FA3C2",
+      "id": "e"
+     },
+     {
+      "k": "icon",
+      "at": "city",
+      "x": 480,
+      "y": 380,
+      "ref": "ph:buildings-fill",
+      "size": 120,
+      "color": "#8FA3C2",
+      "id": "b"
+     }
+    ],
     "acts": []
    }
   },
@@ -481,7 +2697,34 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "file",
+      "at": "named",
+      "x": 40,
+      "y": 40,
+      "w": 820,
+      "title": "CHICAGO · CASE 001",
+      "rows": [
+       [
+        "SUSPECT",
+        null
+       ],
+       [
+        "WITNESS",
+        null
+       ],
+       [
+        "CONFESSION",
+        null
+       ]
+      ],
+      "stamp": "NONE",
+      "stamp_at": "confession",
+      "id": "f",
+      "in": "drop"
+     }
+    ],
     "acts": []
    }
   },
@@ -490,17 +2733,80 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "big",
+      "at": "worry",
+      "x": 40,
+      "y": 120,
+      "text": "The part that",
+      "size": 100,
+      "color": "#E8EDF5"
+     },
+     {
+      "k": "big",
+      "at": "worry",
+      "x": 40,
+      "y": 240,
+      "text": "should *worry* you",
+      "size": 100,
+      "color": "#E8EDF5",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "mask",
+      "x": 1000,
+      "y": 300,
+      "ref": "ph:warning-fill",
+      "size": 170,
+      "color": "#E5383B",
+      "id": "w"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "It happened again"
   },
   {
    "text": "In February twenty thirteen, TV viewers in Montana saw an emergency alert interrupt their show.",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 600,
+      "screen": "drama",
+      "id": "tv",
+      "in": "fly",
+      "label": "MONTANA · FEB 2013"
+     },
+     {
+      "k": "card",
+      "at": "february",
+      "x": 760,
+      "y": 60,
+      "big": "2013",
+      "label": "FEBRUARY",
+      "color": "#8FA3C2",
+      "id": "y",
+      "in": "slide",
+      "icon": "ph:calendar-fill",
+      "w": 420
+     }
+    ],
+    "acts": [
+     {
+      "do": "tv",
+      "id": "tv",
+      "at": "alert",
+      "screen": "alert"
+     }
+    ]
    }
   },
   {
@@ -508,8 +2814,40 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
-    "acts": []
+    "els": [
+     {
+      "k": "tv",
+      "at": 0.02,
+      "x": 40,
+      "y": 30,
+      "w": 700,
+      "screen": "alert",
+      "id": "tv"
+     },
+     {
+      "k": "icon",
+      "at": "graves",
+      "x": 880,
+      "y": 80,
+      "ref": "ph:skull-fill",
+      "size": 180,
+      "color": "#E8EDF5",
+      "id": "sk"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "tv",
+      "at": "attacking"
+     },
+     {
+      "do": "bob",
+      "id": "sk",
+      "at": "rising",
+      "n": 4
+     }
+    ]
    }
   },
   {
@@ -517,7 +2855,41 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "stamp",
+      "at": "hack",
+      "x": 40,
+      "y": 60,
+      "text": "HACKED",
+      "size": 120,
+      "color": "#E5383B",
+      "rot": -8,
+      "id": "h",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "equipment",
+      "x": 600,
+      "y": 60,
+      "ref": "ph:hard-drives-fill",
+      "size": 180,
+      "color": "#8FA3C2",
+      "id": "e"
+     },
+     {
+      "k": "tag",
+      "at": "emergency",
+      "x": 560,
+      "y": 300,
+      "text": "Emergency Alert System equipment",
+      "bg": "#141B29",
+      "size": 32,
+      "color": "#E8EDF5",
+      "id": "t"
+     }
+    ],
     "acts": []
    }
   },
@@ -526,7 +2898,54 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "win",
+      "at": "machines",
+      "x": 40,
+      "y": 40,
+      "w": 640,
+      "h": 300,
+      "title": "EAS device · login",
+      "body": "<div style=\"padding:40px 30px;font:700 30px 'SD Mono';color:#2A2018\">user: admin<br>pass: ●●●●●●</div>",
+      "id": "lg",
+      "in": "fly"
+     },
+     {
+      "k": "icon",
+      "at": "manuals",
+      "x": 780,
+      "y": 60,
+      "ref": "ph:book-open-text-fill",
+      "size": 170,
+      "color": "#8FA3C2",
+      "id": "m"
+     },
+     {
+      "k": "tag",
+      "at": "printed",
+      "x": 760,
+      "y": 280,
+      "text": "the password was in the public manual",
+      "bg": "#E5383B",
+      "size": 28,
+      "color": "#E8EDF5",
+      "id": "p",
+      "in": "slam"
+     },
+     {
+      "k": "stamp",
+      "at": "default",
+      "x": 200,
+      "y": 420,
+      "text": "DEFAULT PASSWORD",
+      "size": 70,
+      "color": "#E5383B",
+      "rot": -6,
+      "id": "d",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -535,7 +2954,30 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "file",
+      "at": "people",
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "title": "ZOMBIE ALERT · 2013",
+      "rows": [
+       [
+        "SUSPECTS",
+        null
+       ],
+       [
+        "ARRESTS",
+        null
+       ]
+      ],
+      "stamp": "NEVER CAUGHT",
+      "stamp_at": "caught",
+      "id": "f",
+      "in": "drop"
+     }
+    ],
     "acts": []
    }
   },
@@ -544,7 +2986,42 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "card",
+      "at": "millions",
+      "x": 40,
+      "y": 60,
+      "big": "MILLIONS",
+      "label": "WOULD TRUST IT",
+      "color": "#8FA3C2",
+      "id": "m",
+      "in": "fly",
+      "icon": "ph:users-three-fill",
+      "w": 500
+     },
+     {
+      "k": "icon",
+      "at": "password",
+      "x": 700,
+      "y": 60,
+      "ref": "ph:password-fill",
+      "size": 160,
+      "color": "#E5383B",
+      "id": "p"
+     },
+     {
+      "k": "tag",
+      "at": "anyone",
+      "x": 640,
+      "y": 280,
+      "text": "a password anyone could look up",
+      "bg": "#E5383B",
+      "size": 30,
+      "color": "#E8EDF5",
+      "id": "a"
+     }
+    ],
     "acts": []
    }
   },
@@ -553,16 +3030,96 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "big",
+      "at": "genius",
+      "x": 40,
+      "y": 60,
+      "text": "No genius needed.",
+      "size": 96,
+      "color": "#E8EDF5"
+     },
+     {
+      "k": "icon",
+      "at": "door",
+      "x": 160,
+      "y": 260,
+      "ref": "ph:door-open-fill",
+      "size": 220,
+      "color": "#E5383B",
+      "id": "d"
+     },
+     {
+      "k": "tag",
+      "at": "nobody",
+      "x": 500,
+      "y": 360,
+      "text": "just one door that nobody locked",
+      "bg": "#E5383B",
+      "size": 36,
+      "color": "#E8EDF5",
+      "id": "t",
+      "in": "slam"
+     }
+    ],
     "acts": []
-   }
+   },
+   "chapter": "The lesson"
   },
   {
    "text": "So go check one thing tonight: your home Wi-Fi router. If it still uses the default admin password, change it.",
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "router",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:wifi-high-bold",
+      "size": 170,
+      "color": "#3DDC97",
+      "id": "r"
+     },
+     {
+      "k": "tag",
+      "at": "tonight",
+      "x": 40,
+      "y": 280,
+      "text": "CHECK TONIGHT",
+      "bg": "#3DDC97",
+      "size": 34,
+      "color": "#06130D",
+      "id": "t",
+      "in": "slam"
+     },
+     {
+      "k": "win",
+      "at": "admin",
+      "x": 460,
+      "y": 40,
+      "w": 760,
+      "h": 330,
+      "title": "192.168.1.1 · router admin",
+      "body": "<div style=\"padding:34px 30px;font:700 30px 'SD Mono';color:#2A2018\">admin password: admin<br><span style=\"color:#E5383B\">→ change it</span></div>",
+      "id": "w",
+      "in": "slide"
+     },
+     {
+      "k": "stamp",
+      "at": "change",
+      "x": 520,
+      "y": 420,
+      "text": "CHANGE IT",
+      "size": 90,
+      "color": "#3DDC97",
+      "rot": -6,
+      "id": "c",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -571,7 +3128,40 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "icon",
+      "at": "digital",
+      "x": 60,
+      "y": 60,
+      "ref": "ph:lock-key-fill",
+      "size": 170,
+      "color": "#3DDC97",
+      "id": "l"
+     },
+     {
+      "k": "tag",
+      "at": "protected",
+      "x": 40,
+      "y": 290,
+      "text": "digital, encrypted links",
+      "bg": "#3DDC97",
+      "size": 32,
+      "color": "#06130D",
+      "id": "t"
+     },
+     {
+      "k": "tv",
+      "at": "harder",
+      "x": 700,
+      "y": 40,
+      "w": 520,
+      "screen": "bars",
+      "id": "tv",
+      "in": "slide",
+      "label": "TODAY"
+     }
+    ],
     "acts": []
    }
   },
@@ -580,7 +3170,47 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "figure",
+      "at": 0.02,
+      "x": 40,
+      "y": 40,
+      "w": 640,
+      "h": 480,
+      "id": "fg",
+      "in": "fade"
+     },
+     {
+      "k": "big",
+      "at": "somewhere",
+      "x": 760,
+      "y": 120,
+      "text": "Still out",
+      "size": 100,
+      "color": "#E8EDF5"
+     },
+     {
+      "k": "big",
+      "at": "somewhere",
+      "x": 760,
+      "y": 240,
+      "text": "*there*…",
+      "size": 100,
+      "color": "#E8EDF5"
+     },
+     {
+      "k": "tag",
+      "at": "isnt",
+      "x": 760,
+      "y": 400,
+      "text": "…or maybe he isn't",
+      "bg": "#141B29",
+      "size": 34,
+      "color": "#E8EDF5",
+      "id": "t"
+     }
+    ],
     "acts": []
    }
   },
@@ -589,7 +3219,59 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "card",
+      "at": "stations",
+      "x": 40,
+      "y": 60,
+      "big": "2",
+      "label": "STATIONS",
+      "color": "#8FA3C2",
+      "id": "a",
+      "in": "fly",
+      "icon": "ph:television-simple-fill",
+      "w": 300
+     },
+     {
+      "k": "card",
+      "at": "hijacks",
+      "x": 380,
+      "y": 60,
+      "big": "2",
+      "label": "HIJACKS",
+      "color": "#E5383B",
+      "id": "b",
+      "in": "fly",
+      "icon": "ph:broadcast-bold",
+      "w": 300
+     },
+     {
+      "k": "card",
+      "at": "night",
+      "x": 720,
+      "y": 60,
+      "big": "1",
+      "label": "NIGHT",
+      "color": "#8FA3C2",
+      "id": "c",
+      "in": "fly",
+      "icon": "ph:moon-fill",
+      "w": 300
+     },
+     {
+      "k": "stamp",
+      "at": "answer",
+      "x": 300,
+      "y": 360,
+      "text": "NO ANSWER",
+      "size": 110,
+      "color": "#E5383B",
+      "rot": -6,
+      "id": "n",
+      "in": "slam"
+     }
+    ],
     "acts": []
    }
   },
@@ -598,7 +3280,38 @@
    "dir": "",
    "v": {
     "type": "mix",
-    "els": [],
+    "els": [
+     {
+      "k": "file",
+      "at": "detective",
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "title": "YOUR THEORY",
+      "rows": [
+       [
+        "SUSPECT",
+        "__________"
+       ],
+       [
+        "MOTIVE",
+        "__________"
+       ]
+      ],
+      "id": "f",
+      "in": "drop"
+     },
+     {
+      "k": "icon",
+      "at": "comments",
+      "x": 140,
+      "y": 420,
+      "ref": "ph:chat-circle-dots-fill",
+      "size": 150,
+      "color": "#E5383B",
+      "id": "c"
+     }
+    ],
     "acts": []
    }
   },
@@ -606,9 +3319,8 @@
    "text": "And subscribe to TechDecoded with Max for more tech mysteries, decoded.",
    "dir": "",
    "v": {
-    "type": "mix",
-    "els": [],
-    "acts": []
+    "type": "end",
+    "sub": "More tech mysteries, decoded."
    }
   }
  ]
