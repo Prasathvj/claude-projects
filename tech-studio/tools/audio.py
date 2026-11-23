@@ -29,8 +29,10 @@ PROFILES = {
              "about 175 words per minute, crisp consonants, natural breaths, a hint of a smile, never flat or robotic.\n"),
     "explainer": ("# AUDIO PROFILE: Energetic, clear male narrator of a fast-paced tech explainer video. About 160 words per "
                   "minute, confident and curious, crisp enunciation, short natural pauses between sentences, never flat.\n"),
+    "mystery": ("# AUDIO PROFILE: A deep, calm male narrator of a true-crime tech mystery documentary. Low, slow and controlled, "
+                "about 120 words per minute, quiet suspense, long pauses before reveals, never theatrical or shouting.\n"),
 }
-TARGET_WPM = {"fast": 172, "explainer": 158}
+TARGET_WPM = {"fast": 172, "explainer": 158, "mystery": 120}
 
 
 # ------------------------------------------------------------------ wav helpers
