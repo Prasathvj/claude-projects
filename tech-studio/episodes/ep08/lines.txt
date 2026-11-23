@@ -1,71 +1,64 @@
 OpenAI's new model can open apps on your computer, click through them, and finish a task while you watch.
 It's called GPT-6 Astra. And right now, it's one of the most searched AI tools in India.
-But most people searching for it hit the same wall. They open ChatGPT, look for Astra, and it simply isn't there.
-So let's decode it: what Astra is, who can actually use it, how to switch it on step by step, what it's good at, what it costs in India, and the one safety warning OpenAI itself gave.
-First, what is it? GPT-6 Astra is OpenAI's top model, launched in September twenty twenty-six. OpenAI calls it its flagship for demanding, end-to-end work.
-Its big strengths are using a computer, writing code, research and science, and long professional tasks.
-And this month, on November seventeenth, OpenAI released an upgrade, GPT-6.2 Astra, along with a cheaper sister model called Sol.
+But most people hit the same wall. They open ChatGPT, look for Astra, and it simply isn't there.
+So let's decode it: where Astra hides, how to switch it on, what it costs in India, and the free Astra trap. Stay for that one, it's catching a lot of people.
+GPT-6 Astra is OpenAI's top model, launched in September twenty twenty-six, built for computer work, coding and long, demanding tasks.
+On November seventeenth, OpenAI upgraded it to GPT-6.2 Astra, and added a cheaper sister model called Sol.
 Think of it like this. Sol is your fast, everyday assistant. Astra is the specialist you call for the hardest jobs.
-Our host Max had a big plan. He would ask Astra to do his entire job, then take the afternoon off.
+Our host Max had a big plan. Ask Astra to do his entire job, then take the afternoon off.
 He opened ChatGPT. No Astra. He refreshed. Still no Astra. He blamed his Wi-Fi.
-Max wasn't doing anything wrong. Astra simply doesn't live where most people look.
-Here's who gets it. On the Plus plan, OpenAI includes GPT-6 Astra inside two places: ChatGPT Work and Codex, not the regular chat list.
-On the Pro, Business and Enterprise plans, you also get GPT-6 Pro, a version that runs on Astra for the toughest questions.
-And on the Free and Go plans, Astra isn't included. You'll still get OpenAI's everyday models, which are very capable for normal chats.
-Even on Plus, there are limits. OpenAI estimates roughly five to forty-five Astra messages every five hours, depending on how heavy each task is.
-So treat Astra like a precious resource. Use it for big jobs, not for "write me a birthday message".
-Before anything, check which plan you're on in your ChatGPT settings. Free, Go, Plus or Pro. That decides everything.
-Now, how do you actually use it? Step one: install the ChatGPT desktop app, on Windows or Mac, and update it to the latest version.
-Step two: at the top, switch from Chat to Work. That's where Astra lives. Then pick Astra from the model menu.
-Step three, the exciting part: Computer Use. Open Plugins, find Computer Use, install it, and turn on its switches.
-On a Mac, you'll be asked to allow Screen Recording and Accessibility. On Windows, keep the app you want it to use visible on screen.
-Step four: start your request with "at Computer" for desktop apps, or "at Chrome" for jobs inside your browser.
-Then describe the task clearly. Which app, which file, and what "done" looks like.
-For example: "Open my sales spreadsheet, make a chart of monthly totals, and save it as a PDF on my desktop."
-Before it touches any app, ChatGPT asks for permission. You can allow it once, or always allow apps you trust.
-And you can watch every click. If something looks wrong, you stop it.
-So Max tried again, properly this time. He asked Astra to turn his messy weekly numbers into a clean report.
-Here are three jobs people are actually trying. Turn a folder of receipts into one tidy expense sheet.
-Build a simple website from a sketch and a few lines of text, then open it in the browser to check it really works.
-Even drive creative apps like Blender. Researchers have built a whole test, called BlenderWorld, just to measure how well AI agents can create 3D scenes.
-One catch. If you start a Work task on the website or the phone app, it runs in the cloud. It can't reach the apps and files on your own computer.
-For coders, the second door is Codex, OpenAI's coding agent. Pick Astra there and it can work through a whole project, run tests and fix what breaks.
-Astra can also create real files: documents, spreadsheets and presentations, not just text in a chat window.
-And through the API, it can read about a million tokens at once. That's roughly a few thick books in one go.
-So, how good is it? On a computer-use test called OSWorld two point oh, OpenAI reports Astra completed about seventy-three percent of tasks.
-The previous top model managed about sixty-six percent, and needed roughly seventy-five minutes per task, against about forty for Astra.
-That's OpenAI's own testing, so take it as a strong claim rather than a guarantee. Independent results vary from test to test.
-OpenAI's launch chart for GPT-6.2 even ranks Astra above Anthropic's Claude Fable 5.2. Again, that's OpenAI's own chart.
-And what can't it do? It can't see your screen unless you allow it. It can't use apps you haven't approved.
-And it isn't instant. Big tasks can take many minutes, so it's best for jobs you'd hand to an assistant, not quick questions.
+The Wi-Fi was fine. Astra just doesn't live where most people look.
+On the Plus plan, Astra sits inside two places: ChatGPT Work and Codex. Not the regular chat list.
+On the Free and Go plans, it isn't included at all. Pro and business plans get it too, with much higher limits.
+And even on Plus, there's a limit. OpenAI estimates roughly five to forty-five Astra messages every five hours, depending on the task.
+So treat it like a precious resource. Big jobs only, not "write me a birthday message".
+Before anything else, check which plan you're on in your ChatGPT settings. That decides everything.
+Here's how to switch it on. Step one: install the ChatGPT desktop app, on Windows or Mac, and update it.
+Step two: at the top, switch from Chat to Work. Then pick Astra from the model menu.
+Step three, the exciting part. Open Plugins, find Computer Use, install it and turn it on.
+On a Mac, allow Screen Recording and Accessibility. On Windows, keep the app you want it to use visible on screen.
+Step four: start your request with "at Computer" for desktop apps, or "at Chrome" for jobs in your browser.
+Then say exactly what done looks like. For example: "Open my sales sheet, chart the monthly totals, and save it as a PDF on my desktop."
+Before it touches any app, ChatGPT asks your permission. And you can watch every click, and stop it any time.
+It can't see your screen or use an app unless you allow it. You stay in control.
+One catch. A Work task started on the website or the phone app runs in the cloud. It can't reach the files on your own computer.
+So Max tried again, properly this time. And people are using Astra for jobs like these.
+A folder of receipts, turned into one tidy expense sheet.
+A simple website built from a sketch, then opened in the browser to check it really works.
+Even 3D apps like Blender. Researchers built a whole test, called BlenderWorld, to measure how well AI agents create 3D scenes.
+And for coders, pick Astra inside Codex, and it can work through a whole project, run the tests and fix what breaks.
+It can also create real files, like documents, spreadsheets and presentations, not just text in a chat window.
+And through the API, it can read about a million tokens at once. That's a few thick books in one go.
+So, how good is it? On a computer-use test called OSWorld two point oh, OpenAI reports Astra finished about seventy-three percent of tasks.
+The previous top model managed about sixty-six percent, and took roughly seventy-five minutes per task, against about forty for Astra.
+That's OpenAI's own testing, so treat it as a strong claim, not a guarantee.
+OpenAI's launch chart even ranks Astra above Anthropic's Claude Fable 5.2. Again, that's OpenAI's own chart.
+And it isn't instant. Big tasks can take many minutes. It's for jobs you'd hand to an assistant, not quick questions.
 Quick game. Astra or Sol? I give you a job, you pick the model.
-Job one: summarise a long email. Sol. Fast and cheap is perfect.
-Job two: go through fifty invoices on your computer and fill a spreadsheet. Astra. That's real computer work.
-Job three: fix a bug across a large codebase. Astra, or Sol if you're on a budget. OpenAI says Sol nearly matches Astra on ready-to-merge code changes, at about a fifth of the cost.
-Job four: a birthday message for your friend. Please. Use Sol. Save Astra for the hard stuff.
+Summarise a long email. Sol. Fast and cheap is perfect.
+Go through fifty invoices on your computer and fill a spreadsheet. Astra. That's real computer work.
+Fix a bug across a big codebase. Astra, or Sol on a budget. OpenAI says Sol nearly matches Astra on ready-to-merge code, at about a fifth of the cost.
+A birthday message for your friend. Please. Use Sol. Save Astra for the hard stuff.
 Now, the money question for India. ChatGPT Go costs three hundred and ninety-nine rupees a month, but it doesn't include Astra.
-ChatGPT Plus is listed at about one thousand nine hundred and ninety-nine rupees a month in India, including GST. That's the cheapest way to get Astra, inside Work and Codex.
-For many students, that's a big monthly bill. If you mostly need help with writing, study and everyday questions, the free models or Go will do the job just fine.
-Pro plans cost a lot more and give much higher limits, plus GPT-6 Pro. Prices change, so always check the official pricing page before you pay.
-And for developers, there's the API. After the November update, GPT-6.2 Astra costs eight dollars per million input tokens and forty dollars per million output tokens.
-Sol costs two dollars in and ten dollars out. So Astra is about four times the price of Sol.
-Now, "GPT-6 Astra free" is one of the biggest searches right now. Be careful.
-Searches for it in India have exploded, and scammers follow the searches.
-Websites and APK files promising free, unlimited Astra are a classic way to steal accounts and card details.
-The safe places are chatgpt.com, the official ChatGPT apps, and OpenAI's own API. If a deal sounds too good, it is.
-And here's the warning OpenAI gave itself. Astra is the first OpenAI model rated "Critical" for cybersecurity under its own safety framework.
-In OpenAI's framework, that level means a model could find serious security holes, or plan an attack, with very little human help.
-So OpenAI added extra safeguards. Monitors watch Astra's tasks and can pause or stop them mid-run, and OpenAI admits this can sometimes interrupt legitimate work.
-OpenAI also said Astra is harder to monitor than its previous model. That's a big reason it watches it so closely.
-For you, the practical lesson is simple. Only give Astra access to the apps and files a task really needs.
-Here are five tips before you start.
-One. Give Astra the full picture. The goal, the files, and what a finished job looks like.
-Two. Break huge jobs into stages, and check its work after each stage.
-Three. Never let it near banking apps, passwords or payment pages.
-Four. Use Sol for small things, so your Astra limit lasts for the big ones.
-Five. Double-check facts and numbers. Even the smartest model can be confidently wrong.
-So, did Max get his afternoon off? Partly. Astra built his report while he watched.
-He spent the time he saved checking its work. Which is exactly how you should use it.
+Plus is about one thousand nine hundred and ninety-nine rupees a month in India, including GST. That's the cheapest way to get Astra.
+For many students that's a big monthly bill. If you mostly need help with writing and study, the free models or Go will do just fine.
+Prices change, so always check the official pricing page before you pay.
+For developers, the API costs eight dollars per million input tokens for Astra, and forty dollars out.
+Sol is two dollars in and ten out. So Astra costs about four times as much.
+Now, the trap I promised. "GPT-6 Astra free" is one of the biggest searches in India right now, and scammers follow the searches.
+Websites and APK files promising free, unlimited Astra are a classic way to steal your account and card details.
+The only safe places are chatgpt.com, the official ChatGPT apps and OpenAI's own API. If a deal sounds too good, it is.
+And here's a warning from OpenAI itself. Astra is its first model rated "Critical" for cybersecurity, under its own safety framework.
+That means it could find serious security holes with very little human help. So OpenAI watches its tasks, and can pause them mid-run.
+OpenAI even admits Astra is harder to monitor than its previous model. That's why it watches it so closely.
+For you, the lesson is simple. Give Astra only the apps and files a task really needs.
+Five quick tips before you start.
+One. Give it the full picture. The goal, the files, and what finished looks like.
+Two. Never let it near banking apps, passwords or payment pages.
+Three. Break huge jobs into stages, and check after each one.
+Four. Use Sol for small things, so your Astra limit lasts.
+Five. Check its work. Even the smartest model can be confidently wrong.
+So, did Max get his afternoon off? Partly. Astra built his report while he watched, and he spent the time he saved checking it.
 GPT-6 Astra isn't magic, and it isn't free. But if your work lives on a computer, it can save you hours.
 Tell me in the comments: what's the first job you'd hand to Astra?
 And subscribe to TechDecoded with Max for more tech, decoded.
