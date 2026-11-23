@@ -1,3 +1,4 @@
+import os
 """Shorts batch 3 (Nov 2026): upi01 UPI, ai01 ChatGPT tokens, del01 file deletion, face01 Face ID.
 Built on the explainer-Short helpers (hf_explainers / hf_news01_short); each topic has its own visual language.
 Usage: THEME=cream GRID=<pattern> python3 tools/hf_batch3.py upi01|ai01|del01|face01|pay01|swe01"""
@@ -780,6 +781,16 @@ ASTCSS = """.win { position:absolute; background:#17110D; border:2px solid #2E1B
 .illu { position:absolute; right:40px; top:200px; font:700 22px 'SD Mono'; letter-spacing:3px; color:#6E5444; }
 .cur9 { position:absolute; left:0; top:0; z-index:20; } .cur9 .lbl { position:absolute; left:46px; top:40px; background:#4DA3FF; color:#fff; font:800 26px 'SD Text'; padding:6px 14px; border-radius:12px; white-space:nowrap; }
 .ring9 { position:absolute; width:80px; height:80px; border-radius:40px; border:5px solid #4DA3FF; opacity:0; z-index:19; }"""
+
+# cream version (owner 2026-11-23: "background match with our old videos"): same product-demo UI, light app windows on cream + dots
+LIGHT = [('rgba(0,0,0,.55)', 'rgba(74,50,28,.16)'), ('rgba(0,0,0,.6)', 'rgba(74,50,28,.18)'), ('rgba(0,0,0,.4)', 'rgba(74,50,28,.14)'),
+         ('#17110D', '#FFFAF7'), ('#211812', '#FFF4EA'), ('#1E1611', '#FFFAF7'), ('#0F0A07', '#EFE3D7'), ('#2E1B13', '#E8D6C6'),
+         ('#3E2217', '#E2CBB8'), ('#3A2A20', '#F3DCCB'), ('#2E2119', '#EFE3D7'), ('#F6EDE6', '#2A2018'), ('#E9DED6', '#2A2018'),
+         ('#B8A598', '#8C6B5A'), ('#8C7A6E', '#A48A78'), ('#6E5444', '#B09682'), ('#1E3B2A', '#E3F5E8'), ('#CFF5DA', '#1E6B34'), ('#FEBC2E', '#C98A00'), ('#8EC5FF', '#1C6ED6')]
+def lightify(h):
+    for a, b in LIGHT:
+        h = h.replace(a, b)
+    return h
 CURSOR = '<svg width="56" height="64" viewBox="0 0 28 32"><path d="M2 2 L2 26 L8.5 19.5 L13 30 L17.5 28 L13 18 L22 18 Z" fill="#FFFFFF" stroke="#111" stroke-width="2" stroke-linejoin="round"/></svg>'
 def cursor(sid, pts, label='Astra'):
     """agent cursor: pts = [(x, y, t, click?)]; returns (html, script lines)"""
@@ -830,7 +841,7 @@ def ast():
 <div class="mi">GPT-5.6 Sol <small>everyday</small></div><div class="mi">GPT-5.6 Luna <small>fast</small></div>
 <div class="mi" id="s2-nr" style="color:#E0471C; opacity:0">No results for "Astra"</div></div>
 <div class="kin" id="s2-t" style="top:900px; font-size:90px">CAN'T <span>FIND IT?</span></div>"""
-    sc = [fly('#s2-m', 0.02), counter('#s2-q', W(2, 'people'), ['A', 'As', 'Ast', 'Astr', 'Astra'], .07), f'    tl.to("#s2-nr", {{ opacity:1, duration:.15 }}, {W(2, "find")});', shake('#s2-m', W(2, 'find')), slam('#s2-t', W(2, 'even'))]
+    sc = [fly('#s2-m', 0.02), counter('#s2-q', W(2, 'people'), ['A', 'As', 'Ast', 'Astr', 'Astra'], .07), f'    tl.to("#s2-nr", {{ opacity:1, duration:.15 }}, {W(2, "find")});', shake('#s2-m', W(2, 'find')), slam('#s2-t', W(2, 'even')), f'    tl.to("#s2-m, #s2-t", {{ opacity:0, scale:.92, duration:.3, ease:"power2.in" }}, {round(17.85 - S["s2"][0] - .3, 3)});']
     out_.append(mk(2, body, sc, css))
     # ---- s3: transparent (ChatGPT-style exchange clip plays at index level)
     out_.append(mk(3, '<div class="illu" style="top:120px">ILLUSTRATION</div>', [], css))
@@ -882,6 +893,8 @@ def ast():
 <div class="stamp" id="s9-s" style="left:270px; top:560px; font-size:150px; white-space:nowrap">SCAM</div>"""
     sc = [fly('#s9-w', 0.02), shake('#s9-w', W(9, 'free')), tween('#s9-s', W(9, 'scam') - .2, 'scale:3, opacity:0, rotation:10', 'scale:1, opacity:1, rotation:-12', .22, 'power4.in')]
     out_.append(mk(9, body, sc, css + QCSS))
+    if os.environ.get('THEME') == 'cream':
+        out_ = [lightify(h) for h in out_]
     s, tc = subscribe_scene(10); out_.append(s)
     def sfx(g):
         A_ = lambda i, w, n=0: S[f's{i}'][0] + W(i, w, n)

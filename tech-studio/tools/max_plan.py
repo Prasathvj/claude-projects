@@ -136,7 +136,9 @@ MOODS = {'upi01-short': 'shock think point focus think focus point happy shrug s
          'pay01-short': 'think happy shock worry point happy',
          'swe01-short': 'shock think happy worry think shock point happy',
          'qnt01-short': 'shock shock think point think point happy',
-         'lst01-short': 'shock think point shock think point happy'}
+         'lst01-short': 'shock think point shock think point happy',
+         # ast01 (owner 2026-11-23: 'add max only required place'): Max only at the reveal, 'can't find it', the scam and the outro
+         'ast01-short': 'off shock think off off off off off off worry happy'}
 
 # automatic host acting for long videos: expression from each beat's visual type and delivery note
 AUTO = {'slam': {'brows': 'up', 'arms': 'point', 'look': [-1, 0]}, 'quote': {'brows': 'focused', 'arms': 'chin', 'look': [-1, 0]},
@@ -168,7 +170,8 @@ pid = sys.argv[1]
 tl = json.load(open(f'src/episodes/{pid}.timeline.json'))
 if pid in MOODS:
     mm = MOODS[pid].split(); bb = tl['beats']
-    SEGS[pid] = [(round(bb[i + 1]['start'] - 0.12, 3) if i + 1 < len(bb) else 99, 'duo', EX[mm[min(i, len(mm) - 1)]]) for i in range(len(bb))]
+    SEGS[pid] = [(round(bb[i + 1]['start'] - 0.12, 3) if i + 1 < len(bb) else 99, 'off' if mm[min(i, len(mm) - 1)] == 'off' else 'duo',
+                  EX.get(mm[min(i, len(mm) - 1)], {'brows': 'neutral'})) for i in range(len(bb))]
 if pid not in SEGS:
     ep = json.load(open(f'episodes/{pid.split("-")[0]}/{pid.split("-")[1]}.json'))
     for b, e in zip(tl['beats'], ep['beats']):

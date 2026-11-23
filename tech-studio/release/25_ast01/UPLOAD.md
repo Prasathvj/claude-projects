@@ -1,5 +1,5 @@
 # ast01 Short: How to use GPT-6 Astra in 1 minute
-File: `TechDecoded_ast01_short.mp4` (1080×1920, ~1:05) · Look: professional product demo (dark brand theme, app windows, agent cursor, ChatGPT-style exchange) · Voice: Gemini Orus, natural speed
+File: `TechDecoded_ast01_short.mp4` (1080×1920, ~1:05) · Look: professional product demo on our cream + dots background (light app windows, agent cursor, ChatGPT-style exchange in a phone frame); Max only at the reveal, "can't find it", the scam warning and the outro · Voice: Gemini Orus, natural speed
 Planned release: **as soon as approved** (trending now: "gpt 6 astra" ≈ 248k searches/month, India #1)
 
 **Title:** How to use GPT-6 Astra (it's not in the chat list) #shorts
