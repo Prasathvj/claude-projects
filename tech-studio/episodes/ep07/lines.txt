@@ -1,7 +1,12 @@
 You mention running shoes to a friend over dinner. You never search for them. And the next morning, your Instagram is full of running shoe ads.
 It feels like proof. Your phone heard you.
 Millions of people believe this. Some put tape over their microphones. Some say a product name out loud, just to see if the ads follow.
-So let's decode it properly: the scientists who tested it, the marketing company that bragged about doing it, the times phones really did record people, and how ads seem to read your mind without hearing a single word.
+So let's decode it properly: the scientists who tested it, the marketing company that bragged about doing it, the times devices really did record people, and how ads seem to read your mind without hearing a single word.
+But first, let's run the famous home experiment. Our host Max is going to try it.
+Max doesn't own a cat. So for one week, he says "cat food" near his phone. At breakfast. On the bus. Very loudly, in the office lift.
+Day one, nothing. Day two, nothing. Day four, there it is: a cat food ad. Max gasps. Case closed?
+Not quite. Max saw about a thousand other ads that week and doesn't remember a single one. And on day three, he searched "why does my cat food test not work". Oops.
+That's the problem with testing it yourself. You count the hits and forget the misses. So let's look at people who tested it properly.
 In twenty eighteen, researchers at Northeastern University in Boston set out to catch phones in the act.
 They used automated software to run more than seventeen thousand popular Android apps, including Facebook's own apps, and they captured every piece of data those apps sent out.
 They were looking for audio leaving the phone. They found none. Not one app secretly switched on the microphone and sent recordings.
@@ -14,12 +19,22 @@ The news site 404 Media published a sales pitch deck from Cox Media Group, a big
 The deck claimed it could use voice data from smart devices to find people who were talking about products, and then target those people with ads.
 Google removed the company from its advertising partner program. Amazon said it had nothing to do with it.
 But a sales deck is not evidence. Nobody has shown that this product worked as advertised, or that it ever ran at any real scale.
-There is one place where phones really did record people, though. Voice assistants.
-Your phone listens for a wake word, like "Hey Siri" or "Hey Google". Sometimes it mishears, wakes up, and records a private conversation by mistake.
+And here's a strange twist: phones have listened to ads before. Just not to you.
+Around twenty fifteen, a company called SilverPush made code for apps that listened for secret sounds hidden inside TV ads. Whistles too high for humans to hear, but not too high for a phone.
+If your phone heard the whistle, the app knew you had just watched that ad.
+In twenty sixteen, the US Federal Trade Commission sent warning letters to twelve app developers whose apps contained that code, because users were never told.
+So the technology to listen is real. What scientists haven't found is phones quietly recording your conversations to sell you shoes.
+There is one place where devices really did record people, though. Voice assistants.
+Your phone listens for one thing only: a wake word, like "Hey Siri" or "Hey Google". A tiny part of the phone checks for it, right on the device.
+But sometimes it mishears. Someone says "seriously" and Siri thinks you called her. It wakes up and records a private conversation by mistake.
+And once the wake word is heard, your request goes to the company's servers to be understood. That's the moment a recording can be stored.
 In twenty twenty-five, Apple agreed to pay ninety-five million dollars to settle a US lawsuit over accidental Siri recordings. Google later agreed to pay sixty-eight million dollars over the same problem with Google Assistant. Neither company admitted wrongdoing.
-Those recordings were accidents, not an advertising machine. But they show the risk is real.
-So why don't experts believe your phone is recording everything you say for ads?
-Recording and uploading hours of audio from billions of phones would drain batteries and burn data, and security researchers who watch app traffic every day would spot it.
+Smart speakers have their own stories. In twenty nineteen, Bloomberg reported that thousands of Amazon workers and contractors were listening to Alexa clips to improve it, some reviewing up to a thousand clips a shift.
+And in twenty twenty-three, Amazon paid twenty-five million dollars to settle US charges that it kept children's Alexa voice recordings for years, even after parents asked for them to be deleted. Amazon denied breaking the law.
+So the risk is real. But those were accidents, and data kept too long. Not an ad machine listening to your dinner.
+So why don't experts believe your phone is recording everything you say?
+Let's do some quick maths. Even compressed, voice audio uses roughly sixteen kilobits every second. Over one day, that's about one hundred and seventy megabytes, from every phone, every day.
+Your data pack would notice. Your battery would notice. And security researchers who watch app traffic for a living would definitely notice.
 Phones also warn you now. On an iPhone, an orange dot appears when an app is using the microphone. On Android, a green dot appears, and you can tap it to see which app it is.
 And it would be a bad deal for advertisers anyway. They already know far more about you than one sentence at dinner could ever tell them.
 So how did the running shoe ad find you? Usually through one of four routes.
@@ -27,17 +42,25 @@ Route one: the people around you. Your friend looked up those shoes after dinner
 Route two: the trail you leave. Many websites carry a tiny piece of code called the Meta Pixel. When you visit a page, it can report that visit back to Meta, even if you never click anything, and even if you don't have an account.
 Shops can also upload customer email addresses and phone numbers, and Meta matches them to profiles. That's how a store you bought from once keeps finding you.
 Route three: data brokers and your location. Some apps sell where you go. If your phone visits a gym three times a week, you look like someone who might buy running shoes.
-Route four: your own brain. You see hundreds of ads every day and forget almost all of them. The one that matches a conversation is the one you remember. Psychologists call it the frequency illusion.
+Route four: your own brain. You see hundreds of ads every day and forget almost all of them. The one that matches a conversation is the one you remember. Psychologists call it the frequency illusion. Just ask Max and his imaginary cat.
+And there's a bonus trick advertisers love: lookalikes. If people who bought running shoes look a lot like you, same age, same city, same apps, you get the ad too. They don't need to know you. They just need to know people like you.
 Put together, the system doesn't need to hear you. It predicts what you're about to want, sometimes before you even say it.
+Quick game. Real or fake? I say a phone myth, you decide.
+Myth one: airplane mode stops all tracking. Fake. Many apps simply save what you did and send it the moment you reconnect.
+Myth two: incognito mode hides you from websites. Fake. It only stops your own phone from saving your history. Websites, and your network, can still see you.
+Myth three: your phone is always listening for one thing. Real. The wake word. That's why turning it off is one of the simplest privacy wins.
+Myth four: a sticker on your camera also blocks the microphone. Fake. They're separate parts. The sticker does nothing for the mic.
 What about India? Our data protection law, the DPDP Act, finally has its rules in place since November twenty twenty-five.
 They roll out in phases until twenty twenty-seven. Companies will have to tell you clearly what data they collect and why, and let you withdraw your consent easily.
 Until then, here is what you can do today, in about five minutes.
 One. Check which apps can use your microphone. On iPhone, go to Settings, Privacy and Security, Microphone. On Android, open the Privacy dashboard. Switch off anything that doesn't need it.
+Does your torch app need your microphone? Does your calculator? No. Switch them off.
 Two. Watch for the dot. If the orange or green dot appears when you're not on a call or recording, find out which app is using it.
 Three. Limit ad tracking. On iPhone, choose "Ask App Not to Track". On Android, delete your advertising ID in Settings.
 Four. On Facebook and Instagram, open your activity off Meta technologies, and disconnect the websites that report on you.
 Five. If voice assistants worry you, turn off the wake word, and review or delete your saved voice recordings.
 So, is your phone secretly listening to you? Almost certainly not, at least not for ads.
 The uncomfortable truth is that it doesn't need to. Your searches, your location and the people around you already tell the story.
+And Max? He's buying cat food anyway. The ads won.
 Tell me in the comments: what's the creepiest ad you've ever seen?
 And subscribe to TechDecoded with Max for more tech, decoded.

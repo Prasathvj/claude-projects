@@ -296,6 +296,8 @@ def episode(path):
     secs = sum(gtts.wav_duration(p) for p in takes)
     wpm = words / secs * 60
     factor = min(ep.get("max_tempo", 1.25), max(1.0, TARGET_WPM[profile] / wpm))
+    if ep.get("slow"):            # owner request (ep07): narration a little slower than the raw take
+        factor = float(ep["slow"])
     print(f"  raw pace {wpm:.0f} wpm -> tempo x{factor:.2f}")
     gap, lead, tail = ep.get("gap", 0.15), 0.25, 1.2
     t = lead
@@ -303,7 +305,7 @@ def episode(path):
     out_beats = []
     for b, p in zip(beats, takes):
         src = p
-        if factor > 1.001:
+        if abs(factor - 1) > 0.001:
             src = p.with_name(p.stem + f"_t{int(factor * 100)}.wav")
             if not src.exists():
                 tempo(p, factor, src)
