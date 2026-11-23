@@ -80,12 +80,14 @@ def register(B):
         return body, sc, CSS
 
     def t_vstat(i, sid, v):
+        chars = len(v['num']) + len(v.get('unit', '')) + 1
+        fs = min(250, int(1240 / (0.6 * chars)))   # fit the stage width
         sub = mark(v.get('sub', ''), 'h', sid, v.get('hi'))
         note = f'<div class="vx-hand" id="{sid}-n" style="left:{v.get("nx", 760)}px; top:{v.get("ny", 520)}px; transform:rotate(-7deg); opacity:0">{E(v["note"])}</div>' if v.get('note') else ''
         foot = f'<div style="position:absolute; left:{v.get("nx", 760) + 10}px; top:{v.get("ny", 520) + 150}px; font:600 20px \'SD Text\'; color:#9C8576">{E(v["foot"])}</div>' if v.get('foot') else ''
         src = f'<div class="vx-src" id="{sid}-s" style="left:{v.get("sx", 780)}px; top:{v.get("sy", 60)}px; opacity:0"><i>SOURCE</i><span>{E(v["source"])}</span></div><div class="vx-tape" style="left:{v.get("sx", 780) + 190}px; top:{v.get("sy", 60) - 20}px; transform:rotate(-4deg)"></div>' if v.get('source') else ''
         body = f"""<div class="vx-ht" style="left:700px; top:-120px"></div><div class="vx-kick" style="position:absolute; left:40px; top:120px">{E(v.get("kicker", ""))}</div>
-<div class="vx-num" id="{sid}-v" style="left:20px; top:180px"><span id="{sid}-v1" style="display:inline-block">{E(v["num"])}</span> <b id="{sid}-v2" style="display:inline-block">{E(v.get("unit", ""))}</b></div>
+<div class="vx-num" id="{sid}-v" style="left:20px; top:{180 + (250 - fs) // 2}px; font-size:{fs}px"><span id="{sid}-v1" style="display:inline-block">{E(v["num"])}</span> <b id="{sid}-v2" style="display:inline-block">{E(v.get("unit", ""))}</b></div>
 <div style="position:absolute; left:40px; top:470px; font:700 46px 'SD Display'; color:{INK}">{sub}</div>{src}{note}{foot}"""
         sc = [f'    tl.fromTo("#{sid}-v1", {{ opacity:0, scale:2.4 }}, {{ opacity:1, scale:1, duration:.35, ease:"expo.out" }}, 0.08);',
               f'    tl.fromTo("#{sid}-v2", {{ opacity:0, x:120 }}, {{ opacity:1, x:0, duration:.4, ease:"back.out(2)" }}, 0.25);']

@@ -1,0 +1,2269 @@
+{
+ "id": "ep06-long",
+ "format": "horizontal",
+ "profile": "explainer",
+ "gap": 0.3,
+ "captions": "big",
+ "voice": "Eric",
+ "batch": 46,
+ "max_tempo": 1.05,
+ "engine": "vidiq",
+ "voice_id": "cjVigY5qzO86Huf0OWal",
+ "host_beats": [
+  0,
+  2,
+  3,
+  10,
+  11,
+  14,
+  28,
+  29,
+  31,
+  33,
+  38,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45
+ ],
+ "beats": [
+  {
+   "text": "In under five minutes, a chip the size of a postage stamp finished a calculation that would take one of the world's fastest supercomputers ten septillion years.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "chip",
+      "x": 60,
+      "y": 180,
+      "at": 0.02,
+      "in": "drop",
+      "text": "Q",
+      "s": 1.0,
+      "loop": "boil"
+     },
+     {
+      "p": "clock",
+      "x": 400,
+      "y": 190,
+      "at": 0.15,
+      "in": "pop",
+      "s": 0.85
+     },
+     {
+      "p": "strip",
+      "text": "under 5 minutes",
+      "x": 380,
+      "y": 470,
+      "at": 0.3,
+      "c": "o",
+      "size": 44,
+      "in": "drop"
+     },
+     {
+      "p": "calendar",
+      "x": 760,
+      "y": 420,
+      "at": 0.4,
+      "in": "drop",
+      "text": "∞",
+      "s": 0.55
+     },
+     {
+      "p": "calendar",
+      "x": 776,
+      "y": 358,
+      "at": 0.47000000000000003,
+      "in": "drop",
+      "text": "∞",
+      "s": 0.55
+     },
+     {
+      "p": "calendar",
+      "x": 760,
+      "y": 296,
+      "at": 0.54,
+      "in": "drop",
+      "text": "∞",
+      "s": 0.55
+     },
+     {
+      "p": "calendar",
+      "x": 776,
+      "y": 234,
+      "at": 0.6100000000000001,
+      "in": "drop",
+      "text": "∞",
+      "s": 0.55
+     },
+     {
+      "p": "calendar",
+      "x": 760,
+      "y": 172,
+      "at": 0.68,
+      "in": "drop",
+      "text": "∞",
+      "s": 0.55
+     },
+     {
+      "p": "calendar",
+      "x": 776,
+      "y": 110,
+      "at": 0.75,
+      "in": "drop",
+      "text": "∞",
+      "s": 0.55
+     },
+     {
+      "p": "calendar",
+      "x": 760,
+      "y": 48,
+      "at": 0.8200000000000001,
+      "in": "drop",
+      "text": "∞",
+      "s": 0.55
+     },
+     {
+      "p": "calendar",
+      "x": 776,
+      "y": -14,
+      "at": 0.8900000000000001,
+      "in": "drop",
+      "text": "∞",
+      "s": 0.55
+     }
+    ]
+   },
+   "chapter": "Ten septillion years"
+  },
+  {
+   "text": "That's a one followed by twenty-five zeros. Far longer than the universe has existed.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vstat",
+    "kicker": "ONE FOLLOWED BY 25 ZEROS",
+    "num": "10²⁵",
+    "unit": "YEARS",
+    "sub": "vs under 5 minutes on Willow",
+    "hi": "under 5 minutes",
+    "source": "Google, Willow announcement, Dec 2024",
+    "note": "the universe: ~13.8 billion years",
+    "sx": 760,
+    "sy": 560,
+    "nx": 60,
+    "ny": 580
+   }
+  },
+  {
+   "text": "The chip is Google's Willow, a quantum computer. And it sounds like magic, which is exactly why so much of what you hear about quantum computing is wrong.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "chip",
+      "x": 440,
+      "y": 150,
+      "at": 0.05,
+      "in": "pop",
+      "text": "Q",
+      "s": 1.15,
+      "loop": "boil"
+     },
+     {
+      "p": "banner",
+      "text": "GOOGLE WILLOW",
+      "x": 300,
+      "y": 30,
+      "at": 0.25,
+      "size": 60,
+      "in": "drop"
+     },
+     {
+      "p": "star",
+      "x": 300,
+      "y": 220,
+      "at": 0.45,
+      "in": "pop",
+      "s": 0.6,
+      "loop": "spin"
+     },
+     {
+      "p": "star",
+      "x": 820,
+      "y": 330,
+      "at": 0.55,
+      "in": "pop",
+      "s": 0.5,
+      "loop": "spin"
+     },
+     {
+      "p": "strip",
+      "text": "magic?",
+      "x": 760,
+      "y": 520,
+      "at": 0.7,
+      "c": "r",
+      "size": 54,
+      "in": "pop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "So in the next few minutes, let's decode what a quantum computer really is, why it has to be colder than outer space, what it can and can't do, and why your bank is already preparing for it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "qcoin",
+      "x": 60,
+      "y": 150,
+      "at": 0.05,
+      "in": "drop",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "thermo",
+      "x": 330,
+      "y": 120,
+      "at": 0.2,
+      "in": "drop",
+      "s": 0.7
+     },
+     {
+      "p": "check",
+      "x": 560,
+      "y": 170,
+      "at": 0.35,
+      "in": "pop",
+      "s": 0.9
+     },
+     {
+      "p": "lock",
+      "x": 800,
+      "y": 120,
+      "at": 0.5,
+      "in": "drop",
+      "s": 0.6
+     },
+     {
+      "p": "strip",
+      "text": "what it is",
+      "x": 40,
+      "y": 420,
+      "at": 0.1,
+      "c": "c",
+      "size": 36,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "colder than space",
+      "x": 280,
+      "y": 520,
+      "at": 0.25,
+      "c": "c",
+      "size": 36,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "can & can't",
+      "x": 560,
+      "y": 420,
+      "at": 0.4,
+      "c": "c",
+      "size": 36,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "your bank",
+      "x": 800,
+      "y": 520,
+      "at": 0.55,
+      "c": "o",
+      "size": 36,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Start with the computer you're using right now. Everything it does comes down to bits, tiny switches that are either zero or one.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "laptop",
+      "x": 240,
+      "y": 150,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.8
+     },
+     {
+      "p": "strip",
+      "text": "0",
+      "x": 120,
+      "y": 160,
+      "at": 0.3,
+      "c": "c",
+      "size": 70,
+      "in": "pop"
+     },
+     {
+      "p": "strip",
+      "text": "1",
+      "x": 860,
+      "y": 180,
+      "at": 0.4,
+      "c": "o",
+      "size": 70,
+      "in": "pop"
+     },
+     {
+      "p": "strip",
+      "text": "0",
+      "x": 900,
+      "y": 420,
+      "at": 0.5,
+      "c": "c",
+      "size": 70,
+      "in": "pop"
+     },
+     {
+      "p": "strip",
+      "text": "1",
+      "x": 90,
+      "y": 430,
+      "at": 0.6,
+      "c": "o",
+      "size": 70,
+      "in": "pop"
+     },
+     {
+      "p": "banner",
+      "text": "BITS",
+      "x": 470,
+      "y": 40,
+      "at": 0.7,
+      "size": 60,
+      "in": "drop"
+     }
+    ]
+   },
+   "chapter": "Bits vs qubits"
+  },
+  {
+   "text": "Every photo, every video, every message is just billions of those switches flipping on and off, extremely fast.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "switch",
+      "x": 40,
+      "y": 140,
+      "at": 0.05,
+      "in": "drop",
+      "s": 0.85,
+      "on": false,
+      "loop": "boil"
+     },
+     {
+      "p": "switch",
+      "x": 245,
+      "y": 140,
+      "at": 0.13,
+      "in": "drop",
+      "s": 0.85,
+      "on": true,
+      "loop": "boil"
+     },
+     {
+      "p": "switch",
+      "x": 450,
+      "y": 140,
+      "at": 0.21000000000000002,
+      "in": "drop",
+      "s": 0.85,
+      "on": false,
+      "loop": "boil"
+     },
+     {
+      "p": "switch",
+      "x": 655,
+      "y": 140,
+      "at": 0.29,
+      "in": "drop",
+      "s": 0.85,
+      "on": true,
+      "loop": "boil"
+     },
+     {
+      "p": "switch",
+      "x": 860,
+      "y": 140,
+      "at": 0.37,
+      "in": "drop",
+      "s": 0.85,
+      "on": false,
+      "loop": "boil"
+     },
+     {
+      "p": "switch",
+      "x": 1065,
+      "y": 140,
+      "at": 0.45,
+      "in": "drop",
+      "s": 0.85,
+      "on": true,
+      "loop": "boil"
+     },
+     {
+      "p": "strip",
+      "text": "billions of switches",
+      "x": 360,
+      "y": 500,
+      "at": 0.7,
+      "c": "o",
+      "size": 48,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "A quantum computer uses qubits instead. And a qubit can be in a mix of zero and one at the same time, a state called superposition.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "qcoin",
+      "x": 480,
+      "y": 110,
+      "at": 0.05,
+      "in": "pop",
+      "text": "Q",
+      "s": 1.4,
+      "loop": "spin"
+     },
+     {
+      "p": "banner",
+      "text": "SUPERPOSITION",
+      "x": 330,
+      "y": 470,
+      "at": 0.5,
+      "size": 64,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "A simple way to picture it: a normal bit is a coin lying flat, heads or tails. A qubit is a coin still spinning in the air. Only when you look does it land on one side.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "qcoin",
+      "x": 140,
+      "y": 160,
+      "at": 0.05,
+      "in": "drop",
+      "text": "1",
+      "s": 1.2
+     },
+     {
+      "p": "strip",
+      "text": "bit: heads OR tails",
+      "x": 60,
+      "y": 470,
+      "at": 0.2,
+      "c": "c",
+      "size": 42,
+      "in": "drop"
+     },
+     {
+      "p": "qcoin",
+      "x": 760,
+      "y": 120,
+      "at": 0.45,
+      "in": "pop",
+      "text": "?",
+      "s": 1.2,
+      "loop": "spin"
+     },
+     {
+      "p": "strip",
+      "text": "qubit: still spinning",
+      "x": 680,
+      "y": 470,
+      "at": 0.55,
+      "c": "o",
+      "size": 42,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Qubits can also be linked together, so that measuring one instantly tells you something about another. That's called entanglement.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "qcoin",
+      "x": 160,
+      "y": 160,
+      "at": 0.05,
+      "in": "pop",
+      "text": "Q",
+      "s": 1.1,
+      "loop": "spin"
+     },
+     {
+      "p": "arrow",
+      "x": 450,
+      "y": 260,
+      "at": 0.3,
+      "in": "fly",
+      "len": 420,
+      "c": "o"
+     },
+     {
+      "p": "qcoin",
+      "x": 900,
+      "y": 160,
+      "at": 0.15,
+      "in": "pop",
+      "text": "Q",
+      "s": 1.1,
+      "loop": "spin"
+     },
+     {
+      "p": "banner",
+      "text": "ENTANGLEMENT",
+      "x": 350,
+      "y": 480,
+      "at": 0.55,
+      "size": 60,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Here's why that matters. Two qubits can hold a blend of four possibilities. Ten can hold over a thousand. Three hundred qubits can hold more possibilities than there are atoms in the observable universe.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vdoc",
+    "label": "POSSIBLE STATES = 2 TO THE POWER OF n",
+    "lines": [
+     "2 qubits   →  4 states",
+     "10 qubits  →  1,024 states",
+     "300 qubits →  more states than",
+     "              atoms in the universe"
+    ],
+    "hi": [
+     2,
+     "more states than"
+    ],
+    "circle": [
+     1,
+     "1,024"
+    ],
+    "note": "exponential!",
+    "nx": 1000,
+    "ny": 470
+   }
+  },
+  {
+   "text": "Now, the most common explanation you'll hear is that a quantum computer tries every answer at the same time. That's the myth.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "maze",
+      "x": 160,
+      "y": 80,
+      "at": 0.02,
+      "in": "drop",
+      "s": 1.25
+     },
+     {
+      "p": "bit",
+      "x": 230,
+      "y": 150,
+      "at": 0.2,
+      "in": "pop",
+      "s": 0.35,
+      "loop": "boil"
+     },
+     {
+      "p": "cross",
+      "x": 760,
+      "y": 120,
+      "at": 0.75,
+      "in": "pop",
+      "s": 1.0
+     },
+     {
+      "p": "strip",
+      "text": "\"tries every answer at once\"",
+      "x": 560,
+      "y": 470,
+      "at": 0.3,
+      "c": "c",
+      "size": 40,
+      "in": "drop"
+     }
+    ]
+   },
+   "chapter": "The biggest myth"
+  },
+  {
+   "text": "If it simply tried everything at once, you'd still only get one random answer when you look. That's useless.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "qcoin",
+      "x": 40,
+      "y": 120,
+      "at": 0.05,
+      "in": "drop",
+      "text": "?",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 250,
+      "y": 120,
+      "at": 0.12000000000000001,
+      "in": "drop",
+      "text": "?",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 460,
+      "y": 120,
+      "at": 0.19,
+      "in": "drop",
+      "text": "?",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 670,
+      "y": 120,
+      "at": 0.26,
+      "in": "drop",
+      "text": "?",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 880,
+      "y": 120,
+      "at": 0.33,
+      "in": "drop",
+      "text": "?",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "strip",
+      "text": "look → ONE random answer",
+      "x": 260,
+      "y": 450,
+      "at": 0.55,
+      "c": "r",
+      "size": 50,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "The real trick is called interference. Like waves in water, the possibilities can add up or cancel out.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "waves",
+      "x": 80,
+      "y": 200,
+      "at": 0.05,
+      "in": "slide",
+      "n": 7,
+      "c": "o",
+      "loop": "bob"
+     },
+     {
+      "p": "banner",
+      "text": "INTERFERENCE",
+      "x": 330,
+      "y": 40,
+      "at": 0.4,
+      "size": 66,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "waves add up or cancel",
+      "x": 340,
+      "y": 470,
+      "at": 0.65,
+      "c": "c",
+      "size": 44,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "A quantum algorithm is a clever recipe that makes the wrong answers cancel each other out, and the right answer get stronger, so that when you finally measure, you're likely to see the right one.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "waves",
+      "x": 40,
+      "y": 120,
+      "at": 0.05,
+      "in": "slide",
+      "n": 4,
+      "c": "t",
+      "id": "bad"
+     },
+     {
+      "p": "waves",
+      "x": 560,
+      "y": 300,
+      "at": 0.3,
+      "in": "slide",
+      "n": 5,
+      "c": "o",
+      "s": 1.2,
+      "loop": "bob"
+     },
+     {
+      "p": "strip",
+      "text": "wrong answers cancel",
+      "x": 40,
+      "y": 330,
+      "at": 0.25,
+      "c": "l",
+      "size": 40,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "right answer grows",
+      "x": 620,
+      "y": 120,
+      "at": 0.5,
+      "c": "g",
+      "size": 44,
+      "in": "drop"
+     },
+     {
+      "p": "check",
+      "x": 1020,
+      "y": 460,
+      "at": 0.75,
+      "in": "pop",
+      "s": 0.8
+     }
+    ],
+    "moves": [
+     {
+      "id": "bad",
+      "at": 0.45,
+      "fade": true,
+      "y": 40
+     }
+    ]
+   }
+  },
+  {
+   "text": "That's also why quantum computers aren't faster at everything. They only win on problems where someone has found a recipe like that.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "strip",
+      "text": "faster at everything",
+      "x": 80,
+      "y": 150,
+      "at": 0.05,
+      "c": "c",
+      "size": 54,
+      "in": "drop"
+     },
+     {
+      "p": "cross",
+      "x": 760,
+      "y": 110,
+      "at": 0.25,
+      "in": "pop",
+      "s": 0.9
+     },
+     {
+      "p": "strip",
+      "text": "only with the right recipe",
+      "x": 80,
+      "y": 400,
+      "at": 0.5,
+      "c": "o",
+      "size": 54,
+      "in": "drop"
+     },
+     {
+      "p": "check",
+      "x": 860,
+      "y": 360,
+      "at": 0.7,
+      "in": "pop",
+      "s": 0.9
+     }
+    ]
+   }
+  },
+  {
+   "text": "So why does a quantum computer look like a giant golden chandelier?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "fridge",
+      "x": 420,
+      "y": 20,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.95,
+      "loop": "boil"
+     },
+     {
+      "p": "strip",
+      "text": "?",
+      "x": 900,
+      "y": 160,
+      "at": 0.5,
+      "c": "o",
+      "size": 90,
+      "in": "pop"
+     }
+    ]
+   },
+   "chapter": "Colder than space"
+  },
+  {
+   "text": "Because qubits are incredibly fragile. The tiniest bit of heat, vibration or stray signal knocks them out of their delicate state. Physicists call this noise.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "fridge",
+      "x": 60,
+      "y": 40,
+      "at": 0.02,
+      "in": "fade",
+      "s": 0.85,
+      "loop": "shake"
+     },
+     {
+      "p": "strip",
+      "text": "heat",
+      "x": 560,
+      "y": 80,
+      "at": 0.25,
+      "c": "r",
+      "size": 52,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "vibration",
+      "x": 760,
+      "y": 230,
+      "at": 0.4,
+      "c": "r",
+      "size": 52,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "stray signals",
+      "x": 600,
+      "y": 390,
+      "at": 0.55,
+      "c": "r",
+      "size": 52,
+      "in": "drop"
+     },
+     {
+      "p": "banner",
+      "text": "NOISE",
+      "x": 820,
+      "y": 520,
+      "at": 0.75,
+      "size": 70,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "So most quantum chips, including Google's, sit inside special refrigerators that cool them to around ten thousandths of a degree above absolute zero.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "thermo",
+      "x": 160,
+      "y": 60,
+      "at": 0.02,
+      "in": "drop",
+      "s": 1.4
+     },
+     {
+      "p": "strip",
+      "text": "4 K",
+      "x": 460,
+      "y": 80,
+      "at": 0.2,
+      "c": "c",
+      "size": 56,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "0.1 K",
+      "x": 460,
+      "y": 250,
+      "at": 0.4,
+      "c": "c",
+      "size": 56,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "0.01 K",
+      "x": 460,
+      "y": 420,
+      "at": 0.6,
+      "c": "o",
+      "size": 60,
+      "in": "drop"
+     },
+     {
+      "p": "fridge",
+      "x": 860,
+      "y": 60,
+      "at": 0.1,
+      "in": "fade",
+      "s": 0.75
+     }
+    ]
+   }
+  },
+  {
+   "text": "Deep space is about 2.7 degrees above absolute zero. So the inside of a quantum computer is roughly two hundred and seventy times colder than outer space.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vstat",
+    "kicker": "QUBITS ≈ 0.01 K · DEEP SPACE ≈ 2.7 K",
+    "num": "≈270×",
+    "unit": "COLDER",
+    "sub": "than outer space",
+    "hi": "outer space",
+    "source": "Dilution refrigerators run at ~10 millikelvin (MIT, Bluefors)",
+    "note": "brrr!",
+    "sx": 760,
+    "sy": 560,
+    "nx": 120,
+    "ny": 590
+   }
+  },
+  {
+   "text": "Even when they're that cold, qubits make mistakes. A lot of them. That's been the biggest wall in quantum computing for decades.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "qcoin",
+      "x": 30,
+      "y": 140,
+      "at": 0.02,
+      "in": "drop",
+      "text": "Q",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 235,
+      "y": 140,
+      "at": 0.07,
+      "in": "drop",
+      "text": "Q",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 440,
+      "y": 140,
+      "at": 0.12000000000000001,
+      "in": "drop",
+      "text": "Q",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 645,
+      "y": 140,
+      "at": 0.17,
+      "in": "drop",
+      "text": "Q",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 850,
+      "y": 140,
+      "at": 0.22,
+      "in": "drop",
+      "text": "Q",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "qcoin",
+      "x": 1055,
+      "y": 140,
+      "at": 0.27,
+      "in": "drop",
+      "text": "Q",
+      "s": 0.8,
+      "loop": "spin"
+     },
+     {
+      "p": "cross",
+      "x": 90,
+      "y": 110,
+      "at": 0.45,
+      "in": "pop",
+      "s": 0.55
+     },
+     {
+      "p": "cross",
+      "x": 500,
+      "y": 110,
+      "at": 0.55,
+      "in": "pop",
+      "s": 0.55
+     },
+     {
+      "p": "cross",
+      "x": 910,
+      "y": 110,
+      "at": 0.65,
+      "in": "pop",
+      "s": 0.55
+     },
+     {
+      "p": "clock",
+      "x": 1000,
+      "y": 420,
+      "at": 0.2,
+      "in": "pop",
+      "s": 0.6
+     }
+    ]
+   },
+   "chapter": "Errors: the real battle"
+  },
+  {
+   "text": "The fix is called error correction: you combine many physical qubits into one reliable \"logical\" qubit, so the group can catch and correct individual mistakes.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "qcoin",
+      "x": 60,
+      "y": 60,
+      "at": 0.02,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "qcoin",
+      "x": 180,
+      "y": 60,
+      "at": 0.06,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "qcoin",
+      "x": 300,
+      "y": 60,
+      "at": 0.1,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "qcoin",
+      "x": 60,
+      "y": 180,
+      "at": 0.13999999999999999,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "qcoin",
+      "x": 180,
+      "y": 180,
+      "at": 0.18,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "qcoin",
+      "x": 300,
+      "y": 180,
+      "at": 0.22,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "qcoin",
+      "x": 60,
+      "y": 300,
+      "at": 0.26,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "qcoin",
+      "x": 180,
+      "y": 300,
+      "at": 0.30000000000000004,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "qcoin",
+      "x": 300,
+      "y": 300,
+      "at": 0.34,
+      "in": "pop",
+      "text": "Q",
+      "s": 0.55
+     },
+     {
+      "p": "arrow",
+      "x": 460,
+      "y": 230,
+      "at": 0.45,
+      "in": "fly",
+      "len": 260,
+      "c": "o"
+     },
+     {
+      "p": "qcoin",
+      "x": 800,
+      "y": 140,
+      "at": 0.6,
+      "in": "pop",
+      "text": "L",
+      "s": 1.4,
+      "loop": "boil"
+     },
+     {
+      "p": "check",
+      "x": 1050,
+      "y": 360,
+      "at": 0.8,
+      "in": "pop",
+      "s": 0.6
+     },
+     {
+      "p": "strip",
+      "text": "one reliable \"logical\" qubit",
+      "x": 640,
+      "y": 500,
+      "at": 0.7,
+      "c": "g",
+      "size": 40,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "The problem was that adding more qubits usually added more errors too.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "strip",
+      "text": "more qubits",
+      "x": 80,
+      "y": 200,
+      "at": 0.05,
+      "c": "c",
+      "size": 58,
+      "in": "drop"
+     },
+     {
+      "p": "arrow",
+      "x": 470,
+      "y": 210,
+      "at": 0.3,
+      "in": "fly",
+      "len": 260
+     },
+     {
+      "p": "strip",
+      "text": "more errors",
+      "x": 780,
+      "y": 200,
+      "at": 0.5,
+      "c": "r",
+      "size": 58,
+      "in": "drop"
+     },
+     {
+      "p": "cross",
+      "x": 520,
+      "y": 380,
+      "at": 0.7,
+      "in": "pop",
+      "s": 0.7
+     }
+    ]
+   }
+  },
+  {
+   "text": "Willow's real breakthrough wasn't that five-minute race. It's that as Google made its groups of qubits bigger, the error rate went down instead of up. That's a key milestone researchers had been chasing for almost thirty years.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vwords",
+    "kicker": "GOOGLE WILLOW · 2024",
+    "words": [
+     "bigger",
+     "groups",
+     "fewer",
+     "errors"
+    ],
+    "head": "ERRORS WENT DOWN",
+    "hiword": "DOWN"
+   }
+  },
+  {
+   "text": "And in twenty twenty-five, Google showed an algorithm called Quantum Echoes running thirteen thousand times faster than one of the best supercomputers, on a result other machines can check.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vstat",
+    "kicker": "QUANTUM ECHOES · OCTOBER 2025",
+    "num": "13,000×",
+    "unit": "FASTER",
+    "sub": "and other machines can check it",
+    "hi": "check it",
+    "source": "Google Research, published in Nature",
+    "note": "verifiable!",
+    "sx": 760,
+    "sy": 560,
+    "nx": 120,
+    "ny": 590
+   }
+  },
+  {
+   "text": "So what will quantum computers actually be useful for? Not for browsing, gaming or running ChatGPT faster.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "laptop",
+      "x": 60,
+      "y": 120,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.65
+     },
+     {
+      "p": "strip",
+      "text": "browsing",
+      "x": 560,
+      "y": 80,
+      "at": 0.25,
+      "c": "c",
+      "size": 48,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "gaming",
+      "x": 560,
+      "y": 230,
+      "at": 0.4,
+      "c": "c",
+      "size": 48,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "ChatGPT",
+      "x": 560,
+      "y": 380,
+      "at": 0.55,
+      "c": "c",
+      "size": 48,
+      "in": "drop"
+     },
+     {
+      "p": "cross",
+      "x": 900,
+      "y": 80,
+      "at": 0.35,
+      "in": "pop",
+      "s": 0.55
+     },
+     {
+      "p": "cross",
+      "x": 900,
+      "y": 230,
+      "at": 0.5,
+      "in": "pop",
+      "s": 0.55
+     },
+     {
+      "p": "cross",
+      "x": 900,
+      "y": 380,
+      "at": 0.65,
+      "in": "pop",
+      "s": 0.55
+     }
+    ]
+   },
+   "chapter": "What it's actually good for"
+  },
+  {
+   "text": "Their best targets are problems that are quantum by nature. Simulating molecules to design new medicines, better batteries and new materials.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "molecule",
+      "x": 40,
+      "y": 80,
+      "at": 0.05,
+      "in": "pop",
+      "s": 1.0,
+      "loop": "spin"
+     },
+     {
+      "p": "battery",
+      "x": 500,
+      "y": 80,
+      "at": 0.3,
+      "in": "drop",
+      "s": 0.9
+     },
+     {
+      "p": "book",
+      "x": 860,
+      "y": 100,
+      "at": 0.5,
+      "in": "drop",
+      "s": 1.0,
+      "c": "g"
+     },
+     {
+      "p": "strip",
+      "text": "medicines",
+      "x": 60,
+      "y": 470,
+      "at": 0.2,
+      "c": "o",
+      "size": 44,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "batteries",
+      "x": 470,
+      "y": 470,
+      "at": 0.4,
+      "c": "g",
+      "size": 44,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "materials",
+      "x": 850,
+      "y": 470,
+      "at": 0.6,
+      "c": "b",
+      "size": 44,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "They may also help with certain hard optimisation and simulation problems, though researchers are still debating how big that advantage will be.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "gear",
+      "x": 120,
+      "y": 100,
+      "at": 0.05,
+      "in": "pop",
+      "s": 1.0,
+      "loop": "spin"
+     },
+     {
+      "p": "globe",
+      "x": 520,
+      "y": 90,
+      "at": 0.25,
+      "in": "drop",
+      "s": 1.0,
+      "loop": "boil"
+     },
+     {
+      "p": "strip",
+      "text": "optimisation & simulation",
+      "x": 120,
+      "y": 470,
+      "at": 0.45,
+      "c": "c",
+      "size": 46,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "maybe: still debated",
+      "x": 760,
+      "y": 140,
+      "at": 0.7,
+      "c": "l",
+      "size": 38,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "And then there's the one that worries governments and banks: breaking the encryption that protects almost everything online.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "lock",
+      "x": 460,
+      "y": 60,
+      "at": 0.05,
+      "in": "drop",
+      "s": 1.1,
+      "loop": "shake"
+     },
+     {
+      "p": "banner",
+      "text": "ENCRYPTION",
+      "x": 330,
+      "y": 470,
+      "at": 0.5,
+      "size": 70,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Much of today's online security, from your UPI payments to your WhatsApp messages, relies on maths problems that normal computers would take practically forever to crack.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "phone",
+      "x": 80,
+      "y": 60,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.95
+     },
+     {
+      "p": "lock",
+      "x": 380,
+      "y": 150,
+      "at": 0.25,
+      "in": "pop",
+      "s": 0.7
+     },
+     {
+      "p": "envelope",
+      "x": 640,
+      "y": 180,
+      "at": 0.4,
+      "in": "slide",
+      "s": 1.0
+     },
+     {
+      "p": "strip",
+      "text": "UPI",
+      "x": 100,
+      "y": 500,
+      "at": 0.55,
+      "c": "o",
+      "size": 48,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "WhatsApp",
+      "x": 640,
+      "y": 470,
+      "at": 0.65,
+      "c": "g",
+      "size": 48,
+      "in": "drop"
+     }
+    ]
+   },
+   "chapter": "Your bank is already preparing"
+  },
+  {
+   "text": "A large enough, error-corrected quantum computer could solve some of those problems dramatically faster.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "chip",
+      "x": 80,
+      "y": 160,
+      "at": 0.05,
+      "in": "drop",
+      "text": "Q",
+      "s": 0.9,
+      "loop": "boil"
+     },
+     {
+      "p": "arrow",
+      "x": 400,
+      "y": 260,
+      "at": 0.3,
+      "in": "fly",
+      "len": 300,
+      "c": "o"
+     },
+     {
+      "p": "lock",
+      "x": 760,
+      "y": 140,
+      "at": 0.45,
+      "in": "drop",
+      "s": 0.8,
+      "loop": "shake"
+     },
+     {
+      "p": "cross",
+      "x": 820,
+      "y": 100,
+      "at": 0.75,
+      "in": "pop",
+      "s": 0.7
+     }
+    ]
+   }
+  },
+  {
+   "text": "Nobody has built that machine yet. Official estimates put it somewhere in the twenty-thirties, and nobody knows the exact date.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vstat",
+    "kicker": "WHEN COULD IT BREAK ENCRYPTION?",
+    "num": "2030s",
+    "unit": "?",
+    "sub": "official estimates · exact date unknown",
+    "hi": "unknown",
+    "source": "Industry summaries of official estimates (CSA, Palo Alto Networks)",
+    "note": "no one knows!",
+    "sx": 760,
+    "sy": 560,
+    "nx": 120,
+    "ny": 590
+   }
+  },
+  {
+   "text": "But there's a catch called \"harvest now, decrypt later\". Someone can steal encrypted data today and simply wait for a quantum computer to unlock it years from now.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "thief",
+      "x": 60,
+      "y": 160,
+      "at": 0.05,
+      "in": "slide",
+      "s": 1.2,
+      "loop": "boil"
+     },
+     {
+      "p": "envelope",
+      "x": 500,
+      "y": 60,
+      "at": 0.25,
+      "in": "fly",
+      "s": 0.6,
+      "id": "e1"
+     },
+     {
+      "p": "envelope",
+      "x": 520,
+      "y": 240,
+      "at": 0.35,
+      "in": "fly",
+      "s": 0.6,
+      "id": "e2"
+     },
+     {
+      "p": "box",
+      "x": 820,
+      "y": 160,
+      "at": 0.45,
+      "in": "drop",
+      "s": 0.8
+     },
+     {
+      "p": "strip",
+      "text": "LATER",
+      "x": 860,
+      "y": 120,
+      "at": 0.6,
+      "c": "o",
+      "size": 48,
+      "in": "pop"
+     },
+     {
+      "p": "strip",
+      "text": "harvest now, decrypt later",
+      "x": 300,
+      "y": 520,
+      "at": 0.7,
+      "c": "c",
+      "size": 42,
+      "in": "drop"
+     }
+    ],
+    "moves": [
+     {
+      "id": "e1",
+      "at": 0.55,
+      "x": 380,
+      "y": 220,
+      "scale": 0.5,
+      "fade": true
+     },
+     {
+      "id": "e2",
+      "at": 0.62,
+      "x": 360,
+      "y": 60,
+      "scale": 0.5,
+      "fade": true
+     }
+    ]
+   }
+  },
+  {
+   "text": "That's why in twenty twenty-four, the US standards agency NIST published the first \"post-quantum\" encryption standards, and set a plan to phase out vulnerable encryption after twenty thirty.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vdoc",
+    "label": "NIST · POST-QUANTUM PLAN",
+    "lines": [
+     "Aug 2024: first post-quantum standards",
+     "After 2030: vulnerable encryption deprecated",
+     "After 2035: disallowed"
+    ],
+    "hi": [
+     0,
+     "first post-quantum standards"
+    ],
+    "circle": [
+     1,
+     "2030"
+    ],
+    "note": "switching has begun",
+    "nx": 980,
+    "ny": 470
+   }
+  },
+  {
+   "text": "Tech companies and banks have already started switching. If your apps update their security quietly over the next few years, this is one big reason why.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "phone",
+      "x": 120,
+      "y": 60,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.95
+     },
+     {
+      "p": "gear",
+      "x": 480,
+      "y": 120,
+      "at": 0.2,
+      "in": "pop",
+      "s": 0.7,
+      "loop": "spin"
+     },
+     {
+      "p": "lock",
+      "x": 760,
+      "y": 120,
+      "at": 0.4,
+      "in": "drop",
+      "s": 0.7
+     },
+     {
+      "p": "check",
+      "x": 960,
+      "y": 100,
+      "at": 0.6,
+      "in": "pop",
+      "s": 0.6
+     },
+     {
+      "p": "strip",
+      "text": "quiet security updates",
+      "x": 440,
+      "y": 470,
+      "at": 0.5,
+      "c": "g",
+      "size": 46,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "India is in this race too. In twenty twenty-three, the government approved the National Quantum Mission, with six thousand and three crore rupees over eight years.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "vstat",
+    "kicker": "NATIONAL QUANTUM MISSION · APPROVED 2023",
+    "num": "₹6,003",
+    "unit": "CRORE",
+    "sub": "over eight years",
+    "hi": "eight years",
+    "source": "Government of India, approved 19 April 2023",
+    "note": "India is in!",
+    "sx": 760,
+    "sy": 560,
+    "nx": 120,
+    "ny": 590
+   },
+   "chapter": "What about India?"
+  },
+  {
+   "text": "The goal is to build quantum computers with up to a thousand qubits by around twenty thirty-one.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "chip",
+      "x": 120,
+      "y": 120,
+      "at": 0.05,
+      "in": "drop",
+      "text": "1000",
+      "s": 1.0
+     },
+     {
+      "p": "calendar",
+      "x": 520,
+      "y": 120,
+      "at": 0.3,
+      "in": "drop",
+      "text": "2031",
+      "s": 0.95
+     },
+     {
+      "p": "banner",
+      "text": "UP TO 1,000 QUBITS",
+      "x": 300,
+      "y": 480,
+      "at": 0.55,
+      "size": 60,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Today, one of India's most powerful machines, built by the Bengaluru startup QpiAI, has twenty-five qubits. That's far smaller than Google's, but it's a start.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "chip",
+      "x": 140,
+      "y": 220,
+      "at": 0.05,
+      "in": "drop",
+      "text": "25",
+      "s": 0.75
+     },
+     {
+      "p": "strip",
+      "text": "QpiAI · Bengaluru",
+      "x": 60,
+      "y": 520,
+      "at": 0.25,
+      "c": "o",
+      "size": 40,
+      "in": "drop"
+     },
+     {
+      "p": "chip",
+      "x": 640,
+      "y": 80,
+      "at": 0.45,
+      "in": "drop",
+      "text": "105",
+      "s": 1.35
+     },
+     {
+      "p": "strip",
+      "text": "Google Willow",
+      "x": 680,
+      "y": 520,
+      "at": 0.6,
+      "c": "c",
+      "size": 40,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "And India is ahead on quantum-secure communication, with more than a thousand kilometres of quantum-secure links already set up.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "globe",
+      "x": 60,
+      "y": 120,
+      "at": 0.05,
+      "in": "pop",
+      "s": 1.0,
+      "loop": "boil"
+     },
+     {
+      "p": "arrow",
+      "x": 420,
+      "y": 250,
+      "at": 0.3,
+      "in": "fly",
+      "len": 700,
+      "c": "o"
+     },
+     {
+      "p": "strip",
+      "text": "1,000+ km quantum-secure links",
+      "x": 400,
+      "y": 470,
+      "at": 0.55,
+      "c": "g",
+      "size": 46,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "So, will you ever have a quantum computer at home? Almost certainly not. They're huge, fragile and built for very specific problems.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "fridge",
+      "x": 80,
+      "y": 20,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.85
+     },
+     {
+      "p": "strip",
+      "text": "at home?",
+      "x": 560,
+      "y": 160,
+      "at": 0.3,
+      "c": "c",
+      "size": 60,
+      "in": "drop"
+     },
+     {
+      "p": "cross",
+      "x": 640,
+      "y": 300,
+      "at": 0.6,
+      "in": "pop",
+      "s": 1.0
+     }
+    ]
+   },
+   "chapter": "Will you own one?"
+  },
+  {
+   "text": "Instead, you'll use them the way you use most powerful computers today: through the cloud, often without even knowing it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "laptop",
+      "x": 20,
+      "y": 220,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.5
+     },
+     {
+      "p": "arrow",
+      "x": 350,
+      "y": 300,
+      "at": 0.2,
+      "in": "fly",
+      "len": 200
+     },
+     {
+      "p": "cloud",
+      "x": 560,
+      "y": 230,
+      "at": 0.35,
+      "in": "pop",
+      "s": 0.75,
+      "loop": "float"
+     },
+     {
+      "p": "arrow",
+      "x": 850,
+      "y": 300,
+      "at": 0.5,
+      "in": "fly",
+      "len": 160
+     },
+     {
+      "p": "fridge",
+      "x": 1020,
+      "y": 120,
+      "at": 0.6,
+      "in": "drop",
+      "s": 0.55
+     }
+    ]
+   }
+  },
+  {
+   "text": "Some companies already let students and developers run small programs on real quantum chips online, many for free.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "laptop",
+      "x": 120,
+      "y": 120,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.75
+     },
+     {
+      "p": "strip",
+      "text": "real quantum chips online",
+      "x": 660,
+      "y": 160,
+      "at": 0.3,
+      "c": "c",
+      "size": 44,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "free tiers",
+      "x": 700,
+      "y": 320,
+      "at": 0.5,
+      "c": "g",
+      "size": 52,
+      "in": "drop"
+     },
+     {
+      "p": "star",
+      "x": 1000,
+      "y": 420,
+      "at": 0.7,
+      "in": "pop",
+      "s": 0.7,
+      "loop": "spin"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Quantum computers won't replace your laptop. They'll work alongside regular computers, as special tools for a few incredibly hard problems.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "laptop",
+      "x": 60,
+      "y": 160,
+      "at": 0.02,
+      "in": "drop",
+      "s": 0.7
+     },
+     {
+      "p": "strip",
+      "text": "+",
+      "x": 560,
+      "y": 260,
+      "at": 0.3,
+      "c": "o",
+      "size": 90,
+      "in": "pop"
+     },
+     {
+      "p": "fridge",
+      "x": 700,
+      "y": 60,
+      "at": 0.4,
+      "in": "drop",
+      "s": 0.75
+     },
+     {
+      "p": "strip",
+      "text": "tools, not replacements",
+      "x": 300,
+      "y": 520,
+      "at": 0.65,
+      "c": "g",
+      "size": 44,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "So, a quantum computer isn't a faster laptop, and it doesn't try every answer at once. It's a completely different machine, using the strange rules of physics to solve a few problems no normal computer ever could.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "qcoin",
+      "x": 760,
+      "y": 100,
+      "at": 0.02,
+      "in": "drop",
+      "text": "Q",
+      "s": 1.4,
+      "loop": "boil"
+     },
+     {
+      "p": "strip",
+      "text": "not a faster laptop",
+      "x": 40,
+      "y": 120,
+      "at": 0.3,
+      "c": "c",
+      "size": 40,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "not every answer at once",
+      "x": 40,
+      "y": 260,
+      "at": 0.45,
+      "c": "c",
+      "size": 40,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "a different machine",
+      "x": 40,
+      "y": 400,
+      "at": 0.65,
+      "c": "o",
+      "size": 44,
+      "in": "drop"
+     }
+    ]
+   },
+   "chapter": "The bottom line"
+  },
+  {
+   "text": "The hype is real in some places, and wildly overblown in others. Now you know which is which.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "magnifier",
+      "x": 440,
+      "y": 80,
+      "at": 0.05,
+      "in": "pop",
+      "s": 1.0,
+      "loop": "wiggle"
+     },
+     {
+      "p": "strip",
+      "text": "HYPE: sometimes real",
+      "x": 60,
+      "y": 470,
+      "at": 0.3,
+      "c": "g",
+      "size": 44,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "HYPE: often overblown",
+      "x": 640,
+      "y": 470,
+      "at": 0.55,
+      "c": "r",
+      "size": 44,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Tell me in the comments: what problem would you want a quantum computer to solve first?",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "banner",
+      "text": "WHICH PROBLEM FIRST? 👇",
+      "x": 160,
+      "y": 60,
+      "at": 0.05,
+      "size": 60,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "new medicines",
+      "x": 120,
+      "y": 300,
+      "at": 0.3,
+      "c": "o",
+      "size": 44,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "climate",
+      "x": 520,
+      "y": 300,
+      "at": 0.45,
+      "c": "g",
+      "size": 44,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "new materials",
+      "x": 800,
+      "y": 300,
+      "at": 0.6,
+      "c": "b",
+      "size": 44,
+      "in": "drop"
+     }
+    ]
+   }
+  },
+  {
+   "text": "And subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "end",
+    "sub": "More tech, decoded."
+   }
+  }
+ ]
+}

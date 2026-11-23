@@ -155,6 +155,56 @@ def cross(o):
 def gear(o):
     return ''.join(sh(105, -10, 50, 280, o.get('c', 'd'), '12px', f'transform:rotate({k * 45}deg)') for k in range(4)) + sh(20, 20, 220, 220, o.get('c', 'd'), '50%') + sh(90, 90, 80, 80, 'c', '50%'), 260, 260
 
+def qcoin(o):
+    face = o.get('text', '1')
+    return (sh(0, 0, 200, 200, 'y', '50%') + sh(18, 18, 164, 164, '#F2A93B', '50%') + txt(0, 46, face, 96, 'c', 200)), 200, 200
+
+def switch(o):
+    on = o.get('on', True)
+    return (sh(0, 0, 180, 300, 'c', '24px') + sh(50, 40, 80, 220, 'd', '40px') + sh(58, 48 if on else 160, 64, 104, 'o' if on else 't', '32px')
+            + txt(0, 268, '1' if on else '0', 0, 'k', 180)), 180, 300
+
+def fridge(o):
+    h = ''
+    for k, (w, c) in enumerate([(380, '#E8B74A'), (320, '#D9A23A'), (260, '#E8B74A'), (200, '#D9A23A'), (150, '#E8B74A')]):
+        y = k * 110
+        h += sh((400 - w) // 2, y, w, 34, c, '8px')
+        if k < 4:
+            for j in range(4):
+                h += sh((400 - w) // 2 + 30 + j * (w - 60) // 3, y + 34, 12, 76, '#C98F2E', '6px')
+    return h + sh(150, 560, 100, 60, 'o', '10px') + txt(150, 570, 'Q', 40, 'c', 100), 400, 620
+
+def maze(o):
+    walls = [(0, 0, 420, 18), (0, 0, 18, 420), (402, 0, 18, 300), (0, 402, 420, 18), (90, 90, 18, 240), (90, 90, 220, 18), (200, 180, 18, 240),
+             (290, 90, 18, 160), (290, 300, 130, 18), (90, 330, 110, 18)]
+    return ''.join(sh(x, y, w, h, 'd', '9px') for x, y, w, h in walls) + sh(340, 340, 50, 50, 'g', '50%'), 420, 420
+
+def waves(o):
+    c = o.get('c', 'o')
+    return ''.join(f'<div class="ps" style="left:{k * 120}px; top:{0 if k % 2 else 60}px; width:150px; height:80px; border:18px solid {P[c]}; '
+                   f'border-{"bottom" if k % 2 else "top"}:0; border-radius:{"80px 80px 0 0" if k % 2 else "0 0 80px 80px"}; background:transparent"></div>' for k in range(o.get('n', 5))), o.get('n', 5) * 120 + 40, 150
+
+def thermo(o):
+    return (sh(40, 0, 60, 300, 'c', '30px') + sh(56, 60, 28, 240, 'b', '14px') + sh(20, 260, 100, 100, 'b', '50%')
+            + ''.join(sh(104, 40 + k * 50, 30, 8, 'd', '4px') for k in range(5))), 140, 360
+
+def molecule(o):
+    atoms = [(120, 120, 'o'), (0, 40, 'b'), (240, 30, 'g'), (40, 240, 'y'), (240, 220, 'b')]
+    bonds = ''.join(f'<div class="ps" style="left:170px; top:166px; width:{w}px; height:14px; background:{P["d"]}; border-radius:7px; transform-origin:0 50%; transform:rotate({a}deg)"></div>'
+                    for w, a in [(150, -150), (150, -30), (140, 130), (130, 35)])
+    return bonds + ''.join(sh(x, y, 100, 100, c, '50%') for x, y, c in atoms), 340, 340
+
+def battery(o):
+    return sh(0, 30, 200, 330, 'd', '24px') + sh(70, 0, 60, 40, 'd', '8px') + sh(20, 160, 160, 180, 'g', '12px') + sh(20, 50, 160, 100, 'c', '12px'), 200, 360
+
+def thief(o):
+    return (sh(40, 0, 90, 90, 'd', '50%') + sh(46, 34, 78, 22, 'k', '8px') + sh(10, 94, 150, 150, 'd', '60px 60px 16px 16px')
+            + sh(140, 120, 130, 130, 't', '50% 50% 40% 40%') + sh(185, 100, 40, 30, '#A8916F', '10px')), 280, 250
+
+def calstack(o):
+    n = o.get('n', 8)
+    return ''.join(f'<div class="cs" style="position:absolute; left:{(k % 2) * 14}px; top:{(n - 1 - k) * 58}px">{calendar({"text": o.get("text", "∞")})[0]}</div>' for k in range(n)), 320, n * 58 + 310
+
 PROPS = {k: v for k, v in globals().items() if callable(v) and k not in ('sh', 'txt', 'register', 'prop_html')}
 
 CSS = """.pp { position:absolute; } .pp .ps, .pp .pt { position:absolute; } .pp .ps { filter:url(#kp-tex); }
@@ -198,6 +248,9 @@ def register(B):
             if it['p'] == 'crowd':
                 pid = f'{sid}-q{k}'
                 sc.append(f'    tl.fromTo("#{pid} .cr-p", {{ opacity:0, y:-50 }}, {{ opacity:1, y:0, duration:.2, ease:"steps(3)", stagger:.045 }}, {wf(i, it.get("at", 0.05))});')
+            if it['p'] == 'calstack':
+                pid = f'{sid}-q{k}'
+                sc.append(f'    tl.fromTo("#{pid} .cs", {{ opacity:0, y:-120 }}, {{ opacity:1, y:0, duration:.18, ease:"steps(3)", stagger:{it.get("stagger", .35)} }}, {wf(i, it.get("at", 0.05))});')
             if it['p'] == 'box' and it.get('open'):
                 sc.append(f'    tl.to("#{sid}-q{k} .lid", {{ rotation:-110, duration:.4, ease:"back.out(2)" }}, {wf(i, it["open"])});')
             if it['p'] == 'scissors' and it.get('snip'):
