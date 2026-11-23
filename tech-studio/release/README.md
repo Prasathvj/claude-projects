@@ -28,6 +28,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 19 | [19_ep05_long](19_ep05_long) | ChatGPT Doesn't Know What It's Going to Say Next | 7:15 | **Thu 10 Dec, 6:30 PM** | Ready (long video) |
 | 20 | [20_ep06_long](20_ep06_long) | Google's Quantum Chip Did 10 Septillion Years of Work in 5 Minutes. Here's How | 7:00 | **Sat 12 Dec, 12:30 PM** | Ready (long video, papercut) |
 | 21 | [21_swe01](21_swe01) | AI writes 75% of Google's new code. So who's losing jobs? | 0:40 | **Wed 9 Dec, 12:30 PM** | Ready (Short → ep04) |
+| 22 | [22_qnt01](22_qnt01) | This chip did 10 septillion years of work in 5 minutes | 0:38 | **Sun 13 Dec, 12:30 PM** | Ready (Short → ep06) |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.
