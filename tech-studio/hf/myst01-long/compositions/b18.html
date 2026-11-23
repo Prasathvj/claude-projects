@@ -124,18 +124,18 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b18-tv", { opacity:0 }, 0);
-    tl.fromTo("#b18-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.203);
+    tl.fromTo("#b18-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.237);
     tl.fromTo("#b18-tv-static", { backgroundPosition:"0px 0px" }, { backgroundPosition:"-2000px 900px", duration:30, ease:"steps(360)", immediateRender:false }, 0);
     tl.fromTo("#b18-tv-figure .st", { backgroundPositionX:"0px" }, { backgroundPositionX:"-1200px", duration:12, ease:"none", immediateRender:false }, 0);
     tl.set("#b18-s", { opacity:0 }, 0);
-    tl.fromTo("#b18-s", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 3.761);
+    tl.fromTo("#b18-s", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 5.24);
     tl.set("#b18-w", { opacity:0 }, 0);
-    tl.fromTo("#b18-w", { scale:2.6, opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.22, ease:"power4.in", immediateRender:false }, 3.761);
-    tl.set("#b18-tv .scr > div:not(.glass)", { opacity:0 }, 0.6040000000000001); tl.set("#b18-tv-static", { opacity:1 }, 0.6040000000000001);
-    tl.fromTo("#b18-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 0.6040000000000001);
-    tl.set("#b18-tv .scr > div:not(.glass)", { opacity:0 }, 1.7309999999999999); tl.set("#b18-tv-figure", { opacity:1 }, 1.7309999999999999);
-    tl.fromTo("#b18-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 1.7309999999999999);
-    tl.to("#b18-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 4.272);
+    tl.fromTo("#b18-w", { scale:2.6, opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.22, ease:"power4.in", immediateRender:false }, 5.24);
+    tl.set("#b18-tv .scr > div:not(.glass)", { opacity:0 }, 0.31); tl.set("#b18-tv-static", { opacity:1 }, 0.31);
+    tl.fromTo("#b18-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 0.31);
+    tl.set("#b18-tv .scr > div:not(.glass)", { opacity:0 }, 2.07); tl.set("#b18-tv-figure", { opacity:1 }, 2.07);
+    tl.fromTo("#b18-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 2.07);
+    tl.to("#b18-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 8.73);
     window.__timelines["b18"] = tl;
   </script>
 </template>

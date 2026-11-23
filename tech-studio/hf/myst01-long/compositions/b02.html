@@ -123,25 +123,25 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b02-tv", { opacity:0 }, 0);
-    tl.fromTo("#b02-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.196);
+    tl.fromTo("#b02-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.215);
     tl.fromTo("#b02-tv-static", { backgroundPosition:"0px 0px" }, { backgroundPosition:"-2000px 900px", duration:30, ease:"steps(360)", immediateRender:false }, 0);
     tl.fromTo("#b02-tv-figure .st", { backgroundPositionX:"0px" }, { backgroundPositionX:"-1200px", duration:12, ease:"none", immediateRender:false }, 0);
     tl.set("#b02-tm", { opacity:0 }, 0);
-    tl.fromTo("#b02-tm", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.326);
-    tl.set("#b02-tm-x", { innerHTML:'9' }, 0.412);
-    tl.set("#b02-tm-x", { innerHTML:'9:' }, 0.497);
-    tl.set("#b02-tm-x", { innerHTML:'9:1' }, 0.583);
-    tl.set("#b02-tm-x", { innerHTML:'9:14' }, 0.669);
-    tl.set("#b02-tm-x", { innerHTML:'9:14 ' }, 0.755);
-    tl.set("#b02-tm-x", { innerHTML:'9:14 P' }, 0.84);
-    tl.set("#b02-tm-x", { innerHTML:'9:14 PM' }, 0.926);
+    tl.fromTo("#b02-tm", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.27999999999999997);
+    tl.set("#b02-tm-x", { innerHTML:'9' }, 0.366);
+    tl.set("#b02-tm-x", { innerHTML:'9:' }, 0.451);
+    tl.set("#b02-tm-x", { innerHTML:'9:1' }, 0.537);
+    tl.set("#b02-tm-x", { innerHTML:'9:14' }, 0.623);
+    tl.set("#b02-tm-x", { innerHTML:'9:14 ' }, 0.709);
+    tl.set("#b02-tm-x", { innerHTML:'9:14 P' }, 0.794);
+    tl.set("#b02-tm-x", { innerHTML:'9:14 PM' }, 0.88);
     tl.set("#b02-tm-x", { innerHTML:"" }, 0);
-    tl.fromTo("#b02-tm-c", { opacity:1 }, { opacity:0, duration:.01, repeat:41, yoyo:true, repeatDelay:.3, immediateRender:false }, 0.926);
-    tl.set("#b02-tv .scr > div:not(.glass)", { opacity:0 }, 3.3609999999999998); tl.set("#b02-tv-static", { opacity:1 }, 3.3609999999999998);
-    tl.fromTo("#b02-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.3609999999999998);
-    tl.set("#b02-tv .scr > div:not(.glass)", { opacity:0 }, 3.786); tl.set("#b02-tv-black", { opacity:1 }, 3.786);
-    tl.fromTo("#b02-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.786);
-    tl.to("#b02-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 3.879);
+    tl.fromTo("#b02-tm-c", { opacity:1 }, { opacity:0, duration:.01, repeat:41, yoyo:true, repeatDelay:.3, immediateRender:false }, 0.88);
+    tl.set("#b02-tv .scr > div:not(.glass)", { opacity:0 }, 4.16); tl.set("#b02-tv-static", { opacity:1 }, 4.16);
+    tl.fromTo("#b02-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 4.16);
+    tl.set("#b02-tv .scr > div:not(.glass)", { opacity:0 }, 4.737); tl.set("#b02-tv-black", { opacity:1 }, 4.737);
+    tl.fromTo("#b02-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 4.737);
+    tl.to("#b02-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 4.99);
     window.__timelines["b02"] = tl;
   </script>
 </template>

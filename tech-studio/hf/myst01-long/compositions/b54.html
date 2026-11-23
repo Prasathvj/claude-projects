@@ -123,14 +123,14 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b54-tv", { opacity:0 }, 0);
-    tl.fromTo("#b54-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.258);
+    tl.fromTo("#b54-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.223);
     tl.fromTo("#b54-tv-static", { backgroundPosition:"0px 0px" }, { backgroundPosition:"-2000px 900px", duration:30, ease:"steps(360)", immediateRender:false }, 0);
     tl.fromTo("#b54-tv-figure .st", { backgroundPositionX:"0px" }, { backgroundPositionX:"-1200px", duration:12, ease:"none", immediateRender:false }, 0);
     tl.set("#b54-sk", { opacity:0 }, 0);
-    tl.fromTo("#b54-sk", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 4.258);
-    tl.fromTo("#b54-tv", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 5.101);
-    tl.fromTo("#b54-sk", { y:0 }, { y:-16, duration:.4, yoyo:true, repeat:4, ease:"sine.inOut", immediateRender:false }, 3.133);
-    tl.to("#b54-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 7.017);
+    tl.fromTo("#b54-sk", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 3.08);
+    tl.fromTo("#b54-tv", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 4.1);
+    tl.fromTo("#b54-sk", { y:0 }, { y:-16, duration:.4, yoyo:true, repeat:4, ease:"sine.inOut", immediateRender:false }, 2.4299999999999997);
+    tl.to("#b54-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 5.38);
     window.__timelines["b54"] = tl;
   </script>
 </template>

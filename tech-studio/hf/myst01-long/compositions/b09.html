@@ -123,16 +123,16 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b09-tv", { opacity:0 }, 0);
-    tl.fromTo("#b09-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.188);
+    tl.fromTo("#b09-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.232);
     tl.fromTo("#b09-tv-static", { backgroundPosition:"0px 0px" }, { backgroundPosition:"-2000px 900px", duration:30, ease:"steps(360)", immediateRender:false }, 0);
     tl.fromTo("#b09-tv-figure .st", { backgroundPositionX:"0px" }, { backgroundPositionX:"-1200px", duration:12, ease:"none", immediateRender:false }, 0);
     tl.set("#b09-sl", { opacity:0 }, 0);
-    tl.fromTo("#b09-sl", { scale:2.6, opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.22, ease:"power4.in", immediateRender:false }, 1.371);
-    tl.set("#b09-tv .scr > div:not(.glass)", { opacity:0 }, 1.371); tl.set("#b09-tv-static", { opacity:1 }, 1.371);
-    tl.fromTo("#b09-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 1.371);
-    tl.set("#b09-tv .scr > div:not(.glass)", { opacity:0 }, 2.701); tl.set("#b09-tv-black", { opacity:1 }, 2.701);
-    tl.fromTo("#b09-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 2.701);
-    tl.to("#b09-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 3.487);
+    tl.fromTo("#b09-sl", { scale:2.6, opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.22, ease:"power4.in", immediateRender:false }, 1.8199999999999998);
+    tl.set("#b09-tv .scr > div:not(.glass)", { opacity:0 }, 1.8199999999999998); tl.set("#b09-tv-static", { opacity:1 }, 1.8199999999999998);
+    tl.fromTo("#b09-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 1.8199999999999998);
+    tl.set("#b09-tv .scr > div:not(.glass)", { opacity:0 }, 4.7); tl.set("#b09-tv-black", { opacity:1 }, 4.7);
+    tl.fromTo("#b09-tv", { x:0 }, { x:10, duration:.04, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 4.7);
+    tl.to("#b09-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 5.86);
     window.__timelines["b09"] = tl;
   </script>
 </template>

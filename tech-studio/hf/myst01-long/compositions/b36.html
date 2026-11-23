@@ -125,17 +125,17 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b36-s", { opacity:0 }, 0);
-    tl.fromTo("#b36-s", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 1.561);
+    tl.fromTo("#b36-s", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 2.4);
     tl.set("#b36-b", { opacity:0 }, 0);
     tl.fromTo("#b36-b", { opacity:0 }, { opacity:1, duration:.2, immediateRender:false }, 0.1);
     tl.set("#b36-b", { scaleX:0 }, 0); tl.fromTo("#b36-b", { scaleX:0 }, { scaleX:1, duration:.6, ease:"power2.out", immediateRender:false }, 0.1);
     tl.fromTo("#b36-b", { backgroundPositionX:"0px" }, { backgroundPositionX:"400px", duration:4, ease:"none", repeat:2, immediateRender:false }, 0.1);
     tl.set("#b36-r", { opacity:0 }, 0);
-    tl.fromTo("#b36-r", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 3.8409999999999997);
-    tl.fromTo("#b36-r .p", { scale:.2, opacity:.9 }, { scale:2.4, opacity:0, duration:1.4, stagger:{ each:.45, repeat:3 }, ease:"power1.out", immediateRender:false }, 3.8409999999999997);
+    tl.fromTo("#b36-r", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 6.28);
+    tl.fromTo("#b36-r .p", { scale:.2, opacity:.9 }, { scale:2.4, opacity:0, duration:1.4, stagger:{ each:.45, repeat:3 }, ease:"power1.out", immediateRender:false }, 6.28);
     tl.set("#b36-t", { opacity:0 }, 0);
-    tl.fromTo("#b36-t", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 3.081);
-    tl.to("#b36-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 5.84);
+    tl.fromTo("#b36-t", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 4.93);
+    tl.to("#b36-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 10.36);
     window.__timelines["b36"] = tl;
   </script>
 </template>

@@ -123,12 +123,12 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b15-tv", { opacity:0 }, 0);
-    tl.fromTo("#b15-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.282);
+    tl.fromTo("#b15-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.288);
     tl.fromTo("#b15-tv-static", { backgroundPosition:"0px 0px" }, { backgroundPosition:"-2000px 900px", duration:30, ease:"steps(360)", immediateRender:false }, 0);
     tl.fromTo("#b15-tv-figure .st", { backgroundPositionX:"0px" }, { backgroundPositionX:"-1200px", duration:12, ease:"none", immediateRender:false }, 0);
     tl.set("#b15-cl", { opacity:0 }, 0);
-    tl.fromTo("#b15-cl", { x:1500, rotation:10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 4.402);
-    tl.to("#b15-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 8.193);
+    tl.fromTo("#b15-cl", { x:1500, rotation:10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 3.9799999999999995);
+    tl.to("#b15-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 8.64);
     window.__timelines["b15"] = tl;
   </script>
 </template>

@@ -122,11 +122,11 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b57-f", { opacity:0 }, 0);
-    tl.fromTo("#b57-f", { y:-800, rotation:-8, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.326);
-    tl.set("#b57-f-r0", { scaleX:0 }, 0); tl.fromTo("#b57-f-r0", { scaleX:0 }, { scaleX:1, duration:.3, ease:"power2.inOut", immediateRender:false }, 0.826);
-    tl.set("#b57-f-r1", { scaleX:0 }, 0); tl.fromTo("#b57-f-r1", { scaleX:0 }, { scaleX:1, duration:.3, ease:"power2.inOut", immediateRender:false }, 1.276);
-    tl.set("#b57-f-s", { opacity:0 }, 0); tl.fromTo("#b57-f-s", { scale:2.6, opacity:0 }, { scale:1, opacity:1, duration:.22, ease:"power4.in", immediateRender:false }, 3.183);
-    tl.to("#b57-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 4.272);
+    tl.fromTo("#b57-f", { y:-800, rotation:-8, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.25);
+    tl.set("#b57-f-r0", { scaleX:0 }, 0); tl.fromTo("#b57-f-r0", { scaleX:0 }, { scaleX:1, duration:.3, ease:"power2.inOut", immediateRender:false }, 0.75);
+    tl.set("#b57-f-r1", { scaleX:0 }, 0); tl.fromTo("#b57-f-r1", { scaleX:0 }, { scaleX:1, duration:.3, ease:"power2.inOut", immediateRender:false }, 1.2);
+    tl.set("#b57-f-s", { opacity:0 }, 0); tl.fromTo("#b57-f-s", { scale:2.6, opacity:0 }, { scale:1, opacity:1, duration:.22, ease:"power4.in", immediateRender:false }, 3.06);
+    tl.to("#b57-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 4.42);
     window.__timelines["b57"] = tl;
   </script>
 </template>

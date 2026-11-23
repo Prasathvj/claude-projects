@@ -125,17 +125,17 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b19-tv", { opacity:0 }, 0);
-    tl.fromTo("#b19-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.282);
+    tl.fromTo("#b19-tv", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.317);
     tl.fromTo("#b19-tv-static", { backgroundPosition:"0px 0px" }, { backgroundPosition:"-2000px 900px", duration:30, ease:"steps(360)", immediateRender:false }, 0);
     tl.fromTo("#b19-tv-figure .st", { backgroundPositionX:"0px" }, { backgroundPositionX:"-1200px", duration:12, ease:"none", immediateRender:false }, 0);
     tl.set("#b19-wf", { opacity:0 }, 0);
-    tl.fromTo("#b19-wf", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.8230000000000001);
+    tl.fromTo("#b19-wf", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 0.91);
     tl.set("#b19-r", { opacity:0 }, 0);
-    tl.fromTo("#b19-r", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 2.285);
+    tl.fromTo("#b19-r", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 2.81);
     tl.set("#b19-m", { opacity:0 }, 0);
-    tl.fromTo("#b19-m", { scale:2.6, opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.22, ease:"power4.in", immediateRender:false }, 4.844);
-    tl.fromTo("#b19-wf", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.4859999999999998);
-    tl.to("#b19-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 8.193);
+    tl.fromTo("#b19-m", { scale:2.6, opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.22, ease:"power4.in", immediateRender:false }, 7.31);
+    tl.fromTo("#b19-wf", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 4.51);
+    tl.to("#b19-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 10.07);
     window.__timelines["b19"] = tl;
   </script>
 </template>

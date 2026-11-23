@@ -124,18 +124,18 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b11-fg", { opacity:0 }, 0);
-    tl.fromTo("#b11-fg", { opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.4, ease:"power2.out", immediateRender:false }, 0.235);
+    tl.fromTo("#b11-fg", { opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.4, ease:"power2.out", immediateRender:false }, 0.262);
     tl.fromTo("#b11-fg-st", { backgroundPositionX:"0px" }, { backgroundPositionX:"-1200px", duration:10, ease:"none", immediateRender:false }, 0);
-    tl.fromTo("#b11-fg", { x:-16, filter:"hue-rotate(90deg) saturate(3)" }, { x:0, filter:"hue-rotate(0deg) saturate(1)", duration:.12, immediateRender:false }, 0.535);
-    tl.fromTo("#b11-fg", { x:-16, filter:"hue-rotate(90deg) saturate(3)" }, { x:0, filter:"hue-rotate(0deg) saturate(1)", duration:.12, immediateRender:false }, 1.635);
-    tl.fromTo("#b11-fg", { x:-16, filter:"hue-rotate(90deg) saturate(3)" }, { x:0, filter:"hue-rotate(0deg) saturate(1)", duration:.12, immediateRender:false }, 2.835);
-    tl.fromTo("#b11-fg", { x:-16, filter:"hue-rotate(90deg) saturate(3)" }, { x:0, filter:"hue-rotate(0deg) saturate(1)", duration:.12, immediateRender:false }, 3.935);
+    tl.fromTo("#b11-fg", { x:-16, filter:"hue-rotate(90deg) saturate(3)" }, { x:0, filter:"hue-rotate(0deg) saturate(1)", duration:.12, immediateRender:false }, 0.562);
+    tl.fromTo("#b11-fg", { x:-16, filter:"hue-rotate(90deg) saturate(3)" }, { x:0, filter:"hue-rotate(0deg) saturate(1)", duration:.12, immediateRender:false }, 1.662);
+    tl.fromTo("#b11-fg", { x:-16, filter:"hue-rotate(90deg) saturate(3)" }, { x:0, filter:"hue-rotate(0deg) saturate(1)", duration:.12, immediateRender:false }, 2.862);
+    tl.fromTo("#b11-fg", { x:-16, filter:"hue-rotate(90deg) saturate(3)" }, { x:0, filter:"hue-rotate(0deg) saturate(1)", duration:.12, immediateRender:false }, 3.962);
     tl.set("#b11-sp", { opacity:0 }, 0);
-    tl.fromTo("#b11-sp", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 2.689);
+    tl.fromTo("#b11-sp", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 3.04);
     tl.set("#b11-m", { opacity:0 }, 0);
-    tl.fromTo("#b11-m", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 1.861);
-    tl.fromTo("#b11-sp", { rotation:0 }, { rotation:720, duration:3, ease:"none", immediateRender:false }, 2.689);
-    tl.to("#b11-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 5.84);
+    tl.fromTo("#b11-m", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"back.out(1.6)", immediateRender:false }, 2.02);
+    tl.fromTo("#b11-sp", { rotation:0 }, { rotation:720, duration:3, ease:"none", immediateRender:false }, 3.04);
+    tl.to("#b11-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 7.37);
     window.__timelines["b11"] = tl;
   </script>
 </template>
