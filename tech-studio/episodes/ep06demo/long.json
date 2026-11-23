@@ -1,0 +1,891 @@
+{
+ "id": "ep06demo-long",
+ "format": "horizontal",
+ "profile": "explainer",
+ "gap": 0.3,
+ "captions": "big",
+ "voice": "Eric",
+ "batch": 46,
+ "max_tempo": 1.05,
+ "engine": "vidiq",
+ "voice_id": "cjVigY5qzO86Huf0OWal",
+ "host_beats": [
+  0,
+  2,
+  3
+ ],
+ "beats": [
+  {
+   "text": "In under five minutes, a chip the size of a postage stamp finished a calculation that would take one of the world's fastest supercomputers ten septillion years.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "prop",
+      "at": "chip",
+      "x": 40,
+      "y": 70,
+      "p": "chip",
+      "text": "Willow",
+      "s": 0.95,
+      "id": "chip",
+      "in": "drop"
+     },
+     {
+      "k": "logo",
+      "at": "chip",
+      "x": 250,
+      "y": 290,
+      "ref": "logos:google-icon",
+      "size": 64,
+      "paper": true,
+      "id": "g"
+     },
+     {
+      "k": "tag",
+      "at": "postage",
+      "x": 20,
+      "y": 390,
+      "text": "≈ size of a postage stamp",
+      "bg": "#FFFAF2",
+      "color": "#2A2018",
+      "size": 30,
+      "id": "st"
+     },
+     {
+      "k": "card",
+      "at": "five",
+      "x": 30,
+      "y": 480,
+      "icon": "ph:clock-countdown-fill",
+      "label": "QUANTUM CHIP",
+      "big": "0 MIN",
+      "w": 420,
+      "id": "min",
+      "in": "fly"
+     },
+     {
+      "k": "photo",
+      "at": "fastest",
+      "x": 700,
+      "y": 30,
+      "name": "frontier.jpg",
+      "w": 520,
+      "rot": 3,
+      "id": "fr",
+      "in": "slide"
+     },
+     {
+      "k": "tag",
+      "at": "supercomputers",
+      "x": 760,
+      "y": 420,
+      "text": "Frontier: one of the fastest supercomputers",
+      "size": 26,
+      "id": "frt"
+     },
+     {
+      "k": "card",
+      "at": "ten",
+      "x": 520,
+      "y": 520,
+      "icon": "ph:hourglass-high-fill",
+      "label": "SUPERCOMPUTER",
+      "big": "10 *septillion* YEARS",
+      "bcolor": "#2A2018",
+      "bsize": 64,
+      "id": "yrs",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "min",
+      "at": "minutes",
+      "values": [
+       "1 MIN",
+       "2 MIN",
+       "3 MIN",
+       "4 MIN",
+       "5 MIN"
+      ],
+      "dt": 0.12
+     },
+     {
+      "do": "shake",
+      "id": "yrs",
+      "at": "years"
+     }
+    ]
+   },
+   "chapter": "Ten septillion years"
+  },
+  {
+   "text": "That's a one followed by twenty-five zeros. Far longer than the universe has existed.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "one",
+      "x": 40,
+      "y": 60,
+      "text": "1",
+      "size": 150,
+      "color": "#F87736",
+      "id": "one"
+     },
+     {
+      "k": "big",
+      "at": "twenty",
+      "x": 140,
+      "y": 75,
+      "text": "0000000000000000000000000",
+      "size": 60,
+      "id": "zeros",
+      "in": "left"
+     },
+     {
+      "k": "tag",
+      "at": "zeros",
+      "x": 150,
+      "y": 170,
+      "text": "25 zeros",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "z25"
+     },
+     {
+      "k": "photo",
+      "at": "universe",
+      "x": 40,
+      "y": 280,
+      "name": "deepfield.jpg",
+      "w": 430,
+      "rot": -4,
+      "crop": [
+       0.15,
+       0.15,
+       0.85,
+       0.85
+      ],
+      "id": "udf",
+      "in": "drop"
+     },
+     {
+      "k": "card",
+      "at": "universe",
+      "x": 560,
+      "y": 330,
+      "icon": "ph:planet-fill",
+      "label": "AGE OF THE UNIVERSE",
+      "big": "13.8 *billion* yrs",
+      "id": "age"
+     },
+     {
+      "k": "tag",
+      "at": "longer",
+      "x": 560,
+      "y": 560,
+      "text": "10 septillion yrs ≈ 700 trillion × longer",
+      "bg": "#E0471C",
+      "size": 34,
+      "id": "lg",
+      "in": "slam"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "The chip is Google's Willow, a quantum computer. And it sounds like magic, which is exactly why so much of what you hear about quantum computing is wrong.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "google's",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:google",
+      "size": 300,
+      "id": "gl",
+      "in": "drop"
+     },
+     {
+      "k": "prop",
+      "at": "willow",
+      "x": 90,
+      "y": 200,
+      "p": "chip",
+      "text": "Willow",
+      "s": 1.05,
+      "id": "ch"
+     },
+     {
+      "k": "tag",
+      "at": "quantum",
+      "x": 60,
+      "y": 560,
+      "text": "a quantum computer",
+      "size": 38,
+      "id": "qc"
+     },
+     {
+      "k": "icon",
+      "at": "magic",
+      "x": 640,
+      "y": 60,
+      "ref": "ph:magic-wand-fill",
+      "size": 170,
+      "color": "#7A5CFF",
+      "id": "mw"
+     },
+     {
+      "k": "icon",
+      "at": "magic",
+      "x": 830,
+      "y": 40,
+      "ref": "ph:sparkle-fill",
+      "size": 80,
+      "color": "#F87736",
+      "id": "sp1"
+     },
+     {
+      "k": "icon",
+      "at": "magic",
+      "x": 600,
+      "y": 260,
+      "ref": "ph:sparkle-fill",
+      "size": 60,
+      "color": "#F87736",
+      "id": "sp2"
+     },
+     {
+      "k": "clip",
+      "at": "hear",
+      "x": 560,
+      "y": 330,
+      "by": "WHAT YOU HEAR",
+      "text": "\"Quantum computers will replace your laptop\"",
+      "hi": "replace your laptop",
+      "w": 700,
+      "id": "cl"
+     },
+     {
+      "k": "stamp",
+      "at": "wrong",
+      "x": 760,
+      "y": 520,
+      "text": "WRONG",
+      "size": 100,
+      "id": "wr",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "sp1",
+      "at": "magic",
+      "deg": 180,
+      "d": 3
+     }
+    ]
+   }
+  },
+  {
+   "text": "So in the next few minutes, let's decode what a quantum computer really is, why it has to be colder than outer space, what it can and can't do, and why your bank is already preparing for it.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "decode",
+      "x": 40,
+      "y": 20,
+      "text": "Let's *decode*",
+      "size": 80,
+      "id": "dh"
+     },
+     {
+      "k": "icon",
+      "at": "really",
+      "x": 40,
+      "y": 170,
+      "ref": "tabler:atom",
+      "size": 150,
+      "color": "#7A5CFF",
+      "paper": true,
+      "id": "i1"
+     },
+     {
+      "k": "tag",
+      "at": "really",
+      "x": 30,
+      "y": 410,
+      "text": "what it really is",
+      "size": 30,
+      "id": "t1"
+     },
+     {
+      "k": "icon",
+      "at": "colder",
+      "x": 360,
+      "y": 170,
+      "ref": "ph:snowflake-bold",
+      "size": 150,
+      "color": "#1C7ED6",
+      "paper": true,
+      "id": "i2"
+     },
+     {
+      "k": "tag",
+      "at": "colder",
+      "x": 330,
+      "y": 410,
+      "text": "colder than space",
+      "size": 30,
+      "id": "t2"
+     },
+     {
+      "k": "icon",
+      "at": "can",
+      "x": 680,
+      "y": 170,
+      "ref": "ph:check-fat-fill",
+      "size": 80,
+      "color": "#2F9E44",
+      "id": "i3a"
+     },
+     {
+      "k": "icon",
+      "at": "can't",
+      "x": 780,
+      "y": 250,
+      "ref": "ph:x-circle-fill",
+      "size": 90,
+      "color": "#E0471C",
+      "id": "i3b"
+     },
+     {
+      "k": "tag",
+      "at": "can't",
+      "x": 640,
+      "y": 410,
+      "text": "can & can't do",
+      "size": 30,
+      "id": "t3"
+     },
+     {
+      "k": "icon",
+      "at": "bank",
+      "x": 1000,
+      "y": 170,
+      "ref": "ph:bank-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "i4"
+     },
+     {
+      "k": "tag",
+      "at": "bank",
+      "x": 990,
+      "y": 410,
+      "text": "banks prepare",
+      "size": 30,
+      "bg": "#E0471C",
+      "id": "t4"
+     }
+    ],
+    "acts": []
+   }
+  },
+  {
+   "text": "Start with the computer you're using right now. Everything it does comes down to bits, tiny switches that are either zero or one.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "computer",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:laptop-fill",
+      "size": 260,
+      "color": "#2A2018",
+      "id": "lap"
+     },
+     {
+      "k": "icon",
+      "at": "computer",
+      "x": 330,
+      "y": 150,
+      "ref": "ph:device-mobile-fill",
+      "size": 130,
+      "color": "#2A2018",
+      "id": "mob"
+     },
+     {
+      "k": "big",
+      "at": "bits",
+      "x": 560,
+      "y": 40,
+      "text": "BITS",
+      "size": 130,
+      "color": "#F87736",
+      "id": "bits",
+      "in": "slam"
+     },
+     {
+      "k": "prop",
+      "at": "switches",
+      "x": 560,
+      "y": 260,
+      "p": "switch",
+      "s": 0.95,
+      "on": false,
+      "id": "sw0"
+     },
+     {
+      "k": "prop",
+      "at": "switches",
+      "x": 860,
+      "y": 260,
+      "p": "switch",
+      "s": 0.95,
+      "on": true,
+      "id": "sw1"
+     },
+     {
+      "k": "big",
+      "at": "zero",
+      "x": 620,
+      "y": 560,
+      "text": "0 = off",
+      "size": 64,
+      "id": "z"
+     },
+     {
+      "k": "big",
+      "at": "one",
+      "x": 910,
+      "y": 560,
+      "text": "*1* = on",
+      "size": 64,
+      "id": "o"
+     }
+    ],
+    "acts": []
+   },
+   "chapter": "Bits vs qubits"
+  },
+  {
+   "text": "Every photo, every video, every message is just billions of those switches flipping on and off, extremely fast.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "photo",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:image-fill",
+      "size": 150,
+      "color": "#2F9E44",
+      "paper": true,
+      "id": "ph"
+     },
+     {
+      "k": "icon",
+      "at": "video",
+      "x": 300,
+      "y": 40,
+      "ref": "ph:video-camera-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "vd"
+     },
+     {
+      "k": "logo",
+      "at": "message",
+      "x": 560,
+      "y": 40,
+      "ref": "logos:whatsapp-icon",
+      "size": 150,
+      "paper": true,
+      "id": "wa"
+     },
+     {
+      "k": "card",
+      "at": "billions",
+      "x": 40,
+      "y": 330,
+      "label": "SWITCHES",
+      "big": "0",
+      "w": 520,
+      "id": "cnt",
+      "in": "fly"
+     },
+     {
+      "k": "big",
+      "at": "flipping",
+      "x": 620,
+      "y": 340,
+      "text": "0110100101101001",
+      "size": 72,
+      "color": "#2A2018",
+      "id": "bin",
+      "in": "fade"
+     },
+     {
+      "k": "tag",
+      "at": "fast",
+      "x": 640,
+      "y": 470,
+      "text": "billions of flips every second",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "fs"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "cnt",
+      "at": "billions",
+      "values": [
+       "1,000",
+       "1,000,000",
+       "1,000,000,000",
+       "BILLIONS"
+      ],
+      "dt": 0.25
+     },
+     {
+      "do": "shake",
+      "id": "bin",
+      "at": "fast"
+     }
+    ]
+   }
+  },
+  {
+   "text": "A quantum computer uses qubits instead. And a qubit can be in a mix of zero and one at the same time, a state called superposition.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "prop",
+      "at": "qubits",
+      "x": 60,
+      "y": 60,
+      "p": "qcoin",
+      "text": "Q",
+      "s": 1.3,
+      "id": "q"
+     },
+     {
+      "k": "tag",
+      "at": "qubits",
+      "x": 70,
+      "y": 420,
+      "text": "QUBIT",
+      "size": 44,
+      "bg": "#7A5CFF",
+      "id": "qt"
+     },
+     {
+      "k": "big",
+      "at": "zero",
+      "x": 560,
+      "y": 60,
+      "text": "0",
+      "size": 180,
+      "color": "#2A2018",
+      "id": "z0",
+      "in": "left"
+     },
+     {
+      "k": "big",
+      "at": "mix",
+      "x": 700,
+      "y": 90,
+      "text": "+",
+      "size": 140,
+      "color": "#8C6B5A",
+      "id": "pl"
+     },
+     {
+      "k": "big",
+      "at": "one",
+      "x": 860,
+      "y": 60,
+      "text": "*1*",
+      "size": 180,
+      "id": "o1",
+      "in": "slide"
+     },
+     {
+      "k": "tag",
+      "at": "same",
+      "x": 600,
+      "y": 300,
+      "text": "both at the same time",
+      "size": 38,
+      "id": "bt"
+     },
+     {
+      "k": "big",
+      "at": "superposition",
+      "x": 470,
+      "y": 430,
+      "text": "SUPER*POSITION*",
+      "size": 110,
+      "id": "sp",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "q",
+      "at": "qubits",
+      "deg": 720,
+      "d": 6
+     },
+     {
+      "do": "bob",
+      "id": "z0",
+      "at": "mix",
+      "n": 7
+     },
+     {
+      "do": "bob",
+      "id": "o1",
+      "at": "mix",
+      "n": 7
+     }
+    ]
+   }
+  },
+  {
+   "text": "A simple way to picture it: a normal bit is a coin lying flat, heads or tails. A qubit is a coin still spinning in the air. Only when you look does it land on one side.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "flat",
+      "x": 60,
+      "y": 80,
+      "ref": "ph:coin-vertical-fill",
+      "size": 190,
+      "color": "#C9A57A",
+      "paper": true,
+      "id": "flat"
+     },
+     {
+      "k": "tag",
+      "at": "heads",
+      "x": 40,
+      "y": 380,
+      "text": "BIT: heads OR tails",
+      "size": 36,
+      "id": "bt"
+     },
+     {
+      "k": "prop",
+      "at": "spinning",
+      "x": 620,
+      "y": 40,
+      "p": "qcoin",
+      "text": "?",
+      "s": 1.2,
+      "id": "spin"
+     },
+     {
+      "k": "tag",
+      "at": "spinning",
+      "x": 600,
+      "y": 380,
+      "text": "QUBIT: still spinning",
+      "size": 36,
+      "bg": "#7A5CFF",
+      "id": "qt"
+     },
+     {
+      "k": "icon",
+      "at": "look",
+      "x": 1000,
+      "y": 120,
+      "ref": "ph:eye-fill",
+      "size": 140,
+      "color": "#2A2018",
+      "id": "eye"
+     },
+     {
+      "k": "tag",
+      "at": "land",
+      "x": 920,
+      "y": 520,
+      "text": "look → it lands on 1",
+      "bg": "#F87736",
+      "size": 36,
+      "id": "ld"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "spin",
+      "at": "spinning",
+      "deg": 1080,
+      "d": 4.2
+     },
+     {
+      "do": "ring",
+      "id": "eye",
+      "at": "look"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Qubits can also be linked together, so that measuring one instantly tells you something about another. That's called entanglement.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "prop",
+      "at": "qubits",
+      "x": 60,
+      "y": 80,
+      "p": "qcoin",
+      "text": "Q",
+      "s": 1.0,
+      "id": "a"
+     },
+     {
+      "k": "prop",
+      "at": "linked",
+      "x": 880,
+      "y": 80,
+      "p": "qcoin",
+      "text": "Q",
+      "s": 1.0,
+      "id": "b"
+     },
+     {
+      "k": "icon",
+      "at": "linked",
+      "x": 520,
+      "y": 130,
+      "ref": "ph:link-bold",
+      "size": 220,
+      "color": "#F87736",
+      "id": "ln"
+     },
+     {
+      "k": "icon",
+      "at": "instantly",
+      "x": 560,
+      "y": 370,
+      "ref": "ph:lightning-fill",
+      "size": 120,
+      "color": "#F5B400",
+      "id": "lt"
+     },
+     {
+      "k": "big",
+      "at": "entanglement",
+      "x": 300,
+      "y": 520,
+      "text": "ENTANGLE*MENT*",
+      "size": 110,
+      "id": "en",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "ln",
+      "at": "instantly"
+     }
+    ]
+   }
+  },
+  {
+   "text": "Here's why that matters. Two qubits can hold a blend of four possibilities. Ten can hold over a thousand. Three hundred qubits can hold more possibilities than there are atoms in the observable universe.",
+   "dir": "clear, engaging explainer tone, natural pace",
+   "v": {
+    "type": "mix",
+    "els": [
+     {
+      "k": "bars",
+      "at": "two",
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "id": "bars",
+      "rows": [
+       [
+        "2 qubits → 4",
+        0.012,
+        "#7A5CFF"
+       ],
+       [
+        "10 qubits → 1,024",
+        0.08,
+        "#F87736"
+       ],
+       [
+        "300 qubits → more than atoms in the universe",
+        1.0,
+        "#E0471C"
+       ]
+      ],
+      "gap": 1.6,
+      "in": "fade"
+     },
+     {
+      "k": "icon",
+      "at": "atoms",
+      "x": 880,
+      "y": 70,
+      "ref": "tabler:atom",
+      "size": 230,
+      "color": "#7A5CFF",
+      "paper": true,
+      "id": "at"
+     },
+     {
+      "k": "clip",
+      "at": "universe",
+      "x": 820,
+      "y": 400,
+      "by": "THE MATHS (2 TO THE POWER OF n)",
+      "text": "2³⁰⁰ ≈ 10⁹⁰ > 10⁸⁰ atoms in the observable universe",
+      "hi": "10⁸⁰ atoms",
+      "w": 480,
+      "id": "cl"
+     }
+    ],
+    "acts": []
+   }
+  }
+ ]
+}
