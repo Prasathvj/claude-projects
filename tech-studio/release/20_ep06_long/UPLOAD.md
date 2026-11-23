@@ -30,6 +30,9 @@ Sources:
 • India 1,000 km quantum-secure links: https://newsonair.gov.in/india-crosses-1000-km-milestone-in-quantum-secure-communication-jitendra-singh/
 The spinning coin, maze, waves and "chandelier" are analogies/illustrations.
 
+Photos (Wikimedia Commons): Frontier supercomputer, OLCF at ORNL, CC BY 2.0, https://commons.wikimedia.org/wiki/File:Frontier_Supercomputer_(2).jpg · Hubble Ultra Deep Field, NASA and ESA, public domain, https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg
+Logos and icons: Iconify (open-source icon sets); logos belong to their owners.
+
 Max and Bit are animated characters. Narration is AI-generated (ElevenLabs voice via vidIQ); the script is researched and fact-checked.
 
 #quantumcomputing #google #willow #techexplained #ai
