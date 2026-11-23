@@ -10,8 +10,6 @@
  "engine": "vidiq",
  "voice_id": "cjVigY5qzO86Huf0OWal",
  "host_beats": [
-  0,
-  1,
   3
  ],
  "beats": [
@@ -19,16 +17,74 @@
    "text": "Right now, as ChatGPT writes its answer to you, it has no idea how its own sentence is going to end.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "chat",
-    "label": "CHATGPT \u00b7 ILLUSTRATION",
-    "msgs": [
+    "type": "paperscene",
+    "props": [
      {
-      "from": "you",
-      "text": "Write a poem about chai"
+      "p": "laptop",
+      "x": 60,
+      "y": 170,
+      "s": 0.8,
+      "at": 0.02,
+      "in": "drop"
      },
      {
-      "from": "agent",
-      "text": "Chai\u2026"
+      "p": "bit",
+      "x": 820,
+      "y": 230,
+      "s": 0.95,
+      "at": 0.08,
+      "loop": "boil",
+      "in": "slide"
+     },
+     {
+      "p": "strip",
+      "text": "Write a poem about chai",
+      "x": 130,
+      "y": 200,
+      "at": 0.12,
+      "c": "o",
+      "size": 38,
+      "in": "pop"
+     },
+     {
+      "p": "strip",
+      "text": "Chai",
+      "x": 130,
+      "y": 300,
+      "at": 0.32,
+      "c": "c",
+      "size": 46,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "is",
+      "x": 290,
+      "y": 300,
+      "at": 0.44,
+      "c": "c",
+      "size": 46,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "warm",
+      "x": 390,
+      "y": 300,
+      "at": 0.56,
+      "c": "c",
+      "size": 46,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "\u2026",
+      "x": 560,
+      "y": 300,
+      "at": 0.68,
+      "c": "c",
+      "size": 46,
+      "in": "drop"
      }
     ]
    },
@@ -38,59 +94,279 @@
    "text": "It doesn't plan the paragraph. It doesn't even plan the next sentence. It picks one small piece of a word, then the next, then the next.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "loop",
-    "steps": [
-     "Pick one piece",
-     "Add it",
-     "Look again",
-     "Pick the next"
-    ],
-    "upto": 3
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "wheel",
+      "x": 40,
+      "y": 60,
+      "s": 0.8,
+      "at": 0.02,
+      "loop": "spin",
+      "in": "pop"
+     },
+     {
+      "p": "belt",
+      "x": 420,
+      "y": 600,
+      "len": 860,
+      "at": 0.08,
+      "in": "slide"
+     },
+     {
+      "p": "strip",
+      "text": "It",
+      "x": 450,
+      "y": 500,
+      "at": 0.25,
+      "c": "c",
+      "size": 52,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "picks",
+      "x": 580,
+      "y": 500,
+      "at": 0.37,
+      "c": "c",
+      "size": 52,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "one",
+      "x": 790,
+      "y": 500,
+      "at": 0.49,
+      "c": "c",
+      "size": 52,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "piece",
+      "x": 960,
+      "y": 500,
+      "at": 0.61,
+      "c": "c",
+      "size": 52,
+      "in": "drop"
+     },
+     {
+      "p": "banner",
+      "text": "ONE PIECE AT A TIME",
+      "x": 440,
+      "y": 110,
+      "at": 0.72,
+      "in": "drop"
+     },
+     {
+      "p": "bit",
+      "x": 1130,
+      "y": 330,
+      "s": 0.55,
+      "at": 0.1,
+      "loop": "boil",
+      "in": "slide"
+     }
+    ]
    }
   },
   {
    "text": "And yet about a billion people use it every week, to write emails, fix code and explain homework.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "vstat",
-    "kicker": "CHATGPT \u00b7 WEEKLY USERS",
-    "num": "1",
-    "unit": "BILLION",
-    "sub": "people use it every week",
-    "hi": "every week",
-    "source": "OpenAI, September 2026: \u2248 1 billion weekly users",
-    "note": "that's 1 in 8 people on Earth*",
-    "foot": "*approx., world population \u2248 8.2 billion",
-    "sx": 760,
-    "sy": 560,
-    "nx": 60,
-    "ny": 580
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "crowd",
+      "n": 36,
+      "cols": 12,
+      "x": 20,
+      "y": 300,
+      "s": 0.85,
+      "at": 0.05,
+      "in": "fade"
+     },
+     {
+      "p": "strip",
+      "text": "\u2248 1 BILLION",
+      "x": 760,
+      "y": 40,
+      "at": 0.2,
+      "c": "o",
+      "size": 96,
+      "in": "pop"
+     },
+     {
+      "p": "strip",
+      "text": "people \u00b7 every week",
+      "x": 780,
+      "y": 200,
+      "at": 0.38,
+      "c": "c",
+      "size": 46,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "Source: OpenAI, Sept 2026",
+      "x": 800,
+      "y": 640,
+      "at": 0.55,
+      "c": "l",
+      "size": 24,
+      "in": "fade"
+     }
+    ]
    }
   },
   {
    "text": "So how can something that is basically guessing, one word at a time, sound so smart? Let's open the box.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "slam",
-    "text": "Let's open the box"
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "box",
+      "x": 280,
+      "y": 300,
+      "s": 1.0,
+      "at": 0.02,
+      "open": 0.35,
+      "in": "drop"
+     },
+     {
+      "p": "bit",
+      "x": 330,
+      "y": 60,
+      "s": 0.8,
+      "at": 0.45,
+      "loop": "bob",
+      "in": "rise"
+     },
+     {
+      "p": "star",
+      "x": 180,
+      "y": 120,
+      "s": 0.6,
+      "at": 0.55,
+      "loop": "spin",
+      "in": "pop"
+     },
+     {
+      "p": "star",
+      "x": 720,
+      "y": 60,
+      "s": 0.45,
+      "at": 0.62,
+      "loop": "spin",
+      "in": "pop"
+     }
+    ]
    }
   },
   {
    "text": "First, ChatGPT doesn't actually read words. It reads tokens.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "split",
-    "left": {
-     "icon": "doc",
-     "title": "Words",
-     "body": "What you see"
-    },
-    "right": {
-     "icon": "code",
-     "title": "Tokens",
-     "body": "What it reads"
-    },
-    "merge": "It reads TOKENS"
+    "type": "paperscene",
+    "props": [
+     {
+      "p": "strip",
+      "text": "ChatGPT is unbelievable",
+      "x": 80,
+      "y": 90,
+      "at": 0.05,
+      "c": "c",
+      "size": 72,
+      "in": "slide"
+     },
+     {
+      "p": "scissors",
+      "x": 960,
+      "y": 40,
+      "s": 0.7,
+      "at": 0.2,
+      "snip": [
+       0.3,
+       0.42,
+       0.54
+      ],
+      "in": "fly"
+     },
+     {
+      "p": "strip",
+      "text": "Chat",
+      "x": 60,
+      "y": 420,
+      "at": 0.5,
+      "c": "o",
+      "size": 56,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "G",
+      "x": 250,
+      "y": 420,
+      "at": 0.56,
+      "c": "b",
+      "size": 56,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "PT",
+      "x": 360,
+      "y": 420,
+      "at": 0.62,
+      "c": "g",
+      "size": 56,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "is",
+      "x": 500,
+      "y": 420,
+      "at": 0.68,
+      "c": "y",
+      "size": 56,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "un",
+      "x": 620,
+      "y": 420,
+      "at": 0.74,
+      "c": "p",
+      "size": 56,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "believ",
+      "x": 760,
+      "y": 420,
+      "at": 0.8,
+      "c": "o",
+      "size": 56,
+      "in": "drop"
+     },
+     {
+      "p": "strip",
+      "text": "able",
+      "x": 1010,
+      "y": 420,
+      "at": 0.86,
+      "c": "b",
+      "size": 56,
+      "in": "drop"
+     }
+    ]
    },
    "chapter": "Words become tokens"
   },
