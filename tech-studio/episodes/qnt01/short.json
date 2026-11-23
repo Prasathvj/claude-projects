@@ -4,10 +4,9 @@
  "profile": "fast",
  "gap": 0.15,
  "captions": "big",
- "voice": "Orus",
- "batch": 1,
+ "voice": "Eric",
+ "batch": 7,
  "max_tempo": 1.05,
- "model": "gemini-3.1-flash-tts-preview",
  "beats": [
   {
    "text": "This chip finished, in five minutes, a calculation that would take a supercomputer ten septillion years.",
@@ -37,5 +36,7 @@
    "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
    "dir": "warm, friendly sign-off"
   }
- ]
+ ],
+ "engine": "vidiq",
+ "voice_id": "cjVigY5qzO86Huf0OWal"
 }
