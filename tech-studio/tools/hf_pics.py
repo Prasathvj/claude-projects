@@ -103,3 +103,72 @@ def register_scenes(B):
 
     B.T['scene'] = t_scene
     B.SFX_BY_TYPE['scene'] = [(0.6, 'whoosh', .25)]
+
+
+def register_imgcards(B):
+    """'imgcard' beat (owner, 2026-11-23): the old card style and motion, with a picture INSIDE the card (never full-screen).
+    Pictures are crops of the episode's illustrations (assets/scenes/<img>.jpg) or Fluent pictures, zooming gently inside.
+    spec {"type": "imgcard", "layout": "hero|duo|stat|chat",
+          "label": "...", "title": "...", "img": "tokens", "crop": [fx, fy, zoom],          (hero/stat/chat)
+          "chips": ["Chat", "G", "PT"], "stat": "100 tokens ≈ 75 words",                  (hero)
+          "value": "1 BILLION", "sub": "people every week",                                (stat)
+          "msgs": [["you", "Write a poem about chai"], ["ai", "Chai is warm …"]],          (chat)
+          "cards": [{"img":..,"crop":..,"title":..,"body":..,"bad":true}, {...}]}          (duo)"""
+    E, wf, fly, pop, fade = B.E, B.wfrac, B.fly, B.pop, B.fade
+    CSS = """.ic { position:relative; border-radius:22px; overflow:hidden; background:#FFFFFF; box-shadow:inset 0 0 0 2px rgba(90,50,20,.08); }
+.ic i { position:absolute; inset:0; background-repeat:no-repeat; transform-origin:50% 50%; }
+.chip2 { display:inline-block; margin:0 10px 12px 0; padding:12px 24px; border-radius:16px; font:800 40px 'SD Display'; color:#100804; opacity:0; }
+.stat2 { margin-top:18px; padding:16px 24px; border-radius:18px; background:#F3E6DC; color:#1E120C; font:900 44px 'SD Display'; opacity:0; }
+.val2 { font:900 104px 'SD Display'; white-space:nowrap; color:var(--accent); line-height:1; letter-spacing:-3px; } .sub2 { font:700 40px 'SD Display'; color:var(--ink); margin-top:10px; }
+.duo { position:absolute; top:40px; width:600px; } .duo .t { font:900 48px 'SD Display'; color:var(--ink); margin-top:18px; } .duo .bd { font:600 32px 'SD Text'; color:var(--dim); }
+.duo.bad { border:3px solid var(--red); box-shadow:0 0 60px rgba(255,59,48,.3); } .duo.good { border:3px solid var(--green); }
+.msg { max-width:540px; padding:18px 26px; border-radius:26px; font:700 36px 'SD Text'; margin-bottom:16px; opacity:0; }
+.msg.you { margin-left:auto; background:var(--accent); color:#100804; border-radius:26px 26px 6px 26px; } .msg.ai { background:#F3E6DC; color:#1E120C; border-radius:26px 26px 26px 6px; }"""
+    COLS = ['#F87736', '#55C2FF', '#3DDC97', '#FFC24A', '#FF6B5E', '#B98CFF']
+
+    def crop(cid, img, c, w, h):
+        fx, fy, z = c
+        return (f'<div class="ic" style="width:{w}px; height:{h}px"><i id="{cid}" style="background-image:url(assets/scenes/{img}.jpg); '
+                f'background-size:{z * 100:.0f}% auto; background-position:{fx * 100:.0f}% {fy * 100:.0f}%"></i></div>')
+
+    def drift(cid, i, sid):
+        d = round(B.S[sid][1] - B.S[sid][0], 2)
+        return f'    tl.fromTo("#{cid}", {{ scale:1.0 }}, {{ scale:1.12, duration:{d}, ease:"sine.inOut" }}, 0);'
+
+    def t_imgcard(i, sid, v):
+        lay = v.get('layout', 'hero'); sc = []
+        if lay == 'duo':
+            body = ''
+            for k, c in enumerate(v['cards']):
+                cls = ' bad' if c.get('bad') else ' good' if c.get('good') else ''
+                body += (f'<div class="card duo{cls}" id="{sid}-c{k}" style="left:{40 + k * 640}px">{crop(f"{sid}-p{k}", c["img"], c["crop"], 548, 330)}'
+                         f'<div class="t">{E(c["title"])}</div><div class="bd">{E(c.get("body", ""))}</div></div>')
+                sc += [fly(f'#{sid}-c{k}', 0.05 if k == 0 else wf(i, 0.4), 10, 16 if k == 0 else -16), drift(f'{sid}-p{k}', i, sid)]
+            return body, sc, CSS
+        head = f'<div class="hd"><div class="tile">{B.icon(v.get("icon", "brain"))}</div><div><div class="lab">{E(v.get("label", ""))}</div><div class="ttl">{E(v.get("title", ""))}</div></div></div>'
+        if lay == 'stat':
+            body = (f'<div class="card" id="{sid}-c" style="left:60px; top:60px; width:1200px">{head}<div style="display:flex; gap:40px; align-items:center">'
+                    f'{crop(f"{sid}-p", v["img"], v["crop"], 560, 380)}<div><div class="val2" id="{sid}-v">{E(v["value"])}</div><div class="sub2" id="{sid}-s">{E(v.get("sub", ""))}</div></div></div></div>')
+            sc = [fly(f'#{sid}-c'), drift(f'{sid}-p', i, sid),
+                  f'    tl.fromTo("#{sid}-v", {{ opacity:0, scale:1.6, filter:"blur(12px)" }}, {{ opacity:1, scale:1, filter:"blur(0px)", duration:.45, ease:"expo.out" }}, {wf(i, 0.15)});',
+                  pop(f'#{sid}-s', wf(i, 0.35))]
+            return body, sc, CSS
+        if lay == 'chat':
+            msgs = ''.join(f'<div class="msg {w}" id="{sid}-m{k}">{E(t)}</div>' for k, (w, t) in enumerate(v['msgs']))
+            body = (f'<div class="card" id="{sid}-c" style="left:60px; top:50px; width:1200px">{head}<div style="display:flex; gap:36px">'
+                    f'{crop(f"{sid}-p", v["img"], v["crop"], 560, 400)}<div style="flex:1; padding-top:10px">{msgs}</div></div></div>')
+            sc = [fly(f'#{sid}-c'), drift(f'{sid}-p', i, sid)] + [pop(f'#{sid}-m{k}', wf(i, 0.1 + k * 0.35)) for k in range(len(v['msgs']))]
+            return body, sc, CSS
+        chips = ''.join(f'<span class="chip2" id="{sid}-k{k}" style="background:{COLS[k % len(COLS)]}">{E(x)}</span>' for k, x in enumerate(v.get('chips', [])))
+        stat = f'<div class="stat2" id="{sid}-st">{E(v["stat"])}</div>' if v.get('stat') else ''
+        body = (f'<div class="card" id="{sid}-c" style="left:60px; top:50px; width:1200px">{head}<div style="display:flex; gap:36px">'
+                f'{crop(f"{sid}-p", v["img"], v["crop"], 620, 400)}<div style="flex:1; padding-top:10px">{chips}{stat}</div></div></div>')
+        sc = [fly(f'#{sid}-c'), drift(f'{sid}-p', i, sid)]
+        n = len(v.get('chips', []))
+        sc += [pop(f'#{sid}-k{k}', wf(i, 0.2 + k * 0.5 / max(1, n))) for k in range(n)]
+        if stat:
+            sc.append(pop(f'#{sid}-st', wf(i, 0.72)))
+        return body, sc, CSS
+
+    B.T['imgcard'] = t_imgcard
+    B.SFX_BY_TYPE['imgcard'] = [(0.05, 'whoosh', .45), (0.5, 'pop', .4)]
