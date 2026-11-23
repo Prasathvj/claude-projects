@@ -28,26 +28,22 @@
 .bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
 .center { position:absolute; left:0; right:0; text-align:center; }
 
-.pi { position:absolute; } .pi .pl { position:absolute; left:50%; top:100%; transform:translateX(-50%); margin-top:6px; white-space:nowrap;
-  font:800 30px 'SD Display'; color:var(--ink); background:#FFFFFF; padding:6px 18px; border-radius:16px; box-shadow:0 10px 24px rgba(90,50,20,.12); }
-.tg { position:absolute; opacity:0; white-space:nowrap; }
-.tg.note { padding:14px 26px; border-radius:18px; background:#FFFFFF; color:var(--ink); font:800 40px 'SD Display'; box-shadow:0 16px 40px rgba(90,50,20,.15); }
-.tg.ok { padding:14px 26px; border-radius:18px; background:#3DDC97; color:#0E3B26; font:900 40px 'SD Display'; }
-.tg.bad { padding:14px 26px; border-radius:18px; background:#FF3B30; color:#FFFFFF; font:900 40px 'SD Display'; }
-.tg.big { font:900 120px 'SD Display'; color:var(--accent); letter-spacing:-2px; padding:4px 30px 10px; border-radius:28px; background:rgba(255,250,247,.88); box-shadow:0 20px 50px rgba(90,50,20,.18); }
-.tg.quote { padding:22px 34px; border-radius:26px; background:rgba(255,250,247,.92); color:var(--ink); font:600 italic 64px 'SD Serif'; box-shadow:0 20px 50px rgba(90,50,20,.18); white-space:normal; max-width:1100px; line-height:1.1; }
-.tg.bubble { padding:18px 28px; border-radius:30px 30px 30px 8px; background:#FFFFFF; color:var(--ink); font:700 34px 'SD Text'; box-shadow:0 16px 40px rgba(90,50,20,.15); white-space:normal; max-width:520px; }
-.kk { position:absolute; left:0; right:0; top:24px; text-align:center; font:800 24px 'SD Mono'; letter-spacing:4px; color:var(--accent); }
+.sp { position:absolute; top:130px; width:510px; height:420px; border-radius:30px; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); border:2px solid var(--edge);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; text-align:center; padding:30px; }
+.sp.bad { border:3px solid var(--red); box-shadow:0 0 60px rgba(255,59,48,.35); }
+.sp .t { font:900 56px 'SD Display'; color:var(--ink); } .sp .bd { font:500 34px 'SD Text'; color:#6B5446; }
+.mg { font:900 64px 'SD Display'; color:var(--accent); letter-spacing:2px; }
   </style>
   <div id="root" data-composition-id="b32" data-width="1920" data-height="1080">
-<div class="stage" id="b32-all" style="left:300px"><div id="b32-img" style="position:absolute; left:-300px; top:-110px; width:1920px; height:1080px; overflow:hidden"><div id="b32-cam" style="position:absolute; inset:0; background:url(assets/scenes/exam.jpg) center/cover; transform-origin:50.0% 40.0%; transform:scale(1.25)"></div><div style="position:absolute; left:0; right:0; bottom:0; height:300px; background:linear-gradient(180deg,rgba(244,237,227,0),rgba(244,237,227,.85))"></div></div><div class="tg note" id="b32-t0" style="left:60px; top:40px;">&quot;I don&#x27;t know&quot; = 0 points</div>
-<div class="tg ok" id="b32-t1" style="left:60px; top:150px;">Lucky guess = +1</div></div>
+<div class="stage" id="b32-all" style="left:300px"><div class="sp" id="b32-left" style="left:90px"><svg width="90" height="90" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M24 24l52 52M76 24L24 76"/></svg><div class="t">&quot;I don&#x27;t know&quot;</div><div class="bd">0 points</div></div><div class="sp" id="b32-right" style="left:720px"><svg width="90" height="90" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 52l18 18 38-40"/></svg><div class="t">Lucky guess</div><div class="bd">+1 point</div></div><div class="center mg" id="b32-mg" style="top:620px">Guessing looks smarter</div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b32-cam", { scale:1.25, transformOrigin:"50.0% 40.0%" }, { scale:1.45, transformOrigin:"50.0% 68.0%", duration:9.63, ease:"sine.inOut" }, 0);
-    tl.fromTo("#b32-t0", { opacity:0, scale:0.5, y:20 }, { opacity:1, scale:1, y:0, duration:.35, ease:"back.out(2)" }, 2.452);
-    tl.fromTo("#b32-t1", { opacity:0, scale:0.5, y:20 }, { opacity:1, scale:1, y:0, duration:.35, ease:"back.out(2)" }, 5.249);
+    tl.fromTo("#b32-left", { opacity:0, scale:.78, rotationX:10, rotationY:20, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.05);
+    tl.fromTo("#b32-right", { opacity:0, scale:.78, rotationX:10, rotationY:-20, y:90, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 3.85);
+    tl.to("#b32-left", { x:55, duration:.5, ease:"power3.inOut" }, 6.835);
+    tl.to("#b32-right", { x:-55, duration:.5, ease:"power3.inOut" }, 6.835);
+    tl.fromTo("#b32-mg", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 7.581);
     tl.to("#b32-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 9.476);
     window.__timelines["b32"] = tl;
   </script>

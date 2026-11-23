@@ -28,30 +28,30 @@
 .bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
 .center { position:absolute; left:0; right:0; text-align:center; }
 
-.pi { position:absolute; } .pi .pl { position:absolute; left:50%; top:100%; transform:translateX(-50%); margin-top:6px; white-space:nowrap;
-  font:800 30px 'SD Display'; color:var(--ink); background:#FFFFFF; padding:6px 18px; border-radius:16px; box-shadow:0 10px 24px rgba(90,50,20,.12); }
-.tg { position:absolute; opacity:0; white-space:nowrap; }
-.tg.note { padding:14px 26px; border-radius:18px; background:#FFFFFF; color:var(--ink); font:800 40px 'SD Display'; box-shadow:0 16px 40px rgba(90,50,20,.15); }
-.tg.ok { padding:14px 26px; border-radius:18px; background:#3DDC97; color:#0E3B26; font:900 40px 'SD Display'; }
-.tg.bad { padding:14px 26px; border-radius:18px; background:#FF3B30; color:#FFFFFF; font:900 40px 'SD Display'; }
-.tg.big { font:900 120px 'SD Display'; color:var(--accent); letter-spacing:-2px; padding:4px 30px 10px; border-radius:28px; background:rgba(255,250,247,.88); box-shadow:0 20px 50px rgba(90,50,20,.18); }
-.tg.quote { padding:22px 34px; border-radius:26px; background:rgba(255,250,247,.92); color:var(--ink); font:600 italic 64px 'SD Serif'; box-shadow:0 20px 50px rgba(90,50,20,.18); white-space:normal; max-width:1100px; line-height:1.1; }
-.tg.bubble { padding:18px 28px; border-radius:30px 30px 30px 8px; background:#FFFFFF; color:var(--ink); font:700 34px 'SD Text'; box-shadow:0 16px 40px rgba(90,50,20,.15); white-space:normal; max-width:520px; }
-.kk { position:absolute; left:0; right:0; top:24px; text-align:center; font:800 24px 'SD Mono'; letter-spacing:4px; color:var(--accent); }
+.orb { position:absolute; left:0; top:0; }
+.hub { position:absolute; left:370px; top:290px; width:200px; height:180px; border-radius:40px; background:#F87736; color:#1A0A04; text-align:center; font:900 70px 'SD Display'; line-height:.95; padding-top:30px; }
+.hub span { font:700 24px 'SD Text'; letter-spacing:4px; }
+.st { position:absolute; width:280px; height:100px; border-radius:24px; background:#F7F1EB; border:2px solid var(--edge); display:flex; align-items:center; gap:16px; padding:0 18px; font:700 32px 'SD Display'; color:#9C8576; }
+.st b { width:56px; height:56px; flex:none; border-radius:28px; background:#EFE4DA; display:flex; align-items:center; justify-content:center; font-size:30px; color:#9C8576; }
+.st.done { color:var(--ink); } .st.done b { background:#FBE3D3; color:var(--accent); }
+.st.on { border:3px solid var(--accent); color:var(--ink); box-shadow:0 0 40px rgba(248,119,54,.45); } .st.on b { background:var(--accent); color:#1A0A04; }
+.st.bad { border:3px solid var(--red); color:#D93025; box-shadow:0 0 50px rgba(255,59,48,.5); } .st.bad b { background:var(--red); color:#fff; }
+.tools { position:absolute; left:1000px; top:150px; display:flex; flex-direction:column; gap:20px; }
+.tl { width:290px; height:110px; border-radius:24px; background:linear-gradient(180deg,#FFFAF7,#FFF6EF); border:2px solid var(--edge); display:flex; align-items:center; gap:18px; padding:0 22px; font:700 32px 'SD Display'; color:var(--ink); }
+.inj { position:absolute; left:960px; top:560px; padding:20px 28px; border-radius:20px; background:#FDECEA; border:3px solid var(--red); font:700 30px 'SD Mono'; color:#D93025; }
+.note { position:absolute; left:960px; top:100px; width:320px; padding:24px; border-radius:6px; background:#FFE9A8; color:#3A2A10; font:600 italic 40px 'SD Serif'; transform:rotate(4deg); }
   </style>
   <div id="root" data-composition-id="b01" data-width="1920" data-height="1080">
-<div class="stage" id="b01-all" style="left:300px"><div id="b01-img" style="position:absolute; left:-300px; top:-110px; width:1920px; height:1080px; overflow:hidden"><div id="b01-cam" style="position:absolute; inset:0; background:url(assets/scenes/hook.jpg) center/cover; transform-origin:50.0% 45.0%; transform:scale(1.0)"></div><div style="position:absolute; left:0; right:0; bottom:0; height:300px; background:linear-gradient(180deg,rgba(244,237,227,0),rgba(244,237,227,.85))"></div></div><div class="tg ok" id="b01-t0" style="left:520px; top:330px;">Chai</div>
-<div class="tg ok" id="b01-t1" style="left:700px; top:330px;">is</div>
-<div class="tg ok" id="b01-t2" style="left:820px; top:330px;">warm</div>
-<div class="tg ok" id="b01-t3" style="left:1010px; top:330px;">…</div></div>
+<div class="stage" id="b01-all" style="left:80px"><div class="hub" id="b01-hub">AI<br><span>AGENT</span></div><svg class="orb" width="1000" height="800"><circle cx="470" cy="380" r="270" fill="none" stroke="#EADCCD" stroke-width="6" stroke-dasharray="14 14"/></svg><div class="st done" id="b01-s0" style="left:330px; top:60px"><b>1</b>Pick one piece</div><div class="st done" id="b01-s1" style="left:600px; top:330px"><b>2</b>Add it</div><div class="st done" id="b01-s2" style="left:330px; top:600px"><b>3</b>Look again</div><div class="st on" id="b01-s3" style="left:60px; top:330px"><b>4</b>Pick the next</div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b01-cam", { scale:1.0, transformOrigin:"50.0% 45.0%" }, { scale:1.25, transformOrigin:"55.0% 30.0%", duration:8.97, ease:"sine.inOut" }, 0);
-    tl.fromTo("#b01-t0", { opacity:0, scale:0.5, y:20 }, { opacity:1, scale:1, y:0, duration:.35, ease:"back.out(2)" }, 3.156);
-    tl.fromTo("#b01-t1", { opacity:0, scale:0.5, y:20 }, { opacity:1, scale:1, y:0, duration:.35, ease:"back.out(2)" }, 4.457);
-    tl.fromTo("#b01-t2", { opacity:0, scale:0.5, y:20 }, { opacity:1, scale:1, y:0, duration:.35, ease:"back.out(2)" }, 5.757);
-    tl.fromTo("#b01-t3", { opacity:0, scale:0.5, y:20 }, { opacity:1, scale:1, y:0, duration:.35, ease:"back.out(2)" }, 7.058);
+    tl.fromTo("#b01-hub", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.05);
+    tl.fromTo("#b01-s0", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.1);
+    tl.fromTo("#b01-s1", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.18);
+    tl.fromTo("#b01-s2", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.26);
+    tl.fromTo("#b01-s3", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.34);
+    tl.fromTo("#b01-s3", { scale:1 }, { scale:1.1, duration:.18, yoyo:true, repeat:1, immediateRender:false }, 0.987);
     tl.to("#b01-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 8.823);
     window.__timelines["b01"] = tl;
   </script>

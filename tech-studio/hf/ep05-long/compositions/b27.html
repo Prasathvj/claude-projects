@@ -28,24 +28,23 @@
 .bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
 .center { position:absolute; left:0; right:0; text-align:center; }
 
-.pi { position:absolute; } .pi .pl { position:absolute; left:50%; top:100%; transform:translateX(-50%); margin-top:6px; white-space:nowrap;
-  font:800 30px 'SD Display'; color:var(--ink); background:#FFFFFF; padding:6px 18px; border-radius:16px; box-shadow:0 10px 24px rgba(90,50,20,.12); }
-.tg { position:absolute; opacity:0; white-space:nowrap; }
-.tg.note { padding:14px 26px; border-radius:18px; background:#FFFFFF; color:var(--ink); font:800 40px 'SD Display'; box-shadow:0 16px 40px rgba(90,50,20,.15); }
-.tg.ok { padding:14px 26px; border-radius:18px; background:#3DDC97; color:#0E3B26; font:900 40px 'SD Display'; }
-.tg.bad { padding:14px 26px; border-radius:18px; background:#FF3B30; color:#FFFFFF; font:900 40px 'SD Display'; }
-.tg.big { font:900 120px 'SD Display'; color:var(--accent); letter-spacing:-2px; padding:4px 30px 10px; border-radius:28px; background:rgba(255,250,247,.88); box-shadow:0 20px 50px rgba(90,50,20,.18); }
-.tg.quote { padding:22px 34px; border-radius:26px; background:rgba(255,250,247,.92); color:var(--ink); font:600 italic 64px 'SD Serif'; box-shadow:0 20px 50px rgba(90,50,20,.18); white-space:normal; max-width:1100px; line-height:1.1; }
-.tg.bubble { padding:18px 28px; border-radius:30px 30px 30px 8px; background:#FFFFFF; color:var(--ink); font:700 34px 'SD Text'; box-shadow:0 16px 40px rgba(90,50,20,.15); white-space:normal; max-width:520px; }
-.kk { position:absolute; left:0; right:0; top:24px; text-align:center; font:800 24px 'SD Mono'; letter-spacing:4px; color:var(--accent); }
+.rk { position:absolute; left:160px; top:140px; width:1000px; }
+.rr { height:104px; margin-bottom:18px; border-radius:24px; background:linear-gradient(90deg,#FFFAF7,#FFF6EF); border:2px solid var(--edge); display:flex; align-items:center; gap:26px; padding:0 26px; font:700 44px 'SD Display'; color:var(--ink); }
+.rr b { min-width:76px; height:66px; padding:0 14px; border-radius:33px; background:#FBE3D3; color:var(--accent); display:flex; align-items:center; justify-content:center; font:800 32px 'SD Display'; }
+.rr.hi { border:3px solid var(--accent); box-shadow:0 0 50px rgba(248,119,54,.45); } .rr.hi b { background:var(--accent); color:#100804; }
+.rr.up b { background:#123524; color:#3DDC97; }
+.csrc { font:600 22px 'SD Text'; color:var(--dim); letter-spacing:1px; }
   </style>
   <div id="root" data-composition-id="b27" data-width="1920" data-height="1080">
-<div class="stage" id="b27-all" style="left:300px"><div id="b27-img" style="position:absolute; left:-300px; top:-110px; width:1920px; height:1080px; overflow:hidden"><div id="b27-cam" style="position:absolute; inset:0; background:url(assets/scenes/rlhf.jpg) center/cover; transform-origin:15.0% 50.0%; transform:scale(1.5)"></div><div style="position:absolute; left:0; right:0; bottom:0; height:300px; background:linear-gradient(180deg,rgba(244,237,227,0),rgba(244,237,227,.85))"></div></div><div class="tg note" id="b27-t0" style="left:60px; top:40px; font-size:52px;">Real people rank answers</div></div>
+<div class="stage" id="b27-all" style="left:300px"><div class="center kick" id="b27-k" style="top:60px">PEOPLE RANK THE ANSWERS</div><div class="rk"><div class="rr hi" id="b27-r0"><b>#1</b><span>Clear, correct, helpful</span></div><div class="rr " id="b27-r1"><b>#2</b><span>Correct but rambling</span></div><div class="rr " id="b27-r2"><b>#3</b><span>Wrong or off-topic</span></div></div><div class="center csrc" style="top:680px">Illustration</div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#b27-cam", { scale:1.5, transformOrigin:"15.0% 50.0%" }, { scale:1.3, transformOrigin:"75.0% 45.0%", duration:8.11, ease:"sine.inOut" }, 0);
-    tl.fromTo("#b27-t0", { opacity:0, scale:0.5, y:20 }, { opacity:1, scale:1, y:0, duration:.35, ease:"back.out(2)" }, 2.463);
+    tl.fromTo("#b27-k", { opacity:0, scale:.7, y:24 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2)" }, 0.05);
+    tl.fromTo("#b27-r0", { opacity:0, x:-120 }, { opacity:1, x:0, duration:.35, ease:"expo.out" }, 0.432);
+    tl.fromTo("#b27-r1", { opacity:0, x:-120 }, { opacity:1, x:0, duration:.35, ease:"expo.out" }, 2.255);
+    tl.fromTo("#b27-r2", { opacity:0, x:-120 }, { opacity:1, x:0, duration:.35, ease:"expo.out" }, 4.078);
+    tl.fromTo("#b27-r0", { scale:1 }, { scale:1.05, duration:.2, yoyo:true, repeat:1, immediateRender:false }, 1.057);
     tl.to("#b27-all", { opacity:0, filter:"blur(10px)", scale:1.03, duration:.14, ease:"power3.in" }, 7.961);
     window.__timelines["b27"] = tl;
   </script>
