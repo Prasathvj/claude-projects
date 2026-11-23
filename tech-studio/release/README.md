@@ -30,7 +30,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 21 | [21_swe01](21_swe01) | AI writes 75% of Google's new code. So who's losing jobs? | 0:40 | **Wed 9 Dec, 12:30 PM** | Ready (Short → ep04) |
 | 22 | [22_qnt01](22_qnt01) | This chip did 10 septillion years of work in 5 minutes | 0:38 | **Sun 13 Dec, 12:30 PM** | Ready (Short → ep06) |
 | 23 | [23_ep07_long](23_ep07_long) | Is Your Phone Secretly Listening to You? Here's What the Evidence Says | 11:01 | **Tue 15 Dec, 6:30 PM** | Ready (long video, mixed style) |
-| 24 | [24_lst01](24_lst01) | Is your phone secretly listening? Scientists tested 17,000 apps | 0:37 | **Wed 16 Dec, 12:30 PM** | Rendering (Short → ep07) |
+| 24 | [24_lst01](24_lst01) | Is your phone secretly listening? Scientists tested 17,000 apps | 0:37 | **Wed 16 Dec, 12:30 PM** | Ready (Short → ep07) |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.
