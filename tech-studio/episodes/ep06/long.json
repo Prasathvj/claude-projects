@@ -33,107 +33,104 @@
    "text": "In under five minutes, a chip the size of a postage stamp finished a calculation that would take one of the world's fastest supercomputers ten septillion years.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "prop",
+      "at": "chip",
+      "x": 40,
+      "y": 70,
       "p": "chip",
-      "x": 60,
-      "y": 180,
-      "at": 0.02,
-      "in": "drop",
-      "text": "Q",
-      "s": 1.0,
-      "loop": "boil"
-     },
-     {
-      "p": "clock",
-      "x": 400,
-      "y": 190,
-      "at": 0.15,
-      "in": "pop",
-      "s": 0.85
-     },
-     {
-      "p": "strip",
-      "text": "under 5 minutes",
-      "x": 380,
-      "y": 470,
-      "at": 0.3,
-      "c": "o",
-      "size": 44,
+      "text": "Willow",
+      "s": 0.95,
+      "id": "chip",
       "in": "drop"
      },
      {
-      "p": "calendar",
+      "k": "logo",
+      "at": "chip",
+      "x": 250,
+      "y": 290,
+      "ref": "logos:google-icon",
+      "size": 64,
+      "paper": true,
+      "id": "g"
+     },
+     {
+      "k": "tag",
+      "at": "postage",
+      "x": 20,
+      "y": 390,
+      "text": "≈ size of a postage stamp",
+      "bg": "#FFFAF2",
+      "color": "#2A2018",
+      "size": 30,
+      "id": "st"
+     },
+     {
+      "k": "card",
+      "at": "five",
+      "x": 30,
+      "y": 480,
+      "icon": "ph:clock-countdown-fill",
+      "label": "QUANTUM CHIP",
+      "big": "0 MIN",
+      "w": 420,
+      "id": "min",
+      "in": "fly"
+     },
+     {
+      "k": "photo",
+      "at": "fastest",
+      "x": 700,
+      "y": 30,
+      "name": "frontier.jpg",
+      "w": 520,
+      "rot": 3,
+      "id": "fr",
+      "in": "slide"
+     },
+     {
+      "k": "tag",
+      "at": "supercomputers",
       "x": 760,
       "y": 420,
-      "at": 0.4,
-      "in": "drop",
-      "text": "∞",
-      "s": 0.55
+      "text": "Frontier: one of the fastest supercomputers",
+      "size": 26,
+      "id": "frt"
      },
      {
-      "p": "calendar",
-      "x": 776,
-      "y": 358,
-      "at": 0.47000000000000003,
-      "in": "drop",
-      "text": "∞",
-      "s": 0.55
+      "k": "card",
+      "at": "ten",
+      "x": 520,
+      "y": 520,
+      "icon": "ph:hourglass-high-fill",
+      "label": "SUPERCOMPUTER",
+      "big": "10 *septillion* YEARS",
+      "bcolor": "#2A2018",
+      "bsize": 64,
+      "id": "yrs",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "min",
+      "at": "minutes",
+      "values": [
+       "1 MIN",
+       "2 MIN",
+       "3 MIN",
+       "4 MIN",
+       "5 MIN"
+      ],
+      "dt": 0.12
      },
      {
-      "p": "calendar",
-      "x": 760,
-      "y": 296,
-      "at": 0.54,
-      "in": "drop",
-      "text": "∞",
-      "s": 0.55
-     },
-     {
-      "p": "calendar",
-      "x": 776,
-      "y": 234,
-      "at": 0.6100000000000001,
-      "in": "drop",
-      "text": "∞",
-      "s": 0.55
-     },
-     {
-      "p": "calendar",
-      "x": 760,
-      "y": 172,
-      "at": 0.68,
-      "in": "drop",
-      "text": "∞",
-      "s": 0.55
-     },
-     {
-      "p": "calendar",
-      "x": 776,
-      "y": 110,
-      "at": 0.75,
-      "in": "drop",
-      "text": "∞",
-      "s": 0.55
-     },
-     {
-      "p": "calendar",
-      "x": 760,
-      "y": 48,
-      "at": 0.8200000000000001,
-      "in": "drop",
-      "text": "∞",
-      "s": 0.55
-     },
-     {
-      "p": "calendar",
-      "x": 776,
-      "y": -14,
-      "at": 0.8900000000000001,
-      "in": "drop",
-      "text": "∞",
-      "s": 0.55
+      "do": "shake",
+      "id": "yrs",
+      "at": "years"
      }
     ]
    },
@@ -143,72 +140,174 @@
    "text": "That's a one followed by twenty-five zeros. Far longer than the universe has existed.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "vstat",
-    "kicker": "ONE FOLLOWED BY 25 ZEROS",
-    "num": "10²⁵",
-    "unit": "YEARS",
-    "sub": "vs under 5 minutes on Willow",
-    "hi": "under 5 minutes",
-    "source": "Google, Willow announcement, Dec 2024",
-    "note": "the universe: ~13.8 billion years",
-    "sx": 760,
-    "sy": 560,
-    "nx": 60,
-    "ny": 580
+    "type": "mix",
+    "els": [
+     {
+      "k": "big",
+      "at": "one",
+      "x": 40,
+      "y": 60,
+      "text": "1",
+      "size": 150,
+      "color": "#F87736",
+      "id": "one"
+     },
+     {
+      "k": "big",
+      "at": "twenty",
+      "x": 140,
+      "y": 75,
+      "text": "0000000000000000000000000",
+      "size": 60,
+      "id": "zeros",
+      "in": "left"
+     },
+     {
+      "k": "tag",
+      "at": "zeros",
+      "x": 150,
+      "y": 170,
+      "text": "25 zeros",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "z25"
+     },
+     {
+      "k": "photo",
+      "at": "universe",
+      "x": 40,
+      "y": 280,
+      "name": "deepfield.jpg",
+      "w": 430,
+      "rot": -4,
+      "crop": [
+       0.15,
+       0.15,
+       0.85,
+       0.85
+      ],
+      "id": "udf",
+      "in": "drop"
+     },
+     {
+      "k": "card",
+      "at": "universe",
+      "x": 560,
+      "y": 330,
+      "icon": "ph:planet-fill",
+      "label": "AGE OF THE UNIVERSE",
+      "big": "13.8 *billion* yrs",
+      "id": "age"
+     },
+     {
+      "k": "tag",
+      "at": "longer",
+      "x": 560,
+      "y": 560,
+      "text": "10 septillion yrs ≈ 700 trillion × longer",
+      "bg": "#E0471C",
+      "size": 34,
+      "id": "lg",
+      "in": "slam"
+     }
+    ],
+    "acts": []
    }
   },
   {
    "text": "The chip is Google's Willow, a quantum computer. And it sounds like magic, which is exactly why so much of what you hear about quantum computing is wrong.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "chip",
-      "x": 440,
-      "y": 150,
-      "at": 0.05,
-      "in": "pop",
-      "text": "Q",
-      "s": 1.15,
-      "loop": "boil"
-     },
-     {
-      "p": "banner",
-      "text": "GOOGLE WILLOW",
-      "x": 300,
-      "y": 30,
-      "at": 0.25,
-      "size": 60,
+      "k": "logo",
+      "at": "google's",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:google",
+      "size": 300,
+      "id": "gl",
       "in": "drop"
      },
      {
-      "p": "star",
-      "x": 300,
-      "y": 220,
-      "at": 0.45,
-      "in": "pop",
-      "s": 0.6,
-      "loop": "spin"
+      "k": "prop",
+      "at": "willow",
+      "x": 90,
+      "y": 200,
+      "p": "chip",
+      "text": "Willow",
+      "s": 1.05,
+      "id": "ch"
      },
      {
-      "p": "star",
-      "x": 820,
+      "k": "tag",
+      "at": "quantum",
+      "x": 60,
+      "y": 560,
+      "text": "a quantum computer",
+      "size": 38,
+      "id": "qc"
+     },
+     {
+      "k": "icon",
+      "at": "magic",
+      "x": 640,
+      "y": 60,
+      "ref": "ph:magic-wand-fill",
+      "size": 170,
+      "color": "#7A5CFF",
+      "id": "mw"
+     },
+     {
+      "k": "icon",
+      "at": "magic",
+      "x": 830,
+      "y": 40,
+      "ref": "ph:sparkle-fill",
+      "size": 80,
+      "color": "#F87736",
+      "id": "sp1"
+     },
+     {
+      "k": "icon",
+      "at": "magic",
+      "x": 600,
+      "y": 260,
+      "ref": "ph:sparkle-fill",
+      "size": 60,
+      "color": "#F87736",
+      "id": "sp2"
+     },
+     {
+      "k": "clip",
+      "at": "hear",
+      "x": 560,
       "y": 330,
-      "at": 0.55,
-      "in": "pop",
-      "s": 0.5,
-      "loop": "spin"
+      "by": "WHAT YOU HEAR",
+      "text": "\"Quantum computers will replace your laptop\"",
+      "hi": "replace your laptop",
+      "w": 700,
+      "id": "cl"
      },
      {
-      "p": "strip",
-      "text": "magic?",
+      "k": "stamp",
+      "at": "wrong",
       "x": 760,
       "y": 520,
-      "at": 0.7,
-      "c": "r",
-      "size": 54,
-      "in": "pop"
+      "text": "WRONG",
+      "size": 100,
+      "id": "wr",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "sp1",
+      "at": "magic",
+      "deg": 180,
+      "d": 3
      }
     ]
    }
@@ -217,148 +316,188 @@
    "text": "So in the next few minutes, let's decode what a quantum computer really is, why it has to be colder than outer space, what it can and can't do, and why your bank is already preparing for it.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "qcoin",
-      "x": 60,
-      "y": 150,
-      "at": 0.05,
-      "in": "drop",
-      "s": 0.8,
-      "loop": "spin"
-     },
-     {
-      "p": "thermo",
-      "x": 330,
-      "y": 120,
-      "at": 0.2,
-      "in": "drop",
-      "s": 0.7
-     },
-     {
-      "p": "check",
-      "x": 560,
-      "y": 170,
-      "at": 0.35,
-      "in": "pop",
-      "s": 0.9
-     },
-     {
-      "p": "lock",
-      "x": 800,
-      "y": 120,
-      "at": 0.5,
-      "in": "drop",
-      "s": 0.6
-     },
-     {
-      "p": "strip",
-      "text": "what it is",
+      "k": "big",
+      "at": "decode",
       "x": 40,
-      "y": 420,
-      "at": 0.1,
-      "c": "c",
-      "size": 36,
-      "in": "drop"
+      "y": 20,
+      "text": "Let's *decode*",
+      "size": 80,
+      "id": "dh"
      },
      {
-      "p": "strip",
+      "k": "icon",
+      "at": "really",
+      "x": 40,
+      "y": 170,
+      "ref": "tabler:atom",
+      "size": 150,
+      "color": "#7A5CFF",
+      "paper": true,
+      "id": "i1"
+     },
+     {
+      "k": "tag",
+      "at": "really",
+      "x": 30,
+      "y": 410,
+      "text": "what it really is",
+      "size": 30,
+      "id": "t1"
+     },
+     {
+      "k": "icon",
+      "at": "colder",
+      "x": 360,
+      "y": 170,
+      "ref": "ph:snowflake-bold",
+      "size": 150,
+      "color": "#1C7ED6",
+      "paper": true,
+      "id": "i2"
+     },
+     {
+      "k": "tag",
+      "at": "colder",
+      "x": 330,
+      "y": 410,
       "text": "colder than space",
-      "x": 280,
-      "y": 520,
-      "at": 0.25,
-      "c": "c",
-      "size": 36,
-      "in": "drop"
+      "size": 30,
+      "id": "t2"
      },
      {
-      "p": "strip",
-      "text": "can & can't",
-      "x": 560,
-      "y": 420,
-      "at": 0.4,
-      "c": "c",
-      "size": 36,
-      "in": "drop"
+      "k": "icon",
+      "at": "can",
+      "x": 680,
+      "y": 170,
+      "ref": "ph:check-fat-fill",
+      "size": 80,
+      "color": "#2F9E44",
+      "id": "i3a"
      },
      {
-      "p": "strip",
-      "text": "your bank",
-      "x": 800,
-      "y": 520,
-      "at": 0.55,
-      "c": "o",
-      "size": 36,
-      "in": "drop"
+      "k": "icon",
+      "at": "can't",
+      "x": 780,
+      "y": 250,
+      "ref": "ph:x-circle-fill",
+      "size": 90,
+      "color": "#E0471C",
+      "id": "i3b"
+     },
+     {
+      "k": "tag",
+      "at": "can't",
+      "x": 640,
+      "y": 410,
+      "text": "can & can't do",
+      "size": 30,
+      "id": "t3"
+     },
+     {
+      "k": "icon",
+      "at": "bank",
+      "x": 1000,
+      "y": 170,
+      "ref": "ph:bank-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "i4"
+     },
+     {
+      "k": "tag",
+      "at": "bank",
+      "x": 990,
+      "y": 410,
+      "text": "banks prepare",
+      "size": 30,
+      "bg": "#E0471C",
+      "id": "t4"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "Start with the computer you're using right now. Everything it does comes down to bits, tiny switches that are either zero or one.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "laptop",
-      "x": 240,
+      "k": "icon",
+      "at": "computer",
+      "x": 40,
+      "y": 60,
+      "ref": "ph:laptop-fill",
+      "size": 260,
+      "color": "#2A2018",
+      "id": "lap"
+     },
+     {
+      "k": "icon",
+      "at": "computer",
+      "x": 330,
       "y": 150,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.8
+      "ref": "ph:device-mobile-fill",
+      "size": 130,
+      "color": "#2A2018",
+      "id": "mob"
      },
      {
-      "p": "strip",
-      "text": "0",
-      "x": 120,
-      "y": 160,
-      "at": 0.3,
-      "c": "c",
-      "size": 70,
-      "in": "pop"
-     },
-     {
-      "p": "strip",
-      "text": "1",
-      "x": 860,
-      "y": 180,
-      "at": 0.4,
-      "c": "o",
-      "size": 70,
-      "in": "pop"
-     },
-     {
-      "p": "strip",
-      "text": "0",
-      "x": 900,
-      "y": 420,
-      "at": 0.5,
-      "c": "c",
-      "size": 70,
-      "in": "pop"
-     },
-     {
-      "p": "strip",
-      "text": "1",
-      "x": 90,
-      "y": 430,
-      "at": 0.6,
-      "c": "o",
-      "size": 70,
-      "in": "pop"
-     },
-     {
-      "p": "banner",
-      "text": "BITS",
-      "x": 470,
+      "k": "big",
+      "at": "bits",
+      "x": 560,
       "y": 40,
-      "at": 0.7,
-      "size": 60,
-      "in": "drop"
+      "text": "BITS",
+      "size": 130,
+      "color": "#F87736",
+      "id": "bits",
+      "in": "slam"
+     },
+     {
+      "k": "prop",
+      "at": "switches",
+      "x": 560,
+      "y": 260,
+      "p": "switch",
+      "s": 0.95,
+      "on": false,
+      "id": "sw0"
+     },
+     {
+      "k": "prop",
+      "at": "switches",
+      "x": 860,
+      "y": 260,
+      "p": "switch",
+      "s": 0.95,
+      "on": true,
+      "id": "sw1"
+     },
+     {
+      "k": "big",
+      "at": "zero",
+      "x": 620,
+      "y": 560,
+      "text": "0 = off",
+      "size": 64,
+      "id": "z"
+     },
+     {
+      "k": "big",
+      "at": "one",
+      "x": 910,
+      "y": 560,
+      "text": "*1* = on",
+      "size": 64,
+      "id": "o"
      }
-    ]
+    ],
+    "acts": []
    },
    "chapter": "Bits vs qubits"
   },
@@ -366,77 +505,90 @@
    "text": "Every photo, every video, every message is just billions of those switches flipping on and off, extremely fast.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "switch",
+      "k": "icon",
+      "at": "photo",
       "x": 40,
-      "y": 140,
-      "at": 0.05,
-      "in": "drop",
-      "s": 0.85,
-      "on": false,
-      "loop": "boil"
+      "y": 40,
+      "ref": "ph:image-fill",
+      "size": 150,
+      "color": "#2F9E44",
+      "paper": true,
+      "id": "ph"
      },
      {
-      "p": "switch",
-      "x": 245,
-      "y": 140,
-      "at": 0.13,
-      "in": "drop",
-      "s": 0.85,
-      "on": true,
-      "loop": "boil"
+      "k": "icon",
+      "at": "video",
+      "x": 300,
+      "y": 40,
+      "ref": "ph:video-camera-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "vd"
      },
      {
-      "p": "switch",
-      "x": 450,
-      "y": 140,
-      "at": 0.21000000000000002,
-      "in": "drop",
-      "s": 0.85,
-      "on": false,
-      "loop": "boil"
+      "k": "logo",
+      "at": "message",
+      "x": 560,
+      "y": 40,
+      "ref": "logos:whatsapp-icon",
+      "size": 150,
+      "paper": true,
+      "id": "wa"
      },
      {
-      "p": "switch",
-      "x": 655,
-      "y": 140,
-      "at": 0.29,
-      "in": "drop",
-      "s": 0.85,
-      "on": true,
-      "loop": "boil"
+      "k": "card",
+      "at": "billions",
+      "x": 40,
+      "y": 330,
+      "label": "SWITCHES",
+      "big": "0",
+      "w": 700,
+      "id": "cnt",
+      "in": "fly"
      },
      {
-      "p": "switch",
-      "x": 860,
-      "y": 140,
-      "at": 0.37,
-      "in": "drop",
-      "s": 0.85,
-      "on": false,
-      "loop": "boil"
+      "k": "big",
+      "at": "flipping",
+      "x": 620,
+      "y": 340,
+      "text": "0110100101101001",
+      "size": 72,
+      "color": "#2A2018",
+      "id": "bin",
+      "in": "fade"
      },
      {
-      "p": "switch",
-      "x": 1065,
-      "y": 140,
-      "at": 0.45,
-      "in": "drop",
-      "s": 0.85,
-      "on": true,
-      "loop": "boil"
+      "k": "tag",
+      "at": "fast",
+      "x": 640,
+      "y": 470,
+      "text": "billions of flips every second",
+      "bg": "#F87736",
+      "size": 34,
+      "id": "fs"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "cnt",
+      "at": "billions",
+      "values": [
+       "1,000",
+       "1,000,000",
+       "1,000,000,000",
+       "BILLIONS"
+      ],
+      "dt": 0.25
      },
      {
-      "p": "strip",
-      "text": "billions of switches",
-      "x": 360,
-      "y": 500,
-      "at": 0.7,
-      "c": "o",
-      "size": 48,
-      "in": "drop"
+      "do": "shake",
+      "id": "bin",
+      "at": "fast"
      }
     ]
    }
@@ -445,26 +597,98 @@
    "text": "A quantum computer uses qubits instead. And a qubit can be in a mix of zero and one at the same time, a state called superposition.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "prop",
+      "at": "qubits",
+      "x": 60,
+      "y": 60,
       "p": "qcoin",
-      "x": 480,
-      "y": 110,
-      "at": 0.05,
-      "in": "pop",
       "text": "Q",
-      "s": 1.4,
-      "loop": "spin"
+      "s": 1.3,
+      "id": "q"
      },
      {
-      "p": "banner",
-      "text": "SUPERPOSITION",
-      "x": 330,
-      "y": 470,
-      "at": 0.5,
-      "size": 64,
-      "in": "drop"
+      "k": "tag",
+      "at": "qubits",
+      "x": 70,
+      "y": 420,
+      "text": "QUBIT",
+      "size": 44,
+      "bg": "#7A5CFF",
+      "id": "qt"
+     },
+     {
+      "k": "big",
+      "at": "zero",
+      "x": 560,
+      "y": 60,
+      "text": "0",
+      "size": 180,
+      "color": "#2A2018",
+      "id": "z0",
+      "in": "left"
+     },
+     {
+      "k": "big",
+      "at": "mix",
+      "x": 700,
+      "y": 90,
+      "text": "+",
+      "size": 140,
+      "color": "#8C6B5A",
+      "id": "pl"
+     },
+     {
+      "k": "big",
+      "at": "one",
+      "x": 860,
+      "y": 60,
+      "text": "*1*",
+      "size": 180,
+      "id": "o1",
+      "in": "slide"
+     },
+     {
+      "k": "tag",
+      "at": "same",
+      "x": 600,
+      "y": 300,
+      "text": "both at the same time",
+      "size": 38,
+      "id": "bt"
+     },
+     {
+      "k": "big",
+      "at": "superposition",
+      "x": 470,
+      "y": 430,
+      "text": "SUPER*POSITION*",
+      "size": 110,
+      "id": "sp",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "q",
+      "at": "qubits",
+      "deg": 720,
+      "d": 6
+     },
+     {
+      "do": "bob",
+      "id": "z0",
+      "at": "mix",
+      "n": 7
+     },
+     {
+      "do": "bob",
+      "id": "o1",
+      "at": "mix",
+      "n": 7
      }
     ]
    }
@@ -473,46 +697,81 @@
    "text": "A simple way to picture it: a normal bit is a coin lying flat, heads or tails. A qubit is a coin still spinning in the air. Only when you look does it land on one side.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "qcoin",
-      "x": 140,
-      "y": 160,
-      "at": 0.05,
-      "in": "drop",
-      "text": "1",
-      "s": 1.2
-     },
-     {
-      "p": "strip",
-      "text": "bit: heads OR tails",
+      "k": "icon",
+      "at": "flat",
       "x": 60,
-      "y": 470,
-      "at": 0.2,
-      "c": "c",
-      "size": 42,
-      "in": "drop"
+      "y": 80,
+      "ref": "ph:coin-vertical-fill",
+      "size": 190,
+      "color": "#C9A57A",
+      "paper": true,
+      "id": "flat"
      },
      {
+      "k": "tag",
+      "at": "heads",
+      "x": 40,
+      "y": 380,
+      "text": "BIT: heads OR tails",
+      "size": 36,
+      "id": "bt"
+     },
+     {
+      "k": "prop",
+      "at": "spinning",
+      "x": 620,
+      "y": 40,
       "p": "qcoin",
-      "x": 760,
-      "y": 120,
-      "at": 0.45,
-      "in": "pop",
       "text": "?",
       "s": 1.2,
-      "loop": "spin"
+      "id": "spin"
      },
      {
-      "p": "strip",
-      "text": "qubit: still spinning",
-      "x": 680,
-      "y": 470,
-      "at": 0.55,
-      "c": "o",
-      "size": 42,
-      "in": "drop"
+      "k": "tag",
+      "at": "spinning",
+      "x": 600,
+      "y": 380,
+      "text": "QUBIT: still spinning",
+      "size": 36,
+      "bg": "#7A5CFF",
+      "id": "qt"
+     },
+     {
+      "k": "icon",
+      "at": "look",
+      "x": 1000,
+      "y": 120,
+      "ref": "ph:eye-fill",
+      "size": 140,
+      "color": "#2A2018",
+      "id": "eye"
+     },
+     {
+      "k": "tag",
+      "at": "land",
+      "x": 920,
+      "y": 520,
+      "text": "look → it lands on 1",
+      "bg": "#F87736",
+      "size": 36,
+      "id": "ld"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "spin",
+      "at": "spinning",
+      "deg": 1080,
+      "d": 4.2
+     },
+     {
+      "do": "ring",
+      "id": "eye",
+      "at": "look"
      }
     ]
    }
@@ -521,45 +780,64 @@
    "text": "Qubits can also be linked together, so that measuring one instantly tells you something about another. That's called entanglement.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "prop",
+      "at": "qubits",
+      "x": 60,
+      "y": 80,
       "p": "qcoin",
-      "x": 160,
-      "y": 160,
-      "at": 0.05,
-      "in": "pop",
       "text": "Q",
-      "s": 1.1,
-      "loop": "spin"
+      "s": 1.0,
+      "id": "a"
      },
      {
-      "p": "arrow",
-      "x": 450,
-      "y": 260,
-      "at": 0.3,
-      "in": "fly",
-      "len": 420,
-      "c": "o"
-     },
-     {
+      "k": "prop",
+      "at": "linked",
+      "x": 880,
+      "y": 80,
       "p": "qcoin",
-      "x": 900,
-      "y": 160,
-      "at": 0.15,
-      "in": "pop",
       "text": "Q",
-      "s": 1.1,
-      "loop": "spin"
+      "s": 1.0,
+      "id": "b"
      },
      {
-      "p": "banner",
-      "text": "ENTANGLEMENT",
-      "x": 350,
-      "y": 480,
-      "at": 0.55,
-      "size": 60,
-      "in": "drop"
+      "k": "icon",
+      "at": "linked",
+      "x": 520,
+      "y": 130,
+      "ref": "ph:link-bold",
+      "size": 220,
+      "color": "#F87736",
+      "id": "ln"
+     },
+     {
+      "k": "icon",
+      "at": "instantly",
+      "x": 560,
+      "y": 370,
+      "ref": "ph:lightning-fill",
+      "size": 120,
+      "color": "#F5B400",
+      "id": "lt"
+     },
+     {
+      "k": "big",
+      "at": "entanglement",
+      "x": 300,
+      "y": 520,
+      "text": "ENTANGLE*MENT*",
+      "size": 110,
+      "id": "en",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "ln",
+      "at": "instantly"
      }
     ]
    }
@@ -568,69 +846,153 @@
    "text": "Here's why that matters. Two qubits can hold a blend of four possibilities. Ten can hold over a thousand. Three hundred qubits can hold more possibilities than there are atoms in the observable universe.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "vdoc",
-    "label": "POSSIBLE STATES = 2 TO THE POWER OF n",
-    "lines": [
-     "2 qubits   →  4 states",
-     "10 qubits  →  1,024 states",
-     "300 qubits →  more states than",
-     "              atoms in the universe"
+    "type": "mix",
+    "els": [
+     {
+      "k": "bars",
+      "at": "two",
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "id": "bars",
+      "rows": [
+       [
+        "2 qubits → 4",
+        0.012,
+        "#7A5CFF"
+       ],
+       [
+        "10 qubits → 1,024",
+        0.08,
+        "#F87736"
+       ],
+       [
+        "300 qubits → more than atoms in the universe",
+        1.0,
+        "#E0471C"
+       ]
+      ],
+      "gap": 1.6,
+      "in": "fade"
+     },
+     {
+      "k": "icon",
+      "at": "atoms",
+      "x": 880,
+      "y": 70,
+      "ref": "tabler:atom",
+      "size": 230,
+      "color": "#7A5CFF",
+      "paper": true,
+      "id": "at"
+     },
+     {
+      "k": "clip",
+      "at": "universe",
+      "x": 820,
+      "y": 400,
+      "by": "THE MATHS (2 TO THE POWER OF n)",
+      "text": "2³⁰⁰ ≈ 10⁹⁰ > 10⁸⁰ atoms in the observable universe",
+      "hi": "10⁸⁰ atoms",
+      "w": 480,
+      "id": "cl"
+     }
     ],
-    "hi": [
-     2,
-     "more states than"
-    ],
-    "circle": [
-     1,
-     "1,024"
-    ],
-    "note": "exponential!",
-    "nx": 1000,
-    "ny": 470
+    "acts": []
    }
   },
   {
    "text": "Now, the most common explanation you'll hear is that a quantum computer tries every answer at the same time. That's the myth.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "clip",
+      "at": "common",
+      "x": 30,
+      "y": 40,
+      "by": "THE MOST COMMON EXPLANATION",
+      "text": "\"A quantum computer tries every answer at the same time\"",
+      "hi": "every answer at the same time",
+      "w": 760,
+      "id": "cl"
+     },
+     {
+      "k": "prop",
+      "at": "tries",
+      "x": 860,
+      "y": 40,
       "p": "maze",
-      "x": 160,
-      "y": 80,
-      "at": 0.02,
-      "in": "drop",
-      "s": 1.25
+      "s": 0.95,
+      "id": "mz"
      },
      {
+      "k": "prop",
+      "at": "every",
+      "x": 890,
+      "y": 90,
       "p": "bit",
-      "x": 230,
-      "y": 150,
-      "at": 0.2,
-      "in": "pop",
-      "s": 0.35,
-      "loop": "boil"
+      "s": 0.22,
+      "id": "g0"
      },
      {
-      "p": "cross",
-      "x": 760,
-      "y": 120,
-      "at": 0.75,
-      "in": "pop",
-      "s": 1.0
+      "k": "prop",
+      "at": "every",
+      "x": 985,
+      "y": 90,
+      "p": "bit",
+      "s": 0.22,
+      "id": "g1"
      },
      {
-      "p": "strip",
-      "text": "\"tries every answer at once\"",
-      "x": 560,
-      "y": 470,
-      "at": 0.3,
-      "c": "c",
-      "size": 40,
-      "in": "drop"
+      "k": "prop",
+      "at": "every",
+      "x": 1080,
+      "y": 90,
+      "p": "bit",
+      "s": 0.22,
+      "id": "g2"
+     },
+     {
+      "k": "prop",
+      "at": "every",
+      "x": 890,
+      "y": 200,
+      "p": "bit",
+      "s": 0.22,
+      "id": "g3"
+     },
+     {
+      "k": "prop",
+      "at": "every",
+      "x": 985,
+      "y": 200,
+      "p": "bit",
+      "s": 0.22,
+      "id": "g4"
+     },
+     {
+      "k": "prop",
+      "at": "every",
+      "x": 1080,
+      "y": 200,
+      "p": "bit",
+      "s": 0.22,
+      "id": "g5"
+     },
+     {
+      "k": "stamp",
+      "at": "myth",
+      "x": 300,
+      "y": 420,
+      "text": "MYTH",
+      "size": 150,
+      "id": "st",
+      "in": "slam"
      }
-    ]
+    ],
+    "acts": []
    },
    "chapter": "The biggest myth"
   },
@@ -638,67 +1000,111 @@
    "text": "If it simply tried everything at once, you'd still only get one random answer when you look. That's useless.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "qcoin",
+      "k": "arrow",
+      "at": "everything",
       "x": 40,
-      "y": 120,
-      "at": 0.05,
-      "in": "drop",
-      "text": "?",
-      "s": 0.8,
-      "loop": "spin"
+      "y": 60,
+      "w": 360,
+      "rot": -16,
+      "id": "a0"
      },
      {
-      "p": "qcoin",
-      "x": 250,
-      "y": 120,
-      "at": 0.12000000000000001,
-      "in": "drop",
-      "text": "?",
-      "s": 0.8,
-      "loop": "spin"
+      "k": "arrow",
+      "at": "everything",
+      "x": 40,
+      "y": 130,
+      "w": 360,
+      "rot": -8,
+      "id": "a1"
      },
      {
-      "p": "qcoin",
-      "x": 460,
-      "y": 120,
-      "at": 0.19,
-      "in": "drop",
-      "text": "?",
-      "s": 0.8,
-      "loop": "spin"
+      "k": "arrow",
+      "at": "everything",
+      "x": 40,
+      "y": 200,
+      "w": 360,
+      "rot": 0,
+      "id": "a2"
      },
      {
-      "p": "qcoin",
-      "x": 670,
-      "y": 120,
-      "at": 0.26,
-      "in": "drop",
-      "text": "?",
-      "s": 0.8,
-      "loop": "spin"
+      "k": "arrow",
+      "at": "everything",
+      "x": 40,
+      "y": 270,
+      "w": 360,
+      "rot": 8,
+      "id": "a3"
      },
      {
-      "p": "qcoin",
+      "k": "arrow",
+      "at": "everything",
+      "x": 40,
+      "y": 340,
+      "w": 360,
+      "rot": 16,
+      "id": "a4"
+     },
+     {
+      "k": "icon",
+      "at": "one",
+      "x": 520,
+      "y": 60,
+      "ref": "ph:dice-five-fill",
+      "size": 200,
+      "color": "#7A5CFF",
+      "paper": true,
+      "id": "dice"
+     },
+     {
+      "k": "tag",
+      "at": "random",
+      "x": 500,
+      "y": 360,
+      "text": "one random answer",
+      "size": 36,
+      "id": "rt"
+     },
+     {
+      "k": "icon",
+      "at": "look",
+      "x": 860,
+      "y": 80,
+      "ref": "ph:eye-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "id": "eye"
+     },
+     {
+      "k": "icon",
+      "at": "useless",
       "x": 880,
-      "y": 120,
-      "at": 0.33,
-      "in": "drop",
-      "text": "?",
-      "s": 0.8,
-      "loop": "spin"
+      "y": 320,
+      "ref": "ph:thumbs-down-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "id": "td"
      },
      {
-      "p": "strip",
-      "text": "look → ONE random answer",
-      "x": 260,
-      "y": 450,
-      "at": 0.55,
-      "c": "r",
-      "size": 50,
-      "in": "drop"
+      "k": "big",
+      "at": "useless",
+      "x": 760,
+      "y": 540,
+      "text": "*USELESS*",
+      "size": 110,
+      "id": "us",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "dice",
+      "at": "random",
+      "deg": 360,
+      "d": 1.2
      }
     ]
    }
@@ -707,102 +1113,191 @@
    "text": "The real trick is called interference. Like waves in water, the possibilities can add up or cancel out.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "waves",
-      "x": 80,
+      "k": "big",
+      "at": "interference",
+      "x": 40,
+      "y": 20,
+      "text": "INTER*FERENCE*",
+      "size": 110,
+      "id": "h",
+      "in": "slam"
+     },
+     {
+      "k": "prop",
+      "at": "waves",
+      "x": 40,
       "y": 200,
-      "at": 0.05,
-      "in": "slide",
-      "n": 7,
-      "c": "o",
-      "loop": "bob"
+      "p": "waves",
+      "s": 1.1,
+      "id": "wv"
      },
      {
-      "p": "banner",
-      "text": "INTERFERENCE",
-      "x": 330,
-      "y": 40,
-      "at": 0.4,
-      "size": 66,
-      "in": "drop"
+      "k": "icon",
+      "at": "water",
+      "x": 760,
+      "y": 180,
+      "ref": "ph:waves-bold",
+      "size": 160,
+      "color": "#1C7ED6",
+      "paper": true,
+      "id": "wi"
      },
      {
-      "p": "strip",
-      "text": "waves add up or cancel",
-      "x": 340,
-      "y": 470,
-      "at": 0.65,
-      "c": "c",
-      "size": 44,
-      "in": "drop"
+      "k": "card",
+      "at": "add",
+      "x": 40,
+      "y": 520,
+      "icon": "ph:plus-circle-fill",
+      "label": "WAVES MEET",
+      "big": "add *up*",
+      "w": 460,
+      "id": "up",
+      "color": "#2F9E44"
+     },
+     {
+      "k": "card",
+      "at": "cancel",
+      "x": 620,
+      "y": 520,
+      "icon": "ph:minus-circle-fill",
+      "label": "WAVES MEET",
+      "big": "cancel out",
+      "w": 520,
+      "id": "dn",
+      "color": "#E0471C",
+      "in": "slide"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "A quantum algorithm is a clever recipe that makes the wrong answers cancel each other out, and the right answer get stronger, so that when you finally measure, you're likely to see the right one.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "waves",
+      "k": "icon",
+      "at": "recipe",
       "x": 40,
-      "y": 120,
-      "at": 0.05,
-      "in": "slide",
-      "n": 4,
-      "c": "t",
-      "id": "bad"
+      "y": 40,
+      "ref": "ph:cooking-pot-fill",
+      "size": 180,
+      "color": "#F87736",
+      "paper": true,
+      "id": "rc"
      },
      {
-      "p": "waves",
-      "x": 560,
+      "k": "tag",
+      "at": "recipe",
+      "x": 30,
       "y": 300,
-      "at": 0.3,
-      "in": "slide",
-      "n": 5,
-      "c": "o",
-      "s": 1.2,
-      "loop": "bob"
+      "text": "quantum algorithm = a recipe",
+      "size": 32,
+      "id": "rt"
      },
      {
-      "p": "strip",
-      "text": "wrong answers cancel",
-      "x": 40,
-      "y": 330,
-      "at": 0.25,
-      "c": "l",
+      "k": "tag",
+      "at": "wrong",
+      "x": 560,
+      "y": 80,
+      "text": "answer 1",
+      "bg": "#8C6B5A",
+      "size": 30,
+      "id": "w0"
+     },
+     {
+      "k": "tag",
+      "at": "wrong",
+      "x": 730,
+      "y": 80,
+      "text": "answer 2",
+      "bg": "#8C6B5A",
+      "size": 30,
+      "id": "w1"
+     },
+     {
+      "k": "tag",
+      "at": "wrong",
+      "x": 900,
+      "y": 80,
+      "text": "answer 3",
+      "bg": "#8C6B5A",
+      "size": 30,
+      "id": "w2"
+     },
+     {
+      "k": "tag",
+      "at": "wrong",
+      "x": 1070,
+      "y": 80,
+      "text": "answer 4",
+      "bg": "#8C6B5A",
+      "size": 30,
+      "id": "w3"
+     },
+     {
+      "k": "tag",
+      "at": "right",
+      "x": 760,
+      "y": 300,
+      "text": "✓ right answer",
+      "bg": "#2F9E44",
       "size": 40,
-      "in": "drop"
+      "id": "ok",
+      "in": "slam"
      },
      {
-      "p": "strip",
-      "text": "right answer grows",
-      "x": 620,
-      "y": 120,
-      "at": 0.5,
-      "c": "g",
-      "size": 44,
-      "in": "drop"
+      "k": "icon",
+      "at": "measure",
+      "x": 560,
+      "y": 440,
+      "ref": "ph:eye-fill",
+      "size": 120,
+      "color": "#2A2018",
+      "id": "ey"
      },
      {
-      "p": "check",
-      "x": 1020,
-      "y": 460,
-      "at": 0.75,
-      "in": "pop",
-      "s": 0.8
+      "k": "big",
+      "at": "likely",
+      "x": 700,
+      "y": 470,
+      "text": "likely: the *right* one",
+      "size": 64,
+      "id": "lk"
      }
     ],
-    "moves": [
+    "acts": [
      {
-      "id": "bad",
-      "at": 0.45,
-      "fade": true,
-      "y": 40
+      "do": "out",
+      "id": "w0",
+      "at": "cancel"
+     },
+     {
+      "do": "out",
+      "id": "w1",
+      "at": "cancel"
+     },
+     {
+      "do": "out",
+      "id": "w2",
+      "at": "cancel"
+     },
+     {
+      "do": "out",
+      "id": "w3",
+      "at": "cancel"
+     },
+     {
+      "do": "move",
+      "id": "ok",
+      "at": "stronger",
+      "scale": 1.5,
+      "d": 0.5
      }
     ]
    }
@@ -811,73 +1306,112 @@
    "text": "That's also why quantum computers aren't faster at everything. They only win on problems where someone has found a recipe like that.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "strip",
-      "text": "faster at everything",
-      "x": 80,
+      "k": "card",
+      "at": "faster",
+      "x": 30,
+      "y": 40,
+      "icon": "ph:rocket-launch-fill",
+      "label": "QUANTUM COMPUTERS",
+      "big": "faster at *everything*?",
+      "w": 760,
+      "id": "q"
+     },
+     {
+      "k": "stamp",
+      "at": "aren't",
+      "x": 940,
       "y": 150,
-      "at": 0.05,
-      "c": "c",
-      "size": 54,
-      "in": "drop"
+      "text": "NO",
+      "size": 130,
+      "id": "no",
+      "in": "slam"
      },
      {
-      "p": "cross",
-      "x": 760,
-      "y": 110,
-      "at": 0.25,
-      "in": "pop",
-      "s": 0.9
+      "k": "icon",
+      "at": "win",
+      "x": 60,
+      "y": 330,
+      "ref": "ph:atom-bold",
+      "size": 150,
+      "color": "#7A5CFF",
+      "paper": true,
+      "id": "a1"
      },
      {
-      "p": "strip",
-      "text": "only with the right recipe",
-      "x": 80,
-      "y": 400,
-      "at": 0.5,
-      "c": "o",
-      "size": 54,
-      "in": "drop"
+      "k": "icon",
+      "at": "win",
+      "x": 320,
+      "y": 330,
+      "ref": "ph:lock-key-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "a2"
      },
      {
-      "p": "check",
-      "x": 860,
-      "y": 360,
-      "at": 0.7,
-      "in": "pop",
-      "s": 0.9
+      "k": "tag",
+      "at": "problems",
+      "x": 60,
+      "y": 590,
+      "text": "they win only where a recipe exists",
+      "bg": "#2F9E44",
+      "size": 36,
+      "id": "w"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "So why does a quantum computer look like a giant golden chandelier?",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "fridge",
-      "x": 420,
+      "k": "prop",
+      "at": "computer",
+      "x": 60,
       "y": 20,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.95,
-      "loop": "boil"
+      "p": "fridge",
+      "s": 1.0,
+      "id": "fr",
+      "in": "drop"
      },
      {
-      "p": "strip",
-      "text": "?",
-      "x": 900,
-      "y": 160,
-      "at": 0.5,
-      "c": "o",
+      "k": "big",
+      "at": "chandelier",
+      "x": 560,
+      "y": 120,
+      "text": "a giant *golden*",
       "size": 90,
-      "in": "pop"
+      "id": "h1"
+     },
+     {
+      "k": "big",
+      "at": "chandelier",
+      "x": 560,
+      "y": 230,
+      "text": "chandelier?",
+      "size": 120,
+      "id": "h2",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "why",
+      "x": 1100,
+      "y": 400,
+      "ref": "ph:question-fill",
+      "size": 180,
+      "color": "#F87736",
+      "id": "q"
      }
-    ]
+    ],
+    "acts": []
    },
    "chapter": "Colder than space"
   },
@@ -885,55 +1419,82 @@
    "text": "Because qubits are incredibly fragile. The tiniest bit of heat, vibration or stray signal knocks them out of their delicate state. Physicists call this noise.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "fridge",
-      "x": 60,
+      "k": "prop",
+      "at": "fragile",
+      "x": 40,
+      "y": 60,
+      "p": "qcoin",
+      "text": "Q",
+      "s": 1.1,
+      "id": "qb"
+     },
+     {
+      "k": "tag",
+      "at": "fragile",
+      "x": 40,
+      "y": 420,
+      "text": "incredibly fragile",
+      "bg": "#E0471C",
+      "size": 36,
+      "id": "fg"
+     },
+     {
+      "k": "icon",
+      "at": "heat",
+      "x": 520,
       "y": 40,
-      "at": 0.02,
-      "in": "fade",
-      "s": 0.85,
-      "loop": "shake"
+      "ref": "ph:fire-fill",
+      "size": 140,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "h"
      },
      {
-      "p": "strip",
-      "text": "heat",
-      "x": 560,
-      "y": 80,
-      "at": 0.25,
-      "c": "r",
-      "size": 52,
-      "in": "drop"
-     },
-     {
-      "p": "strip",
-      "text": "vibration",
+      "k": "icon",
+      "at": "vibration",
       "x": 760,
-      "y": 230,
-      "at": 0.4,
-      "c": "r",
-      "size": 52,
-      "in": "drop"
+      "y": 40,
+      "ref": "ph:vibrate-bold",
+      "size": 140,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "v"
      },
      {
-      "p": "strip",
-      "text": "stray signals",
+      "k": "icon",
+      "at": "signal",
+      "x": 1000,
+      "y": 40,
+      "ref": "ph:wifi-high-bold",
+      "size": 140,
+      "color": "#1C7ED6",
+      "paper": true,
+      "id": "s"
+     },
+     {
+      "k": "big",
+      "at": "noise",
       "x": 600,
-      "y": 390,
-      "at": 0.55,
-      "c": "r",
-      "size": 52,
-      "in": "drop"
+      "y": 400,
+      "text": "= *NOISE*",
+      "size": 150,
+      "id": "n",
+      "in": "slam"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "qb",
+      "at": "knocks"
      },
      {
-      "p": "banner",
-      "text": "NOISE",
-      "x": 820,
-      "y": 520,
-      "at": 0.75,
-      "size": 70,
-      "in": "drop"
+      "do": "shake",
+      "id": "qb",
+      "at": "delicate"
      }
     ]
    }
@@ -942,53 +1503,62 @@
    "text": "So most quantum chips, including Google's, sit inside special refrigerators that cool them to around ten thousandths of a degree above absolute zero.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "logo",
+      "at": "google's",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:google",
+      "size": 260,
+      "id": "gl"
+     },
+     {
+      "k": "prop",
+      "at": "refrigerators",
+      "x": 60,
+      "y": 180,
       "p": "thermo",
-      "x": 160,
-      "y": 60,
-      "at": 0.02,
-      "in": "drop",
-      "s": 1.4
+      "s": 1.0,
+      "id": "th"
      },
      {
-      "p": "strip",
-      "text": "4 K",
-      "x": 460,
-      "y": 80,
-      "at": 0.2,
-      "c": "c",
-      "size": 56,
-      "in": "drop"
+      "k": "card",
+      "at": "cool",
+      "x": 420,
+      "y": 220,
+      "icon": "ph:snowflake-bold",
+      "label": "INSIDE THE FRIDGE",
+      "big": "300 K",
+      "w": 560,
+      "color": "#1C7ED6",
+      "id": "k"
      },
      {
-      "p": "strip",
-      "text": "0.1 K",
-      "x": 460,
-      "y": 250,
-      "at": 0.4,
-      "c": "c",
-      "size": 56,
-      "in": "drop"
-     },
+      "k": "tag",
+      "at": "absolute",
+      "x": 440,
+      "y": 470,
+      "text": "just above absolute zero (−273.15 °C)",
+      "size": 32,
+      "id": "az"
+     }
+    ],
+    "acts": [
      {
-      "p": "strip",
-      "text": "0.01 K",
-      "x": 460,
-      "y": 420,
-      "at": 0.6,
-      "c": "o",
-      "size": 60,
-      "in": "drop"
-     },
-     {
-      "p": "fridge",
-      "x": 860,
-      "y": 60,
-      "at": 0.1,
-      "in": "fade",
-      "s": 0.75
+      "do": "count",
+      "id": "k",
+      "at": "cool",
+      "values": [
+       "300 K",
+       "77 K",
+       "4 K",
+       "1 K",
+       "0.1 K",
+       "0.01 K"
+      ],
+      "dt": 0.18
      }
     ]
    }
@@ -1015,101 +1585,120 @@
    "text": "Even when they're that cold, qubits make mistakes. A lot of them. That's been the biggest wall in quantum computing for decades.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "prop",
+      "at": "qubits",
+      "x": 40,
+      "y": 60,
       "p": "qcoin",
-      "x": 30,
-      "y": 140,
-      "at": 0.02,
-      "in": "drop",
       "text": "Q",
-      "s": 0.8,
-      "loop": "spin"
+      "s": 0.6,
+      "id": "c0"
      },
      {
+      "k": "prop",
+      "at": "qubits",
+      "x": 250,
+      "y": 60,
       "p": "qcoin",
-      "x": 235,
-      "y": 140,
-      "at": 0.07,
-      "in": "drop",
       "text": "Q",
-      "s": 0.8,
-      "loop": "spin"
+      "s": 0.6,
+      "id": "c1"
      },
      {
+      "k": "prop",
+      "at": "qubits",
+      "x": 460,
+      "y": 60,
       "p": "qcoin",
-      "x": 440,
-      "y": 140,
-      "at": 0.12000000000000001,
-      "in": "drop",
       "text": "Q",
-      "s": 0.8,
-      "loop": "spin"
+      "s": 0.6,
+      "id": "c2"
      },
      {
+      "k": "prop",
+      "at": "qubits",
+      "x": 670,
+      "y": 60,
       "p": "qcoin",
-      "x": 645,
-      "y": 140,
-      "at": 0.17,
-      "in": "drop",
       "text": "Q",
-      "s": 0.8,
-      "loop": "spin"
+      "s": 0.6,
+      "id": "c3"
      },
      {
+      "k": "prop",
+      "at": "qubits",
+      "x": 880,
+      "y": 60,
       "p": "qcoin",
-      "x": 850,
-      "y": 140,
-      "at": 0.22,
-      "in": "drop",
       "text": "Q",
-      "s": 0.8,
-      "loop": "spin"
+      "s": 0.6,
+      "id": "c4"
      },
      {
-      "p": "qcoin",
-      "x": 1055,
-      "y": 140,
-      "at": 0.27,
-      "in": "drop",
-      "text": "Q",
-      "s": 0.8,
-      "loop": "spin"
+      "k": "icon",
+      "at": "mistakes",
+      "x": 120,
+      "y": 40,
+      "ref": "ph:x-circle-fill",
+      "size": 90,
+      "color": "#E0471C",
+      "id": "x0"
      },
      {
-      "p": "cross",
-      "x": 90,
-      "y": 110,
-      "at": 0.45,
-      "in": "pop",
-      "s": 0.55
+      "k": "icon",
+      "at": "mistakes",
+      "x": 540,
+      "y": 40,
+      "ref": "ph:x-circle-fill",
+      "size": 90,
+      "color": "#E0471C",
+      "id": "x1"
      },
      {
-      "p": "cross",
-      "x": 500,
-      "y": 110,
-      "at": 0.55,
-      "in": "pop",
-      "s": 0.55
+      "k": "icon",
+      "at": "mistakes",
+      "x": 960,
+      "y": 40,
+      "ref": "ph:x-circle-fill",
+      "size": 90,
+      "color": "#E0471C",
+      "id": "x2"
      },
      {
-      "p": "cross",
-      "x": 910,
-      "y": 110,
-      "at": 0.65,
-      "in": "pop",
-      "s": 0.55
+      "k": "icon",
+      "at": "wall",
+      "x": 60,
+      "y": 360,
+      "ref": "ph:wall-fill",
+      "size": 200,
+      "color": "#8C6B5A",
+      "paper": true,
+      "id": "w"
      },
      {
-      "p": "clock",
-      "x": 1000,
-      "y": 420,
-      "at": 0.2,
-      "in": "pop",
-      "s": 0.6
+      "k": "big",
+      "at": "wall",
+      "x": 360,
+      "y": 400,
+      "text": "the *biggest wall*",
+      "size": 96,
+      "id": "bw"
+     },
+     {
+      "k": "tag",
+      "at": "decades",
+      "x": 380,
+      "y": 540,
+      "text": "for decades",
+      "bg": "#2A2018",
+      "size": 40,
+      "id": "dc"
      }
-    ]
+    ],
+    "acts": []
    },
    "chapter": "Errors: the real battle"
   },
@@ -1117,188 +1706,284 @@
    "text": "The fix is called error correction: you combine many physical qubits into one reliable \"logical\" qubit, so the group can catch and correct individual mistakes.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "qcoin",
-      "x": 60,
+      "k": "prop",
+      "at": "many",
+      "x": 40,
       "y": 60,
-      "at": 0.02,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
+      "p": "qcoin",
+      "text": "q",
+      "s": 0.38,
+      "id": "p0"
      },
      {
-      "p": "qcoin",
-      "x": 180,
+      "k": "prop",
+      "at": "many",
+      "x": 160,
       "y": 60,
-      "at": 0.06,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
+      "p": "qcoin",
+      "text": "q",
+      "s": 0.38,
+      "id": "p1"
      },
      {
-      "p": "qcoin",
-      "x": 300,
+      "k": "prop",
+      "at": "many",
+      "x": 280,
       "y": 60,
-      "at": 0.1,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
+      "p": "qcoin",
+      "text": "q",
+      "s": 0.38,
+      "id": "p2"
      },
      {
+      "k": "prop",
+      "at": "many",
+      "x": 40,
+      "y": 190,
       "p": "qcoin",
-      "x": 60,
+      "text": "q",
+      "s": 0.38,
+      "id": "p3"
+     },
+     {
+      "k": "prop",
+      "at": "many",
+      "x": 160,
+      "y": 190,
+      "p": "qcoin",
+      "text": "q",
+      "s": 0.38,
+      "id": "p4"
+     },
+     {
+      "k": "prop",
+      "at": "many",
+      "x": 280,
+      "y": 190,
+      "p": "qcoin",
+      "text": "q",
+      "s": 0.38,
+      "id": "p5"
+     },
+     {
+      "k": "prop",
+      "at": "many",
+      "x": 40,
+      "y": 320,
+      "p": "qcoin",
+      "text": "q",
+      "s": 0.38,
+      "id": "p6"
+     },
+     {
+      "k": "prop",
+      "at": "many",
+      "x": 160,
+      "y": 320,
+      "p": "qcoin",
+      "text": "q",
+      "s": 0.38,
+      "id": "p7"
+     },
+     {
+      "k": "prop",
+      "at": "many",
+      "x": 280,
+      "y": 320,
+      "p": "qcoin",
+      "text": "q",
+      "s": 0.38,
+      "id": "p8"
+     },
+     {
+      "k": "arrow",
+      "at": "combine",
+      "x": 440,
       "y": 180,
-      "at": 0.13999999999999999,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
+      "w": 260,
+      "id": "ar"
      },
      {
+      "k": "prop",
+      "at": "logical",
+      "x": 760,
+      "y": 60,
       "p": "qcoin",
-      "x": 180,
-      "y": 180,
-      "at": 0.18,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
-     },
-     {
-      "p": "qcoin",
-      "x": 300,
-      "y": 180,
-      "at": 0.22,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
-     },
-     {
-      "p": "qcoin",
-      "x": 60,
-      "y": 300,
-      "at": 0.26,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
-     },
-     {
-      "p": "qcoin",
-      "x": 180,
-      "y": 300,
-      "at": 0.30000000000000004,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
-     },
-     {
-      "p": "qcoin",
-      "x": 300,
-      "y": 300,
-      "at": 0.34,
-      "in": "pop",
-      "text": "Q",
-      "s": 0.55
-     },
-     {
-      "p": "arrow",
-      "x": 460,
-      "y": 230,
-      "at": 0.45,
-      "in": "fly",
-      "len": 260,
-      "c": "o"
-     },
-     {
-      "p": "qcoin",
-      "x": 800,
-      "y": 140,
-      "at": 0.6,
-      "in": "pop",
       "text": "L",
-      "s": 1.4,
-      "loop": "boil"
+      "s": 1.1,
+      "id": "lq",
+      "in": "slam"
      },
      {
-      "p": "check",
-      "x": 1050,
-      "y": 360,
-      "at": 0.8,
-      "in": "pop",
-      "s": 0.6
+      "k": "icon",
+      "at": "reliable",
+      "x": 1040,
+      "y": 40,
+      "ref": "ph:check-circle-fill",
+      "size": 110,
+      "color": "#2F9E44",
+      "id": "ck"
      },
      {
-      "p": "strip",
-      "text": "one reliable \"logical\" qubit",
-      "x": 640,
-      "y": 500,
-      "at": 0.7,
-      "c": "g",
-      "size": 40,
-      "in": "drop"
+      "k": "tag",
+      "at": "correction",
+      "x": 40,
+      "y": 470,
+      "text": "ERROR CORRECTION",
+      "bg": "#F87736",
+      "size": 44,
+      "id": "ec"
+     },
+     {
+      "k": "tag",
+      "at": "logical",
+      "x": 700,
+      "y": 470,
+      "text": "9 physical → 1 logical qubit",
+      "size": 34,
+      "id": "lg"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "The problem was that adding more qubits usually added more errors too.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "strip",
-      "text": "more qubits",
-      "x": 80,
-      "y": 200,
-      "at": 0.05,
-      "c": "c",
-      "size": 58,
-      "in": "drop"
+      "k": "bars",
+      "at": "adding",
+      "x": 40,
+      "y": 40,
+      "w": 760,
+      "id": "b",
+      "rows": [
+       [
+        "qubits",
+        0.4,
+        "#7A5CFF"
+       ],
+       [
+        "qubits",
+        0.75,
+        "#7A5CFF"
+       ],
+       [
+        "errors",
+        0.45,
+        "#E0471C"
+       ],
+       [
+        "errors",
+        0.85,
+        "#E0471C"
+       ]
+      ],
+      "gap": 0.35
      },
      {
-      "p": "arrow",
-      "x": 470,
-      "y": 210,
-      "at": 0.3,
-      "in": "fly",
-      "len": 260
+      "k": "icon",
+      "at": "errors",
+      "x": 900,
+      "y": 60,
+      "ref": "ph:trend-up-bold",
+      "size": 230,
+      "color": "#E0471C",
+      "id": "tu"
      },
      {
-      "p": "strip",
-      "text": "more errors",
-      "x": 780,
-      "y": 200,
-      "at": 0.5,
-      "c": "r",
-      "size": 58,
-      "in": "drop"
-     },
-     {
-      "p": "cross",
-      "x": 520,
+      "k": "big",
+      "at": "too",
+      "x": 860,
       "y": 380,
-      "at": 0.7,
-      "in": "pop",
-      "s": 0.7
+      "text": "more *errors*",
+      "size": 90,
+      "id": "me"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "Willow's real breakthrough wasn't that five-minute race. It's that as Google made its groups of qubits bigger, the error rate went down instead of up. That's a key milestone researchers had been chasing for almost thirty years.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "vwords",
-    "kicker": "GOOGLE WILLOW · 2024",
-    "words": [
-     "bigger",
-     "groups",
-     "fewer",
-     "errors"
+    "type": "mix",
+    "els": [
+     {
+      "k": "logo",
+      "at": "willow's",
+      "x": 40,
+      "y": 30,
+      "ref": "logos:google-icon",
+      "size": 110,
+      "paper": true,
+      "id": "g"
+     },
+     {
+      "k": "bars",
+      "at": "bigger",
+      "x": 260,
+      "y": 40,
+      "w": 640,
+      "id": "b",
+      "rows": [
+       [
+        "3×3 group: errors",
+        0.9,
+        "#E0471C"
+       ],
+       [
+        "5×5 group: errors",
+        0.55,
+        "#F87736"
+       ],
+       [
+        "7×7 group: errors",
+        0.28,
+        "#2F9E44"
+       ]
+      ],
+      "gap": 0.5
+     },
+     {
+      "k": "icon",
+      "at": "down",
+      "x": 980,
+      "y": 60,
+      "ref": "ph:trend-down-bold",
+      "size": 200,
+      "color": "#2F9E44",
+      "id": "td"
+     },
+     {
+      "k": "big",
+      "at": "down",
+      "x": 260,
+      "y": 430,
+      "text": "errors went *DOWN*",
+      "size": 96,
+      "id": "dn",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "thirty",
+      "x": 280,
+      "y": 560,
+      "text": "a goal since 1995 (≈30 years)",
+      "bg": "#2A2018",
+      "size": 34,
+      "id": "yr"
+     }
     ],
-    "head": "ERRORS WENT DOWN",
-    "hiword": "DOWN"
+    "acts": []
    }
   },
   {
@@ -1323,71 +2008,94 @@
    "text": "So what will quantum computers actually be useful for? Not for browsing, gaming or running ChatGPT faster.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "laptop",
+      "k": "big",
+      "at": "useful",
+      "x": 40,
+      "y": 20,
+      "text": "Useful for…?",
+      "size": 96,
+      "id": "h"
+     },
+     {
+      "k": "icon",
+      "at": "browsing",
       "x": 60,
-      "y": 120,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.65
+      "y": 200,
+      "ref": "ph:browser-fill",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true,
+      "id": "b"
      },
      {
-      "p": "strip",
-      "text": "browsing",
+      "k": "icon",
+      "at": "gaming",
+      "x": 420,
+      "y": 200,
+      "ref": "ph:game-controller-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "gm"
+     },
+     {
+      "k": "logo",
+      "at": "chatgpt",
+      "x": 780,
+      "y": 200,
+      "ref": "logos:openai-icon",
+      "size": 170,
+      "paper": true,
+      "id": "ai"
+     },
+     {
+      "k": "icon",
+      "at": "browsing",
+      "x": 200,
+      "y": 180,
+      "ref": "ph:x-bold",
+      "size": 110,
+      "color": "#E0471C",
+      "id": "x0",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "gaming",
       "x": 560,
-      "y": 80,
-      "at": 0.25,
-      "c": "c",
-      "size": 48,
-      "in": "drop"
+      "y": 180,
+      "ref": "ph:x-bold",
+      "size": 110,
+      "color": "#E0471C",
+      "id": "x1",
+      "in": "slam"
      },
      {
-      "p": "strip",
-      "text": "gaming",
-      "x": 560,
-      "y": 230,
-      "at": 0.4,
-      "c": "c",
-      "size": 48,
-      "in": "drop"
+      "k": "icon",
+      "at": "faster",
+      "x": 920,
+      "y": 180,
+      "ref": "ph:x-bold",
+      "size": 110,
+      "color": "#E0471C",
+      "id": "x2",
+      "in": "slam"
      },
      {
-      "p": "strip",
-      "text": "ChatGPT",
-      "x": 560,
-      "y": 380,
-      "at": 0.55,
-      "c": "c",
-      "size": 48,
-      "in": "drop"
-     },
-     {
-      "p": "cross",
-      "x": 900,
-      "y": 80,
-      "at": 0.35,
-      "in": "pop",
-      "s": 0.55
-     },
-     {
-      "p": "cross",
-      "x": 900,
-      "y": 230,
-      "at": 0.5,
-      "in": "pop",
-      "s": 0.55
-     },
-     {
-      "p": "cross",
-      "x": 900,
-      "y": 380,
-      "at": 0.65,
-      "in": "pop",
-      "s": 0.55
+      "k": "tag",
+      "at": "faster",
+      "x": 60,
+      "y": 520,
+      "text": "not your everyday apps",
+      "bg": "#E0471C",
+      "size": 38,
+      "id": "t"
      }
-    ]
+    ],
+    "acts": []
    },
    "chapter": "What it's actually good for"
   },
@@ -1395,137 +2103,217 @@
    "text": "Their best targets are problems that are quantum by nature. Simulating molecules to design new medicines, better batteries and new materials.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "molecule",
+      "k": "prop",
+      "at": "molecules",
       "x": 40,
-      "y": 80,
-      "at": 0.05,
-      "in": "pop",
-      "s": 1.0,
-      "loop": "spin"
+      "y": 40,
+      "p": "molecule",
+      "s": 1.1,
+      "id": "m"
      },
      {
-      "p": "battery",
-      "x": 500,
-      "y": 80,
-      "at": 0.3,
-      "in": "drop",
-      "s": 0.9
-     },
-     {
-      "p": "book",
-      "x": 860,
-      "y": 100,
-      "at": 0.5,
-      "in": "drop",
-      "s": 1.0,
-      "c": "g"
-     },
-     {
-      "p": "strip",
-      "text": "medicines",
-      "x": 60,
+      "k": "tag",
+      "at": "nature",
+      "x": 40,
       "y": 470,
-      "at": 0.2,
-      "c": "o",
-      "size": 44,
-      "in": "drop"
+      "text": "quantum by nature",
+      "bg": "#7A5CFF",
+      "size": 36,
+      "id": "qn"
      },
      {
-      "p": "strip",
-      "text": "batteries",
-      "x": 470,
-      "y": 470,
-      "at": 0.4,
-      "c": "g",
-      "size": 44,
-      "in": "drop"
+      "k": "icon",
+      "at": "medicines",
+      "x": 560,
+      "y": 40,
+      "ref": "ph:pill-fill",
+      "size": 150,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "pi"
      },
      {
-      "p": "strip",
-      "text": "materials",
-      "x": 850,
-      "y": 470,
-      "at": 0.6,
-      "c": "b",
-      "size": 44,
-      "in": "drop"
+      "k": "icon",
+      "at": "batteries",
+      "x": 820,
+      "y": 40,
+      "ref": "ph:battery-charging-fill",
+      "size": 150,
+      "color": "#2F9E44",
+      "paper": true,
+      "id": "ba"
+     },
+     {
+      "k": "icon",
+      "at": "materials",
+      "x": 1080,
+      "y": 40,
+      "ref": "ph:cube-fill",
+      "size": 130,
+      "color": "#F87736",
+      "paper": true,
+      "id": "ma"
+     },
+     {
+      "k": "tag",
+      "at": "medicines",
+      "x": 560,
+      "y": 290,
+      "text": "new medicines",
+      "size": 30,
+      "id": "t1"
+     },
+     {
+      "k": "tag",
+      "at": "batteries",
+      "x": 820,
+      "y": 290,
+      "text": "better batteries",
+      "size": 30,
+      "id": "t2"
+     },
+     {
+      "k": "tag",
+      "at": "materials",
+      "x": 1060,
+      "y": 290,
+      "text": "new materials",
+      "size": 30,
+      "id": "t3"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "They may also help with certain hard optimisation and simulation problems, though researchers are still debating how big that advantage will be.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "gear",
-      "x": 120,
-      "y": 100,
-      "at": 0.05,
-      "in": "pop",
-      "s": 1.0,
-      "loop": "spin"
+      "k": "icon",
+      "at": "optimisation",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:path-bold",
+      "size": 200,
+      "color": "#F87736",
+      "paper": true,
+      "id": "pa"
      },
      {
-      "p": "globe",
-      "x": 520,
-      "y": 90,
-      "at": 0.25,
-      "in": "drop",
-      "s": 1.0,
-      "loop": "boil"
+      "k": "icon",
+      "at": "optimisation",
+      "x": 360,
+      "y": 40,
+      "ref": "ph:truck-fill",
+      "size": 160,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "tr"
      },
      {
-      "p": "strip",
-      "text": "optimisation & simulation",
-      "x": 120,
-      "y": 470,
-      "at": 0.45,
-      "c": "c",
-      "size": 46,
-      "in": "drop"
+      "k": "icon",
+      "at": "simulation",
+      "x": 660,
+      "y": 40,
+      "ref": "ph:cloud-lightning-fill",
+      "size": 170,
+      "color": "#1C7ED6",
+      "paper": true,
+      "id": "we"
      },
      {
-      "p": "strip",
-      "text": "maybe: still debated",
-      "x": 760,
-      "y": 140,
-      "at": 0.7,
-      "c": "l",
-      "size": 38,
-      "in": "drop"
+      "k": "tag",
+      "at": "hard",
+      "x": 60,
+      "y": 330,
+      "text": "hard optimisation & simulation",
+      "size": 36,
+      "id": "t"
+     },
+     {
+      "k": "stamp",
+      "at": "debating",
+      "x": 500,
+      "y": 430,
+      "text": "STILL DEBATED",
+      "size": 80,
+      "color": "#8C6B5A",
+      "rot": -6,
+      "id": "sd",
+      "in": "slam"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "And then there's the one that worries governments and banks: breaking the encryption that protects almost everything online.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "lock",
-      "x": 460,
-      "y": 60,
-      "at": 0.05,
-      "in": "drop",
-      "s": 1.1,
-      "loop": "shake"
+      "k": "icon",
+      "at": "governments",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:flag-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "gv"
      },
      {
-      "p": "banner",
-      "text": "ENCRYPTION",
-      "x": 330,
+      "k": "icon",
+      "at": "banks",
+      "x": 300,
+      "y": 40,
+      "ref": "ph:bank-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "bk"
+     },
+     {
+      "k": "prop",
+      "at": "encryption",
+      "x": 640,
+      "y": 20,
+      "p": "lock",
+      "s": 1.0,
+      "id": "lk"
+     },
+     {
+      "k": "big",
+      "at": "breaking",
+      "x": 40,
+      "y": 330,
+      "text": "breaking *encryption*",
+      "size": 96,
+      "id": "be",
+      "in": "slam"
+     },
+     {
+      "k": "tag",
+      "at": "online",
+      "x": 60,
       "y": 470,
-      "at": 0.5,
-      "size": 70,
-      "in": "drop"
+      "text": "it protects almost everything online",
+      "size": 34,
+      "id": "ol"
+     }
+    ],
+    "acts": [
+     {
+      "do": "shake",
+      "id": "lk",
+      "at": "breaking"
      }
     ]
    }
@@ -1534,51 +2322,68 @@
    "text": "Much of today's online security, from your UPI payments to your WhatsApp messages, relies on maths problems that normal computers would take practically forever to crack.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "phone",
-      "x": 80,
+      "k": "tag",
+      "at": "upi",
+      "x": 40,
       "y": 60,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.95
+      "text": "UPI ₹",
+      "bg": "#F87736",
+      "size": 72,
+      "id": "upi"
      },
      {
-      "p": "lock",
-      "x": 380,
-      "y": 150,
-      "at": 0.25,
-      "in": "pop",
-      "s": 0.7
+      "k": "logo",
+      "at": "whatsapp",
+      "x": 360,
+      "y": 30,
+      "ref": "logos:whatsapp-icon",
+      "size": 160,
+      "paper": true,
+      "id": "wa"
      },
      {
-      "p": "envelope",
+      "k": "icon",
+      "at": "security",
       "x": 640,
-      "y": 180,
-      "at": 0.4,
-      "in": "slide",
-      "s": 1.0
+      "y": 40,
+      "ref": "ph:lock-key-fill",
+      "size": 160,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "lk"
      },
      {
-      "p": "strip",
-      "text": "UPI",
-      "x": 100,
-      "y": 500,
-      "at": 0.55,
-      "c": "o",
-      "size": 48,
-      "in": "drop"
+      "k": "card",
+      "at": "maths",
+      "x": 40,
+      "y": 330,
+      "icon": "ph:function-bold",
+      "label": "HARD MATHS PROBLEM",
+      "big": "crack time: ∞",
+      "w": 640,
+      "id": "mh"
      },
      {
-      "p": "strip",
-      "text": "WhatsApp",
-      "x": 640,
-      "y": 470,
-      "at": 0.65,
-      "c": "g",
-      "size": 48,
-      "in": "drop"
+      "k": "icon",
+      "at": "forever",
+      "x": 760,
+      "y": 330,
+      "ref": "ph:hourglass-high-fill",
+      "size": 170,
+      "color": "#E0471C",
+      "id": "hg"
+     }
+    ],
+    "acts": [
+     {
+      "do": "spin",
+      "id": "hg",
+      "at": "forever",
+      "deg": 180,
+      "d": 0.8
      }
     ]
    },
@@ -1588,45 +2393,51 @@
    "text": "A large enough, error-corrected quantum computer could solve some of those problems dramatically faster.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "chip",
-      "x": 80,
-      "y": 160,
-      "at": 0.05,
-      "in": "drop",
+      "k": "prop",
+      "at": "large",
+      "x": 40,
+      "y": 40,
+      "p": "qcoin",
       "text": "Q",
-      "s": 0.9,
-      "loop": "boil"
+      "s": 1.4,
+      "id": "q"
      },
      {
-      "p": "arrow",
-      "x": 400,
-      "y": 260,
-      "at": 0.3,
-      "in": "fly",
-      "len": 300,
-      "c": "o"
+      "k": "icon",
+      "at": "faster",
+      "x": 560,
+      "y": 40,
+      "ref": "ph:lightning-fill",
+      "size": 200,
+      "color": "#F5B400",
+      "id": "l"
      },
      {
-      "p": "lock",
-      "x": 760,
-      "y": 140,
-      "at": 0.45,
-      "in": "drop",
-      "s": 0.8,
-      "loop": "shake"
+      "k": "icon",
+      "at": "solve",
+      "x": 840,
+      "y": 40,
+      "ref": "ph:lock-open-fill",
+      "size": 220,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "lo",
+      "in": "slam"
      },
      {
-      "p": "cross",
-      "x": 820,
-      "y": 100,
-      "at": 0.75,
-      "in": "pop",
-      "s": 0.7
+      "k": "tag",
+      "at": "error",
+      "x": 40,
+      "y": 520,
+      "text": "large + error-corrected (not built yet)",
+      "size": 36,
+      "id": "t"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
@@ -1651,82 +2462,86 @@
    "text": "But there's a catch called \"harvest now, decrypt later\". Someone can steal encrypted data today and simply wait for a quantum computer to unlock it years from now.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "prop",
+      "at": "steal",
+      "x": 40,
+      "y": 60,
       "p": "thief",
-      "x": 60,
-      "y": 160,
-      "at": 0.05,
-      "in": "slide",
-      "s": 1.2,
-      "loop": "boil"
+      "s": 1.0,
+      "id": "th"
      },
      {
+      "k": "prop",
+      "at": "encrypted",
+      "x": 380,
+      "y": 80,
       "p": "envelope",
-      "x": 500,
-      "y": 60,
-      "at": 0.25,
-      "in": "fly",
-      "s": 0.6,
+      "s": 0.5,
+      "id": "e0"
+     },
+     {
+      "k": "prop",
+      "at": "encrypted",
+      "x": 470,
+      "y": 120,
+      "p": "envelope",
+      "s": 0.5,
       "id": "e1"
      },
      {
+      "k": "prop",
+      "at": "encrypted",
+      "x": 560,
+      "y": 80,
       "p": "envelope",
-      "x": 520,
-      "y": 240,
-      "at": 0.35,
-      "in": "fly",
-      "s": 0.6,
+      "s": 0.5,
       "id": "e2"
      },
      {
-      "p": "box",
-      "x": 820,
-      "y": 160,
-      "at": 0.45,
-      "in": "drop",
-      "s": 0.8
-     },
-     {
-      "p": "strip",
-      "text": "LATER",
-      "x": 860,
-      "y": 120,
-      "at": 0.6,
-      "c": "o",
+      "k": "tag",
+      "at": "harvest",
+      "x": 380,
+      "y": 330,
+      "text": "HARVEST NOW",
+      "bg": "#E0471C",
       "size": 48,
-      "in": "pop"
+      "id": "h"
      },
      {
-      "p": "strip",
-      "text": "harvest now, decrypt later",
-      "x": 300,
-      "y": 520,
-      "at": 0.7,
-      "c": "c",
-      "size": 42,
-      "in": "drop"
+      "k": "icon",
+      "at": "wait",
+      "x": 820,
+      "y": 60,
+      "ref": "ph:clock-countdown-fill",
+      "size": 170,
+      "color": "#2A2018",
+      "id": "c"
+     },
+     {
+      "k": "tag",
+      "at": "decrypt",
+      "x": 800,
+      "y": 330,
+      "text": "DECRYPT LATER",
+      "bg": "#2A2018",
+      "size": 48,
+      "id": "d"
+     },
+     {
+      "k": "icon",
+      "at": "unlock",
+      "x": 900,
+      "y": 440,
+      "ref": "ph:lock-open-fill",
+      "size": 140,
+      "color": "#F87736",
+      "id": "u"
      }
     ],
-    "moves": [
-     {
-      "id": "e1",
-      "at": 0.55,
-      "x": 380,
-      "y": 220,
-      "scale": 0.5,
-      "fade": true
-     },
-     {
-      "id": "e2",
-      "at": 0.62,
-      "x": 360,
-      "y": 60,
-      "scale": 0.5,
-      "fade": true
-     }
-    ]
+    "acts": []
    }
   },
   {
@@ -1757,70 +2572,146 @@
    "text": "Tech companies and banks have already started switching. If your apps update their security quietly over the next few years, this is one big reason why.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "phone",
-      "x": 120,
-      "y": 60,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.95
+      "k": "logo",
+      "at": "tech",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:chrome",
+      "size": 130,
+      "paper": true,
+      "id": "c"
      },
      {
-      "p": "gear",
+      "k": "logo",
+      "at": "tech",
+      "x": 260,
+      "y": 40,
+      "ref": "logos:apple",
+      "size": 120,
+      "paper": true,
+      "id": "a"
+     },
+     {
+      "k": "logo",
+      "at": "tech",
       "x": 480,
-      "y": 120,
-      "at": 0.2,
-      "in": "pop",
-      "s": 0.7,
-      "loop": "spin"
+      "y": 40,
+      "ref": "logos:signal",
+      "size": 130,
+      "paper": true,
+      "id": "s"
      },
      {
-      "p": "lock",
-      "x": 760,
-      "y": 120,
-      "at": 0.4,
-      "in": "drop",
-      "s": 0.7
+      "k": "icon",
+      "at": "banks",
+      "x": 700,
+      "y": 40,
+      "ref": "ph:bank-fill",
+      "size": 130,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "b"
      },
      {
-      "p": "check",
-      "x": 960,
-      "y": 100,
-      "at": 0.6,
-      "in": "pop",
-      "s": 0.6
+      "k": "tag",
+      "at": "switching",
+      "x": 40,
+      "y": 300,
+      "text": "already switching to quantum-safe encryption",
+      "bg": "#2F9E44",
+      "size": 36,
+      "id": "sw"
      },
      {
-      "p": "strip",
-      "text": "quiet security updates",
-      "x": 440,
-      "y": 470,
-      "at": 0.5,
-      "c": "g",
-      "size": 46,
-      "in": "drop"
+      "k": "card",
+      "at": "update",
+      "x": 40,
+      "y": 420,
+      "icon": "ph:arrows-clockwise-bold",
+      "label": "YOUR APPS",
+      "big": "security update…",
+      "w": 620,
+      "id": "up"
+     },
+     {
+      "k": "icon",
+      "at": "reason",
+      "x": 900,
+      "y": 420,
+      "ref": "ph:shield-check-fill",
+      "size": 170,
+      "color": "#2F9E44",
+      "id": "sh",
+      "in": "slam"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "India is in this race too. In twenty twenty-three, the government approved the National Quantum Mission, with six thousand and three crore rupees over eight years.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "vstat",
-    "kicker": "NATIONAL QUANTUM MISSION · APPROVED 2023",
-    "num": "₹6,003",
-    "unit": "CRORE",
-    "sub": "over eight years",
-    "hi": "eight years",
-    "source": "Government of India, approved 19 April 2023",
-    "note": "India is in!",
-    "sx": 760,
-    "sy": 560,
-    "nx": 120,
-    "ny": 590
+    "type": "mix",
+    "els": [
+     {
+      "k": "icon",
+      "at": "india",
+      "x": 40,
+      "y": 40,
+      "ref": "circle-flags:in",
+      "size": 200,
+      "id": "fl",
+      "in": "drop"
+     },
+     {
+      "k": "big",
+      "at": "mission",
+      "x": 300,
+      "y": 60,
+      "text": "National *Quantum* Mission",
+      "size": 72,
+      "id": "nm"
+     },
+     {
+      "k": "card",
+      "at": "crore",
+      "x": 300,
+      "y": 240,
+      "icon": "ph:currency-inr-bold",
+      "label": "APPROVED 2023",
+      "big": "₹0 crore",
+      "w": 640,
+      "id": "cr"
+     },
+     {
+      "k": "tag",
+      "at": "eight",
+      "x": 320,
+      "y": 470,
+      "text": "over eight years",
+      "bg": "#2A2018",
+      "size": 36,
+      "id": "8y"
+     }
+    ],
+    "acts": [
+     {
+      "do": "count",
+      "id": "cr",
+      "at": "six",
+      "values": [
+       "₹1,000 crore",
+       "₹3,000 crore",
+       "₹5,000 crore",
+       "₹6,003 crore"
+      ],
+      "dt": 0.2
+     }
+    ]
    },
    "chapter": "What about India?"
   },
@@ -1828,34 +2719,54 @@
    "text": "The goal is to build quantum computers with up to a thousand qubits by around twenty thirty-one.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "chip",
-      "x": 120,
-      "y": 120,
-      "at": 0.05,
-      "in": "drop",
-      "text": "1000",
-      "s": 1.0
+      "k": "icon",
+      "at": "goal",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:target-bold",
+      "size": 200,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "t"
      },
      {
+      "k": "card",
+      "at": "thousand",
+      "x": 360,
+      "y": 60,
+      "icon": "ph:atom-bold",
+      "label": "GOAL",
+      "big": "0 qubits",
+      "w": 620,
+      "id": "q",
+      "color": "#7A5CFF"
+     },
+     {
+      "k": "prop",
+      "at": "thirty-one",
+      "x": 380,
+      "y": 300,
       "p": "calendar",
-      "x": 520,
-      "y": 120,
-      "at": 0.3,
-      "in": "drop",
       "text": "2031",
-      "s": 0.95
-     },
+      "s": 0.9,
+      "id": "cal"
+     }
+    ],
+    "acts": [
      {
-      "p": "banner",
-      "text": "UP TO 1,000 QUBITS",
-      "x": 300,
-      "y": 480,
-      "at": 0.55,
-      "size": 60,
-      "in": "drop"
+      "do": "count",
+      "id": "q",
+      "at": "thousand",
+      "values": [
+       "50 qubits",
+       "250 qubits",
+       "500 qubits",
+       "1,000 qubits"
+      ],
+      "dt": 0.15
      }
     ]
    }
@@ -1864,119 +2775,190 @@
    "text": "Today, one of India's most powerful machines, built by the Bengaluru startup QpiAI, has twenty-five qubits. That's far smaller than Google's, but it's a start.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "prop",
+      "at": "qpiai",
+      "x": 40,
+      "y": 60,
       "p": "chip",
-      "x": 140,
-      "y": 220,
-      "at": 0.05,
-      "in": "drop",
       "text": "25",
-      "s": 0.75
+      "s": 0.7,
+      "id": "qp"
      },
      {
-      "p": "strip",
+      "k": "tag",
+      "at": "bengaluru",
+      "x": 30,
+      "y": 330,
       "text": "QpiAI · Bengaluru",
-      "x": 60,
-      "y": 520,
-      "at": 0.25,
-      "c": "o",
-      "size": 40,
-      "in": "drop"
+      "size": 34,
+      "id": "qt"
      },
      {
+      "k": "prop",
+      "at": "google's",
+      "x": 520,
+      "y": 20,
       "p": "chip",
-      "x": 640,
-      "y": 80,
-      "at": 0.45,
-      "in": "drop",
       "text": "105",
-      "s": 1.35
+      "s": 1.25,
+      "id": "gw"
      },
      {
-      "p": "strip",
+      "k": "logo",
+      "at": "google's",
+      "x": 880,
+      "y": 40,
+      "ref": "logos:google-icon",
+      "size": 90,
+      "id": "gl"
+     },
+     {
+      "k": "tag",
+      "at": "google's",
+      "x": 540,
+      "y": 450,
       "text": "Google Willow",
-      "x": 680,
+      "bg": "#2A2018",
+      "size": 34,
+      "id": "gt"
+     },
+     {
+      "k": "tag",
+      "at": "start",
+      "x": 40,
       "y": 520,
-      "at": 0.6,
-      "c": "c",
-      "size": 40,
-      "in": "drop"
+      "text": "far smaller, but it's a start",
+      "bg": "#2F9E44",
+      "size": 36,
+      "id": "st"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "And India is ahead on quantum-secure communication, with more than a thousand kilometres of quantum-secure links already set up.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "globe",
-      "x": 60,
-      "y": 120,
-      "at": 0.05,
-      "in": "pop",
-      "s": 1.0,
-      "loop": "boil"
+      "k": "icon",
+      "at": "india",
+      "x": 40,
+      "y": 40,
+      "ref": "circle-flags:in",
+      "size": 130,
+      "id": "fl"
      },
      {
-      "p": "arrow",
-      "x": 420,
-      "y": 250,
-      "at": 0.3,
-      "in": "fly",
-      "len": 700,
-      "c": "o"
+      "k": "icon",
+      "at": "communication",
+      "x": 220,
+      "y": 40,
+      "ref": "ph:broadcast-bold",
+      "size": 130,
+      "color": "#1C7ED6",
+      "id": "bc"
      },
      {
-      "p": "strip",
-      "text": "1,000+ km quantum-secure links",
-      "x": 400,
-      "y": 470,
-      "at": 0.55,
-      "c": "g",
-      "size": 46,
-      "in": "drop"
+      "k": "arrow",
+      "at": "kilometres",
+      "x": 40,
+      "y": 260,
+      "w": 900,
+      "id": "ln"
+     },
+     {
+      "k": "card",
+      "at": "thousand",
+      "x": 260,
+      "y": 360,
+      "icon": "ph:shield-check-fill",
+      "label": "QUANTUM-SECURE LINKS",
+      "big": "1,000+ km",
+      "w": 560,
+      "id": "km",
+      "color": "#2F9E44",
+      "in": "slam"
+     },
+     {
+      "k": "icon",
+      "at": "ahead",
+      "x": 980,
+      "y": 60,
+      "ref": "ph:trophy-fill",
+      "size": 160,
+      "color": "#F5B400",
+      "paper": true,
+      "id": "tr"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "So, will you ever have a quantum computer at home? Almost certainly not. They're huge, fragile and built for very specific problems.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "fridge",
-      "x": 80,
-      "y": 20,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.85
+      "k": "icon",
+      "at": "home",
+      "x": 40,
+      "y": 40,
+      "ref": "ph:house-fill",
+      "size": 220,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "h"
      },
      {
-      "p": "strip",
-      "text": "at home?",
-      "x": 560,
-      "y": 160,
-      "at": 0.3,
-      "c": "c",
-      "size": 60,
-      "in": "drop"
+      "k": "stamp",
+      "at": "not",
+      "x": 330,
+      "y": 60,
+      "text": "NO",
+      "size": 150,
+      "id": "no",
+      "in": "slam"
      },
      {
-      "p": "cross",
-      "x": 640,
-      "y": 300,
-      "at": 0.6,
-      "in": "pop",
-      "s": 1.0
+      "k": "tag",
+      "at": "huge",
+      "x": 40,
+      "y": 420,
+      "text": "huge",
+      "bg": "#2A2018",
+      "size": 44,
+      "id": "t1"
+     },
+     {
+      "k": "tag",
+      "at": "fragile",
+      "x": 240,
+      "y": 420,
+      "text": "fragile",
+      "bg": "#E0471C",
+      "size": 44,
+      "id": "t2"
+     },
+     {
+      "k": "tag",
+      "at": "specific",
+      "x": 480,
+      "y": 420,
+      "text": "very specific problems",
+      "bg": "#7A5CFF",
+      "size": 44,
+      "id": "t3"
      }
-    ]
+    ],
+    "acts": []
    },
    "chapter": "Will you own one?"
   },
@@ -1984,190 +2966,250 @@
    "text": "Instead, you'll use them the way you use most powerful computers today: through the cloud, often without even knowing it.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "laptop",
-      "x": 20,
-      "y": 220,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.5
-     },
-     {
-      "p": "arrow",
-      "x": 350,
-      "y": 300,
-      "at": 0.2,
-      "in": "fly",
-      "len": 200
-     },
-     {
-      "p": "cloud",
-      "x": 560,
-      "y": 230,
-      "at": 0.35,
-      "in": "pop",
-      "s": 0.75,
-      "loop": "float"
-     },
-     {
-      "p": "arrow",
-      "x": 850,
-      "y": 300,
-      "at": 0.5,
-      "in": "fly",
-      "len": 160
-     },
-     {
-      "p": "fridge",
-      "x": 1020,
+      "k": "prop",
+      "at": "computers",
+      "x": 40,
       "y": 120,
-      "at": 0.6,
-      "in": "drop",
-      "s": 0.55
+      "p": "laptop",
+      "s": 0.8,
+      "id": "lp"
+     },
+     {
+      "k": "arrow",
+      "at": "cloud",
+      "x": 370,
+      "y": 220,
+      "w": 200,
+      "id": "a1"
+     },
+     {
+      "k": "prop",
+      "at": "cloud",
+      "x": 600,
+      "y": 60,
+      "p": "cloud",
+      "s": 0.9,
+      "id": "cl"
+     },
+     {
+      "k": "arrow",
+      "at": "without",
+      "x": 900,
+      "y": 220,
+      "w": 160,
+      "id": "a2"
+     },
+     {
+      "k": "prop",
+      "at": "knowing",
+      "x": 1080,
+      "y": 20,
+      "p": "fridge",
+      "s": 0.55,
+      "id": "fr"
+     },
+     {
+      "k": "tag",
+      "at": "knowing",
+      "x": 300,
+      "y": 520,
+      "text": "often without even knowing it",
+      "size": 36,
+      "id": "t"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "Some companies already let students and developers run small programs on real quantum chips online, many for free.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "laptop",
-      "x": 120,
-      "y": 120,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.75
+      "k": "logo",
+      "at": "companies",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:ibm",
+      "size": 260,
+      "id": "ibm"
      },
      {
-      "p": "strip",
-      "text": "real quantum chips online",
-      "x": 660,
-      "y": 160,
-      "at": 0.3,
-      "c": "c",
-      "size": 44,
-      "in": "drop"
+      "k": "icon",
+      "at": "students",
+      "x": 40,
+      "y": 260,
+      "ref": "ph:student-fill",
+      "size": 150,
+      "color": "#2A2018",
+      "paper": true,
+      "id": "st"
      },
      {
-      "p": "strip",
-      "text": "free tiers",
-      "x": 700,
-      "y": 320,
-      "at": 0.5,
-      "c": "g",
-      "size": 52,
-      "in": "drop"
+      "k": "icon",
+      "at": "developers",
+      "x": 300,
+      "y": 260,
+      "ref": "ph:code-bold",
+      "size": 150,
+      "color": "#F87736",
+      "paper": true,
+      "id": "dv"
      },
      {
-      "p": "star",
-      "x": 1000,
-      "y": 420,
-      "at": 0.7,
-      "in": "pop",
-      "s": 0.7,
-      "loop": "spin"
+      "k": "arrow",
+      "at": "real",
+      "x": 560,
+      "y": 330,
+      "w": 200,
+      "id": "ar"
+     },
+     {
+      "k": "prop",
+      "at": "chips",
+      "x": 800,
+      "y": 260,
+      "p": "chip",
+      "text": "Q",
+      "s": 0.75,
+      "id": "ch"
+     },
+     {
+      "k": "stamp",
+      "at": "free",
+      "x": 780,
+      "y": 30,
+      "text": "FREE",
+      "size": 110,
+      "color": "#2F9E44",
+      "id": "fr",
+      "in": "slam"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "Quantum computers won't replace your laptop. They'll work alongside regular computers, as special tools for a few incredibly hard problems.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
+      "k": "prop",
+      "at": "laptop",
+      "x": 40,
+      "y": 120,
       "p": "laptop",
-      "x": 60,
+      "s": 0.85,
+      "id": "lp"
+     },
+     {
+      "k": "icon",
+      "at": "alongside",
+      "x": 440,
       "y": 160,
-      "at": 0.02,
-      "in": "drop",
-      "s": 0.7
+      "ref": "ph:plus-bold",
+      "size": 150,
+      "color": "#8C6B5A",
+      "id": "pl"
      },
      {
-      "p": "strip",
-      "text": "+",
-      "x": 560,
-      "y": 260,
-      "at": 0.3,
-      "c": "o",
-      "size": 90,
-      "in": "pop"
+      "k": "prop",
+      "at": "quantum",
+      "x": 640,
+      "y": 80,
+      "p": "qcoin",
+      "text": "Q",
+      "s": 1.0,
+      "id": "q"
      },
      {
-      "p": "fridge",
-      "x": 700,
-      "y": 60,
-      "at": 0.4,
-      "in": "drop",
-      "s": 0.75
+      "k": "icon",
+      "at": "tools",
+      "x": 1000,
+      "y": 120,
+      "ref": "ph:handshake-fill",
+      "size": 200,
+      "color": "#F87736",
+      "paper": true,
+      "id": "hs"
      },
      {
-      "p": "strip",
-      "text": "tools, not replacements",
-      "x": 300,
+      "k": "tag",
+      "at": "alongside",
+      "x": 160,
       "y": 520,
-      "at": 0.65,
-      "c": "g",
-      "size": 44,
-      "in": "drop"
+      "text": "a special tool, not a replacement",
+      "bg": "#2A2018",
+      "size": 38,
+      "id": "t"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "So, a quantum computer isn't a faster laptop, and it doesn't try every answer at once. It's a completely different machine, using the strange rules of physics to solve a few problems no normal computer ever could.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "qcoin",
-      "x": 760,
-      "y": 100,
-      "at": 0.02,
-      "in": "drop",
-      "text": "Q",
-      "s": 1.4,
-      "loop": "boil"
+      "k": "card",
+      "at": "laptop",
+      "x": 40,
+      "y": 30,
+      "icon": "ph:x-circle-fill",
+      "label": "IT ISN'T",
+      "big": "a faster laptop",
+      "w": 620,
+      "color": "#E0471C",
+      "id": "c1"
      },
      {
-      "p": "strip",
-      "text": "not a faster laptop",
+      "k": "card",
+      "at": "once",
       "x": 40,
-      "y": 120,
-      "at": 0.3,
-      "c": "c",
-      "size": 40,
-      "in": "drop"
+      "y": 210,
+      "icon": "ph:x-circle-fill",
+      "label": "IT DOESN'T",
+      "big": "try every answer",
+      "w": 620,
+      "color": "#E0471C",
+      "id": "c2"
      },
      {
-      "p": "strip",
-      "text": "not every answer at once",
+      "k": "card",
+      "at": "different",
       "x": 40,
-      "y": 260,
-      "at": 0.45,
-      "c": "c",
-      "size": 40,
-      "in": "drop"
+      "y": 390,
+      "icon": "ph:check-circle-fill",
+      "label": "IT IS",
+      "big": "a *different* machine",
+      "w": 700,
+      "color": "#2F9E44",
+      "id": "c3",
+      "in": "slam"
      },
      {
-      "p": "strip",
-      "text": "a different machine",
-      "x": 40,
-      "y": 400,
-      "at": 0.65,
-      "c": "o",
-      "size": 44,
-      "in": "drop"
+      "k": "icon",
+      "at": "physics",
+      "x": 860,
+      "y": 140,
+      "ref": "tabler:atom",
+      "size": 260,
+      "color": "#7A5CFF",
+      "paper": true,
+      "id": "at"
      }
-    ]
+    ],
+    "acts": []
    },
    "chapter": "The bottom line"
   },
@@ -2175,86 +3217,143 @@
    "text": "The hype is real in some places, and wildly overblown in others. Now you know which is which.",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "magnifier",
-      "x": 440,
-      "y": 80,
-      "at": 0.05,
-      "in": "pop",
-      "s": 1.0,
-      "loop": "wiggle"
+      "k": "icon",
+      "at": "hype",
+      "x": 520,
+      "y": 20,
+      "ref": "ph:scales-fill",
+      "size": 240,
+      "color": "#2A2018",
+      "id": "sc"
      },
      {
-      "p": "strip",
-      "text": "HYPE: sometimes real",
+      "k": "tag",
+      "at": "real",
+      "x": 40,
+      "y": 60,
+      "text": "REAL",
+      "bg": "#2F9E44",
+      "size": 60,
+      "id": "r"
+     },
+     {
+      "k": "icon",
+      "at": "real",
       "x": 60,
-      "y": 470,
-      "at": 0.3,
-      "c": "g",
-      "size": 44,
-      "in": "drop"
+      "y": 180,
+      "ref": "ph:flask-fill",
+      "size": 120,
+      "color": "#2F9E44",
+      "paper": true,
+      "id": "r1"
      },
      {
-      "p": "strip",
-      "text": "HYPE: often overblown",
-      "x": 640,
-      "y": 470,
-      "at": 0.55,
-      "c": "r",
-      "size": 44,
-      "in": "drop"
+      "k": "icon",
+      "at": "real",
+      "x": 260,
+      "y": 180,
+      "ref": "ph:lock-key-fill",
+      "size": 120,
+      "color": "#2F9E44",
+      "paper": true,
+      "id": "r2"
+     },
+     {
+      "k": "tag",
+      "at": "overblown",
+      "x": 900,
+      "y": 60,
+      "text": "OVERBLOWN",
+      "bg": "#E0471C",
+      "size": 60,
+      "id": "o"
+     },
+     {
+      "k": "icon",
+      "at": "overblown",
+      "x": 900,
+      "y": 180,
+      "ref": "ph:laptop-fill",
+      "size": 120,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "o1"
+     },
+     {
+      "k": "icon",
+      "at": "overblown",
+      "x": 1100,
+      "y": 180,
+      "ref": "ph:game-controller-fill",
+      "size": 120,
+      "color": "#E0471C",
+      "paper": true,
+      "id": "o2"
+     },
+     {
+      "k": "big",
+      "at": "which",
+      "x": 300,
+      "y": 500,
+      "text": "now you know *which is which*",
+      "size": 72,
+      "id": "k"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {
    "text": "Tell me in the comments: what problem would you want a quantum computer to solve first?",
    "dir": "clear, engaging explainer tone, natural pace",
    "v": {
-    "type": "paperscene",
-    "props": [
+    "type": "mix",
+    "els": [
      {
-      "p": "banner",
-      "text": "WHICH PROBLEM FIRST? 👇",
-      "x": 160,
-      "y": 60,
-      "at": 0.05,
-      "size": 60,
-      "in": "drop"
+      "k": "logo",
+      "at": "comments",
+      "x": 40,
+      "y": 40,
+      "ref": "logos:youtube-icon",
+      "size": 200,
+      "id": "yt"
      },
      {
-      "p": "strip",
-      "text": "new medicines",
-      "x": 120,
-      "y": 300,
-      "at": 0.3,
-      "c": "o",
-      "size": 44,
-      "in": "drop"
+      "k": "icon",
+      "at": "comments",
+      "x": 300,
+      "y": 30,
+      "ref": "ph:chat-circle-text-fill",
+      "size": 200,
+      "color": "#F87736",
+      "id": "ch"
      },
      {
-      "p": "strip",
-      "text": "climate",
-      "x": 520,
+      "k": "card",
+      "at": "problem",
+      "x": 40,
       "y": 300,
-      "at": 0.45,
-      "c": "g",
-      "size": 44,
-      "in": "drop"
+      "icon": "ph:user-circle-fill",
+      "label": "YOUR COMMENT",
+      "big": "Cure diseases faster…",
+      "w": 760,
+      "id": "cm",
+      "in": "fly"
      },
      {
-      "p": "strip",
-      "text": "new materials",
-      "x": 800,
-      "y": 300,
-      "at": 0.6,
-      "c": "b",
-      "size": 44,
-      "in": "drop"
+      "k": "big",
+      "at": "first",
+      "x": 40,
+      "y": 520,
+      "text": "what should it solve *first*?",
+      "size": 72,
+      "id": "q"
      }
-    ]
+    ],
+    "acts": []
    }
   },
   {

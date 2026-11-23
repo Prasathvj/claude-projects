@@ -62,7 +62,7 @@ V = [
  (M(X('icon', 'photo', 40, 40, ref='ph:image-fill', size=150, color='#2F9E44', paper=True, id='ph'),
     X('icon', 'video', 300, 40, ref='ph:video-camera-fill', size=150, color='#E0471C', paper=True, id='vd'),
     X('logo', 'message', 560, 40, ref='logos:whatsapp-icon', size=150, paper=True, id='wa'),
-    X('card', 'billions', 40, 330, label='SWITCHES', big='0', w=520, id='cnt', **{'in': 'fly'}),
+    X('card', 'billions', 40, 330, label='SWITCHES', big='0', w=700, id='cnt', **{'in': 'fly'}),
     X('big', 'flipping', 620, 340, text='0110100101101001', size=72, color='#2A2018', id='bin', **{'in': 'fade'}),
     X('tag', 'fast', 640, 470, text='billions of flips every second', bg='#F87736', size=34, id='fs'),
     acts=[{'do': 'count', 'id': 'cnt', 'at': 'billions', 'values': ['1,000', '1,000,000', '1,000,000,000', 'BILLIONS'], 'dt': .25},

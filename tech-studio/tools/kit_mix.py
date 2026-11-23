@@ -74,7 +74,7 @@ def register(B):
             return pid, h
         if kind == 'card':
             ic = KA.icon(e['icon'], e.get('isize', 60), e.get('color', '#F87736')) if e.get('icon') else ''
-            return eid, (f'<div class="mcard qcard" id="{eid}" style="{pos}{rot}{"width:" + str(e["w"]) + "px;" if e.get("w") else ""}"><div class="mrow">{ic}<div>'
+            return eid, (f'<div class="mcard qcard" id="{eid}" style="{pos}{rot}{"min-width:" + str(e["w"]) + "px;" if e.get("w") else ""}"><div class="mrow">{ic}<div>'
                          f'<div class="ml">{_h.escape(e.get("label", ""))}</div><div class="mb" id="{eid}-v" style="{"color:" + e["bcolor"] + ";" if e.get("bcolor") else ""}{"font-size:" + str(e["bsize"]) + "px;" if e.get("bsize") else ""}">{_star(e.get("big", ""))}</div></div></div></div>')
         if kind == 'tag':
             return eid, f'<div class="mtag" id="{eid}" style="{pos}{rot}background:{e.get("bg", "#2A2018")}; color:{e.get("color", "#FFFAF2")}; font-size:{e.get("size", 32)}px">{_star(e["text"])}</div>'

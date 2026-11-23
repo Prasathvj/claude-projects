@@ -6,10 +6,11 @@ from pathlib import Path
 os.environ['EPID'] = 'ep06'
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import hf_ep04_long as Z   # noqa: E402
-import kit_paper, kit_vox, kit_props  # noqa: E402
+import kit_paper, kit_vox, kit_props, kit_mix  # noqa: E402
 B = Z.B
 kit_vox.register(B)
 kit_props.register(B)
+kit_mix.register(B)
 _beat = B.beat_scene
 def beat_scene(i):
     html = _beat(i)
