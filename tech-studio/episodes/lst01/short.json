@@ -1,0 +1,41 @@
+{
+ "id": "lst01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 1,
+ "max_tempo": 1.05,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "You talked about running shoes once. By the next morning, the ads were already waiting.",
+   "dir": "gripping, slightly spooked hook"
+  },
+  {
+   "text": "So your phone must be listening, right?",
+   "dir": "suspicious, leaning in"
+  },
+  {
+   "text": "Scientists tested over seventeen thousand apps. Not one was caught secretly recording your voice.",
+   "dir": "surprising reveal"
+  },
+  {
+   "text": "But one company did hide secret whistles in TV ads, sounds only your phone could hear.",
+   "dir": "creepy twist, lower voice"
+  },
+  {
+   "text": "And the real reason that ad found you is even creepier.",
+   "dir": "ominous, building curiosity"
+  },
+  {
+   "text": "Your phone doesn't need to hear you at all. I decoded the four ways it finds you, in the full video. Tap the link.",
+   "dir": "calm, a little slower, clear; short pause before \"Tap the link\""
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm sign-off"
+  }
+ ]
+}

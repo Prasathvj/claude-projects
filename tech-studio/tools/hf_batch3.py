@@ -686,8 +686,80 @@ def qnt():
                 (S['s6'][0], 'whoosh', .5), (tc + S['s6'][0], 'click', .9), (tc + S['s6'][0] + 0.1, 'ding', .7)]
     return out_, sfx
 
+# ================================================================= lst01 (teaser for ep07, Orus voice, papercut + logos/icons)
+def lst():
+    out_ = []
+    W = lambda i, w, n=0: max(0.02, wl(i, w, n) - 0.08)
+    css = KPR.CSS + PAYCSS + QCSS
+    PI = lambda ref, size, col, **o: KA.paper_icon(ref, size, col, **o)
+    # s0: dinner talk -> next morning ads
+    pid, ph = qp('s0', 0, 'phone', 560, 420, 1.15)
+    body = f"""<div class="kpi" id="s0-f" style="left:80px; top:300px">{PI('ph:fork-knife-fill', 120, '#F87736')}</div>
+<div class="kpi" id="s0-s" style="left:330px; top:280px">{PI('ph:sneaker-fill', 170, '#E0471C')}</div>
+<div class="qcard" id="s0-b" style="left:80px; top:560px; width:420px"><div class="qlab">AT DINNER</div><div class="qbig" style="font-size:56px">"running shoes…"</div></div>
+{ph}<div class="kpi" id="s0-ig" style="left:640px; top:520px">{KA.icon('logos:instagram-icon', 110)}</div>
+""" + ''.join(f'<div class="qtag" id="s0-a{k}" style="left:{600 + (k % 2) * 30}px; top:{700 + k * 90}px; background:#F87736">AD: RUNNING SHOES</div>' for k in range(3)) + \
+'<div class="cap3" id="s0-t" style="top:1430px">THE ADS WERE<br><span>ALREADY WAITING</span></div>'
+    sc = [pop('#s0-f', 0.02), pop('#s0-s', W(0, 'running')), pop('#s0-b', W(0, 'shoes')), qdrop(pid, W(0, 'morning'), 'x:700, rotation:12'), pop('#s0-ig', W(0, 'morning') + .3)]
+    sc += [tween(f'#s0-a{k}', W(0, 'ads') + k * .15, 'y:-600, opacity:1', 'y:0, opacity:1', .3, 'back.out(1.6)') for k in range(3)] + [slam('#s0-t', W(0, 'waiting'))]
+    out_.append(mk(0, body, sc, css))
+    # s1: phone listening?
+    pid, ph = qp('s1', 0, 'phone', 300, 320, 1.4)
+    body = f"""{ph}<div class="kpi" id="s1-e" style="left:620px; top:300px">{PI('ph:ear-fill', 190, '#E0471C')}</div>
+<div class="kpi" id="s1-q" style="left:700px; top:640px; font:900 300px 'SD Display'; color:#F87736">?</div>
+<div class="cap3" id="s1-t" style="top:1430px">IS IT<br><span>LISTENING?</span></div>"""
+    sc = [qdrop(pid, 0.02), pop('#s1-e', W(1, 'listening')), slam('#s1-q', W(1, 'right')), shake(f'#{pid}', W(1, 'listening')), slam('#s1-t', W(1, 'must'))]
+    out_.append(mk(1, body, sc, css))
+    # s2: 17,000 apps tested, 0 recordings
+    body = f"""<div class="kpi" id="s2-an" style="left:90px; top:280px">{PI('logos:android-icon', 150, '#2A2018')}</div>
+<div class="kpi" id="s2-sc" style="left:360px; top:290px">{PI('ph:flask-fill', 130, '#7A5CFF')}</div>
+<div class="qcard" id="s2-c" style="left:90px; top:560px; width:900px"><div class="qlab">APPS TESTED · NORTHEASTERN UNIVERSITY</div><div class="qbig" id="s2-n">0</div></div>
+<div class="stamp" id="s2-st" style="left:90px; top:900px; font-size:96px; white-space:nowrap">0 RECORDINGS</div>
+<div class="cap3" id="s2-t" style="top:1430px">17,000+ APPS<br><span>NOT ONE CAUGHT</span></div>"""
+    sc = [pop('#s2-an', 0.02), pop('#s2-sc', W(2, 'scientists')), pop('#s2-c', W(2, 'tested')), counter('#s2-n', W(2, 'seventeen'), ['1,000', '5,000', '10,000', '17,260'], .15),
+          tween('#s2-st', W(2, 'not'), 'scale:3, opacity:0, rotation:10', 'scale:1, opacity:1, rotation:-8', .22, 'power4.in'), slam('#s2-t', W(2, 'caught'))]
+    out_.append(mk(2, body, sc, css + '#s2-st { transform:rotate(-8deg); }'))
+    # s3: secret whistles in TV ads
+    wid, wv = qp('s3', 0, 'waves', 330, 380, .8)
+    body = f"""<div class="kpi" id="s3-tv" style="left:70px; top:300px">{PI('ph:television-simple-fill', 170, '#2A2018')}</div>{wv}
+<div class="kpi" id="s3-ear" style="left:120px; top:700px">{PI('ph:ear-slash-fill', 140, '#E0471C')}</div><div class="qtag" id="s3-h" style="left:100px; top:930px; background:#E0471C">humans: can't hear</div>
+<div class="kpi" id="s3-ph" style="left:640px; top:680px">{PI('ph:device-mobile-fill', 160, '#2F9E44')}</div><div class="qtag" id="s3-p" style="left:620px; top:930px; background:#2F9E44">phone: hears it</div>
+<div class="cap3" id="s3-t" style="top:1430px">SECRET WHISTLES<br><span>IN TV ADS</span></div>"""
+    sc = [pop('#s3-tv', 0.02), qdrop(wid, W(3, 'whistles'), 'scale:0'), pop('#s3-ear', W(3, 'sounds')), pop('#s3-h', W(3, 'sounds') + .2), pop('#s3-ph', W(3, 'phone')), pop('#s3-p', W(3, 'hear')), slam('#s3-t', W(3, 'hide'))]
+    out_.append(mk(3, body, sc, css))
+    # s4: even creepier
+    body = f"""<div class="kpi" id="s4-m" style="left:300px; top:280px">{PI('ph:magnifying-glass-bold', 300, '#F87736')}</div>
+<div class="kpi" id="s4-q1" style="left:120px; top:820px; font:900 220px 'SD Display'; color:#E0471C">?</div><div class="kpi" id="s4-q2" style="left:820px; top:760px; font:900 220px 'SD Display'; color:#E0471C">?</div>
+<div class="cap3" id="s4-t" style="top:1430px">EVEN<br><span>CREEPIER</span></div>"""
+    sc = [pop('#s4-m', 0.02), pop('#s4-q1', W(4, 'reason')), pop('#s4-q2', W(4, 'found')), slam('#s4-t', W(4, 'creepier')), shake('#s4-m', W(4, 'creepier'))]
+    out_.append(mk(4, body, sc, css))
+    # s5: 4 ways (wifi, friends, location, Meta) -> full video card -> tap
+    (L.P / 'assets/img').mkdir(parents=True, exist_ok=True)
+    import shutil as _sh; _sh.copy(KA.IMG / 'thumb_ep07.png', L.P / 'assets/img/thumb_ep07.png')
+    icons = [('ph:wifi-high-bold', '#1C7ED6'), ('ph:users-three-fill', '#7A5CFF'), ('ph:map-pin-fill', '#E0471C'), ('logos:meta-icon', None)]
+    body = ''.join(f'<div class="kpi" id="s5-i{k}" style="left:{70 + k * 240}px; top:250px">{PI(r, 120, c or "#2A2018")}</div>' for k, (r, c) in enumerate(icons))
+    body += f"""<div class="qtag" id="s5-4" style="left:330px; top:470px; font-size:48px; background:#F87736">4 WAYS IT FINDS YOU</div>
+<div class="qcard" id="s5-v" style="left:90px; top:580px; width:900px; padding:18px"><img src="assets/img/thumb_ep07.png" style="width:864px; border-radius:16px; display:block"/><div class="qlab" style="margin-top:14px">FULL VIDEO · TechDecoded with Max</div></div>
+<div class="kpi" id="s5-h" style="left:780px; top:1050px">{KA.icon('ph:hand-tap-fill', 150, '#F87736')}</div>
+<div class="cap3" id="s5-t" style="top:1430px">FULL VIDEO<br><span>TAP THE LINK</span></div>"""
+    sc = [pop(f'#s5-i{k}', 0.02 + k * .12) for k in range(4)] + [pop('#s5-4', W(5, 'four')), fly('#s5-v', W(5, 'full')),
+          tween('#s5-h', W(5, 'tap'), 'x:200, y:200, opacity:0', 'x:0, y:0, opacity:1', .35, 'power3.out'),
+          f'    tl.fromTo("#s5-h", {{ scale:1 }}, {{ scale:.82, duration:.12, yoyo:true, repeat:3, ease:"power2.inOut", immediateRender:false }}, {W(5, "link") + .1});', slam('#s5-t', W(5, 'tap'))]
+    out_.append(mk(5, body, sc, css))
+    s, tc = subscribe_scene(6); out_.append(s)
+    def sfx(g):
+        A_ = lambda i, w, n=0: S[f's{i}'][0] + W(i, w, n)
+        return [(0.02, 'pop', .45), (A_(0, 'running'), 'pop', .4), (A_(0, 'morning'), 'whoosh', .5), (A_(0, 'ads'), 'notify', .5), (A_(0, 'waiting'), 'impact', .55),
+                (S['s1'][0], 'thud', .5), (A_(1, 'listening'), 'scan', .4), (A_(1, 'right'), 'impact', .5),
+                (S['s2'][0], 'pop', .4), (A_(2, 'seventeen'), 'tick', .5), (A_(2, 'not'), 'stamp', .8),
+                (S['s3'][0], 'whoosh', .45), (A_(3, 'whistles'), 'chirp', .4), (A_(3, 'phone'), 'ding', .45),
+                (S['s4'][0], 'riser', .45), (A_(4, 'creepier'), 'impact', .6),
+                (S['s5'][0], 'pop', .4), (A_(5, 'full'), 'whoosh', .5), (A_(5, 'tap'), 'click', .7), (A_(5, 'link') + .1, 'click', .6),
+                (S['s6'][0], 'whoosh', .5), (tc + S['s6'][0], 'click', .9), (tc + S['s6'][0] + 0.1, 'ding', .7)]
+    return out_, sfx
+
 if __name__ == '__main__':
-    scenes, sfx = {'upi01': upi, 'ai01': ai, 'del01': dele, 'face01': face, 'pay01': pay, 'swe01': swe, 'qnt01': qnt}[K]()
+    scenes, sfx = {'upi01': upi, 'ai01': ai, 'del01': dele, 'face01': face, 'pay01': pay, 'swe01': swe, 'qnt01': qnt, 'lst01': lst}[K]()
     L.sfx_list = lambda: sorted(sfx(lambda i, w: S[f's{i}'][0] + wl(i, w)))
     comp = L.P / 'compositions'; comp.mkdir(parents=True, exist_ok=True)
     for f in comp.glob('*.html'): f.unlink()
