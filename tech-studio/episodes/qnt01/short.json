@@ -1,0 +1,41 @@
+{
+ "id": "qnt01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.15,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 1,
+ "max_tempo": 1.05,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "This chip finished, in five minutes, a calculation that would take a supercomputer ten septillion years.",
+   "dir": "gripping, astonished hook"
+  },
+  {
+   "text": "That's hundreds of trillions of times longer than the universe has existed.",
+   "dir": "amazed, emphatic"
+  },
+  {
+   "text": "To pull it off, it runs about two hundred and seventy times colder than outer space.",
+   "dir": "intriguing, a twist"
+  },
+  {
+   "text": "And no, it doesn't try every answer at once. That's the biggest myth.",
+   "dir": "confident myth-busting"
+  },
+  {
+   "text": "So how does it really work, and why are banks already getting ready for it?",
+   "dir": "curious, leaning in"
+  },
+  {
+   "text": "I decoded the whole thing in the full video. Tap the link on this Short.",
+   "dir": "clear, engaging explainer tone, natural pace"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech, decoded.",
+   "dir": "warm, friendly sign-off"
+  }
+ ]
+}

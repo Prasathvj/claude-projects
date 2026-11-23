@@ -499,8 +499,75 @@ def swe():
                 (S['s7'][0], 'whoosh', .5), (tc + S['s7'][0], 'click', .9), (tc + S['s7'][0] + 0.1, 'ding', .7)]
     return out_, sfx
 
+# ================================================================= qnt01 (PAPERCUT teaser for ep06 quantum; STYLE=paper)
+import kit_props as KPR
+def qp(sid, k, p, x, y, s=1.0, **o):
+    it = dict(p=p, x=x, y=y, s=s, **o); return KPR.prop_html(sid, k, it)
+def qdrop(pid, t, frm='y:-900, rotation:-12'):
+    return tween(f'#{pid}', t, f'{frm}, opacity:1', 'x:0, y:0, rotation:0, scale:1, opacity:1', .4, 'back.out(1.6)')
+def qnt():
+    out_ = []
+    css = KPR.CSS + PAYCSS
+    # 0: chip + clock + calendars
+    ids, html = [], ''
+    for k, (p, x, y, s, o) in enumerate([('chip', 90, 330, 1.25, {'text': 'Q'}), ('clock', 560, 380, 1.0, {})] +
+                                         [('calendar', 680 + (j % 2) * 20, 1060 - j * 70, .6, {'text': '∞'}) for j in range(9)]):
+        pid, h = qp('s0', k, p, x, y, s, **o); ids.append(pid); html += h
+    html += '<div class="cap3" id="s0-t" style="top:1430px">10 SEPTILLION YEARS<br><span>IN 5 MINUTES</span></div>'
+    sc = [qdrop(ids[0], 0.02), qdrop(ids[1], 0.3, 'scale:0, rotation:-20')] + [qdrop(ids[2 + j], fr(0, .3 + j * .06), 'y:-1200') for j in range(9)]
+    sc += [f'    tl.fromTo("#{ids[1]}-m", {{ rotation:0 }}, {{ rotation:360, duration:2, ease:"steps(24)", repeat:3, immediateRender:false }}, 0.6);', slam('#s0-t', fr(0, .2))]
+    out_.append(mk(0, html, sc, css))
+    # 1: universe vs tower
+    html = ''; ids = []
+    for k, (p, x, y, s, o) in enumerate([('globe', 120, 760, .45, {})] + [('calendar', 620 + (j % 2) * 20, 1120 - j * 70, .55, {'text': '∞'}) for j in range(12)]):
+        pid, h = qp('s1', k, p, x, y, s, **o); ids.append(pid); html += h
+    html += ('<div class="cap3" id="s1-a" style="top:430px; font-size:64px; text-align:left; left:80px">the universe:<br><span>13.8 billion yrs</span></div>'
+             '<div class="cap3" id="s1-t" style="top:1430px">×700 TRILLION<br><span>LONGER</span></div>')
+    sc = [qdrop(ids[0], 0.05, 'scale:0'), pop('#s1-a', 0.2)] + [qdrop(ids[1 + j], fr(1, .1 + j * .05), 'y:-1300') for j in range(12)] + [slam('#s1-t', fr(1, .55))]
+    out_.append(mk(1, html, sc, css))
+    # 2: fridge + thermometer
+    html = ''; ids = []
+    for k, (p, x, y, s, o) in enumerate([('fridge', 60, 280, 1.05, {}), ('thermo', 640, 360, 1.5, {})]):
+        pid, h = qp('s2', k, p, x, y, s, **o); ids.append(pid); html += h
+    html += '<div class="cap3" id="s2-t" style="top:1430px">270× COLDER<br><span>THAN SPACE</span></div><div class="cap3" id="s2-k" style="top:950px; left:580px; text-align:left; font-size:70px; color:#1C7ED6">0.01 K</div>'
+    sc = [qdrop(ids[0], 0.02), qdrop(ids[1], 0.25, 'x:900'), slam('#s2-t', fr(2, .45)), pop('#s2-k', fr(2, .3)),
+          f'    tl.fromTo("#{ids[1]}-m", {{ y:0 }}, {{ y:12, duration:.08, yoyo:true, repeat:15, ease:"steps(2)", immediateRender:false }}, {fr(2, .3)});']
+    out_.append(mk(2, html, sc, css))
+    # 3: maze + MYTH
+    html = ''; ids = []
+    for k, (p, x, y, s, o) in enumerate([('maze', 150, 320, 1.8, {}), ('bit', 260, 420, .45, {}), ('cross', 640, 280, 1.4, {})]):
+        pid, h = qp('s3', k, p, x, y, s, **o); ids.append(pid); html += h
+    html += '<div class="cap3" id="s3-t" style="top:1430px">"EVERY ANSWER<br>AT ONCE?" <span>MYTH</span></div>'
+    sc = [qdrop(ids[0], 0.02), qdrop(ids[1], 0.25, 'scale:0'), tween(f'#{ids[2]}', fr(3, .55), 'scale:3, opacity:0, rotation:30', 'scale:1, opacity:1, rotation:0', .25, 'power4.in'),
+          shake(f'#{ids[0]}', fr(3, .6)), slam('#s3-t', fr(3, .3))]
+    out_.append(mk(3, html, sc, css))
+    # 4: lock + questions
+    html = ''; ids = []
+    for k, (p, x, y, s, o) in enumerate([('lock', 300, 330, 1.9, {})]):
+        pid, h = qp('s4', k, p, x, y, s, **o); ids.append(pid); html += h
+    html += '<div class="cap3" id="s4-q1" style="top:300px; left:80px; text-align:left; font-size:150px; color:#E0471C">?</div><div class="cap3" id="s4-q2" style="top:560px; left:860px; text-align:left; font-size:150px; color:#E0471C">?</div>'
+    html += '<div class="cap3" id="s4-t" style="top:1430px">HOW DOES IT<br><span>REALLY WORK?</span></div>'
+    sc = [qdrop(ids[0], 0.02), shake(f'#{ids[0]}', fr(4, .5)), pop('#s4-q1', fr(4, .2)), pop('#s4-q2', fr(4, .35)), slam('#s4-t', fr(4, .1))]
+    out_.append(mk(4, html, sc, css))
+    # 5: full video card
+    html = """<div class="shop" id="s5-v" style="left:110px; top:330px; width:860px; height:640px; background:#FFF6E8">
+<div style="margin:26px; height:420px; border-radius:22px; background:#E8D5BC; position:relative; overflow:hidden">
+<div style="position:absolute; left:30px; right:30px; top:26px; font:900 54px 'SD Display'; color:#2A2018; line-height:1.05">Google's Quantum Chip Did 10 Septillion Years of Work in 5 Minutes</div>
+<div style="position:absolute; left:340px; top:250px; width:150px; height:150px; border-radius:75px; background:#E0471C; color:#fff; font:900 70px 'SD Display'; display:flex; align-items:center; justify-content:center">▶</div></div>
+<div style="margin:0 30px; font:700 32px 'SD Text'; color:#8C6B5A">TechDecoded with Max · full video</div></div>
+<div class="cap3" id="s5-t" style="top:1430px">FULL VIDEO<br><span>👇 TAP THE LINK</span></div>"""
+    sc = [fly('#s5-v', 0.02), slam('#s5-t', fr(5, .25)), f'    tl.fromTo("#s5-t", {{ y:0 }}, {{ y:20, duration:.35, yoyo:true, repeat:7, ease:"steps(4)", immediateRender:false }}, {fr(5, .45)});']
+    out_.append(mk(5, html, sc, css + ".shop { position:absolute; border-radius:30px; overflow:hidden; }"))
+    s, tc = subscribe_scene(6); out_.append(s)
+    def sfx(g):
+        return [(0.02, 'thud', .6), (0.3, 'tick', .5), (0.8, 'pop', .4), (S['s1'][0] + 0.05, 'whoosh', .5), (S['s1'][0] + fr(1, .55), 'impact', .6),
+                (S['s2'][0] + 0.02, 'thud', .55), (S['s2'][0] + fr(2, .3), 'powerdown', .45), (S['s2'][0] + fr(2, .45), 'impact', .55),
+                (S['s3'][0] + 0.02, 'whoosh', .45), (S['s3'][0] + fr(3, .55), 'stamp', .75), (S['s4'][0] + fr(4, .5), 'error', .45),
+                (S['s5'][0], 'whoosh', .5), (S['s5'][0] + fr(5, .25), 'ding', .55), (S['s6'][0], 'whoosh', .5), (tc + S['s6'][0], 'click', .9), (tc + S['s6'][0] + 0.1, 'ding', .7)]
+    return out_, sfx
+
 if __name__ == '__main__':
-    scenes, sfx = {'upi01': upi, 'ai01': ai, 'del01': dele, 'face01': face, 'pay01': pay, 'swe01': swe}[K]()
+    scenes, sfx = {'upi01': upi, 'ai01': ai, 'del01': dele, 'face01': face, 'pay01': pay, 'swe01': swe, 'qnt01': qnt}[K]()
     L.sfx_list = lambda: sorted(sfx(lambda i, w: S[f's{i}'][0] + wl(i, w)))
     comp = L.P / 'compositions'; comp.mkdir(parents=True, exist_ok=True)
     for f in comp.glob('*.html'): f.unlink()

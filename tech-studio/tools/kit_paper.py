@@ -38,7 +38,7 @@ def paper_css():
     rules = [f'{c} {{ filter:url(#kp-tex); clip-path:{torn(c)}; border:0 !important; box-shadow:none !important; }}' for c in CARDS]
     rules += [f'{c} {{ clip-path:{torn(c, 6, 4)}; box-shadow:none !important; }}' for c in SMALL]
     return '\n'.join(rules) + """
-.stage { filter:drop-shadow(0 9px 0 rgba(74,50,28,.24)) drop-shadow(0 20px 16px rgba(74,50,28,.26)); }
+.stage, .all { filter:drop-shadow(0 9px 0 rgba(74,50,28,.24)) drop-shadow(0 20px 16px rgba(74,50,28,.26)); }
 .big, .num, .val2, .qt { text-shadow:3px 5px 0 rgba(74,59,51,.85), 6px 10px 0 rgba(90,55,25,.18); }
 .big .acc, .acc { text-shadow:3px 5px 0 #8A3A12, 6px 10px 0 rgba(90,55,25,.18); }
 .kp-sheet { position:absolute; left:-120px; top:-140px; width:2200px; height:1300px; background:#C9A57A; filter:url(#kp-tex); z-index:50; }"""
