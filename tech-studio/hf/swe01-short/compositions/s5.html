@@ -60,12 +60,17 @@
 .th2 { height:440px; border-radius:22px; background:linear-gradient(135deg,#FFE9D9,#F8B48C); position:relative; display:flex; align-items:center; justify-content:center; }
 .th2 b { position:absolute; left:30px; right:30px; top:26px; font:900 58px 'SD Display'; color:#1E120C; line-height:1.05; } .pl2 { width:160px; height:160px; border-radius:80px; background:#FF3B30; color:#fff; font:900 76px 'SD Display'; display:flex; align-items:center; justify-content:center; margin-top:120px; }
 .mt2 { font:700 32px 'SD Text'; color:#9C8576; margin-top:18px; }
+.aitg { position:absolute; padding:2px 14px; border-radius:10px; background:#F87736; color:#fff; font:900 26px 'SD Mono'; }
+.hutg { position:absolute; padding:6px 12px; border-radius:10px; background:#5AA9E6; }
+.dev { position:absolute; display:flex; flex-direction:column; align-items:center; gap:4px; }
   </style>
   <div id="root" data-composition-id="s5" data-width="1080" data-height="1920">
     <div class="all" id="s5-all">
 <div id="s5-all" class="all"><div class="lab" style="position:absolute; left:0; right:0; top:320px; text-align:center">EXPERIENCED DEVELOPERS · METR STUDY</div>
 <div class="ln2" style="top:440px">Without AI<div class="tr2"><i id="s5-a" style="background:#C9A98E"></i></div></div>
 <div class="ln2" style="top:640px">With AI<div class="tr2"><i id="s5-b" style="background:#FF3B30"></i></div></div>
+<div id="s5-ti" style="position:absolute; left:820px; top:880px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="180" height="180" style="color:#FF3B30;display:block;"><path fill="currentColor" d="M128 40a96 96 0 1 0 96 96a96.11 96.11 0 0 0-96-96m45.66 61.66l-40 40a8 8 0 0 1-11.32-11.32l40-40a8 8 0 0 1 11.32 11.32M96 16a8 8 0 0 1 8-8h48a8 8 0 0 1 0 16h-48a8 8 0 0 1-8-8"/></svg></div>
+<div id="s5-ro" style="position:absolute; left:820px; top:620px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="110" height="110" style="color:#F87736;display:block;"><path fill="currentColor" d="M200 48h-64V16a8 8 0 0 0-16 0v32H56a32 32 0 0 0-32 32v112a32 32 0 0 0 32 32h144a32 32 0 0 0 32-32V80a32 32 0 0 0-32-32m-28 48a12 12 0 1 1-12 12a12 12 0 0 1 12-12m-76 88H80a16 16 0 0 1 0-32h16Zm-12-64a12 12 0 1 1 12-12a12 12 0 0 1-12 12m60 64h-32v-32h32Zm32 0h-16v-32h16a16 16 0 0 1 0 32"/></svg></div><div id="s5-hu" style="position:absolute; left:820px; top:420px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="110" height="110" style="color:#9C8576;display:block;"><path fill="currentColor" d="M230.93 220a8 8 0 0 1-6.93 4H32a8 8 0 0 1-6.92-12c15.23-26.33 38.7-45.21 66.09-54.16a72 72 0 1 1 73.66 0c27.39 8.95 50.86 27.83 66.09 54.16a8 8 0 0 1 .01 8"/></svg></div>
 <div class="cap3" id="s5-t" style="top:900px; font-size:120px; color:#FF3B30">19%<br>SLOWER</div></div>
     </div>
   </div>
@@ -76,6 +81,9 @@
     tl.fromTo("#s5-b", { width:"0%" }, { width:"81%", duration:1.6, ease:"power1.inOut" }, 0.1);
     tl.fromTo("#s5-t", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 3.67);
     tl.fromTo("#s5-t", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.992);
+    tl.fromTo("#s5-hu", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.36);
+    tl.fromTo("#s5-ro", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 3.89);
+    tl.fromTo("#s5-ti", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.66);
     tl.to("#s5-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 6.443);
     window.__timelines["s5"] = tl;
   </script>

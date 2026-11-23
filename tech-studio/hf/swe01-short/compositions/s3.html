@@ -60,19 +60,26 @@
 .th2 { height:440px; border-radius:22px; background:linear-gradient(135deg,#FFE9D9,#F8B48C); position:relative; display:flex; align-items:center; justify-content:center; }
 .th2 b { position:absolute; left:30px; right:30px; top:26px; font:900 58px 'SD Display'; color:#1E120C; line-height:1.05; } .pl2 { width:160px; height:160px; border-radius:80px; background:#FF3B30; color:#fff; font:900 76px 'SD Display'; display:flex; align-items:center; justify-content:center; margin-top:120px; }
 .mt2 { font:700 32px 'SD Text'; color:#9C8576; margin-top:18px; }
+.aitg { position:absolute; padding:2px 14px; border-radius:10px; background:#F87736; color:#fff; font:900 26px 'SD Mono'; }
+.hutg { position:absolute; padding:6px 12px; border-radius:10px; background:#5AA9E6; }
+.dev { position:absolute; display:flex; flex-direction:column; align-items:center; gap:4px; }
   </style>
   <div id="root" data-composition-id="s3" data-width="1080" data-height="1920">
     <div class="all" id="s3-all">
 <div id="s3-all" class="all"><div class="lab" style="position:absolute; left:0; right:0; top:300px; text-align:center">US SOFTWARE DEVELOPERS · STANFORD</div>
 <div class="vbar" id="s3-b" style="left:390px; height:520px; background:#FF3B30"></div><div class="vval" id="s3-v" style="left:340px; top:520px; color:#FF3B30">≈ −20%</div>
-<div class="axis2"></div><div class="vlab" style="left:340px">AGE 22–25</div></div>
+<div class="axis2"></div><div class="vlab" style="left:340px">AGE 22–25</div>
+<div id="s3-tr" style="position:absolute; left:780px; top:460px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="200" height="200" style="color:#FF3B30;display:block;"><path fill="currentColor" d="M244 128v64a12 12 0 0 1-12 12h-64a12 12 0 0 1 0-24h35l-67-67l-31.51 31.52a12 12 0 0 1-17 0l-72-72a12 12 0 0 1 17-17L96 119l31.51-31.52a12 12 0 0 1 17 0L220 163v-35a12 12 0 0 1 24 0"/></svg></div>
+<div id="s3-ic" style="position:absolute; left:110px; top:470px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="170" height="170" style="color:#2A2018;display:block;"><path fill="currentColor" d="M176 207.24a119 119 0 0 0 16-7.73V240a8 8 0 0 1-16 0Zm11.76-88.43l-56-29.87a8 8 0 0 0-7.52 14.12L171 128l17-9.06Zm64-29.87l-120-64a8 8 0 0 0-7.52 0l-120 64a8 8 0 0 0 0 14.12L32 117.87v48.42a15.9 15.9 0 0 0 4.06 10.65C49.16 191.53 78.51 216 128 216a130 130 0 0 0 48-8.76v-76.57l-5-2.67l-43 22.93L43.83 106L25 96l103-54.93L231 96l-18.78 10h-.06L188 118.94a8 8 0 0 1 4 6.93v73.64a115.6 115.6 0 0 0 27.94-22.57a15.9 15.9 0 0 0 4.06-10.65v-48.42l27.76-14.81a8 8 0 0 0 0-14.12"/></svg></div></div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s3-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
-    tl.fromTo("#s3-b", { scaleY:1 }, { scaleY:.25, duration:0.9, ease:"power3.in" }, 0.05);
+    tl.fromTo("#s3-ic", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.05);
     tl.fromTo("#s3-v", { opacity:0, y:0 }, { opacity:1, y:390, duration:.5, ease:"back.out(1.6)" }, 1.789);
+    tl.fromTo("#s3-b", { scaleY:1 }, { scaleY:.25, duration:0.9, ease:"power3.in" }, 0.05);
+    tl.fromTo("#s3-v", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 2.028);
     tl.fromTo("#s3-b", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 2.981);
     tl.to("#s3-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 4.759);
     window.__timelines["s3"] = tl;

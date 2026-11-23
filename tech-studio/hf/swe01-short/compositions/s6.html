@@ -60,16 +60,22 @@
 .th2 { height:440px; border-radius:22px; background:linear-gradient(135deg,#FFE9D9,#F8B48C); position:relative; display:flex; align-items:center; justify-content:center; }
 .th2 b { position:absolute; left:30px; right:30px; top:26px; font:900 58px 'SD Display'; color:#1E120C; line-height:1.05; } .pl2 { width:160px; height:160px; border-radius:80px; background:#FF3B30; color:#fff; font:900 76px 'SD Display'; display:flex; align-items:center; justify-content:center; margin-top:120px; }
 .mt2 { font:700 32px 'SD Text'; color:#9C8576; margin-top:18px; }
+.aitg { position:absolute; padding:2px 14px; border-radius:10px; background:#F87736; color:#fff; font:900 26px 'SD Mono'; }
+.hutg { position:absolute; padding:6px 12px; border-radius:10px; background:#5AA9E6; }
+.dev { position:absolute; display:flex; flex-direction:column; align-items:center; gap:4px; }
   </style>
   <div id="root" data-composition-id="s6" data-width="1080" data-height="1920">
     <div class="all" id="s6-all">
-<div id="s6-all" class="all"><div class="vc2" id="s6-v"><div class="th2"><b>AI Writes 75% of Google's New Code. So Why Are Developer Jobs Growing?</b><div class="pl2">▶</div></div><div class="mt2">TechDecoded with Max · new video</div></div>
-<div class="cap3" id="s6-t" style="top:1000px">FULL STORY<br><span>👆 WATCH NEXT</span></div></div>
+<div id="s6-all" class="all"><div class="vc2" id="s6-v"><img src="assets/img/thumb_ep04.png" style="width:812px; border-radius:20px; display:block"/><div class="mt2">TechDecoded with Max · new video</div></div>
+<div id="s6-yt" style="position:absolute; left:440px; top:180px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 180" width="200" height="141" style="display:block;"><path fill="red" d="M250.346 28.075A32.18 32.18 0 0 0 227.69 5.418C207.824 0 127.87 0 127.87 0S47.912.164 28.046 5.582A32.18 32.18 0 0 0 5.39 28.24c-6.009 35.298-8.34 89.084.165 122.97a32.18 32.18 0 0 0 22.656 22.657c19.866 5.418 99.822 5.418 99.822 5.418s79.955 0 99.82-5.418a32.18 32.18 0 0 0 22.657-22.657c6.338-35.348 8.291-89.1-.164-123.134"/><path fill="#fff" d="m102.421 128.06l66.328-38.418l-66.328-38.418z"/></svg></div><div id="s6-h" style="position:absolute; left:780px; top:1080px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="150" height="150" style="color:#F87736;display:block;"><path fill="currentColor" d="M64 64a48 48 0 0 1 96 0a8 8 0 0 1-16 0a32 32 0 0 0-64 0a8 8 0 0 1-16 0m143.23 56c-8.61.4-15.23 7.82-15.23 16.43v7.28a8.17 8.17 0 0 1-7.47 8.25a8 8 0 0 1-8.53-8v-23.51c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 144 120v15.73a8.17 8.17 0 0 1-7.47 8.25a8 8 0 0 1-8.53-8V64.45c0-8.61-6.62-16-15.23-16.43A16 16 0 0 0 96 64v119.74a8.19 8.19 0 0 1-6.72 8.16h-.12a6.09 6.09 0 0 1-6-3.09l-21-36.44c-4.3-7.46-13.74-10.57-21.4-6.62A16 16 0 0 0 34.15 168l30.95 60.05A8 8 0 0 0 72 232h136a8 8 0 0 0 7.16-4.42c.36-.72 8.84-15.06 8.84-40.65V136a16 16 0 0 0-16.77-16"/></svg></div>
+<div class="cap3" id="s6-t" style="top:1000px">FULL STORY<br><span>WATCH NEXT</span></div></div>
     </div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#s6-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.fromTo("#s6-yt", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.02);
+    tl.fromTo("#s6-h", { x:200, y:200, opacity:0 }, { x:0, y:0, opacity:1, duration:0.35, ease:"power3.out" }, 2.154);
     tl.fromTo("#s6-v", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
     tl.fromTo("#s6-t", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 1.414);
     tl.fromTo("#s6-t", { y:0 }, { y:-18, duration:.35, yoyo:true, repeat:5, ease:"sine.inOut", immediateRender:false }, 1.969);

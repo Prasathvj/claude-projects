@@ -1,48 +1,54 @@
-"""Wikimedia Commons helper: search files and show licence/author, or download a scaled copy with a credits record.
-Usage: python3 tools/commons.py search "<query>" [n]
-       python3 tools/commons.py get "File:Name.jpg" <out.jpg> [width]   (appends credit to <out dir>/credits.json)"""
-import json, sys, urllib.parse, urllib.request
+"""Free photos from Wikimedia Commons with licence + credit, paced (the API rate-limits this IP).
+Usage: python3 tools/commons.py fetch "File:Name.jpg" [out_name]      -> assets_img/<out_name> + credits.json entry
+       python3 tools/commons.py search "query" [n]                       -> prints file titles
+Only free licences (CC0, PD, CC BY, CC BY-SA) are accepted; credit goes in the video description."""
+import json, sys, time, urllib.parse, urllib.request
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+IMG = ROOT / 'assets_img'
 UA = {'User-Agent': 'TechDecodedStudio/1.0 (educational explainer videos)'}
 API = 'https://commons.wikimedia.org/w/api.php?'
+OK = ('cc0', 'public domain', 'pd', 'cc by', 'cc-by')
 
-def api(**p):
-    p['format'] = 'json'
-    with urllib.request.urlopen(urllib.request.Request(API + urllib.parse.urlencode(p), headers=UA), timeout=30) as r:
-        return json.load(r)
 
-def info(titles, width=1080):
-    d = api(action='query', titles='|'.join(titles), prop='imageinfo', iiprop='url|extmetadata|size', iiurlwidth=width)
-    out = []
-    for pg in d['query']['pages'].values():
-        if 'imageinfo' not in pg: continue
-        ii = pg['imageinfo'][0]; m = ii.get('extmetadata', {})
-        g = lambda k: (m.get(k, {}).get('value') or '').replace('\n', ' ')
-        import re
-        strip = lambda s: re.sub('<[^>]+>', '', s).strip()
-        out.append({'title': pg['title'], 'thumb': ii.get('thumburl') or ii['url'], 'orig': ii['url'], 'w': ii.get('width'), 'h': ii.get('height'),
-                    'license': strip(g('LicenseShortName')), 'artist': strip(g('Artist'))[:80], 'credit': strip(g('Credit'))[:80],
-                    'page': ii.get('descriptionurl')})
-    return out
+def get(url, tries=7):
+    wait = 15
+    for k in range(tries):
+        try:
+            return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60).read()
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or k == tries - 1:
+                raise
+            time.sleep(wait); wait *= 2
+
+
+def search(q, n=8):
+    d = json.loads(get(API + urllib.parse.urlencode(dict(action='query', format='json', list='search', srnamespace=6, srlimit=n, srsearch=q))))
+    return [x['title'] for x in d['query']['search']]
+
+
+def fetch(title, name=None, width=1280):
+    d = json.loads(get(API + urllib.parse.urlencode(dict(action='query', format='json', titles=title, prop='imageinfo', iiprop='url|extmetadata', iiurlwidth=width))))
+    p = next(iter(d['query']['pages'].values()))
+    ii = p['imageinfo'][0]; m = ii['extmetadata']
+    lic = m.get('LicenseShortName', {}).get('value', '')
+    if not lic.lower().startswith(OK):
+        raise SystemExit(f'not a free licence: {lic}')
+    import re
+    artist = re.sub('<[^>]+>', '', m.get('Artist', {}).get('value', '')).strip()
+    name = name or title[5:].replace(' ', '_')
+    time.sleep(3)
+    (IMG / name).write_bytes(get(ii['thumburl']))
+    cf = IMG / 'credits.json'
+    cr = json.loads(cf.read_text()) if cf.exists() else {}
+    cr[name] = dict(title=title, license=lic, artist=artist, page=ii['descriptionurl'])
+    cf.write_text(json.dumps(cr, indent=1, ensure_ascii=False))
+    print('saved', name, '|', lic, '|', artist[:60])
+
 
 if __name__ == '__main__':
     if sys.argv[1] == 'search':
-        n = int(sys.argv[3]) if len(sys.argv) > 3 else 6
-        hits = [x['title'] for x in api(action='query', list='search', srsearch=sys.argv[2], srnamespace=6, srlimit=n)['query']['search']]
-        for x in info(hits) if hits else []:
-            print(f"{x['license']:<14} {x['w']}x{x['h']} | {x['title']} | {x['artist']}")
+        print('\n'.join(search(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else 8)))
     else:
-        title, dst = sys.argv[2], Path(sys.argv[3]); w = int(sys.argv[4]) if len(sys.argv) > 4 else 1280
-        w = min((960, 1280, 1920), key=lambda s: abs(s - w))
-        x = info([title], w)[0]
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        src = x['thumb']   # standard-size thumbnails only (Wikimedia asks for cached sizes: 960, 1280, ...)
-        with urllib.request.urlopen(urllib.request.Request(src, headers=UA), timeout=120) as r: dst.write_bytes(r.read())
-        if src == x['orig']:
-            from PIL import Image
-            im = Image.open(dst).convert('RGB'); im.thumbnail((w, w * 2)); im.save(dst, quality=90)
-        cf = dst.parent / 'credits.json'
-        cr = json.loads(cf.read_text()) if cf.exists() else {}
-        cr[dst.name] = {k: x[k] for k in ('title', 'license', 'artist', 'credit', 'page')}
-        cf.write_text(json.dumps(cr, indent=1))
-        print('saved', dst, x['license'], '|', x['artist'])
+        fetch(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)

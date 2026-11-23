@@ -31,7 +31,7 @@ def torn(seed, n=14, amp=2.4):
     return 'polygon(' + ', '.join(pts) + ')'
 
 CARDS = ['.card', '.sp', '.ib', '.cr', '.det', '.rr', '.fn', '.ft', '.rg', '.tw', '.pc', '.sk', '.duo', '.m', '.msg', '.ct6', '.vid9',
-         '.co', '.st5', '.np', '.lp', '.nd', '.tl', '.nt', '.nt3', '.stat2', '.po', '.pf', '.lt', '.rcpt', '.vcard', '.shop', '.tg', '.note']
+         '.co', '.st5', '.np', '.lp', '.nd', '.tl', '.nt', '.nt3', '.stat2', '.po', '.pf', '.lt', '.rcpt', '.vcard', '.shop', '.tg', '.note', '.qcard', '.qclip']
 SMALL = ['.tile', '.chip', '.chip2', '.it', '.cf', '.sub', '.ok', '.bad', '.tag2', '.vc7', '.gc7']
 
 def paper_css():

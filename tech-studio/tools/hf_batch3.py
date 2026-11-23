@@ -450,45 +450,62 @@ SWECSS = PAYCSS + """.ed2 { position:absolute; left:90px; top:300px; width:900px
 .vc2 { position:absolute; left:110px; top:330px; width:860px; padding:24px; border-radius:30px; background:#FFFFFF; box-shadow:0 30px 70px rgba(90,50,20,.25); }
 .th2 { height:440px; border-radius:22px; background:linear-gradient(135deg,#FFE9D9,#F8B48C); position:relative; display:flex; align-items:center; justify-content:center; }
 .th2 b { position:absolute; left:30px; right:30px; top:26px; font:900 58px 'SD Display'; color:#1E120C; line-height:1.05; } .pl2 { width:160px; height:160px; border-radius:80px; background:#FF3B30; color:#fff; font:900 76px 'SD Display'; display:flex; align-items:center; justify-content:center; margin-top:120px; }
-.mt2 { font:700 32px 'SD Text'; color:#8C6B5A; margin-top:18px; }"""
+.mt2 { font:700 32px 'SD Text'; color:#8C6B5A; margin-top:18px; }
+.aitg { position:absolute; padding:2px 14px; border-radius:10px; background:#F87736; color:#fff; font:900 26px 'SD Mono'; }
+.hutg { position:absolute; padding:6px 12px; border-radius:10px; background:#5AA9E6; }
+.dev { position:absolute; display:flex; flex-direction:column; align-items:center; gap:4px; }"""
 def swe():
+    import kit_assets as KA, shutil as _sh
     out_ = []
+    W = lambda i, w, n=0: max(0.02, wl(i, w, n) - 0.08)
     code = ['def checkout(cart):', '    total = sum(cart)', '    tax = total * 0.18', '    order = save(total)', '    return order']
     rows = ''.join(f'<div class="el2" id="s0-l{k}">{E(x)}</div>' for k, x in enumerate(code))
     body = f"""<div class="ed2" id="s0-e"><div class="eb2">checkout.py · ILLUSTRATION &nbsp; <span style="color:#F87736">✦ AI</span></div><div style="padding-top:24px">{rows}</div></div>
 <div class="pc2" id="s0-p"><small>GOOGLE · NEW CODE BY AI</small><b><i style="font-style:normal" id="s0-n">25</i>%</b></div>
+<div id="s0-g" style="position:absolute; left:80px; top:170px; display:flex; align-items:center; gap:18px">{KA.icon('logos:google', 210)}</div>
+<div class="aitg" id="s0-a0" style="left:860px; top:385px">AI</div><div class="aitg" id="s0-a1" style="left:860px; top:442px">AI</div><div class="aitg" id="s0-a2" style="left:860px; top:499px">AI</div>
+<div class="hutg" id="s0-a3" style="left:840px; top:552px">{KA.icon('ph:user-fill', 30, '#FFFFFF')}</div>
 <div class="cap3" id="s0-t" style="top:960px">AI WRITES <span>3 OF 4</span><br>NEW LINES</div>"""
     sc = [fly('#s0-e', 0.02)] + [tween(f'#s0-l{k}', 0.1 + k * 0.18, 'opacity:0, x:-30', 'opacity:1, x:0', .15, 'power2.out') for k in range(5)]
-    sc += [pop('#s0-p', 0.3), f'    tl.fromTo("#s0-n", {{ innerText:25 }}, {{ innerText:75, snap:{{ innerText:1 }}, duration:1.6, ease:"power2.inOut" }}, 0.4);', slam('#s0-t', fr(0, .5))]
+    sc += [pop('#s0-g', 0.02)] + [pop(f'#s0-a{k}', W(0, w)) for k, w in enumerate(['three', 'out', 'every', 'four'])] + [pop('#s0-p', 0.3), f'    tl.fromTo("#s0-n", {{ innerText:25 }}, {{ innerText:75, snap:{{ innerText:1 }}, duration:1.6, ease:"power2.inOut" }}, 0.4);', slam('#s0-t', fr(0, .5))]
     out_.append(mk(0, body, sc, SWECSS))
     body = f"""<div class="cap3" id="s1-t" style="top:420px; font-size:130px">ARE CODERS<br><span>DONE?</span></div><div class="cap3" id="s1-s" style="top:800px; font-size:56px">Who is <span>actually</span> losing jobs?</div>""" + \
-        bit('s1', [('n', {'state': 'scan', 'extra': ['laser']})], 390, 960, 300)
-    sc = [slam('#s1-t', 0.02), pop('#s1-s', fr(1, .45))] + bit_on('s1', 'n', 0, False) + bit_float('s1')
+        ''.join(f'<div class="dev" id="s1-d{k}" style="left:{90 + k * 185}px; top:930px">' + KA.icon('ph:user-circle-fill', 120, '#8C6B5A') + KA.icon('ph:laptop-fill', 90, '#2A2018') + '</div>' for k in range(5)) + \
+        f'<div class="dev" id="s1-m" style="left:60px; top:880px">' + KA.icon('ph:magnifying-glass-bold', 220, '#F87736') + '</div>'
+    sc = [slam('#s1-t', 0.02), pop('#s1-s', W(1, 'look'))] + [pop(f'#s1-d{k}', W(1, 'programmers') + k * .08) for k in range(5)] + [tween('#s1-m', W(1, 'look'), 'x:-300, opacity:0', 'x:0, opacity:1', .3, 'power2.out'), f'    tl.to("#s1-m", {{ x:760, duration:1.3, ease:"sine.inOut" }}, {W(1, "actually")});']
     out_.append(mk(1, body, sc, SWECSS))
     for i, (lab, val, col, h, cap) in enumerate([('AGE 30+', 'GROWING ↑', '#3DDC97', 520, 'STILL<br><span>GROWING</span>'), ('AGE 22–25', '≈ −20%', '#FF3B30', 520, 'DOWN<br><span>~20%</span>')], start=2):
         body = f"""<div class="lab" style="position:absolute; left:0; right:0; top:300px; text-align:center">US SOFTWARE DEVELOPERS · STANFORD</div>
 <div class="vbar" id="s{i}-b" style="left:390px; height:{h}px; background:{col}"></div><div class="vval" id="s{i}-v" style="left:340px; top:{1160 - h - 120}px; color:{col}">{val}</div>
-<div class="axis2"></div><div class="vlab" style="left:340px">{lab}</div>"""
-        sc = [tween(f'#s{i}-b', 0.05, 'scaleY:0' if i == 2 else 'scaleY:1', 'scaleY:1' if i == 2 else 'scaleY:.25', .9, 'expo.out' if i == 2 else 'power3.in'), pop(f'#s{i}-v', fr(i, .4))]
+<div class="axis2"></div><div class="vlab" style="left:340px">{lab}</div>
+<div id="s{i}-tr" style="position:absolute; left:780px; top:460px">{KA.icon('ph:trend-up-bold' if i == 2 else 'ph:trend-down-bold', 200, col)}</div>
+<div id="s{i}-ic" style="position:absolute; left:110px; top:470px">{KA.icon('ph:briefcase-fill' if i == 2 else 'ph:graduation-cap-fill', 170, '#2A2018')}</div>"""
+        sc = [pop(f'#s{i}-ic', 0.05), pop(f'#s{i}-tr', fr(i, .45)), tween(f'#s{i}-b', 0.05, 'scaleY:0' if i == 2 else 'scaleY:1', 'scaleY:1' if i == 2 else 'scaleY:.25', .9, 'expo.out' if i == 2 else 'power3.in'), pop(f'#s{i}-v', fr(i, .4))]
         if i == 3:
             sc[1] = f'    tl.fromTo("#s{i}-v", {{ opacity:0, y:0 }}, {{ opacity:1, y:390, duration:.5, ease:"back.out(1.6)" }}, {fr(i, .35)});'
             sc.append(shake('#s3-b', fr(3, .6)))
         out_.append(mk(i, body, sc, SWECSS))
     rungs = ''.join(f'<div class="rg2{" low" if k == 3 else ""}" id="s4-r{k}" style="top:{330 + k * 190}px">{E(t)}</div>' for k, t in enumerate(['Senior', 'Mid-level', 'Junior', 'First job']))
-    body = f"""<div class="rail2" style="left:210px"></div><div class="rail2" style="left:844px"></div>{rungs}<div class="cap3" id="s4-t" style="top:1120px; font-size:70px">AI IS REMOVING<br><span>THE FIRST RUNG</span></div>"""
+    body = f"""<div class="rail2" style="left:210px"></div><div class="rail2" style="left:844px"></div>{rungs}<div id="s4-bc" style="position:absolute; left:870px; top:330px">{KA.icon('ph:briefcase-fill', 90, '#2A2018')}</div><div id="s4-gc" style="position:absolute; left:870px; top:900px">{KA.icon('ph:graduation-cap-fill', 100, '#D93025')}</div>
+<div id="s4-ai" style="position:absolute; left:60px; top:860px">{KA.icon('ph:robot-fill', 140, '#F87736')}</div>
+<div class="cap3" id="s4-t" style="top:1120px; font-size:70px">AI IS REMOVING<br><span>THE FIRST RUNG</span></div>"""
     sc = [tween(f'#s4-r{k}', 0.02 + k * 0.08, 'opacity:0, x:-80', 'opacity:1, x:0', .3, 'power3.out') for k in range(4)]
-    sc += [shake('#s4-r3', fr(4, .45)), f'    tl.to("#s4-r3", {{ y:420, rotation:-16, opacity:0, duration:.8, ease:"power3.in" }}, {fr(4, .55)});', slam('#s4-t', fr(4, .3))]
+    sc += [pop('#s4-bc', .3), pop('#s4-gc', .45), tween('#s4-ai', W(4, 'removing'), 'x:-200, opacity:0', 'x:0, opacity:1', .3, 'power2.out'), f'    tl.to("#s4-gc", {{ y:420, rotation:30, opacity:0, duration:.8, ease:"power3.in" }}, {fr(4, .55)});', shake('#s4-r3', fr(4, .45)), f'    tl.to("#s4-r3", {{ y:420, rotation:-16, opacity:0, duration:.8, ease:"power3.in" }}, {fr(4, .55)});', slam('#s4-t', fr(4, .3))]
     out_.append(mk(4, body, sc, SWECSS))
-    body = """<div class="lab" style="position:absolute; left:0; right:0; top:320px; text-align:center">EXPERIENCED DEVELOPERS · METR STUDY</div>
+    body = f"""<div class="lab" style="position:absolute; left:0; right:0; top:320px; text-align:center">EXPERIENCED DEVELOPERS · METR STUDY</div>
 <div class="ln2" style="top:440px">Without AI<div class="tr2"><i id="s5-a" style="background:#C9A98E"></i></div></div>
 <div class="ln2" style="top:640px">With AI<div class="tr2"><i id="s5-b" style="background:#FF3B30"></i></div></div>
+<div id="s5-ti" style="position:absolute; left:820px; top:880px">{KA.icon('ph:timer-fill', 180, '#FF3B30')}</div>
+<div id="s5-ro" style="position:absolute; left:820px; top:620px">{KA.icon('ph:robot-fill', 110, '#F87736')}</div><div id="s5-hu" style="position:absolute; left:820px; top:420px">{KA.icon('ph:user-fill', 110, '#8C6B5A')}</div>
 <div class="cap3" id="s5-t" style="top:900px; font-size:120px; color:#FF3B30">19%<br>SLOWER</div>"""
     sc = [tween('#s5-a', 0.1, 'width:"0%"', 'width:"100%"', 1.6, 'power1.inOut'), tween('#s5-b', 0.1, 'width:"0%"', 'width:"81%"', 1.6, 'power1.inOut'),
-          slam('#s5-t', fr(5, .55)), shake('#s5-t', fr(5, .6))]
+          slam('#s5-t', fr(5, .55)), shake('#s5-t', fr(5, .6)), pop('#s5-hu', W(5, 'experienced')), pop('#s5-ro', W(5, 'ai')), pop('#s5-ti', W(5, 'slower'))]
     out_.append(mk(5, body, sc, SWECSS))
-    body = """<div class="vc2" id="s6-v"><div class="th2"><b>AI Writes 75% of Google's New Code. So Why Are Developer Jobs Growing?</b><div class="pl2">▶</div></div><div class="mt2">TechDecoded with Max · new video</div></div>
-<div class="cap3" id="s6-t" style="top:1000px">FULL STORY<br><span>👆 WATCH NEXT</span></div>"""
-    sc = [fly('#s6-v', 0.02), slam('#s6-t', fr(6, .35)), f'    tl.fromTo("#s6-t", {{ y:0 }}, {{ y:-18, duration:.35, yoyo:true, repeat:5, ease:"sine.inOut", immediateRender:false }}, {fr(6, .5)});']
+    body = f"""<div class="vc2" id="s6-v"><img src="assets/img/thumb_ep04.png" style="width:812px; border-radius:20px; display:block"/><div class="mt2">TechDecoded with Max · new video</div></div>
+<div id="s6-yt" style="position:absolute; left:440px; top:180px">{KA.icon('logos:youtube-icon', 200)}</div><div id="s6-h" style="position:absolute; left:780px; top:1080px">{KA.icon('ph:hand-tap-fill', 150, '#F87736')}</div>
+<div class="cap3" id="s6-t" style="top:1000px">FULL STORY<br><span>WATCH NEXT</span></div>"""
+    (L.P / 'assets/img').mkdir(parents=True, exist_ok=True); _sh.copy(KA.IMG / 'thumb_ep04.png', L.P / 'assets/img/thumb_ep04.png')
+    sc = [pop('#s6-yt', 0.02), tween('#s6-h', fr(6, .55), 'x:200, y:200, opacity:0', 'x:0, y:0, opacity:1', .35, 'power3.out'), fly('#s6-v', 0.02), slam('#s6-t', fr(6, .35)), f'    tl.fromTo("#s6-t", {{ y:0 }}, {{ y:-18, duration:.35, yoyo:true, repeat:5, ease:"sine.inOut", immediateRender:false }}, {fr(6, .5)});']
     out_.append(mk(6, body, sc, SWECSS))
     s, tc = subscribe_scene(7); out_.append(s)
     def sfx(g):
@@ -564,6 +581,106 @@ def qnt():
                 (S['s2'][0] + 0.02, 'thud', .55), (S['s2'][0] + fr(2, .3), 'powerdown', .45), (S['s2'][0] + fr(2, .45), 'impact', .55),
                 (S['s3'][0] + 0.02, 'whoosh', .45), (S['s3'][0] + fr(3, .55), 'stamp', .75), (S['s4'][0] + fr(4, .5), 'error', .45),
                 (S['s5'][0], 'whoosh', .5), (S['s5'][0] + fr(5, .25), 'ding', .55), (S['s6'][0], 'whoosh', .5), (tc + S['s6'][0], 'click', .9), (tc + S['s6'][0] + 0.1, 'ding', .7)]
+    return out_, sfx
+
+# ================================================================= qnt01 v2 (owner review 2026-11-23): mixed style (old pop cards/counters +
+# papercut props + Vox clipping), real logos/icons, papercut photo stickers; one exact visual per beat, changes every ~1-1.5 s.
+import kit_assets as KA
+QCSS = """.qcard { position:absolute; background:#FFFAF2; border-radius:26px; padding:26px 34px; box-shadow:0 18px 40px rgba(74,50,28,.25); }
+.qlab { font:800 30px 'SD Text'; letter-spacing:3px; color:#8C6B5A; }
+.qbig { font:900 120px 'SD Display'; color:#2A2018; line-height:1; letter-spacing:-3px; } .qbig span { color:#F87736; }
+.qtag { position:absolute; padding:12px 24px; border-radius:16px; background:#2A2018; color:#FFFAF2; font:800 34px 'SD Text'; }
+.qrow { display:flex; align-items:center; gap:22px; }
+.qbar { position:absolute; height:74px; border-radius:14px; }
+.qclip { position:absolute; background:#F4ECDD; padding:30px 34px; width:860px; box-shadow:0 18px 40px rgba(74,50,28,.25); }
+.qclip .hd { font:900 64px Georgia, serif; color:#2A2018; line-height:1.05; } .qclip .by { font:600 24px 'SD Text'; color:#8C6B5A; letter-spacing:2px; margin-bottom:14px; }
+.stamp { position:absolute; font:900 170px 'SD Display'; color:#E0471C; border:14px solid #E0471C; border-radius:24px; padding:0 34px; transform:rotate(-12deg); letter-spacing:6px; background:rgba(255,250,242,.55); }
+.ghost { position:absolute; opacity:.35; }
+.kpi { position:absolute; }
+.qsnow { position:absolute; opacity:.85; }"""
+def at(sid, sel, t, frm, to, d=.4, ease='back.out(1.7)'):
+    return tween(sel, t, frm, to, d, ease)
+def qnt():
+    out_ = []
+    W = lambda i, w, n=0: max(0.02, wl(i, w, n) - 0.08)
+    P = str(L.P)
+    css = KPR.CSS + PAYCSS + QCSS
+    # ---- s0: Google chip, 5-minute counter, Frontier supercomputer, septillion years
+    cid, chip = qp('s0', 0, 'chip', 120, 330, 1.05, text='Willow')
+    body = f"""<div class="kpi" id="s0-g" style="left:96px; top:270px">{KA.paper_icon('logos:google-icon', 70, pad=24)}</div>
+{chip}
+<div class="qcard" id="s0-c" style="left:110px; top:740px; width:400px"><div class="qrow">{KA.icon('ph:clock-countdown-fill', 70, '#F87736')}<div><div class="qlab">QUANTUM CHIP</div><div class="qbig" style="font-size:96px"><span id="s0-m">0</span> MIN</div></div></div></div>
+<div id="s0-f" style="position:absolute; left:560px; top:300px">{KA.sticker('frontier.jpg', P, 470)}</div>
+<div class="qtag" id="s0-ft" style="left:600px; top:690px">a top supercomputer</div>
+<div class="qcard" id="s0-y" style="left:40px; top:960px; width:1000px; text-align:center"><div class="qrow" style="justify-content:center">{KA.icon('ph:hourglass-high-fill', 64, '#E0471C')}<div class="qlab">SUPERCOMPUTER</div></div><div class="qbig" style="font-size:60px; letter-spacing:-1px" id="s0-n">10,000,000,000,000,000,000,000,000</div><div class="qlab" style="color:#E0471C">YEARS</div></div>"""
+    sc = [pop('#s0-g', 0.02), qdrop(cid, 0.12), pop('#s0-c', W(0, 'five')), counter('#s0-m', W(0, 'five') + .15, ['1', '2', '3', '4', '5']),
+          at('s0', '#s0-f', W(0, 'supercomputer'), 'x:700, rotation:14, opacity:0', 'x:0, rotation:0, opacity:1', .45),
+          pop('#s0-ft', W(0, 'supercomputer') + .3), slam('#s0-y', W(0, 'ten')), shake('#s0-y', W(0, 'years'))]
+    out_.append(mk(0, body, sc, css))
+    # ---- s1: Hubble deep field (universe) vs runaway bar
+    body = f"""<div id="s1-u" style="position:absolute; left:80px; top:290px">{KA.sticker('deepfield.jpg', P, 440)}</div>
+<div class="qcard" id="s1-uc" style="left:560px; top:330px; width:450px"><div class="qrow">{KA.icon('ph:planet-fill', 60, '#7A5CFF')}<div class="qlab">THE UNIVERSE</div></div><div class="qbig" style="font-size:76px">13.8 <span>billion</span> yrs</div></div>
+<div class="qlab" style="position:absolute; left:80px; top:800px">universe's age</div><div class="qbar" id="s1-b1" style="left:80px; top:840px; width:60px; background:#7A5CFF"></div>
+<div class="qlab" style="position:absolute; left:80px; top:950px">supercomputer job</div><div class="qbar" id="s1-b2" style="left:80px; top:990px; width:1200px; background:#E0471C; transform-origin:left center"></div>
+<div class="qtag" id="s1-x" style="left:560px; top:1090px; font-size:64px; background:#E0471C">×700 trillion</div>"""
+    sc = [at('s1', '#s1-u', 0.02, 'scale:0, rotation:-20, opacity:0', 'scale:1, rotation:0, opacity:1', .45), pop('#s1-uc', W(1, 'universe') - .6),
+          tween('#s1-b1', W(1, 'hundreds'), 'scaleX:0', 'scaleX:1', .3, 'power2.out'), tween('#s1-b2', W(1, 'trillions'), 'scaleX:0', 'scaleX:1', 1.1, 'power2.in'),
+          slam('#s1-x', W(1, 'times')), shake('#s1-x', W(1, 'longer'))]
+    out_.append(mk(1, body, sc, css))
+    # ---- s2: real dilution fridge + temperature drop
+    snow = ''.join(f'<div class="qsnow" id="s2-sn{k}" style="left:{560 + (k * 97) % 420}px; top:{280 + (k * 173) % 300}px">{KA.icon("ph:snowflake-bold", 46 + (k % 3) * 14, "#5AA9E6")}</div>' for k in range(7))
+    body = f"""<div id="s2-f" style="position:absolute; left:60px; top:260px">{KA.sticker('cryostat.png', P, 470)}</div>
+<div class="qtag" id="s2-ft" style="left:90px; top:1100px">real quantum fridge</div>{snow}
+<div class="qcard" id="s2-t" style="left:560px; top:620px; width:470px"><div class="qrow">{KA.icon('ph:thermometer-cold-fill', 80, '#1C7ED6')}<div><div class="qlab" id="s2-l">OUTER SPACE</div><div class="qbig" style="font-size:100px;color:#1C7ED6" id="s2-k">2.7 K</div></div></div></div>
+<div class="qtag" id="s2-x" style="left:600px; top:930px; font-size:60px; background:#1C7ED6">270× colder</div>"""
+    sc = [at('s2', '#s2-f', 0.02, 'y:-1200, rotation:-8, opacity:1', 'y:0, rotation:0, opacity:1', .5), pop('#s2-ft', W(2, 'runs')),
+          pop('#s2-t', W(2, 'about'))] + [pop(f'#s2-sn{k}', W(2, 'seventy') + k * .08) for k in range(7)]
+    sc += [counter('#s2-k', W(2, 'colder'), ['2.7 K', '1 K', '0.3 K', '0.1 K', '0.03 K', '0.01 K'], .09),
+           counter('#s2-l', W(2, 'colder'), ['OUTER SPACE', 'OUTER SPACE', 'COOLING…', 'COOLING…', 'QUANTUM CHIP', 'QUANTUM CHIP'], .09),
+           slam('#s2-x', W(2, 'space'))]
+    out_.append(mk(2, body, sc, css))
+    # ---- s3: Vox clipping "tries every answer at once" -> ghosts in maze -> MYTH stamp
+    mid, maze = qp('s3', 0, 'maze', 260, 640, 1.25)
+    ghosts = ''.join(qp('s3', 10 + k, 'bit', 300 + (k % 3) * 160, 690 + (k // 3) * 150, .32)[1].replace('class="pp"', 'class="pp ghost"', 1) for k in range(6))
+    gids = [f's3-p{10 + k}' for k in range(6)]
+    body = f"""<div class="qclip" id="s3-c" style="left:110px; top:270px"><div class="by">THE POPULAR CLAIM</div><div class="hd">"Quantum computers try <u style="text-decoration-color:#F87736;text-decoration-thickness:10px">every answer at once</u>"</div></div>
+{maze}{ghosts}<div class="stamp" id="s3-s" style="left:230px; top:760px">MYTH</div>"""
+    sc = [pop('#s3-c', 0.02), qdrop(mid, W(3, 'try'))] + [pop('#' + g, W(3, 'every') + k * .07) for k, g in enumerate(gids)]
+    sc += [tween('#s3-s', W(3, 'myth') - .25, 'scale:3, opacity:0, rotation:10', 'scale:1, opacity:1, rotation:-12', .22, 'power4.in'), shake('#s3-all', W(3, 'myth'))]
+    out_.append(mk(3, body, sc, css))
+    # ---- s4: how does it work (gears + ?) -> banks get ready (bank, lock, shield, rupee)
+    body = f"""<div class="kpi" id="s4-g1" style="left:120px; top:300px">{KA.icon('ph:gear-six-fill', 230, '#8C6B5A')}</div>
+<div class="kpi" id="s4-g2" style="left:310px; top:470px">{KA.icon('ph:gear-six-fill', 150, '#C9A57A')}</div>
+<div class="kpi" id="s4-q" style="left:520px; top:290px; font:900 300px 'SD Display'; color:#E0471C">?</div>
+<div class="kpi" id="s4-b" style="left:90px; top:760px">{KA.paper_icon('ph:bank-fill', 170, '#2A2018')}</div>
+<div class="kpi" id="s4-l" style="left:430px; top:760px">{KA.paper_icon('ph:lock-key-fill', 170, '#E0471C')}</div>
+<div class="kpi" id="s4-s" style="left:770px; top:760px">{KA.paper_icon('ph:shield-check-fill', 170, '#2F9E44')}</div>
+<div class="qtag" id="s4-t" style="left:300px; top:1060px; font-size:48px">banks are preparing</div>"""
+    sc = [pop('#s4-g1', 0.02), pop('#s4-g2', 0.15), f'    tl.fromTo("#s4-g1 svg", {{ rotation:0 }}, {{ rotation:180, duration:4, ease:"none" }}, 0.1);',
+          f'    tl.fromTo("#s4-g2 svg", {{ rotation:0 }}, {{ rotation:-270, duration:4, ease:"none" }}, 0.1);', slam('#s4-q', W(4, 'really')),
+          pop('#s4-b', W(4, 'banks')), pop('#s4-l', W(4, 'banks') + .25), pop('#s4-s', W(4, 'ready')), pop('#s4-t', W(4, 'already')), shake('#s4-l', W(4, 'it', 1))]
+    out_.append(mk(4, body, sc, css))
+    # ---- s5: YouTube logo + real thumbnail card + tap on the Short's related-video link
+    (L.P / 'assets/img').mkdir(parents=True, exist_ok=True)
+    import shutil as _sh; _sh.copy(KA.IMG / 'thumb_ep06.png', L.P / 'assets/img/thumb_ep06.png')
+    body = f"""<div class="kpi" id="s5-yt" style="left:420px; top:250px">{KA.icon('logos:youtube-icon', 240)}</div>
+<div class="qcard" id="s5-v" style="left:90px; top:470px; width:900px; padding:18px"><img src="assets/img/thumb_ep06.png" style="width:864px; border-radius:16px; display:block"/><div class="qlab" style="margin-top:14px">FULL VIDEO · TechDecoded with Max</div></div>
+<div class="qcard" id="s5-link" style="left:90px; top:1030px; width:900px; padding:18px 26px; background:#2A2018"><div class="qrow">{KA.icon('ph:play-circle-fill', 60, '#F87736')}<div style="font:800 34px 'SD Text'; color:#FFFAF2">Google's Quantum Chip… (full video)</div></div></div>
+<div class="kpi" id="s5-h" style="left:760px; top:1080px">{KA.icon('ph:hand-tap-fill', 150, '#F87736')}</div>"""
+    sc = [pop('#s5-yt', 0.02), fly('#s5-v', W(5, 'decoded')), pop('#s5-link', W(5, 'tap') - .2),
+          tween('#s5-h', W(5, 'tap'), 'x:200, y:200, opacity:0', 'x:0, y:0, opacity:1', .35, 'power3.out'),
+          f'    tl.fromTo("#s5-h", {{ scale:1 }}, {{ scale:.82, duration:.12, yoyo:true, repeat:3, ease:"power2.inOut", immediateRender:false }}, {W(5, "link") + .1});']
+    out_.append(mk(5, body, sc, css))
+    s, tc = subscribe_scene(6); out_.append(s)
+    def sfx(g):
+        A = lambda i, w, n=0: S[f's{i}'][0] + W(i, w, n)
+        return [(0.02, 'pop', .5), (0.12, 'thud', .6), (A(0, 'five'), 'tick', .5), (A(0, 'supercomputer'), 'whoosh', .5), (A(0, 'ten'), 'impact', .65),
+                (S['s1'][0], 'pop', .5), (A(1, 'trillions'), 'riser', .5), (A(1, 'times'), 'impact', .6),
+                (S['s2'][0], 'whoosh', .5), (A(2, 'seventy'), 'chirp', .35), (A(2, 'colder'), 'powerdown', .45), (A(2, 'space'), 'impact', .55),
+                (S['s3'][0], 'flip', .5), (A(3, 'every'), 'pop', .4), (A(3, 'myth') - .2, 'stamp', .8),
+                (S['s4'][0], 'servo', .4), (A(4, 'really'), 'impact', .5), (A(4, 'banks'), 'lock', .5), (A(4, 'ready'), 'ding', .45),
+                (S['s5'][0], 'whoosh', .5), (A(5, 'tap'), 'click', .7), (A(5, 'link') + .1, 'click', .6),
+                (S['s6'][0], 'whoosh', .5), (tc + S['s6'][0], 'click', .9), (tc + S['s6'][0] + 0.1, 'ding', .7)]
     return out_, sfx
 
 if __name__ == '__main__':
