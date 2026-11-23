@@ -31,6 +31,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 22 | [22_qnt01](22_qnt01) | This chip did 10 septillion years of work in 5 minutes | 0:38 | **Sun 13 Dec, 12:30 PM** | Ready (Short → ep06) |
 | 23 | [23_ep07_long](23_ep07_long) | Is Your Phone Secretly Listening to You? Here's What the Evidence Says | 11:01 | **Tue 15 Dec, 6:30 PM** | Ready (long video, mixed style) |
 | 24 | [24_lst01](24_lst01) | Is your phone secretly listening? Scientists tested 17,000 apps | 0:37 | **Wed 16 Dec, 12:30 PM** | Ready (Short → ep07) |
+| 25 | [25_ast01](25_ast01) | How to use GPT-6 Astra (it's not in the chat list) | 1:05 | **Post now (trending)** | Ready, stand-alone Short |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.
