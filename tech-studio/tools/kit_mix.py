@@ -100,9 +100,15 @@ def register(B):
 
     def t_mix(i, sid, v):
         body, sc, ids = [], [], {}
+        times = [T(i, e.get('at', 0.02 + k * 0.05)) for k, e in enumerate(v['els'])]
+        first = min(range(len(times)), key=lambda k: times[k])
+        if times[first] > 0.5:          # never open on an empty stage: the first element lands at once
+            for k in range(len(times)):
+                if abs(times[k] - times[first]) < 0.05:
+                    times[k] = 0.1
         for k, e in enumerate(v['els']):
             eid, h = el_html(sid, k, e); body.append(h); ids[e.get('id', 'm' + str(k))] = eid
-            t = T(i, e.get('at', 0.02 + k * 0.05)); how = e.get('in', 'pop')
+            t = times[k]; how = e.get('in', 'pop')
             ease, d = EASE.get(how, ('back.out(1.6)', .38))
             to = 'x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1'
             sc.append(f'    tl.set("#{eid}", {{ opacity:0 }}, 0);')

@@ -109,12 +109,12 @@
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.set("#b09-bars", { opacity:0 }, 0);
-    tl.fromTo("#b09-bars", { opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.4, ease:"steps(5)", immediateRender:false }, 1.77);
-    tl.fromTo("#b09-bars-b0", { scaleX:0 }, { scaleX:1, duration:0.6, ease:"steps(7)", immediateRender:false }, 1.97);
+    tl.fromTo("#b09-bars", { opacity:0 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.4, ease:"steps(5)", immediateRender:false }, 0.1);
+    tl.fromTo("#b09-bars-b0", { scaleX:0 }, { scaleX:1, duration:0.6, ease:"steps(7)", immediateRender:false }, 0.3);
     tl.set("#b09-bars-b0", { scaleX:0 }, 0);
-    tl.fromTo("#b09-bars-b1", { scaleX:0 }, { scaleX:1, duration:0.6, ease:"steps(7)", immediateRender:false }, 3.57);
+    tl.fromTo("#b09-bars-b1", { scaleX:0 }, { scaleX:1, duration:0.6, ease:"steps(7)", immediateRender:false }, 1.9);
     tl.set("#b09-bars-b1", { scaleX:0 }, 0);
-    tl.fromTo("#b09-bars-b2", { scaleX:0 }, { scaleX:1, duration:0.6, ease:"steps(7)", immediateRender:false }, 5.17);
+    tl.fromTo("#b09-bars-b2", { scaleX:0 }, { scaleX:1, duration:0.6, ease:"steps(7)", immediateRender:false }, 3.5);
     tl.set("#b09-bars-b2", { scaleX:0 }, 0);
     tl.set("#b09-at", { opacity:0 }, 0);
     tl.fromTo("#b09-at", { scale:0, rotation:-10, opacity:1 }, { x:0, y:0, scale:1, rotation:0, rotationX:0, rotationY:0, opacity:1, duration:0.38, ease:"steps(5)", immediateRender:false }, 10.9);
