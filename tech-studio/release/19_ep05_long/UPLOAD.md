@@ -1,5 +1,5 @@
 # ep05 long video: ChatGPT Doesn't Know What It's Going to Say Next
-File: `TechDecoded_ep05_long.mp4` (1920×1080, 7:15) · Thumbnail: `thumbnail.jpg` · Style: AI-illustrated scenes (cream)
+File: `TechDecoded_ep05_long.mp4` (1920×1080, 7:15) · Thumbnail: `thumbnail.jpg` · Style: animated cards, cream + dots
 Teaser Short: ai01 (Tue 1 Dec) · Planned release: **Thu 10 Dec 2026, 6:30 PM IST**
 
 **Title:** ChatGPT Doesn't Know What It's Going to Say Next
@@ -29,7 +29,7 @@ Sources:
 • GPT-3, 175 billion parameters: https://arxiv.org/pdf/2005.14165
 • InstructGPT / RLHF: https://openai.com/index/instruction-following/
 • Why language models hallucinate (OpenAI, 2025): https://openai.com/index/why-language-models-hallucinate/
-Illustrations are metaphors (word wheel, token factory, library, exam). Max and Bit are animated characters; scene illustrations are AI-generated. Narration is AI-generated (ElevenLabs voice via vidIQ); the script is researched and fact-checked.
+Max and Bit are animated characters. Narration is AI-generated (ElevenLabs voice via vidIQ); the script is researched and fact-checked.
 
 #chatgpt #ai #howaiworks #llm #techexplained
 
