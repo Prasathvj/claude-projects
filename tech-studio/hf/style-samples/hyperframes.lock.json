@@ -1,0 +1,11 @@
+{
+  "assets/fonts/Caveat-700-latin.woff2": "891951df5e8b5b0f0bc760d31375405e795c666b5add70437de12d4a6482b33f",
+  "compositions/components/grain-overlay.html": "97a0da8f26feca9574abcf08b8186cef10ea4819b2aeabc30547ae16ed9ae80d",
+  "compositions/components/marker-highlight.html": "bedd128ffab3808b4624f9aa5bcd0e80c9022726fdad59191301259adb0512dc",
+  "compositions/components/paper-collage-reveal.html": "e7d138d73785cda61179b1c821d3b2590f90e61b8ac9e22e3bccb245eec9fafa",
+  "compositions/components/stop-motion-cadence.html": "52a64f69cc03cd90ff9b4d313b7f2fb8e12c88abdfef3c7198cef8c96362e0ee",
+  "compositions/components/torn-paper-rip.html": "9459fa4d1b3ebefb45d34e276b2a2181dccfb132d1ba5060dbc25e6f429764df",
+  "compositions/freeze-frame-dressing.html": "1b27e4967a44d0337192a5ff2251cc1c01380b41b4b7071c7628cc4cea26775b",
+  "compositions/halftone-field.html": "09b28dd69dd42898c5b7b7a26beae40f9db6a8872804118347bb0fd6075975ed",
+  "compositions/hw-text-cloud.html": "54bdf3011de96cf454c2bf3b6037541ced9e10cb0794a2518238e765d1f55c56"
+}

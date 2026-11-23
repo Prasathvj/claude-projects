@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1920, height=1080" />
+<script src="assets/gsap.min.js"></script>
+<style>@font-face { font-family:'D'; src:url('assets/fonts/InterDisplay-Black.otf'); font-weight:900; }
+@font-face { font-family:'D'; src:url('assets/fonts/InterDisplay-Bold.otf'); font-weight:700; }
+@font-face { font-family:'T'; src:url('assets/fonts/Inter-SemiBold.otf'); font-weight:600; }
+@font-face { font-family:'H'; src:url('assets/fonts/Caveat-700-latin.woff2'); font-weight:700; }
+@font-face { font-family:'M'; src:url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight:700; }
+* { margin:0; padding:0; box-sizing:border-box; } html, body { width:1920px; height:1080px; overflow:hidden; }
+#root { position:relative; width:1920px; height:1080px; overflow:hidden; }
+.a { position:absolute; }
+#root { background:#F2EEE6; }
+.bgv { position:absolute; inset:0; background:#F2EEE6; }
+.ht { position:absolute; width:900px; height:900px; border-radius:50%; background-image:radial-gradient(#E8B898 30%, transparent 32%); background-size:22px 22px;
+  -webkit-mask-image:radial-gradient(circle, #000 0%, transparent 70%); mask-image:radial-gradient(circle, #000 0%, transparent 70%); opacity:.55; }
+.fold { position:absolute; top:0; bottom:0; width:2px; background:linear-gradient(180deg,transparent,rgba(0,0,0,.06),transparent); }
+.doc { position:absolute; background:#FFFDF8; box-shadow:0 2px 0 rgba(0,0,0,.08), 0 30px 60px rgba(40,30,20,.18); filter:url(#paper); }
+.mono { font:700 40px 'M'; color:#222; line-height:1.7; }
+.hl { position:absolute; height:58px; background:#FFE14D; mix-blend-mode:multiply; transform-origin:left; transform:scaleX(0); border-radius:6px 14px 8px 12px; }
+.hand { font:700 64px 'H'; color:#E5332A; }
+.kick { font:900 30px 'D'; letter-spacing:6px; color:#111; }
+.tape { position:absolute; width:150px; height:46px; background:rgba(255,236,170,.75); box-shadow:0 2px 6px rgba(0,0,0,.08); }
+.cap { position:absolute; left:0; right:0; top:950px; text-align:center; font:700 50px 'D'; color:#111; opacity:0; }
+.cap span { padding:0 8px; } .cap span.on { background:#FFE14D; }
+.grain { position:absolute; inset:-50%; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2'/></filter><rect width='160' height='160' filter='url(%23f)' opacity='.5'/></svg>"); opacity:.10; mix-blend-mode:multiply; }
+.tok { position:absolute; padding:10px 22px; font:900 54px 'D'; color:#111; background:#FFFDF8; border:4px solid #111; opacity:0; }
+.ink { stroke:#E5332A; stroke-width:9; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="4" result="n"/><feColorMatrix in="n" type="saturate" values="0" result="g"/>
+  <feComponentTransfer in="g" result="g2"><feFuncA type="linear" slope=".18"/></feComponentTransfer><feComposite in="g2" in2="SourceGraphic" operator="in" result="tex"/>
+  <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="tex"/></feMerge></filter>
+ <filter id="rough"><feTurbulence type="turbulence" baseFrequency=".035" numOctaves="2" seed="7" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="7"/></filter>
+</defs></svg>
+<div id="root" data-composition-id="main" data-start="0" data-duration="24.03" data-width="1920" data-height="1080" data-fps="30">
+<div class="bgv"></div><div class="ht" style="left:-300px; top:500px"></div><div class="fold" style="left:640px"></div><div class="fold" style="left:1280px"></div><div class="doc" id="doc" style="left:220px; top:170px; width:1000px; height:560px; padding:56px 64px">
+  <div class="kick" style="color:#999">CHATGPT · LIVE ANSWER (ILLUSTRATION)</div>
+  <div class="mono" style="margin-top:30px; color:#888">&gt; Write a poem about chai</div>
+  <div class="mono" style="margin-top:16px"><span id="t0" style="opacity:0">Chai </span><span id="t1" style="opacity:0">is </span><span id="t2" style="opacity:0">warm, </span><span id="t3" style="opacity:0">a </span><span id="t4" style="opacity:0">quiet </span><span id="t5" style="opacity:0">…</span><span id="cur" style="background:#111; color:#111">_</span></div>
+  <div class="mono" style="margin-top:50px; font-size:30px; color:#555; position:relative">The model has <span style="position:relative">no plan<div class="hl" id="hl1" style="left:-8px; top:-6px; width:180px; height:56px"></div></span> for the rest of the sentence.</div>
+</div>
+<div class="tape" style="left:240px; top:150px; transform:rotate(-6deg)"></div><div class="tape" style="left:1100px; top:150px; transform:rotate(5deg)"></div>
+<svg class="a" id="circ" width="300" height="170" style="left:505px; top:432px"><path class="ink" id="cpath" d="M15 85 C 20 25, 230 10, 262 65 C 278 120, 135 150, 50 132 C 10 118, 18 55, 78 38"/></svg>
+<div class="a hand" id="note1" style="left:1280px; top:470px; transform:rotate(-6deg); opacity:0">no idea<br>what's next!</div><div class="a" id="strip" style="left:0; top:0; width:1920px; height:1080px; opacity:0">
+  <div class="a kick" style="left:190px; top:250px">HOW IT WRITES</div><div class="tok" id="k0" style="left:190px; top:420px; transform:rotate(2deg)">It</div><div class="tok" id="k1" style="left:420px; top:420px; transform:rotate(-2deg)">picks</div><div class="tok" id="k2" style="left:650px; top:420px; transform:rotate(2deg)">one</div><div class="tok" id="k3" style="left:880px; top:420px; transform:rotate(-2deg)">piece</div><div class="tok" id="k4" style="left:1110px; top:420px; transform:rotate(2deg)">→ next</div><svg class="a" width="120" height="80" style="left:360px; top:330px"><path class="ink arr" id="ar0" d="M10 60 C 40 10, 80 10, 110 50 M95 30 L110 50 L86 58"/></svg><svg class="a" width="120" height="80" style="left:590px; top:330px"><path class="ink arr" id="ar1" d="M10 60 C 40 10, 80 10, 110 50 M95 30 L110 50 L86 58"/></svg><svg class="a" width="120" height="80" style="left:820px; top:330px"><path class="ink arr" id="ar2" d="M10 60 C 40 10, 80 10, 110 50 M95 30 L110 50 L86 58"/></svg><svg class="a" width="120" height="80" style="left:1050px; top:330px"><path class="ink arr" id="ar3" d="M10 60 C 40 10, 80 10, 110 50 M95 30 L110 50 L86 58"/></svg>
+  <div class="a" style="left:190px; top:600px; font:900 120px 'D'; color:#111; letter-spacing:-3px; position:absolute"><span style="position:relative">ONE PIECE<div class="hl" id="hl2" style="left:-10px; top:20px; width:720px; height:110px"></div></span> AT A TIME</div></div><div class="a" id="stat" style="left:0; top:0; width:1920px; height:1080px; opacity:0">
+  <div class="ht" style="left:900px; top:60px"></div>
+  <div class="a kick" style="left:200px; top:200px">CHATGPT · WEEKLY USERS</div>
+  <div class="a" style="left:190px; top:300px; font:900 250px 'D'; color:#111; letter-spacing:-8px; line-height:1"><span id="num" style="display:inline-block">1</span> <span id="bil" style="color:#E5332A; display:inline-block">BILLION</span></div>
+  <div class="a" style="left:200px; top:620px; font:700 46px 'D'; color:#333">people use it <span style="position:relative">every week<div class="hl" id="hl3" style="left:-6px; top:-2px; width:270px; height:58px"></div></span></div>
+  <div class="doc" id="clip" style="left:1180px; top:560px; width:520px; padding:26px 30px; transform:rotate(3deg)"><div style="font:700 22px 'M'; color:#888">SOURCE</div><div style="font:700 30px 'T'; color:#111; margin-top:8px">OpenAI, September 2026: ≈ 1 billion weekly users</div></div>
+  <div class="tape" style="left:1380px; top:540px; transform:rotate(-4deg)"></div>
+  <div class="a hand" id="note2" style="left:760px; top:600px; transform:rotate(-8deg); opacity:0">that's 1 in 8<br>people on Earth*</div>
+  <div class="a" style="left:770px; top:790px; font:600 20px 'T'; color:#777" id="fn">*approx., world population ≈ 8.2 billion</div></div><div class="grain" id="grain"></div>
+<div class="cap" id="cap0_0"><span id="cap0_0w0">Right</span> <span id="cap0_0w1">now,</span> <span id="cap0_0w2">as</span> <span id="cap0_0w3">ChatGPT</span> <span id="cap0_0w4">writes</span> <span id="cap0_0w5">its</span> <span id="cap0_0w6">answer</span></div>
+<div class="cap" id="cap0_1"><span id="cap0_1w0">to</span> <span id="cap0_1w1">you,</span> <span id="cap0_1w2">it</span> <span id="cap0_1w3">has</span> <span id="cap0_1w4">no</span> <span id="cap0_1w5">idea</span> <span id="cap0_1w6">how</span></div>
+<div class="cap" id="cap0_2"><span id="cap0_2w0">its</span> <span id="cap0_2w1">own</span> <span id="cap0_2w2">sentence</span> <span id="cap0_2w3">is</span> <span id="cap0_2w4">going</span> <span id="cap0_2w5">to</span> <span id="cap0_2w6">end.</span></div>
+<div class="cap" id="cap1_0"><span id="cap1_0w0">It</span> <span id="cap1_0w1">doesn't</span> <span id="cap1_0w2">plan</span> <span id="cap1_0w3">the</span> <span id="cap1_0w4">paragraph.</span> <span id="cap1_0w5">It</span> <span id="cap1_0w6">doesn't</span></div>
+<div class="cap" id="cap1_1"><span id="cap1_1w0">even</span> <span id="cap1_1w1">plan</span> <span id="cap1_1w2">the</span> <span id="cap1_1w3">next</span> <span id="cap1_1w4">sentence.</span> <span id="cap1_1w5">It</span> <span id="cap1_1w6">picks</span></div>
+<div class="cap" id="cap1_2"><span id="cap1_2w0">one</span> <span id="cap1_2w1">small</span> <span id="cap1_2w2">piece</span> <span id="cap1_2w3">of</span> <span id="cap1_2w4">a</span> <span id="cap1_2w5">word,</span> <span id="cap1_2w6">then</span></div>
+<div class="cap" id="cap1_3"><span id="cap1_3w0">the</span> <span id="cap1_3w1">next,</span> <span id="cap1_3w2">then</span> <span id="cap1_3w3">the</span> <span id="cap1_3w4">next.</span></div>
+<div class="cap" id="cap2_0"><span id="cap2_0w0">And</span> <span id="cap2_0w1">yet</span> <span id="cap2_0w2">about</span> <span id="cap2_0w3">a</span> <span id="cap2_0w4">billion</span> <span id="cap2_0w5">people</span> <span id="cap2_0w6">use</span></div>
+<div class="cap" id="cap2_1"><span id="cap2_1w0">it</span> <span id="cap2_1w1">every</span> <span id="cap2_1w2">week,</span> <span id="cap2_1w3">to</span> <span id="cap2_1w4">write</span> <span id="cap2_1w5">emails,</span> <span id="cap2_1w6">fix</span></div>
+<div class="cap" id="cap2_2"><span id="cap2_2w0">code</span> <span id="cap2_2w1">and</span> <span id="cap2_2w2">explain</span> <span id="cap2_2w3">homework.</span></div>
+<audio id="vo" class="clip" src="assets/vo.wav" data-start="0" data-duration="24.03" data-track-index="5" data-volume="1"></audio>
+<audio id="bgm" class="clip" src="assets/bgm.wav" data-start="0" data-duration="24.03" data-track-index="6" data-volume="0.14"></audio>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused:true });
+tl.fromTo("#grain", { x:0, y:0 }, { x:-60, y:40, duration:24.03, ease:"steps(288)" }, 0);
+tl.fromTo("#doc", { y:60, rotation:-1.5, opacity:0 }, { y:0, rotation:-.5, opacity:1, duration:.6, ease:"power3.out" }, 0.1);
+tl.to("#cur", { opacity:0, duration:.01, repeat:18, yoyo:true, repeatDelay:.4 }, 0.3);
+tl.to("#t0", { opacity:1, duration:.01 }, 1.12);
+tl.to("#t1", { opacity:1, duration:.01 }, 1.77);
+tl.to("#t2", { opacity:1, duration:.01 }, 2.42);
+tl.to("#t3", { opacity:1, duration:.01 }, 3.07);
+tl.to("#t4", { opacity:1, duration:.01 }, 3.72);
+tl.to("#t5", { opacity:1, duration:.01 }, 4.37);
+tl.to("#hl1", { scaleX:1, duration:.45, ease:"power2.out" }, 5.31);
+tl.set("#cpath", { strokeDasharray:1400, strokeDashoffset:1400 }, 0);
+tl.to("#cpath", { strokeDashoffset:0, duration:.7, ease:"power2.inOut" }, 5.88);
+tl.to("#note1", { opacity:1, duration:.3 }, 6.46);
+tl.to(["#doc","#circ","#note1",".tape"], { opacity:0, x:-120, duration:.35, ease:"power2.in" }, 7.27);
+tl.to("#strip", { opacity:1, duration:.3 }, 7.65);
+tl.fromTo("#k0", { opacity:0, y:-40, scale:1.3 }, { opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)" }, 8.37);
+tl.fromTo("#k1", { opacity:0, y:-40, scale:1.3 }, { opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)" }, 9.54);
+tl.fromTo("#k2", { opacity:0, y:-40, scale:1.3 }, { opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)" }, 10.70);
+tl.fromTo("#k3", { opacity:0, y:-40, scale:1.3 }, { opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)" }, 11.87);
+tl.fromTo("#k4", { opacity:0, y:-40, scale:1.3 }, { opacity:1, y:0, scale:1, duration:.3, ease:"back.out(2)" }, 13.04);
+tl.set(".arr", { strokeDasharray:300, strokeDashoffset:300 }, 0);
+tl.to("#ar0", { strokeDashoffset:0, duration:.35 }, 9.00);
+tl.to("#ar1", { strokeDashoffset:0, duration:.35 }, 10.16);
+tl.to("#ar2", { strokeDashoffset:0, duration:.35 }, 11.33);
+tl.to("#ar3", { strokeDashoffset:0, duration:.35 }, 12.50);
+tl.to("#hl2", { scaleX:1, duration:.5, ease:"power2.out" }, 14.65);
+tl.to("#strip", { opacity:0, y:-80, duration:.35 }, 16.25);
+tl.to("#stat", { opacity:1, duration:.3 }, 16.58);
+tl.fromTo("#num", { opacity:0, scale:2.5 }, { opacity:1, scale:1, duration:.35, ease:"expo.out" }, 16.79);
+tl.fromTo("#bil", { opacity:0, x:120 }, { opacity:1, x:0, duration:.4, ease:"back.out(2)" }, 17.49);
+tl.to("#hl3", { scaleX:1, duration:.4 }, 18.89);
+tl.fromTo("#clip", { opacity:0, y:80 }, { opacity:1, y:0, duration:.45, ease:"back.out(1.6)" }, 19.59);
+tl.to("#note2", { opacity:1, duration:.3 }, 20.64);
+tl.set("#cap0_0", { opacity:1 }, 0.30); tl.set("#cap0_0", { opacity:0 }, 2.16);
+tl.set("#cap0_0w0", { className:"on" }, 0.30); tl.set("#cap0_0w0", { className:"" }, 0.52);
+tl.set("#cap0_0w1", { className:"on" }, 0.52); tl.set("#cap0_0w1", { className:"" }, 0.98);
+tl.set("#cap0_0w2", { className:"on" }, 1.11); tl.set("#cap0_0w2", { className:"" }, 1.40);
+tl.set("#cap0_0w3", { className:"on" }, 1.40); tl.set("#cap0_0w3", { className:"" }, 1.45);
+tl.set("#cap0_0w4", { className:"on" }, 1.40); tl.set("#cap0_0w4", { className:"" }, 1.66);
+tl.set("#cap0_0w5", { className:"on" }, 1.66); tl.set("#cap0_0w5", { className:"" }, 1.83);
+tl.set("#cap0_0w6", { className:"on" }, 1.83); tl.set("#cap0_0w6", { className:"" }, 2.01);
+tl.set("#cap0_1", { opacity:1 }, 2.01); tl.set("#cap0_1", { opacity:0 }, 4.12);
+tl.set("#cap0_1w0", { className:"on" }, 2.01); tl.set("#cap0_1w0", { className:"" }, 2.07);
+tl.set("#cap0_1w1", { className:"on" }, 2.07); tl.set("#cap0_1w1", { className:"" }, 2.25);
+tl.set("#cap0_1w2", { className:"on" }, 2.25); tl.set("#cap0_1w2", { className:"" }, 2.66);
+tl.set("#cap0_1w3", { className:"on" }, 2.66); tl.set("#cap0_1w3", { className:"" }, 2.92);
+tl.set("#cap0_1w4", { className:"on" }, 2.92); tl.set("#cap0_1w4", { className:"" }, 2.98);
+tl.set("#cap0_1w5", { className:"on" }, 2.98); tl.set("#cap0_1w5", { className:"" }, 3.38);
+tl.set("#cap0_1w6", { className:"on" }, 3.78); tl.set("#cap0_1w6", { className:"" }, 3.97);
+tl.set("#cap0_2", { opacity:1 }, 3.97); tl.set("#cap0_2", { opacity:0 }, 7.18);
+tl.set("#cap0_2w0", { className:"on" }, 3.97); tl.set("#cap0_2w0", { className:"" }, 4.12);
+tl.set("#cap0_2w1", { className:"on" }, 4.12); tl.set("#cap0_2w1", { className:"" }, 4.31);
+tl.set("#cap0_2w2", { className:"on" }, 4.81); tl.set("#cap0_2w2", { className:"" }, 5.34);
+tl.set("#cap0_2w3", { className:"on" }, 5.57); tl.set("#cap0_2w3", { className:"" }, 5.77);
+tl.set("#cap0_2w4", { className:"on" }, 5.77); tl.set("#cap0_2w4", { className:"" }, 5.90);
+tl.set("#cap0_2w5", { className:"on" }, 5.90); tl.set("#cap0_2w5", { className:"" }, 6.49);
+tl.set("#cap0_2w6", { className:"on" }, 6.49); tl.set("#cap0_2w6", { className:"" }, 7.03);
+tl.set("#cap1_0", { opacity:1 }, 7.55); tl.set("#cap1_0", { opacity:0 }, 10.14);
+tl.set("#cap1_0w0", { className:"on" }, 7.55); tl.set("#cap1_0w0", { className:"" }, 7.68);
+tl.set("#cap1_0w1", { className:"on" }, 7.68); tl.set("#cap1_0w1", { className:"" }, 8.05);
+tl.set("#cap1_0w2", { className:"on" }, 8.05); tl.set("#cap1_0w2", { className:"" }, 8.43);
+tl.set("#cap1_0w3", { className:"on" }, 8.43); tl.set("#cap1_0w3", { className:"" }, 8.52);
+tl.set("#cap1_0w4", { className:"on" }, 8.52); tl.set("#cap1_0w4", { className:"" }, 9.35);
+tl.set("#cap1_0w5", { className:"on" }, 9.62); tl.set("#cap1_0w5", { className:"" }, 9.72);
+tl.set("#cap1_0w6", { className:"on" }, 9.72); tl.set("#cap1_0w6", { className:"" }, 9.99);
+tl.set("#cap1_1", { opacity:1 }, 9.99); tl.set("#cap1_1", { opacity:0 }, 12.44);
+tl.set("#cap1_1w0", { className:"on" }, 9.99); tl.set("#cap1_1w0", { className:"" }, 10.21);
+tl.set("#cap1_1w1", { className:"on" }, 10.21); tl.set("#cap1_1w1", { className:"" }, 10.50);
+tl.set("#cap1_1w2", { className:"on" }, 10.50); tl.set("#cap1_1w2", { className:"" }, 10.56);
+tl.set("#cap1_1w3", { className:"on" }, 10.56); tl.set("#cap1_1w3", { className:"" }, 10.77);
+tl.set("#cap1_1w4", { className:"on" }, 10.77); tl.set("#cap1_1w4", { className:"" }, 11.41);
+tl.set("#cap1_1w5", { className:"on" }, 11.91); tl.set("#cap1_1w5", { className:"" }, 12.03);
+tl.set("#cap1_1w6", { className:"on" }, 12.03); tl.set("#cap1_1w6", { className:"" }, 12.29);
+tl.set("#cap1_2", { opacity:1 }, 12.29); tl.set("#cap1_2", { opacity:0 }, 14.56);
+tl.set("#cap1_2w0", { className:"on" }, 12.29); tl.set("#cap1_2w0", { className:"" }, 12.66);
+tl.set("#cap1_2w1", { className:"on" }, 12.66); tl.set("#cap1_2w1", { className:"" }, 13.06);
+tl.set("#cap1_2w2", { className:"on" }, 13.06); tl.set("#cap1_2w2", { className:"" }, 13.35);
+tl.set("#cap1_2w3", { className:"on" }, 13.35); tl.set("#cap1_2w3", { className:"" }, 13.46);
+tl.set("#cap1_2w4", { className:"on" }, 13.46); tl.set("#cap1_2w4", { className:"" }, 13.49);
+tl.set("#cap1_2w5", { className:"on" }, 13.49); tl.set("#cap1_2w5", { className:"" }, 13.96);
+tl.set("#cap1_2w6", { className:"on" }, 14.24); tl.set("#cap1_2w6", { className:"" }, 14.41);
+tl.set("#cap1_3", { opacity:1 }, 14.41); tl.set("#cap1_3", { opacity:0 }, 16.16);
+tl.set("#cap1_3w0", { className:"on" }, 14.41); tl.set("#cap1_3w0", { className:"" }, 14.47);
+tl.set("#cap1_3w1", { className:"on" }, 14.47); tl.set("#cap1_3w1", { className:"" }, 15.04);
+tl.set("#cap1_3w2", { className:"on" }, 15.26); tl.set("#cap1_3w2", { className:"" }, 15.45);
+tl.set("#cap1_3w3", { className:"on" }, 15.45); tl.set("#cap1_3w3", { className:"" }, 15.51);
+tl.set("#cap1_3w4", { className:"on" }, 15.51); tl.set("#cap1_3w4", { className:"" }, 16.01);
+tl.set("#cap2_0", { opacity:1 }, 16.52); tl.set("#cap2_0", { opacity:0 }, 18.81);
+tl.set("#cap2_0w0", { className:"on" }, 16.52); tl.set("#cap2_0w0", { className:"" }, 16.68);
+tl.set("#cap2_0w1", { className:"on" }, 16.68); tl.set("#cap2_0w1", { className:"" }, 17.00);
+tl.set("#cap2_0w2", { className:"on" }, 17.00); tl.set("#cap2_0w2", { className:"" }, 17.30);
+tl.set("#cap2_0w3", { className:"on" }, 17.30); tl.set("#cap2_0w3", { className:"" }, 17.34);
+tl.set("#cap2_0w4", { className:"on" }, 17.34); tl.set("#cap2_0w4", { className:"" }, 17.98);
+tl.set("#cap2_0w5", { className:"on" }, 17.98); tl.set("#cap2_0w5", { className:"" }, 18.39);
+tl.set("#cap2_0w6", { className:"on" }, 18.39); tl.set("#cap2_0w6", { className:"" }, 18.66);
+tl.set("#cap2_1", { opacity:1 }, 18.66); tl.set("#cap2_1", { opacity:0 }, 21.40);
+tl.set("#cap2_1w0", { className:"on" }, 18.66); tl.set("#cap2_1w0", { className:"" }, 18.88);
+tl.set("#cap2_1w1", { className:"on" }, 18.88); tl.set("#cap2_1w1", { className:"" }, 19.21);
+tl.set("#cap2_1w2", { className:"on" }, 19.21); tl.set("#cap2_1w2", { className:"" }, 19.66);
+tl.set("#cap2_1w3", { className:"on" }, 19.91); tl.set("#cap2_1w3", { className:"" }, 20.02);
+tl.set("#cap2_1w4", { className:"on" }, 20.02); tl.set("#cap2_1w4", { className:"" }, 20.27);
+tl.set("#cap2_1w5", { className:"on" }, 20.27); tl.set("#cap2_1w5", { className:"" }, 20.96);
+tl.set("#cap2_1w6", { className:"on" }, 20.96); tl.set("#cap2_1w6", { className:"" }, 21.25);
+tl.set("#cap2_2", { opacity:1 }, 21.25); tl.set("#cap2_2", { opacity:0 }, 23.12);
+tl.set("#cap2_2w0", { className:"on" }, 21.25); tl.set("#cap2_2w0", { className:"" }, 21.75);
+tl.set("#cap2_2w1", { className:"on" }, 21.75); tl.set("#cap2_2w1", { className:"" }, 22.07);
+tl.set("#cap2_2w2", { className:"on" }, 22.07); tl.set("#cap2_2w2", { className:"" }, 22.45);
+tl.set("#cap2_2w3", { className:"on" }, 22.45); tl.set("#cap2_2w3", { className:"" }, 22.98);
+window.__timelines["main"] = tl;
+</script></body></html>
