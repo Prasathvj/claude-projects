@@ -1,0 +1,804 @@
+{
+ "id": "knight01-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 69.691,
+ "vo": "knight01/knight01-short-vo.wav",
+ "music": "knight01/knight01-short-music.wav",
+ "beats": [
+  {
+   "text": "In 45 minutes, a company lost 460 million dollars. No hacker. Just one missed step.",
+   "dir": "gripping, tense hook, dramatic but natural",
+   "start": 0.25,
+   "vo": 8.88,
+   "dur": 8.9,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.0,
+     "e": 0.17
+    },
+    {
+     "w": "45",
+     "s": 0.35,
+     "e": 1.1
+    },
+    {
+     "w": "minutes,",
+     "s": 1.1,
+     "e": 1.58
+    },
+    {
+     "w": "a",
+     "s": 1.8,
+     "e": 1.85
+    },
+    {
+     "w": "company",
+     "s": 1.85,
+     "e": 2.37
+    },
+    {
+     "w": "lost",
+     "s": 2.37,
+     "e": 2.75
+    },
+    {
+     "w": "460",
+     "s": 2.9,
+     "e": 4.3
+    },
+    {
+     "w": "million",
+     "s": 4.3,
+     "e": 5.09
+    },
+    {
+     "w": "dollars.",
+     "s": 5.09,
+     "e": 5.63
+    },
+    {
+     "w": "No",
+     "s": 6.05,
+     "e": 6.31
+    },
+    {
+     "w": "hacker.",
+     "s": 6.31,
+     "e": 6.66
+    },
+    {
+     "w": "Just",
+     "s": 7.08,
+     "e": 7.3
+    },
+    {
+     "w": "one",
+     "s": 7.3,
+     "e": 7.87
+    },
+    {
+     "w": "missed",
+     "s": 7.99,
+     "e": 8.29
+    },
+    {
+     "w": "step.",
+     "s": 8.29,
+     "e": 8.76
+    }
+   ]
+  },
+  {
+   "text": "August 1st, 2012. Knight Capital, one of America's biggest stock traders, is updating its trading software.",
+   "dir": "storyteller, setting the scene, calm",
+   "start": 9.15,
+   "vo": 6.76,
+   "dur": 6.83,
+   "words": [
+    {
+     "w": "August",
+     "s": 0.12,
+     "e": 0.49
+    },
+    {
+     "w": "1st,",
+     "s": 0.49,
+     "e": 0.88
+    },
+    {
+     "w": "2012.",
+     "s": 0.88,
+     "e": 1.68
+    },
+    {
+     "w": "Knight",
+     "s": 2.01,
+     "e": 2.32
+    },
+    {
+     "w": "Capital,",
+     "s": 2.32,
+     "e": 2.8
+    },
+    {
+     "w": "one",
+     "s": 2.94,
+     "e": 3.05
+    },
+    {
+     "w": "of",
+     "s": 3.05,
+     "e": 3.12
+    },
+    {
+     "w": "America's",
+     "s": 3.12,
+     "e": 3.57
+    },
+    {
+     "w": "biggest",
+     "s": 3.57,
+     "e": 4.12
+    },
+    {
+     "w": "stock",
+     "s": 4.12,
+     "e": 4.41
+    },
+    {
+     "w": "traders,",
+     "s": 4.41,
+     "e": 4.84
+    },
+    {
+     "w": "is",
+     "s": 5.05,
+     "e": 5.18
+    },
+    {
+     "w": "updating",
+     "s": 5.26,
+     "e": 5.72
+    },
+    {
+     "w": "its",
+     "s": 5.72,
+     "e": 5.85
+    },
+    {
+     "w": "trading",
+     "s": 5.85,
+     "e": 6.2
+    },
+    {
+     "w": "software.",
+     "s": 6.2,
+     "e": 6.65
+    }
+   ]
+  },
+  {
+   "text": "Eight servers. The new code reaches only seven.",
+   "dir": "slow, suspenseful",
+   "start": 15.98,
+   "vo": 3.84,
+   "dur": 3.88,
+   "words": [
+    {
+     "w": "Eight",
+     "s": 0.12,
+     "e": 0.37
+    },
+    {
+     "w": "servers.",
+     "s": 0.37,
+     "e": 0.92
+    },
+    {
+     "w": "The",
+     "s": 1.37,
+     "e": 1.45
+    },
+    {
+     "w": "new",
+     "s": 1.45,
+     "e": 1.72
+    },
+    {
+     "w": "code",
+     "s": 1.72,
+     "e": 2.27
+    },
+    {
+     "w": "reaches",
+     "s": 2.27,
+     "e": 2.68
+    },
+    {
+     "w": "only",
+     "s": 2.68,
+     "e": 3.29
+    },
+    {
+     "w": "seven.",
+     "s": 3.29,
+     "e": 3.72
+    }
+   ]
+  },
+  {
+   "text": "The eighth still has an old feature, switched off since 2003: Power Peg.",
+   "dir": "mysterious, lower voice",
+   "start": 19.86,
+   "vo": 6.92,
+   "dur": 7.15,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.12,
+     "e": 0.35
+    },
+    {
+     "w": "eighth",
+     "s": 0.35,
+     "e": 0.67
+    },
+    {
+     "w": "still",
+     "s": 0.77,
+     "e": 1.24
+    },
+    {
+     "w": "has",
+     "s": 1.24,
+     "e": 1.48
+    },
+    {
+     "w": "an",
+     "s": 1.48,
+     "e": 1.57
+    },
+    {
+     "w": "old",
+     "s": 1.57,
+     "e": 2.05
+    },
+    {
+     "w": "feature,",
+     "s": 2.05,
+     "e": 2.53
+    },
+    {
+     "w": "switched",
+     "s": 2.79,
+     "e": 3.27
+    },
+    {
+     "w": "off",
+     "s": 3.27,
+     "e": 3.51
+    },
+    {
+     "w": "since",
+     "s": 3.51,
+     "e": 3.84
+    },
+    {
+     "w": "2003:",
+     "s": 3.84,
+     "e": 5.12
+    },
+    {
+     "w": "Power",
+     "s": 6.02,
+     "e": 6.45
+    },
+    {
+     "w": "Peg.",
+     "s": 6.45,
+     "e": 6.8
+    }
+   ]
+  },
+  {
+   "text": "And the new code reuses its old switch.",
+   "dir": "ominous, quiet",
+   "start": 27.01,
+   "vo": 3.59,
+   "dur": 3.66,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.12,
+     "e": 0.3
+    },
+    {
+     "w": "the",
+     "s": 0.3,
+     "e": 0.36
+    },
+    {
+     "w": "new",
+     "s": 0.36,
+     "e": 0.65
+    },
+    {
+     "w": "code",
+     "s": 0.65,
+     "e": 1.24
+    },
+    {
+     "w": "reuses",
+     "s": 1.24,
+     "e": 1.8
+    },
+    {
+     "w": "its",
+     "s": 1.8,
+     "e": 2.29
+    },
+    {
+     "w": "old",
+     "s": 2.59,
+     "e": 2.91
+    },
+    {
+     "w": "switch.",
+     "s": 2.91,
+     "e": 3.47
+    }
+   ]
+  },
+  {
+   "text": "8:01 AM. The system sends 97 warning emails. Nobody acts.",
+   "dir": "tense, matter-of-fact",
+   "start": 30.67,
+   "vo": 6.672,
+   "dur": 6.922,
+   "words": [
+    {
+     "w": "8:01",
+     "s": 0.11,
+     "e": 0.63
+    },
+    {
+     "w": "AM.",
+     "s": 0.63,
+     "e": 1.08
+    },
+    {
+     "w": "The",
+     "s": 1.88,
+     "e": 1.95
+    },
+    {
+     "w": "system",
+     "s": 1.95,
+     "e": 2.37
+    },
+    {
+     "w": "sends",
+     "s": 2.37,
+     "e": 2.73
+    },
+    {
+     "w": "97",
+     "s": 2.73,
+     "e": 3.81
+    },
+    {
+     "w": "warning",
+     "s": 3.81,
+     "e": 4.3
+    },
+    {
+     "w": "emails.",
+     "s": 4.3,
+     "e": 4.91
+    },
+    {
+     "w": "Nobody",
+     "s": 5.68,
+     "e": 6.15
+    },
+    {
+     "w": "acts.",
+     "s": 6.15,
+     "e": 6.64
+    }
+   ]
+  },
+  {
+   "text": "9:30. The market opens. Power Peg wakes up.",
+   "dir": "building tension",
+   "start": 37.592,
+   "vo": 4.47,
+   "dur": 4.72,
+   "words": [
+    {
+     "w": "9:30.",
+     "s": 0.0,
+     "e": 0.68
+    },
+    {
+     "w": "The",
+     "s": 1.26,
+     "e": 1.34
+    },
+    {
+     "w": "market",
+     "s": 1.34,
+     "e": 1.77
+    },
+    {
+     "w": "opens.",
+     "s": 1.77,
+     "e": 2.29
+    },
+    {
+     "w": "Power",
+     "s": 2.86,
+     "e": 3.29
+    },
+    {
+     "w": "Peg",
+     "s": 3.29,
+     "e": 3.71
+    },
+    {
+     "w": "wakes",
+     "s": 3.71,
+     "e": 4.23
+    },
+    {
+     "w": "up.",
+     "s": 4.23,
+     "e": 4.45
+    }
+   ]
+  },
+  {
+   "text": "Orders fly out nonstop: four million trades in 154 stocks.",
+   "dir": "fast, urgent, rising panic",
+   "start": 42.312,
+   "vo": 5.37,
+   "dur": 5.44,
+   "words": [
+    {
+     "w": "Orders",
+     "s": 0.01,
+     "e": 0.36
+    },
+    {
+     "w": "fly",
+     "s": 0.36,
+     "e": 0.8
+    },
+    {
+     "w": "out",
+     "s": 0.8,
+     "e": 1.02
+    },
+    {
+     "w": "nonstop:",
+     "s": 1.02,
+     "e": 2.03
+    },
+    {
+     "w": "four",
+     "s": 2.03,
+     "e": 2.37
+    },
+    {
+     "w": "million",
+     "s": 2.37,
+     "e": 2.94
+    },
+    {
+     "w": "trades",
+     "s": 2.94,
+     "e": 3.41
+    },
+    {
+     "w": "in",
+     "s": 3.41,
+     "e": 3.5
+    },
+    {
+     "w": "154",
+     "s": 3.5,
+     "e": 4.73
+    },
+    {
+     "w": "stocks.",
+     "s": 4.73,
+     "e": 5.25
+    }
+   ]
+  },
+  {
+   "text": "45 minutes later, they finally stop it. Over 460 million dollars, gone.",
+   "dir": "heavy, stunned, slow on the last word",
+   "start": 47.752,
+   "vo": 7.292,
+   "dur": 7.542,
+   "words": [
+    {
+     "w": "45",
+     "s": 0.1,
+     "e": 1.15
+    },
+    {
+     "w": "minutes",
+     "s": 1.15,
+     "e": 1.7
+    },
+    {
+     "w": "later,",
+     "s": 1.7,
+     "e": 2.18
+    },
+    {
+     "w": "they",
+     "s": 2.23,
+     "e": 2.37
+    },
+    {
+     "w": "finally",
+     "s": 2.58,
+     "e": 3.07
+    },
+    {
+     "w": "stop",
+     "s": 3.07,
+     "e": 3.45
+    },
+    {
+     "w": "it.",
+     "s": 3.45,
+     "e": 3.66
+    },
+    {
+     "w": "Over",
+     "s": 3.88,
+     "e": 4.09
+    },
+    {
+     "w": "460",
+     "s": 4.09,
+     "e": 5.46
+    },
+    {
+     "w": "million",
+     "s": 5.46,
+     "e": 6.09
+    },
+    {
+     "w": "dollars,",
+     "s": 6.09,
+     "e": 6.64
+    },
+    {
+     "w": "gone.",
+     "s": 6.91,
+     "e": 7.23
+    }
+   ]
+  },
+  {
+   "text": "Within a week, Knight needs a 400 million dollar rescue. Within a year, a rival takes it over.",
+   "dir": "sober storyteller",
+   "start": 55.294,
+   "vo": 5.975,
+   "dur": 6.226,
+   "words": [
+    {
+     "w": "Within",
+     "s": 0.0,
+     "e": 0.23
+    },
+    {
+     "w": "a",
+     "s": 0.23,
+     "e": 0.28
+    },
+    {
+     "w": "week,",
+     "s": 0.28,
+     "e": 0.72
+    },
+    {
+     "w": "Knight",
+     "s": 0.81,
+     "e": 1.02
+    },
+    {
+     "w": "needs",
+     "s": 1.02,
+     "e": 1.21
+    },
+    {
+     "w": "a",
+     "s": 1.21,
+     "e": 1.26
+    },
+    {
+     "w": "400",
+     "s": 1.26,
+     "e": 2.02
+    },
+    {
+     "w": "million",
+     "s": 2.02,
+     "e": 2.59
+    },
+    {
+     "w": "dollar",
+     "s": 2.59,
+     "e": 2.9
+    },
+    {
+     "w": "rescue.",
+     "s": 2.9,
+     "e": 3.49
+    },
+    {
+     "w": "Within",
+     "s": 3.78,
+     "e": 4.07
+    },
+    {
+     "w": "a",
+     "s": 4.07,
+     "e": 4.12
+    },
+    {
+     "w": "year,",
+     "s": 4.12,
+     "e": 4.49
+    },
+    {
+     "w": "a",
+     "s": 4.49,
+     "e": 4.54
+    },
+    {
+     "w": "rival",
+     "s": 4.92,
+     "e": 5.27
+    },
+    {
+     "w": "takes",
+     "s": 5.27,
+     "e": 5.58
+    },
+    {
+     "w": "it",
+     "s": 5.58,
+     "e": 5.67
+    },
+    {
+     "w": "over.",
+     "s": 5.67,
+     "e": 5.92
+    }
+   ]
+  },
+  {
+   "text": "The lesson? Delete dead code, and never deploy alone.",
+   "dir": "confident, friendly advice",
+   "start": 61.52,
+   "vo": 3.37,
+   "dur": 3.41,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.05
+    },
+    {
+     "w": "lesson?",
+     "s": 0.05,
+     "e": 0.46
+    },
+    {
+     "w": "Delete",
+     "s": 0.91,
+     "e": 1.33
+    },
+    {
+     "w": "dead",
+     "s": 1.33,
+     "e": 1.57
+    },
+    {
+     "w": "code,",
+     "s": 1.57,
+     "e": 1.92
+    },
+    {
+     "w": "and",
+     "s": 1.92,
+     "e": 2.17
+    },
+    {
+     "w": "never",
+     "s": 2.17,
+     "e": 2.64
+    },
+    {
+     "w": "deploy",
+     "s": 2.64,
+     "e": 3.03
+    },
+    {
+     "w": "alone.",
+     "s": 3.03,
+     "e": 3.25
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech stories, decoded.",
+   "dir": "warm, upbeat",
+   "start": 64.93,
+   "vo": 3.311,
+   "dur": 4.65,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.11,
+     "e": 0.54
+    },
+    {
+     "w": "to",
+     "s": 0.99,
+     "e": 1.25
+    },
+    {
+     "w": "TechDecoded",
+     "s": 1.25,
+     "e": 1.3
+    },
+    {
+     "w": "with",
+     "s": 1.3,
+     "e": 1.39
+    },
+    {
+     "w": "Max",
+     "s": 1.39,
+     "e": 1.77
+    },
+    {
+     "w": "for",
+     "s": 1.77,
+     "e": 1.87
+    },
+    {
+     "w": "more",
+     "s": 1.87,
+     "e": 2.05
+    },
+    {
+     "w": "tech",
+     "s": 2.05,
+     "e": 2.29
+    },
+    {
+     "w": "stories,",
+     "s": 2.29,
+     "e": 2.71
+    },
+    {
+     "w": "decoded.",
+     "s": 2.88,
+     "e": 3.29
+    }
+   ]
+  }
+ ]
+}
