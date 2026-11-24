@@ -17,7 +17,7 @@ for b in tl['beats']:
     cur = []
     for w in ws:
         cur.append(w)
-        if re.search(r'[.,:?!]$', w['w']) or len(cur) >= 4:
+        if re.search(r'[.,:?!]$', w['w']) or len(cur) >= 4 or sum(len(x['w']) + 1 for x in cur) >= 20:
             chunks.append(cur); cur = []
     if cur: chunks.append(cur)
 CH = []
@@ -28,6 +28,10 @@ for k, ch in enumerate(chunks):
 Wt = lambda n, i=0: [w for w in words if w['n'].startswith(n)][i]['s']
 SH = [[Wt('45') + .05, 16, .3], [Wt('lost') + .05, 18, .3], [Wt('dollars'), 24, .4], [Wt('hacker') + .2, 10, .25], [Wt('step') + .05, 18, .3], [Wt('biggest') + .05, 16, .3]]
 FL = [[Wt('dollars'), .5], [Wt('knight'), .5], [Wt('capital'), .45]]
+if DUR > 20:
+    SH += [[Wt('seven') + .1, 14, .3], [Wt('power') + .05, 18, .35], [Wt('nobody') + .1, 14, .3], [Wt('wakes') + .05, 20, .4],
+           [Wt('trades') + .05, 16, .3], [Wt('stop') + .1, 16, .3], [Wt('gone') + .02, 30, .5], [Wt('over', 1) + .1, 14, .3]]
+    FL += [[Wt('power'), .5], [Wt('wakes'), .45], [Wt('gone'), .5], [Wt('more') + .1, .35]]
 html = (D / 'index.html').read_text()
 html = html.replace('__WORDS__', json.dumps(words)).replace('__CHUNKS__', json.dumps(CH)).replace('__SHAKES__', json.dumps(SH)).replace('__FLASHES__', json.dumps(FL))
 MODE = os.environ.get('MODE', 'full')
@@ -49,6 +53,21 @@ SFX = [S('pop', Wt('in') - .05, .3), S('impact', Wt('45'), .6), S('tick', Wt('45
        S('thud', Wt('august') - .1, .5), S('flip', Wt('august') + .1, .5), S('flip', Wt('august') + .26, .5), S('flip', Wt('august') + .42, .5), S('ding', Wt('2012'), .4),
        S('snap', Wt('knight'), .6), S('snap', Wt('capital'), .55), S('thud', Wt('capital') + .25, .45), S('stamp', Wt('biggest') + .02, .8), S('whoosh', 14.05, .4)]
 SFX += [S('type', Wt('updating') + .1 + .3 * i, .35) for i in range(4)]
+if DUR > 20:
+    SFX += [S('whoosh', 15.9, .4), S('pop', Wt('eight') - .05, .3)] + [S('thud', 16.1 + k * .06, .18) for k in range(0, 8, 2)] + [S('pop', Wt('code') - .1, .35)]
+    SFX += [S('ping', Wt('reaches') + k * .11, .22) for k in range(7)] + [S('error', Wt('only'), .45), S('stamp', Wt('seven') + .07, .8), S('whoosh', 19.75, .4)]
+    SFX += [S('thud', 20.05, .45), S('thud', Wt('old') + .05, .45), S('switch', Wt('switched'), .5), S('powerdown', Wt('switched') + .15, .3), S('snap', Wt('2003'), .45),
+            S('rip', Wt('power') - .02, .55), S('impact', Wt('power'), .6), S('whoosh', 26.9, .4)]
+    SFX += [S('pop', 27.1, .3), S('thud', 27.35, .4), S('switch', Wt('reuses'), .6), S('chirp', Wt('old', 1), .3), S('glitch', Wt('switch', 1), .45), S('whoosh', 30.55, .4)]
+    SFX += [S('impact', Wt('801'), .5), S('tick', Wt('am', 1), .35)] + [S('notify', Wt('sends') + k * .13, .2) for k in range(0, 14, 2)] + [S('ding', Wt('97'), .4), S('stamp', Wt('nobody') + .07, .8), S('whoosh', 37.45, .4)]
+    SFX += [S('impact', 37.62, .5), S('ding', Wt('market'), .6), S('ding', Wt('market') + .35, .4), S('pop', Wt('opens'), .35)]
+    SFX += [S('rumble', 40.42, .5), S('static', Wt('wakes'), .35), S('glitch', Wt('wakes') + .05, .5), S('riser', 41.4, .35)]
+    SFX += [S('impact', 42.32, .5), S('keys', Wt('orders'), .35), S('keys', Wt('orders') + .8, .35), S('chain', Wt('four'), .4), S('impact', Wt('trades'), .55), S('scan', Wt('154'), .4)]
+    SFX += [S('whoosh', 47.65, .4), S('thud', 47.85, .45)] + [S('tick2', 48.2 + .3 * k, .25) for k in range(8)] + [S('stamp', Wt('stop') + .07, .8), S('whoosh', 51.45, .4)]
+    SFX += [S('chain', Wt('460', 1), .4), S('snap', Wt('dollars', 1), .5), S('impact', Wt('gone'), .8), S('rip', Wt('gone') + .1, .4), S('whoosh', 55.2, .4)]
+    SFX += [S('pop', 55.35 + .08 * k, .2) for k in range(0, 7, 2)] + [S('thud', Wt('400') + .05, .5), S('ding', Wt('rescue'), .35), S('whoosh', Wt('rival'), .45), S('stamp', Wt('over', 1) + .04, .8), S('whoosh', 61.4, .4)]
+    SFX += [S('pop', Wt('lesson'), .35), S('thud', 61.75, .4), S('snap', Wt('delete'), .5), S('whoosh', Wt('dead') + .15, .4), S('thud', Wt('dead') + .5, .4), S('stamp', Wt('alone') + .04, .8), S('whoosh', 64.85, .4)]
+    SFX += [S('thud', 65.1, .4), S('stamp', 65.62, .7), S('pop', Wt('subscribe'), .4), S('click', Wt('more') + .1, .6), S('ding', Wt('more') + .2, .4)]
 SR = 48000
 
 

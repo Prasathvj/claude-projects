@@ -126,9 +126,9 @@ function buildAll() {
     bg(g, C.paper);
     halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(700, 900, 760, 1.0), maxK: .68 });
     halftone(g, { color: C.orange, step: 20, angle: 60, f: edge(1100, 1.4), maxK: .6 }).setAttribute('class', 'mul');
-    const big = chars(g, '45', { x: 560, y: 1180, size: 760, family: F.bagel, weight: 400, fill: C.yellow, anchor: 'middle', shadow: { fill: C.orange, dx: 16, dy: 16 } });
+    const big = chars(g, '45', { x: 560, y: 1050, size: 760, family: F.bagel, weight: 400, fill: C.yellow, anchor: 'middle', shadow: { fill: C.orange, dx: 16, dy: 16 } });
     const head = chars(g, 'IN', { x: 90, y: 330, size: 150, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
-    const head2 = chars(g, 'MINUTES', { x: 90, y: 1350, size: 170, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const head2 = chars(g, 'MINUTES', { x: 90, y: 1225, size: 160, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
     const sw = stopwatch(g);
     return (t) => {
       charsPop(head, t, Wt('in') - .05, .06); charsPop(big, t, Wt('45') - .1, .1, .42, 160); charsPop(head2, t, Wt('minutes') - .1, .045, .35, 70);
@@ -155,14 +155,14 @@ function buildAll() {
     return (t) => {
       charsPop(h1, t, Wt('company') - .1, .045);
       op(ex, seg(t, Wt('company'), Wt('company') + .2)); tf(ex, 90, 420);
-      tf(card, 540, lerp(2300, 860, E.back(seg(t, Wt('company') + .05, Wt('company') + .5))), 1, -2);
+      tf(card, 540, lerp(2300, 820, E.back(seg(t, Wt('company') + .05, Wt('company') + .5))), 1, -2);
       line.setAttribute('stroke-dashoffset', (1400 * (1 - E.in(seg(t, Wt('lost'), Wt('dollars'))))).toFixed(0));
       stampAnim(st, t, Wt('lost') + .05, 760, 470, -10);
       const v = 460e6 * E.in(seg(t, Wt('460') - .1, Wt('dollars')));
       const s = t >= Wt('dollars') ? '$460M' : fmt(v); numS.textContent = s; numT.textContent = s;
       numT.setAttribute('fill', t >= Wt('dollars') ? C.red : C.ink);
       const k = t >= Wt('dollars') ? E.back(seg(t, Wt('dollars'), Wt('dollars') + .35)) : 1;
-      op(num, t >= Wt('460') - .15 ? 1 : 0); tf(num, 540, 1290, t >= Wt('dollars') ? lerp(1.7, 1, k) * 1.25 : .9);
+      op(num, t >= Wt('460') - .15 ? 1 : 0); tf(num, 540, 1215, t >= Wt('dollars') ? lerp(1.7, 1, k) * 1.25 : .9);
     };
   });
   // ---------- S3 6.2–7.25  NO HACKER (dark "secret" scene) ----------
@@ -197,13 +197,13 @@ function buildAll() {
     const st = stampEl(g, 'MISSED', { size: 150, color: C.red });
     return (t) => {
       charsPop(h1, t, Wt('one') - .1, .05); charsPop(h2, t, Wt('missed') - .1, .07, .4, 90);
-      blocks.forEach(({ b, k }) => tf(b, 70 + k * 235, lerp(2200, 1300, E.back(seg(t, 7.3 + k * .09, 7.65 + k * .09)))));
+      blocks.forEach(({ b, k }) => tf(b, 70 + k * 235, lerp(2200, 1230, E.back(seg(t, 7.3 + k * .09, 7.65 + k * .09)))));
       // the v2 cube hops step to step, then drops through the gap
       const hop = (a, b2, x0, y0, x1, y1, ht) => { const p = seg(t, a, b2); return [lerp(x0, x1, p), lerp(y0, y1, p) - Math.sin(p * Math.PI) * ht]; };
-      let x = 185, y = 1085, r = 0;
-      if (t > 7.6) [x, y] = hop(7.6, 7.95, 185, 1085, 420, 935, 120);
-      if (t > 7.95) [x, y] = hop(7.95, 8.3, 420, 935, 640, 790, 120);
-      if (t > 8.3) { y = 790 + 1200 * E.in(seg(t, 8.3, 8.9)); x = 640; r = (t - 8.3) * 400; }
+      let x = 185, y = 1015, r = 0;
+      if (t > 7.6) [x, y] = hop(7.6, 7.95, 185, 1015, 420, 865, 120);
+      if (t > 7.95) [x, y] = hop(7.95, 8.3, 420, 865, 640, 720, 120);
+      if (t > 8.3) { y = 720 + 1200 * E.in(seg(t, 8.3, 8.9)); x = 640; r = (t - 8.3) * 400; }
       tf(cube, x, y, t < 7.55 ? 0.001 : 1, r);
       stampAnim(st, t, Wt('step') + .05, 620, 640, -9);
     };
@@ -226,7 +226,7 @@ function buildAll() {
     const h = chars(g, 'AUG 1, 2012', { x: 540, y: 330, size: 130, family: F.slab, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 8, dy: 8 } });
     return (t) => {
       const a = Wt('august');
-      tf(cal, 540, lerp(-700, 960, E.out(seg(t, a - .5, a - .1))) + (t > a - .1 ? -Math.sin(seg(t, a - .1, a + .1) * Math.PI) * 30 : 0), .95);
+      tf(cal, 540, lerp(-700, 920, E.out(seg(t, a - .5, a - .1))) + (t > a - .1 ? -Math.sin(seg(t, a - .1, a + .1) * Math.PI) * 30 : 0), .95);
       torn.forEach((p, i) => { const t0 = a + .1 + (2 - i) * .16, q = seg(t, t0, t0 + .45);
         op(p, 1 - q); tf(p, lerp(0, (i - 1) * 420, E.in(q)), lerp(0, -900, E.in(q)), 1, lerp(0, (i - 1) * 40, q)); });
       const yp = seg(t, Wt('2012'), Wt('2012') + .35); yr.setAttribute('fill', yp > 0 && yp < 1 ? C.red : C.ink);
@@ -247,14 +247,14 @@ function buildAll() {
     const st = stampEl(g, 'BIG PLAYER', { size: 104, color: C.red });
     return (t) => {
       charsPop(h, t, 11.12, .05);
-      tf(tw.g, 560, lerp(2600, 1110, E.back(seg(t, 11.07, 11.5))), .95);
+      tf(tw.g, 560, lerp(2600, 1060, E.back(seg(t, 11.07, 11.5))), .95);
       tw.wins.forEach((w, i) => w.setAttribute('fill', t > 11.2 + ((i * 7) % 36) * .02 ? C.orange : C.ink));
-      tf(plate, 540, lerp(2200, 1250, E.back(seg(t, Wt('capital') - .1, Wt('capital') + .3))), 1, -2);
+      tf(plate, 540, lerp(2200, 1190, E.back(seg(t, Wt('capital') - .1, Wt('capital') + .3))), 1, -2);
       stampAnim(st, t, Wt('biggest') + .05, 560, 560, -8);
     };
   });
   // ---------- S7 14.2–16.3  IS UPDATING ITS TRADING SOFTWARE: laptop + progress ----------
-  scene(14.22, 16.31, (g) => {
+  scene(14.22, 16.05, (g) => {
     bg(g, C.paper);
     halftone(g, { color: C.teal, step: 22, angle: 15, f: ramp(300, 1500), maxK: .6 }).setAttribute('class', 'mul');
     const h = chars(g, 'UPDATING…', { x: 80, y: 320, size: 130, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
@@ -266,13 +266,263 @@ function buildAll() {
       charsPop(h, t, Wt('updating') - .15, .05);
       tf(lp, 540, lerp(2300, 980, E.back(seg(t, 14.25, 14.7))), 1, -1.5);
       lines.forEach((l, i) => op(l, t > Wt('updating') + .1 + i * .3 ? 1 : 0));
-      const p = seg(t, Wt('updating'), 16.2) * .62; bar.setAttribute('width', (540 * p).toFixed(0)); pct.textContent = Math.round(p * 100) + '%';
+      const p = seg(t, Wt('updating'), 15.95) * .62; bar.setAttribute('width', (540 * p).toFixed(0)); pct.textContent = Math.round(p * 100) + '%';
+    };
+  });
+
+  // ================= helpers for the second half =================
+  const rack = (p, label, big) => { const g = el('g', { filter: 'url(#boil)' }, p); const w = big ? 300 : 190, h = big ? 400 : 250;
+    el('rect', { x: -w / 2, y: -h / 2, width: w, height: h, rx: 18, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, g);
+    const leds = []; for (let k = 0; k < 3; k++) { el('rect', { x: -w / 2 + 20, y: -h / 2 + 22 + k * (h * .22), width: w - 40, height: h * .15, rx: 8, fill: C.ink }, g); leds.push(el('circle', { cx: w / 2 - 36, cy: -h / 2 + 22 + k * (h * .22) + h * .075, r: big ? 9 : 6, fill: '#7CE0A3' }, g)); }
+    txt(g, label, { x: 0, y: h / 2 - 24, 'font-size': big ? 70 : 46, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' }); return { g, leds }; };
+  const folder = (p, label) => { const g = el('g', { filter: 'url(#boil)' }, p);
+    el('path', { d: 'M-260 -170 L-80 -170 L-50 -210 L120 -210 L150 -170 L260 -170 L260 190 L-260 190 Z', fill: C.peach, stroke: C.ink, 'stroke-width': 9, 'stroke-linejoin': 'round' }, g);
+    el('rect', { x: -230, y: -120, width: 460, height: 280, rx: 6, fill: '#F2B98F', stroke: C.ink, 'stroke-width': 5 }, g);
+    const lab = el('g', {}, g); el('rect', { x: -190, y: -40, width: 380, height: 90, rx: 8, fill: C.cream, stroke: C.ink, 'stroke-width': 6 }, lab);
+    const lt = txt(lab, label, { x: 0, y: 22, 'font-size': Math.min(52, 330 / (Math.max(label.length, 1) * .6)), 'font-family': F.mono, 'font-weight': 800, fill: C.ink, 'text-anchor': 'middle' }); return { g, lt, lab }; };
+  const toggle = (p) => { const g = el('g', { filter: 'url(#boil)' }, p); const bgR = el('rect', { x: -110, y: -55, width: 220, height: 110, rx: 55, fill: '#C9B8A8', stroke: C.ink, 'stroke-width': 8 }, g);
+    const knob = el('circle', { cx: -50, cy: 0, r: 40, fill: C.cream, stroke: C.ink, 'stroke-width': 7 }, g); return { g, bgR, knob }; };
+  const burst = (p, n, r0, r1, col) => { const g = el('g', {}, p); for (let k = 0; k < n; k++) el('path', { d: `M0 ${-r0} L14 ${-r1} L-14 ${-r1} Z`, fill: col, transform: `rotate(${k * 360 / n})` }, g); return g; };
+
+  // ---------- S8 16.05–19.86  8 SERVERS, the new code reaches only seven ----------
+  scene(16.05, 19.86, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 800, 700, 1.0), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, '8 SERVERS', { x: 80, y: 300, size: 140, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const chip = el('g', {}, g); el('rect', { x: -170, y: -46, width: 340, height: 92, rx: 14, fill: C.orange, stroke: C.ink, 'stroke-width': 7 }, chip);
+    txt(chip, 'NEW CODE v2', { x: 0, y: 18, 'font-size': 44, 'font-family': F.mono, 'font-weight': 800, fill: C.cream, 'text-anchor': 'middle' });
+    const R = []; for (let k = 0; k < 8; k++) { const r = rack(g, '#' + (k + 1)); const ok = el('g', {}, r.g); el('circle', { cx: 80, cy: -110, r: 36, fill: C.green, stroke: C.ink, 'stroke-width': 6 }, ok);
+      txt(ok, '✓', { x: 80, y: -94, 'font-size': 46, 'font-family': F.sans, 'font-weight': 900, fill: C.cream, 'text-anchor': 'middle' }); R.push({ r, ok }); }
+    const ring = el('circle', { r: 175, fill: 'none', stroke: C.red, 'stroke-width': 12, 'stroke-dasharray': '30 18' }, g);
+    const st = stampEl(g, '7 / 8', { size: 150, color: C.red });
+    return (t) => {
+      charsPop(h, t, Wt('eight') - .1, .05);
+      tf(chip, 540, lerp(-200, 460, E.back(seg(t, Wt('code') - .2, Wt('code') + .2))), 1, -3);
+      R.forEach(({ r, ok }, k) => { const x = 160 + (k % 4) * 253, y = 720 + Math.floor(k / 4) * 330;
+        tf(r.g, x, lerp(2300, y, E.back(seg(t, 16.1 + k * .06, 16.45 + k * .06))));
+        const tk = Wt('reaches') + k * .11; op(ok, k < 7 && t > tk ? 1 : 0); tf(ok, 0, 0, k < 7 ? pop(t, tk, .25) || .001 : .001);
+        r.leds.forEach(l => l.setAttribute('fill', k === 7 && t > Wt('only') ? C.red : '#7CE0A3')); });
+      op(ring, t > Wt('only') ? 1 : 0); tf(ring, 160 + 3 * 253, 1050, lerp(1.6, 1, E.out(seg(t, Wt('only'), Wt('only') + .25))));
+      stampAnim(st, t, Wt('seven') + .05, 540, 1230, -7);
+    };
+  });
+  // ---------- S9 19.86–27.0  #8 still has an old feature, switched off since 2003: POWER PEG (redaction lifts) ----------
+  scene(19.86, 27.02, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.orange, step: 22, angle: 30, f: edge(1000, 1.4), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, 'SERVER #8', { x: 80, y: 300, size: 140, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const rk = rack(g, '#8', true); const fo = folder(g, 'OLD FEATURE');
+    const dust = el('g', {}, g); const rr = rng(7); for (let k = 0; k < 40; k++) el('circle', { cx: (rr() - .5) * 460, cy: (rr() - .5) * 300, r: 2 + rr() * 5, fill: '#9C8676', opacity: .7 }, dust);
+    const tg = toggle(g); const offT = txt(g, 'OFF', { x: 0, y: 0, 'font-size': 64, 'font-family': F.bagel, fill: C.ink });
+    const yr = chars(g, 'SINCE 2003', { x: 540, y: 1235, size: 96, family: F.bagel, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.ink, dx: 6, dy: 6 } });
+    const red = el('rect', { x: -195, y: -45, width: 390, height: 100, fill: C.ink }, fo.lab);
+    const pp = chars(g, 'POWER PEG', { x: 540, y: 470, size: 132, family: F.slab, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.ink, dx: 9, dy: 9 } });
+    return (t) => {
+      charsPop(h, t, Wt('eighth') - .15, .05);
+      tf(rk.g, 250, lerp(2300, 820, E.back(seg(t, 19.95, 20.35))), 1, -2);
+      tf(fo.g, 750, lerp(2300, 860, E.back(seg(t, Wt('old') - .1, Wt('old') + .3))), .95, 3);
+      op(dust, t > Wt('old') ? 1 : 0); tf(dust, 750, 860 - (t - Wt('old')) * 18);
+      const ts = Wt('switched'); tf(tg.g, 300, lerp(2300, 1080, E.back(seg(t, ts - .2, ts + .2)))); tf(offT, 440, lerp(2300, 1102, E.back(seg(t, ts - .2, ts + .2))));
+      charsPop(yr, t, Wt('2003') - .05, .04, .3, 50);
+      fo.lt.textContent = t > Wt('power') ? 'POWER PEG' : 'OLD FEATURE';
+      op(red, t < Wt('power') - .3 ? 0 : t < Wt('power') ? 1 : 1 - seg(t, Wt('power'), Wt('power') + .25)); tf(red, lerp(0, 460, E.in(seg(t, Wt('power'), Wt('power') + .25))), 0);
+      charsPop(pp, t, Wt('power') - .02, .05, .35, 80);
+    };
+  });
+  // ---------- S10 27.0–30.67  the new code reuses its old switch (evidence board with red string) ----------
+  scene(27.02, 30.67, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(700, 700, 700, 1.0), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, 'SAME SWITCH', { x: 70, y: 300, size: 108, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const card = el('g', { filter: 'url(#boil)' }, g); el('rect', { x: -250, y: -150, width: 500, height: 300, rx: 16, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, card);
+    txt(card, 'new_code.py', { x: -220, y: -95, 'font-size': 32, 'font-family': F.mono, 'font-weight': 800, fill: '#9C8676' });
+    txt(card, 'if flag == 1:', { x: -220, y: -10, 'font-size': 46, 'font-family': F.mono, 'font-weight': 800, fill: C.ink });
+    txt(card, '  route(order)', { x: -220, y: 60, 'font-size': 46, 'font-family': F.mono, 'font-weight': 800, fill: C.ink });
+    const fo = folder(g, 'POWER PEG'); const tg = toggle(g); const flag = txt(g, 'FLAG', { x: 0, y: 0, 'font-size': 54, 'font-family': F.bagel, fill: C.ink });
+    const str = el('path', { d: 'M300 720 C420 920 560 980 720 1040', fill: 'none', stroke: C.red, 'stroke-width': 9, 'stroke-dasharray': 700, 'stroke-dashoffset': 700 }, g);
+    const pins = [[300, 720], [720, 1040]].map(([x, y]) => el('circle', { cx: x, cy: y, r: 16, fill: C.red, stroke: C.ink, 'stroke-width': 5 }, g));
+    const bu = burst(g, 12, 70, 150, C.orange);
+    return (t) => {
+      charsPop(h, t, 27.1, .045);
+      tf(card, 330, lerp(2300, 620, E.back(seg(t, 27.05, 27.45))), 1, -3);
+      tf(fo.g, 760, lerp(2300, 1000, E.back(seg(t, 27.25, 27.65))), .7, 4);
+      tf(tg.g, 280, lerp(2300, 1050, E.back(seg(t, 27.45, 27.85)))); tf(flag, 410, lerp(2300, 1070, E.back(seg(t, 27.45, 27.85))));
+      const on = seg(t, Wt('reuses'), Wt('reuses') + .2); tg.knob.setAttribute('cx', lerp(-50, 50, E.back(on))); tg.bgR.setAttribute('fill', on > .5 ? C.orange : '#C9B8A8');
+      str.setAttribute('stroke-dashoffset', (700 * (1 - E.out(seg(t, Wt('old', 1), Wt('old', 1) + .4)))).toFixed(0));
+      pins.forEach(p => op(p, t > Wt('old', 1) ? 1 : 0));
+      op(bu, t > Wt('switch', 1) ? 1 - seg(t, Wt('switch', 1) + .3, Wt('switch', 1) + .6) : 0); tf(bu, 760, 1000, lerp(.4, 1.3, E.out(seg(t, Wt('switch', 1), Wt('switch', 1) + .3))), t * 20);
+    };
+  });
+  // ---------- S11 30.67–37.59  8:01 AM, 97 warning emails, nobody acts ----------
+  scene(30.67, 37.59, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.orange, step: 22, angle: 15, f: radial(540, 500, 600, 1.1), maxK: .62 }).setAttribute('class', 'mul');
+    const clk = chars(g, '8:01', { x: 540, y: 520, size: 300, family: F.bagel, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 12, dy: 12 } });
+    const am = chars(g, 'AM', { x: 900, y: 520, size: 90, family: F.slab, weight: 400, fill: C.red });
+    const env = []; for (let k = 0; k < 14; k++) { const e = el('g', { filter: 'url(#boil)' }, g);
+      el('rect', { x: -120, y: -75, width: 240, height: 150, rx: 10, fill: C.cream, stroke: C.ink, 'stroke-width': 6 }, e); el('path', { d: 'M-120 -75 L0 15 L120 -75', fill: 'none', stroke: C.ink, 'stroke-width': 6 }, e);
+      el('rect', { x: -110, y: 30, width: 90, height: 30, rx: 6, fill: C.red }, e); txt(e, 'ALERT', { x: -65, y: 53, 'font-size': 20, 'font-family': F.mono, 'font-weight': 800, fill: C.cream, 'text-anchor': 'middle' }); env.push(e); }
+    const cnt = el('g', {}, g); el('circle', { r: 110, fill: C.red, stroke: C.ink, 'stroke-width': 9 }, cnt); const ct = txt(cnt, '0', { x: 0, y: 34, 'font-size': 100, 'font-family': F.bagel, fill: C.cream, 'text-anchor': 'middle' });
+    const st = stampEl(g, 'IGNORED', { size: 140, color: C.red });
+    const rr = rng(3); const pos = env.map((_, k) => [200 + rr() * 680, 900 + rr() * 260, (rr() - .5) * 40]);
+    return (t) => {
+      charsPop(clk, t, Wt('801') - .1, .07, .4, 90); charsPop(am, t, Wt('am', 1) - .05, .05);
+      env.forEach((e, k) => { const t0 = Wt('sends') + k * .13; op(e, t > t0 ? 1 : 0); tf(e, pos[k][0], lerp(-200, pos[k][1], E.out(seg(t, t0, t0 + .35))), .9, pos[k][2]); });
+      op(cnt, t > Wt('97') - .2 ? 1 : 0); tf(cnt, 880, 780, pop(t, Wt('97') - .2, .3) || .001);
+      ct.textContent = String(Math.round(97 * E.out(seg(t, Wt('97'), Wt('warning')))));
+      stampAnim(st, t, Wt('nobody') + .05, 540, 1080, -9);
+    };
+  });
+  // ---------- S12 37.59–40.4  9:30, the market opens (bell, rays) ----------
+  scene(37.59, 40.42, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 800, 800, .9), maxK: .66 }).setAttribute('class', 'mul');
+    const rays = el('g', {}, g); for (let k = 0; k < 18; k++) el('path', { d: 'M0 0 L60 -900 L-60 -900 Z', fill: C.orange, opacity: .35, transform: `rotate(${k * 20})` }, rays);
+    const clk = chars(g, '9:30', { x: 540, y: 560, size: 300, family: F.bagel, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 12, dy: 12 } });
+    const bell = el('g', { filter: 'url(#boil)' }, g); el('path', { d: 'M-130 60 C-130 -90 -80 -150 0 -150 C80 -150 130 -90 130 60 L160 100 L-160 100 Z', fill: C.yellow, stroke: C.ink, 'stroke-width': 9, 'stroke-linejoin': 'round' }, bell);
+    el('circle', { cx: 0, cy: 125, r: 30, fill: C.ink }, bell); el('rect', { x: -20, y: -190, width: 40, height: 45, rx: 10, fill: C.ink }, bell);
+    const sign = el('g', {}, g); el('rect', { x: -300, y: -70, width: 600, height: 140, rx: 20, fill: C.green, stroke: C.ink, 'stroke-width': 8 }, sign);
+    txt(sign, 'MARKET OPEN', { x: 0, y: 24, 'font-size': 72, 'font-family': F.slab, fill: C.cream, 'text-anchor': 'middle' });
+    return (t) => {
+      charsPop(clk, t, Wt('930') - .05, .07, .4, 90);
+      tf(rays, 540, 900, lerp(.3, 1, E.out(seg(t, Wt('market') - .2, Wt('market') + .3))), t * 12); op(rays, t > Wt('market') - .2 ? 1 : 0);
+      tf(bell, 540, lerp(2300, 920, E.back(seg(t, 37.7, 38.1))), .9, t > Wt('market') ? Math.sin(t * 30) * 14 * Math.exp(-(t - Wt('market')) * 1.5) : 0);
+      tf(sign, 540, lerp(2300, 1210, E.back(seg(t, Wt('opens') - .15, Wt('opens') + .25))), 1, -3);
+    };
+  });
+  // ---------- S13 40.4–42.31  POWER PEG WAKES UP (dark secret scene, the folder opens its eyes) ----------
+  scene(40.42, 42.31, (g) => {
+    bg(g, C.ink);
+    halftone(g, { color: '#5A2A1E', step: 22, angle: 30, f: radial(540, 850, 800, .8), maxK: .7 });
+    const h = chars(g, 'POWER PEG', { x: 540, y: 340, size: 150, family: F.slab, weight: 400, fill: C.cream, anchor: 'middle', shadow: { fill: C.red, dx: 9, dy: 9 } });
+    const fo = folder(g, ''); const eyes = el('g', {}, fo.g);
+    const E1 = [-90, 90].map(x => { const e = el('g', {}, eyes); el('ellipse', { cx: x, cy: 10, rx: 60, ry: 50, fill: C.cream, stroke: C.ink, 'stroke-width': 7 }, e); el('circle', { cx: x, cy: 18, r: 24, fill: C.red }, e); el('circle', { cx: x + 8, cy: 8, r: 8, fill: C.cream }, e); return e; });
+    const sub = chars(g, 'WAKES UP', { x: 540, y: 1230, size: 110, family: F.bagel, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.cream, dx: 5, dy: 5 } });
+    return (t) => {
+      charsPop(h, t, Wt('power', 1) - .05, .04);
+      tf(fo.g, 540 + (t > Wt('wakes') ? Math.sin(t * 60) * 8 : 0), 860, 1.1);
+      const o = seg(t, Wt('wakes'), Wt('wakes') + .2); E1.forEach(e => e.setAttribute('transform', `translate(0 10) scale(1 ${Math.max(.05, o).toFixed(3)}) translate(0 -10)`));
+      charsPop(sub, t, Wt('wakes') + .05, .05, .3, 60);
+    };
+  });
+  // ---------- S14 42.31–47.75  orders fly out nonstop: 4,000,000 trades in 154 stocks ----------
+  scene(42.31, 47.75, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.red, step: 22, angle: 15, f: edge(900, 1.2), maxK: .62 }).setAttribute('class', 'mul');
+    const rk = rack(g, '#8', true);
+    const slips = []; for (let k = 0; k < 18; k++) { const s = el('g', {}, g); const buy = k % 2 === 0;
+      el('rect', { x: -80, y: -36, width: 160, height: 72, rx: 8, fill: buy ? C.green : C.red, stroke: C.ink, 'stroke-width': 5 }, s);
+      txt(s, buy ? 'BUY' : 'SELL', { x: 0, y: 16, 'font-size': 40, 'font-family': F.bagel, fill: C.cream, 'text-anchor': 'middle' }); slips.push(s); }
+    const num = chars(g, '0', { x: 540, y: 330, size: 10, family: F.bagel, fill: C.ink });
+    const big = el('g', {}, g); const bS = txt(big, '0', { x: 8, y: 8, 'font-size': 170, 'font-family': F.bagel, fill: C.orange, class: 'mul', 'text-anchor': 'middle' }); const bT = txt(big, '0', { x: 0, y: 0, 'font-size': 170, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' });
+    const lab = chars(g, 'TRADES', { x: 540, y: 470, size: 70, family: F.slab, weight: 400, fill: C.red, anchor: 'middle' });
+    const grid = el('g', {}, g); const cells = []; for (let k = 0; k < 154; k++) cells.push(el('rect', { x: (k % 14) * 44, y: Math.floor(k / 14) * 40, width: 36, height: 32, rx: 5, fill: '#E6D9CE', stroke: C.ink, 'stroke-width': 2 }, grid));
+    const gl = chars(g, '154 STOCKS', { x: 735, y: 1200, size: 64, family: F.slab, weight: 400, fill: C.ink, anchor: 'middle' });
+    return (t) => {
+      op(num.g, 0); tf(rk.g, 220, lerp(2300, 900, E.back(seg(t, 42.35, 42.75))), .8, -2);
+      rk.leds.forEach((l, i) => l.setAttribute('fill', Math.floor(t * 12 + i) % 2 ? C.red : C.yellow));
+      slips.forEach((s, k) => { const per = 1.1, ph = ((t - Wt('orders') - k * .07) % per + per) % per / per, on = t > Wt('orders') + k * .07;
+        op(s, on ? 1 - seg(t, Wt('154') - .2, Wt('154') + .1) : 0); tf(s, lerp(300, 1250, ph), 900 + Math.sin(k * 2.1) * 160 - Math.sin(ph * Math.PI) * 260, .9, lerp(-20, 30, ph)); });
+      const v = 4e6 * E.in(seg(t, Wt('four') - .1, Wt('trades'))); const s = Math.round(v).toLocaleString('en-US'); bS.textContent = s; bT.textContent = s;
+      op(big, t > Wt('four') - .2 ? 1 : 0); tf(big, 540, 330, t > Wt('trades') ? lerp(1.4, 1, E.back(seg(t, Wt('trades'), Wt('trades') + .3))) : 1);
+      charsPop(lab, t, Wt('trades'), .04);
+      op(grid, t > Wt('154') - .2 ? 1 : 0); tf(grid, 470, 740, .85);
+      cells.forEach((c, k) => c.setAttribute('fill', t > Wt('154') + ((k * 37) % 154) * .006 ? C.red : '#E6D9CE'));
+      charsPop(gl, t, Wt('154'), .03);
+    };
+  });
+  // ---------- S15 47.75–51.55  45 minutes later, they finally stop it ----------
+  scene(47.75, 51.55, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 850, 700, 1.0), maxK: .6 }).setAttribute('class', 'mul');
+    const sw = stopwatch(g); const tm = el('g', {}, g); const tmS = txt(tm, '00:00', { x: 6, y: 6, 'font-size': 130, 'font-family': F.bagel, fill: C.orange, class: 'mul', 'text-anchor': 'middle' }); const tmT = txt(tm, '00:00', { x: 0, y: 0, 'font-size': 130, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' });
+    const h = chars(g, '45 MIN LATER', { x: 70, y: 300, size: 100, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const st = stampEl(g, 'STOPPED', { size: 150, color: C.red });
+    return (t) => {
+      charsPop(h, t, Wt('45', 1) - .1, .045);
+      tf(sw.g, 540, lerp(2300, 820, E.back(seg(t, 47.8, 48.2))), 1.15); const run = seg(t, Wt('45', 1), Wt('stop'));
+      sw.hand.setAttribute('transform', `rotate(${run * 45 * 360 / 60 * 8})`);
+      const v = Math.round(2700 * E.in(run)), s = String(Math.floor(v / 60)).padStart(2, '0') + ':' + String(v % 60).padStart(2, '0'); tmS.textContent = s; tmT.textContent = s;
+      tmT.setAttribute('fill', t > Wt('stop') ? C.red : C.ink); tf(tm, 540, 1240);
+      stampAnim(st, t, Wt('stop') + .05, 560, 820, -8);
+    };
+  });
+  // ---------- S16 51.55–55.29  over $460 million, GONE ----------
+  scene(51.55, 55.29, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.red, step: 22, angle: 15, f: edge(950, 1.1), maxK: .66 }).setAttribute('class', 'mul');
+    const big = el('g', {}, g); const bS = txt(big, '$0', { x: 9, y: 9, 'font-size': 150, 'font-family': F.bagel, fill: C.orange, class: 'mul', 'text-anchor': 'middle' }); const bT = txt(big, '$0', { x: 0, y: 0, 'font-size': 150, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' });
+    const bills = []; const rr = rng(11); for (let k = 0; k < 22; k++) { const b = el('g', { filter: 'url(#boil)' }, g); el('rect', { x: -70, y: -36, width: 140, height: 72, rx: 8, fill: '#8CCB8F', stroke: C.ink, 'stroke-width': 5 }, b); txt(b, '$', { x: 0, y: 18, 'font-size': 52, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' }); bills.push([b, rr() * 1080, rr() * 200 + 700, (rr() - .5) * 2]); }
+    const gone = chars(g, 'GONE', { x: 540, y: 1000, size: 300, family: F.bagel, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.ink, dx: 14, dy: 14 } });
+    return (t) => {
+      const v = 460e6 * E.in(seg(t, Wt('460', 1) - .1, Wt('dollars', 1))); const s = t > Wt('dollars', 1) ? '$460,000,000' : '$' + Math.round(v).toLocaleString('en-US'); bS.textContent = s; bT.textContent = s;
+      tf(big, 540, 520, .8);
+      bills.forEach(([b, x, y, d]) => { const p = seg(t, Wt('gone') - .1, Wt('gone') + 1.2); op(b, t < Wt('gone') - .1 ? 1 : 1 - p); tf(b, x + d * 600 * E.out(p), y - 900 * E.out(p) + (t < Wt('gone') ? Math.sin(t * 4 + x) * 10 : 0), .9, d * 200 * p); });
+      charsPop(gone, t, Wt('gone') - .05, .07, .35, 120);
+    };
+  });
+  // ---------- S17 55.29–61.52  $400M rescue within a week; taken over within a year ----------
+  scene(55.29, 61.52, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 800, 700, 1.0), maxK: .6 }).setAttribute('class', 'mul');
+    const days = []; ['M', 'T', 'W', 'T', 'F', 'S', 'S'].forEach((d, k) => { const c = el('g', {}, g); const r = el('rect', { x: -56, y: -56, width: 112, height: 112, rx: 14, fill: C.cream, stroke: C.ink, 'stroke-width': 6 }, c); const te = txt(c, d, { x: 0, y: 20, 'font-size': 56, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' }); days.push({ c, r, te }); });
+    const ring = el('g', { filter: 'url(#boil)' }, g); el('circle', { r: 200, fill: 'none', stroke: C.red, 'stroke-width': 90 }, ring);
+    for (let k = 0; k < 4; k++) el('rect', { x: -40, y: -245, width: 80, height: 90, fill: C.cream, transform: `rotate(${k * 90 + 45})` }, ring);
+    el('circle', { r: 245, fill: 'none', stroke: C.ink, 'stroke-width': 8 }, ring); el('circle', { r: 155, fill: 'none', stroke: C.ink, 'stroke-width': 8 }, ring);
+    const amt = chars(g, '$400M RESCUE', { x: 540, y: 1240, size: 96, family: F.bagel, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 6, dy: 6 } });
+    const co = folder(g, 'KNIGHT'); const rv = folder(g, 'RIVAL');
+    const st = stampEl(g, 'TAKEN OVER 2013', { size: 92, color: C.red });
+    return (t) => {
+      days.forEach(({ c, r, te }, k) => { const t0 = 55.35 + k * .08; tf(c, 130 + k * 137, 380, pop(t, t0, .25) || .001); const on = t > t0 + .1; r.setAttribute('fill', on ? C.orange : C.cream); te.setAttribute('fill', on ? C.cream : C.ink); });
+      const a = t < Wt('within', 1) - .2; op(ring, a ? 1 : 0); tf(ring, 540, lerp(2300, 850, E.back(seg(t, Wt('400') - .3, Wt('400') + .1))), .9, t * 30);
+      op(amt.g, a ? 1 : 0); charsPop(amt, t, Wt('rescue') - .2, .03);
+      const b = !a; op(co.g, b ? 1 : 0); op(rv.g, b ? 1 : 0);
+      tf(co.g, 380, lerp(2300, 820, E.back(seg(t, Wt('within', 1) - .1, Wt('within', 1) + .3))), .75, -4);
+      tf(rv.g, lerp(1500, 700, E.out(seg(t, Wt('rival') - .1, Wt('takes') + .3))), 980, .75, 5);
+      stampAnim(st, t, Wt('over', 1) + .02, 540, 1180, -8);
+    };
+  });
+  // ---------- S18 61.52–64.93  THE LESSON: delete dead code, never deploy alone ----------
+  scene(61.52, 64.93, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.orange, step: 22, angle: 15, f: radial(900, 400, 600, 1.1), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, 'THE LESSON', { x: 70, y: 300, size: 120, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const sheet = el('g', { filter: 'url(#boil)' }, g); el('rect', { x: -400, y: -220, width: 800, height: 440, rx: 16, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, sheet);
+    const L = ['def route(order):', '  send(order)', '  power_peg()', '  log(order)'].map((s, i) => txt(sheet, s, { x: -360, y: -130 + i * 85, 'font-size': 48, 'font-family': F.mono, 'font-weight': 800, fill: i === 2 ? C.red : C.ink }));
+    const strike = el('line', { x1: -340, x2: 0, y1: 25, y2: 25, stroke: C.red, 'stroke-width': 10 }, sheet);
+    const bin = el('g', { filter: 'url(#boil)' }, g); el('path', { d: 'M-80 -60 L80 -60 L65 110 L-65 110 Z', fill: C.peach, stroke: C.ink, 'stroke-width': 8, 'stroke-linejoin': 'round' }, bin); el('rect', { x: -100, y: -90, width: 200, height: 30, rx: 8, fill: C.ink }, bin);
+    const st = stampEl(g, 'REVIEWED BY 2', { size: 96, color: C.green });
+    return (t) => {
+      charsPop(h, t, Wt('lesson') - .1, .045);
+      tf(sheet, 540, lerp(2300, 760, E.back(seg(t, 61.6, 62))), 1, -2);
+      const d = seg(t, Wt('delete'), Wt('delete') + .25); strike.setAttribute('x2', lerp(-340, 0, d));
+      const fly = seg(t, Wt('dead') + .1, Wt('dead') + .55); L[2].setAttribute('transform', `translate(${lerp(0, 600, E.in(fly))} ${lerp(0, 430, E.in(fly))}) rotate(${fly * 40})`); op(L[2], 1 - seg(t, Wt('dead') + .4, Wt('dead') + .55)); strike.setAttribute('opacity', 1 - fly);
+      tf(bin, 900, lerp(2300, 1160, E.back(seg(t, Wt('delete') - .2, Wt('delete') + .2))), .8);
+      stampAnim(st, t, Wt('alone') + .02, 540, 1180, -6);
+    };
+  });
+  // ---------- S19 64.93–69.8  CASE CLOSED + subscribe ----------
+  scene(64.93, 69.9, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 760, 760, .9), maxK: .62 }).setAttribute('class', 'mul');
+    const fo = folder(g, 'KNIGHT CAPITAL'); const cc = stampEl(g, 'CASE CLOSED', { size: 110, color: C.red });
+    const brand = chars(g, 'TechDecoded', { x: 540, y: 300, size: 110, family: F.slab, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 7, dy: 7 } });
+    const wm = chars(g, 'with Max', { x: 540, y: 400, size: 70, family: F.bagel, weight: 400, fill: C.orange, anchor: 'middle' });
+    const btn = el('g', {}, g); el('rect', { x: -300, y: -70, width: 600, height: 140, rx: 70, fill: '#A8301A' }, btn); const btR = el('rect', { x: -300, y: -84, width: 600, height: 140, rx: 70, fill: 'url(#hlg)', stroke: C.ink, 'stroke-width': 7 }, btn);
+    const btT = txt(btn, 'SUBSCRIBE', { x: 0, y: 8, 'font-size': 70, 'font-family': F.sans, 'font-weight': 900, fill: '#FFFFFF', 'text-anchor': 'middle' });
+    const cur = el('path', { d: 'M0 0 L0 90 L24 68 L42 108 L58 100 L40 62 L72 62 Z', fill: C.cream, stroke: C.ink, 'stroke-width': 6, 'stroke-linejoin': 'round' }, g);
+    return (t) => {
+      tf(fo.g, 540, lerp(2300, 780, E.back(seg(t, 64.95, 65.35))), .9, -3); stampAnim(cc, t, 65.6, 540, 790, -10);
+      charsPop(brand, t, Wt('techdecoded') - .1, .04); charsPop(wm, t, Wt('techdecoded') + .3, .04);
+      const tc = Wt('more') + .1; tf(btn, 540, lerp(2300, 1150, E.back(seg(t, Wt('subscribe') - .1, Wt('subscribe') + .3))), t > tc && t < tc + .12 ? .94 : 1);
+      if (t > tc) { btT.textContent = 'SUBSCRIBED ✓'; btR.setAttribute('fill', C.ink); } else { btT.textContent = 'SUBSCRIBE'; btR.setAttribute('fill', 'url(#hlg)'); }
+      op(cur, t > Wt('subscribe') + .3 ? 1 : 0); tf(cur, lerp(980, 640, E.out(seg(t, Wt('subscribe') + .3, tc))), lerp(1500, 1160, E.out(seg(t, Wt('subscribe') + .3, tc))), t > tc && t < tc + .12 ? .85 : 1);
     };
   });
 
   // ---------- caption bar (dark-ink pill, overprint shadow, the spoken word lights up in the highlight ink) ----------
   const CH = __CHUNKS__;
-  const CX = MODE === 'card' ? 430 : 540, CY = MODE === 'card' ? 1770 : 1440, CS = MODE === 'card' ? 60 : 64;
+  const CX = MODE === 'card' ? 430 : 540, CY = MODE === 'card' ? 1770 : 1335, CS = MODE === 'card' ? 60 : 64;
   CH.forEach(ch => { const g = el('g', {}, capL); const sp = measure(' ', CS, F.sans, 900);
     const ws = ch.w.map(w => measure(w.w, CS, F.sans, 900)); const tw = ws.reduce((a, b) => a + b, 0) + sp * (ws.length - 1); let x = -tw / 2;
     ch.items = ch.w.map((w, i) => { const wg = el('g', {}, g);
@@ -289,9 +539,18 @@ function buildAll() {
   const MX = [[0.15, 2.0, { brows: 'high', eyes: 'wide', mouth: 'shock', arms: 'hands-up', extra: ['bang'] }],
               [6.3, 7.25, { brows: 'skeptic', eyes: 'open', mouth: 'flat', arms: 'shrug', extra: ['question'] }],
               [7.3, 9.2, { brows: 'worried', eyes: 'closed', mouth: 'frown', arms: 'facepalm' }],
-              [14.3, 16.3, { brows: 'up', eyes: 'open', mouth: 'smile', arms: 'point' }]];
+              [14.3, 16.0, { brows: 'up', eyes: 'open', mouth: 'smile', arms: 'point' }],
+              [18.6, 19.8, { brows: 'focused', eyes: 'squint', mouth: 'flat', arms: 'chin' }],
+              [28.2, 30.6, { brows: 'worried', eyes: 'wide', mouth: 'flat', arms: 'hush' }],
+              [36.2, 37.5, { brows: 'angry', eyes: 'open', mouth: 'frown', arms: 'phone' }],
+              [41.2, 42.25, { brows: 'high', eyes: 'wide', mouth: 'shock', arms: 'hands-up', extra: ['sweat'] }],
+              [45.7, 47.7, { brows: 'worried', eyes: 'worried', mouth: 'wavy', arms: 'hug', extra: ['sweat'] }],
+              [54.6, 55.25, { brows: 'worried', eyes: 'closed', mouth: 'frown', arms: 'facepalm' }],
+              [60.2, 61.45, { brows: 'worried', eyes: 'worried', mouth: 'frown', arms: 'shrug' }],
+              [62.4, 64.9, { brows: 'up', eyes: 'open', mouth: 'smile', arms: 'thumbs' }],
+              [65.0, 69.9, { brows: 'up', eyes: 'happy', mouth: 'grin', arms: 'point', extra: ['spark'] }]];
   MX.forEach(m => { const g = el('g', { filter: 'url(#boil)' }, maxL); g.innerHTML = HOST.render(Object.assign({ char: MAXC, w: 400, h: 520 }, m[2])); m.push(g); });
-  maxUpdate = (t) => MX.forEach(m => { const on = t >= m[0] && t < m[1]; show(m[3], on); if (on) { const card = MODE === 'card'; tf(m[3], card ? 735 : 690, (card ? 1520 : 1500) + 400 * (1 - E.back(seg(t, m[0], m[0] + .35))), card ? .86 : 1); } });
+  maxUpdate = (t) => MX.forEach(m => { const on = t >= m[0] && t < m[1]; show(m[3], on); if (on) { const card = MODE === 'card'; tf(m[3], card ? 735 : 590, (card ? 1520 : 1410) + 400 * (1 - E.back(seg(t, m[0], m[0] + .35))), card ? .86 : .9); } });
 
   // ---------- HUD ----------
   const hg = el('g', {}, hud);
@@ -300,9 +559,9 @@ function buildAll() {
   const chipA = txt(chip, '', { x: 64, y: 117, 'font-size': 26, 'font-family': F.sans, 'font-weight': 900 }), chipB = txt(chip, '', { y: 117, 'font-size': 26, 'font-family': F.sans, 'font-weight': 900 });
   const date = el('g', {}, hg), dateBg = el('rect', { x: 800, y: 44, width: 230, height: 56, rx: 8, fill: 'none', 'stroke-width': 4 }, date);
   const rec = el('circle', { cx: 830, cy: 72, r: 10, fill: C.red }, date), dateT = txt(date, '2012.08.01', { x: 850, y: 84, 'font-size': 28, 'font-family': F.mono, 'font-weight': 800 });
-  const chips = [[0, 6.22, 'EXHIBIT 01', 'THE LOSS'], [6.22, 9.22, 'EXHIBIT 02', 'THE CAUSE'], [9.22, 16.31, 'FILE', 'THE COMPANY']];
+  const chips = [[0, 6.22, 'EXHIBIT 01', 'THE LOSS'], [6.22, 9.22, 'EXHIBIT 02', 'THE CAUSE'], [9.22, 16.05, 'FILE', 'THE COMPANY'], [16.05, 19.86, 'EXHIBIT 03', 'THE SERVERS'], [19.86, 30.67, 'EXHIBIT 04', 'THE OLD SWITCH'], [30.67, 37.59, 'EXHIBIT 05', 'THE WARNINGS'], [37.59, 47.75, 'EXHIBIT 06', 'THE OPEN'], [47.75, 61.52, 'VERDICT', 'THE DAMAGE'], [61.52, 70, 'CLOSED', 'THE LESSON']];
   hudUpdate = (t) => { const c = chips.find(c => t >= c[0] && t < c[1]); show(hg, !!c); if (!c) return;
-    const dark = t >= 6.22 && t < 7.27, ink = dark ? C.cream : C.ink;
+    const dark = (t >= 6.22 && t < 7.27) || (t >= 40.42 && t < 42.31), ink = dark ? C.cream : C.ink;
     caseNo.setAttribute('fill', ink); chipBg.setAttribute('fill', ink); chipA.textContent = c[2]; chipA.setAttribute('fill', dark ? C.red : C.yellow);
     chipB.textContent = c[3]; chipB.setAttribute('fill', dark ? C.ink : C.cream);
     const wa = measure(c[2], 26, F.sans), wb = measure(c[3], 26, F.sans); chipB.setAttribute('x', 64 + wa + 14); chipBg.setAttribute('width', wa + wb + 42);
@@ -311,7 +570,7 @@ function buildAll() {
   // ---------- halftone-dot wipes ----------
   const dg = el('g', {}, wipe), dots = [];
   for (let y = 0; y <= H + 80; y += 80) for (let x = 0; x <= W + 80; x += 80) dots.push({ e: el('circle', { cx: x, cy: y, r: 0 }, dg), x, y });
-  const WIPES = [[2.02, C.yellow], [6.22, C.ink], [7.27, C.orange], [9.22, C.teal], [14.22, C.yellow]];
+  const WIPES = [[2.02, C.yellow], [6.22, C.ink], [7.27, C.orange], [9.22, C.teal], [14.22, C.yellow], [16.05, C.orange], [19.86, C.ink], [27.02, C.yellow], [30.67, C.red], [37.59, C.yellow], [42.31, C.red], [47.75, C.ink], [51.55, C.red], [55.29, C.yellow], [61.52, C.orange], [64.93, C.yellow]];
   wipeUpdate = (t) => { const w = WIPES.find(([b]) => Math.abs(t - b) < .22); show(dg, !!w); if (!w) return; dg.setAttribute('fill', w[1]);
     const u = (t - w[0] + .22) / .44; dots.forEach(d => { const delay = (d.x / W * .4 + d.y / H * .6) * .35, p = clamp((u - delay) / .65); d.e.setAttribute('r', (Math.sin(p * Math.PI) * 62).toFixed(1)); }); };
 }
