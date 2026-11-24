@@ -12,6 +12,11 @@ audio.PROFILES['tamil'] = ("# AUDIO PROFILE: A native Tamil (Chennai) male narra
                            "conversational spoken Tamil, says English tech words (server, code, software, market) the way Tamil "
                            "speakers do, reads numbers in Tamil. Confident storyteller, crisp, natural breaths, never robotic.\n")
 audio.TARGET_WPM['tamil'] = 1  # no speed-up (max_tempo 1.0)
+audio.PROFILES['tamil-mystery'] = ("# AUDIO PROFILE: A native Tamil (Chennai) male narrator of a true-crime tech mystery documentary. "
+                                   "Speaks natural, conversational spoken Tamil, says English tech words (flight, radar, satellite, ping) the way "
+                                   "Tamil speakers do, reads numbers in Tamil. Low, calm and controlled, slightly hushed, with short dramatic "
+                                   "pauses; respectful, never theatrical or robotic.\n")
+audio.TARGET_WPM['tamil-mystery'] = 1
 
 
 def say_batch_ta(lines, voice="Orus", model=gtts.MODEL, profile="", keep_partial=False):
