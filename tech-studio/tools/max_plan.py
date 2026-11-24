@@ -142,6 +142,7 @@ MOODS = {'upi01-short': 'shock think point focus think focus point happy shrug s
          'mh01-short': 'off off off off worry off off off off off think happy',
          'mh01ta-short': 'off off off off worry off off off off off think happy',
          'news02ta-short': 'shock point happy shock think shrug think focus happy happy',
+         'news01ta-short': 'point shock think worry shock shrug focus think worry happy',
          'ast01-short': 'off shock think off off off off off off worry happy'}
 
 # automatic host acting for long videos: expression from each beat's visual type and delivery note
