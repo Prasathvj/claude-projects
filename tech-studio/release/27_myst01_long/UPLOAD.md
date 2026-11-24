@@ -13,12 +13,12 @@ Chapters:
 0:43 The first hijack
 1:57 The second hijack
 3:02 How it was done
-4:05 The one who got caught
-4:50 Why the trail went cold
-5:18 The clues
-6:25 The theories
-6:53 It happened again
-7:39 The lesson
+4:08 The one who got caught
+4:53 Why the trail went cold
+5:21 The clues
+6:33 The theories
+6:57 It happened again
+7:43 The lesson
 
 Sources:
 • Wikipedia, Max Headroom signal hijacking: https://en.wikipedia.org/wiki/Max_Headroom_signal_hijacking
