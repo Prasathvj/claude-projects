@@ -12,44 +12,89 @@
   "authoringSkill": "hyperframes",
   "registryItems": [
     {
-      "name": "paper-collage-reveal",
-      "type": "hyperframes:component",
-      "target": "compositions/components/paper-collage-reveal.html"
-    },
-    {
-      "name": "torn-paper-rip",
-      "type": "hyperframes:component",
-      "target": "compositions/components/torn-paper-rip.html"
-    },
-    {
-      "name": "grain-overlay",
-      "type": "hyperframes:component",
-      "target": "compositions/components/grain-overlay.html"
-    },
-    {
-      "name": "stop-motion-cadence",
-      "type": "hyperframes:component",
-      "target": "compositions/components/stop-motion-cadence.html"
-    },
-    {
-      "name": "marker-highlight",
-      "type": "hyperframes:component",
-      "target": "compositions/components/marker-highlight.html"
-    },
-    {
-      "name": "halftone-field",
+      "name": "chatgpt-exchange",
       "type": "hyperframes:block",
-      "target": "compositions/halftone-field.html"
+      "target": "compositions/chatgpt-exchange.html"
     },
     {
-      "name": "freeze-frame-dressing",
-      "type": "hyperframes:block",
-      "target": "compositions/freeze-frame-dressing.html"
+      "name": "agent-cursor",
+      "type": "hyperframes:component",
+      "target": "compositions/components/agent-cursor.html"
     },
     {
-      "name": "hw-text-cloud",
+      "name": "apple-money-count",
       "type": "hyperframes:block",
-      "target": "compositions/hw-text-cloud.html"
+      "target": "compositions/apple-money-count.html"
+    },
+    {
+      "name": "glitch",
+      "type": "hyperframes:block",
+      "target": "compositions/glitch.html"
+    },
+    {
+      "name": "whip-pan",
+      "type": "hyperframes:block",
+      "target": "compositions/whip-pan.html"
+    },
+    {
+      "name": "exploded-stack",
+      "type": "hyperframes:block",
+      "target": "compositions/exploded-stack.html"
+    },
+    {
+      "name": "sun-burst",
+      "type": "hyperframes:block",
+      "target": "compositions/sun-burst.html"
+    },
+    {
+      "name": "notification-pileup",
+      "type": "hyperframes:component",
+      "target": "compositions/components/notification-pileup.html"
+    },
+    {
+      "name": "headline-slam",
+      "type": "hyperframes:component",
+      "target": "compositions/components/headline-slam.html"
+    },
+    {
+      "name": "char-slam-explode",
+      "type": "hyperframes:component",
+      "target": "compositions/components/char-slam-explode.html"
+    },
+    {
+      "name": "camera-shake",
+      "type": "hyperframes:component",
+      "target": "compositions/components/camera-shake.html"
+    },
+    {
+      "name": "number-wheel",
+      "type": "hyperframes:component",
+      "target": "compositions/components/number-wheel.html"
+    },
+    {
+      "name": "slot-machine-roll",
+      "type": "hyperframes:component",
+      "target": "compositions/components/slot-machine-roll.html"
+    },
+    {
+      "name": "caption-kinetic-slam",
+      "type": "hyperframes:component",
+      "target": "compositions/components/caption-kinetic-slam.html"
+    },
+    {
+      "name": "camera-rig-depth-stack",
+      "type": "hyperframes:component",
+      "target": "compositions/components/camera-rig-depth-stack.html"
+    },
+    {
+      "name": "transitions-3d",
+      "type": "hyperframes:block",
+      "target": "compositions/transitions-3d.html"
+    },
+    {
+      "name": "news-ticker",
+      "type": "hyperframes:block",
+      "target": "compositions/news-ticker.html"
     }
   ]
 }

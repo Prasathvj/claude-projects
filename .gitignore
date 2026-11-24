@@ -16,3 +16,5 @@ tech-studio/hf/*/.hyperframes/video-state.json
 tech-studio/hf/*/.hyperframes/render-outputs.json
 tech-studio/hf/lib/node_modules/
 tech-studio/hf/*/.hyperframes/
+tech-studio/hf/style-samples/out/
+tech-studio/hf/*/out/
