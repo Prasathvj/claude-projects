@@ -1,0 +1,63 @@
+<template>
+  <style>
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:900; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Mono'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:500; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Serif'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:italic; unicode-range:U+0B80-0BFF,U+20B9; }
+
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.pk { position:absolute; padding:16px 24px; border-radius:20px; background:var(--green); color:#0C3B26; font:900 40px 'SD Display'; line-height:1.05; opacity:0; } .pk small { font:700 30px 'SD Text'; }
+.pk.cl { background:#F3E6DC; color:#1E120C; border:3px solid var(--green); }
+  </style>
+  <div id="root" data-composition-id="s5" data-width="1080" data-height="1920">
+    <div class="all" id="s5-all">
+<div class="card" id="s5-c" style="top:330px; height:820px;">
+  <div class="hd"><div class="tile"><svg width="60" height="60" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40L50 14l40 26z"/><path d="M20 44v32M40 44v32M60 44v32M80 44v32M10 84h80"/></svg></div><div><div class="lab"><tx style="letter-spacing:0">முதல் நாள்</tx> · 19 <tx style="letter-spacing:0">நவ</tx>. 2026</div><div class="ttl">ANT · <tx style="letter-spacing:0">முதல்</tx> trading <tx style="letter-spacing:0">நாள்</tx></div></div></div>
+  <svg width="900" height="660" viewBox="0 0 940 700" style="position:absolute;left:0;top:150px">
+    <line x1="60" y1="640" x2="900" y2="640" stroke="#C9BBB0" stroke-width="3" stroke-dasharray="10 10"/>
+    <text x="70" y="680" font-family="SD Text" font-weight="600" font-size="28" fill="#8A6550">IPO விலை $83 (≈ ₹7,700)</text>
+    <polyline id="s5-ln" points="80,640 220,600 330,250 420,300 520,380 640,420 760,450 860,440" fill="none" stroke="#3DDC97" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+  </svg>
+  <div class="pk" id="s5-pk" style="left:250px; top:290px">OPEN +34%<br><small>$111.50</small></div>
+  <div class="pk cl" id="s5-cl" style="left:560px; top:520px">CLOSE +17%<br><small>$97.17</small></div>
+</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s5-c", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
+    tl.to("#s5-ln", { strokeDashoffset:0.55, duration:.5, ease:"power2.out" }, 2.743);
+    tl.fromTo("#s5-pk", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 3.1430000000000002);
+    tl.to("#s5-ln", { strokeDashoffset:0, duration:1.0, ease:"power1.inOut" }, 4.2860000000000005);
+    tl.fromTo("#s5-cl", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.186);
+    tl.to("#s5-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 7.145);
+    window.__timelines["s5"] = tl;
+  </script>
+</template>

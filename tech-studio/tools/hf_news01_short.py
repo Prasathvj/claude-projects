@@ -298,7 +298,7 @@ def captions():
         if w[0] in ('—', '-'):
             continue
         cur.append(w)
-        if re.search(r'[.,:;!?]$', w[0]) or len(cur) >= 3:
+        if re.search(r'[.,:;!?]$', w[0]) or len(cur) >= int(os.environ.get('CAP_MAX', 3)):
             groups.append(cur); cur = []
     if cur: groups.append(cur)
     body, sc = [], []
