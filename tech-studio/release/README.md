@@ -38,6 +38,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 31 | [31_mh01ta](31_mh01ta) | MH370 காணாமப் போச்சு. ஆனா satellite 7 மணி நேரம் அதைக் கேட்டுச்சு! (TechDecoded தமிழ்) | 1:39 | — | Awaiting owner review (Tamil version of 30_mh01) |
 | 32 | [32_news02ta](32_news02ta) | வரலாற்றுலயே பெரிய IPO! போட்டியாளர்களும் பணம் போட்டாங்க (TechDecoded தமிழ்) | 1:10 | — | Awaiting owner review (Tamil version of 01_news02) |
 | 33 | [33_news01ta](33_news01ta) | உங்க AI உங்க பணத்தை அனுப்பிடுச்சு. நஷ்டம் யாருக்கு? (TechDecoded தமிழ்) | 1:03 | — | Awaiting owner review (Tamil version of 02_news01) |
+| 34 | [34_tip01ta](34_tip01ta) | உங்க AI விஷம் கலந்த webpage-ஐ படிச்சிடுச்சு. இப்போ என்ன? (TechDecoded தமிழ்) | 1:00 | — | Awaiting owner review (Tamil version of 03_tip01) |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.
