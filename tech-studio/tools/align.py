@@ -75,6 +75,16 @@ def main(tid):
                 nxt = next((y['s'] for y in words[i + 1:] if y['s'] is not None), b['vo'])
                 x['s'], x['e'] = round(prev, 3), round(max(prev + 0.05, nxt), 3)
         b['words'] = words
+    # caption safety (2026-11-24): word times strictly in order and never past the next line's start (a stuck/overlapping
+    # caption group otherwise stays on screen; myst01 'worked.' bug)
+    B = tl['beats']
+    for bi, b in enumerate(B):
+        lim = (B[bi + 1]['start'] - b['start'] - 0.06) if bi + 1 < len(B) else b['vo'] + 1.0
+        prev = 0.0
+        for w in b['words']:
+            w['s'] = round(min(max(w['s'], prev), lim - 0.05), 3)
+            w['e'] = round(min(max(w['e'], w['s'] + 0.05), lim), 3)
+            prev = w['e']
     json.dump(tl, open(p, 'w'), indent=1)
     print(f'{tid}: aligned {len(tl["beats"]) - bad}/{len(tl["beats"])} beats')
 
