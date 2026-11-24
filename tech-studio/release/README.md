@@ -36,6 +36,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 27 | [27_myst01_long](27_myst01_long) | TECH MYSTERIES · CASE 001: The TV Hijack Nobody Ever Solved | 8:37 | **Sat 28 Nov, 5:30 PM** | Ready, long (new series) |
 | 30 | [30_mh01](30_mh01) | MH370 vanished. A satellite kept hearing it for 7 hours. | 1:47 | — | Ready (owner approved 24 Nov; Tech Mysteries CASE 002 Short) |
 | 31 | [31_mh01ta](31_mh01ta) | MH370 காணாமப் போச்சு. ஆனா satellite 7 மணி நேரம் அதைக் கேட்டுச்சு! (TechDecoded தமிழ்) | 1:39 | — | Awaiting owner review (Tamil version of 30_mh01) |
+| 32 | [32_news02ta](32_news02ta) | வரலாற்றுலயே பெரிய IPO! போட்டியாளர்களும் பணம் போட்டாங்க (TechDecoded தமிழ்) | 1:10 | — | Awaiting owner review (Tamil version of 01_news02) |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.
