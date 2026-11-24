@@ -18,3 +18,5 @@ tech-studio/hf/lib/node_modules/
 tech-studio/hf/*/.hyperframes/
 tech-studio/hf/style-samples/out/
 tech-studio/hf/*/out/
+tech-studio/hf/*/maxframes/
+tech-studio/hf/*/.hyperframes/

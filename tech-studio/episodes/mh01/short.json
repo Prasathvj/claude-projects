@@ -1,0 +1,62 @@
+{
+ "id": "mh01-short",
+ "format": "vertical",
+ "profile": "mystery",
+ "gap": 0.45,
+ "captions": "big",
+ "voice": "Charon",
+ "batch": 4,
+ "max_tempo": 1.0,
+ "model": "gemini-3.1-flash-tts-preview",
+ "series": "mystery",
+ "beats": [
+  {
+   "text": "At 1:21 in the morning, a plane with two hundred and thirty nine people on board vanished from air traffic control. But a satellite kept hearing it for almost seven more hours.",
+   "dir": "cold open, low and gripping, slow on the last words"
+  },
+  {
+   "text": "March 8th, 2014. Malaysia Airlines flight 370, Kuala Lumpur to Beijing.",
+   "dir": "calm, setting the scene"
+  },
+  {
+   "text": "The last words from the cockpit: Good night, Malaysian three seven zero. Moments later, its transponder went dark.",
+   "dir": "hushed, ominous"
+  },
+  {
+   "text": "Military radar saw something no one expected. The plane turned back, crossed Malaysia, and flew out over the sea.",
+   "dir": "tense, building"
+  },
+  {
+   "text": "Then it slipped beyond radar range. Gone.",
+   "dir": "quiet, heavy pause before the last word"
+  },
+  {
+   "text": "But a satellite kept sending automatic pings. And the plane kept answering.",
+   "dir": "eerie, intrigued"
+  },
+  {
+   "text": "No messages. No voices. Just seven tiny handshakes, each carrying a time stamp and a shift in frequency.",
+   "dir": "slow, precise, investigator tone"
+  },
+  {
+   "text": "From those pings alone, engineers traced a path ending deep in the southern Indian Ocean.",
+   "dir": "measured, revealing"
+  },
+  {
+   "text": "In 2015, a piece of its wing washed up on Reunion Island, near Africa.",
+   "dir": "sober, respectful"
+  },
+  {
+   "text": "Searches have scanned over a hundred thousand square kilometers of seabed. The latest ended in 2026. Nothing.",
+   "dir": "heavy, slow on the last word"
+  },
+  {
+   "text": "Who turned the plane around, and why? Still, no one knows.",
+   "dir": "haunting, quiet question"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech mysteries, decoded.",
+   "dir": "calm, warm, low"
+  }
+ ]
+}
