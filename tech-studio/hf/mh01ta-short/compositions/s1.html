@@ -1,9 +1,11 @@
 <template>
   <style>
-@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
-@font-face { font-family:'SD Mono'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
-@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
-@font-face { font-family:'SD Serif'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:900; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Mono'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:500; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Serif'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:italic; unicode-range:U+0B80-0BFF; }
 
 
 @font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
@@ -93,10 +95,10 @@
     tl.fromTo("#s1-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.fromTo("#s1-f", { opacity:0, y:120, rotation:4 }, { opacity:1, y:0, rotation:-1.5, duration:0.5, ease:"expo.out", immediateRender:false }, 0.05);
     tl.set("#s1-f-r4", { scaleX:0 }, 0); tl.fromTo("#s1-f-r4", { scaleX:0 }, { scaleX:1, duration:.3, ease:"power2.inOut", immediateRender:false }, 3.29);
-    tl.set("#s1-f-s", { opacity:0 }, 0); tl.fromTo("#s1-f-s", { scale:2.6, opacity:0 }, { scale:1, opacity:1, duration:.22, ease:"power4.in", immediateRender:false }, 5.766);
+    tl.set("#s1-f-s", { opacity:0 }, 0); tl.fromTo("#s1-f-s", { scale:2.6, opacity:0 }, { scale:1, opacity:1, duration:.22, ease:"power4.in", immediateRender:false }, 6.75);
     tl.set("#s1-r", { opacity:0 }, 0);
-    tl.fromTo("#s1-r", { opacity:0, y:24 }, { opacity:1, y:0, duration:0.35, ease:"power2.out", immediateRender:false }, 5.09);
-    tl.to("#s1-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 7.61);
+    tl.fromTo("#s1-r", { opacity:0, y:24 }, { opacity:1, y:0, duration:0.35, ease:"power2.out", immediateRender:false }, 6.41);
+    tl.to("#s1-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 8.25);
     window.__timelines["s1"] = tl;
   </script>
 </template>

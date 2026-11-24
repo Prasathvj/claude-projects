@@ -325,9 +325,10 @@ TR = [('239</span> PEOPLE ON BOARD', '239</span> பேர் இருந்த
       ('WHO TURNED<br>THE PLANE AROUND?', 'FLIGHT-ஐத் திருப்புனது<br>யாரு?'), ('>WHY?<', '>ஏன்?<'),
       ('Turned back by hand, not autopilot (2018 report)', 'Autopilot இல்ல, கையால திருப்பியிருக்காங்க (2018 report)'), ('>UNSOLVED<', '>விடை இல்ல<'),
       ('Tech mysteries, decoded.', 'Tech mysteries, தமிழில்.'), ('>with Max<', '>தமிழ்<')]
-TAF = ''.join(f"@font-face {{ font-family:'{fam}'; src:url('assets/fonts/{f}'); font-weight:100 900; unicode-range:U+0B80-0BFF; }}\n"
-              for fam, f in (('SD Display', 'catamaran-tamil-900-normal.woff2'), ('SD Mono', 'mukta-malar-tamil-800-normal.woff2'),
-                             ('SD Text', 'mukta-malar-tamil-800-normal.woff2'), ('SD Serif', 'mukta-malar-tamil-800-normal.woff2')))
+TAF = ''.join(f"@font-face {{ font-family:'{fam}'; src:url('assets/fonts/{f}'); font-weight:{w}; font-style:{st}; unicode-range:U+0B80-0BFF; }}\n"
+              for fam, f, w, st in (('SD Display', 'catamaran-tamil-900-normal.woff2', 900, 'normal'), ('SD Display', 'catamaran-tamil-900-normal.woff2', 700, 'normal'),
+                                    ('SD Mono', 'mukta-malar-tamil-800-normal.woff2', 700, 'normal'), ('SD Text', 'mukta-malar-tamil-800-normal.woff2', 600, 'normal'),
+                                    ('SD Text', 'mukta-malar-tamil-800-normal.woff2', 500, 'normal'), ('SD Serif', 'mukta-malar-tamil-800-normal.woff2', 600, 'italic')))
 def tamilize(html):
     if LANG != 'ta':
         return html

@@ -1,9 +1,11 @@
 <template>
   <style>
-@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
-@font-face { font-family:'SD Mono'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
-@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
-@font-face { font-family:'SD Serif'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:900; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Mono'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:500; font-style:normal; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Serif'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:italic; unicode-range:U+0B80-0BFF; }
 
 
 @font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
@@ -98,44 +100,44 @@
     tl.fromTo("#s2-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
     tl.fromTo("#s2-p", { opacity:0, y:60 }, { opacity:1, y:0, duration:0.4, ease:"expo.out", immediateRender:false }, 0.05);
     tl.fromTo("#s2-h", { opacity:0 }, { opacity:1, duration:0.3, ease:"power2.out", immediateRender:false }, 0.2);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;' }, 3.302);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;G' }, 3.343);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GO' }, 3.385);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOO' }, 3.427);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD' }, 3.468);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD ' }, 3.51);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD N' }, 3.552);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NI' }, 3.593);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NIG' }, 3.635);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NIGH' }, 3.677);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NIGHT' }, 3.718);
-    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NIGHT,' }, 3.76);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;' }, 3.572);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;G' }, 3.613);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GO' }, 3.655);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOO' }, 3.697);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD' }, 3.738);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD ' }, 3.78);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD N' }, 3.822);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NI' }, 3.863);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NIG' }, 3.905);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NIGH' }, 3.947);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NIGHT' }, 3.988);
+    tl.set("#s2-t1-x", { innerHTML:'&quot;GOOD NIGHT,' }, 4.03);
     tl.set("#s2-t1-x", { innerHTML:"" }, 0);
-    tl.fromTo("#s2-t1-c", { opacity:1 }, { opacity:0, duration:.01, repeat:41, yoyo:true, repeatDelay:.3, immediateRender:false }, 3.76);
-    tl.set("#s2-t2-x", { innerHTML:'M' }, 4.16);
-    tl.set("#s2-t2-x", { innerHTML:'MA' }, 4.26);
-    tl.set("#s2-t2-x", { innerHTML:'MAL' }, 4.36);
-    tl.set("#s2-t2-x", { innerHTML:'MALA' }, 4.46);
-    tl.set("#s2-t2-x", { innerHTML:'MALAY' }, 4.56);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYS' }, 4.66);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYSI' }, 4.76);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYSIA' }, 4.86);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN' }, 4.96);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN ' }, 5.06);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN 3' }, 5.16);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN 37' }, 5.26);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN 370' }, 5.36);
-    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN 370&quot;' }, 5.46);
+    tl.fromTo("#s2-t1-c", { opacity:1 }, { opacity:0, duration:.01, repeat:41, yoyo:true, repeatDelay:.3, immediateRender:false }, 4.03);
+    tl.set("#s2-t2-x", { innerHTML:'M' }, 4.43);
+    tl.set("#s2-t2-x", { innerHTML:'MA' }, 4.53);
+    tl.set("#s2-t2-x", { innerHTML:'MAL' }, 4.63);
+    tl.set("#s2-t2-x", { innerHTML:'MALA' }, 4.73);
+    tl.set("#s2-t2-x", { innerHTML:'MALAY' }, 4.83);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYS' }, 4.93);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYSI' }, 5.03);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYSIA' }, 5.13);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN' }, 5.23);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN ' }, 5.33);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN 3' }, 5.43);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN 37' }, 5.53);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN 370' }, 5.63);
+    tl.set("#s2-t2-x", { innerHTML:'MALAYSIAN 370&quot;' }, 5.73);
     tl.set("#s2-t2-x", { innerHTML:"" }, 0);
-    tl.fromTo("#s2-t2-c", { opacity:1 }, { opacity:0, duration:.01, repeat:41, yoyo:true, repeatDelay:.3, immediateRender:false }, 5.46);
+    tl.fromTo("#s2-t2-c", { opacity:1 }, { opacity:0, duration:.01, repeat:41, yoyo:true, repeatDelay:.3, immediateRender:false }, 5.73);
     tl.set("#s2-x", { opacity:0 }, 0);
-    tl.fromTo("#s2-x", { opacity:0, y:24 }, { opacity:1, y:0, duration:0.35, ease:"power2.out", immediateRender:false }, 7.36);
+    tl.fromTo("#s2-x", { opacity:0, y:24 }, { opacity:1, y:0, duration:0.35, ease:"power2.out", immediateRender:false }, 6.72);
     tl.set("#s2-at", { opacity:0 }, 0);
-    tl.fromTo("#s2-led", { opacity:1 }, { opacity:.2, duration:.05, yoyo:true, repeat:5, immediateRender:false }, 8.72);
-    tl.to("#s2-led", { background:"#1B2C4C", boxShadow:"0 0 0 rgba(0,0,0,0)", duration:.1 }, 9.07);
-    tl.set("#s2-st", { textContent:"OFF", color:"#E5383B" }, 9.07);
-    tl.fromTo("#s2-at", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 9.22);
-    tl.to("#s2-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 9.753);
+    tl.fromTo("#s2-led", { opacity:1 }, { opacity:.2, duration:.05, yoyo:true, repeat:5, immediateRender:false }, 8.08);
+    tl.to("#s2-led", { background:"#1B2C4C", boxShadow:"0 0 0 rgba(0,0,0,0)", duration:.1 }, 8.43);
+    tl.set("#s2-st", { textContent:"OFF", color:"#E5383B" }, 8.43);
+    tl.fromTo("#s2-at", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 8.58);
+    tl.to("#s2-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 9.113);
     window.__timelines["s2"] = tl;
   </script>
 </template>
