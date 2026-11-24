@@ -1,0 +1,52 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* TechDecoded தமிழ் brand kit (2026-11-24): sister brand of TechDecoded with Max, in the cream look.
+   Rules: no dark text on orange and no orange text on dark; the Tamil badge is white on the orange-red gradient. */
+@font-face{font-family:'SD Display';src:url('../ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:TaHead;src:url('../knight01-dossier/fonts/catamaran-tamil-900-normal.woff2');font-weight:900}
+@font-face{font-family:TaBadge;src:url('../knight01-dossier/fonts/baloo-thambi-2-tamil-800-normal.woff2');font-weight:800}
+@font-face{font-family:TaBody;src:url('../knight01-dossier/fonts/mukta-malar-tamil-800-normal.woff2');font-weight:800}
+@font-face{font-family:T;src:url('../ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+:root{--paper:#F4EDE3;--ink:#2A2018;--orange:#F87736;--red:#E8402E;--card:#FFFAF7}
+body{margin:0;background:var(--paper);overflow:hidden}
+.dots{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(248,119,54,.55) 0 38%,transparent 40%)}
+.glow{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(248,119,54,.28),rgba(246,199,168,.18) 45%,transparent 68%)}
+.badge{position:relative;display:inline-block}
+.badge b{position:absolute;inset:0;transform:translate(0,12%);border-radius:999px;background:#A8301A}
+.badge span{position:relative;display:block;border-radius:999px;background:linear-gradient(100deg,var(--orange),var(--red));color:#fff;
+ font-family:TaBadge,'SD Display';font-weight:800;white-space:nowrap;border:var(--bw,6px) solid var(--ink)}
+.name{font:900 118px 'SD Display';white-space:nowrap;color:var(--ink);letter-spacing:-3px;line-height:1;display:flex;align-items:center;gap:22px}
+.tag{font:900 41px TaHead,'SD Display';color:var(--ink);margin-top:18px;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;gap:16px;margin-top:20px;height:72px;padding:0 34px;border-radius:36px;border:4px solid var(--ink);background:var(--card);font:800 33px TaBody,T;color:var(--ink);box-shadow:6px 8px 0 rgba(42,32,24,.85)}
+.pill i{width:18px;height:18px;border-radius:9px;background:var(--orange)}
+</style><script src="../host/host.js"></script></head><body><div id="root"></div>
+<script>
+const MAX={skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'};
+const mode=new URLSearchParams(location.search).get('m');
+const head=(o,vb,w,h)=>HOST.render({char:MAX,...o,w,h}).replace('viewBox="0 0 400 520"',`viewBox="${vb}"`);
+const dots=(size,mask)=>`<div class="dots" style="background-size:${size}px ${size}px;-webkit-mask-image:${mask}"></div>`;
+const badge=(txt,fs,px,py,bw)=>`<div class="badge" style="--bw:${bw}px"><b></b><span style="font-size:${fs}px;padding:${py}px ${px}px ${py * .6}px">${txt}</span></div>`;
+const r=document.getElementById('root');
+if(mode==='avatar'){ // 800x800 profile picture (YouTube shows it as a circle, ~98 px)
+ document.body.style.cssText+='width:800px;height:800px';
+ r.innerHTML=`${dots(30,'radial-gradient(circle at 50% 50%,transparent 46%,#000 72%)')}<div class="glow" style="left:0;top:0;width:800px;height:800px"></div>
+ <div style="position:absolute;left:34px;top:34px;width:732px;height:732px;border-radius:50%;border:16px solid var(--orange);box-sizing:border-box;background:radial-gradient(circle,#FFF6EA 0,#F4EDE3 70%)"></div>
+ <div style="position:absolute;left:66px;top:66px;width:668px;height:668px;border-radius:50%;overflow:hidden"><div style="position:absolute;left:44px;top:-40px">${head({brows:'up',eyes:'open',mouth:'smile',tilt:-4},'70 60 260 300',580,669)}</div></div>
+ <div style="position:absolute;left:0;right:0;top:508px;text-align:center">${badge('தமிழ்',92,40,4,7)}</div>`;
+} else if(mode==='watermark'){ // 150x150 video watermark
+ document.body.style.cssText+='width:150px;height:150px;background:transparent';
+ r.innerHTML=`<div style="position:absolute;left:5px;top:5px;width:140px;height:140px;border-radius:50%;background:#FFF6EA;border:7px solid var(--orange);box-sizing:border-box;overflow:hidden">
+  <div style="position:absolute;left:4px;top:4px">${head({brows:'up',mouth:'smile'},'100 70 200 230',118,136)}</div></div>
+  <div style="position:absolute;left:0;right:0;top:104px;text-align:center">${badge('தமிழ்',24,10,1,2)}</div>`;
+} else { // 2560x1440 banner; safe area 1546x423 centred (507..2053, 508..931)
+ document.body.style.cssText+='width:2560px;height:1440px';
+ r.innerHTML=`${dots(34,'linear-gradient(90deg,#000 0,transparent 22%,transparent 78%,#000 100%)')}
+ <div class="glow" style="left:250px;top:120px;width:1300px;height:1300px"></div><div class="glow" style="left:1450px;top:-250px;width:1200px;height:1200px"></div>
+ <div style="position:absolute;left:535px;top:485px;-webkit-mask-image:linear-gradient(180deg,#000 74%,transparent 100%)">${head({brows:'up',eyes:'happy',mouth:'grin',arms:'point',look:[1,0]},'60 50 380 470',380,470)}</div>
+ <div style="position:absolute;left:925px;top:560px;width:1090px">
+  <div class="name">TechDecoded ${badge('தமிழ்',86,40,4,6)}</div>
+  <div class="tag">டெக் உலகத்தோட மறைஞ்ச கதைகள், தமிழ்ல.</div>
+  <div class="pill"><i></i>டெக் கதைகள் · டெக் நியூஸ் · எளிய விளக்கம்</div>
+ </div>`;
+}
+document.fonts.ready.then(()=>{window.READY=true});
+</script></body></html>
