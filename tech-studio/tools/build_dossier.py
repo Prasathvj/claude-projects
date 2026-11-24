@@ -1,7 +1,7 @@
 """Build knight01 in the Halftone Dossier style (hf/knight01-dossier/index.html is the engine + scenes).
 Fills word times / caption chunks / shakes / flashes from the aligned timeline, renders frames with Playwright through
 window.render(t), mixes VO + music + SFX with numpy, muxes.  Usage: python3 tools/build_dossier.py [dur_seconds]"""
-import json, re, subprocess, sys, wave
+import json, os, re, subprocess, sys, wave
 from pathlib import Path
 import numpy as np
 
@@ -30,6 +30,8 @@ SH = [[Wt('45') + .05, 16, .3], [Wt('lost') + .05, 18, .3], [Wt('dollars'), 24, 
 FL = [[Wt('dollars'), .5], [Wt('knight'), .5], [Wt('capital'), .45]]
 html = (D / 'index.html').read_text()
 html = html.replace('__WORDS__', json.dumps(words)).replace('__CHUNKS__', json.dumps(CH)).replace('__SHAKES__', json.dumps(SH)).replace('__FLASHES__', json.dumps(FL))
+MODE = os.environ.get('MODE', 'full')
+html = html.replace('__MODE__', MODE)
 html = html.replace('const W = 1080, H = 1920, FPS = 30, DUR = 16.3;', f'const W = 1080, H = 1920, FPS = 30, DUR = {DUR};')
 (D / 'build.html').write_text(html)
 
@@ -79,5 +81,5 @@ js = f'''const {{ chromium }} = require('playwright'); const {{ spawn }} = requi
 (D / 'out' / 'render.cjs').write_text(js)
 subprocess.run(['node', str(D / 'out' / 'render.cjs')], check=True)
 subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', str(D / 'out' / 'video.mp4'), '-i', str(D / 'out' / 'mix.wav'), '-c:v', 'copy', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11',
-                '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', str(D / 'out' / 'knight01_dossier.mp4')], check=True)
-print('done', D / 'out' / 'knight01_dossier.mp4')
+                '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-shortest', str(D / 'out' / f'knight01_dossier_{MODE}.mp4')], check=True)
+print('done', MODE)

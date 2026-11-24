@@ -18,15 +18,16 @@ svg,canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
 <filter id="stampInk" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="11" result="w"/>
 <feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="3" seed="21" result="g"/>
 <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 5.9" result="gm"/><feComposite in="d" in2="gm" operator="in"/></filter>
-<clipPath id="frameClip"><rect width="1080" height="1920"/></clipPath></defs>
-<g clip-path="url(#frameClip)"><g id="cam"><g id="world"></g></g><g id="maxL"></g><g id="capL"></g><g id="hud"></g><g id="wipe"></g>
+<clipPath id="frameClip"><rect width="1080" height="1920"/></clipPath><clipPath id="cardClip"><rect width="1080" height="1920" rx="60"/></clipPath><filter id="sh" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="hlg" x1="0" x2="1"><stop offset="0" stop-color="#F87736"/><stop offset="1" stop-color="#E8402E"/></linearGradient></defs>
+<g clip-path="url(#frameClip)"><g id="bgL"></g><g id="cardW"><rect id="cardSh" x="18" y="26" width="1080" height="1920" rx="60" fill="#2A2018" opacity="0"/><g id="cardIn"><g id="cam"><g id="world"></g></g><g id="hud"></g><g id="wipe"></g></g><rect id="cardBd" width="1080" height="1920" rx="60" fill="none" stroke="#FFFAF7" stroke-width="0"/></g><g id="maxL"></g><g id="capL"></g>
 <rect id="flash" width="1080" height="1920" fill="#FFFFFF" opacity="0"/></g></svg>
 <canvas id="paper" width="1080" height="1920"></canvas><canvas id="fx" width="1080" height="1920"></canvas>
 <script src="host.js"></script>
 <script>
 const W = 1080, H = 1920, FPS = 30, DUR = 16.3;
 const NS = 'http://www.w3.org/2000/svg';
-const C = { paper:'#F4EDE3', ink:'#2A2018', orange:'#F87736', yellow:'#F5B82E', red:'#E5383B', teal:'#2A9D8F', cream:'#FFF6EA', green:'#3F9E5A' };
+const C = { paper:'#F4EDE3', ink:'#2A2018', orange:'#F87736', yellow:'#F9A66C', red:'#E8402E', teal:'#F87736', cream:'#FFF6EA', green:'#3F9E5A', peach:'#F6C7A8' };
+const MODE = 'full';
 const F = { slab:"'Slab'", bagel:"'Bagel'", mono:"'JBM'", sans:"'Mont'" };
 function el(tag, a = {}, p) { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
 function txt(p, s, a) { const e = el('text', a, p); e.textContent = s; return e; }
@@ -105,7 +106,7 @@ function laptop(p) { const g = el('g', { filter: 'url(#boil)' }, p);
   el('rect', { x: -300, y: -200, width: 600, height: 360, rx: 10, fill: C.cream }, g);
   el('path', { d: 'M-400 190 L400 190 L360 240 L-360 240 Z', fill: C.yellow, stroke: C.ink, 'stroke-width': 7, 'stroke-linejoin': 'round' }, g); return g; }
 function tower(p) { const g = el('g', { filter: 'url(#boil)' }, p);
-  el('rect', { x: -190, y: -560, width: 380, height: 760, rx: 10, fill: C.teal, stroke: C.ink, 'stroke-width': 8 }, g);
+  el('rect', { x: -190, y: -560, width: 380, height: 760, rx: 10, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, g);
   const wins = [];
   for (let r = 0; r < 9; r++) for (let c = 0; c < 4; c++) wins.push(el('rect', { x: -150 + c * 80, y: -500 + r * 76, width: 50, height: 46, rx: 6, fill: C.ink }, g));
   el('rect', { x: -60, y: 110, width: 120, height: 90, fill: C.ink }, g); return { g, wins }; }
@@ -247,7 +248,7 @@ function buildAll() {
     return (t) => {
       charsPop(h, t, 11.12, .05);
       tf(tw.g, 560, lerp(2600, 1110, E.back(seg(t, 11.07, 11.5))), .95);
-      tw.wins.forEach((w, i) => w.setAttribute('fill', t > 11.2 + ((i * 7) % 36) * .02 ? C.yellow : C.ink));
+      tw.wins.forEach((w, i) => w.setAttribute('fill', t > 11.2 + ((i * 7) % 36) * .02 ? C.orange : C.ink));
       tf(plate, 540, lerp(2200, 1250, E.back(seg(t, Wt('capital') - .1, Wt('capital') + .3))), 1, -2);
       stampAnim(st, t, Wt('biggest') + .05, 560, 560, -8);
     };
@@ -271,14 +272,17 @@ function buildAll() {
 
   // ---------- caption bar (dark-ink pill, overprint shadow, the spoken word lights up in the highlight ink) ----------
   const CH = [{"t0": 0.2, "t1": 2.0, "w": [{"w": "In", "s": 0.25, "e": 0.42}, {"w": "45", "s": 0.6, "e": 1.35}, {"w": "minutes,", "s": 1.35, "e": 1.83}]}, {"t0": 2.0, "t1": 4.5, "w": [{"w": "a", "s": 2.05, "e": 2.1}, {"w": "company", "s": 2.1, "e": 2.62}, {"w": "lost", "s": 2.62, "e": 3.0}, {"w": "460", "s": 3.15, "e": 4.55}]}, {"t0": 4.5, "t1": 6.25, "w": [{"w": "million", "s": 4.55, "e": 5.34}, {"w": "dollars.", "s": 5.34, "e": 5.88}]}, {"t0": 6.25, "t1": 7.28, "w": [{"w": "No", "s": 6.3, "e": 6.56}, {"w": "hacker.", "s": 6.56, "e": 6.91}]}, {"t0": 7.28, "t1": 9.22, "w": [{"w": "Just", "s": 7.33, "e": 7.55}, {"w": "one", "s": 7.55, "e": 8.12}, {"w": "missed", "s": 8.24, "e": 8.54}, {"w": "step.", "s": 8.54, "e": 9.01}]}, {"t0": 9.22, "t1": 9.98, "w": [{"w": "August", "s": 9.27, "e": 9.64}, {"w": "1st,", "s": 9.64, "e": 10.03}]}, {"t0": 9.98, "t1": 11.11, "w": [{"w": "2012.", "s": 10.03, "e": 10.83}]}, {"t0": 11.11, "t1": 12.04, "w": [{"w": "Knight", "s": 11.16, "e": 11.47}, {"w": "Capital,", "s": 11.47, "e": 11.95}]}, {"t0": 12.04, "t1": 13.22, "w": [{"w": "one", "s": 12.09, "e": 12.2}, {"w": "of", "s": 12.2, "e": 12.27}, {"w": "America's", "s": 12.27, "e": 12.72}, {"w": "biggest", "s": 12.72, "e": 13.27}]}, {"t0": 13.22, "t1": 14.15, "w": [{"w": "stock", "s": 13.27, "e": 13.56}, {"w": "traders,", "s": 13.56, "e": 13.99}]}, {"t0": 14.15, "t1": 15.3, "w": [{"w": "is", "s": 14.2, "e": 14.33}, {"w": "updating", "s": 14.41, "e": 14.87}, {"w": "its", "s": 14.87, "e": 15.0}, {"w": "trading", "s": 15.0, "e": 15.35}]}, {"t0": 15.3, "t1": 16.05, "w": [{"w": "software.", "s": 15.35, "e": 15.8}]}, {"t0": 16.05, "t1": 17.3, "w": [{"w": "Eight", "s": 16.1, "e": 16.35}, {"w": "servers.", "s": 16.35, "e": 16.9}]}, {"t0": 17.3, "t1": 18.61, "w": [{"w": "The", "s": 17.35, "e": 17.43}, {"w": "new", "s": 17.43, "e": 17.7}, {"w": "code", "s": 17.7, "e": 18.25}, {"w": "reaches", "s": 18.25, "e": 18.66}]}, {"t0": 18.61, "t1": 16.3, "w": [{"w": "only", "s": 18.66, "e": 19.27}, {"w": "seven.", "s": 19.27, "e": 19.7}]}];
-  CH.forEach(ch => { const g = el('g', {}, capL); const size = 58, tw = ch.w.reduce((a, w) => a + measure(w.w + ' ', size, F.sans, 900), 0);
-    const padX = 34, hh = size * 1.6; el('rect', { x: -tw / 2 - padX + 9, y: -hh / 2 + 9, width: tw + padX * 2, height: hh, rx: 16, fill: C.orange, class: 'mul' }, g);
-    el('rect', { x: -tw / 2 - padX, y: -hh / 2, width: tw + padX * 2, height: hh, rx: 16, fill: C.ink }, g);
-    const te = el('text', { x: -tw / 2, y: size * .36, 'font-size': size, 'font-family': F.sans, 'font-weight': 900 }, g);
-    ch.spans = ch.w.map(w => { const sp = el('tspan', { fill: C.cream }, te); sp.textContent = w.w + ' '; return sp; }); ch.g = g; });
+  const CX = MODE === 'card' ? 430 : 540, CY = MODE === 'card' ? 1770 : 1440, CS = MODE === 'card' ? 60 : 64;
+  CH.forEach(ch => { const g = el('g', {}, capL); const sp = measure(' ', CS, F.sans, 900);
+    const ws = ch.w.map(w => measure(w.w, CS, F.sans, 900)); const tw = ws.reduce((a, b) => a + b, 0) + sp * (ws.length - 1); let x = -tw / 2;
+    ch.items = ch.w.map((w, i) => { const wg = el('g', {}, g);
+      const r0 = el('rect', { x: x - 12, y: -CS * .82 + 8, width: ws[i] + 24, height: CS * 1.12, rx: 14, fill: '#A8301A' }, wg);
+      const r1 = el('rect', { x: x - 12, y: -CS * .82, width: ws[i] + 24, height: CS * 1.12, rx: 14, fill: 'url(#hlg)' }, wg);
+      const te = txt(wg, w.w, { x, y: 0, 'font-size': CS, 'font-family': F.sans, 'font-weight': 900, fill: C.ink, stroke: MODE === 'card' ? 'none' : C.paper, 'stroke-width': 10, 'paint-order': 'stroke', 'stroke-linejoin': 'round' });
+      x += ws[i] + sp; return { r: [r0, r1], te, w }; }); ch.g = g; });
   capUpdate = (t) => { CH.forEach(ch => { const on = t >= ch.t0 && t < ch.t1; show(ch.g, on); if (!on) return;
-    const p = seg(t, ch.t0, ch.t0 + .35); tf(ch.g, 540, 1440 + 40 * (1 - E.out(p)), lerp(.8, 1, E.back(p)), -.8);
-    ch.w.forEach((w, i) => ch.spans[i].setAttribute('fill', t >= w.s && t < w.e + .05 ? C.yellow : C.cream)); }); };
+    const p = seg(t, ch.t0, ch.t0 + .3); tf(ch.g, CX, CY + 30 * (1 - E.out(p)), lerp(.85, 1, E.back(p)));
+    ch.items.forEach(it => { const hot = t >= it.w.s && t < it.w.e + .05; it.r.forEach(r => show(r, hot)); it.te.setAttribute('fill', hot ? '#FFFFFF' : C.ink); it.te.setAttribute('stroke-width', hot ? 0 : (MODE === 'card' ? 0 : 10)); }); }); };
 
   // ---------- Max: bottom-right, key moments only, boil on the drawing ----------
   const MAXC = { skin: '#F0C4A0', hair: 'messy', hairCol: '#5A3A26', glasses: 'round', hood: 'down', top: '#F87736', topS: '#D85E25', phones: 'none', beard: 'stubble' };
@@ -287,7 +291,7 @@ function buildAll() {
               [7.3, 9.2, { brows: 'worried', eyes: 'closed', mouth: 'frown', arms: 'facepalm' }],
               [14.3, 16.3, { brows: 'up', eyes: 'open', mouth: 'smile', arms: 'point' }]];
   MX.forEach(m => { const g = el('g', { filter: 'url(#boil)' }, maxL); g.innerHTML = HOST.render(Object.assign({ char: MAXC, w: 400, h: 520 }, m[2])); m.push(g); });
-  maxUpdate = (t) => MX.forEach(m => { const on = t >= m[0] && t < m[1]; show(m[3], on); if (on) tf(m[3], 690, 1500 + 400 * (1 - E.back(seg(t, m[0], m[0] + .35))), 1); });
+  maxUpdate = (t) => MX.forEach(m => { const on = t >= m[0] && t < m[1]; show(m[3], on); if (on) { const card = MODE === 'card'; tf(m[3], card ? 735 : 690, (card ? 1520 : 1500) + 400 * (1 - E.back(seg(t, m[0], m[0] + .35))), card ? .86 : 1); } });
 
   // ---------- HUD ----------
   const hg = el('g', {}, hud);
@@ -312,6 +316,26 @@ function buildAll() {
     const u = (t - w[0] + .22) / .44; dots.forEach(d => { const delay = (d.x / W * .4 + d.y / H * .6) * .35, p = clamp((u - delay) / .65); d.e.setAttribute('r', (Math.sin(p * Math.PI) * 62).toFixed(1)); }); };
 }
 let hudUpdate = () => {}, wipeUpdate = () => {}, capUpdate = () => {}, maxUpdate = () => {};
+const CUTS = [2.02, 6.22, 7.27, 9.22, 11.07, 14.22], ROT = [-1.6, 1.4, -1.2, 1.5, -1.4, 1.2, -1.5];
+function buildCard() {
+  const cardIn = document.getElementById('cardIn'), sh = document.getElementById('cardSh'), bd = document.getElementById('cardBd');
+  if (MODE !== 'card') return;
+  cardIn.setAttribute('clip-path', 'url(#cardClip)'); op(sh, .35); sh.setAttribute('filter', 'url(#sh)'); bd.setAttribute('stroke-width', 26);
+  const bgl = document.getElementById('bgL');
+  el('rect', { width: W, height: H, fill: C.paper }, bgl);
+  const d = el('defs', {}, bgl);
+  d.innerHTML = '<radialGradient id="g1" cx=".1" cy=".06" r=".5"><stop offset="0" stop-color="#F87736" stop-opacity=".32"/><stop offset="1" stop-color="#F87736" stop-opacity="0"/></radialGradient><radialGradient id="g2" cx=".92" cy=".95" r=".55"><stop offset="0" stop-color="#F87736" stop-opacity=".36"/><stop offset="1" stop-color="#F87736" stop-opacity="0"/></radialGradient><pattern id="dp" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="17" cy="17" r="2.6" fill="#E2CBB8"/></pattern>';
+  el('rect', { width: W, height: H, fill: 'url(#g1)' }, bgl); el('rect', { width: W, height: H, fill: 'url(#g2)' }, bgl); el('rect', { width: W, height: H, fill: 'url(#dp)' }, bgl);
+}
+function cardUpdate(t) {
+  if (MODE !== 'card') return;
+  const k = 0.79, bx = (W - W * k) / 2, by = 125;
+  let i = CUTS.filter(c => t >= c).length, dy = 0, rot = ROT[i], sc = 1;
+  const nxt = CUTS.find(c => t < c && t >= c - .2), prv = CUTS.find(c => t >= c && t < c + .42);
+  if (nxt) { const p = E.in(seg(t, nxt - .2, nxt)); dy = 1500 * p; rot += 14 * p; }
+  if (prv) { const p = seg(t, prv, prv + .42); dy = -1500 * (1 - E.back(p)); rot += -10 * (1 - p); sc = 1 + .06 * Math.sin(p * Math.PI); }
+  document.getElementById('cardW').setAttribute('transform', `translate(${bx} ${by + dy}) translate(${W * k / 2} ${H * k / 2}) rotate(${rot}) scale(${k * sc}) translate(${-W / 2} ${-H / 2})`);
+}
 
 function buildPaper() {
   const cv = document.getElementById('paper'), ctx = cv.getContext('2d'), r = rng(3);
@@ -341,12 +365,12 @@ function render(t) {
   const pulse = 1 + 0.006 * Math.exp(-((t % 0.5) / 0.07)), push = 1 + 0.04 * ((t % 4) / 4);
   const s = pulse * push; cam.setAttribute('transform', `translate(${(dx + 540 * (1 - s)).toFixed(2)} ${(dy + 960 * (1 - s)).toFixed(2)}) scale(${s.toFixed(4)})`);
   let fl = 0; for (const [f, a] of FLASHES) if (t >= f && t < f + .3) fl = Math.max(fl, a * Math.pow(1 - (t - f) / .3, 2)); op(flash, fl);
-  maxUpdate(t); capUpdate(t); hudUpdate(t); wipeUpdate(t); drawFx(frame);
+  cardUpdate(t); maxUpdate(t); capUpdate(t); hudUpdate(t); if (MODE !== 'card') wipeUpdate(t); drawFx(frame);
 }
 async function init() {
   const fams = ['400 50px "Slab"', '400 50px "Bagel"', '800 50px "JBM"', '900 50px "Mont"'];
   await Promise.all(fams.map(f => document.fonts.load(f, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$,.:?!·…→✓%&\'')));
-  await document.fonts.ready; buildPaper(); buildAll();
+  await document.fonts.ready; buildPaper(); buildCard(); buildAll();
   render(parseFloat(new URLSearchParams(location.search).get('t') || '0')); window.READY = true;
 }
 window.render = render; init();
