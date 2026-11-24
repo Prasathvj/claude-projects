@@ -1,13 +1,12 @@
-# Decoded தமிழ்: channel setup kit (24 Nov 2026)
+# TechDecoded தமிழ்: channel setup kit (24 Nov 2026)
 
 Sister channel of TechDecoded with Max, for Tamil viewers. PRIORITY: tech. Most videos are Tamil versions of our English
-videos (same story, visuals and Max; Tamil script, voice, captions and headings). The broad name leaves room for other
-topics later. Same host (Max), cream + orange look, Tamil voice (Gemini "Orus").
+videos (same story, visuals and Max; Tamil script, voice, captions and headings).  Same host (Max), cream + orange look, Tamil voice (Gemini "Orus").
 Brand files are drawn in code: `hf/brand-ta/brand_ta.html` → `node tools/brand_ta.cjs` → this folder.
 
 ## 1. Name and handle
-- **Channel name:** Decoded தமிழ்
-- **Handle:** @DecodedTamil (fallback @DecodedThamizh)
+- **Channel name:** TechDecoded தமிழ்
+- **Handle:** @TechDecodedTamil (created 24 Nov 2026; first video: the Knight Capital test Short)
 
 ## 2. Branding files (this folder)
 | File | Upload where | Spec |
@@ -17,7 +16,7 @@ Brand files are drawn in code: `hf/brand-ta/brand_ta.html` → `node tools/brand
 | `watermark_150x150.png` | Customization → Branding → Video watermark ("Entire video") | 150×150 transparent PNG |
 
 ## 3. Channel description (About)
-> Decoded தமிழ்: நாம தினமும் யூஸ் பண்ற டெக்னாலஜிக்குப் பின்னாடி இருக்கற கதைகள், ரிஸ்க்குகள், முடிவுகள், நம்ம தமிழ்ல.
+> TechDecoded தமிழ்: நாம தினமும் யூஸ் பண்ற டெக்னாலஜிக்குப் பின்னாடி இருக்கற கதைகள், ரிஸ்க்குகள், முடிவுகள், நம்ம தமிழ்ல.
 >
 > இங்க என்ன பாக்கலாம்:
 > • டெக் கதைகள்: ஒரு சின்ன தப்பு கோடி கணக்குல நஷ்டம் ஆன உண்மைச் சம்பவங்கள்
@@ -35,7 +34,7 @@ Brand files are drawn in code: `hf/brand-ta/brand_ta.html` → `node tools/brand
 > Business enquiries: (add the same business email as the English channel)
 
 ## 4. Keywords (Settings → Channel → Basic info → Keywords)
-tech tamil, tamil tech, tech news tamil, tamil tech news, AI tamil, AI explained tamil, chatgpt tamil, software tamil, coding tamil, cyber security tamil, IT tamil, tech stories tamil, tech facts tamil, தமிழ் டெக், டெக் செய்திகள், Decoded Tamil
+tech tamil, tamil tech, tech news tamil, tamil tech news, AI tamil, AI explained tamil, chatgpt tamil, software tamil, coding tamil, cyber security tamil, IT tamil, tech stories tamil, tech facts tamil, தமிழ் டெக், டெக் செய்திகள், TechDecoded Tamil
 
 ## 5. Settings checklist
 - **Country:** India. **Video language default:** Tamil (Settings → Upload defaults → Advanced).
