@@ -64,6 +64,22 @@ V['c'] = """<style>
 <svg viewBox="0 0 300 200" width="300" height="200" style="position:absolute;left:640px;top:270px"><path d="M20 30 C120 10 220 60 240 170" stroke="#E11D48" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M200 140 L242 176 L262 124" stroke="#E11D48" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
 <div class="logo" style="left:1300px;top:56px">""" + f'<svg viewBox="0 0 256 260" width="120" height="122">{OPENAI}</svg></div>'
 
+# A in channel colours (owner pick A, 2026-11-24). Brown #2A2018 text on cream (no dark boxes), orange only as a
+# warm orange->red gradient (never a flat orange box with dark text = the adult-site look).
+LOGO = """<div class="logo" style="left:1290px;top:60px"><svg viewBox="0 0 256 260" width="120" height="122">""" + OPENAI.replace('#0B1B3F', '#2A2018') + "</svg></div>"
+V['a1'] = """<style>
+.t1{position:absolute;left:76px;top:40px;font:900 178px/1 'Mont';color:#2A2018;letter-spacing:-6px}
+.t1 b{background:linear-gradient(90deg,#F87736,#E8402E);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 0 rgba(216,94,37,.2))}
+.t2{position:absolute;left:84px;top:250px;padding:12px 38px;background:linear-gradient(90deg,#F26B2A,#D9381E);color:#fff;font:900 96px 'Mont';border-radius:24px;transform:rotate(-2deg);box-shadow:0 14px 0 #A8301A,0 28px 50px rgba(217,56,30,.35);letter-spacing:-2px;text-shadow:0 3px 0 rgba(120,30,10,.35)}
+.price{font:900 66px 'Mont';color:#2A2018;border:5px solid #F87736}.stamp{font:900 64px 'Mont'}
+</style><div class="t1">GPT-6 <b>ASTRA</b></div><div class="t2">WHERE IS IT?</div>""" + LOGO
+V['a2'] = """<style>
+.t1{position:absolute;left:76px;top:40px;font:900 178px/1 'Mont';color:#2A2018;letter-spacing:-6px}
+.t1 b{background:linear-gradient(90deg,#F87736,#E8402E);-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 6px 0 rgba(216,94,37,.2))}
+.t2{position:absolute;left:84px;top:250px;padding:10px 36px;background:#FFFAF7;color:#2A2018;font:900 96px 'Mont';border-radius:24px;border:7px solid #F87736;transform:rotate(-2deg);box-shadow:0 14px 0 #F87736,0 28px 50px rgba(216,94,37,.28);letter-spacing:-2px}
+.price{font:900 66px 'Mont';color:#2A2018;border:5px solid #F87736}.stamp{font:900 64px 'Mont'}
+</style><div class="t1">GPT-6 <b>ASTRA</b></div><div class="t2">WHERE IS IT?</div>""" + LOGO
+
 for k, css in V.items():
     body = css + WIN + f'<div class="price">{INR} ₹1,999</div><div class="stamp">FREE? SCAM</div>' + MAXJS + '</body></html>'
     (OUT / f'v3_ep08_{k}.html').write_text(HEAD + body)
