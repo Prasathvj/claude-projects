@@ -9,10 +9,11 @@ const fs = require('fs');
   const p = await b.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 2 });
   fs.mkdirSync('hf/thumbs/out', { recursive: true });
   for (const id of ids) {
-    await p.goto(`http://localhost:8765/thumbs/v2_${id}.html`, { waitUntil: 'networkidle' });
+    const name = /^v\d_/.test(id) ? id : `v2_${id}`;
+    await p.goto(`http://localhost:8765/thumbs/${name}.html`, { waitUntil: 'networkidle' });
     await p.evaluate(() => document.fonts.ready);
     await p.waitForTimeout(300);
-    await p.screenshot({ path: `hf/thumbs/out/v2_${id}_4k.png` });
+    await p.screenshot({ path: `hf/thumbs/out/${name}_4k.png` });
     console.log('rendered', id);
   }
   await b.close();
