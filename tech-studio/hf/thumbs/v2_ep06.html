@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'D';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:'B';src:url('/ep01-test/assets/fonts/InterDisplay-Bold.otf');font-weight:700}
+@font-face{font-family:'T';src:url('/ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+@font-face{font-family:'M';src:url('/ep01-test/assets/fonts/JetBrainsMono-Bold.ttf');font-weight:700}
+*{margin:0;box-sizing:border-box} body{width:1920px;height:1080px;position:relative;overflow:hidden}
+.cream{background:radial-gradient(ellipse at 38% 45%,#FBF5EE 0%,#F4EDE3 45%,#E9D7C4 100%)}
+.cream:before{content:'';position:absolute;inset:0;background:radial-gradient(#DCC3AE 2.4px,transparent 2.6px) 0 0/38px 38px;opacity:.55}
+.glow{position:absolute;border-radius:50%;filter:blur(60px)}
+.h{position:absolute;font:900 190px/0.92 'D';color:#22180F;letter-spacing:-6px;text-shadow:0 6px 0 rgba(255,250,247,.9),0 14px 30px rgba(74,50,28,.18)}
+.hl{display:inline-block;background:#F87736;color:#22180F;padding:0 26px 6px;border-radius:22px;transform:rotate(-2deg);box-shadow:0 14px 0 #C9521D,0 26px 40px rgba(74,50,28,.3);text-shadow:none}
+.card{position:absolute;background:#FFFAF7;border-radius:40px;box-shadow:0 50px 100px rgba(60,38,20,.35),0 0 0 4px #E5CFBC}
+#max{position:absolute;filter:drop-shadow(0 30px 26px rgba(60,38,20,.35))}
+</style><script src="/host/host.js"></script></head><body class="cream" style="background:radial-gradient(ellipse at 34% 55%,#EAF4FF 0%,#DCEBFA 35%,#F4EDE3 70%,#E9D7C4 100%)">
+<div class="h" style="left:80px;top:56px">COLDER THAN <span class="hl" style="background:#7CC4FF;box-shadow:0 14px 0 #3E8FD6,0 26px 40px rgba(30,60,110,.3)">SPACE</span></div>
+<svg viewBox="0 0 900 900" width="680" height="680" style="position:absolute;left:330px;top:400px;filter:drop-shadow(0 0 60px rgba(120,190,255,.55)) drop-shadow(0 40px 40px rgba(20,40,80,.35))">
+ <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#A86F1E"/><stop offset=".5" stop-color="#FFD77A"/><stop offset="1" stop-color="#A86F1E"/></linearGradient></defs>
+ <rect x="430" y="0" width="40" height="120" fill="url(#g)"/>
+ <g fill="url(#g)"><rect x="200" y="120" width="500" height="44" rx="14"/><rect x="250" y="330" width="400" height="40" rx="14"/><rect x="300" y="530" width="300" height="38" rx="14"/><rect x="350" y="720" width="200" height="36" rx="14"/></g>
+ <g stroke="#E3B15A" stroke-width="10" fill="none"><path d="M260 164 C250 250 300 290 300 330"/><path d="M640 164 C650 250 600 290 600 330"/><path d="M380 164 C380 240 410 290 400 330"/><path d="M520 164 C520 240 490 290 500 330"/><path d="M300 370 C300 450 340 500 340 530"/><path d="M600 370 C600 450 560 500 560 530"/><path d="M450 370 L450 530"/><path d="M380 568 C380 640 400 690 400 720"/><path d="M520 568 C520 640 500 690 500 720"/></g>
+ <rect x="410" y="756" width="80" height="60" rx="10" fill="#2A3B55"/>
+</svg>
+<div style="position:absolute;left:850px;top:760px;padding:10px 30px;background:#12233D;color:#BFE3FF;font:900 92px 'D';border-radius:22px;transform:rotate(4deg);box-shadow:0 20px 40px rgba(18,35,61,.4)">−273°C</div>
+<div id="max" style="left:1260px;top:190px;filter:drop-shadow(0 30px 26px rgba(30,50,90,.35)) hue-rotate(0deg) saturate(.85)"></div><script>document.getElementById('max').innerHTML=HOST.render({char:{skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'},brows:'worried',eyes:'squint',mouth:'wavy',arms:'hug',extra:['sweat'],w:690,h:897});</script>
+</body></html>

@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'D';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:'B';src:url('/ep01-test/assets/fonts/InterDisplay-Bold.otf');font-weight:700}
+@font-face{font-family:'T';src:url('/ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+@font-face{font-family:'M';src:url('/ep01-test/assets/fonts/JetBrainsMono-Bold.ttf');font-weight:700}
+*{margin:0;box-sizing:border-box} body{width:1920px;height:1080px;position:relative;overflow:hidden}
+.cream{background:radial-gradient(ellipse at 38% 45%,#FBF5EE 0%,#F4EDE3 45%,#E9D7C4 100%)}
+.cream:before{content:'';position:absolute;inset:0;background:radial-gradient(#DCC3AE 2.4px,transparent 2.6px) 0 0/38px 38px;opacity:.55}
+.glow{position:absolute;border-radius:50%;filter:blur(60px)}
+.h{position:absolute;font:900 190px/0.92 'D';color:#22180F;letter-spacing:-6px;text-shadow:0 6px 0 rgba(255,250,247,.9),0 14px 30px rgba(74,50,28,.18)}
+.hl{display:inline-block;background:#F87736;color:#22180F;padding:0 26px 6px;border-radius:22px;transform:rotate(-2deg);box-shadow:0 14px 0 #C9521D,0 26px 40px rgba(74,50,28,.3);text-shadow:none}
+.card{position:absolute;background:#FFFAF7;border-radius:40px;box-shadow:0 50px 100px rgba(60,38,20,.35),0 0 0 4px #E5CFBC}
+#max{position:absolute;filter:drop-shadow(0 30px 26px rgba(60,38,20,.35))}
+</style><script src="/host/host.js"></script></head><body class="cream">
+<div class="h" style="left:80px;top:56px">NO <span class="hl">HUMANS</span></div>
+<div class="card" style="left:80px;top:320px;width:1120px;height:690px;background:#0E0B09;overflow:hidden;transform:rotate(-1.2deg);box-shadow:0 50px 100px rgba(60,38,20,.45),0 0 0 10px #2A2119">
+ <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(255,180,90,.18),transparent 60%)"></div>
+ <svg viewBox="0 0 1120 690" width="1120" height="690" style="position:absolute;inset:0">
+  <rect x="0" y="600" width="1120" height="90" fill="#1E1611"/><rect x="0" y="592" width="1120" height="14" fill="#3A2C22"/>
+  <g fill="#F87736"><rect x="400" y="528" width="110" height="64" rx="8"/><rect x="820" y="528" width="110" height="64" rx="8"/></g>
+  <g transform="translate(230 596) scale(1.35)"><rect x="-70" y="0" width="140" height="40" rx="10" fill="#3A2C22"/><rect x="-30" y="-40" width="60" height="50" rx="10" fill="#F87736"/><path d="M0 -30 L-40 -230 L120 -330" stroke="#F87736" stroke-width="44" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="-30" r="30" fill="#2A1E16"/><circle cx="-40" cy="-230" r="28" fill="#2A1E16"/><path d="M120 -330 l40 10 m-40 -10 l20 34" stroke="#FFD2B5" stroke-width="16" stroke-linecap="round"/><circle cx="162" cy="-306" r="10" fill="#FFE9A8"/></g><g transform="translate(640 596) scale(1.35)"><rect x="-70" y="0" width="140" height="40" rx="10" fill="#3A2C22"/><rect x="-30" y="-40" width="60" height="50" rx="10" fill="#F87736"/><path d="M0 -30 L-40 -230 L120 -330" stroke="#F87736" stroke-width="44" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="-30" r="30" fill="#2A1E16"/><circle cx="-40" cy="-230" r="28" fill="#2A1E16"/><path d="M120 -330 l40 10 m-40 -10 l20 34" stroke="#FFD2B5" stroke-width="16" stroke-linecap="round"/><circle cx="162" cy="-306" r="10" fill="#FFE9A8"/></g>
+  <g transform="translate(990 80)"><rect width="96" height="140" rx="16" fill="#2A1E16" stroke="#5A4636" stroke-width="5"/><rect x="28" y="70" width="40" height="50" rx="8" fill="#5A4636"/><text x="48" y="44" text-anchor="middle" font-family="M" font-weight="700" font-size="30" fill="#E0291C">OFF</text></g>
+ </svg>
+</div>
+<div id="max" style="left:1250px;top:200px;transform:scaleX(-1);"></div><script>document.getElementById('max').innerHTML=HOST.render({char:{skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'},brows:'worried',eyes:'wide',look:[-1,0],mouth:'frown',arms:'chin',extra:['sweat'],w:690,h:897});</script>
+</body></html>

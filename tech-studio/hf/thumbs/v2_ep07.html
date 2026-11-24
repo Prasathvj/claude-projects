@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'D';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:'B';src:url('/ep01-test/assets/fonts/InterDisplay-Bold.otf');font-weight:700}
+@font-face{font-family:'T';src:url('/ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+@font-face{font-family:'M';src:url('/ep01-test/assets/fonts/JetBrainsMono-Bold.ttf');font-weight:700}
+*{margin:0;box-sizing:border-box} body{width:1920px;height:1080px;position:relative;overflow:hidden}
+.cream{background:radial-gradient(ellipse at 38% 45%,#FBF5EE 0%,#F4EDE3 45%,#E9D7C4 100%)}
+.cream:before{content:'';position:absolute;inset:0;background:radial-gradient(#DCC3AE 2.4px,transparent 2.6px) 0 0/38px 38px;opacity:.55}
+.glow{position:absolute;border-radius:50%;filter:blur(60px)}
+.h{position:absolute;font:900 190px/0.92 'D';color:#22180F;letter-spacing:-6px;text-shadow:0 6px 0 rgba(255,250,247,.9),0 14px 30px rgba(74,50,28,.18)}
+.hl{display:inline-block;background:#F87736;color:#22180F;padding:0 26px 6px;border-radius:22px;transform:rotate(-2deg);box-shadow:0 14px 0 #C9521D,0 26px 40px rgba(74,50,28,.3);text-shadow:none}
+.card{position:absolute;background:#FFFAF7;border-radius:40px;box-shadow:0 50px 100px rgba(60,38,20,.35),0 0 0 4px #E5CFBC}
+#max{position:absolute;filter:drop-shadow(0 30px 26px rgba(60,38,20,.35))}
+</style><script src="/host/host.js"></script></head><body class="cream">
+<div class="h" style="left:80px;top:56px;font-size:170px"><span class="hl">17,000</span> APPS<br>TESTED</div>
+<div style="position:absolute;left:560px;top:380px;width:470px;height:900px;border-radius:70px;background:#16110D;box-shadow:0 50px 100px rgba(60,38,20,.45),inset 0 0 0 8px #3A2E24;transform:rotate(6deg)">
+ <div style="position:absolute;left:22px;top:22px;right:22px;bottom:22px;border-radius:52px;background:#FFFAF7;overflow:hidden">
+  <div style="height:80px;display:flex;align-items:center;justify-content:flex-end;padding:0 34px;gap:14px"><i style="width:34px;height:34px;border-radius:17px;background:#FF8A00;box-shadow:0 0 30px 8px rgba(255,138,0,.8);display:inline-block"></i></div>
+  <div style="margin:20px 30px;padding:30px;border-radius:30px;background:#F87736;font:900 58px/1 'D';color:#22180F">RUNNING<br>SHOES<div style="font:900 90px 'D';margin-top:14px">−50%</div></div>
+  <svg viewBox="0 0 24 24" width="150" height="150" style="position:absolute;left:140px;top:420px"><path fill="#22180F" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5.3-3a5.3 5.3 0 0 1-10.6 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11z"/></svg>
+ </div>
+</div>
+<svg viewBox="0 0 200 300" width="200" height="300" style="position:absolute;left:330px;top:640px"><g stroke="#F87736" stroke-width="16" fill="none" stroke-linecap="round"><path d="M170 90 Q130 150 170 210"/><path d="M120 50 Q60 150 120 250"/><path d="M70 10 Q-10 150 70 290" opacity=".6"/></g></svg>
+<div id="max" style="left:1180px;top:200px;transform:scaleX(-1);"></div><script>document.getElementById('max').innerHTML=HOST.render({char:{skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'},brows:'up',eyes:'open',look:[-1,0],mouth:'rest',arms:'hush',w:700,h:910});</script>
+</body></html>

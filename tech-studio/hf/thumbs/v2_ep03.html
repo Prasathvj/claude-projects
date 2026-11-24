@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'D';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:'B';src:url('/ep01-test/assets/fonts/InterDisplay-Bold.otf');font-weight:700}
+@font-face{font-family:'T';src:url('/ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+@font-face{font-family:'M';src:url('/ep01-test/assets/fonts/JetBrainsMono-Bold.ttf');font-weight:700}
+*{margin:0;box-sizing:border-box} body{width:1920px;height:1080px;position:relative;overflow:hidden}
+.cream{background:radial-gradient(ellipse at 38% 45%,#FBF5EE 0%,#F4EDE3 45%,#E9D7C4 100%)}
+.cream:before{content:'';position:absolute;inset:0;background:radial-gradient(#DCC3AE 2.4px,transparent 2.6px) 0 0/38px 38px;opacity:.55}
+.glow{position:absolute;border-radius:50%;filter:blur(60px)}
+.h{position:absolute;font:900 190px/0.92 'D';color:#22180F;letter-spacing:-6px;text-shadow:0 6px 0 rgba(255,250,247,.9),0 14px 30px rgba(74,50,28,.18)}
+.hl{display:inline-block;background:#F87736;color:#22180F;padding:0 26px 6px;border-radius:22px;transform:rotate(-2deg);box-shadow:0 14px 0 #C9521D,0 26px 40px rgba(74,50,28,.3);text-shadow:none}
+.card{position:absolute;background:#FFFAF7;border-radius:40px;box-shadow:0 50px 100px rgba(60,38,20,.35),0 0 0 4px #E5CFBC}
+#max{position:absolute;filter:drop-shadow(0 30px 26px rgba(60,38,20,.35))}
+</style><script src="/host/host.js"></script></head><body class="cream">
+<div class="h" style="left:80px;top:56px">MY AI <span class="hl">DID THIS</span></div>
+<div class="card" style="left:150px;top:300px;width:900px;height:760px;transform:rotate(-4deg);border-radius:20px;padding:56px 70px;font:700 52px 'M';color:#22180F;box-shadow:0 50px 100px rgba(60,38,20,.4)">
+ <div style="text-align:center;font:900 60px 'D';letter-spacing:4px">ORDER COMPLETE</div>
+ <div style="text-align:center;font:700 34px 'M';color:#8C7462;margin-top:8px">placed by: AI SHOPPING AGENT</div>
+ <div style="border-top:6px dashed #CDB6A3;margin:34px 0 26px"></div>
+ <div style="display:flex;justify-content:space-between;color:#5A4636"><span>Smart watch x2</span><span>$380.00</span></div>
+ <div style="border-top:6px dashed #CDB6A3;margin:26px 0"></div>
+ <div style="display:flex;justify-content:space-between;font:900 110px 'D'"><span>TOTAL</span><span>$380</span></div>
+ <div style="position:absolute;left:70px;top:560px;padding:6px 30px;border:12px solid #E0291C;color:#E0291C;font:900 78px 'D';white-space:nowrap;transform:rotate(-8deg);border-radius:16px;background:rgba(255,250,247,.85)">NON-REFUNDABLE</div>
+</div>
+<div id="max" style="left:1180px;top:190px;"></div><script>document.getElementById('max').innerHTML=HOST.render({char:{skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'},brows:'worried',eyes:'closed',mouth:'frown',arms:'facepalm',extra:['sweat'],w:720,h:936});</script>
+</body></html>

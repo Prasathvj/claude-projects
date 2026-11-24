@@ -102,6 +102,8 @@
       case 'shrug': return arm([L, [74, 380], [54, 316]], palm(54, 304)) + arm([R, [326, 380], [346, 316]], palm(346, 304));
       case 'chin': return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [300, 420], [236, 300]], fist(232, 270, 19));
       case 'facepalm': return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [300, 410], [222, 230]], palm(218, 176));
+      case 'hush': return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [306, 430], [232, 282]], `<circle cx="226" cy="262" r="18" fill="${C.skin}"/><rect x="194" y="204" width="13" height="56" rx="6.5" fill="${C.skin}" stroke="${C.skinS}" stroke-width="2"/>`);
+      case 'hug': return arm([L, [96, 440], [262, 410]], fist(266, 408, 17)) + arm([R, [304, 450], [140, 424]], fist(136, 422, 17));
       case 'thumbs': return arm([L, [116, 428], [126, 494]], fist(126, 498, 15)) + arm([R, [332, 400], [356, 330]], thumb(356, 330));
       case 'hands-up': return arm([L, [60, 300], [56, 220]], palm(56, 206)) + arm([R, [340, 300], [344, 220]], palm(344, 206));
       case 'phone': return arm([L, [110, 420], [170, 400]], '') + arm([R, [290, 420], [230, 400]], '') + `<rect x="160" y="352" width="80" height="60" rx="10" fill="${C.phone}" stroke="${C.accent}" stroke-width="4"/><circle cx="170" cy="400" r="16" fill="${C.skin}"/><circle cx="230" cy="400" r="16" fill="${C.skin}"/>`;

@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'D';src:url('/ep01-test/assets/fonts/InterDisplay-Black.otf');font-weight:900}
+@font-face{font-family:'B';src:url('/ep01-test/assets/fonts/InterDisplay-Bold.otf');font-weight:700}
+@font-face{font-family:'T';src:url('/ep01-test/assets/fonts/Inter-SemiBold.otf');font-weight:600}
+@font-face{font-family:'M';src:url('/ep01-test/assets/fonts/JetBrainsMono-Bold.ttf');font-weight:700}
+*{margin:0;box-sizing:border-box} body{width:1920px;height:1080px;position:relative;overflow:hidden}
+.cream{background:radial-gradient(ellipse at 38% 45%,#FBF5EE 0%,#F4EDE3 45%,#E9D7C4 100%)}
+.cream:before{content:'';position:absolute;inset:0;background:radial-gradient(#DCC3AE 2.4px,transparent 2.6px) 0 0/38px 38px;opacity:.55}
+.glow{position:absolute;border-radius:50%;filter:blur(60px)}
+.h{position:absolute;font:900 190px/0.92 'D';color:#22180F;letter-spacing:-6px;text-shadow:0 6px 0 rgba(255,250,247,.9),0 14px 30px rgba(74,50,28,.18)}
+.hl{display:inline-block;background:#F87736;color:#22180F;padding:0 26px 6px;border-radius:22px;transform:rotate(-2deg);box-shadow:0 14px 0 #C9521D,0 26px 40px rgba(74,50,28,.3);text-shadow:none}
+.card{position:absolute;background:#FFFAF7;border-radius:40px;box-shadow:0 50px 100px rgba(60,38,20,.35),0 0 0 4px #E5CFBC}
+#max{position:absolute;filter:drop-shadow(0 30px 26px rgba(60,38,20,.35))}
+</style><script src="/host/host.js"></script></head><body class="cream">
+<div class="h" style="left:80px;top:56px">IT'S <span class="hl">GUESSING</span></div>
+<div class="card" style="left:90px;top:320px;width:1120px;height:700px;padding:56px 70px;transform:rotate(-1.2deg)">
+ <div style="font:700 62px 'B';color:#22180F;line-height:1.2">The capital of India is <span style="display:inline-block;width:8px;height:70px;background:#22180F;vertical-align:-10px"></span></div>
+ <div style="font:700 34px 'M';color:#8C7462;margin-top:30px;letter-spacing:3px">NEXT WORD?</div>
+ <div style="display:flex;align-items:center;gap:26px;margin-top:20px"><div style="width:250px;font:900 66px 'D';color:#22180F">New</div><div style="height:74px;width:480px;border-radius:18px;background:#F87736;box-shadow:0 10px 0 #C9521D"></div><div style="font:900 62px 'D';color:#22180F">92%</div></div><div style="display:flex;align-items:center;gap:26px;margin-top:26px"><div style="width:250px;font:900 66px 'D';color:#22180F">Delhi</div><div style="height:74px;width:90px;border-radius:18px;background:#D8C3B1;box-shadow:none"></div><div style="font:900 62px 'D';color:#8C7462">5%</div></div><div style="display:flex;align-items:center;gap:26px;margin-top:26px"><div style="width:250px;font:900 66px 'D';color:#22180F">Mumbai</div><div style="height:74px;width:30px;border-radius:18px;background:#D8C3B1;box-shadow:none"></div><div style="font:900 62px 'D';color:#8C7462">1%</div></div>
+</div>
+<div id="max" style="left:1250px;top:190px;transform:scaleX(-1);"></div><script>document.getElementById('max').innerHTML=HOST.render({char:{skin:'#F0C4A0',hair:'messy',hairCol:'#5A3A26',glasses:'round',hood:'down',top:'#F87736',topS:'#D85E25',phones:'none',beard:'stubble'},brows:'skeptic',eyes:'squint',look:[-1,0],mouth:'smirk',arms:'point',w:700,h:910});</script>
+</body></html>
