@@ -1,0 +1,49 @@
+{
+ "id": "tip01ta-short",
+ "format": "vertical",
+ "profile": "tamil",
+ "gap": 0.25,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 4,
+ "max_tempo": 1.0,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "உங்க AI agent இப்போ ஒரு விஷம் கலந்த webpage-ஐ படிச்சிடுச்சு. அடுத்து என்ன நடக்கும்ங்கறது, அஞ்சு பழக்கங்களைப் பொறுத்தது.",
+   "dir": "gripping hook, slightly alarmed"
+  },
+  {
+   "text": "அதை ரொம்ப புத்திசாலியான ஒரு intern-னு நினைச்சுக்கோங்க. ஆனா அது படிக்கிற எல்லாத்தையும் நம்பிடும்.",
+   "dir": "friendly analogy"
+  },
+  {
+   "text": "ஒண்ணு: least privilege. அதுக்கு படிக்க மட்டும் தான் தேவைன்னா, send, pay, delete பண்ண விடாதீங்க.",
+   "dir": "clear, numbered tip"
+  },
+  {
+   "text": "ரெண்டு: திரும்ப மாத்த முடியாத எதுக்கும் நீங்களே approve பண்ணுங்க. ஒரே ஒரு tap, முழு attack-ஐயும் நிறுத்திடும்.",
+   "dir": "clear, numbered tip, reassuring"
+  },
+  {
+   "text": "மூணு: browsing-ஐயும் work-ஐயும் தனித்தனியா வைங்க. Random sites படிக்கிற agent, உங்க email-ல login ஆகி இருக்கக் கூடாது.",
+   "dir": "clear, numbered tip"
+  },
+  {
+   "text": "நாலு: தெரியாத files-ஐயும் plugins-ஐயும், email attachments மாதிரியே கவனமா கையாளுங்க.",
+   "dir": "clear, numbered tip"
+  },
+  {
+   "text": "அஞ்சு: அது உங்ககிட்ட கொடுக்கறதை check பண்ணுங்க. Hijack ஆன ஒரு agent, உங்களுக்கு ஒரு விஷம் கலந்த link-ஐ கொடுக்கலாம்.",
+   "dir": "clear, numbered tip, warning"
+  },
+  {
+   "text": "அஞ்சு பழக்கம். புது software தேவையில்ல. உங்களுக்கு தீங்கு செய்ய முடியாத ஒரு intern.",
+   "dir": "confident wrap-up, satisfying"
+  },
+  {
+   "text": "இது மாதிரி tech tips-க்கு, TechDecoded தமிழ் சப்ஸ்க்ரைப் பண்ணுங்க.",
+   "dir": "warm, friendly"
+  }
+ ]
+}

@@ -50,6 +50,26 @@ EP = {
        ('own tool?', 'சொந்த tool-ஆ?'), ('>or<', '>இல்ல<'), ('>Someone<', '>வேற<'), ('else&#x27;s?', 'யாரோடதா?'), ("else's?", 'யாரோடதா?'),
        ('How agents get hijacked → full video on the channel', 'Agents எப்படி hijack ஆகுது → full video (English channel)'), ('Today&#x27;s top deals', 'இன்றைய top deals')],
    moods='point shock think worry shock shrug focus think worry happy'),
+ 'tip01': dict(module='hf_tip01_short', scenes=['s0', 's1', 's2', 's3', 's4', 's5', 's6', 's7'], sub_tag='Tech tips, தமிழில்.', extra='tracker',
+   CUE={0: {'poisoned': 'விஷம்', 'five': 'அஞ்சு'}, 1: {'brilliant': 'புத்திசாலியான', 'believes': 'நம்பிடும்.'},
+        2: {'read': 'படிக்க', 'send': 'send,', 'pay': 'pay,', 'delete': 'delete'}, 3: {'approve': 'approve', 'tap': 'tap,', 'attack': 'attack-ஐயும்'},
+        4: {'apart': 'தனித்தனியா', 'logged': 'login'}, 5: {'unknown': 'தெரியாத', 'attachments': 'attachments'},
+        6: {'hands': 'கொடுக்கறதை', 'hijacked': 'Hijack', 'poisoned': 'விஷம்'}, 7: {'software': 'software', 'intern': 'intern.'}, 8: {'subscribe': 'சப்ஸ்க்ரைப்'}},
+   TR=[('5 HABITS', '5 பழக்கங்கள்'), ('“Send the files<br>to this stranger”', '“இந்த files-ஐ<br>இவருக்கு அனுப்பு”'), ('Sure! ✓', 'சரி! ✓'), ('>HABITS<', '>பழக்கங்கள்<'), ('AI INTERN', 'AI INTERN'), ('Believes everything', 'எல்லாத்தையும் நம்பும்'),
+       ('Brilliant · Fast · ', 'புத்திசாலி · வேகம் · '), ('HABIT 1 · LEAST PRIVILEGE', 'பழக்கம் 1 · LEAST PRIVILEGE'), ('Agent permissions', 'Agent அனுமதிகள்'),
+       ("Can't send? Can't be tricked into sending.", 'Send இல்லன்னா, ஏமாறவும் முடியாது.'),
+       ('Can&#x27;t send? Can&#x27;t be tricked into sending.', 'Send இல்லன்னா, ஏமாறவும் முடியாது.'),
+       ('YOUR AI AGENT WANTS TO', 'உங்க AI AGENT செய்ய நினைக்குது'), ('Send $500 to an unknown account', 'தெரியாத account-க்கு $500 அனுப்ப'),
+       ('>Approve<', '>அனுமதி<'), ('>Deny<', '>மறு<'), ('ATTACK CHAIN: BROKEN', 'ATTACK CHAIN: உடைஞ்சுது'), ('NO SHARED LOGINS', 'LOGIN-ஐ பகிராதீங்க'),
+       ('>Random<', '>Random<'), ('browsing agent', 'browsing agent'), ('logged-in work', 'login ஆன work'),
+       ('HABIT 4 · ILLUSTRATION', 'பழக்கம் 4 · ILLUSTRATION'), ('2 unknown attachments', '2 தெரியாத attachments'), ('CHECK FIRST', 'முதல்ல CHECK'),
+       ('HABIT 5 · ILLUSTRATION', 'பழக்கம் 5 · ILLUSTRATION'), ('Here&#x27;s your summary', 'இதோ உங்க summary'), ("Here's your summary", 'இதோ உங்க summary'),
+       ('Sign in to view it:', 'பார்க்க sign in பண்ணுங்க:'), ('FAKE LOGIN PAGE', 'போலி LOGIN PAGE'), ('NO NEW SOFTWARE', 'புது SOFTWARE தேவையில்ல'),
+       ('Least privilege', 'Least privilege'), ('Approve what you can’t undo', 'மாத்த முடியாததுக்கு approve'), ('Browsing ≠ work logins', 'Browsing ≠ work login'),
+       ('Check unknown files &amp; plugins', 'தெரியாத files, plugins: check'), ('Verify links it hands you', 'அது தர்ற links: check'),
+       ('ILLUSTRATION · NOT A REAL SITE', 'ILLUSTRATION · உண்மையான SITE இல்ல'),
+       ('How the hijack works → full video on the channel', 'Hijack எப்படி நடக்குது → full video (English channel)')],
+   moods='shock think point focus point think worry happy happy'),
 }
 C = EP[K]
 
@@ -69,7 +89,7 @@ TAF = ''.join(f"@font-face {{ font-family:'{fam}'; src:url('assets/fonts/{f}'); 
                                     ('SD Text', 'mukta-malar-tamil-800-normal.woff2', 500, 'normal'), ('SD Serif', 'mukta-malar-tamil-800-normal.woff2', 600, 'italic')))
 TA = re.compile(r'[\u0B80-\u0BFF][\u0B80-\u0BFF\s\-]*[\u0B80-\u0BFF]|[\u0B80-\u0BFF]')
 def _text(seg):   # Tamil runs in text nodes get letter-spacing:0 (English letter-spacing splits Tamil letters apart)
-    return re.sub(r'>([^<]+)<', lambda m: '>' + TA.sub(lambda t: f'<tx style="letter-spacing:0">{t.group(0)}</tx>', m.group(1)) + '<', seg)
+    return re.sub(r'>([^<]+)<', lambda m: '>' + (f'<tx style="letter-spacing:0">{m.group(1)}</tx>' if TA.search(m.group(1)) else m.group(1)) + '<', seg)
 def tamilize(html):
     for a, b in C['TR']:
         html = html.replace(a, b)
@@ -115,6 +135,13 @@ if __name__ == '__main__':
     L.sfx_list = lambda: sorted(eng + [(s0, 'whoosh', .5), (s0 + tc, 'click', .9), (s0 + tc + .1, 'ding', .7)])
     (comp / 'bg.html').write_text(L.bg())
     (comp / 'caps.html').write_text(tamilize(L.captions()))
-    (P / 'index.html').write_text(L.index())
+    idx = L.index()
+    if C.get('extra'):
+        x = C['extra']
+        (comp / f'{x}.html').write_text(tamilize(getattr(M, x)()))
+        host = (f'<div id="{x}" data-composition-id="{x}" data-composition-src="compositions/{x}.html" data-start="0" data-duration="{L.DUR}" '
+                f'data-track-index="40" data-track-kind="graphics" data-width="{L.W}" data-height="{L.H}" style="z-index:4"></div>')
+        idx = idx.replace('<audio id="vo"', host + '\n      <audio id="vo"', 1)
+    (P / 'index.html').write_text(idx)
     left = sorted({m for f in comp.glob('s*.html') for m in re.findall(r'>([A-Z][A-Z ,.?!…\'’]{6,})<', f.read_text())})
     print('written', P, L.DUR, '| untranslated caps-text left:', left)
