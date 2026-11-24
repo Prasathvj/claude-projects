@@ -32,7 +32,10 @@ PROFILES = {
     "mystery": ("# AUDIO PROFILE: A deep, calm male narrator of a true-crime tech mystery documentary. Low, slow and controlled, "
                 "about 120 words per minute, quiet suspense, long pauses before reveals, never theatrical or shouting.\n"),
 }
-TARGET_WPM = {"fast": 172, "explainer": 158, "mystery": 120}
+PROFILES["tamil"] = ("# AUDIO PROFILE: A native Tamil (Chennai) male narrator of punchy tech YouTube Shorts. Speaks natural, "
+                     "conversational spoken Tamil, says English tech words (server, code, software, market) the way Tamil "
+                     "speakers do, reads numbers in Tamil. Confident storyteller, crisp, natural breaths, never robotic.\n")
+TARGET_WPM = {"fast": 172, "explainer": 158, "mystery": 120, "tamil": 1}
 
 
 # ------------------------------------------------------------------ wav helpers

@@ -1,0 +1,61 @@
+{
+ "id": "tamil01-short",
+ "format": "vertical",
+ "profile": "tamil",
+ "gap": 0.25,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 4,
+ "max_tempo": 1.0,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "வெறும் 45 நிமிஷம். ஒரு கம்பெனிக்கு 460 மில்லியன் டாலர் நஷ்டம். ஹேக்கர் இல்ல. ஒரே ஒரு ஸ்டெப் மிஸ் ஆச்சு.",
+   "dir": "gripping, tense hook, dramatic but natural"
+  },
+  {
+   "text": "ஆகஸ்ட் 1, 2012. அமெரிக்காவோட பெரிய ஸ்டாக் டிரேடர்கள்ல ஒண்ணான நைட் கேபிடல், அதோட டிரேடிங் சாஃப்ட்வேரை அப்டேட் பண்ணுது.",
+   "dir": "storyteller, setting the scene, calm"
+  },
+  {
+   "text": "எட்டு சர்வர். புது கோட் ஏழு சர்வருக்கு மட்டும் தான் போய் சேருது.",
+   "dir": "slow, suspenseful"
+  },
+  {
+   "text": "எட்டாவது சர்வர்ல ஒரு பழைய ஃபீச்சர் இன்னும் இருக்கு. 2003-ல இருந்து ஆஃப் பண்ணி வச்சது: பவர் பெக்.",
+   "dir": "mysterious, lower voice"
+  },
+  {
+   "text": "புது கோட், அதே பழைய ஸ்விட்சை திரும்ப யூஸ் பண்ணுது.",
+   "dir": "ominous, quiet"
+  },
+  {
+   "text": "காலை 8:01. சிஸ்டம் 97 வார்னிங் ஈமெயில் அனுப்புது. யாரும் கண்டுக்கல.",
+   "dir": "tense, matter-of-fact"
+  },
+  {
+   "text": "9:30. மார்க்கெட் ஓப்பன் ஆகுது. பவர் பெக் முழிச்சுக்குது.",
+   "dir": "building tension; say 9:30 clearly as 'ஒன்பது முப்பது' (onbadhu muppadhu)"
+  },
+  {
+   "text": "நிறுத்தாம ஆர்டர்கள் பறக்குது: 154 ஸ்டாக்ஸ்ல 40 லட்சம் டிரேட்ஸ்.",
+   "dir": "fast, urgent, rising panic; first word 'நிறுத்தாம' clearly (nirutthaama)"
+  },
+  {
+   "text": "45 நிமிஷம் கழிச்சு தான் நிறுத்துறாங்க. 460 மில்லியன் டாலருக்கு மேல, அதாவது 4,000 கோடி ரூபாய்க்கும் மேல, போச்சு.",
+   "dir": "heavy, stunned, slow on the last word"
+  },
+  {
+   "text": "ஒரே வாரத்துல நைட் கேபிடலுக்கு 400 மில்லியன் டாலர் உதவி தேவைப்பட்டுச்சு. ஒரு வருஷத்துக்குள்ள ஒரு போட்டி கம்பெனி அதை வாங்கிடுச்சு.",
+   "dir": "sober storyteller"
+  },
+  {
+   "text": "பாடம்? யூஸ் ஆகாத பழைய கோடை டெலீட் பண்ணுங்க. தனியா டிப்ளாய் பண்ணாதீங்க.",
+   "dir": "confident, friendly advice; first word 'பாடம்' clearly (paadam, meaning lesson), then a short pause"
+  },
+  {
+   "text": "இது மாதிரி டெக் கதைகளுக்கு, TechDecoded தமிழ் சப்ஸ்க்ரைப் பண்ணுங்க.",
+   "dir": "warm, upbeat"
+  }
+ ]
+}
