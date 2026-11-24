@@ -33,7 +33,7 @@ Folders are numbered in posting order. Times are **IST**. Channel: @TechDecodedW
 | 24 | [24_lst01](24_lst01) | Is your phone secretly listening? Scientists tested 17,000 apps | 0:37 | **Wed 16 Dec, 12:30 PM** | Ready (Short → ep07) |
 | 25 | [25_ast01](25_ast01) | How to use GPT-6 Astra (it's not in the chat list) | 1:05 | **Post now (trending)** | Ready, stand-alone Short |
 | 26 | [26_ep08_long](26_ep08_long) | How to Use GPT-6 Astra (Step by Step) + Can You Get It Free in India? | 8:44 | **Post soon (trending)** | Ready, long (Short: ast01) |
-| 27 | [27_myst01_long](27_myst01_long) | TECH MYSTERIES · CASE 001: The TV Hijack Nobody Ever Solved | 8:33 | **Owner to choose** | Ready, long (new series) |
+| 27 | [27_myst01_long](27_myst01_long) | TECH MYSTERIES · CASE 001: The TV Hijack Nobody Ever Solved | 8:37 | **Sat 28 Nov, 5:30 PM** | Ready, long (new series) |
 
 ## Why this order
 - **News first, while it's fresh:** the Anthropic IPO (18 Nov) and the bank AI-agent rule lose value every day they wait.

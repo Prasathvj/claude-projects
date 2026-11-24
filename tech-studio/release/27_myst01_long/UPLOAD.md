@@ -1,5 +1,5 @@
 # myst01 · TECH MYSTERIES · CASE 001: The TV Hijack Nobody Ever Solved
-File: `TechDecoded_myst01_long.mp4` (1920×1080, 8:33, ~97 MB) · Series: TECH MYSTERIES (new weekly series) · Look: dark navy, film grain, CRT scanlines, case files · Voice: Gemini "Charon" · Max: night hoodie, only at key moments
+File: `TechDecoded_myst01_long.mp4` (1920×1080, 8:37, ~95 MB) · Series: TECH MYSTERIES (new weekly series) · Look: dark navy, film grain, CRT scanlines, case files · Voice: Gemini "Charon" · Max: night hoodie, only at key moments
 Planned release: owner's choice (first episode of the new series)
 
 **Title:** The TV Hijack Nobody Ever Solved
