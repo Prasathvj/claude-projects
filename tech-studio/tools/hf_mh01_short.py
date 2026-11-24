@@ -3,7 +3,8 @@ Built on the vertical Short helpers (hf_news01_short) + Tech Mysteries kit (kit_
 Usage: STYLE=mystery THEME=navy CASE=002 python3 tools/hf_mh01_short.py   then  python3 tools/max_plan.py mh01-short 1.4"""
 import json, math, os, re, shutil, subprocess, sys
 from pathlib import Path
-os.environ['SHORT_ID'] = 'mh01-short'
+LANG = os.environ.get('MH_LANG', 'en')   # MH_LANG=ta builds the Tamil version (mh01ta-short) from the same scenes
+os.environ['SHORT_ID'] = 'mh01ta-short' if LANG == 'ta' else 'mh01-short'
 os.environ.setdefault('STYLE', 'mystery'); os.environ.setdefault('THEME', 'navy'); os.environ.setdefault('CASE', '002')
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import hf_news01_short as L   # noqa: E402
@@ -32,7 +33,26 @@ SAT = ('<svg width="{w}" height="{h}" viewBox="0 0 220 130"><rect x="86" y="40" 
        '<path d="M110 40 L110 22" stroke="#C3CEE0" stroke-width="4"/><path d="M92 22 Q110 2 128 22 Z" fill="#E8EDF5"/><circle cx="110" cy="96" r="5" fill="#E5383B"/></svg>')
 def sat(w=220): return SAT.format(w=w, h=int(w * 130 / 220))
 
-def T(i, w, nth=0): return wl(i, w, nth)
+CUE = {0: {'vanished': 'காணாமப்', 'satellite': 'satellite,', 'two': '239', 'hours': 'நேரம்'},
+       1: {'beijing': 'பெய்ஜிங்.', 'malaysia': 'Malaysia', 'kuala': 'கோலாலம்பூர்ல'},
+       2: {'good': 'Good', 'dark': 'ஆயிடுச்சு.', 'transponder': 'transponder'},
+       3: {'turned': 'திரும்பி', 'crossed': 'மலேசியாவைக்', 'sea': 'போச்சு.'},
+       4: {'range': 'range-ஐத்', 'gone': 'காணோம்.'},
+       5: {'pings': 'ping', 'answering': 'சொல்லிக்கிட்டே', 'automatic': 'automatic-ஆ', 'sending': 'அனுப்பிக்கிட்டே'},
+       6: {'messages': 'Message', 'voices': 'குரல்', 'seven': 'ஏழு', 'time': 'time', 'frequency': 'frequency'},
+       7: {'pings': 'ping-களை', 'path': 'பாதையைக்', 'ocean': 'பெருங்கடல்ல,'},
+       8: {'wing': 'wing-ல', 'reunion': 'Réunion', 'africa': 'ஆப்பிரிக்கா'},
+       9: {'scanned': 'ஒரு', 'seabed': 'தேடியாச்சு.', 'latest': 'கடைசி', 'nothing': 'எதுவுமே'},
+       10: {'who': 'யாரு?', 'why': 'ஏன்?', 'knows': 'தெரியாது.'},
+       11: {'subscribe': 'சப்ஸ்க்ரைப்'}}
+def T(i, w, nth=0):
+    if LANG != 'ta':
+        return wl(i, w, nth)
+    b = BE[i]; cue = CUE[i][w]
+    hit = next((x for x in b['words'] if x['w'] == cue or x['w'].startswith(cue)), None)
+    if hit is None:
+        raise KeyError(f'line {i}: cue {cue!r} not in {[x["w"] for x in b["words"]]}')
+    return round(b['start'] + hit['s'] - S[f's{i}'][0], 3)
 def mk(i, body, sc, css='', punch=True):
     sid = f's{i}'
     sc = [y for x in sc for y in (x if isinstance(x, list) else [x])]
@@ -291,6 +311,30 @@ def overlay():
     """empty 'chapters' layer: kit_myst.mysterize adds grain, scanlines, vignette, flicker and the CASE badge"""
     return scene('chapters', '', '', '').replace('<div class="all" id="chapters-all">', '<div class="all">')
 
+TR = [('239</span> PEOPLE ON BOARD', '239</span> பேர் இருந்தாங்க'), ('SIGNAL LOST', 'சிக்னல் இல்ல'), ('SATELLITE · STILL HEARING IT', 'SATELLITE · இன்னும் கேட்குது'),
+      ('+ ALMOST 7 HOURS', '+ கிட்டத்தட்ட 7 மணி நேரம்'), ('8 MARCH 2014', '8 மார்ச் 2014'), ('MISSING AIRCRAFT', 'காணாமல் போன விமானம்'),
+      ('DATE:', 'தேதி:'), ('FROM:', 'புறப்பட்டது:'), ('TO:', 'போக வேண்டியது:'), ('ARRIVED:', 'போய்ச் சேர்ந்தது:'), ('KUALA LUMPUR ✈ BEIJING · RED-EYE FLIGHT', 'கோலாலம்பூர் ✈ பெய்ஜிங் · நள்ளிரவு FLIGHT'),
+      ('<span>KUALA LUMPUR</span>', '<span>கோலாலம்பூர்</span>'), ('<span>BEIJING</span>', '<span>பெய்ஜிங்</span>'), ('>MISSING<', '>காணோம்<'),
+      ('MILITARY RADAR TRACK', 'MILITARY RADAR பார்த்த பாதை'), ('TURNED BACK', 'திரும்புச்சு'), ('SCHEMATIC · NOT TO SCALE', 'மாதிரி வரைபடம் · அளவுப்படி இல்ல'),
+      ('>GONE.<', '>காணோம்.<'), ('LAST RADAR CONTACT', 'கடைசி RADAR தொடர்பு'), ('35,800 KM UP', '35,800 KM உயரத்துல'), ('STILL HERE ✓', 'இங்கதான் இருக்கேன் ✓'),
+      ('<s>MESSAGES</s>', '<s>MESSAGE</s>'), ('>VOICES</s>', '>குரல்</s>'), ("EACH RING = ONE PING'S DISTANCE", 'ஒவ்வொரு வளையம் = ஒரு PING-ஓட தூரம்'), ('7TH ARC', '7வது ARC'),
+      ('SOUTHERN INDIAN OCEAN', 'தெற்கு இந்தியப் பெருங்கடல்'), ('29 JULY 2015 · FIRST CONFIRMED DEBRIS', '29 ஜூலை 2015 · உறுதியான முதல் பாகம்'),
+      ('FLAPERON · PART OF THE WING', 'FLAPERON · WING-ஓட ஒரு பகுதி'), ('RÉUNION ISLAND', 'Réunion தீவு'), ('INDIAN OCEAN · NEAR AFRICA', 'இந்தியப் பெருங்கடல் · ஆப்பிரிக்கா பக்கம்'),
+      ('SEABED SONAR SEARCH', 'கடல் அடியில SONAR தேடல்'), ('"100,000+"', '"1,00,000+"'), ('SQUARE KM SCANNED', 'சதுர KM தேடியாச்சு'),
+      ('LATEST SEARCH ENDED · 2026', 'கடைசி தேடல் முடிஞ்சது · 2026'), ('NOTHING FOUND', 'எதுவும் கிடைக்கல'),
+      ('WHO TURNED<br>THE PLANE AROUND?', 'FLIGHT-ஐத் திருப்புனது<br>யாரு?'), ('>WHY?<', '>ஏன்?<'),
+      ('Turned back by hand, not autopilot (2018 report)', 'Autopilot இல்ல, கையால திருப்பியிருக்காங்க (2018 report)'), ('>UNSOLVED<', '>விடை இல்ல<'),
+      ('Tech mysteries, decoded.', 'Tech mysteries, தமிழில்.'), ('>with Max<', '>தமிழ்<')]
+TAF = ''.join(f"@font-face {{ font-family:'{fam}'; src:url('assets/fonts/{f}'); font-weight:100 900; unicode-range:U+0B80-0BFF; }}\n"
+              for fam, f in (('SD Display', 'catamaran-tamil-900-normal.woff2'), ('SD Mono', 'mukta-malar-tamil-800-normal.woff2'),
+                             ('SD Text', 'mukta-malar-tamil-800-normal.woff2'), ('SD Serif', 'mukta-malar-tamil-800-normal.woff2')))
+def tamilize(html):
+    if LANG != 'ta':
+        return html
+    for a, b in TR:
+        html = html.replace(a, b)
+    return html.replace('<style>', '<style>\n' + TAF, 1)
+
 if __name__ == '__main__':
     res = [f() for f in (s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11)]
     SFX = sorted(x for _, s in res for x in s)
@@ -298,9 +342,9 @@ if __name__ == '__main__':
     comp = P / 'compositions'; comp.mkdir(parents=True, exist_ok=True)
     for f in comp.glob('*.html'): f.unlink()
     for k, (html, _) in enumerate(res):
-        (comp / f's{k}.html').write_text(html)
+        (comp / f's{k}.html').write_text(tamilize(html))
     (comp / 'bg.html').write_text(L.bg())
-    (comp / 'caps.html').write_text(L.captions())
+    (comp / 'caps.html').write_text(tamilize(L.captions()))
     (comp / 'chapters.html').write_text(overlay())
     idx = L.index().replace('<div id="caps"', f'<div id="chapters" data-composition-id="chapters" data-composition-src="compositions/chapters.html" data-start="0" data-duration="{DUR}" data-track-index="2" data-track-kind="graphics" data-width="{W}" data-height="{H}" style="z-index:4"></div>\n      <div id="caps"', 1)
     idx = idx.replace('data-track-index="2" data-track-kind="captions"', 'data-track-index="20" data-track-kind="captions"')

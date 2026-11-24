@@ -1,0 +1,116 @@
+<template>
+  <style>
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Mono'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
+@font-face { font-family:'SD Serif'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:100 900; unicode-range:U+0B80-0BFF; }
+
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#E5383B; --soft:#E98F5E; --dim:#8FA3C2; --ink:#F6EEE8; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #26406B; background:linear-gradient(180deg,#18294A 0%,#122039 100%);
+  box-shadow:0 40px 90px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,190,150,.06); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(229,56,59,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.mtv { position:absolute; border-radius:44px; background:linear-gradient(160deg,#3A2E24,#1C1611); box-shadow:0 50px 110px rgba(0,0,0,.8), inset 0 0 0 8px #2A2119; }
+.mtv .scr { position:absolute; left:6.5%; top:8%; width:73%; height:80%; border-radius:60px/44px; overflow:hidden; background:#000; }
+.mtv .scr > div { position:absolute; inset:0; opacity:0; } .mtv .scr > div.on { opacity:1; }
+.mtv .kn { position:absolute; right:5%; top:16%; width:9%; } .mtv .kn i { display:block; width:100%; padding-top:100%; border-radius:50%; background:#0E0B09; margin-bottom:40%; box-shadow:inset 0 0 0 5px #3A2E24; }
+.mtv .glass { position:absolute; inset:0; background:radial-gradient(ellipse at 30% 20%,rgba(255,255,255,.10),transparent 45%); box-shadow:inset 0 0 70px rgba(0,0,0,.9); z-index:3; opacity:1 !important; }
+.mtv .lbl { position:absolute; left:0; right:0; top:calc(100% + 16px); text-align:center; font:700 22px 'SD Mono'; letter-spacing:5px; color:#8FA3C2; white-space:nowrap; }
+.s-sports { background:linear-gradient(180deg,#1F4E8C,#0E2A52); } .s-sports b { position:absolute; left:7%; top:12%; font:900 46em 'SD Display'; color:#fff; white-space:nowrap; }
+.s-sports i { position:absolute; left:7%; top:34%; font:700 22em 'SD Mono'; color:#FFD54A; font-style:normal; white-space:nowrap; } .s-sports u { position:absolute; left:0; right:0; bottom:0; height:16%; background:#C62828; }
+.s-static { background:url(assets/noise.png) 0 0/256px 256px; filter:contrast(1.6) brightness(1.1); }
+.s-figure .st { position:absolute; inset:0; background:repeating-linear-gradient(90deg,#1B1B1B 0 22px,#5A5A5A 22px 30px,#2A2A2A 30px 52px); }
+.s-figure svg { position:absolute; inset:0; width:100%; height:100%; }
+.s-drama { background:radial-gradient(circle at 50% 50%,#0D1B3A,#02040A 70%); } .s-drama b { position:absolute; left:0; right:0; top:42%; text-align:center; font:900 40em 'SD Display'; color:#9FC3FF; letter-spacing:6px; white-space:nowrap; }
+.s-alert { background:#B71C1C; } .s-alert b { position:absolute; left:6%; right:6%; top:14%; font:900 40em 'SD Display'; color:#fff; letter-spacing:3px; }
+.s-alert i { position:absolute; left:6%; right:6%; top:38%; font:700 24em 'SD Mono'; color:#FFE6E6; font-style:normal; line-height:1.45; }
+.s-bars { background:linear-gradient(90deg,#C0C0C0 0 14%,#C0C000 14% 28%,#00C0C0 28% 42%,#00C000 42% 56%,#C000C0 56% 70%,#C00000 70% 84%,#0000C0 84%); }
+.mfile { position:absolute; background:#C9B58E; border-radius:10px; box-shadow:0 40px 100px rgba(0,0,0,.8); padding:44px 54px; }
+.mfile:before { content:''; position:absolute; left:34px; top:-36px; width:220px; height:42px; background:#C9B58E; border-radius:12px 12px 0 0; }
+.mfile h3 { font:700 24px 'SD Mono'; letter-spacing:6px; color:#3B2F1E; margin-bottom:26px; white-space:nowrap; }
+.mfile .ln { font:700 30px 'SD Mono'; color:#2A2116; margin:18px 0; display:flex; gap:18px; align-items:center; white-space:nowrap; }
+.mfile .rd { display:inline-block; height:34px; background:#0B0B0B; transform-origin:left center; }
+.mfile .stp { position:absolute; right:40px; bottom:40px; padding:6px 26px; border:10px solid #C62828; color:#C62828; font:900 72px 'SD Display'; letter-spacing:5px; transform:rotate(-10deg); background:rgba(201,181,142,.6); white-space:nowrap; }
+.mtyp { position:absolute; font:700 120px 'SD Mono'; color:#E8EDF5; letter-spacing:3px; white-space:nowrap; text-shadow:0 0 30px rgba(140,180,255,.25); } .mtyp .cu { color:#E5383B; }
+.mrad { position:absolute; width:420px; height:420px; } .mrad .p { position:absolute; left:110px; top:110px; width:200px; height:200px; border-radius:50%; border:3px solid #3DDC97; }
+.mrad .d { position:absolute; left:194px; top:194px; width:32px; height:32px; border-radius:16px; background:#3DDC97; box-shadow:0 0 30px #3DDC97; }
+.mrad .g { position:absolute; inset:0; border-radius:50%; background:linear-gradient(rgba(61,220,151,.08) 1px,transparent 1px) 0 0/42px 42px,linear-gradient(90deg,rgba(61,220,151,.08) 1px,transparent 1px) 0 0/42px 42px; }
+.mrad b { position:absolute; left:-200px; right:-200px; top:440px; text-align:center; font:900 84px 'SD Display'; letter-spacing:16px; color:#E8EDF5; white-space:nowrap; }
+.mrad i { position:absolute; left:-200px; right:-200px; top:545px; text-align:center; font:700 24px 'SD Mono'; letter-spacing:6px; color:#3DDC97; font-style:normal; white-space:nowrap; }
+.mtow { position:absolute; } .mtow .t { position:absolute; bottom:0; background:linear-gradient(90deg,#141B29,#1D2638 50%,#121826); border:2px solid #26324A; }
+.mtow .t:after { content:''; position:absolute; inset:10px; background:repeating-linear-gradient(0deg,rgba(255,214,120,.16) 0 4px,transparent 4px 18px),repeating-linear-gradient(90deg,transparent 0 12px,rgba(0,0,0,.55) 12px 20px); }
+.mtow .a { position:absolute; bottom:100%; width:6px; background:#8FA3C2; } .mtow .l { position:absolute; left:50%; transform:translateX(-50%); top:calc(100% + 12px); font:700 22px 'SD Mono'; letter-spacing:4px; color:#8FA3C2; white-space:nowrap; }
+.mtow .bl { position:absolute; width:14px; height:14px; border-radius:7px; background:#E5383B; box-shadow:0 0 18px #E5383B; }
+.mbeam { position:absolute; height:8px; transform-origin:0 50%; background:repeating-linear-gradient(90deg,var(--bc) 0 26px,transparent 26px 40px); filter:drop-shadow(0 0 10px var(--bc)); border-radius:4px; }
+.mclue { position:absolute; background:#141B29; border:2px solid #26324A; border-left:8px solid #E5383B; border-radius:12px; padding:22px 28px; box-shadow:0 24px 60px rgba(0,0,0,.6); }
+.mclue b { display:block; font:700 22px 'SD Mono'; letter-spacing:6px; color:#E5383B; margin-bottom:10px; } .mclue span { font:700 34px 'SD Text'; color:#E8EDF5; line-height:1.3; }
+.mclue:before { content:''; position:absolute; left:50%; top:-12px; width:22px; height:22px; border-radius:11px; background:#E5383B; box-shadow:0 4px 8px rgba(0,0,0,.6); }
+.msky { position:absolute; }
+.mfig { position:absolute; overflow:hidden; border-radius:18px; } .mfig .st { position:absolute; inset:0; background:repeating-linear-gradient(90deg,#1B1B1B 0 26px,#5A5A5A 26px 36px,#2A2A2A 36px 62px); }
+.mfig svg { position:absolute; inset:0; width:100%; height:100%; }
+
+.ctr { position:absolute; left:40px; right:40px; text-align:center; }
+.lbl { font:700 28px 'SD Mono'; letter-spacing:6px; color:#8FA3C2; }
+.big { font:900 120px 'SD Display'; color:#E8EDF5; letter-spacing:-2px; line-height:1; }
+.mid { font:900 76px 'SD Display'; color:#E8EDF5; line-height:1.05; }
+.mono { font-family:'SD Mono'; }
+.red { color:#E5383B; } .blu { color:#9FC3FF; } .grn { color:#3DDC97; }
+.panel { position:absolute; background:#0F1726; border:2px solid #26324A; border-radius:22px; box-shadow:0 30px 80px rgba(0,0,0,.65); }
+.chip { position:absolute; padding:10px 22px; border-radius:12px; font:700 26px 'SD Mono'; letter-spacing:4px; white-space:nowrap; }
+.chip.r { background:#E5383B; color:#fff; } .chip.d { border:2px solid #45577A; color:#8FA3C2; }
+.ill { position:absolute; left:0; right:0; text-align:center; font:700 20px 'SD Mono'; letter-spacing:5px; color:#5A6E91; }
+.stampx { position:absolute; padding:10px 34px; border:10px solid #E5383B; color:#E5383B; font:900 84px 'SD Display'; letter-spacing:6px; transform:rotate(-9deg); white-space:nowrap; opacity:0; background:rgba(8,12,20,.55); }
+.wave { position:absolute; left:0; right:0; height:40px; background:repeating-radial-gradient(circle at 50% -60%,transparent 0 30px,rgba(159,195,255,.35) 30px 34px) 0 0/120px 80px; }
+  </style>
+  <div id="root" data-composition-id="s8" data-width="1080" data-height="1920">
+    <div class="all" id="s8-all">
+<div id="s8-all" class="all"><div class="ctr lbl" id="s8-h" style="top:220px">29 ஜூலை 2015 · உறுதியான முதல் பாகம்</div>
+<div id="s8-w" style="position:absolute;left:280px;top:420px"><svg width="520" height="200" viewBox="0 0 260 100"><path d="M6 30 L250 8 L254 34 L10 92 Z" fill="#C9CED6" stroke="#8C949F" stroke-width="3"/><path d="M40 40 L230 20 M60 60 L232 32" stroke="#9AA2AD" stroke-width="2"/><circle cx="30" cy="50" r="3" fill="#6F6A5E"/><circle cx="67" cy="73" r="4" fill="#6F6A5E"/><circle cx="104" cy="62" r="5" fill="#6F6A5E"/><circle cx="141" cy="51" r="3" fill="#6F6A5E"/><circle cx="178" cy="74" r="4" fill="#6F6A5E"/><circle cx="215" cy="63" r="5" fill="#6F6A5E"/><circle cx="52" cy="52" r="3" fill="#6F6A5E"/><circle cx="89" cy="75" r="4" fill="#6F6A5E"/><circle cx="126" cy="64" r="5" fill="#6F6A5E"/><circle cx="163" cy="53" r="3" fill="#6F6A5E"/><circle cx="200" cy="76" r="4" fill="#6F6A5E"/><circle cx="37" cy="65" r="5" fill="#6F6A5E"/><circle cx="74" cy="54" r="3" fill="#6F6A5E"/><circle cx="111" cy="77" r="4" fill="#6F6A5E"/><circle cx="148" cy="66" r="5" fill="#6F6A5E"/><circle cx="185" cy="55" r="3" fill="#6F6A5E"/></svg></div>
+<div class="ctr lbl" id="s8-n" style="top:660px;color:#C3CEE0">FLAPERON · WING-ஓட ஒரு பகுதி</div>
+<div class="wave" style="top:760px"></div><div class="wave" style="top:800px;opacity:.5"></div>
+<div id="s8-pin" style="position:absolute;left:470px;top:860px;text-align:center;width:140px"><div style="width:60px;height:60px;margin:0 auto;border-radius:30px 30px 30px 0;transform:rotate(-45deg);background:#E5383B"></div></div>
+<div class="ctr mid" id="s8-r" style="top:960px">Réunion தீவு</div><div class="ctr lbl" id="s8-a" style="top:1060px">இந்தியப் பெருங்கடல் · ஆப்பிரிக்கா பக்கம்</div>
+<div class="stampx" id="s8-c" style="left:300px;top:480px">MH370</div></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s8-all", { scale:1.07, opacity:0 }, { scale:1, opacity:1, duration:.32, ease:"expo.out", immediateRender:false }, 0);
+    tl.set("#s8-h", { opacity:0 }, 0);
+    tl.fromTo("#s8-h", { opacity:0, y:24 }, { opacity:1, y:0, duration:0.35, ease:"power2.out", immediateRender:false }, 0.05);
+    tl.fromTo("#s8-w", { opacity:0, x:-500, rotation:-8 }, { opacity:1, x:0, rotation:0, duration:2.246, ease:"power2.out", immediateRender:false }, 0.1);
+    tl.fromTo("#s8-w", { y:0 }, { y:-16, duration:.9, yoyo:true, repeat:5, ease:"sine.inOut", immediateRender:false }, 2.246);
+    tl.set("#s8-n", { opacity:0 }, 0);
+    tl.fromTo("#s8-n", { opacity:0, y:24 }, { opacity:1, y:0, duration:0.35, ease:"power2.out", immediateRender:false }, 2.246);
+    tl.set("#s8-pin", { opacity:0 }, 0);
+    tl.fromTo("#s8-pin", { opacity:0, y:-120 }, { opacity:1, y:0, duration:0.4, ease:"bounce.out", immediateRender:false }, 5.25);
+    tl.set("#s8-r", { opacity:0 }, 0);
+    tl.fromTo("#s8-r", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 5.55);
+    tl.set("#s8-a", { opacity:0 }, 0);
+    tl.fromTo("#s8-a", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 3.7399999999999998);
+    tl.set("#s8-c", { opacity:0 }, 0); tl.fromTo("#s8-c", { scale:2.6, opacity:0 }, { scale:1, opacity:1, duration:.22, ease:"power4.in", immediateRender:false }, 4.44);
+    tl.to("#s8-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 7.495);
+    window.__timelines["s8"] = tl;
+  </script>
+</template>
