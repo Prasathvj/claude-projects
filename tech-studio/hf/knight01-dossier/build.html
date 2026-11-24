@@ -1,0 +1,353 @@
+<!doctype html>
+<!-- knight01 in the Halftone Dossier style (Lemo-Opuscar, engine MIT; style guide CC BY-NC 4.0 + film-making permission).
+     Vertical 1080x1920, TechDecoded palette, Max at key moments, word-synced caption bar. TEST: first 16.3 s. -->
+<html lang="en"><head><meta charset="utf-8"><title>knight01 dossier</title>
+<style>
+@font-face{font-family:'Slab';src:url(fonts/alfa-slab-one-latin-400-normal.woff2);font-display:block}
+@font-face{font-family:'Bagel';src:url(fonts/bagel-fat-one-latin-400-normal.woff2);font-display:block}
+@font-face{font-family:'JBM';src:url(fonts/jetbrains-mono-latin-800-normal.woff2);font-weight:800;font-display:block}
+@font-face{font-family:'Mont';src:url(fonts/montserrat-latin-900-normal.woff2);font-weight:900;font-display:block}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#F4EDE3}
+svg,canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
+#paper{mix-blend-mode:multiply;pointer-events:none} #fx{pointer-events:none} .mul{mix-blend-mode:multiply}
+</style></head><body>
+<svg id="stage" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg"><defs>
+<filter id="boil" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence id="boilT" type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="1" result="w"/>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="5" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" seed="4" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -22 15.2" result="gm"/><feComposite in="d" in2="gm" operator="in"/></filter>
+<filter id="stampInk" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="11" result="w"/>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="3" seed="21" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 5.9" result="gm"/><feComposite in="d" in2="gm" operator="in"/></filter>
+<clipPath id="frameClip"><rect width="1080" height="1920"/></clipPath></defs>
+<g clip-path="url(#frameClip)"><g id="cam"><g id="world"></g></g><g id="maxL"></g><g id="capL"></g><g id="hud"></g><g id="wipe"></g>
+<rect id="flash" width="1080" height="1920" fill="#FFFFFF" opacity="0"/></g></svg>
+<canvas id="paper" width="1080" height="1920"></canvas><canvas id="fx" width="1080" height="1920"></canvas>
+<script src="host.js"></script>
+<script>
+const W = 1080, H = 1920, FPS = 30, DUR = 16.3;
+const NS = 'http://www.w3.org/2000/svg';
+const C = { paper:'#F4EDE3', ink:'#2A2018', orange:'#F87736', yellow:'#F5B82E', red:'#E5383B', teal:'#2A9D8F', cream:'#FFF6EA', green:'#3F9E5A' };
+const F = { slab:"'Slab'", bagel:"'Bagel'", mono:"'JBM'", sans:"'Mont'" };
+function el(tag, a = {}, p) { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
+function txt(p, s, a) { const e = el('text', a, p); e.textContent = s; return e; }
+function tf(e, x = 0, y = 0, s = 1, r = 0, sy) { e.setAttribute('transform', `translate(${x.toFixed(2)} ${y.toFixed(2)}) rotate(${r.toFixed(2)}) scale(${s.toFixed(4)} ${(sy ?? s).toFixed(4)})`); }
+function op(e, o) { e.setAttribute('opacity', Math.max(0, Math.min(1, o)).toFixed(3)); }
+function show(e, v) { e.style.display = v ? '' : 'none'; }
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const lerp = (a, b, p) => a + (b - a) * p;
+const E = { out: p => 1 - Math.pow(1 - p, 3), in: p => p * p * p, io: p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2,
+  back: p => { const c = 1.9; return 1 + (c + 1) * Math.pow(p - 1, 3) + c * Math.pow(p - 1, 2); } };
+const pop = (t, t0, d = 0.35) => t < t0 ? 0 : E.back(seg(t, t0, t0 + d));
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const mctx = document.createElement('canvas').getContext('2d');
+function measure(s, size, fam, w = 900) { mctx.font = `${w} ${size}px ${fam}`; return mctx.measureText(s).width; }
+function chars(parent, str, o) {
+  const { x, y, size, family, weight = 900, fill = C.ink, anchor = 'start', ls = 0, shadow, stroke, sw = 0 } = o;
+  const g = el('g', {}, parent); const arr = [...str];
+  const ws = arr.map(c => measure(c, size, family, weight)); const total = ws.reduce((a, b) => a + b, 0) + ls * (arr.length - 1);
+  let cx = anchor === 'middle' ? x - total / 2 : anchor === 'end' ? x - total : x;
+  const items = arr.map((ch, i) => { const cg = el('g', {}, g);
+    const base = { x: 0, y: 0, 'font-size': size, 'font-family': family, 'font-weight': weight, 'text-anchor': 'middle' };
+    if (shadow) txt(cg, ch, { ...base, x: shadow.dx, y: shadow.dy, fill: shadow.fill, class: 'mul' });
+    const st = stroke ? { stroke, 'stroke-width': sw, 'paint-order': 'stroke', 'stroke-linejoin': 'round' } : {};
+    txt(cg, ch, { ...base, fill, ...st }); const it = { g: cg, x: cx + ws[i] / 2, y, w: ws[i], size }; cx += ws[i] + ls; tf(cg, it.x, it.y); return it; });
+  return { g, items, total };
+}
+function charsPop(c, t, t0, stagger = 0.05, d = 0.38, from = 60) {
+  c.items.forEach((it, i) => { const s = t0 + i * stagger, p = seg(t, s, s + d), h = it.size * 0.35;
+    if (t < s) { op(it.g, 0); return; } op(it.g, 1);
+    const sc = E.back(p), sq = 1 + 0.25 * Math.sin(p * Math.PI) * (1 - p);
+    it.g.setAttribute('transform', `translate(${it.x} ${it.y + from * (1 - E.out(p))}) translate(0 ${-h}) scale(${(sc / sq).toFixed(3)} ${(sc * sq).toFixed(3)}) translate(0 ${h})`); });
+}
+function halftone(parent, { x0 = 0, y0 = 0, w = W, h = H, step = 22, angle = 15, color, f, maxK = 0.62 }) {
+  const a = angle * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), n = Math.ceil(Math.hypot(w, h) / step / 2) + 2; let d = '';
+  for (let i = -n; i <= n; i++) for (let j = -n; j <= n; j++) { const u = i * step, v = j * step;
+    const x = x0 + w / 2 + u * ca - v * sa, y = y0 + h / 2 + u * sa + v * ca;
+    if (x < x0 - step || x > x0 + w + step || y < y0 - step || y > y0 + h + step) continue;
+    const s = clamp(f(x, y)); if (s < 0.05) continue; const r = s * step * maxK;
+    d += `M${(x - r).toFixed(1)} ${y.toFixed(1)}a${r.toFixed(1)} ${r.toFixed(1)} 0 1 0 ${(2 * r).toFixed(1)} 0a${r.toFixed(1)} ${r.toFixed(1)} 0 1 0 ${(-2 * r).toFixed(1)} 0`; }
+  return el('path', { d, fill: color }, parent);
+}
+const radial = (cx, cy, R, pw = 1.2) => (x, y) => Math.pow(clamp(1 - Math.hypot(x - cx, y - cy) / R), pw);
+const edge = (R = 1100, pw = 1.6) => (x, y) => Math.pow(clamp(Math.hypot(x - W / 2, y - H / 2) / R - 0.35), pw) * 1.3;
+const ramp = (y0, y1) => (x, y) => clamp((y - y0) / (y1 - y0));
+function bg(p, col) { return el('rect', { width: W, height: H, fill: col }, p); }
+function stampEl(parent, str, { size = 170, color = C.red, family = F.sans, padX = 44, padY = 24, border = 12 } = {}) {
+  const g = el('g', {}, parent), inner = el('g', { filter: 'url(#stampInk)' }, g);
+  const w = measure(str, size, family, 900) + padX * 2, h = size * 1.08 + padY * 2;
+  el('rect', { x: -w / 2, y: -h / 2, width: w, height: h, rx: 22, fill: 'none', stroke: color, 'stroke-width': border }, inner);
+  el('rect', { x: -w / 2 + border * 1.8, y: -h / 2 + border * 1.8, width: w - border * 3.6, height: h - border * 3.6, rx: 12, fill: 'none', stroke: color, 'stroke-width': border * .35 }, inner);
+  txt(inner, str, { x: 0, y: size * .36, 'font-size': size, 'font-family': family, 'font-weight': 900, fill: color, 'text-anchor': 'middle' });
+  return { g, w, h };
+}
+function stampAnim(s, t, t0, x, y, rot) {
+  if (t < t0 - 0.09) { op(s.g, 0); return; } const p = seg(t, t0 - 0.09, t0), after = Math.max(0, t - t0);
+  const bounce = 1 + 0.05 * Math.sin(after * 30) * Math.exp(-after * 9);
+  op(s.g, p < 1 ? 0.3 + 0.7 * p : 0.93); tf(s.g, x, y, lerp(2.6, 1, E.in(p)) * bounce, rot);
+}
+// flat props with a heavy ink outline (style: chunky shapes, 7 px outline, flat fill, boil)
+function stopwatch(p) { const g = el('g', { filter: 'url(#boil)' }, p);
+  el('rect', { x: -40, y: -250, width: 80, height: 50, rx: 12, fill: C.red, stroke: C.ink, 'stroke-width': 7 }, g);
+  el('rect', { x: -18, y: -205, width: 36, height: 30, fill: C.ink }, g);
+  el('circle', { cx: 0, cy: 0, r: 190, fill: C.cream, stroke: C.ink, 'stroke-width': 9 }, g);
+  for (let k = 0; k < 12; k++) el('rect', { x: -5, y: -176, width: 10, height: k % 3 ? 22 : 38, rx: 4, fill: C.ink, transform: `rotate(${k * 30})` }, g);
+  const hand = el('g', {}, g); el('rect', { x: -6, y: -160, width: 12, height: 170, rx: 6, fill: C.red, stroke: C.ink, 'stroke-width': 4 }, hand);
+  el('circle', { cx: 0, cy: 0, r: 18, fill: C.ink }, g); return { g, hand }; }
+function hacker(p) { const g = el('g', { filter: 'url(#boil)' }, p);
+  el('path', { d: 'M-210 330 C-210 170 -140 90 0 90 C140 90 210 170 210 330 Z', fill: '#3A3440', stroke: C.cream, 'stroke-width': 8 }, g);
+  el('path', { d: 'M-130 120 C-140 -40 -70 -120 0 -120 C70 -120 140 -40 130 120 C110 170 -110 170 -130 120 Z', fill: '#4A4350', stroke: C.cream, 'stroke-width': 8 }, g);
+  el('ellipse', { cx: 0, cy: 30, rx: 78, ry: 98, fill: '#120F14' }, g);
+  el('rect', { x: -48, y: 12, width: 96, height: 16, rx: 8, fill: C.teal }, g);
+  el('rect', { x: -170, y: 230, width: 340, height: 120, rx: 14, fill: '#CFC7BC', stroke: C.cream, 'stroke-width': 6 }, g); return g; }
+function laptop(p) { const g = el('g', { filter: 'url(#boil)' }, p);
+  el('rect', { x: -330, y: -230, width: 660, height: 420, rx: 26, fill: C.ink, stroke: C.ink, 'stroke-width': 7 }, g);
+  el('rect', { x: -300, y: -200, width: 600, height: 360, rx: 10, fill: C.cream }, g);
+  el('path', { d: 'M-400 190 L400 190 L360 240 L-360 240 Z', fill: C.yellow, stroke: C.ink, 'stroke-width': 7, 'stroke-linejoin': 'round' }, g); return g; }
+function tower(p) { const g = el('g', { filter: 'url(#boil)' }, p);
+  el('rect', { x: -190, y: -560, width: 380, height: 760, rx: 10, fill: C.teal, stroke: C.ink, 'stroke-width': 8 }, g);
+  const wins = [];
+  for (let r = 0; r < 9; r++) for (let c = 0; c < 4; c++) wins.push(el('rect', { x: -150 + c * 80, y: -500 + r * 76, width: 50, height: 46, rx: 6, fill: C.ink }, g));
+  el('rect', { x: -60, y: 110, width: 120, height: 90, fill: C.ink }, g); return { g, wins }; }
+
+const world = document.getElementById('world'), cam = document.getElementById('cam'), hud = document.getElementById('hud'),
+  wipe = document.getElementById('wipe'), flash = document.getElementById('flash'), maxL = document.getElementById('maxL'), capL = document.getElementById('capL');
+const scenes = [];
+function scene(t0, t1, build) { const g = el('g', {}, world); const s = { g, t0, t1 }; s.update = build(g, s); scenes.push(s); return s; }
+
+// narration word times (absolute s) from the aligned timeline
+const WORDS = [{"w": "In", "n": "in", "s": 0.25, "e": 0.42}, {"w": "45", "n": "45", "s": 0.6, "e": 1.35}, {"w": "minutes,", "n": "minutes", "s": 1.35, "e": 1.83}, {"w": "a", "n": "a", "s": 2.05, "e": 2.1}, {"w": "company", "n": "company", "s": 2.1, "e": 2.62}, {"w": "lost", "n": "lost", "s": 2.62, "e": 3.0}, {"w": "460", "n": "460", "s": 3.15, "e": 4.55}, {"w": "million", "n": "million", "s": 4.55, "e": 5.34}, {"w": "dollars.", "n": "dollars", "s": 5.34, "e": 5.88}, {"w": "No", "n": "no", "s": 6.3, "e": 6.56}, {"w": "hacker.", "n": "hacker", "s": 6.56, "e": 6.91}, {"w": "Just", "n": "just", "s": 7.33, "e": 7.55}, {"w": "one", "n": "one", "s": 7.55, "e": 8.12}, {"w": "missed", "n": "missed", "s": 8.24, "e": 8.54}, {"w": "step.", "n": "step", "s": 8.54, "e": 9.01}, {"w": "August", "n": "august", "s": 9.27, "e": 9.64}, {"w": "1st,", "n": "1st", "s": 9.64, "e": 10.03}, {"w": "2012.", "n": "2012", "s": 10.03, "e": 10.83}, {"w": "Knight", "n": "knight", "s": 11.16, "e": 11.47}, {"w": "Capital,", "n": "capital", "s": 11.47, "e": 11.95}, {"w": "one", "n": "one", "s": 12.09, "e": 12.2}, {"w": "of", "n": "of", "s": 12.2, "e": 12.27}, {"w": "America's", "n": "americas", "s": 12.27, "e": 12.72}, {"w": "biggest", "n": "biggest", "s": 12.72, "e": 13.27}, {"w": "stock", "n": "stock", "s": 13.27, "e": 13.56}, {"w": "traders,", "n": "traders", "s": 13.56, "e": 13.99}, {"w": "is", "n": "is", "s": 14.2, "e": 14.33}, {"w": "updating", "n": "updating", "s": 14.41, "e": 14.87}, {"w": "its", "n": "its", "s": 14.87, "e": 15.0}, {"w": "trading", "n": "trading", "s": 15.0, "e": 15.35}, {"w": "software.", "n": "software", "s": 15.35, "e": 15.8}, {"w": "Eight", "n": "eight", "s": 16.1, "e": 16.35}, {"w": "servers.", "n": "servers", "s": 16.35, "e": 16.9}, {"w": "The", "n": "the", "s": 17.35, "e": 17.43}, {"w": "new", "n": "new", "s": 17.43, "e": 17.7}, {"w": "code", "n": "code", "s": 17.7, "e": 18.25}, {"w": "reaches", "n": "reaches", "s": 18.25, "e": 18.66}, {"w": "only", "n": "only", "s": 18.66, "e": 19.27}, {"w": "seven.", "n": "seven", "s": 19.27, "e": 19.7}];
+const Wt = (w, n = 0) => WORDS.filter(x => x.n.startsWith(w))[n].s;
+
+function buildAll() {
+  // ---------- S1 0–2.0  IN 45 MINUTES: giant halftone numeral, stopwatch ----------
+  scene(0, 2.02, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(700, 900, 760, 1.0), maxK: .68 });
+    halftone(g, { color: C.orange, step: 20, angle: 60, f: edge(1100, 1.4), maxK: .6 }).setAttribute('class', 'mul');
+    const big = chars(g, '45', { x: 560, y: 1180, size: 760, family: F.bagel, weight: 400, fill: C.yellow, anchor: 'middle', shadow: { fill: C.orange, dx: 16, dy: 16 } });
+    const head = chars(g, 'IN', { x: 90, y: 330, size: 150, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const head2 = chars(g, 'MINUTES', { x: 90, y: 1350, size: 170, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const sw = stopwatch(g);
+    return (t) => {
+      charsPop(head, t, Wt('in') - .05, .06); charsPop(big, t, Wt('45') - .1, .1, .42, 160); charsPop(head2, t, Wt('minutes') - .1, .045, .35, 70);
+      const p = pop(t, Wt('45') + .15, .45); tf(sw.g, 820, lerp(-400, 540, E.out(seg(t, Wt('45') + .15, Wt('45') + .55))), .62 * Math.max(p, .001), 12);
+      sw.hand.setAttribute('transform', `rotate(${(t - Wt('45')) * 420})`);
+    };
+  });
+  // ---------- S2 2.0–6.2  A COMPANY LOST $460,000,000 ----------
+  scene(2.02, 6.22, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.red, step: 22, angle: 15, f: edge(1000, 1.2), maxK: .66 }).setAttribute('class', 'mul');
+    halftone(g, { color: C.yellow, step: 24, angle: 70, f: radial(540, 980, 700, 1.1), maxK: .62 }).setAttribute('class', 'mul');
+    const h1 = chars(g, 'A COMPANY', { x: 90, y: 330, size: 130, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const ex = el('g', {}, g); txt(ex, 'EXHIBIT 01 · P&L, AUG 1 2012', { x: 0, y: 0, 'font-size': 34, 'font-family': F.mono, 'font-weight': 800, fill: C.ink });
+    // graph paper card with a crashing line
+    const card = el('g', {}, g); el('rect', { x: -420, y: -260, width: 840, height: 520, rx: 18, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, card);
+    for (let k = -3; k <= 3; k++) { el('line', { x1: -400, x2: 400, y1: k * 70, y2: k * 70, stroke: '#D9C9B8', 'stroke-width': 3 }, card); el('line', { y1: -240, y2: 240, x1: k * 120, x2: k * 120, stroke: '#D9C9B8', 'stroke-width': 3 }, card); }
+    const line = el('path', { d: 'M-380 -170 L-290 -150 L-220 -190 L-140 -120 L-60 -140 L20 -40 L100 -70 L180 40 L260 10 L340 180 L390 220', fill: 'none', stroke: C.red, 'stroke-width': 14, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', 'stroke-dasharray': 1400, 'stroke-dashoffset': 1400 }, card);
+    const num = el('g', {}, g);
+    const numS = txt(num, '$0', { x: 8, y: 8, 'font-size': 150, 'font-family': F.bagel, fill: C.orange, class: 'mul', 'text-anchor': 'middle' });
+    const numT = txt(num, '$0', { x: 0, y: 0, 'font-size': 150, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' });
+    const st = stampEl(g, 'LOST', { size: 190, color: C.red });
+    const fmt = v => '$' + Math.round(v).toLocaleString('en-US');
+    return (t) => {
+      charsPop(h1, t, Wt('company') - .1, .045);
+      op(ex, seg(t, Wt('company'), Wt('company') + .2)); tf(ex, 90, 420);
+      tf(card, 540, lerp(2300, 860, E.back(seg(t, Wt('company') + .05, Wt('company') + .5))), 1, -2);
+      line.setAttribute('stroke-dashoffset', (1400 * (1 - E.in(seg(t, Wt('lost'), Wt('dollars'))))).toFixed(0));
+      stampAnim(st, t, Wt('lost') + .05, 760, 470, -10);
+      const v = 460e6 * E.in(seg(t, Wt('460') - .1, Wt('dollars')));
+      const s = t >= Wt('dollars') ? '$460M' : fmt(v); numS.textContent = s; numT.textContent = s;
+      numT.setAttribute('fill', t >= Wt('dollars') ? C.red : C.ink);
+      const k = t >= Wt('dollars') ? E.back(seg(t, Wt('dollars'), Wt('dollars') + .35)) : 1;
+      op(num, t >= Wt('460') - .15 ? 1 : 0); tf(num, 540, 1290, t >= Wt('dollars') ? lerp(1.7, 1, k) * 1.25 : .9);
+    };
+  });
+  // ---------- S3 6.2–7.25  NO HACKER (dark "secret" scene) ----------
+  scene(6.22, 7.27, (g) => {
+    bg(g, C.ink);
+    halftone(g, { color: '#4A3E33', step: 22, angle: 30, f: radial(540, 900, 900, .9), maxK: .66 });
+    const h = chars(g, 'NO HACKER', { x: 540, y: 380, size: 150, family: F.slab, weight: 400, fill: C.cream, anchor: 'middle', shadow: { fill: C.red, dx: 9, dy: 9 } });
+    const hk = el('g', {}, g); hacker(hk);
+    const x1 = el('line', { x1: -260, y1: -260, x2: 260, y2: 260, stroke: C.red, 'stroke-width': 46, 'stroke-linecap': 'round', 'stroke-dasharray': 740, 'stroke-dashoffset': 740 }, g);
+    const x2 = el('line', { x1: 260, y1: -260, x2: -260, y2: 260, stroke: C.red, 'stroke-width': 46, 'stroke-linecap': 'round', 'stroke-dasharray': 740, 'stroke-dashoffset': 740 }, g);
+    return (t) => {
+      charsPop(h, t, Wt('no') - .08, .05, .3, 50);
+      tf(hk, 540, lerp(1900, 900, E.back(seg(t, Wt('no'), Wt('no') + .4))), 1.1);
+      [x1, x2].forEach((x, i) => { x.setAttribute('stroke-dashoffset', (740 * (1 - E.out(seg(t, Wt('hacker') + .15 + i * .14, Wt('hacker') + .3 + i * .14)))).toFixed(0)); tf(x, 540, 900); });
+    };
+  });
+  // ---------- S4 7.25–9.2  JUST ONE MISSED STEP: staircase, the 3rd step missing ----------
+  scene(7.27, 9.22, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: ramp(1500, 300), maxK: .6 });
+    halftone(g, { color: C.teal, step: 20, angle: 70, f: radial(1000, 1700, 600, 1.2), maxK: .55 }).setAttribute('class', 'mul');
+    const h1 = chars(g, 'ONE MISSED', { x: 80, y: 300, size: 140, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const h2 = chars(g, 'STEP', { x: 80, y: 450, size: 140, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const steps = el('g', { filter: 'url(#boil)' }, g); const L = ['WRITE CODE', 'TEST IT', '', 'DEPLOY'], blocks = [];
+    L.forEach((s, k) => { const b = el('g', {}, steps); const hgt = 160 + k * 150;
+      if (k === 2) { el('rect', { x: 0, y: -hgt, width: 230, height: hgt, fill: 'none', stroke: C.red, 'stroke-width': 8, 'stroke-dasharray': '26 18' }, b); txt(b, '?', { x: 115, y: -hgt + 150, 'font-size': 140, 'font-family': F.bagel, fill: C.red, 'text-anchor': 'middle' }); txt(b, 'COPY TO ALL 8', { x: 115, y: -hgt - 24, 'font-size': 30, 'font-family': F.mono, 'font-weight': 800, fill: C.red, 'text-anchor': 'middle' }); }
+      else { el('rect', { x: 0, y: -hgt, width: 230, height: hgt, fill: k === 3 ? C.yellow : C.cream, stroke: C.ink, 'stroke-width': 8 }, b); txt(b, s, { x: 115, y: -hgt + 60, 'font-size': 32, 'font-family': F.mono, 'font-weight': 800, fill: C.ink, 'text-anchor': 'middle' });
+        if (k < 2) { el('circle', { cx: 115, cy: -hgt + 120, r: 34, fill: C.green, stroke: C.ink, 'stroke-width': 6 }, b); txt(b, '✓', { x: 115, y: -hgt + 136, 'font-size': 46, 'font-family': F.sans, 'font-weight': 900, fill: C.cream, 'text-anchor': 'middle' }); } }
+      blocks.push({ b, k }); });
+    const cube = el('g', { filter: 'url(#boil)' }, g); el('rect', { x: -55, y: -55, width: 110, height: 110, rx: 16, fill: C.orange, stroke: C.ink, 'stroke-width': 7 }, cube);
+    txt(cube, 'v2', { x: 0, y: 18, 'font-size': 52, 'font-family': F.bagel, fill: C.cream, 'text-anchor': 'middle' });
+    const st = stampEl(g, 'MISSED', { size: 150, color: C.red });
+    return (t) => {
+      charsPop(h1, t, Wt('one') - .1, .05); charsPop(h2, t, Wt('missed') - .1, .07, .4, 90);
+      blocks.forEach(({ b, k }) => tf(b, 70 + k * 235, lerp(2200, 1300, E.back(seg(t, 7.3 + k * .09, 7.65 + k * .09)))));
+      // the v2 cube hops step to step, then drops through the gap
+      const hop = (a, b2, x0, y0, x1, y1, ht) => { const p = seg(t, a, b2); return [lerp(x0, x1, p), lerp(y0, y1, p) - Math.sin(p * Math.PI) * ht]; };
+      let x = 185, y = 1085, r = 0;
+      if (t > 7.6) [x, y] = hop(7.6, 7.95, 185, 1085, 420, 935, 120);
+      if (t > 7.95) [x, y] = hop(7.95, 8.3, 420, 935, 640, 790, 120);
+      if (t > 8.3) { y = 790 + 1200 * E.in(seg(t, 8.3, 8.9)); x = 640; r = (t - 8.3) * 400; }
+      tf(cube, x, y, t < 7.55 ? 0.001 : 1, r);
+      stampAnim(st, t, Wt('step') + .05, 620, 640, -9);
+    };
+  });
+  // ---------- S5 9.2–11.05  AUGUST 1, 2012: calendar, pages tear off ----------
+  scene(9.22, 11.07, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.teal, step: 22, angle: 15, f: radial(540, 900, 720, 1.0), maxK: .64 }).setAttribute('class', 'mul');
+    halftone(g, { color: C.orange, step: 20, angle: 60, f: edge(1000, 1.5), maxK: .6 }).setAttribute('class', 'mul');
+    const cal = el('g', { filter: 'url(#boil)' }, g);
+    const page = (parent, top, num, col) => { const p = el('g', {}, parent);
+      el('rect', { x: -300, y: -330, width: 600, height: 660, rx: 26, fill: C.cream, stroke: C.ink, 'stroke-width': 9 }, p);
+      el('rect', { x: -300, y: -330, width: 600, height: 150, rx: 26, fill: col, stroke: C.ink, 'stroke-width': 9 }, p);
+      txt(p, top, { x: 0, y: -232, 'font-size': 84, 'font-family': F.slab, fill: C.cream, 'text-anchor': 'middle' });
+      txt(p, num, { x: 0, y: 150, 'font-size': 330, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' }); return p; };
+    page(cal, 'AUGUST', '1', C.red);
+    const yr = txt(cal, '2012', { x: 0, y: 280, 'font-size': 90, 'font-family': F.mono, 'font-weight': 800, fill: C.ink, 'text-anchor': 'middle' });
+    const torn = [page(cal, 'JULY', '31', '#9C8676'), page(cal, 'JULY', '30', '#9C8676'), page(cal, 'JULY', '29', '#9C8676')];
+    el('circle', { cx: 0, cy: -350, r: 26, fill: C.red, stroke: C.ink, 'stroke-width': 6 }, cal);
+    const h = chars(g, 'AUG 1, 2012', { x: 540, y: 330, size: 130, family: F.slab, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    return (t) => {
+      const a = Wt('august');
+      tf(cal, 540, lerp(-700, 960, E.out(seg(t, a - .5, a - .1))) + (t > a - .1 ? -Math.sin(seg(t, a - .1, a + .1) * Math.PI) * 30 : 0), .95);
+      torn.forEach((p, i) => { const t0 = a + .1 + (2 - i) * .16, q = seg(t, t0, t0 + .45);
+        op(p, 1 - q); tf(p, lerp(0, (i - 1) * 420, E.in(q)), lerp(0, -900, E.in(q)), 1, lerp(0, (i - 1) * 40, q)); });
+      const yp = seg(t, Wt('2012'), Wt('2012') + .35); yr.setAttribute('fill', yp > 0 && yp < 1 ? C.red : C.ink);
+      charsPop(h, t, Wt('1st') - .05, .05);
+    };
+  });
+  // ---------- S6 11.05–14.2  THE SUSPECT: KNIGHT CAPITAL mugshot (height chart, plate, flash) ----------
+  scene(11.07, 14.22, (g) => {
+    bg(g, C.paper);
+    for (let k = 0; k < 11; k++) { el('line', { x1: 0, x2: 1080, y1: 520 + k * 90, y2: 520 + k * 90, stroke: C.ink, 'stroke-width': k % 2 ? 3 : 6, opacity: .5 }, g);
+      txt(g, `${(10 - k) * 50}`, { x: 30, y: 510 + k * 90, 'font-size': 30, 'font-family': F.mono, 'font-weight': 800, fill: C.ink, opacity: .6 }); }
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(560, 900, 620, 1.0), maxK: .62 }).setAttribute('class', 'mul');
+    const tw = tower(g);
+    const plate = el('g', {}, g); el('rect', { x: -330, y: -70, width: 660, height: 140, rx: 10, fill: C.ink }, plate);
+    txt(plate, 'KNIGHT CAPITAL', { x: 0, y: 22, 'font-size': 64, 'font-family': F.slab, fill: C.cream, 'text-anchor': 'middle' });
+    txt(plate, 'US STOCK TRADER · NJ', { x: 0, y: 60, 'font-size': 26, 'font-family': F.mono, 'font-weight': 800, fill: C.yellow, 'text-anchor': 'middle' });
+    const h = chars(g, 'THE SUSPECT', { x: 80, y: 300, size: 120, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const st = stampEl(g, 'BIG PLAYER', { size: 104, color: C.red });
+    return (t) => {
+      charsPop(h, t, 11.12, .05);
+      tf(tw.g, 560, lerp(2600, 1110, E.back(seg(t, 11.07, 11.5))), .95);
+      tw.wins.forEach((w, i) => w.setAttribute('fill', t > 11.2 + ((i * 7) % 36) * .02 ? C.yellow : C.ink));
+      tf(plate, 540, lerp(2200, 1250, E.back(seg(t, Wt('capital') - .1, Wt('capital') + .3))), 1, -2);
+      stampAnim(st, t, Wt('biggest') + .05, 560, 560, -8);
+    };
+  });
+  // ---------- S7 14.2–16.3  IS UPDATING ITS TRADING SOFTWARE: laptop + progress ----------
+  scene(14.22, 16.31, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.teal, step: 22, angle: 15, f: ramp(300, 1500), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, 'UPDATING…', { x: 80, y: 320, size: 130, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const lp = el('g', {}, g); laptop(lp);
+    const lines = ['$ deploy smars_v2', '→ server 1 ✓', '→ server 2 ✓', '→ server 3 ✓'].map((s, i) => txt(lp, s, { x: -270, y: -140 + i * 62, 'font-size': 40, 'font-family': F.mono, 'font-weight': 800, fill: i ? C.green : C.ink }));
+    const bar = el('rect', { x: -270, y: 110, width: 0, height: 34, rx: 10, fill: C.orange, stroke: C.ink, 'stroke-width': 5 }, lp);
+    const pct = txt(lp, '0%', { x: 270, y: 100, 'font-size': 44, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'end' });
+    return (t) => {
+      charsPop(h, t, Wt('updating') - .15, .05);
+      tf(lp, 540, lerp(2300, 980, E.back(seg(t, 14.25, 14.7))), 1, -1.5);
+      lines.forEach((l, i) => op(l, t > Wt('updating') + .1 + i * .3 ? 1 : 0));
+      const p = seg(t, Wt('updating'), 16.2) * .62; bar.setAttribute('width', (540 * p).toFixed(0)); pct.textContent = Math.round(p * 100) + '%';
+    };
+  });
+
+  // ---------- caption bar (dark-ink pill, overprint shadow, the spoken word lights up in the highlight ink) ----------
+  const CH = [{"t0": 0.2, "t1": 2.0, "w": [{"w": "In", "s": 0.25, "e": 0.42}, {"w": "45", "s": 0.6, "e": 1.35}, {"w": "minutes,", "s": 1.35, "e": 1.83}]}, {"t0": 2.0, "t1": 4.5, "w": [{"w": "a", "s": 2.05, "e": 2.1}, {"w": "company", "s": 2.1, "e": 2.62}, {"w": "lost", "s": 2.62, "e": 3.0}, {"w": "460", "s": 3.15, "e": 4.55}]}, {"t0": 4.5, "t1": 6.25, "w": [{"w": "million", "s": 4.55, "e": 5.34}, {"w": "dollars.", "s": 5.34, "e": 5.88}]}, {"t0": 6.25, "t1": 7.28, "w": [{"w": "No", "s": 6.3, "e": 6.56}, {"w": "hacker.", "s": 6.56, "e": 6.91}]}, {"t0": 7.28, "t1": 9.22, "w": [{"w": "Just", "s": 7.33, "e": 7.55}, {"w": "one", "s": 7.55, "e": 8.12}, {"w": "missed", "s": 8.24, "e": 8.54}, {"w": "step.", "s": 8.54, "e": 9.01}]}, {"t0": 9.22, "t1": 9.98, "w": [{"w": "August", "s": 9.27, "e": 9.64}, {"w": "1st,", "s": 9.64, "e": 10.03}]}, {"t0": 9.98, "t1": 11.11, "w": [{"w": "2012.", "s": 10.03, "e": 10.83}]}, {"t0": 11.11, "t1": 12.04, "w": [{"w": "Knight", "s": 11.16, "e": 11.47}, {"w": "Capital,", "s": 11.47, "e": 11.95}]}, {"t0": 12.04, "t1": 13.22, "w": [{"w": "one", "s": 12.09, "e": 12.2}, {"w": "of", "s": 12.2, "e": 12.27}, {"w": "America's", "s": 12.27, "e": 12.72}, {"w": "biggest", "s": 12.72, "e": 13.27}]}, {"t0": 13.22, "t1": 14.15, "w": [{"w": "stock", "s": 13.27, "e": 13.56}, {"w": "traders,", "s": 13.56, "e": 13.99}]}, {"t0": 14.15, "t1": 15.3, "w": [{"w": "is", "s": 14.2, "e": 14.33}, {"w": "updating", "s": 14.41, "e": 14.87}, {"w": "its", "s": 14.87, "e": 15.0}, {"w": "trading", "s": 15.0, "e": 15.35}]}, {"t0": 15.3, "t1": 16.05, "w": [{"w": "software.", "s": 15.35, "e": 15.8}]}, {"t0": 16.05, "t1": 17.3, "w": [{"w": "Eight", "s": 16.1, "e": 16.35}, {"w": "servers.", "s": 16.35, "e": 16.9}]}, {"t0": 17.3, "t1": 18.61, "w": [{"w": "The", "s": 17.35, "e": 17.43}, {"w": "new", "s": 17.43, "e": 17.7}, {"w": "code", "s": 17.7, "e": 18.25}, {"w": "reaches", "s": 18.25, "e": 18.66}]}, {"t0": 18.61, "t1": 16.3, "w": [{"w": "only", "s": 18.66, "e": 19.27}, {"w": "seven.", "s": 19.27, "e": 19.7}]}];
+  CH.forEach(ch => { const g = el('g', {}, capL); const size = 58, tw = ch.w.reduce((a, w) => a + measure(w.w + ' ', size, F.sans, 900), 0);
+    const padX = 34, hh = size * 1.6; el('rect', { x: -tw / 2 - padX + 9, y: -hh / 2 + 9, width: tw + padX * 2, height: hh, rx: 16, fill: C.orange, class: 'mul' }, g);
+    el('rect', { x: -tw / 2 - padX, y: -hh / 2, width: tw + padX * 2, height: hh, rx: 16, fill: C.ink }, g);
+    const te = el('text', { x: -tw / 2, y: size * .36, 'font-size': size, 'font-family': F.sans, 'font-weight': 900 }, g);
+    ch.spans = ch.w.map(w => { const sp = el('tspan', { fill: C.cream }, te); sp.textContent = w.w + ' '; return sp; }); ch.g = g; });
+  capUpdate = (t) => { CH.forEach(ch => { const on = t >= ch.t0 && t < ch.t1; show(ch.g, on); if (!on) return;
+    const p = seg(t, ch.t0, ch.t0 + .35); tf(ch.g, 540, 1440 + 40 * (1 - E.out(p)), lerp(.8, 1, E.back(p)), -.8);
+    ch.w.forEach((w, i) => ch.spans[i].setAttribute('fill', t >= w.s && t < w.e + .05 ? C.yellow : C.cream)); }); };
+
+  // ---------- Max: bottom-right, key moments only, boil on the drawing ----------
+  const MAXC = { skin: '#F0C4A0', hair: 'messy', hairCol: '#5A3A26', glasses: 'round', hood: 'down', top: '#F87736', topS: '#D85E25', phones: 'none', beard: 'stubble' };
+  const MX = [[0.15, 2.0, { brows: 'high', eyes: 'wide', mouth: 'shock', arms: 'hands-up', extra: ['bang'] }],
+              [6.3, 7.25, { brows: 'skeptic', eyes: 'open', mouth: 'flat', arms: 'shrug', extra: ['question'] }],
+              [7.3, 9.2, { brows: 'worried', eyes: 'closed', mouth: 'frown', arms: 'facepalm' }],
+              [14.3, 16.3, { brows: 'up', eyes: 'open', mouth: 'smile', arms: 'point' }]];
+  MX.forEach(m => { const g = el('g', { filter: 'url(#boil)' }, maxL); g.innerHTML = HOST.render(Object.assign({ char: MAXC, w: 400, h: 520 }, m[2])); m.push(g); });
+  maxUpdate = (t) => MX.forEach(m => { const on = t >= m[0] && t < m[1]; show(m[3], on); if (on) tf(m[3], 690, 1500 + 400 * (1 - E.back(seg(t, m[0], m[0] + .35))), 1); });
+
+  // ---------- HUD ----------
+  const hg = el('g', {}, hud);
+  const caseNo = txt(hg, 'CASE No. 2012-KCG-001', { x: 50, y: 70, 'font-size': 26, 'font-family': F.mono, 'font-weight': 800 });
+  const chip = el('g', {}, hg), chipBg = el('rect', { x: 50, y: 86, height: 44, rx: 6 }, chip);
+  const chipA = txt(chip, '', { x: 64, y: 117, 'font-size': 26, 'font-family': F.sans, 'font-weight': 900 }), chipB = txt(chip, '', { y: 117, 'font-size': 26, 'font-family': F.sans, 'font-weight': 900 });
+  const date = el('g', {}, hg), dateBg = el('rect', { x: 800, y: 44, width: 230, height: 56, rx: 8, fill: 'none', 'stroke-width': 4 }, date);
+  const rec = el('circle', { cx: 830, cy: 72, r: 10, fill: C.red }, date), dateT = txt(date, '2012.08.01', { x: 850, y: 84, 'font-size': 28, 'font-family': F.mono, 'font-weight': 800 });
+  const chips = [[0, 6.22, 'EXHIBIT 01', 'THE LOSS'], [6.22, 9.22, 'EXHIBIT 02', 'THE CAUSE'], [9.22, 16.31, 'FILE', 'THE COMPANY']];
+  hudUpdate = (t) => { const c = chips.find(c => t >= c[0] && t < c[1]); show(hg, !!c); if (!c) return;
+    const dark = t >= 6.22 && t < 7.27, ink = dark ? C.cream : C.ink;
+    caseNo.setAttribute('fill', ink); chipBg.setAttribute('fill', ink); chipA.textContent = c[2]; chipA.setAttribute('fill', dark ? C.red : C.yellow);
+    chipB.textContent = c[3]; chipB.setAttribute('fill', dark ? C.ink : C.cream);
+    const wa = measure(c[2], 26, F.sans), wb = measure(c[3], 26, F.sans); chipB.setAttribute('x', 64 + wa + 14); chipBg.setAttribute('width', wa + wb + 42);
+    dateBg.setAttribute('stroke', ink); dateT.setAttribute('fill', ink); op(rec, Math.floor(t * 2) % 2 ? .25 : 1); };
+
+  // ---------- halftone-dot wipes ----------
+  const dg = el('g', {}, wipe), dots = [];
+  for (let y = 0; y <= H + 80; y += 80) for (let x = 0; x <= W + 80; x += 80) dots.push({ e: el('circle', { cx: x, cy: y, r: 0 }, dg), x, y });
+  const WIPES = [[2.02, C.yellow], [6.22, C.ink], [7.27, C.orange], [9.22, C.teal], [14.22, C.yellow]];
+  wipeUpdate = (t) => { const w = WIPES.find(([b]) => Math.abs(t - b) < .22); show(dg, !!w); if (!w) return; dg.setAttribute('fill', w[1]);
+    const u = (t - w[0] + .22) / .44; dots.forEach(d => { const delay = (d.x / W * .4 + d.y / H * .6) * .35, p = clamp((u - delay) / .65); d.e.setAttribute('r', (Math.sin(p * Math.PI) * 62).toFixed(1)); }); };
+}
+let hudUpdate = () => {}, wipeUpdate = () => {}, capUpdate = () => {}, maxUpdate = () => {};
+
+function buildPaper() {
+  const cv = document.getElementById('paper'), ctx = cv.getContext('2d'), r = rng(3);
+  const sm = document.createElement('canvas'); sm.width = 54; sm.height = 96; const sx = sm.getContext('2d'), si = sx.createImageData(54, 96);
+  for (let i = 0; i < si.data.length; i += 4) { const v = 242 + r() * 13; si.data[i] = si.data[i + 1] = si.data[i + 2] = v; si.data[i + 3] = 255; }
+  sx.putImageData(si, 0, 0); ctx.imageSmoothingEnabled = true; ctx.drawImage(sm, 0, 0, W, H);
+  const b = ctx.getImageData(0, 0, W, H);
+  for (let i = 0; i < b.data.length; i += 4) { const n = (r() - .5) * 26; b.data[i] = clamp(b.data[i] + n, 0, 255); b.data[i + 1] = clamp(b.data[i + 1] + n, 0, 255); b.data[i + 2] = clamp(b.data[i + 2] + n - 4, 0, 255); }
+  ctx.putImageData(b, 0, 0);
+  const gr = ctx.createRadialGradient(540, 960, 500, 540, 960, 1250); gr.addColorStop(0, 'rgba(255,255,255,0)'); gr.addColorStop(1, 'rgba(120,100,80,0.35)');
+  ctx.fillStyle = gr; ctx.fillRect(0, 0, W, H);
+  ctx.strokeStyle = 'rgba(140,120,100,0.18)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(0, 960); ctx.lineTo(W, 962); ctx.stroke();
+}
+function drawFx(frame) {
+  const ctx = document.getElementById('fx').getContext('2d'); ctx.clearRect(0, 0, W, H); const r = rng(1000 + Math.floor(frame / 2));
+  ctx.fillStyle = 'rgba(255,248,235,0.75)'; for (let i = 0; i < 520; i++) { ctx.beginPath(); ctx.arc(r() * W, r() * H, .6 + r() * 1.8, 0, 7); ctx.fill(); }
+  ctx.fillStyle = 'rgba(42,32,24,0.25)'; for (let i = 0; i < 90; i++) { ctx.beginPath(); ctx.arc(r() * W, r() * H, .6 + r() * 1.3, 0, 7); ctx.fill(); }
+}
+const SHAKES = [[0.65, 16, 0.3], [2.67, 18, 0.3], [5.34, 24, 0.4], [6.76, 10, 0.25], [8.59, 18, 0.3], [12.770000000000001, 16, 0.3]];
+const FLASHES = [[5.34, 0.5], [11.16, 0.5], [11.47, 0.45]];
+const boilT = document.getElementById('boilT');
+function render(t) {
+  const frame = Math.round(t * FPS); boilT.setAttribute('seed', 1 + (Math.floor(t * 10) % 40));
+  for (const s of scenes) { const on = t >= s.t0 && t < s.t1; show(s.g, on); if (on) s.update(t); }
+  let dx = 0, dy = 0;
+  for (const [t0, a, d] of SHAKES) if (t >= t0 && t < t0 + d) { const k = 1 - (t - t0) / d; dx += a * k * k * Math.sin(t * 91 + t0); dy += a * k * k * Math.cos(t * 77 + t0 * 3); }
+  const pulse = 1 + 0.006 * Math.exp(-((t % 0.5) / 0.07)), push = 1 + 0.04 * ((t % 4) / 4);
+  const s = pulse * push; cam.setAttribute('transform', `translate(${(dx + 540 * (1 - s)).toFixed(2)} ${(dy + 960 * (1 - s)).toFixed(2)}) scale(${s.toFixed(4)})`);
+  let fl = 0; for (const [f, a] of FLASHES) if (t >= f && t < f + .3) fl = Math.max(fl, a * Math.pow(1 - (t - f) / .3, 2)); op(flash, fl);
+  maxUpdate(t); capUpdate(t); hudUpdate(t); wipeUpdate(t); drawFx(frame);
+}
+async function init() {
+  const fams = ['400 50px "Slab"', '400 50px "Bagel"', '800 50px "JBM"', '900 50px "Mont"'];
+  await Promise.all(fams.map(f => document.fonts.load(f, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$,.:?!·…→✓%&\'')));
+  await document.fonts.ready; buildPaper(); buildAll();
+  render(parseFloat(new URLSearchParams(location.search).get('t') || '0')); window.READY = true;
+}
+window.render = render; init();
+</script></body></html>
