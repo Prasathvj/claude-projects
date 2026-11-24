@@ -1,0 +1,61 @@
+{
+ "id": "knight01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.25,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 4,
+ "max_tempo": 1.0,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "In 45 minutes, a company lost 460 million dollars. No hacker. Just one missed step.",
+   "dir": "gripping, tense hook, dramatic but natural"
+  },
+  {
+   "text": "August 1st, 2012. Knight Capital, one of America's biggest stock traders, is updating its trading software.",
+   "dir": "storyteller, setting the scene, calm"
+  },
+  {
+   "text": "Eight servers. The new code reaches only seven.",
+   "dir": "slow, suspenseful"
+  },
+  {
+   "text": "The eighth still has an old feature, switched off since 2003: Power Peg.",
+   "dir": "mysterious, lower voice"
+  },
+  {
+   "text": "And the new code reuses its old switch.",
+   "dir": "ominous, quiet"
+  },
+  {
+   "text": "8:01 AM. The system sends 97 warning emails. Nobody acts.",
+   "dir": "tense, matter-of-fact"
+  },
+  {
+   "text": "9:30. The market opens. Power Peg wakes up.",
+   "dir": "building tension"
+  },
+  {
+   "text": "Orders fly out nonstop: four million trades in 154 stocks.",
+   "dir": "fast, urgent, rising panic"
+  },
+  {
+   "text": "45 minutes later, they finally stop it. Over 460 million dollars, gone.",
+   "dir": "heavy, stunned, slow on the last word"
+  },
+  {
+   "text": "Within a week, Knight needs a 400 million dollar rescue. Within a year, a rival takes it over.",
+   "dir": "sober storyteller"
+  },
+  {
+   "text": "The lesson? Delete dead code, and never deploy alone.",
+   "dir": "confident, friendly advice"
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech stories, decoded.",
+   "dir": "warm, upbeat"
+  }
+ ]
+}

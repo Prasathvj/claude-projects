@@ -10,6 +10,15 @@ NUM = {'0': 'zero', '1': 'one', '2': 'two', '3': 'three', '4': 'four', '5': 'fiv
 def spoken(w):
     """Display word -> words the aligner should hear (numbers spelled out)."""
     x = w.lower().replace('’', "'")
+    t = re.fullmatch(r"(\d{1,2}):(\d{2})[^0-9]*", x)  # clock times: 9:30 -> nine thirty, 8:01 -> eight oh one
+    if t:
+        h, m = int(t.group(1)), int(t.group(2))
+        return spoken(str(h)) + ([] if m == 0 else (['oh'] + spoken(str(m)) if m < 10 else spoken(str(m))))
+    o = re.fullmatch(r"(\d+)(st|nd|rd|th)[^a-z0-9]*", x)  # ordinals: 1st -> first
+    if o:
+        ORD = {1: 'first', 2: 'second', 3: 'third', 4: 'fourth', 5: 'fifth', 6: 'sixth', 7: 'seventh', 8: 'eighth', 9: 'ninth', 10: 'tenth'}
+        n = int(o.group(1))
+        return [ORD[n]] if n in ORD else spoken(o.group(1))
     x = re.sub(r"[^a-z0-9.']", '', x).strip('.').strip("'")
     if not x:
         return []
@@ -25,6 +34,8 @@ def spoken(w):
         tens = 'x x twenty thirty forty fifty sixty seventy eighty ninety'.split()
         if n < 20: return [ones[n]]
         if n < 100: return [tens[n // 10]] + ([ones[n % 10]] if n % 10 else [])
+        if n < 1000: return [ones[n // 100], 'hundred'] + (spoken(str(n % 100)) if n % 100 else [])  # 460 -> four hundred sixty
+        if n < 1000000: return spoken(str(n // 1000)) + ['thousand'] + (spoken(str(n % 1000)) if n % 1000 else [])
         return [NUM[d] for d in x]
     return [x.replace('.', '')]
 

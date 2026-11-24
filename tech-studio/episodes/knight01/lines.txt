@@ -1,0 +1,12 @@
+In 45 minutes, a company lost 460 million dollars. No hacker. Just one missed step.
+August 1st, 2012. Knight Capital, one of America's biggest stock traders, is updating its trading software.
+Eight servers. The new code reaches only seven.
+The eighth still has an old feature, switched off since 2003: Power Peg.
+And the new code reuses its old switch.
+8:01 AM. The system sends 97 warning emails. Nobody acts.
+9:30. The market opens. Power Peg wakes up.
+Orders fly out nonstop: four million trades in 154 stocks.
+45 minutes later, they finally stop it. Over 460 million dollars, gone.
+Within a week, Knight needs a 400 million dollar rescue. Within a year, a rival takes it over.
+The lesson? Delete dead code, and never deploy alone.
+Subscribe to TechDecoded with Max for more tech stories, decoded.
