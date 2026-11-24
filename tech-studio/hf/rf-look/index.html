@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face { font-family:'SD Display'; src:url('assets/fonts/InterDisplay-Black.otf'); font-weight:900; }
+@font-face { font-family:'SD Display'; src:url('assets/fonts/InterDisplay-Bold.otf'); font-weight:700; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/Inter-SemiBold.otf'); font-weight:600; }
+@font-face { font-family:'SD Mono'; src:url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight:700; }
+body{margin:0} #root{position:relative;width:1080px;height:1920px;overflow:hidden}
+
+#root { background:#E6D3B6 !important; }
+.grid, .vig { display:none; }
+.kp-base { position:absolute; inset:0; background:radial-gradient(ellipse at 40% 35%, #F3E6D2 0%, #E6D3B6 55%, #D2B690 100%); filter:url(#kp-tex); }
+.kp-scrap { position:absolute; filter:url(#kp-tex) drop-shadow(0 6px 0 rgba(90,55,25,.12)); }
+.kp-grain { position:absolute; inset:-60px; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='1.05' numOctaves='2'/></filter><rect width='180' height='180' filter='url(%23f)' opacity='.6'/></svg>"); opacity:.12; mix-blend-mode:multiply; }
+.glow { opacity:.45; } .plus, .sq { display:none; }
+@font-face { font-family:'Hand'; src:url('assets/fonts/Caveat-700-latin.woff2'); font-weight:700; }
+.vx-ht { position:absolute; width:820px; height:820px; border-radius:50%; background-image:radial-gradient(#F3B08A 30%, transparent 33%); background-size:22px 22px;
+  -webkit-mask-image:radial-gradient(circle,#000 0%,transparent 68%); mask-image:radial-gradient(circle,#000 0%,transparent 68%); opacity:.55; }
+.vx-doc { position:absolute; background:#FFFAF2; box-shadow:0 2px 0 rgba(0,0,0,.06), 0 26px 50px rgba(90,55,25,.20); padding:50px 60px; }
+.vx-tape { position:absolute; width:150px; height:44px; background:rgba(248,190,140,.55); }
+.vx-kick { font:900 26px 'SD Display'; letter-spacing:6px; color:#2A2018; }
+.vx-line { position:relative; font:700 38px 'SD Mono'; color:#2A2018; line-height:1.65; white-space:nowrap; }
+.vx-hl { position:absolute; left:-6px; top:4px; bottom:2px; background:rgba(248,119,54,.42); mix-blend-mode:multiply; transform-origin:left; transform:scaleX(0); border-radius:6px 14px 8px 12px; }
+.vx-mark { position:relative; display:inline-block; }
+.vx-hand { position:absolute; font:700 60px 'Hand'; color:#E0471C; line-height:1.05; }
+.vx-ink { stroke:#E0471C; stroke-width:9; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+.vx-box { position:absolute; padding:10px 24px; font:900 54px 'SD Display'; color:#2A2018; background:#FFFAF2; border:4px solid #2A2018; }
+.vx-head { position:absolute; font:900 120px 'SD Display'; color:#2A2018; letter-spacing:-3px; white-space:nowrap; }
+.vx-num { position:absolute; font:900 250px 'SD Display'; color:#2A2018; letter-spacing:-8px; line-height:1; white-space:nowrap; }
+.vx-num b { color:#E0471C; }
+.vx-src { position:absolute; width:520px; background:#FFFAF2; padding:22px 28px; box-shadow:0 20px 40px rgba(90,55,25,.2); transform:rotate(3deg); }
+.vx-src i { display:block; font:700 20px 'SD Mono'; color:#9C8576; font-style:normal; } .vx-src span { font:700 30px 'SD Display'; color:#2A2018; }
+.badge{position:absolute;left:60px;top:150px;padding:12px 26px;background:#2A2018;color:#FFFAF2;font:900 34px 'SD Display';letter-spacing:6px;transform:rotate(-3deg);clip-path:polygon(0.0% 3.8%, 16.7% 0.5%, 33.3% 3.5%, 50.0% 2.1%, 66.7% 1.5%, 83.3% 2.0%, 100.0% 2.4%, 97.9% 0.0%, 98.5% 16.7%, 98.0% 33.3%, 97.6% 50.0%, 96.5% 66.7%, 99.7% 83.3%, 95.3% 100.0%, 100.0% 97.4%, 83.3% 98.8%, 66.7% 95.7%, 50.0% 98.2%, 33.3% 95.3%, 16.7% 99.7%, 0.0% 96.5%, 0.5% 100.0%, 3.8% 83.3%, 4.7% 66.7%, 0.7% 50.0%, 2.6% 33.3%, 1.2% 16.7%, 4.3% 0.0%)}
+.cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font:900 64px 'SD Display';color:#2A2018;line-height:1.2}
+.cap em{font-style:normal;color:#fff;background:#F87736;padding:2px 16px;clip-path:polygon(0.0% 2.6%, 20.0% 0.3%, 40.0% 2.2%, 60.0% 3.5%, 80.0% 2.7%, 100.0% 3.5%, 96.5% 0.0%, 97.3% 20.0%, 96.5% 40.0%, 97.5% 60.0%, 99.9% 80.0%, 94.3% 100.0%, 100.0% 96.4%, 80.0% 96.7%, 60.0% 94.0%, 40.0% 97.0%, 20.0% 94.3%, 0.0% 99.9%, 2.6% 100.0%, 3.8% 80.0%, 2.4% 60.0%, 0.6% 40.0%, 3.6% 20.0%, 3.3% 0.0%)}
+</style></head><body><div id="root"><svg width="0" height="0" style="position:absolute"><defs>
+<filter id="kp-tex" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" seed="9" result="n"/>
+ <feColorMatrix in="n" type="matrix" values="0 0 0 0 .35  0 0 0 0 .24  0 0 0 0 .14  0 0 0 .32 0" result="g"/>
+ <feComposite in="g" in2="SourceGraphic" operator="in" result="t"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="t"/></feMerge></filter>
+</defs></svg>
+<div class="kp-base"></div>
+<div class="kp-scrap" style="left:-80px;top:1500px;width:520px;height:380px;background:#F3E3CC;clip-path:polygon(0.0% 3.3%, 12.5% 5.2%, 25.0% 3.2%, 37.5% 3.0%, 50.0% 1.3%, 62.5% 4.3%, 75.0% 0.2%, 87.5% 2.4%, 100.0% 4.6%, 97.0% 0.0%, 98.7% 12.5%, 95.7% 25.0%, 99.8% 37.5%, 97.6% 50.0%, 95.4% 62.5%, 96.1% 75.0%, 95.6% 87.5%, 94.3% 100.0%, 100.0% 97.8%, 87.5% 94.2%, 75.0% 95.4%, 62.5% 94.4%, 50.0% 94.3%, 37.5% 95.6%, 25.0% 96.1%, 12.5% 95.4%, 0.0% 97.6%, 3.0% 100.0%, 3.2% 87.5%, 5.2% 75.0%, 3.3% 62.5%, 2.2% 50.0%, 5.8% 37.5%, 4.6% 25.0%, 5.6% 12.5%, 5.7% 0.0%);transform:rotate(-8deg)"></div>
+<div class="kp-scrap" style="left:700px;top:-90px;width:520px;height:330px;background:#F6D5B8;clip-path:polygon(0.0% 5.9%, 12.5% 4.7%, 25.0% 3.2%, 37.5% 1.6%, 50.0% 2.9%, 62.5% 4.1%, 75.0% 1.1%, 87.5% 5.2%, 100.0% 4.7%, 98.4% 0.0%, 97.1% 12.5%, 95.9% 25.0%, 98.9% 37.5%, 94.8% 50.0%, 95.3% 62.5%, 96.3% 75.0%, 95.6% 87.5%, 95.6% 100.0%, 100.0% 98.7%, 87.5% 98.6%, 75.0% 100.0%, 62.5% 97.4%, 50.0% 95.6%, 37.5% 95.6%, 25.0% 96.3%, 12.5% 95.3%, 0.0% 94.8%, 1.6% 100.0%, 3.2% 87.5%, 4.7% 75.0%, 5.9% 62.5%, 1.3% 50.0%, 1.4% 37.5%, 0.0% 25.0%, 2.6% 12.5%, 4.4% 0.0%);transform:rotate(7deg)"></div>
+<div class="kp-grain"></div>
+<div class="badge">RISE &amp; FALL</div>
+<div class="vx-ht" style="left:130px;top:330px"></div>
+<div class="vx-doc" style="left:110px;top:330px;width:740px;height:760px;transform:rotate(-1.5deg);filter:url(#kp-tex)">
+ <div class="vx-kick">KODAK · USA · 1976</div>
+ <div class="vx-num" style="left:50px;top:110px">90<b>%</b></div>
+ <div style="position:absolute;left:60px;top:400px;font:900 64px 'SD Display';color:#2A2018;line-height:1.1">of all film sold<br><span class="vx-mark">in America<i class="vx-hl" style="transform:scaleX(1);right:-6px"></i></span></div>
+ <div style="position:absolute;left:60px;top:590px;font:700 30px 'SD Mono';color:#2A2018">+ 85% of cameras</div>
+</div>
+<div class="vx-tape" style="left:420px;top:305px;transform:rotate(-4deg)"></div>
+<svg style="position:absolute;left:120px;top:420px;width:520px;height:330px;overflow:visible" viewBox="0 0 300 100" preserveAspectRatio="none"><path class="vx-ink" d="M15 55 C 20 10, 250 0, 288 40 C 300 85, 140 100, 45 88 C 8 78, 15 30, 80 18"/></svg>
+<div class="vx-hand" style="left:640px;top:1100px;transform:rotate(-7deg)">the gold mine</div>
+<div class="vx-src" style="left:470px;top:1180px"><i>SOURCE</i><span>Kodak company history</span></div>
+<div class="cap">Kodak sold <em>90 percent</em> of the film in America.</div>
+</div></body></html>
