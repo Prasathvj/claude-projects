@@ -1,0 +1,25 @@
+{
+ "id": "kodak01-short",
+ "format": "vertical",
+ "profile": "fast",
+ "gap": 0.25,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 4,
+ "max_tempo": 1.0,
+ "model": "gemini-3.8-flash-tts",
+ "beats": [
+  {"text": "Kodak invented the digital camera... then buried it. Why?", "dir": "intriguing hook, a little playful, pause before 'then buried it', rising question at the end"},
+  {"text": "It's 1975. A Kodak engineer, Steve Sasson, builds the world's first portable digital camera.", "dir": "storyteller, setting the scene, warm"},
+  {"text": "But it looks less like an iPhone, and more like a toaster that went to engineering college.", "dir": "playful, amused, light comic timing"},
+  {"text": "It weighs 3.6 kilograms, uses 16 batteries, and captures a shocking zero point zero one megapixels.", "dir": "listing facts, building to amused disbelief on 'zero point zero one'"},
+  {"text": "One photo takes 23 seconds just to save to a cassette tape. Yes. A cassette tape.", "dir": "deadpan, short pause before 'Yes. A cassette tape.'"},
+  {"text": "And when Sasson shows it to his bosses? Reportedly: That's cute. But don't tell anyone.", "dir": "conspiratorial, lower voice on the quote"},
+  {"text": "Why hide something this revolutionary? Because Kodak made its money from film.", "dir": "curious question, then a confident reveal"},
+  {"text": "Every photo meant film, developing and prints. A digital photo? No film. No prints. No repeat business.", "dir": "brisk, punchy, staccato on the last three short sentences"},
+  {"text": "So Kodak protected the past, while the future quietly loaded. Then smartphones put a camera in everyone's pocket.", "dir": "reflective, then picking up pace"},
+  {"text": "In 2012, Kodak filed for bankruptcy. The company that invented digital photography was disrupted by it.", "dir": "heavy, sober, slower on the last words"},
+  {"text": "Kodak didn't fail because it couldn't see the future. It failed because it was too afraid to lose the present.", "dir": "thoughtful, quotable, confident ending"},
+  {"text": "Subscribe to TechDecoded with Max for more tech stories, decoded.", "dir": "warm, upbeat"}
+ ]
+}

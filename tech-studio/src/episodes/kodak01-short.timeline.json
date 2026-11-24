@@ -1,0 +1,1019 @@
+{
+ "id": "kodak01-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 67.032,
+ "vo": "kodak01/kodak01-short-vo.wav",
+ "music": "kodak01/kodak01-short-music.wav",
+ "beats": [
+  {
+   "text": "Kodak invented the digital camera... then buried it. Why?",
+   "dir": "intriguing hook, a little playful, pause before 'then buried it', rising question at the end",
+   "start": 0.25,
+   "vo": 4.06,
+   "dur": 4.34,
+   "words": [
+    {
+     "w": "Kodak",
+     "s": 0.23,
+     "e": 0.66
+    },
+    {
+     "w": "invented",
+     "s": 0.66,
+     "e": 1.19
+    },
+    {
+     "w": "the",
+     "s": 1.19,
+     "e": 1.26
+    },
+    {
+     "w": "digital",
+     "s": 1.26,
+     "e": 1.63
+    },
+    {
+     "w": "camera...",
+     "s": 1.63,
+     "e": 2.03
+    },
+    {
+     "w": "then",
+     "s": 2.44,
+     "e": 2.73
+    },
+    {
+     "w": "buried",
+     "s": 2.73,
+     "e": 3.19
+    },
+    {
+     "w": "it.",
+     "s": 3.19,
+     "e": 3.26
+    },
+    {
+     "w": "Why?",
+     "s": 3.53,
+     "e": 3.94
+    }
+   ]
+  },
+  {
+   "text": "It's 1975. A Kodak engineer, Steve Sasson, builds the world's first portable digital camera.",
+   "dir": "storyteller, setting the scene, warm",
+   "start": 4.59,
+   "vo": 6.08,
+   "dur": 6.09,
+   "words": [
+    {
+     "w": "It's",
+     "s": 0.1,
+     "e": 0.36
+    },
+    {
+     "w": "1975.",
+     "s": 0.36,
+     "e": 1.26
+    },
+    {
+     "w": "A",
+     "s": 1.71,
+     "e": 1.81
+    },
+    {
+     "w": "Kodak",
+     "s": 1.81,
+     "e": 2.13
+    },
+    {
+     "w": "engineer,",
+     "s": 2.15,
+     "e": 2.67
+    },
+    {
+     "w": "Steve",
+     "s": 2.75,
+     "e": 3.01
+    },
+    {
+     "w": "Sasson,",
+     "s": 3.01,
+     "e": 3.49
+    },
+    {
+     "w": "builds",
+     "s": 3.78,
+     "e": 4.01
+    },
+    {
+     "w": "the",
+     "s": 4.01,
+     "e": 4.07
+    },
+    {
+     "w": "world's",
+     "s": 4.07,
+     "e": 4.39
+    },
+    {
+     "w": "first",
+     "s": 4.39,
+     "e": 4.84
+    },
+    {
+     "w": "portable",
+     "s": 4.84,
+     "e": 5.25
+    },
+    {
+     "w": "digital",
+     "s": 5.25,
+     "e": 5.6
+    },
+    {
+     "w": "camera.",
+     "s": 5.6,
+     "e": 5.96
+    }
+   ]
+  },
+  {
+   "text": "But it looks less like an iPhone, and more like a toaster that went to engineering college.",
+   "dir": "playful, amused, light comic timing",
+   "start": 10.68,
+   "vo": 4.88,
+   "dur": 4.92,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.12,
+     "e": 0.31
+    },
+    {
+     "w": "it",
+     "s": 0.43,
+     "e": 0.62
+    },
+    {
+     "w": "looks",
+     "s": 0.62,
+     "e": 0.91
+    },
+    {
+     "w": "less",
+     "s": 0.91,
+     "e": 1.15
+    },
+    {
+     "w": "like",
+     "s": 1.15,
+     "e": 1.33
+    },
+    {
+     "w": "an",
+     "s": 1.33,
+     "e": 1.42
+    },
+    {
+     "w": "iPhone,",
+     "s": 1.42,
+     "e": 1.87
+    },
+    {
+     "w": "and",
+     "s": 2.12,
+     "e": 2.42
+    },
+    {
+     "w": "more",
+     "s": 2.42,
+     "e": 2.65
+    },
+    {
+     "w": "like",
+     "s": 2.65,
+     "e": 2.84
+    },
+    {
+     "w": "a",
+     "s": 2.84,
+     "e": 2.94
+    },
+    {
+     "w": "toaster",
+     "s": 2.94,
+     "e": 3.49
+    },
+    {
+     "w": "that",
+     "s": 3.49,
+     "e": 3.63
+    },
+    {
+     "w": "went",
+     "s": 3.63,
+     "e": 3.8
+    },
+    {
+     "w": "to",
+     "s": 3.8,
+     "e": 3.88
+    },
+    {
+     "w": "engineering",
+     "s": 3.88,
+     "e": 4.38
+    },
+    {
+     "w": "college.",
+     "s": 4.38,
+     "e": 4.76
+    }
+   ]
+  },
+  {
+   "text": "It weighs 3.6 kilograms, uses 16 batteries, and captures a shocking zero point zero one megapixels.",
+   "dir": "listing facts, building to amused disbelief on 'zero point zero one'",
+   "start": 15.6,
+   "vo": 6.29,
+   "dur": 7.22,
+   "words": [
+    {
+     "w": "It",
+     "s": 0.12,
+     "e": 0.2
+    },
+    {
+     "w": "weighs",
+     "s": 0.2,
+     "e": 0.52
+    },
+    {
+     "w": "3.6",
+     "s": 0.52,
+     "e": 1.4
+    },
+    {
+     "w": "kilograms,",
+     "s": 1.4,
+     "e": 1.98
+    },
+    {
+     "w": "uses",
+     "s": 2.14,
+     "e": 2.48
+    },
+    {
+     "w": "16",
+     "s": 2.48,
+     "e": 3.04
+    },
+    {
+     "w": "batteries,",
+     "s": 3.04,
+     "e": 3.52
+    },
+    {
+     "w": "and",
+     "s": 3.77,
+     "e": 4.03
+    },
+    {
+     "w": "captures",
+     "s": 4.03,
+     "e": 4.48
+    },
+    {
+     "w": "a",
+     "s": 4.48,
+     "e": 4.53
+    },
+    {
+     "w": "shocking",
+     "s": 4.53,
+     "e": 5.01
+    },
+    {
+     "w": "zero",
+     "s": 5.01,
+     "e": 5.33
+    },
+    {
+     "w": "point",
+     "s": 5.33,
+     "e": 5.63
+    },
+    {
+     "w": "zero",
+     "s": 5.63,
+     "e": 5.9
+    },
+    {
+     "w": "one",
+     "s": 5.9,
+     "e": 6.17
+    },
+    {
+     "w": "megapixels.",
+     "s": 6.17,
+     "e": 6.29
+    }
+   ]
+  },
+  {
+   "text": "One photo takes 23 seconds just to save to a cassette tape. Yes. A cassette tape.",
+   "dir": "deadpan, short pause before 'Yes. A cassette tape.'",
+   "start": 22.82,
+   "vo": 5.88,
+   "dur": 5.91,
+   "words": [
+    {
+     "w": "One",
+     "s": 0.04,
+     "e": 0.35
+    },
+    {
+     "w": "photo",
+     "s": 0.35,
+     "e": 0.7
+    },
+    {
+     "w": "takes",
+     "s": 0.7,
+     "e": 0.96
+    },
+    {
+     "w": "23",
+     "s": 0.96,
+     "e": 1.66
+    },
+    {
+     "w": "seconds",
+     "s": 1.66,
+     "e": 2.17
+    },
+    {
+     "w": "just",
+     "s": 2.17,
+     "e": 2.37
+    },
+    {
+     "w": "to",
+     "s": 2.37,
+     "e": 2.46
+    },
+    {
+     "w": "save",
+     "s": 2.46,
+     "e": 3.11
+    },
+    {
+     "w": "to",
+     "s": 3.11,
+     "e": 3.29
+    },
+    {
+     "w": "a",
+     "s": 3.29,
+     "e": 3.34
+    },
+    {
+     "w": "cassette",
+     "s": 3.34,
+     "e": 3.77
+    },
+    {
+     "w": "tape.",
+     "s": 3.77,
+     "e": 4.16
+    },
+    {
+     "w": "Yes.",
+     "s": 4.53,
+     "e": 4.91
+    },
+    {
+     "w": "A",
+     "s": 5.13,
+     "e": 5.22
+    },
+    {
+     "w": "cassette",
+     "s": 5.22,
+     "e": 5.54
+    },
+    {
+     "w": "tape.",
+     "s": 5.54,
+     "e": 5.76
+    }
+   ]
+  },
+  {
+   "text": "And when Sasson shows it to his bosses? Reportedly: That's cute. But don't tell anyone.",
+   "dir": "conspiratorial, lower voice on the quote",
+   "start": 28.73,
+   "vo": 4.91,
+   "dur": 4.96,
+   "words": [
+    {
+     "w": "And",
+     "s": 0.11,
+     "e": 0.22
+    },
+    {
+     "w": "when",
+     "s": 0.22,
+     "e": 0.34
+    },
+    {
+     "w": "Sasson",
+     "s": 0.34,
+     "e": 0.76
+    },
+    {
+     "w": "shows",
+     "s": 0.76,
+     "e": 1.01
+    },
+    {
+     "w": "it",
+     "s": 1.01,
+     "e": 1.08
+    },
+    {
+     "w": "to",
+     "s": 1.08,
+     "e": 1.19
+    },
+    {
+     "w": "his",
+     "s": 1.19,
+     "e": 1.3
+    },
+    {
+     "w": "bosses?",
+     "s": 1.3,
+     "e": 1.85
+    },
+    {
+     "w": "Reportedly:",
+     "s": 2.02,
+     "e": 2.65
+    },
+    {
+     "w": "That's",
+     "s": 3.0,
+     "e": 3.23
+    },
+    {
+     "w": "cute.",
+     "s": 3.23,
+     "e": 3.58
+    },
+    {
+     "w": "But",
+     "s": 4.02,
+     "e": 4.16
+    },
+    {
+     "w": "don't",
+     "s": 4.16,
+     "e": 4.31
+    },
+    {
+     "w": "tell",
+     "s": 4.31,
+     "e": 4.52
+    },
+    {
+     "w": "anyone.",
+     "s": 4.52,
+     "e": 4.79
+    }
+   ]
+  },
+  {
+   "text": "Why hide something this revolutionary? Because Kodak made its money from film.",
+   "dir": "curious question, then a confident reveal",
+   "start": 33.69,
+   "vo": 4.36,
+   "dur": 4.4,
+   "words": [
+    {
+     "w": "Why",
+     "s": 0.11,
+     "e": 0.31
+    },
+    {
+     "w": "hide",
+     "s": 0.31,
+     "e": 0.57
+    },
+    {
+     "w": "something",
+     "s": 0.57,
+     "e": 0.95
+    },
+    {
+     "w": "this",
+     "s": 0.95,
+     "e": 1.14
+    },
+    {
+     "w": "revolutionary?",
+     "s": 1.14,
+     "e": 1.89
+    },
+    {
+     "w": "Because",
+     "s": 2.11,
+     "e": 2.37
+    },
+    {
+     "w": "Kodak",
+     "s": 2.37,
+     "e": 2.86
+    },
+    {
+     "w": "made",
+     "s": 2.86,
+     "e": 3.07
+    },
+    {
+     "w": "its",
+     "s": 3.07,
+     "e": 3.21
+    },
+    {
+     "w": "money",
+     "s": 3.21,
+     "e": 3.55
+    },
+    {
+     "w": "from",
+     "s": 3.55,
+     "e": 3.78
+    },
+    {
+     "w": "film.",
+     "s": 3.78,
+     "e": 4.23
+    }
+   ]
+  },
+  {
+   "text": "Every photo meant film, developing and prints. A digital photo? No film. No prints. No repeat business.",
+   "dir": "brisk, punchy, staccato on the last three short sentences",
+   "start": 38.09,
+   "vo": 6.56,
+   "dur": 6.84,
+   "words": [
+    {
+     "w": "Every",
+     "s": 0.1,
+     "e": 0.29
+    },
+    {
+     "w": "photo",
+     "s": 0.29,
+     "e": 0.6
+    },
+    {
+     "w": "meant",
+     "s": 0.6,
+     "e": 0.79
+    },
+    {
+     "w": "film,",
+     "s": 0.79,
+     "e": 1.28
+    },
+    {
+     "w": "developing",
+     "s": 1.28,
+     "e": 1.83
+    },
+    {
+     "w": "and",
+     "s": 1.83,
+     "e": 1.94
+    },
+    {
+     "w": "prints.",
+     "s": 1.94,
+     "e": 2.39
+    },
+    {
+     "w": "A",
+     "s": 2.77,
+     "e": 2.83
+    },
+    {
+     "w": "digital",
+     "s": 2.83,
+     "e": 3.15
+    },
+    {
+     "w": "photo?",
+     "s": 3.15,
+     "e": 3.53
+    },
+    {
+     "w": "No",
+     "s": 3.81,
+     "e": 3.96
+    },
+    {
+     "w": "film.",
+     "s": 3.96,
+     "e": 4.3
+    },
+    {
+     "w": "No",
+     "s": 4.64,
+     "e": 4.77
+    },
+    {
+     "w": "prints.",
+     "s": 4.77,
+     "e": 5.23
+    },
+    {
+     "w": "No",
+     "s": 5.56,
+     "e": 5.71
+    },
+    {
+     "w": "repeat",
+     "s": 5.71,
+     "e": 6.03
+    },
+    {
+     "w": "business.",
+     "s": 6.03,
+     "e": 6.44
+    }
+   ]
+  },
+  {
+   "text": "So Kodak protected the past, while the future quietly loaded. Then smartphones put a camera in everyone's pocket.",
+   "dir": "reflective, then picking up pace",
+   "start": 44.93,
+   "vo": 6.03,
+   "dur": 6.07,
+   "words": [
+    {
+     "w": "So",
+     "s": 0.11,
+     "e": 0.35
+    },
+    {
+     "w": "Kodak",
+     "s": 0.35,
+     "e": 0.81
+    },
+    {
+     "w": "protected",
+     "s": 0.81,
+     "e": 1.31
+    },
+    {
+     "w": "the",
+     "s": 1.31,
+     "e": 1.37
+    },
+    {
+     "w": "past,",
+     "s": 1.37,
+     "e": 1.89
+    },
+    {
+     "w": "while",
+     "s": 1.89,
+     "e": 2.06
+    },
+    {
+     "w": "the",
+     "s": 2.06,
+     "e": 2.13
+    },
+    {
+     "w": "future",
+     "s": 2.13,
+     "e": 2.49
+    },
+    {
+     "w": "quietly",
+     "s": 2.49,
+     "e": 2.97
+    },
+    {
+     "w": "loaded.",
+     "s": 2.97,
+     "e": 3.37
+    },
+    {
+     "w": "Then",
+     "s": 3.67,
+     "e": 3.93
+    },
+    {
+     "w": "smartphones",
+     "s": 3.93,
+     "e": 4.53
+    },
+    {
+     "w": "put",
+     "s": 4.53,
+     "e": 4.66
+    },
+    {
+     "w": "a",
+     "s": 4.66,
+     "e": 4.71
+    },
+    {
+     "w": "camera",
+     "s": 4.71,
+     "e": 5.04
+    },
+    {
+     "w": "in",
+     "s": 5.04,
+     "e": 5.17
+    },
+    {
+     "w": "everyone's",
+     "s": 5.17,
+     "e": 5.6
+    },
+    {
+     "w": "pocket.",
+     "s": 5.6,
+     "e": 5.91
+    }
+   ]
+  },
+  {
+   "text": "In 2012, Kodak filed for bankruptcy. The company that invented digital photography was disrupted by it.",
+   "dir": "heavy, sober, slower on the last words",
+   "start": 51.0,
+   "vo": 6.24,
+   "dur": 6.26,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.12,
+     "e": 0.22
+    },
+    {
+     "w": "2012,",
+     "s": 0.22,
+     "e": 0.81
+    },
+    {
+     "w": "Kodak",
+     "s": 1.14,
+     "e": 1.51
+    },
+    {
+     "w": "filed",
+     "s": 1.51,
+     "e": 1.86
+    },
+    {
+     "w": "for",
+     "s": 1.86,
+     "e": 1.96
+    },
+    {
+     "w": "bankruptcy.",
+     "s": 1.96,
+     "e": 2.5
+    },
+    {
+     "w": "The",
+     "s": 2.78,
+     "e": 2.94
+    },
+    {
+     "w": "company",
+     "s": 2.94,
+     "e": 3.29
+    },
+    {
+     "w": "that",
+     "s": 3.29,
+     "e": 3.48
+    },
+    {
+     "w": "invented",
+     "s": 3.48,
+     "e": 4.08
+    },
+    {
+     "w": "digital",
+     "s": 4.08,
+     "e": 4.36
+    },
+    {
+     "w": "photography",
+     "s": 4.36,
+     "e": 4.91
+    },
+    {
+     "w": "was",
+     "s": 4.91,
+     "e": 5.31
+    },
+    {
+     "w": "disrupted",
+     "s": 5.43,
+     "e": 5.89
+    },
+    {
+     "w": "by",
+     "s": 5.89,
+     "e": 6.06
+    },
+    {
+     "w": "it.",
+     "s": 6.06,
+     "e": 6.12
+    }
+   ]
+  },
+  {
+   "text": "Kodak didn't fail because it couldn't see the future. It failed because it was too afraid to lose the present.",
+   "dir": "thoughtful, quotable, confident ending",
+   "start": 57.26,
+   "vo": 5.04,
+   "dur": 5.04,
+   "words": [
+    {
+     "w": "Kodak",
+     "s": 0.12,
+     "e": 0.48
+    },
+    {
+     "w": "didn't",
+     "s": 0.48,
+     "e": 0.7
+    },
+    {
+     "w": "fail",
+     "s": 0.7,
+     "e": 1.04
+    },
+    {
+     "w": "because",
+     "s": 1.04,
+     "e": 1.31
+    },
+    {
+     "w": "it",
+     "s": 1.31,
+     "e": 1.4
+    },
+    {
+     "w": "couldn't",
+     "s": 1.4,
+     "e": 1.69
+    },
+    {
+     "w": "see",
+     "s": 1.69,
+     "e": 1.94
+    },
+    {
+     "w": "the",
+     "s": 1.94,
+     "e": 2.02
+    },
+    {
+     "w": "future.",
+     "s": 2.02,
+     "e": 2.44
+    },
+    {
+     "w": "It",
+     "s": 2.79,
+     "e": 2.91
+    },
+    {
+     "w": "failed",
+     "s": 2.91,
+     "e": 3.31
+    },
+    {
+     "w": "because",
+     "s": 3.31,
+     "e": 3.59
+    },
+    {
+     "w": "it",
+     "s": 3.59,
+     "e": 3.65
+    },
+    {
+     "w": "was",
+     "s": 3.65,
+     "e": 3.78
+    },
+    {
+     "w": "too",
+     "s": 3.78,
+     "e": 3.93
+    },
+    {
+     "w": "afraid",
+     "s": 3.93,
+     "e": 4.24
+    },
+    {
+     "w": "to",
+     "s": 4.24,
+     "e": 4.32
+    },
+    {
+     "w": "lose",
+     "s": 4.32,
+     "e": 4.53
+    },
+    {
+     "w": "the",
+     "s": 4.53,
+     "e": 4.59
+    },
+    {
+     "w": "present.",
+     "s": 4.59,
+     "e": 4.92
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech stories, decoded.",
+   "dir": "warm, upbeat",
+   "start": 62.3,
+   "vo": 3.282,
+   "dur": 4.61,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.12,
+     "e": 0.63
+    },
+    {
+     "w": "to",
+     "s": 0.63,
+     "e": 0.72
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.72,
+     "e": 1.16
+    },
+    {
+     "w": "with",
+     "s": 1.16,
+     "e": 1.46
+    },
+    {
+     "w": "Max",
+     "s": 1.46,
+     "e": 1.78
+    },
+    {
+     "w": "for",
+     "s": 1.78,
+     "e": 1.88
+    },
+    {
+     "w": "more",
+     "s": 1.88,
+     "e": 2.09
+    },
+    {
+     "w": "tech",
+     "s": 2.09,
+     "e": 2.3
+    },
+    {
+     "w": "stories,",
+     "s": 2.3,
+     "e": 2.68
+    },
+    {
+     "w": "decoded.",
+     "s": 2.83,
+     "e": 3.25
+    }
+   ]
+  }
+ ]
+}
