@@ -1,0 +1,1039 @@
+{
+ "id": "mh01-short",
+ "format": "vertical",
+ "captions": "big",
+ "fps": 30,
+ "duration": 105.866,
+ "vo": "mh01/mh01-short-vo.wav",
+ "music": "mh01/mh01-short-music.wav",
+ "beats": [
+  {
+   "text": "At 1:21 in the morning, a plane with two hundred and thirty nine people on board vanished from air traffic control. But a satellite kept hearing it for almost seven more hours.",
+   "dir": "cold open, low and gripping, slow on the last words",
+   "start": 0.25,
+   "vo": 15.931,
+   "dur": 16.381,
+   "words": [
+    {
+     "w": "At",
+     "s": 0.0,
+     "e": 0.24
+    },
+    {
+     "w": "1:21",
+     "s": 0.24,
+     "e": 1.57
+    },
+    {
+     "w": "in",
+     "s": 1.57,
+     "e": 1.7
+    },
+    {
+     "w": "the",
+     "s": 1.7,
+     "e": 1.76
+    },
+    {
+     "w": "morning,",
+     "s": 1.76,
+     "e": 2.28
+    },
+    {
+     "w": "a",
+     "s": 2.77,
+     "e": 2.82
+    },
+    {
+     "w": "plane",
+     "s": 2.82,
+     "e": 3.44
+    },
+    {
+     "w": "with",
+     "s": 3.44,
+     "e": 3.66
+    },
+    {
+     "w": "two",
+     "s": 3.66,
+     "e": 4.05
+    },
+    {
+     "w": "hundred",
+     "s": 4.05,
+     "e": 4.74
+    },
+    {
+     "w": "and",
+     "s": 4.74,
+     "e": 4.94
+    },
+    {
+     "w": "thirty",
+     "s": 4.94,
+     "e": 5.4
+    },
+    {
+     "w": "nine",
+     "s": 5.4,
+     "e": 5.85
+    },
+    {
+     "w": "people",
+     "s": 5.85,
+     "e": 6.45
+    },
+    {
+     "w": "on",
+     "s": 6.45,
+     "e": 6.62
+    },
+    {
+     "w": "board",
+     "s": 6.62,
+     "e": 7.1
+    },
+    {
+     "w": "vanished",
+     "s": 7.51,
+     "e": 8.29
+    },
+    {
+     "w": "from",
+     "s": 8.52,
+     "e": 8.82
+    },
+    {
+     "w": "air",
+     "s": 8.82,
+     "e": 9.11
+    },
+    {
+     "w": "traffic",
+     "s": 9.11,
+     "e": 9.62
+    },
+    {
+     "w": "control.",
+     "s": 9.62,
+     "e": 10.29
+    },
+    {
+     "w": "But",
+     "s": 10.5,
+     "e": 10.63
+    },
+    {
+     "w": "a",
+     "s": 10.63,
+     "e": 10.69
+    },
+    {
+     "w": "satellite",
+     "s": 10.69,
+     "e": 11.52
+    },
+    {
+     "w": "kept",
+     "s": 11.81,
+     "e": 12.12
+    },
+    {
+     "w": "hearing",
+     "s": 12.12,
+     "e": 12.59
+    },
+    {
+     "w": "it",
+     "s": 12.59,
+     "e": 12.76
+    },
+    {
+     "w": "for",
+     "s": 13.04,
+     "e": 13.3
+    },
+    {
+     "w": "almost",
+     "s": 13.3,
+     "e": 13.81
+    },
+    {
+     "w": "seven",
+     "s": 13.81,
+     "e": 14.56
+    },
+    {
+     "w": "more",
+     "s": 14.68,
+     "e": 15.2
+    },
+    {
+     "w": "hours.",
+     "s": 15.32,
+     "e": 15.9
+    }
+   ]
+  },
+  {
+   "text": "March 8th, 2014. Malaysia Airlines flight 370, Kuala Lumpur to Beijing.",
+   "dir": "calm, setting the scene",
+   "start": 16.631,
+   "vo": 7.85,
+   "dur": 8.3,
+   "words": [
+    {
+     "w": "March",
+     "s": 0.01,
+     "e": 0.54
+    },
+    {
+     "w": "8th,",
+     "s": 0.54,
+     "e": 0.95
+    },
+    {
+     "w": "2014.",
+     "s": 1.28,
+     "e": 2.44
+    },
+    {
+     "w": "Malaysia",
+     "s": 3.05,
+     "e": 3.62
+    },
+    {
+     "w": "Airlines",
+     "s": 3.62,
+     "e": 4.31
+    },
+    {
+     "w": "flight",
+     "s": 4.31,
+     "e": 4.68
+    },
+    {
+     "w": "370,",
+     "s": 4.68,
+     "e": 5.75
+    },
+    {
+     "w": "Kuala",
+     "s": 5.95,
+     "e": 6.27
+    },
+    {
+     "w": "Lumpur",
+     "s": 6.27,
+     "e": 6.68
+    },
+    {
+     "w": "to",
+     "s": 7.26,
+     "e": 7.41
+    },
+    {
+     "w": "Beijing.",
+     "s": 7.41,
+     "e": 7.82
+    }
+   ]
+  },
+  {
+   "text": "The last words from the cockpit: Good night, Malaysian three seven zero. Moments later, its transponder went dark.",
+   "dir": "hushed, ominous",
+   "start": 24.931,
+   "vo": 8.253,
+   "dur": 8.704,
+   "words": [
+    {
+     "w": "The",
+     "s": 0.0,
+     "e": 0.09
+    },
+    {
+     "w": "last",
+     "s": 0.09,
+     "e": 0.63
+    },
+    {
+     "w": "words",
+     "s": 0.63,
+     "e": 1.13
+    },
+    {
+     "w": "from",
+     "s": 1.13,
+     "e": 1.31
+    },
+    {
+     "w": "the",
+     "s": 1.31,
+     "e": 1.38
+    },
+    {
+     "w": "cockpit:",
+     "s": 1.38,
+     "e": 2.01
+    },
+    {
+     "w": "Good",
+     "s": 2.32,
+     "e": 2.48
+    },
+    {
+     "w": "night,",
+     "s": 2.48,
+     "e": 2.81
+    },
+    {
+     "w": "Malaysian",
+     "s": 3.11,
+     "e": 3.74
+    },
+    {
+     "w": "three",
+     "s": 3.74,
+     "e": 4.08
+    },
+    {
+     "w": "seven",
+     "s": 4.08,
+     "e": 4.47
+    },
+    {
+     "w": "zero.",
+     "s": 4.47,
+     "e": 4.95
+    },
+    {
+     "w": "Moments",
+     "s": 5.15,
+     "e": 5.63
+    },
+    {
+     "w": "later,",
+     "s": 5.63,
+     "e": 6.04
+    },
+    {
+     "w": "its",
+     "s": 6.38,
+     "e": 6.54
+    },
+    {
+     "w": "transponder",
+     "s": 6.54,
+     "e": 7.44
+    },
+    {
+     "w": "went",
+     "s": 7.62,
+     "e": 7.87
+    },
+    {
+     "w": "dark.",
+     "s": 7.87,
+     "e": 8.23
+    }
+   ]
+  },
+  {
+   "text": "Military radar saw something no one expected. The plane turned back, crossed Malaysia, and flew out over the sea.",
+   "dir": "tense, building",
+   "start": 33.635,
+   "vo": 8.402,
+   "dur": 8.851,
+   "words": [
+    {
+     "w": "Military",
+     "s": 0.0,
+     "e": 0.68
+    },
+    {
+     "w": "radar",
+     "s": 0.68,
+     "e": 1.27
+    },
+    {
+     "w": "saw",
+     "s": 1.27,
+     "e": 1.57
+    },
+    {
+     "w": "something",
+     "s": 1.57,
+     "e": 2.02
+    },
+    {
+     "w": "no",
+     "s": 2.02,
+     "e": 2.35
+    },
+    {
+     "w": "one",
+     "s": 2.35,
+     "e": 2.69
+    },
+    {
+     "w": "expected.",
+     "s": 2.69,
+     "e": 3.52
+    },
+    {
+     "w": "The",
+     "s": 3.82,
+     "e": 3.93
+    },
+    {
+     "w": "plane",
+     "s": 3.93,
+     "e": 4.29
+    },
+    {
+     "w": "turned",
+     "s": 4.29,
+     "e": 4.73
+    },
+    {
+     "w": "back,",
+     "s": 4.73,
+     "e": 5.21
+    },
+    {
+     "w": "crossed",
+     "s": 5.41,
+     "e": 6.02
+    },
+    {
+     "w": "Malaysia,",
+     "s": 6.02,
+     "e": 6.67
+    },
+    {
+     "w": "and",
+     "s": 6.99,
+     "e": 7.13
+    },
+    {
+     "w": "flew",
+     "s": 7.13,
+     "e": 7.54
+    },
+    {
+     "w": "out",
+     "s": 7.54,
+     "e": 7.83
+    },
+    {
+     "w": "over",
+     "s": 7.83,
+     "e": 8.06
+    },
+    {
+     "w": "the",
+     "s": 8.06,
+     "e": 8.16
+    },
+    {
+     "w": "sea.",
+     "s": 8.16,
+     "e": 8.38
+    }
+   ]
+  },
+  {
+   "text": "Then it slipped beyond radar range. Gone.",
+   "dir": "quiet, heavy pause before the last word",
+   "start": 42.486,
+   "vo": 6.578,
+   "dur": 7.029,
+   "words": [
+    {
+     "w": "Then",
+     "s": 0.0,
+     "e": 0.64
+    },
+    {
+     "w": "it",
+     "s": 1.14,
+     "e": 1.33
+    },
+    {
+     "w": "slipped",
+     "s": 1.33,
+     "e": 2.44
+    },
+    {
+     "w": "beyond",
+     "s": 2.73,
+     "e": 3.7
+    },
+    {
+     "w": "radar",
+     "s": 3.7,
+     "e": 4.46
+    },
+    {
+     "w": "range.",
+     "s": 4.46,
+     "e": 5.24
+    },
+    {
+     "w": "Gone.",
+     "s": 5.58,
+     "e": 6.38
+    }
+   ]
+  },
+  {
+   "text": "But a satellite kept sending automatic pings. And the plane kept answering.",
+   "dir": "eerie, intrigued",
+   "start": 49.515,
+   "vo": 6.71,
+   "dur": 7.16,
+   "words": [
+    {
+     "w": "But",
+     "s": 0.66,
+     "e": 0.8
+    },
+    {
+     "w": "a",
+     "s": 0.8,
+     "e": 0.85
+    },
+    {
+     "w": "satellite",
+     "s": 0.85,
+     "e": 1.71
+    },
+    {
+     "w": "kept",
+     "s": 2.02,
+     "e": 2.31
+    },
+    {
+     "w": "sending",
+     "s": 2.31,
+     "e": 2.81
+    },
+    {
+     "w": "automatic",
+     "s": 2.81,
+     "e": 3.7
+    },
+    {
+     "w": "pings.",
+     "s": 3.7,
+     "e": 4.42
+    },
+    {
+     "w": "And",
+     "s": 4.71,
+     "e": 4.88
+    },
+    {
+     "w": "the",
+     "s": 4.88,
+     "e": 4.94
+    },
+    {
+     "w": "plane",
+     "s": 4.94,
+     "e": 5.56
+    },
+    {
+     "w": "kept",
+     "s": 5.85,
+     "e": 6.2
+    },
+    {
+     "w": "answering.",
+     "s": 6.2,
+     "e": 6.73
+    }
+   ]
+  },
+  {
+   "text": "No messages. No voices. Just seven tiny handshakes, each carrying a time stamp and a shift in frequency.",
+   "dir": "slow, precise, investigator tone",
+   "start": 56.675,
+   "vo": 11.05,
+   "dur": 11.5,
+   "words": [
+    {
+     "w": "No",
+     "s": 0.01,
+     "e": 0.33
+    },
+    {
+     "w": "messages.",
+     "s": 0.33,
+     "e": 1.27
+    },
+    {
+     "w": "No",
+     "s": 1.52,
+     "e": 1.85
+    },
+    {
+     "w": "voices.",
+     "s": 1.85,
+     "e": 2.78
+    },
+    {
+     "w": "Just",
+     "s": 3.05,
+     "e": 3.43
+    },
+    {
+     "w": "seven",
+     "s": 3.43,
+     "e": 4.28
+    },
+    {
+     "w": "tiny",
+     "s": 4.41,
+     "e": 4.97
+    },
+    {
+     "w": "handshakes,",
+     "s": 4.97,
+     "e": 6.04
+    },
+    {
+     "w": "each",
+     "s": 6.58,
+     "e": 6.92
+    },
+    {
+     "w": "carrying",
+     "s": 6.92,
+     "e": 7.55
+    },
+    {
+     "w": "a",
+     "s": 7.64,
+     "e": 7.71
+    },
+    {
+     "w": "time",
+     "s": 7.71,
+     "e": 8.24
+    },
+    {
+     "w": "stamp",
+     "s": 8.24,
+     "e": 8.75
+    },
+    {
+     "w": "and",
+     "s": 9.03,
+     "e": 9.22
+    },
+    {
+     "w": "a",
+     "s": 9.22,
+     "e": 9.27
+    },
+    {
+     "w": "shift",
+     "s": 9.27,
+     "e": 9.97
+    },
+    {
+     "w": "in",
+     "s": 10.16,
+     "e": 10.33
+    },
+    {
+     "w": "frequency.",
+     "s": 10.33,
+     "e": 11.02
+    }
+   ]
+  },
+  {
+   "text": "From those pings alone, engineers traced a path ending deep in the southern Indian Ocean.",
+   "dir": "measured, revealing",
+   "start": 68.175,
+   "vo": 8.635,
+   "dur": 9.085,
+   "words": [
+    {
+     "w": "From",
+     "s": 0.94,
+     "e": 1.23
+    },
+    {
+     "w": "those",
+     "s": 2.03,
+     "e": 2.43
+    },
+    {
+     "w": "pings",
+     "s": 2.43,
+     "e": 2.92
+    },
+    {
+     "w": "alone,",
+     "s": 2.92,
+     "e": 3.48
+    },
+    {
+     "w": "engineers",
+     "s": 3.64,
+     "e": 4.39
+    },
+    {
+     "w": "traced",
+     "s": 4.39,
+     "e": 4.86
+    },
+    {
+     "w": "a",
+     "s": 4.86,
+     "e": 4.91
+    },
+    {
+     "w": "path",
+     "s": 4.91,
+     "e": 5.46
+    },
+    {
+     "w": "ending",
+     "s": 5.63,
+     "e": 6.07
+    },
+    {
+     "w": "deep",
+     "s": 6.21,
+     "e": 6.59
+    },
+    {
+     "w": "in",
+     "s": 6.8,
+     "e": 6.93
+    },
+    {
+     "w": "the",
+     "s": 6.93,
+     "e": 7.03
+    },
+    {
+     "w": "southern",
+     "s": 7.03,
+     "e": 7.61
+    },
+    {
+     "w": "Indian",
+     "s": 7.75,
+     "e": 8.23
+    },
+    {
+     "w": "Ocean.",
+     "s": 8.3,
+     "e": 8.62
+    }
+   ]
+  },
+  {
+   "text": "In 2015, a piece of its wing washed up on Reunion Island, near Africa.",
+   "dir": "sober, respectful",
+   "start": 77.26,
+   "vo": 6.399,
+   "dur": 6.849,
+   "words": [
+    {
+     "w": "In",
+     "s": 0.0,
+     "e": 0.18
+    },
+    {
+     "w": "2015,",
+     "s": 0.18,
+     "e": 1.52
+    },
+    {
+     "w": "a",
+     "s": 1.76,
+     "e": 1.81
+    },
+    {
+     "w": "piece",
+     "s": 1.81,
+     "e": 2.22
+    },
+    {
+     "w": "of",
+     "s": 2.22,
+     "e": 2.32
+    },
+    {
+     "w": "its",
+     "s": 2.32,
+     "e": 2.47
+    },
+    {
+     "w": "wing",
+     "s": 2.47,
+     "e": 3.16
+    },
+    {
+     "w": "washed",
+     "s": 3.16,
+     "e": 3.66
+    },
+    {
+     "w": "up",
+     "s": 3.66,
+     "e": 3.88
+    },
+    {
+     "w": "on",
+     "s": 3.88,
+     "e": 4.06
+    },
+    {
+     "w": "Reunion",
+     "s": 4.06,
+     "e": 4.75
+    },
+    {
+     "w": "Island,",
+     "s": 4.75,
+     "e": 5.38
+    },
+    {
+     "w": "near",
+     "s": 5.66,
+     "e": 5.89
+    },
+    {
+     "w": "Africa.",
+     "s": 5.89,
+     "e": 6.36
+    }
+   ]
+  },
+  {
+   "text": "Searches have scanned over a hundred thousand square kilometers of seabed. The latest ended in 2026. Nothing.",
+   "dir": "heavy, slow on the last word",
+   "start": 84.109,
+   "vo": 8.881,
+   "dur": 9.331,
+   "words": [
+    {
+     "w": "Searches",
+     "s": 0.0,
+     "e": 0.6
+    },
+    {
+     "w": "have",
+     "s": 0.6,
+     "e": 0.72
+    },
+    {
+     "w": "scanned",
+     "s": 0.72,
+     "e": 1.29
+    },
+    {
+     "w": "over",
+     "s": 1.29,
+     "e": 1.62
+    },
+    {
+     "w": "a",
+     "s": 1.62,
+     "e": 1.67
+    },
+    {
+     "w": "hundred",
+     "s": 1.67,
+     "e": 2.3
+    },
+    {
+     "w": "thousand",
+     "s": 2.43,
+     "e": 3.06
+    },
+    {
+     "w": "square",
+     "s": 3.06,
+     "e": 3.45
+    },
+    {
+     "w": "kilometers",
+     "s": 3.45,
+     "e": 4.17
+    },
+    {
+     "w": "of",
+     "s": 4.17,
+     "e": 4.25
+    },
+    {
+     "w": "seabed.",
+     "s": 4.25,
+     "e": 4.87
+    },
+    {
+     "w": "The",
+     "s": 5.11,
+     "e": 5.24
+    },
+    {
+     "w": "latest",
+     "s": 5.24,
+     "e": 5.87
+    },
+    {
+     "w": "ended",
+     "s": 6.16,
+     "e": 6.61
+    },
+    {
+     "w": "in",
+     "s": 6.61,
+     "e": 6.76
+    },
+    {
+     "w": "2026.",
+     "s": 6.76,
+     "e": 8.05
+    },
+    {
+     "w": "Nothing.",
+     "s": 8.43,
+     "e": 8.85
+    }
+   ]
+  },
+  {
+   "text": "Who turned the plane around, and why? Still, no one knows.",
+   "dir": "haunting, quiet question",
+   "start": 93.44,
+   "vo": 5.033,
+   "dur": 5.483,
+   "words": [
+    {
+     "w": "Who",
+     "s": 0.0,
+     "e": 0.36
+    },
+    {
+     "w": "turned",
+     "s": 0.44,
+     "e": 0.89
+    },
+    {
+     "w": "the",
+     "s": 0.89,
+     "e": 0.95
+    },
+    {
+     "w": "plane",
+     "s": 0.95,
+     "e": 1.33
+    },
+    {
+     "w": "around,",
+     "s": 1.33,
+     "e": 1.99
+    },
+    {
+     "w": "and",
+     "s": 2.27,
+     "e": 2.53
+    },
+    {
+     "w": "why?",
+     "s": 2.53,
+     "e": 2.97
+    },
+    {
+     "w": "Still,",
+     "s": 3.25,
+     "e": 3.71
+    },
+    {
+     "w": "no",
+     "s": 4.09,
+     "e": 4.25
+    },
+    {
+     "w": "one",
+     "s": 4.25,
+     "e": 4.54
+    },
+    {
+     "w": "knows.",
+     "s": 4.54,
+     "e": 5.01
+    }
+   ]
+  },
+  {
+   "text": "Subscribe to TechDecoded with Max for more tech mysteries, decoded.",
+   "dir": "calm, warm, low",
+   "start": 98.923,
+   "vo": 5.292,
+   "dur": 6.943,
+   "words": [
+    {
+     "w": "Subscribe",
+     "s": 0.01,
+     "e": 0.65
+    },
+    {
+     "w": "to",
+     "s": 0.65,
+     "e": 0.81
+    },
+    {
+     "w": "TechDecoded",
+     "s": 0.81,
+     "e": 1.87
+    },
+    {
+     "w": "with",
+     "s": 1.87,
+     "e": 2.06
+    },
+    {
+     "w": "Max",
+     "s": 2.06,
+     "e": 2.65
+    },
+    {
+     "w": "for",
+     "s": 2.95,
+     "e": 3.11
+    },
+    {
+     "w": "more",
+     "s": 3.11,
+     "e": 3.44
+    },
+    {
+     "w": "tech",
+     "s": 3.44,
+     "e": 3.74
+    },
+    {
+     "w": "mysteries,",
+     "s": 3.74,
+     "e": 4.36
+    },
+    {
+     "w": "decoded.",
+     "s": 4.7,
+     "e": 5.27
+    }
+   ]
+  }
+ ]
+}

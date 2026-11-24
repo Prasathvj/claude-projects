@@ -1,0 +1,53 @@
+{
+ "id": "news02ta-short",
+ "format": "vertical",
+ "profile": "tamil",
+ "gap": 0.25,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 4,
+ "max_tempo": 1.0,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "Claude-ஐ உருவாக்குன கம்பெனி, வரலாற்றுலயே மிகப் பெரிய IPO-வை நடத்தியிருக்கு. அதுக்கு பணம் போட்டதுல அதோட போட்டியாளர்களும் இருக்காங்க.",
+   "dir": "gripping hook, surprising news"
+  },
+  {
+   "text": "Anthropic அதோட share விலையை 83 டாலர்னு, அதாவது சுமார் 7,700 ரூபாய்னு fix பண்ணுச்சு. அது அவங்களே சொன்ன target range-ஐ விட அதிகம்.",
+   "dir": "confident, clear"
+  },
+  {
+   "text": "அதுல 80 பில்லியன் டாலருக்கு மேல, அதாவது சுமார் 7 லட்சம் கோடி ரூபாய்க்கு மேல திரண்டுச்சு. SpaceX-ஓட record-ஐ விட அதிகம்.",
+   "dir": "impressed, big number"
+  },
+  {
+   "text": "அந்த விலையில, மொத்த கம்பெனியோட மதிப்பு சுமார் 1.5 டிரில்லியன் டாலர்.",
+   "dir": "calm, weighty"
+  },
+  {
+   "text": "Claude முதல்ல launch ஆனது 2023-ல. மூணே வருஷத்துல, ஒரு டிரில்லியன் டாலர் கம்பெனி.",
+   "dir": "amazed, fast rise"
+  },
+  {
+   "text": "முதல் நாள், stock 34 சதவீதம் உயர்ந்து open ஆச்சு. அப்புறம் கொஞ்சம் இறங்கி, 17 சதவீதம் ஏற்றத்தோட close ஆச்சு.",
+   "dir": "energetic, then calmer"
+  },
+  {
+   "text": "இப்போ தான் விசித்திரமான விஷயம்: Google, Microsoft, Nvidia எல்லாம், IPO கூடவே பில்லியன் கணக்குல shares வாங்குனாங்க.",
+   "dir": "curious twist, lower voice"
+  },
+  {
+   "text": "ஏன் தெரியுமா? AI ஓடுற chips-உம் cloud-உம் அவங்க தான் தயாரிக்கிறாங்க.",
+   "dir": "explaining, matter-of-fact; pure Chennai spoken Tamil, every word in Tamil exactly as written"
+  },
+  {
+   "text": "தங்க வேட்டையில மண்வெட்டி விக்கிறவங்க மாதிரி, ஒவ்வொரு AI கம்பெனி ஜெயிக்கும்போதும், இந்த கம்பெனிகளும் ஜெயிக்கிறாங்க.",
+   "dir": "clever insight, satisfying payoff"
+  },
+  {
+   "text": "இது மாதிரி tech news-க்கு, TechDecoded தமிழ் சப்ஸ்க்ரைப் பண்ணுங்க.",
+   "dir": "warm, friendly"
+  }
+ ]
+}

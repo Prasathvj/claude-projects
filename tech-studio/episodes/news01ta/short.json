@@ -1,0 +1,53 @@
+{
+ "id": "news01ta-short",
+ "format": "vertical",
+ "profile": "tamil",
+ "gap": 0.25,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 4,
+ "max_tempo": 1.0,
+ "model": "gemini-3.1-flash-tts-preview",
+ "beats": [
+  {
+   "text": "உங்க AI agent, உங்க bank account-ல இருந்து பணம் அனுப்புது. நீங்க அதைச் சொல்லவே இல்ல. நஷ்டம் யாருக்கு?",
+   "dir": "gripping hook, worried question"
+  },
+  {
+   "text": "அமெரிக்காவோட மிகப் பெரிய bank-கள்ல ஒண்ணு இப்போ பதில் சொல்லியிருக்கு. அது bank இல்ல.",
+   "dir": "serious, news anchor"
+  },
+  {
+   "text": "Citi-யோட புது online terms சொல்லுது: வெளியில இருக்கிற ஒரு AI agent உங்க details வெச்சு login பண்ணா, அது செய்யுற எல்லாமே நீங்களே அனுமதிச்சதா கணக்கு.",
+   "dir": "clear, precise, slightly alarmed"
+  },
+  {
+   "text": "அது உங்க instructions-ஐ மீறுனாலும் கூட.",
+   "dir": "firm, short"
+  },
+  {
+   "text": "உங்க வீட்டு சாவியை ஒரு friend-கிட்ட கொடுக்கறீங்க. அவர் party வைக்கிறார். Bill உங்களுக்கு.",
+   "dir": "relatable, light humour"
+  },
+  {
+   "text": "மத்த பெரிய bank-களும் இதே வழியில போறதா reports சொல்லுது.",
+   "dir": "matter-of-fact"
+  },
+  {
+   "text": "ஆனா ஒரு விஷயம்: இந்த rule Citi-யோட சொந்த AI tools-க்கு பொருந்தாது. வெளியில இருக்கிற AI-க்கு மட்டும் தான்.",
+   "dir": "twist, lower voice"
+  },
+  {
+   "text": "வெளியில இருக்கிற agents-ஐ, ஒரு webpage-ல ஒளிஞ்சிருக்கிற ஒரே ஒரு line வெச்சே hijack பண்ணிடலாம்.",
+   "dir": "ominous"
+  },
+  {
+   "text": "அதனால எந்த AI-க்காவது உங்க bank login கொடுக்கறதுக்கு முன்னாடி, ஒரே ஒரு கேள்வி கேளுங்க: இது உங்க bank-ஓட tool-ஆ, இல்ல வேற யாரோடதா?",
+   "dir": "helpful, clear advice"
+  },
+  {
+   "text": "இது மாதிரி tech news-க்கு, TechDecoded தமிழ் சப்ஸ்க்ரைப் பண்ணுங்க.",
+   "dir": "warm, friendly"
+  }
+ ]
+}

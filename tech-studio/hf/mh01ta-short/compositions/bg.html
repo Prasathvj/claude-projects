@@ -1,0 +1,52 @@
+<template>
+  <style>
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#E5383B; --soft:#E98F5E; --dim:#8FA3C2; --ink:#F6EEE8; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #26406B; background:linear-gradient(180deg,#18294A 0%,#122039 100%);
+  box-shadow:0 40px 90px rgba(0,0,0,.6), inset 0 2px 0 rgba(255,190,150,.06); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(229,56,59,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+#root { background:#0B1424; }
+.grid { position:absolute; inset:-120px; background-image:linear-gradient(rgba(229,56,59,.10) 2px, transparent 2px), linear-gradient(90deg, rgba(229,56,59,.10) 2px, transparent 2px); background-size:108px 108px; }
+.glow { position:absolute; width:900px; height:900px; border-radius:50%; background:radial-gradient(circle, rgba(229,56,59,.22) 0%, rgba(229,56,59,.08) 38%, transparent 66%); }
+.plus { position:absolute; font:500 56px 'SD Text'; color:#E5383B; opacity:.75; }
+.vig { position:absolute; inset:0; background:radial-gradient(ellipse at 50% 45%, transparent 45%, rgba(0,0,0,.72) 100%); }
+  #root { background:radial-gradient(ellipse at 50% 40%,#121A2B 0%,#080C14 60%,#030406 100%) !important; }
+.grid, .plus, .sq { display:none !important; }
+.glow { background:radial-gradient(circle, rgba(120,150,210,.10) 0%, rgba(120,150,210,.04) 38%, transparent 66%) !important; }
+</style>
+  <div id="root" data-composition-id="bg" data-width="1080" data-height="1920">
+    <div class="all" id="bg-all">
+<div class="grid"></div><div class="vig"></div>
+<div class="glow" id="bg-g0" style="left:-260px; top:380px;"></div><div class="glow" id="bg-g1" style="left:420px; top:1100px; width:1100px; height:1100px;"></div>
+<div class="plus" style="left:120px; top:150px;">+</div><div class="plus" style="left:860px; top:1640px;">+</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#bg-g0", { x:0, y:0 }, { x:260, y:-120, duration:98.739, ease:"sine.inOut" }, 0);
+    tl.fromTo("#bg-g1", { x:0, y:0 }, { x:-300, y:-260, duration:98.739, ease:"sine.inOut" }, 0);
+    tl.fromTo(".grid", { y:0 }, { y:-96, duration:98.739, ease:"none" }, 0);
+    window.__timelines["bg"] = tl;
+  </script>
+</template>

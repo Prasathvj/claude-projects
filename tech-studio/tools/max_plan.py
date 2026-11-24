@@ -138,6 +138,12 @@ MOODS = {'upi01-short': 'shock think point focus think focus point happy shrug s
          'qnt01-short': 'shock shock think point think point happy',
          'lst01-short': 'shock think point shock think point happy',
          # ast01 (owner 2026-11-23: 'add max only required place'): Max only at the reveal, 'can't find it', the scam and the outro
+         # mh01 (Tech Mysteries Short): Max only at 'Gone', the open question and the outro
+         'mh01-short': 'off off off off worry off off off off off think happy',
+         'mh01ta-short': 'off off off off worry off off off off off think happy',
+         'news02ta-short': 'shock point happy shock think shrug think focus happy happy',
+         'news01ta-short': 'point shock think worry shock shrug focus think worry happy',
+         'tip01ta-short': 'shock think point focus point think worry happy happy',
          'ast01-short': 'off shock think off off off off off off worry happy'}
 
 # automatic host acting for long videos: expression from each beat's visual type and delivery note

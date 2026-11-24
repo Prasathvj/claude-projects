@@ -1,0 +1,62 @@
+{
+ "id": "mh01ta-short",
+ "format": "vertical",
+ "profile": "tamil-mystery",
+ "gap": 0.45,
+ "captions": "big",
+ "voice": "Orus",
+ "batch": 4,
+ "max_tempo": 1.0,
+ "model": "gemini-3.1-flash-tts-preview",
+ "series": "mystery",
+ "beats": [
+  {
+   "text": "அதிகாலை 1:21 மணி. 239 பேரோட ஒரு flight, air traffic control-ல இருந்து காணாமப் போச்சு. ஆனா ஒரு satellite, அதுக்கப்புறமும் கிட்டத்தட்ட ஏழு மணி நேரம் அதைக் கேட்டுக்கிட்டே இருந்துச்சு.",
+   "dir": "cold open, low and gripping, slow on the last words"
+  },
+  {
+   "text": "மார்ச் 8, 2014. Malaysia Airlines flight 370. கோலாலம்பூர்ல இருந்து பெய்ஜிங்.",
+   "dir": "calm, setting the scene"
+  },
+  {
+   "text": "Cockpit-ல இருந்து கடைசி வார்த்தைகள்: Good night, Malaysian three seven zero. கொஞ்ச நேரத்துலயே, அதோட transponder off ஆயிடுச்சு.",
+   "dir": "hushed, ominous"
+  },
+  {
+   "text": "Military radar யாருமே எதிர்பார்க்காத ஒண்ணைப் பார்த்துச்சு. Flight திரும்பி வந்து, மலேசியாவைக் கடந்து, கடலுக்கு மேல பறந்து போச்சு.",
+   "dir": "tense, building"
+  },
+  {
+   "text": "அப்புறம் radar range-ஐத் தாண்டிப் போயிடுச்சு. காணோம்.",
+   "dir": "quiet, heavy pause before the last word"
+  },
+  {
+   "text": "ஆனா ஒரு satellite, automatic-ஆ ping அனுப்பிக்கிட்டே இருந்துச்சு. Flight-உம் பதில் சொல்லிக்கிட்டே இருந்துச்சு.",
+   "dir": "eerie, intrigued"
+  },
+  {
+   "text": "Message இல்ல. குரல் இல்ல. வெறும் ஏழு சின்ன handshakes. ஒவ்வொண்ணுலயும் ஒரு time stamp, ஒரு frequency shift.",
+   "dir": "slow, precise, investigator tone"
+  },
+  {
+   "text": "அந்த ping-களை மட்டும் வெச்சு, engineers ஒரு பாதையைக் கண்டுபிடிச்சாங்க. அது தெற்கு இந்தியப் பெருங்கடல்ல, ரொம்ப ஆழத்துல முடியுது.",
+   "dir": "measured, revealing"
+  },
+  {
+   "text": "2015-ல, அதோட wing-ல இருந்து ஒரு பகுதி, ஆப்பிரிக்கா பக்கத்துல இருக்கிற Réunion தீவுல கரை ஒதுங்குச்சு.",
+   "dir": "sober, respectful"
+  },
+  {
+   "text": "ஒரு லட்சம் சதுர கிலோமீட்டருக்கு மேல கடல் அடியில தேடியாச்சு. கடைசி தேடல் 2026-ல முடிஞ்சுது. எதுவுமே கிடைக்கல.",
+   "dir": "heavy, slow on the last word"
+  },
+  {
+   "text": "Flight-ஐத் திருப்புனது யாரு? ஏன்? இன்னும் யாருக்குமே தெரியாது.",
+   "dir": "haunting, quiet question"
+  },
+  {
+   "text": "இது மாதிரி tech mysteries-க்கு, TechDecoded தமிழ் சப்ஸ்க்ரைப் பண்ணுங்க.",
+   "dir": "calm, warm, low"
+  }
+ ]
+}

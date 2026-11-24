@@ -1,0 +1,61 @@
+<template>
+  <style>
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:900; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Mono'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:500; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Serif'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:italic; unicode-range:U+0B80-0BFF,U+20B9; }
+
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.inner { position:relative; background:#F8F1E8; border-radius:26px; padding:24px; overflow:hidden; }
+.at { display:flex; align-items:center; gap:24px; padding:22px; margin:10px 0; border-radius:22px; background:#F7F1EB; border:2px solid #E6D9CE; opacity:0; }
+.at .ic { width:90px; height:90px; border-radius:20px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; font-size:50px; }
+.at b { display:block; font:700 40px 'SD Mono'; color:var(--ink); } .at span { font:600 28px 'SD Text'; color:#6B5446; }
+.beam { position:absolute; left:0; right:0; top:0; height:14px; background:linear-gradient(90deg,transparent,#F87736,transparent); box-shadow:0 0 30px #F87736; opacity:0; }
+  </style>
+  <div id="root" data-composition-id="s5" data-width="1080" data-height="1920">
+    <div class="all" id="s5-all">
+<div class="card" id="s5-c" style="top:380px;">
+  <div class="hd"><div class="tile"><svg width="60" height="60" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M26 10h34l18 18v62H26z"/><path d="M60 10v18h18M38 50h28M38 66h28"/></svg></div><div><div class="lab"><tx style="letter-spacing:0">பழக்கம் 4 · ILLUSTRATION</tx></div><div class="ttl"><tx style="letter-spacing:0">2 தெரியாத attachments</tx></div></div></div>
+  <div class="inner"><div class="at" id="s5-f0"><div class="ic"><svg width="56" height="56" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M26 10h34l18 18v62H26z"/><path d="M60 10v18h18M38 50h28M38 66h28"/></svg></div><div><b>free_plugin.zip</b><span>2.4 MB</span></div></div><div class="at" id="s5-f1"><div class="ic"><svg width="56" height="56" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M26 10h34l18 18v62H26z"/><path d="M60 10v18h18M38 50h28M38 66h28"/></svg></div><div><b>invoice_final.pdf</b><span>880 KB</span></div></div><div class="beam" id="s5-bm"></div></div></div>
+<div class="stamp" id="s5-st" style="left:250px; top:900px;"><tx style="letter-spacing:0">முதல்ல CHECK</tx></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s5-c", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
+    tl.fromTo("#s5-f0", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.66);
+    tl.fromTo("#s5-f1", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 0.91);
+    tl.fromTo("#s5-bm", { opacity:1, y:0 }, { y:300, duration:.9, ease:"sine.inOut", yoyo:true, repeat:1, immediateRender:false }, 1.1600000000000001);
+    tl.fromTo("#s5-st", { opacity:0, scale:2.2 }, { opacity:1, scale:1, duration:.2, ease:"power4.in" }, 3.298);
+    tl.fromTo("#s5-c", { x:0 }, { x:12, duration:.05, yoyo:true, repeat:5, ease:"none", immediateRender:false }, 3.448);
+    tl.to("#s5-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 5.52);
+    window.__timelines["s5"] = tl;
+  </script>
+</template>

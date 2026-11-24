@@ -1,0 +1,64 @@
+<template>
+  <style>
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:900; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Display'; src:url('assets/fonts/catamaran-tamil-900-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Mono'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:700; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Text'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:500; font-style:normal; unicode-range:U+0B80-0BFF,U+20B9; }
+@font-face { font-family:'SD Serif'; src:url('assets/fonts/mukta-malar-tamil-800-normal.woff2'); font-weight:600; font-style:italic; unicode-range:U+0B80-0BFF,U+20B9; }
+
+
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Black.otf'); font-weight: 900; }
+@font-face { font-family: 'SD Display'; src: url('assets/fonts/InterDisplay-Bold.otf'); font-weight: 700; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-SemiBold.otf'); font-weight: 600; }
+@font-face { font-family: 'SD Text'; src: url('assets/fonts/Inter-Medium.otf'); font-weight: 500; }
+@font-face { font-family: 'SD Serif'; src: url('assets/fonts/CormorantItalic-600.ttf'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'SD Mono'; src: url('assets/fonts/JetBrainsMono-Bold.ttf'); font-weight: 700; }
+
+:root { --accent:#F87736; --soft:#E98F5E; --dim:#8A6550; --ink:#2A2018; --red:#FF3B30; --green:#3DDC97; }
+#root { position:absolute; inset:0; overflow:hidden; }
+.all { position:absolute; inset:0; }
+.card { position:absolute; left:90px; width:900px; border-radius:36px; border:2px solid #EADCCD; background:linear-gradient(180deg,#FFFAF7 0%,#FFF6EF 100%);
+  box-shadow:0 40px 90px rgba(120,70,40,.12), inset 0 2px 0 rgba(255,255,255,.8); padding:30px; }
+.hd { display:flex; align-items:center; gap:22px; margin-bottom:22px; }
+.tile { width:92px; height:92px; border-radius:24px; background:#F3E6DC; display:flex; align-items:center; justify-content:center; flex:none; }
+.lab { font:600 26px 'SD Text'; letter-spacing:2.5px; color:var(--accent); }
+.ttl { font:700 44px 'SD Display'; color:var(--ink); }
+.head { position:absolute; top:300px; left:40px; right:40px; text-align:center; }
+.h1 { font:900 104px 'SD Display'; color:var(--ink); letter-spacing:-2px; line-height:.98; }
+.h1 span { color:var(--accent); }
+.h2 { font:600 italic 66px 'SD Serif'; color:var(--soft); margin-top:8px; }
+.tag { position:absolute; font:600 24px 'SD Text'; letter-spacing:2px; color:var(--dim); }
+.stamp { position:absolute; padding:18px 34px; border:9px solid var(--red); border-radius:22px; color:var(--red); font:900 70px 'SD Display'; transform:rotate(-8deg); opacity:0; }
+.ring { position:absolute; width:300px; height:300px; margin:-150px 0 0 -150px; border-radius:50%; border:5px solid var(--accent); box-shadow:0 0 40px rgba(248,119,54,.6); opacity:0; }
+.bit { position:absolute; } .bit > div { position:absolute; left:0; top:0; opacity:0; }
+
+.inner { background:#F8F1E8; border-radius:26px; padding:14px 30px; }
+.tr { display:flex; align-items:center; justify-content:space-between; height:120px; border-bottom:2px solid #E6D9CE; font:900 54px 'SD Mono'; color:var(--ink); }
+.tr:last-child { border-bottom:none; }
+.sw { position:relative; width:150px; height:76px; border-radius:38px; background:var(--green); } .sw i { position:absolute; left:80px; top:8px; width:60px; height:60px; border-radius:30px; background:#fff; box-shadow:0 4px 10px rgba(0,0,0,.25); }
+.center { position:absolute; left:40px; right:40px; text-align:center; } .rule { top:1060px; font:900 50px 'SD Display'; color:var(--accent); opacity:0; }
+  </style>
+  <div id="root" data-composition-id="s2" data-width="1080" data-height="1920">
+    <div class="all" id="s2-all">
+<div class="card" id="s2-c" style="top:330px;">
+  <div class="hd"><div class="tile"><svg width="60" height="60" viewBox="0 0 100 100" fill="none" stroke="#F87736" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="50" r="16"/><path d="M48 50h40M76 50v14M66 50v10"/></svg></div><div><div class="lab"><tx style="letter-spacing:0">பழக்கம் 1 · LEAST PRIVILEGE</tx></div><div class="ttl"><tx style="letter-spacing:0">Agent அனுமதிகள்</tx></div></div></div>
+  <div class="inner"><div class="tr"><span>READ</span><div class="sw on" id="s2-sw0"><i id="s2-k0"></i></div></div><div class="tr"><span>SEND</span><div class="sw on" id="s2-sw1"><i id="s2-k1"></i></div></div><div class="tr"><span>PAY</span><div class="sw on" id="s2-sw2"><i id="s2-k2"></i></div></div><div class="tr"><span>DELETE</span><div class="sw on" id="s2-sw3"><i id="s2-k3"></i></div></div></div></div>
+<div class="center rule" id="s2-rl"><tx style="letter-spacing:0">Send இல்லன்னா, ஏமாறவும் முடியாது.</tx></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s2-c", { opacity:0, scale:.74, rotationX:24, rotationY:-14, y:120, filter:"blur(14px)" }, { opacity:1, scale:1, rotationX:0, rotationY:0, y:0, filter:"blur(0px)", duration:.6, ease:"expo.out" }, 0.02);
+    tl.fromTo("#s2-sw0", { scale:1 }, { scale:1.12, duration:.15, yoyo:true, repeat:1, immediateRender:false }, 2.54);
+    tl.to("#s2-k1", { x:-70, duration:.22, ease:"power2.inOut" }, 4.07);
+    tl.to("#s2-sw1", { backgroundColor:"#FF3B30", duration:.22 }, 4.07);
+    tl.to("#s2-k2", { x:-70, duration:.22, ease:"power2.inOut" }, 4.86);
+    tl.to("#s2-sw2", { backgroundColor:"#FF3B30", duration:.22 }, 4.86);
+    tl.to("#s2-k3", { x:-70, duration:.22, ease:"power2.inOut" }, 5.32);
+    tl.to("#s2-sw3", { backgroundColor:"#FF3B30", duration:.22 }, 5.32);
+    tl.fromTo("#s2-rl", { opacity:0, scale:.6, y:30 }, { opacity:1, scale:1, y:0, duration:.32, ease:"back.out(2.2)" }, 5.82);
+    tl.to("#s2-all", { opacity:0, filter:"blur(12px)", scale:1.04, duration:.15, ease:"power3.in" }, 6.349);
+    window.__timelines["s2"] = tl;
+  </script>
+</template>

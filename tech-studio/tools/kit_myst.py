@@ -198,6 +198,8 @@ def mysterize(html):
         html = html.replace('</style>', MIXD + '\n</style>', 1)
     elif cid == 'chapters':
         html = html.replace('</style>', GRAIN_CSS + '\n</style>', 1)
+        if 'data-height="1920"' in html:   # owner 2026-11-24: in the phone app the top-right corner is covered by YouTube's buttons
+            html = html.replace('</style>', '.mz-badge { top:165px !important; right:60px !important; }\n</style>', 1)
         over = (f'<div class="mz-grain" id="mz-grain"></div><div class="mz-scan"></div><div class="mz-vig"></div><div class="mz-flick" id="mz-flick"></div>'
                 f'<div class="mz-badge"><i></i>TECH MYSTERIES · CASE {CASE}</div>')
         html = re.sub(r'(<div id="root"[^>]*>)', lambda x: x.group(1) + '\n' + over, html, 1)
