@@ -1,0 +1,644 @@
+<!doctype html>
+<!-- knight01 in the Halftone Dossier style (Lemo-Opuscar, engine MIT; style guide CC BY-NC 4.0 + film-making permission).
+     Vertical 1080x1920, TechDecoded palette, Max at key moments, word-synced caption bar. TEST: first 16.3 s. -->
+<html lang="en"><head><meta charset="utf-8"><title>knight01 dossier</title>
+<style>
+@font-face{font-family:'Slab';src:url(fonts/catamaran-tamil-900-normal.woff2);unicode-range:U+0B80-0BFF,U+20B9;font-display:block}
+@font-face{font-family:'Bagel';src:url(fonts/baloo-thambi-2-tamil-800-normal.woff2);unicode-range:U+0B80-0BFF,U+20B9;font-display:block}
+@font-face{font-family:'JBM';src:url(fonts/mukta-malar-tamil-800-normal.woff2);font-weight:800;unicode-range:U+0B80-0BFF;font-display:block}
+@font-face{font-family:'Mont';src:url(fonts/mukta-malar-tamil-800-normal.woff2);font-weight:900;unicode-range:U+0B80-0BFF,U+20B9;font-display:block}
+@font-face{font-family:'Slab';src:url(fonts/alfa-slab-one-latin-400-normal.woff2);font-display:block}
+@font-face{font-family:'Bagel';src:url(fonts/bagel-fat-one-latin-400-normal.woff2);font-display:block}
+@font-face{font-family:'JBM';src:url(fonts/jetbrains-mono-latin-800-normal.woff2);font-weight:800;font-display:block}
+@font-face{font-family:'Mont';src:url(fonts/montserrat-latin-900-normal.woff2);font-weight:900;font-display:block}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#F4EDE3}
+svg,canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
+#paper{mix-blend-mode:multiply;pointer-events:none} #fx{pointer-events:none} .mul{mix-blend-mode:multiply}
+</style></head><body>
+<svg id="stage" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg"><defs>
+<filter id="boil" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence id="boilT" type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="1" result="w"/>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="5" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" seed="4" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -22 15.2" result="gm"/><feComposite in="d" in2="gm" operator="in"/></filter>
+<filter id="stampInk" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="11" result="w"/>
+<feDisplacementMap in="SourceGraphic" in2="w" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves="3" seed="21" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 5.9" result="gm"/><feComposite in="d" in2="gm" operator="in"/></filter>
+<clipPath id="frameClip"><rect width="1080" height="1920"/></clipPath><clipPath id="cardClip"><rect width="1080" height="1920" rx="60"/></clipPath><filter id="sh" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="18"/></filter><linearGradient id="hlg" x1="0" x2="1"><stop offset="0" stop-color="#F87736"/><stop offset="1" stop-color="#E8402E"/></linearGradient></defs>
+<g clip-path="url(#frameClip)"><g id="bgL"></g><g id="cardW"><rect id="cardSh" x="18" y="26" width="1080" height="1920" rx="60" fill="#2A2018" opacity="0"/><g id="cardIn"><g id="cam"><g id="world"></g></g><g id="hud"></g><g id="wipe"></g></g><rect id="cardBd" width="1080" height="1920" rx="60" fill="none" stroke="#FFFAF7" stroke-width="0"/></g><g id="maxL"></g><g id="capL"></g>
+<rect id="flash" width="1080" height="1920" fill="#FFFFFF" opacity="0"/></g></svg>
+<canvas id="paper" width="1080" height="1920"></canvas><canvas id="fx" width="1080" height="1920"></canvas>
+<script src="host.js"></script>
+<script>
+const W = 1080, H = 1920, FPS = 30, DUR = 69.8;
+const NS = 'http://www.w3.org/2000/svg';
+const C = { paper:'#F4EDE3', ink:'#2A2018', orange:'#F87736', yellow:'#F9A66C', red:'#E8402E', teal:'#F87736', cream:'#FFF6EA', green:'#3F9E5A', peach:'#F6C7A8' };
+const MODE = 'full';
+const F = { slab:"'Slab'", bagel:"'Bagel'", mono:"'JBM'", sans:"'Mont'" };
+function el(tag, a = {}, p) { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
+function txt(p, s, a) { const e = el('text', a, p); e.textContent = s; return e; }
+function tf(e, x = 0, y = 0, s = 1, r = 0, sy) { e.setAttribute('transform', `translate(${x.toFixed(2)} ${y.toFixed(2)}) rotate(${r.toFixed(2)}) scale(${s.toFixed(4)} ${(sy ?? s).toFixed(4)})`); }
+function op(e, o) { e.setAttribute('opacity', Math.max(0, Math.min(1, o)).toFixed(3)); }
+function show(e, v) { e.style.display = v ? '' : 'none'; }
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const lerp = (a, b, p) => a + (b - a) * p;
+const E = { out: p => 1 - Math.pow(1 - p, 3), in: p => p * p * p, io: p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2,
+  back: p => { const c = 1.9; return 1 + (c + 1) * Math.pow(p - 1, 3) + c * Math.pow(p - 1, 2); } };
+const pop = (t, t0, d = 0.35) => t < t0 ? 0 : E.back(seg(t, t0, t0 + d));
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const mctx = document.createElement('canvas').getContext('2d');
+function measure(s, size, fam, w = 900) { mctx.font = `${w} ${size}px ${fam}`; return mctx.measureText(s).width; }
+function chars(parent, str, o) {
+  const { x, y, size, family, weight = 900, fill = C.ink, anchor = 'start', ls = 0, shadow, stroke, sw = 0 } = o;
+  const g = el('g', {}, parent); const arr = [...new Intl.Segmenter('ta', { granularity: 'grapheme' }).segment(str)].map(s => s.segment);
+  const ws = arr.map(c => measure(c, size, family, weight)); const total = ws.reduce((a, b) => a + b, 0) + ls * (arr.length - 1);
+  if (!o._fit) { const avail = anchor === 'middle' ? W - 90 : anchor === 'end' ? x - 45 : W - 45 - x; if (total > avail) { parent.removeChild(g); return chars(parent, str, { ...o, size: size * avail / total, _fit: 1 }); } }
+  let cx = anchor === 'middle' ? x - total / 2 : anchor === 'end' ? x - total : x;
+  const items = arr.map((ch, i) => { const cg = el('g', {}, g);
+    const base = { x: 0, y: 0, 'font-size': size, 'font-family': family, 'font-weight': weight, 'text-anchor': 'middle' };
+    if (shadow) txt(cg, ch, { ...base, x: shadow.dx, y: shadow.dy, fill: shadow.fill, class: 'mul' });
+    const st = stroke ? { stroke, 'stroke-width': sw, 'paint-order': 'stroke', 'stroke-linejoin': 'round' } : {};
+    txt(cg, ch, { ...base, fill, ...st }); const it = { g: cg, x: cx + ws[i] / 2, y, w: ws[i], size }; cx += ws[i] + ls; tf(cg, it.x, it.y); return it; });
+  return { g, items, total };
+}
+function charsPop(c, t, t0, stagger = 0.05, d = 0.38, from = 60) {
+  c.items.forEach((it, i) => { const s = t0 + i * stagger, p = seg(t, s, s + d), h = it.size * 0.35;
+    if (t < s) { op(it.g, 0); return; } op(it.g, 1);
+    const sc = E.back(p), sq = 1 + 0.25 * Math.sin(p * Math.PI) * (1 - p);
+    it.g.setAttribute('transform', `translate(${it.x} ${it.y + from * (1 - E.out(p))}) translate(0 ${-h}) scale(${(sc / sq).toFixed(3)} ${(sc * sq).toFixed(3)}) translate(0 ${h})`); });
+}
+function halftone(parent, { x0 = 0, y0 = 0, w = W, h = H, step = 22, angle = 15, color, f, maxK = 0.62 }) {
+  const a = angle * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), n = Math.ceil(Math.hypot(w, h) / step / 2) + 2; let d = '';
+  for (let i = -n; i <= n; i++) for (let j = -n; j <= n; j++) { const u = i * step, v = j * step;
+    const x = x0 + w / 2 + u * ca - v * sa, y = y0 + h / 2 + u * sa + v * ca;
+    if (x < x0 - step || x > x0 + w + step || y < y0 - step || y > y0 + h + step) continue;
+    const s = clamp(f(x, y)); if (s < 0.05) continue; const r = s * step * maxK;
+    d += `M${(x - r).toFixed(1)} ${y.toFixed(1)}a${r.toFixed(1)} ${r.toFixed(1)} 0 1 0 ${(2 * r).toFixed(1)} 0a${r.toFixed(1)} ${r.toFixed(1)} 0 1 0 ${(-2 * r).toFixed(1)} 0`; }
+  return el('path', { d, fill: color }, parent);
+}
+const radial = (cx, cy, R, pw = 1.2) => (x, y) => Math.pow(clamp(1 - Math.hypot(x - cx, y - cy) / R), pw);
+const edge = (R = 1100, pw = 1.6) => (x, y) => Math.pow(clamp(Math.hypot(x - W / 2, y - H / 2) / R - 0.35), pw) * 1.3;
+const ramp = (y0, y1) => (x, y) => clamp((y - y0) / (y1 - y0));
+function bg(p, col) { return el('rect', { width: W, height: H, fill: col }, p); }
+function stampEl(parent, str, { size = 170, color = C.red, family = F.sans, padX = 44, padY = 24, border = 12 } = {}) {
+  const g = el('g', {}, parent), inner = el('g', { filter: 'url(#stampInk)' }, g);
+  const w = measure(str, size, family, 900) + padX * 2, h = size * 1.08 + padY * 2;
+  el('rect', { x: -w / 2, y: -h / 2, width: w, height: h, rx: 22, fill: 'none', stroke: color, 'stroke-width': border }, inner);
+  el('rect', { x: -w / 2 + border * 1.8, y: -h / 2 + border * 1.8, width: w - border * 3.6, height: h - border * 3.6, rx: 12, fill: 'none', stroke: color, 'stroke-width': border * .35 }, inner);
+  txt(inner, str, { x: 0, y: size * .36, 'font-size': size, 'font-family': family, 'font-weight': 900, fill: color, 'text-anchor': 'middle' });
+  return { g, w, h };
+}
+function stampAnim(s, t, t0, x, y, rot) {
+  if (t < t0 - 0.09) { op(s.g, 0); return; } const p = seg(t, t0 - 0.09, t0), after = Math.max(0, t - t0);
+  const bounce = 1 + 0.05 * Math.sin(after * 30) * Math.exp(-after * 9);
+  op(s.g, p < 1 ? 0.3 + 0.7 * p : 0.93); tf(s.g, x, y, lerp(2.6, 1, E.in(p)) * bounce, rot);
+}
+// flat props with a heavy ink outline (style: chunky shapes, 7 px outline, flat fill, boil)
+function stopwatch(p) { const g = el('g', { filter: 'url(#boil)' }, p);
+  el('rect', { x: -40, y: -250, width: 80, height: 50, rx: 12, fill: C.red, stroke: C.ink, 'stroke-width': 7 }, g);
+  el('rect', { x: -18, y: -205, width: 36, height: 30, fill: C.ink }, g);
+  el('circle', { cx: 0, cy: 0, r: 190, fill: C.cream, stroke: C.ink, 'stroke-width': 9 }, g);
+  for (let k = 0; k < 12; k++) el('rect', { x: -5, y: -176, width: 10, height: k % 3 ? 22 : 38, rx: 4, fill: C.ink, transform: `rotate(${k * 30})` }, g);
+  const hand = el('g', {}, g); el('rect', { x: -6, y: -160, width: 12, height: 170, rx: 6, fill: C.red, stroke: C.ink, 'stroke-width': 4 }, hand);
+  el('circle', { cx: 0, cy: 0, r: 18, fill: C.ink }, g); return { g, hand }; }
+function hacker(p) { const g = el('g', { filter: 'url(#boil)' }, p);
+  el('path', { d: 'M-210 330 C-210 170 -140 90 0 90 C140 90 210 170 210 330 Z', fill: '#3A3440', stroke: C.cream, 'stroke-width': 8 }, g);
+  el('path', { d: 'M-130 120 C-140 -40 -70 -120 0 -120 C70 -120 140 -40 130 120 C110 170 -110 170 -130 120 Z', fill: '#4A4350', stroke: C.cream, 'stroke-width': 8 }, g);
+  el('ellipse', { cx: 0, cy: 30, rx: 78, ry: 98, fill: '#120F14' }, g);
+  el('rect', { x: -48, y: 12, width: 96, height: 16, rx: 8, fill: C.teal }, g);
+  el('rect', { x: -170, y: 230, width: 340, height: 120, rx: 14, fill: '#CFC7BC', stroke: C.cream, 'stroke-width': 6 }, g); return g; }
+function laptop(p) { const g = el('g', { filter: 'url(#boil)' }, p);
+  el('rect', { x: -330, y: -230, width: 660, height: 420, rx: 26, fill: C.ink, stroke: C.ink, 'stroke-width': 7 }, g);
+  el('rect', { x: -300, y: -200, width: 600, height: 360, rx: 10, fill: C.cream }, g);
+  el('path', { d: 'M-400 190 L400 190 L360 240 L-360 240 Z', fill: C.yellow, stroke: C.ink, 'stroke-width': 7, 'stroke-linejoin': 'round' }, g); return g; }
+function tower(p) { const g = el('g', { filter: 'url(#boil)' }, p);
+  el('rect', { x: -190, y: -560, width: 380, height: 760, rx: 10, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, g);
+  const wins = [];
+  for (let r = 0; r < 9; r++) for (let c = 0; c < 4; c++) wins.push(el('rect', { x: -150 + c * 80, y: -500 + r * 76, width: 50, height: 46, rx: 6, fill: C.ink }, g));
+  el('rect', { x: -60, y: 110, width: 120, height: 90, fill: C.ink }, g); return { g, wins }; }
+
+const world = document.getElementById('world'), cam = document.getElementById('cam'), hud = document.getElementById('hud'),
+  wipe = document.getElementById('wipe'), flash = document.getElementById('flash'), maxL = document.getElementById('maxL'), capL = document.getElementById('capL');
+const scenes = [];
+function scene(t0, t1, build) { const g = el('g', {}, world); const s = { g, t0, t1 }; s.update = build(g, s); scenes.push(s); return s; }
+
+// narration word times (absolute s) from the aligned timeline
+const WORDS = [{"w": "In", "n": "in", "s": 0.25, "e": 0.42}, {"w": "45", "n": "45", "s": 0.6, "e": 1.35}, {"w": "minutes,", "n": "minutes", "s": 1.35, "e": 1.83}, {"w": "a", "n": "a", "s": 2.05, "e": 2.1}, {"w": "company", "n": "company", "s": 2.1, "e": 2.62}, {"w": "lost", "n": "lost", "s": 2.62, "e": 3.0}, {"w": "460", "n": "460", "s": 3.15, "e": 4.55}, {"w": "million", "n": "million", "s": 4.55, "e": 5.34}, {"w": "dollars.", "n": "dollars", "s": 5.34, "e": 5.88}, {"w": "No", "n": "no", "s": 6.3, "e": 6.56}, {"w": "hacker.", "n": "hacker", "s": 6.56, "e": 6.91}, {"w": "Just", "n": "just", "s": 7.33, "e": 7.55}, {"w": "one", "n": "one", "s": 7.55, "e": 8.12}, {"w": "missed", "n": "missed", "s": 8.24, "e": 8.54}, {"w": "step.", "n": "step", "s": 8.54, "e": 9.01}, {"w": "August", "n": "august", "s": 9.27, "e": 9.64}, {"w": "1st,", "n": "1st", "s": 9.64, "e": 10.03}, {"w": "2012.", "n": "2012", "s": 10.03, "e": 10.83}, {"w": "Knight", "n": "knight", "s": 11.16, "e": 11.47}, {"w": "Capital,", "n": "capital", "s": 11.47, "e": 11.95}, {"w": "one", "n": "one", "s": 12.09, "e": 12.2}, {"w": "of", "n": "of", "s": 12.2, "e": 12.27}, {"w": "America's", "n": "americas", "s": 12.27, "e": 12.72}, {"w": "biggest", "n": "biggest", "s": 12.72, "e": 13.27}, {"w": "stock", "n": "stock", "s": 13.27, "e": 13.56}, {"w": "traders,", "n": "traders", "s": 13.56, "e": 13.99}, {"w": "is", "n": "is", "s": 14.2, "e": 14.33}, {"w": "updating", "n": "updating", "s": 14.41, "e": 14.87}, {"w": "its", "n": "its", "s": 14.87, "e": 15.0}, {"w": "trading", "n": "trading", "s": 15.0, "e": 15.35}, {"w": "software.", "n": "software", "s": 15.35, "e": 15.8}, {"w": "Eight", "n": "eight", "s": 16.1, "e": 16.35}, {"w": "servers.", "n": "servers", "s": 16.35, "e": 16.9}, {"w": "The", "n": "the", "s": 17.35, "e": 17.43}, {"w": "new", "n": "new", "s": 17.43, "e": 17.7}, {"w": "code", "n": "code", "s": 17.7, "e": 18.25}, {"w": "reaches", "n": "reaches", "s": 18.25, "e": 18.66}, {"w": "only", "n": "only", "s": 18.66, "e": 19.27}, {"w": "seven.", "n": "seven", "s": 19.27, "e": 19.7}, {"w": "The", "n": "the", "s": 19.98, "e": 20.21}, {"w": "eighth", "n": "eighth", "s": 20.21, "e": 20.53}, {"w": "still", "n": "still", "s": 20.63, "e": 21.1}, {"w": "has", "n": "has", "s": 21.1, "e": 21.34}, {"w": "an", "n": "an", "s": 21.34, "e": 21.43}, {"w": "old", "n": "old", "s": 21.43, "e": 21.91}, {"w": "feature,", "n": "feature", "s": 21.91, "e": 22.39}, {"w": "switched", "n": "switched", "s": 22.65, "e": 23.13}, {"w": "off", "n": "off", "s": 23.13, "e": 23.37}, {"w": "since", "n": "since", "s": 23.37, "e": 23.7}, {"w": "2003:", "n": "2003", "s": 23.7, "e": 24.98}, {"w": "Power", "n": "power", "s": 25.88, "e": 26.31}, {"w": "Peg.", "n": "peg", "s": 26.31, "e": 26.66}, {"w": "And", "n": "and", "s": 27.13, "e": 27.31}, {"w": "the", "n": "the", "s": 27.31, "e": 27.37}, {"w": "new", "n": "new", "s": 27.37, "e": 27.66}, {"w": "code", "n": "code", "s": 27.66, "e": 28.25}, {"w": "reuses", "n": "reuses", "s": 28.25, "e": 28.81}, {"w": "its", "n": "its", "s": 28.81, "e": 29.3}, {"w": "old", "n": "old", "s": 29.6, "e": 29.92}, {"w": "switch.", "n": "switch", "s": 29.92, "e": 30.48}, {"w": "8:01", "n": "801", "s": 30.78, "e": 31.3}, {"w": "AM.", "n": "am", "s": 31.3, "e": 31.75}, {"w": "The", "n": "the", "s": 32.55, "e": 32.62}, {"w": "system", "n": "system", "s": 32.62, "e": 33.04}, {"w": "sends", "n": "sends", "s": 33.04, "e": 33.4}, {"w": "97", "n": "97", "s": 33.4, "e": 34.48}, {"w": "warning", "n": "warning", "s": 34.48, "e": 34.97}, {"w": "emails.", "n": "emails", "s": 34.97, "e": 35.58}, {"w": "Nobody", "n": "nobody", "s": 36.35, "e": 36.82}, {"w": "acts.", "n": "acts", "s": 36.82, "e": 37.31}, {"w": "9:30.", "n": "930", "s": 37.592, "e": 38.272}, {"w": "The", "n": "the", "s": 38.852, "e": 38.932}, {"w": "market", "n": "market", "s": 38.932, "e": 39.362}, {"w": "opens.", "n": "opens", "s": 39.362, "e": 39.882}, {"w": "Power", "n": "power", "s": 40.452, "e": 40.882}, {"w": "Peg", "n": "peg", "s": 40.882, "e": 41.302}, {"w": "wakes", "n": "wakes", "s": 41.302, "e": 41.822}, {"w": "up.", "n": "up", "s": 41.822, "e": 42.042}, {"w": "Orders", "n": "orders", "s": 42.322, "e": 42.672}, {"w": "fly", "n": "fly", "s": 42.672, "e": 43.112}, {"w": "out", "n": "out", "s": 43.112, "e": 43.332}, {"w": "nonstop:", "n": "nonstop", "s": 43.332, "e": 44.342}, {"w": "four", "n": "four", "s": 44.342, "e": 44.682}, {"w": "million", "n": "million", "s": 44.682, "e": 45.252}, {"w": "trades", "n": "trades", "s": 45.252, "e": 45.722}, {"w": "in", "n": "in", "s": 45.722, "e": 45.812}, {"w": "154", "n": "154", "s": 45.812, "e": 47.042}, {"w": "stocks.", "n": "stocks", "s": 47.042, "e": 47.562}, {"w": "45", "n": "45", "s": 47.852, "e": 48.902}, {"w": "minutes", "n": "minutes", "s": 48.902, "e": 49.452}, {"w": "later,", "n": "later", "s": 49.452, "e": 49.932}, {"w": "they", "n": "they", "s": 49.982, "e": 50.122}, {"w": "finally", "n": "finally", "s": 50.332, "e": 50.822}, {"w": "stop", "n": "stop", "s": 50.822, "e": 51.202}, {"w": "it.", "n": "it", "s": 51.202, "e": 51.412}, {"w": "Over", "n": "over", "s": 51.632, "e": 51.842}, {"w": "460", "n": "460", "s": 51.842, "e": 53.212}, {"w": "million", "n": "million", "s": 53.212, "e": 53.842}, {"w": "dollars,", "n": "dollars", "s": 53.842, "e": 54.392}, {"w": "gone.", "n": "gone", "s": 54.662, "e": 54.982}, {"w": "Within", "n": "within", "s": 55.294, "e": 55.524}, {"w": "a", "n": "a", "s": 55.524, "e": 55.574}, {"w": "week,", "n": "week", "s": 55.574, "e": 56.014}, {"w": "Knight", "n": "knight", "s": 56.104, "e": 56.314}, {"w": "needs", "n": "needs", "s": 56.314, "e": 56.504}, {"w": "a", "n": "a", "s": 56.504, "e": 56.554}, {"w": "400", "n": "400", "s": 56.554, "e": 57.314}, {"w": "million", "n": "million", "s": 57.314, "e": 57.884}, {"w": "dollar", "n": "dollar", "s": 57.884, "e": 58.194}, {"w": "rescue.", "n": "rescue", "s": 58.194, "e": 58.784}, {"w": "Within", "n": "within", "s": 59.074, "e": 59.364}, {"w": "a", "n": "a", "s": 59.364, "e": 59.414}, {"w": "year,", "n": "year", "s": 59.414, "e": 59.784}, {"w": "a", "n": "a", "s": 59.784, "e": 59.834}, {"w": "rival", "n": "rival", "s": 60.214, "e": 60.564}, {"w": "takes", "n": "takes", "s": 60.564, "e": 60.874}, {"w": "it", "n": "it", "s": 60.874, "e": 60.964}, {"w": "over.", "n": "over", "s": 60.964, "e": 61.214}, {"w": "The", "n": "the", "s": 61.52, "e": 61.57}, {"w": "lesson?", "n": "lesson", "s": 61.57, "e": 61.98}, {"w": "Delete", "n": "delete", "s": 62.43, "e": 62.85}, {"w": "dead", "n": "dead", "s": 62.85, "e": 63.09}, {"w": "code,", "n": "code", "s": 63.09, "e": 63.44}, {"w": "and", "n": "and", "s": 63.44, "e": 63.69}, {"w": "never", "n": "never", "s": 63.69, "e": 64.16}, {"w": "deploy", "n": "deploy", "s": 64.16, "e": 64.55}, {"w": "alone.", "n": "alone", "s": 64.55, "e": 64.77}, {"w": "Subscribe", "n": "subscribe", "s": 65.04, "e": 65.47}, {"w": "to", "n": "to", "s": 65.92, "e": 66.18}, {"w": "TechDecoded", "n": "techdecoded", "s": 66.18, "e": 66.23}, {"w": "with", "n": "with", "s": 66.23, "e": 66.32}, {"w": "Max", "n": "max", "s": 66.32, "e": 66.7}, {"w": "for", "n": "for", "s": 66.7, "e": 66.8}, {"w": "more", "n": "more", "s": 66.8, "e": 66.98}, {"w": "tech", "n": "tech", "s": 66.98, "e": 67.22}, {"w": "stories,", "n": "stories", "s": 67.22, "e": 67.64}, {"w": "decoded.", "n": "decoded", "s": 67.81, "e": 68.22}];
+const OVR = {"in|0": 0.25, "45|0": 0.573, "minutes|0": 1.191, "company|0": 2.441, "460|0": 3.154, "dollars|0": 4.841, "lost|0": 5.286, "no|0": 6.29, "hacker|0": 6.29, "one|0": 7.34, "step|0": 8.059, "missed|0": 8.574, "august|0": 9.15, "1st|0": 9.732, "2012|0": 10.577, "biggest|0": 11.981, "knight|0": 13.583, "capital|0": 13.583, "updating|0": 15.414, "eight|0": 15.98, "code|0": 17.712, "reaches|0": 17.712, "only|0": 18.574, "seven|0": 19.067, "eighth|0": 19.86, "old|0": 21.198, "2003|0": 23.525, "switched|0": 24.769, "power|0": 26.168, "old|1": 28.767, "switch|1": 29.0, "reuses|0": 29.85, "801|0": 31.462, "am|1": 31.462, "sends|0": 32.851, "97|0": 33.192, "warning|0": 34.511, "nobody|0": 36.337, "930|0": 37.592, "market|0": 38.334, "opens|0": 38.971, "power|1": 40.477, "wakes|0": 41.118, "orders|0": 42.873, "154|0": 44.682, "four|0": 46.163, "trades|0": 47.017, "45|1": 47.752, "stop|0": 49.781, "460|1": 51.591, "dollars|1": 52.355, "inr|0": 53.614, "gone|0": 54.828, "400|0": 56.704, "rescue|0": 57.602, "within|1": 59.005, "rival|0": 60.147, "takes|0": 60.42, "over|1": 60.803, "lesson|0": 61.52, "delete|0": 63.217, "dead|0": 63.454, "alone|0": 64.105, "subscribe|0": 64.979, "techdecoded|0": 66.538, "more|0": 67.188};
+const Wt = (w, n = 0) => OVR[w + "|" + n] ?? WORDS.filter(x => x.n.startsWith(w))[n].s;
+
+function buildAll() {
+  // ---------- S1 0–2.0  IN 45 MINUTES: giant halftone numeral, stopwatch ----------
+  scene(0, 2.02, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(700, 900, 760, 1.0), maxK: .68 });
+    halftone(g, { color: C.orange, step: 20, angle: 60, f: edge(1100, 1.4), maxK: .6 }).setAttribute('class', 'mul');
+    const big = chars(g, '45', { x: 560, y: 1050, size: 760, family: F.bagel, weight: 400, fill: C.yellow, anchor: 'middle', shadow: { fill: C.orange, dx: 16, dy: 16 } });
+    const head = chars(g, 'வெறும்', { x: 90, y: 330, size: 150, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const head2 = chars(g, 'நிமிஷம்', { x: 90, y: 1225, size: 160, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const sw = stopwatch(g);
+    return (t) => {
+      charsPop(head, t, Wt('in') - .05, .06); charsPop(big, t, Wt('45') - .1, .1, .42, 160); charsPop(head2, t, Wt('minutes') - .1, .045, .35, 70);
+      const p = pop(t, Wt('45') + .15, .45); tf(sw.g, 820, lerp(-400, 540, E.out(seg(t, Wt('45') + .15, Wt('45') + .55))), .62 * Math.max(p, .001), 12);
+      sw.hand.setAttribute('transform', `rotate(${(t - Wt('45')) * 420})`);
+    };
+  });
+  // ---------- S2 2.0–6.2  A COMPANY LOST $460,000,000 ----------
+  scene(2.02, 6.22, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.red, step: 22, angle: 15, f: edge(1000, 1.2), maxK: .66 }).setAttribute('class', 'mul');
+    halftone(g, { color: C.yellow, step: 24, angle: 70, f: radial(540, 980, 700, 1.1), maxK: .62 }).setAttribute('class', 'mul');
+    const h1 = chars(g, 'ஒரு கம்பெனி', { x: 90, y: 330, size: 130, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const ex = el('g', {}, g); txt(ex, 'EXHIBIT 01 · P&L, AUG 1 2012', { x: 0, y: 0, 'font-size': 34, 'font-family': F.mono, 'font-weight': 800, fill: C.ink });
+    // graph paper card with a crashing line
+    const card = el('g', {}, g); el('rect', { x: -420, y: -260, width: 840, height: 520, rx: 18, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, card);
+    for (let k = -3; k <= 3; k++) { el('line', { x1: -400, x2: 400, y1: k * 70, y2: k * 70, stroke: '#D9C9B8', 'stroke-width': 3 }, card); el('line', { y1: -240, y2: 240, x1: k * 120, x2: k * 120, stroke: '#D9C9B8', 'stroke-width': 3 }, card); }
+    const line = el('path', { d: 'M-380 -170 L-290 -150 L-220 -190 L-140 -120 L-60 -140 L20 -40 L100 -70 L180 40 L260 10 L340 180 L390 220', fill: 'none', stroke: C.red, 'stroke-width': 14, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', 'stroke-dasharray': 1400, 'stroke-dashoffset': 1400 }, card);
+    const num = el('g', {}, g);
+    const numS = txt(num, '$0', { x: 8, y: 8, 'font-size': 150, 'font-family': F.bagel, fill: C.orange, class: 'mul', 'text-anchor': 'middle' });
+    const numT = txt(num, '$0', { x: 0, y: 0, 'font-size': 150, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' });
+    const st = stampEl(g, 'நஷ்டம்', { size: 190, color: C.red });
+    const fmt = v => '$' + Math.round(v).toLocaleString('en-US');
+    return (t) => {
+      charsPop(h1, t, Wt('company') - .1, .045);
+      op(ex, seg(t, Wt('company'), Wt('company') + .2)); tf(ex, 90, 420);
+      tf(card, 540, lerp(2300, 820, E.back(seg(t, Wt('company') + .05, Wt('company') + .5))), 1, -2);
+      line.setAttribute('stroke-dashoffset', (1400 * (1 - E.in(seg(t, Wt('lost'), Wt('dollars'))))).toFixed(0));
+      stampAnim(st, t, Wt('lost') + .05, 760, 470, -10);
+      const v = 460e6 * E.in(seg(t, Wt('460') - .1, Wt('dollars')));
+      const s = t >= Wt('dollars') ? '$460M' : fmt(v); numS.textContent = s; numT.textContent = s;
+      numT.setAttribute('fill', t >= Wt('dollars') ? C.red : C.ink);
+      const k = t >= Wt('dollars') ? E.back(seg(t, Wt('dollars'), Wt('dollars') + .35)) : 1;
+      op(num, t >= Wt('460') - .15 ? 1 : 0); tf(num, 540, 1215, t >= Wt('dollars') ? lerp(1.7, 1, k) * 1.25 : .9);
+    };
+  });
+  // ---------- S3 6.2–7.25  NO HACKER (dark "secret" scene) ----------
+  scene(6.22, 7.27, (g) => {
+    bg(g, C.ink);
+    halftone(g, { color: '#4A3E33', step: 22, angle: 30, f: radial(540, 900, 900, .9), maxK: .66 });
+    const h = chars(g, 'ஹேக்கர் இல்ல', { x: 540, y: 380, size: 150, family: F.slab, weight: 400, fill: C.cream, anchor: 'middle', shadow: { fill: C.red, dx: 9, dy: 9 } });
+    const hk = el('g', {}, g); hacker(hk);
+    const x1 = el('line', { x1: -260, y1: -260, x2: 260, y2: 260, stroke: C.red, 'stroke-width': 46, 'stroke-linecap': 'round', 'stroke-dasharray': 740, 'stroke-dashoffset': 740 }, g);
+    const x2 = el('line', { x1: 260, y1: -260, x2: -260, y2: 260, stroke: C.red, 'stroke-width': 46, 'stroke-linecap': 'round', 'stroke-dasharray': 740, 'stroke-dashoffset': 740 }, g);
+    return (t) => {
+      charsPop(h, t, Wt('no') - .08, .05, .3, 50);
+      tf(hk, 540, lerp(1900, 900, E.back(seg(t, Wt('no'), Wt('no') + .4))), 1.1);
+      [x1, x2].forEach((x, i) => { x.setAttribute('stroke-dashoffset', (740 * (1 - E.out(seg(t, Wt('hacker') + .15 + i * .14, Wt('hacker') + .3 + i * .14)))).toFixed(0)); tf(x, 540, 900); });
+    };
+  });
+  // ---------- S4 7.25–9.2  JUST ONE MISSED STEP: staircase, the 3rd step missing ----------
+  scene(7.27, 9.22, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: ramp(1500, 300), maxK: .6 });
+    halftone(g, { color: C.teal, step: 20, angle: 70, f: radial(1000, 1700, 600, 1.2), maxK: .55 }).setAttribute('class', 'mul');
+    const h1 = chars(g, 'ஒரே ஒரு', { x: 80, y: 300, size: 140, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const h2 = chars(g, 'ஸ்டெப் மிஸ்', { x: 80, y: 450, size: 140, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const steps = el('g', { filter: 'url(#boil)' }, g); const L = ['WRITE CODE', 'TEST IT', '', 'DEPLOY'], blocks = [];
+    L.forEach((s, k) => { const b = el('g', {}, steps); const hgt = 160 + k * 150;
+      if (k === 2) { el('rect', { x: 0, y: -hgt, width: 230, height: hgt, fill: 'none', stroke: C.red, 'stroke-width': 8, 'stroke-dasharray': '26 18' }, b); txt(b, '?', { x: 115, y: -hgt + 150, 'font-size': 140, 'font-family': F.bagel, fill: C.red, 'text-anchor': 'middle' }); txt(b, 'COPY TO ALL 8', { x: 115, y: -hgt - 24, 'font-size': 30, 'font-family': F.mono, 'font-weight': 800, fill: C.red, 'text-anchor': 'middle' }); }
+      else { el('rect', { x: 0, y: -hgt, width: 230, height: hgt, fill: k === 3 ? C.yellow : C.cream, stroke: C.ink, 'stroke-width': 8 }, b); txt(b, s, { x: 115, y: -hgt + 60, 'font-size': 32, 'font-family': F.mono, 'font-weight': 800, fill: C.ink, 'text-anchor': 'middle' });
+        if (k < 2) { el('circle', { cx: 115, cy: -hgt + 120, r: 34, fill: C.green, stroke: C.ink, 'stroke-width': 6 }, b); txt(b, '✓', { x: 115, y: -hgt + 136, 'font-size': 46, 'font-family': F.sans, 'font-weight': 900, fill: C.cream, 'text-anchor': 'middle' }); } }
+      blocks.push({ b, k }); });
+    const cube = el('g', { filter: 'url(#boil)' }, g); el('rect', { x: -55, y: -55, width: 110, height: 110, rx: 16, fill: C.orange, stroke: C.ink, 'stroke-width': 7 }, cube);
+    txt(cube, 'v2', { x: 0, y: 18, 'font-size': 52, 'font-family': F.bagel, fill: C.cream, 'text-anchor': 'middle' });
+    const st = stampEl(g, 'மிஸ்!', { size: 150, color: C.red });
+    return (t) => {
+      charsPop(h1, t, Wt('one') - .1, .05); charsPop(h2, t, Wt('missed') - .1, .07, .4, 90);
+      blocks.forEach(({ b, k }) => tf(b, 70 + k * 235, lerp(2200, 1230, E.back(seg(t, 7.3 + k * .09, 7.65 + k * .09)))));
+      // the v2 cube hops step to step, then drops through the gap
+      const hop = (a, b2, x0, y0, x1, y1, ht) => { const p = seg(t, a, b2); return [lerp(x0, x1, p), lerp(y0, y1, p) - Math.sin(p * Math.PI) * ht]; };
+      let x = 185, y = 1015, r = 0;
+      if (t > 7.6) [x, y] = hop(7.6, 7.95, 185, 1015, 420, 865, 120);
+      if (t > 7.95) [x, y] = hop(7.95, 8.3, 420, 865, 640, 720, 120);
+      if (t > 8.3) { y = 720 + 1200 * E.in(seg(t, 8.3, 8.9)); x = 640; r = (t - 8.3) * 400; }
+      tf(cube, x, y, t < 7.55 ? 0.001 : 1, r);
+      stampAnim(st, t, Wt('step') + .05, 620, 640, -9);
+    };
+  });
+  // ---------- S5 9.2–11.05  AUGUST 1, 2012: calendar, pages tear off ----------
+  scene(9.22, 11.07, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.teal, step: 22, angle: 15, f: radial(540, 900, 720, 1.0), maxK: .64 }).setAttribute('class', 'mul');
+    halftone(g, { color: C.orange, step: 20, angle: 60, f: edge(1000, 1.5), maxK: .6 }).setAttribute('class', 'mul');
+    const cal = el('g', { filter: 'url(#boil)' }, g);
+    const page = (parent, top, num, col) => { const p = el('g', {}, parent);
+      el('rect', { x: -300, y: -330, width: 600, height: 660, rx: 26, fill: C.cream, stroke: C.ink, 'stroke-width': 9 }, p);
+      el('rect', { x: -300, y: -330, width: 600, height: 150, rx: 26, fill: col, stroke: C.ink, 'stroke-width': 9 }, p);
+      txt(p, top, { x: 0, y: -232, 'font-size': 84, 'font-family': F.slab, fill: C.cream, 'text-anchor': 'middle' });
+      txt(p, num, { x: 0, y: 150, 'font-size': 330, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' }); return p; };
+    page(cal, 'AUGUST', '1', C.red);
+    const yr = txt(cal, '2012', { x: 0, y: 280, 'font-size': 90, 'font-family': F.mono, 'font-weight': 800, fill: C.ink, 'text-anchor': 'middle' });
+    const torn = [page(cal, 'JULY', '31', '#9C8676'), page(cal, 'JULY', '30', '#9C8676'), page(cal, 'JULY', '29', '#9C8676')];
+    el('circle', { cx: 0, cy: -350, r: 26, fill: C.red, stroke: C.ink, 'stroke-width': 6 }, cal);
+    const h = chars(g, 'ஆகஸ்ட் 1, 2012', { x: 540, y: 330, size: 130, family: F.slab, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    return (t) => {
+      const a = Wt('august');
+      tf(cal, 540, lerp(-700, 920, E.out(seg(t, a - .5, a - .1))) + (t > a - .1 ? -Math.sin(seg(t, a - .1, a + .1) * Math.PI) * 30 : 0), .95);
+      torn.forEach((p, i) => { const t0 = a + .1 + (2 - i) * .16, q = seg(t, t0, t0 + .45);
+        op(p, 1 - q); tf(p, lerp(0, (i - 1) * 420, E.in(q)), lerp(0, -900, E.in(q)), 1, lerp(0, (i - 1) * 40, q)); });
+      const yp = seg(t, Wt('2012'), Wt('2012') + .35); yr.setAttribute('fill', yp > 0 && yp < 1 ? C.red : C.ink);
+      charsPop(h, t, Wt('1st') - .05, .05);
+    };
+  });
+  // ---------- S6 11.05–14.2  THE SUSPECT: KNIGHT CAPITAL mugshot (height chart, plate, flash) ----------
+  scene(11.07, 14.22, (g) => {
+    bg(g, C.paper);
+    for (let k = 0; k < 11; k++) { el('line', { x1: 0, x2: 1080, y1: 520 + k * 90, y2: 520 + k * 90, stroke: C.ink, 'stroke-width': k % 2 ? 3 : 6, opacity: .5 }, g);
+      txt(g, `${(10 - k) * 50}`, { x: 30, y: 510 + k * 90, 'font-size': 30, 'font-family': F.mono, 'font-weight': 800, fill: C.ink, opacity: .6 }); }
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(560, 900, 620, 1.0), maxK: .62 }).setAttribute('class', 'mul');
+    const tw = tower(g);
+    const plate = el('g', {}, g); el('rect', { x: -330, y: -70, width: 660, height: 140, rx: 10, fill: C.ink }, plate);
+    txt(plate, 'KNIGHT CAPITAL', { x: 0, y: 22, 'font-size': 64, 'font-family': F.slab, fill: C.cream, 'text-anchor': 'middle' });
+    txt(plate, 'US STOCK TRADER · NJ', { x: 0, y: 60, 'font-size': 26, 'font-family': F.mono, 'font-weight': 800, fill: C.yellow, 'text-anchor': 'middle' });
+    const h = chars(g, 'சந்தேக நபர்', { x: 80, y: 300, size: 120, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const st = stampEl(g, 'பெரிய புள்ளி', { size: 104, color: C.red });
+    return (t) => {
+      charsPop(h, t, 11.12, .05);
+      tf(tw.g, 560, lerp(2600, 1060, E.back(seg(t, 11.07, 11.5))), .95);
+      tw.wins.forEach((w, i) => w.setAttribute('fill', t > 11.2 + ((i * 7) % 36) * .02 ? C.orange : C.ink));
+      tf(plate, 540, lerp(2200, 1190, E.back(seg(t, Wt('capital') - .1, Wt('capital') + .3))), 1, -2);
+      stampAnim(st, t, Wt('biggest') + .05, 560, 560, -8);
+    };
+  });
+  // ---------- S7 14.2–16.3  IS UPDATING ITS TRADING SOFTWARE: laptop + progress ----------
+  scene(14.22, 16.05, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.teal, step: 22, angle: 15, f: ramp(300, 1500), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, 'அப்டேட்…', { x: 80, y: 320, size: 130, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const lp = el('g', {}, g); laptop(lp);
+    const lines = ['$ deploy smars_v2', '→ server 1 ✓', '→ server 2 ✓', '→ server 3 ✓'].map((s, i) => txt(lp, s, { x: -270, y: -140 + i * 62, 'font-size': 40, 'font-family': F.mono, 'font-weight': 800, fill: i ? C.green : C.ink }));
+    const bar = el('rect', { x: -270, y: 110, width: 0, height: 34, rx: 10, fill: C.orange, stroke: C.ink, 'stroke-width': 5 }, lp);
+    const pct = txt(lp, '0%', { x: 270, y: 100, 'font-size': 44, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'end' });
+    return (t) => {
+      charsPop(h, t, Wt('updating') - .15, .05);
+      tf(lp, 540, lerp(2300, 980, E.back(seg(t, 14.25, 14.7))), 1, -1.5);
+      lines.forEach((l, i) => op(l, t > Wt('updating') + .1 + i * .3 ? 1 : 0));
+      const p = seg(t, Wt('updating'), 15.95) * .62; bar.setAttribute('width', (540 * p).toFixed(0)); pct.textContent = Math.round(p * 100) + '%';
+    };
+  });
+
+  // ================= helpers for the second half =================
+  const rack = (p, label, big) => { const g = el('g', { filter: 'url(#boil)' }, p); const w = big ? 300 : 190, h = big ? 400 : 250;
+    el('rect', { x: -w / 2, y: -h / 2, width: w, height: h, rx: 18, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, g);
+    const leds = []; for (let k = 0; k < 3; k++) { el('rect', { x: -w / 2 + 20, y: -h / 2 + 22 + k * (h * .22), width: w - 40, height: h * .15, rx: 8, fill: C.ink }, g); leds.push(el('circle', { cx: w / 2 - 36, cy: -h / 2 + 22 + k * (h * .22) + h * .075, r: big ? 9 : 6, fill: '#7CE0A3' }, g)); }
+    txt(g, label, { x: 0, y: h / 2 - 24, 'font-size': big ? 70 : 46, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' }); return { g, leds }; };
+  const folder = (p, label) => { const g = el('g', { filter: 'url(#boil)' }, p);
+    el('path', { d: 'M-260 -170 L-80 -170 L-50 -210 L120 -210 L150 -170 L260 -170 L260 190 L-260 190 Z', fill: C.peach, stroke: C.ink, 'stroke-width': 9, 'stroke-linejoin': 'round' }, g);
+    el('rect', { x: -230, y: -120, width: 460, height: 280, rx: 6, fill: '#F2B98F', stroke: C.ink, 'stroke-width': 5 }, g);
+    const lab = el('g', {}, g); el('rect', { x: -190, y: -40, width: 380, height: 90, rx: 8, fill: C.cream, stroke: C.ink, 'stroke-width': 6 }, lab);
+    const lt = txt(lab, label, { x: 0, y: 22, 'font-size': Math.min(52, 330 / (Math.max(label.length, 1) * .6)), 'font-family': F.mono, 'font-weight': 800, fill: C.ink, 'text-anchor': 'middle' }); return { g, lt, lab }; };
+  const toggle = (p) => { const g = el('g', { filter: 'url(#boil)' }, p); const bgR = el('rect', { x: -110, y: -55, width: 220, height: 110, rx: 55, fill: '#C9B8A8', stroke: C.ink, 'stroke-width': 8 }, g);
+    const knob = el('circle', { cx: -50, cy: 0, r: 40, fill: C.cream, stroke: C.ink, 'stroke-width': 7 }, g); return { g, bgR, knob }; };
+  const burst = (p, n, r0, r1, col) => { const g = el('g', {}, p); for (let k = 0; k < n; k++) el('path', { d: `M0 ${-r0} L14 ${-r1} L-14 ${-r1} Z`, fill: col, transform: `rotate(${k * 360 / n})` }, g); return g; };
+
+  // ---------- S8 16.05–19.86  8 SERVERS, the new code reaches only seven ----------
+  scene(16.05, 19.86, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 800, 700, 1.0), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, '8 சர்வர்', { x: 80, y: 300, size: 140, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const chip = el('g', {}, g); el('rect', { x: -170, y: -46, width: 340, height: 92, rx: 14, fill: C.orange, stroke: C.ink, 'stroke-width': 7 }, chip);
+    txt(chip, 'NEW CODE v2', { x: 0, y: 18, 'font-size': 44, 'font-family': F.mono, 'font-weight': 800, fill: C.cream, 'text-anchor': 'middle' });
+    const R = []; for (let k = 0; k < 8; k++) { const r = rack(g, '#' + (k + 1)); const ok = el('g', {}, r.g); el('circle', { cx: 80, cy: -110, r: 36, fill: C.green, stroke: C.ink, 'stroke-width': 6 }, ok);
+      txt(ok, '✓', { x: 80, y: -94, 'font-size': 46, 'font-family': F.sans, 'font-weight': 900, fill: C.cream, 'text-anchor': 'middle' }); R.push({ r, ok }); }
+    const ring = el('circle', { r: 175, fill: 'none', stroke: C.red, 'stroke-width': 12, 'stroke-dasharray': '30 18' }, g);
+    const st = stampEl(g, '7 / 8', { size: 150, color: C.red });
+    return (t) => {
+      charsPop(h, t, Wt('eight') - .1, .05);
+      tf(chip, 540, lerp(-200, 460, E.back(seg(t, Wt('code') - .2, Wt('code') + .2))), 1, -3);
+      R.forEach(({ r, ok }, k) => { const x = 160 + (k % 4) * 253, y = 720 + Math.floor(k / 4) * 330;
+        tf(r.g, x, lerp(2300, y, E.back(seg(t, 16.1 + k * .06, 16.45 + k * .06))));
+        const tk = Wt('reaches') + k * .11; op(ok, k < 7 && t > tk ? 1 : 0); tf(ok, 0, 0, k < 7 ? pop(t, tk, .25) || .001 : .001);
+        r.leds.forEach(l => l.setAttribute('fill', k === 7 && t > Wt('only') ? C.red : '#7CE0A3')); });
+      op(ring, t > Wt('only') ? 1 : 0); tf(ring, 160 + 3 * 253, 1050, lerp(1.6, 1, E.out(seg(t, Wt('only'), Wt('only') + .25))));
+      stampAnim(st, t, Wt('seven') + .05, 540, 1230, -7);
+    };
+  });
+  // ---------- S9 19.86–27.0  #8 still has an old feature, switched off since 2003: POWER PEG (redaction lifts) ----------
+  scene(19.86, 27.02, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.orange, step: 22, angle: 30, f: edge(1000, 1.4), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, 'சர்வர் #8', { x: 80, y: 300, size: 140, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const rk = rack(g, '#8', true); const fo = folder(g, 'பழைய ஃபீச்சர்');
+    const dust = el('g', {}, g); const rr = rng(7); for (let k = 0; k < 40; k++) el('circle', { cx: (rr() - .5) * 460, cy: (rr() - .5) * 300, r: 2 + rr() * 5, fill: '#9C8676', opacity: .7 }, dust);
+    const tg = toggle(g); const offT = txt(g, 'OFF', { x: 0, y: 0, 'font-size': 64, 'font-family': F.bagel, fill: C.ink });
+    const yr = chars(g, '2003 முதல்', { x: 540, y: 1235, size: 96, family: F.bagel, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.ink, dx: 6, dy: 6 } });
+    const red = el('rect', { x: -195, y: -45, width: 390, height: 100, fill: C.ink }, fo.lab);
+    const pp = chars(g, 'POWER PEG', { x: 540, y: 470, size: 132, family: F.slab, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.ink, dx: 9, dy: 9 } });
+    return (t) => {
+      charsPop(h, t, Wt('eighth') - .15, .05);
+      tf(rk.g, 250, lerp(2300, 820, E.back(seg(t, 19.95, 20.35))), 1, -2);
+      tf(fo.g, 750, lerp(2300, 860, E.back(seg(t, Wt('old') - .1, Wt('old') + .3))), .95, 3);
+      op(dust, t > Wt('old') ? 1 : 0); tf(dust, 750, 860 - (t - Wt('old')) * 18);
+      const ts = Wt('switched'); tf(tg.g, 300, lerp(2300, 1080, E.back(seg(t, ts - .2, ts + .2)))); tf(offT, 440, lerp(2300, 1102, E.back(seg(t, ts - .2, ts + .2))));
+      charsPop(yr, t, Wt('2003') - .05, .04, .3, 50);
+      fo.lt.textContent = t > Wt('power') ? 'POWER PEG' : 'பழைய ஃபீச்சர்';
+      op(red, t < Wt('power') - .3 ? 0 : t < Wt('power') ? 1 : 1 - seg(t, Wt('power'), Wt('power') + .25)); tf(red, lerp(0, 460, E.in(seg(t, Wt('power'), Wt('power') + .25))), 0);
+      charsPop(pp, t, Wt('power') - .02, .05, .35, 80);
+    };
+  });
+  // ---------- S10 27.0–30.67  the new code reuses its old switch (evidence board with red string) ----------
+  scene(27.02, 30.67, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(700, 700, 700, 1.0), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, 'அதே ஸ்விட்ச்', { x: 70, y: 300, size: 108, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const card = el('g', { filter: 'url(#boil)' }, g); el('rect', { x: -250, y: -150, width: 500, height: 300, rx: 16, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, card);
+    txt(card, 'new_code.py', { x: -220, y: -95, 'font-size': 32, 'font-family': F.mono, 'font-weight': 800, fill: '#9C8676' });
+    txt(card, 'if flag == 1:', { x: -220, y: -10, 'font-size': 46, 'font-family': F.mono, 'font-weight': 800, fill: C.ink });
+    txt(card, '  route(order)', { x: -220, y: 60, 'font-size': 46, 'font-family': F.mono, 'font-weight': 800, fill: C.ink });
+    const fo = folder(g, 'POWER PEG'); const tg = toggle(g); const flag = txt(g, 'FLAG', { x: 0, y: 0, 'font-size': 54, 'font-family': F.bagel, fill: C.ink });
+    const str = el('path', { d: 'M300 720 C420 920 560 980 720 1040', fill: 'none', stroke: C.red, 'stroke-width': 9, 'stroke-dasharray': 700, 'stroke-dashoffset': 700 }, g);
+    const pins = [[300, 720], [720, 1040]].map(([x, y]) => el('circle', { cx: x, cy: y, r: 16, fill: C.red, stroke: C.ink, 'stroke-width': 5 }, g));
+    const bu = burst(g, 12, 70, 150, C.orange);
+    return (t) => {
+      charsPop(h, t, 27.1, .045);
+      tf(card, 330, lerp(2300, 620, E.back(seg(t, 27.05, 27.45))), 1, -3);
+      tf(fo.g, 760, lerp(2300, 1000, E.back(seg(t, 27.25, 27.65))), .7, 4);
+      tf(tg.g, 280, lerp(2300, 1050, E.back(seg(t, 27.45, 27.85)))); tf(flag, 410, lerp(2300, 1070, E.back(seg(t, 27.45, 27.85))));
+      const on = seg(t, Wt('reuses'), Wt('reuses') + .2); tg.knob.setAttribute('cx', lerp(-50, 50, E.back(on))); tg.bgR.setAttribute('fill', on > .5 ? C.orange : '#C9B8A8');
+      str.setAttribute('stroke-dashoffset', (700 * (1 - E.out(seg(t, Wt('old', 1), Wt('old', 1) + .4)))).toFixed(0));
+      pins.forEach(p => op(p, t > Wt('old', 1) ? 1 : 0));
+      op(bu, t > Wt('switch', 1) ? 1 - seg(t, Wt('switch', 1) + .3, Wt('switch', 1) + .6) : 0); tf(bu, 760, 1000, lerp(.4, 1.3, E.out(seg(t, Wt('switch', 1), Wt('switch', 1) + .3))), t * 20);
+    };
+  });
+  // ---------- S11 30.67–37.59  8:01 AM, 97 warning emails, nobody acts ----------
+  scene(30.67, 37.59, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.orange, step: 22, angle: 15, f: radial(540, 500, 600, 1.1), maxK: .62 }).setAttribute('class', 'mul');
+    const clk = chars(g, '8:01', { x: 540, y: 520, size: 300, family: F.bagel, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 12, dy: 12 } });
+    const am = chars(g, 'AM', { x: 900, y: 520, size: 90, family: F.slab, weight: 400, fill: C.red });
+    const env = []; for (let k = 0; k < 14; k++) { const e = el('g', { filter: 'url(#boil)' }, g);
+      el('rect', { x: -120, y: -75, width: 240, height: 150, rx: 10, fill: C.cream, stroke: C.ink, 'stroke-width': 6 }, e); el('path', { d: 'M-120 -75 L0 15 L120 -75', fill: 'none', stroke: C.ink, 'stroke-width': 6 }, e);
+      el('rect', { x: -110, y: 30, width: 90, height: 30, rx: 6, fill: C.red }, e); txt(e, 'ALERT', { x: -65, y: 53, 'font-size': 20, 'font-family': F.mono, 'font-weight': 800, fill: C.cream, 'text-anchor': 'middle' }); env.push(e); }
+    const cnt = el('g', {}, g); el('circle', { r: 110, fill: C.red, stroke: C.ink, 'stroke-width': 9 }, cnt); const ct = txt(cnt, '0', { x: 0, y: 34, 'font-size': 100, 'font-family': F.bagel, fill: C.cream, 'text-anchor': 'middle' });
+    const st = stampEl(g, 'கண்டுக்கல', { size: 140, color: C.red });
+    const rr = rng(3); const pos = env.map((_, k) => [200 + rr() * 680, 900 + rr() * 260, (rr() - .5) * 40]);
+    return (t) => {
+      charsPop(clk, t, Wt('801') - .1, .07, .4, 90); charsPop(am, t, Wt('am', 1) - .05, .05);
+      env.forEach((e, k) => { const t0 = Wt('sends') + k * .13; op(e, t > t0 ? 1 : 0); tf(e, pos[k][0], lerp(-200, pos[k][1], E.out(seg(t, t0, t0 + .35))), .9, pos[k][2]); });
+      op(cnt, t > Wt('97') - .2 ? 1 : 0); tf(cnt, 880, 780, pop(t, Wt('97') - .2, .3) || .001);
+      ct.textContent = String(Math.round(97 * E.out(seg(t, Wt('97'), Wt('warning')))));
+      stampAnim(st, t, Wt('nobody') + .05, 540, 1080, -9);
+    };
+  });
+  // ---------- S12 37.59–40.4  9:30, the market opens (bell, rays) ----------
+  scene(37.59, 40.42, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 800, 800, .9), maxK: .66 }).setAttribute('class', 'mul');
+    const rays = el('g', {}, g); for (let k = 0; k < 18; k++) el('path', { d: 'M0 0 L60 -900 L-60 -900 Z', fill: C.orange, opacity: .35, transform: `rotate(${k * 20})` }, rays);
+    const clk = chars(g, '9:30', { x: 540, y: 560, size: 300, family: F.bagel, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 12, dy: 12 } });
+    const bell = el('g', { filter: 'url(#boil)' }, g); el('path', { d: 'M-130 60 C-130 -90 -80 -150 0 -150 C80 -150 130 -90 130 60 L160 100 L-160 100 Z', fill: C.yellow, stroke: C.ink, 'stroke-width': 9, 'stroke-linejoin': 'round' }, bell);
+    el('circle', { cx: 0, cy: 125, r: 30, fill: C.ink }, bell); el('rect', { x: -20, y: -190, width: 40, height: 45, rx: 10, fill: C.ink }, bell);
+    const sign = el('g', {}, g); el('rect', { x: -300, y: -70, width: 600, height: 140, rx: 20, fill: C.green, stroke: C.ink, 'stroke-width': 8 }, sign);
+    txt(sign, 'மார்க்கெட் ஓப்பன்', { x: 0, y: 24, 'font-size': 72, 'font-family': F.slab, fill: C.cream, 'text-anchor': 'middle' });
+    return (t) => {
+      charsPop(clk, t, Wt('930') - .05, .07, .4, 90);
+      tf(rays, 540, 900, lerp(.3, 1, E.out(seg(t, Wt('market') - .2, Wt('market') + .3))), t * 12); op(rays, t > Wt('market') - .2 ? 1 : 0);
+      tf(bell, 540, lerp(2300, 920, E.back(seg(t, 37.7, 38.1))), .9, t > Wt('market') ? Math.sin(t * 30) * 14 * Math.exp(-(t - Wt('market')) * 1.5) : 0);
+      tf(sign, 540, lerp(2300, 1210, E.back(seg(t, Wt('opens') - .15, Wt('opens') + .25))), 1, -3);
+    };
+  });
+  // ---------- S13 40.4–42.31  POWER PEG WAKES UP (dark secret scene, the folder opens its eyes) ----------
+  scene(40.42, 42.31, (g) => {
+    bg(g, C.ink);
+    halftone(g, { color: '#5A2A1E', step: 22, angle: 30, f: radial(540, 850, 800, .8), maxK: .7 });
+    const h = chars(g, 'POWER PEG', { x: 540, y: 340, size: 150, family: F.slab, weight: 400, fill: C.cream, anchor: 'middle', shadow: { fill: C.red, dx: 9, dy: 9 } });
+    const fo = folder(g, ''); const eyes = el('g', {}, fo.g);
+    const E1 = [-90, 90].map(x => { const e = el('g', {}, eyes); el('ellipse', { cx: x, cy: 10, rx: 60, ry: 50, fill: C.cream, stroke: C.ink, 'stroke-width': 7 }, e); el('circle', { cx: x, cy: 18, r: 24, fill: C.red }, e); el('circle', { cx: x + 8, cy: 8, r: 8, fill: C.cream }, e); return e; });
+    const sub = chars(g, 'முழிச்சுக்குது!', { x: 540, y: 1230, size: 110, family: F.bagel, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.cream, dx: 5, dy: 5 } });
+    return (t) => {
+      charsPop(h, t, Wt('power', 1) - .05, .04);
+      tf(fo.g, 540 + (t > Wt('wakes') ? Math.sin(t * 60) * 8 : 0), 860, 1.1);
+      const o = seg(t, Wt('wakes'), Wt('wakes') + .2); E1.forEach(e => e.setAttribute('transform', `translate(0 10) scale(1 ${Math.max(.05, o).toFixed(3)}) translate(0 -10)`));
+      charsPop(sub, t, Wt('wakes') + .05, .05, .3, 60);
+    };
+  });
+  // ---------- S14 42.31–47.75  orders fly out nonstop: 4,000,000 trades in 154 stocks ----------
+  scene(42.31, 47.75, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.red, step: 22, angle: 15, f: edge(900, 1.2), maxK: .62 }).setAttribute('class', 'mul');
+    const rk = rack(g, '#8', true);
+    const slips = []; for (let k = 0; k < 18; k++) { const s = el('g', {}, g); const buy = k % 2 === 0;
+      el('rect', { x: -80, y: -36, width: 160, height: 72, rx: 8, fill: buy ? C.green : C.red, stroke: C.ink, 'stroke-width': 5 }, s);
+      txt(s, buy ? 'BUY' : 'SELL', { x: 0, y: 16, 'font-size': 40, 'font-family': F.bagel, fill: C.cream, 'text-anchor': 'middle' }); slips.push(s); }
+    const num = chars(g, '0', { x: 540, y: 330, size: 10, family: F.bagel, fill: C.ink });
+    const big = el('g', {}, g); const bS = txt(big, '0', { x: 8, y: 8, 'font-size': 170, 'font-family': F.bagel, fill: C.orange, class: 'mul', 'text-anchor': 'middle' }); const bT = txt(big, '0', { x: 0, y: 0, 'font-size': 170, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' });
+    const lab = chars(g, 'டிரேட்ஸ்', { x: 540, y: 470, size: 70, family: F.slab, weight: 400, fill: C.red, anchor: 'middle' });
+    const grid = el('g', {}, g); const cells = []; for (let k = 0; k < 154; k++) cells.push(el('rect', { x: (k % 14) * 44, y: Math.floor(k / 14) * 40, width: 36, height: 32, rx: 5, fill: '#E6D9CE', stroke: C.ink, 'stroke-width': 2 }, grid));
+    const gl = chars(g, '154 ஸ்டாக்ஸ்', { x: 735, y: 1200, size: 64, family: F.slab, weight: 400, fill: C.ink, anchor: 'middle' });
+    return (t) => {
+      op(num.g, 0); tf(rk.g, 220, lerp(2300, 900, E.back(seg(t, 42.35, 42.75))), .8, -2);
+      rk.leds.forEach((l, i) => l.setAttribute('fill', Math.floor(t * 12 + i) % 2 ? C.red : C.yellow));
+      slips.forEach((s, k) => { const per = 1.1, ph = ((t - Wt('orders') - k * .07) % per + per) % per / per, on = t > Wt('orders') + k * .07;
+        op(s, on ? 1 - seg(t, Wt('154') - .2, Wt('154') + .1) : 0); tf(s, lerp(300, 1250, ph), 900 + Math.sin(k * 2.1) * 160 - Math.sin(ph * Math.PI) * 260, .9, lerp(-20, 30, ph)); });
+      const v = 4e6 * E.in(seg(t, Wt('four') - .1, Wt('trades'))); const s = Math.round(v).toLocaleString('en-IN'); bS.textContent = s; bT.textContent = s;
+      op(big, t > Wt('four') - .2 ? 1 : 0); tf(big, 540, 330, t > Wt('trades') ? lerp(1.4, 1, E.back(seg(t, Wt('trades'), Wt('trades') + .3))) : 1);
+      charsPop(lab, t, Wt('trades'), .04);
+      op(grid, t > Wt('154') - .2 ? 1 : 0); tf(grid, 470, 740, .85);
+      cells.forEach((c, k) => c.setAttribute('fill', t > Wt('154') + ((k * 37) % 154) * .006 ? C.red : '#E6D9CE'));
+      charsPop(gl, t, Wt('154'), .03);
+    };
+  });
+  // ---------- S15 47.75–51.55  45 minutes later, they finally stop it ----------
+  scene(47.75, 51.55, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 850, 700, 1.0), maxK: .6 }).setAttribute('class', 'mul');
+    const sw = stopwatch(g); const tm = el('g', {}, g); const tmS = txt(tm, '00:00', { x: 6, y: 6, 'font-size': 130, 'font-family': F.bagel, fill: C.orange, class: 'mul', 'text-anchor': 'middle' }); const tmT = txt(tm, '00:00', { x: 0, y: 0, 'font-size': 130, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' });
+    const h = chars(g, '45 நிமிஷம் கழிச்சு', { x: 70, y: 300, size: 100, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const st = stampEl(g, 'நிறுத்தம்', { size: 150, color: C.red });
+    return (t) => {
+      charsPop(h, t, Wt('45', 1) - .1, .045);
+      tf(sw.g, 540, lerp(2300, 820, E.back(seg(t, 47.8, 48.2))), 1.15); const run = seg(t, Wt('45', 1), Wt('stop'));
+      sw.hand.setAttribute('transform', `rotate(${run * 45 * 360 / 60 * 8})`);
+      const v = Math.round(2700 * E.in(run)), s = String(Math.floor(v / 60)).padStart(2, '0') + ':' + String(v % 60).padStart(2, '0'); tmS.textContent = s; tmT.textContent = s;
+      tmT.setAttribute('fill', t > Wt('stop') ? C.red : C.ink); tf(tm, 540, 1240);
+      stampAnim(st, t, Wt('stop') + .05, 560, 820, -8);
+    };
+  });
+  // ---------- S16 51.55–55.29  over $460 million, GONE ----------
+  scene(51.55, 55.29, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.red, step: 22, angle: 15, f: edge(950, 1.1), maxK: .66 }).setAttribute('class', 'mul');
+    const big = el('g', {}, g); const bS = txt(big, '$0', { x: 9, y: 9, 'font-size': 150, 'font-family': F.bagel, fill: C.orange, class: 'mul', 'text-anchor': 'middle' }); const bT = txt(big, '$0', { x: 0, y: 0, 'font-size': 150, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' });
+    const bills = []; const rr = rng(11); for (let k = 0; k < 22; k++) { const b = el('g', { filter: 'url(#boil)' }, g); el('rect', { x: -70, y: -36, width: 140, height: 72, rx: 8, fill: '#8CCB8F', stroke: C.ink, 'stroke-width': 5 }, b); txt(b, '$', { x: 0, y: 18, 'font-size': 52, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' }); bills.push([b, rr() * 1080, rr() * 200 + 700, (rr() - .5) * 2]); }
+    const inr = chars(g, '₹4,000 கோடி+', { x: 540, y: 655, size: 104, family: F.slab, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.ink, dx: 6, dy: 6 } });
+    const gone = chars(g, 'போச்சு!', { x: 540, y: 1000, size: 300, family: F.bagel, weight: 400, fill: C.red, anchor: 'middle', shadow: { fill: C.ink, dx: 14, dy: 14 } });
+    return (t) => {
+      const v = 460e6 * E.in(seg(t, Wt('460', 1) - .1, Wt('dollars', 1))); const s = t > Wt('dollars', 1) ? '$460,000,000' : '$' + Math.round(v).toLocaleString('en-US'); bS.textContent = s; bT.textContent = s;
+      tf(big, 540, 520, .8);
+      bills.forEach(([b, x, y, d]) => { const p = seg(t, Wt('gone') - .1, Wt('gone') + 1.2); op(b, t < Wt('gone') - .1 ? 1 : 1 - p); tf(b, x + d * 600 * E.out(p), y - 900 * E.out(p) + (t < Wt('gone') ? Math.sin(t * 4 + x) * 10 : 0), .9, d * 200 * p); });
+      charsPop(inr, t, Wt('inr') - .05, .05, .3, 50); op(inr.g, t < Wt('gone') ? 1 : 1 - seg(t, Wt('gone'), Wt('gone') + .2));
+      charsPop(gone, t, Wt('gone') - .05, .07, .35, 120);
+    };
+  });
+  // ---------- S17 55.29–61.52  $400M rescue within a week; taken over within a year ----------
+  scene(55.29, 61.52, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 800, 700, 1.0), maxK: .6 }).setAttribute('class', 'mul');
+    const days = []; ['M', 'T', 'W', 'T', 'F', 'S', 'S'].forEach((d, k) => { const c = el('g', {}, g); const r = el('rect', { x: -56, y: -56, width: 112, height: 112, rx: 14, fill: C.cream, stroke: C.ink, 'stroke-width': 6 }, c); const te = txt(c, d, { x: 0, y: 20, 'font-size': 56, 'font-family': F.bagel, fill: C.ink, 'text-anchor': 'middle' }); days.push({ c, r, te }); });
+    const ring = el('g', { filter: 'url(#boil)' }, g); el('circle', { r: 200, fill: 'none', stroke: C.red, 'stroke-width': 90 }, ring);
+    for (let k = 0; k < 4; k++) el('rect', { x: -40, y: -245, width: 80, height: 90, fill: C.cream, transform: `rotate(${k * 90 + 45})` }, ring);
+    el('circle', { r: 245, fill: 'none', stroke: C.ink, 'stroke-width': 8 }, ring); el('circle', { r: 155, fill: 'none', stroke: C.ink, 'stroke-width': 8 }, ring);
+    const amt = chars(g, '$400M உதவி', { x: 540, y: 1240, size: 96, family: F.bagel, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 6, dy: 6 } });
+    const co = folder(g, 'KNIGHT'); const rv = folder(g, 'போட்டி');
+    const st = stampEl(g, 'கைமாறியது 2013', { size: 92, color: C.red });
+    return (t) => {
+      days.forEach(({ c, r, te }, k) => { const t0 = 55.35 + k * .08; tf(c, 130 + k * 137, 380, pop(t, t0, .25) || .001); const on = t > t0 + .1; r.setAttribute('fill', on ? C.orange : C.cream); te.setAttribute('fill', on ? C.cream : C.ink); });
+      const a = t < Wt('within', 1) - .2; op(ring, a ? 1 : 0); tf(ring, 540, lerp(2300, 850, E.back(seg(t, Wt('400') - .3, Wt('400') + .1))), .9, t * 30);
+      op(amt.g, a ? 1 : 0); charsPop(amt, t, Wt('rescue') - .2, .03);
+      const b = !a; op(co.g, b ? 1 : 0); op(rv.g, b ? 1 : 0);
+      tf(co.g, 380, lerp(2300, 820, E.back(seg(t, Wt('within', 1) - .1, Wt('within', 1) + .3))), .75, -4);
+      tf(rv.g, lerp(1500, 700, E.out(seg(t, Wt('rival') - .1, Wt('takes') + .3))), 980, .75, 5);
+      stampAnim(st, t, Wt('over', 1) + .02, 540, 1180, -8);
+    };
+  });
+  // ---------- S18 61.52–64.93  THE LESSON: delete dead code, never deploy alone ----------
+  scene(61.52, 64.93, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.orange, step: 22, angle: 15, f: radial(900, 400, 600, 1.1), maxK: .6 }).setAttribute('class', 'mul');
+    const h = chars(g, 'பாடம்', { x: 70, y: 300, size: 120, family: F.slab, weight: 400, fill: C.ink, shadow: { fill: C.orange, dx: 8, dy: 8 } });
+    const sheet = el('g', { filter: 'url(#boil)' }, g); el('rect', { x: -400, y: -220, width: 800, height: 440, rx: 16, fill: C.cream, stroke: C.ink, 'stroke-width': 8 }, sheet);
+    const L = ['def route(order):', '  send(order)', '  power_peg()', '  log(order)'].map((s, i) => txt(sheet, s, { x: -360, y: -130 + i * 85, 'font-size': 48, 'font-family': F.mono, 'font-weight': 800, fill: i === 2 ? C.red : C.ink }));
+    const strike = el('line', { x1: -340, x2: 0, y1: 25, y2: 25, stroke: C.red, 'stroke-width': 10 }, sheet);
+    const bin = el('g', { filter: 'url(#boil)' }, g); el('path', { d: 'M-80 -60 L80 -60 L65 110 L-65 110 Z', fill: C.peach, stroke: C.ink, 'stroke-width': 8, 'stroke-linejoin': 'round' }, bin); el('rect', { x: -100, y: -90, width: 200, height: 30, rx: 8, fill: C.ink }, bin);
+    const st = stampEl(g, '2 பேர் ரிவ்யூ ✓', { size: 96, color: C.green });
+    return (t) => {
+      charsPop(h, t, Wt('lesson') - .1, .045);
+      tf(sheet, 540, lerp(2300, 760, E.back(seg(t, 61.6, 62))), 1, -2);
+      const d = seg(t, Wt('delete'), Wt('delete') + .25); strike.setAttribute('x2', lerp(-340, 0, d));
+      const fly = seg(t, Wt('dead') + .1, Wt('dead') + .55); L[2].setAttribute('transform', `translate(${lerp(0, 600, E.in(fly))} ${lerp(0, 430, E.in(fly))}) rotate(${fly * 40})`); op(L[2], 1 - seg(t, Wt('dead') + .4, Wt('dead') + .55)); strike.setAttribute('opacity', 1 - fly);
+      tf(bin, 900, lerp(2300, 1160, E.back(seg(t, Wt('delete') - .2, Wt('delete') + .2))), .8);
+      stampAnim(st, t, Wt('alone') + .02, 540, 1180, -6);
+    };
+  });
+  // ---------- S19 64.93–69.8  CASE CLOSED + subscribe ----------
+  scene(64.93, 69.9, (g) => {
+    bg(g, C.paper);
+    halftone(g, { color: C.yellow, step: 22, angle: 15, f: radial(540, 760, 760, .9), maxK: .62 }).setAttribute('class', 'mul');
+    const fo = folder(g, 'KNIGHT CAPITAL'); const cc = stampEl(g, 'கேஸ் க்ளோஸ்', { size: 110, color: C.red });
+    const brand = chars(g, 'TechDecoded', { x: 540, y: 300, size: 110, family: F.slab, weight: 400, fill: C.ink, anchor: 'middle', shadow: { fill: C.orange, dx: 7, dy: 7 } });
+    const wm = chars(g, 'தமிழ்', { x: 540, y: 400, size: 70, family: F.bagel, weight: 400, fill: C.orange, anchor: 'middle' });
+    const btn = el('g', {}, g); el('rect', { x: -300, y: -70, width: 600, height: 140, rx: 70, fill: '#A8301A' }, btn); const btR = el('rect', { x: -300, y: -84, width: 600, height: 140, rx: 70, fill: 'url(#hlg)', stroke: C.ink, 'stroke-width': 7 }, btn);
+    const btT = txt(btn, 'சப்ஸ்க்ரைப்', { x: 0, y: 8, 'font-size': 70, 'font-family': F.sans, 'font-weight': 900, fill: '#FFFFFF', 'text-anchor': 'middle' });
+    const cur = el('path', { d: 'M0 0 L0 90 L24 68 L42 108 L58 100 L40 62 L72 62 Z', fill: C.cream, stroke: C.ink, 'stroke-width': 6, 'stroke-linejoin': 'round' }, g);
+    return (t) => {
+      tf(fo.g, 540, lerp(2300, 780, E.back(seg(t, 64.95, 65.35))), .9, -3); stampAnim(cc, t, 65.6, 540, 790, -10);
+      charsPop(brand, t, Wt('techdecoded') - .1, .04); charsPop(wm, t, Wt('techdecoded') + .3, .04);
+      const tc = Wt('more') + .1; tf(btn, 540, lerp(2300, 1150, E.back(seg(t, Wt('subscribe') - .1, Wt('subscribe') + .3))), t > tc && t < tc + .12 ? .94 : 1);
+      if (t > tc) { btT.textContent = 'சப்ஸ்க்ரைப் ✓'; btR.setAttribute('fill', C.ink); } else { btT.textContent = 'சப்ஸ்க்ரைப்'; btR.setAttribute('fill', 'url(#hlg)'); }
+      op(cur, t > Wt('subscribe') + .3 ? 1 : 0); tf(cur, lerp(980, 640, E.out(seg(t, Wt('subscribe') + .3, tc))), lerp(1500, 1160, E.out(seg(t, Wt('subscribe') + .3, tc))), t > tc && t < tc + .12 ? .85 : 1);
+    };
+  });
+
+  // ---------- caption bar (dark-ink pill, overprint shadow, the spoken word lights up in the highlight ink) ----------
+  const CH = [{"t0": 0.2, "t1": 1.144, "w": [{"w": "வெறும்", "s": 0.25, "e": 0.573}, {"w": "45", "s": 0.573, "e": 1.135}]}, {"t0": 1.144, "t1": 2.02, "w": [{"w": "நிமிஷம்.", "s": 1.191, "e": 1.738}]}, {"t0": 2.02, "t1": 3.093, "w": [{"w": "ஒரு", "s": 2.08, "e": 2.357}, {"w": "கம்பெனிக்கு", "s": 2.441, "e": 3.154}]}, {"t0": 3.093, "t1": 4.781, "w": [{"w": "460", "s": 3.154, "e": 4.227}, {"w": "மில்லியன்", "s": 4.227, "e": 4.841}]}, {"t0": 4.781, "t1": 6.246, "w": [{"w": "டாலர்", "s": 4.841, "e": 5.286}, {"w": "நஷ்டம்.", "s": 5.286, "e": 5.823}]}, {"t0": 6.246, "t1": 7.282, "w": [{"w": "ஹேக்கர்", "s": 6.29, "e": 6.544}, {"w": "இல்ல.", "s": 6.64, "e": 6.964}]}, {"t0": 7.282, "t1": 8.001, "w": [{"w": "ஒரே", "s": 7.34, "e": 7.732}, {"w": "ஒரு", "s": 7.732, "e": 8.059}]}, {"t0": 8.001, "t1": 8.515, "w": [{"w": "ஸ்டெப்", "s": 8.059, "e": 8.457}, {"w": "மிஸ்", "s": 8.574, "e": 8.632}]}, {"t0": 8.515, "t1": 9.146, "w": [{"w": "ஆச்சு.", "s": 8.574, "e": 9.121}]}, {"t0": 9.146, "t1": 10.545, "w": [{"w": "ஆகஸ்ட்", "s": 9.15, "e": 9.668}, {"w": "1,", "s": 9.732, "e": 10.296}]}, {"t0": 10.545, "t1": 11.103, "w": [{"w": "2012.", "s": 10.577, "e": 11.012}]}, {"t0": 11.103, "t1": 11.926, "w": [{"w": "அமெரிக்காவோட", "s": 11.158, "e": 11.871}, {"w": "பெரிய", "s": 11.981, "e": 12.036}]}, {"t0": 11.926, "t1": 13.133, "w": [{"w": "ஸ்டாக்", "s": 11.981, "e": 12.376}, {"w": "டிரேடர்கள்ல", "s": 12.376, "e": 13.068}]}, {"t0": 13.133, "t1": 13.529, "w": [{"w": "ஒண்ணான", "s": 13.188, "e": 13.463}, {"w": "நைட்", "s": 13.583, "e": 13.638}]}, {"t0": 13.529, "t1": 14.263, "w": [{"w": "கேபிடல்,", "s": 13.583, "e": 13.968}]}, {"t0": 14.263, "t1": 14.844, "w": [{"w": "அதோட", "s": 14.306, "e": 14.583}, {"w": "டிரேடிங்", "s": 14.661, "e": 14.887}]}, {"t0": 14.844, "t1": 15.37, "w": [{"w": "சாஃப்ட்வேரை", "s": 14.887, "e": 15.353}, {"w": "அப்டேட்", "s": 15.414, "e": 15.457}]}, {"t0": 15.37, "t1": 15.966, "w": [{"w": "பண்ணுது.", "s": 15.414, "e": 15.889}]}, {"t0": 15.966, "t1": 17.284, "w": [{"w": "எட்டு", "s": 15.98, "e": 16.194}, {"w": "சர்வர்.", "s": 16.388, "e": 16.866}]}, {"t0": 17.284, "t1": 17.661, "w": [{"w": "புது", "s": 17.335, "e": 17.62}, {"w": "கோட்", "s": 17.712, "e": 17.763}]}, {"t0": 17.661, "t1": 18.523, "w": [{"w": "ஏழு", "s": 17.712, "e": 18.005}, {"w": "சர்வருக்கு", "s": 18.005, "e": 18.574}]}, {"t0": 18.523, "t1": 19.016, "w": [{"w": "மட்டும்", "s": 18.574, "e": 19.006}, {"w": "தான்", "s": 19.067, "e": 19.118}]}, {"t0": 19.016, "t1": 19.852, "w": [{"w": "போய்", "s": 19.067, "e": 19.347}, {"w": "சேருது.", "s": 19.347, "e": 19.79}]}, {"t0": 19.852, "t1": 21.143, "w": [{"w": "எட்டாவது", "s": 19.86, "e": 20.516}, {"w": "சர்வர்ல", "s": 20.516, "e": 21.122}]}, {"t0": 21.143, "t1": 21.72, "w": [{"w": "ஒரு", "s": 21.198, "e": 21.252}, {"w": "பழைய", "s": 21.198, "e": 21.774}]}, {"t0": 21.72, "t1": 22.577, "w": [{"w": "ஃபீச்சர்", "s": 21.774, "e": 22.229}, {"w": "இன்னும்", "s": 22.229, "e": 22.631}]}, {"t0": 22.577, "t1": 23.471, "w": [{"w": "இருக்கு.", "s": 22.631, "e": 23.166}]}, {"t0": 23.471, "t1": 24.715, "w": [{"w": "2003-ல", "s": 23.525, "e": 24.391}, {"w": "இருந்து", "s": 24.391, "e": 24.769}]}, {"t0": 24.715, "t1": 25.091, "w": [{"w": "ஆஃப்", "s": 24.769, "e": 25.069}, {"w": "பண்ணி", "s": 25.145, "e": 25.2}]}, {"t0": 25.091, "t1": 26.113, "w": [{"w": "வச்சது:", "s": 25.145, "e": 25.635}]}, {"t0": 26.113, "t1": 26.992, "w": [{"w": "பவர்", "s": 26.168, "e": 26.494}, {"w": "பெக்.", "s": 26.592, "e": 26.766}]}, {"t0": 26.992, "t1": 28.257, "w": [{"w": "புது", "s": 27.027, "e": 27.312}, {"w": "கோட்,", "s": 27.462, "e": 27.799}]}, {"t0": 28.257, "t1": 28.971, "w": [{"w": "அதே", "s": 28.286, "e": 28.651}, {"w": "பழைய", "s": 28.767, "e": 29.0}]}, {"t0": 28.971, "t1": 29.821, "w": [{"w": "ஸ்விட்சை", "s": 29.0, "e": 29.26}, {"w": "திரும்ப", "s": 29.307, "e": 29.85}]}, {"t0": 29.821, "t1": 30.656, "w": [{"w": "யூஸ்", "s": 29.85, "e": 30.084}, {"w": "பண்ணுது.", "s": 30.084, "e": 30.577}]}, {"t0": 30.656, "t1": 32.809, "w": [{"w": "காலை", "s": 30.67, "e": 31.113}, {"w": "8:01.", "s": 31.462, "e": 32.221}]}, {"t0": 32.809, "t1": 34.172, "w": [{"w": "சிஸ்டம்", "s": 32.851, "e": 33.141}, {"w": "97", "s": 33.192, "e": 34.095}]}, {"t0": 34.172, "t1": 34.978, "w": [{"w": "வார்னிங்", "s": 34.215, "e": 34.511}, {"w": "ஈமெயில்", "s": 34.511, "e": 35.021}]}, {"t0": 34.978, "t1": 36.294, "w": [{"w": "அனுப்புது.", "s": 35.021, "e": 35.749}]}, {"t0": 36.294, "t1": 37.542, "w": [{"w": "யாரும்", "s": 36.337, "e": 36.822}, {"w": "கண்டுக்கல.", "s": 36.924, "e": 37.299}]}, {"t0": 37.542, "t1": 38.29, "w": [{"w": "9:30.", "s": 37.592, "e": 38.219}]}, {"t0": 38.29, "t1": 39.589, "w": [{"w": "மார்க்கெட்", "s": 38.334, "e": 38.971}, {"w": "ஓப்பன்", "s": 38.971, "e": 39.58}]}, {"t0": 39.589, "t1": 40.42, "w": [{"w": "ஆகுது.", "s": 39.633, "e": 40.031}]}, {"t0": 40.42, "t1": 41.061, "w": [{"w": "பவர்", "s": 40.477, "e": 40.821}, {"w": "பெக்", "s": 40.912, "e": 41.038}]}, {"t0": 41.061, "t1": 42.295, "w": [{"w": "முழிச்சுக்குது.", "s": 41.118, "e": 42.035}]}, {"t0": 42.295, "t1": 43.686, "w": [{"w": "நிறுத்தாம", "s": 42.312, "e": 42.747}, {"w": "ஆர்டர்கள்", "s": 42.873, "e": 43.743}]}, {"t0": 43.686, "t1": 44.624, "w": [{"w": "பறக்குது:", "s": 43.743, "e": 44.59}]}, {"t0": 44.624, "t1": 46.106, "w": [{"w": "154", "s": 44.682, "e": 45.569}, {"w": "ஸ்டாக்ஸ்ல", "s": 45.569, "e": 46.163}]}, {"t0": 46.106, "t1": 46.96, "w": [{"w": "40", "s": 46.163, "e": 46.433}, {"w": "லட்சம்", "s": 46.57, "e": 46.937}]}, {"t0": 46.96, "t1": 47.738, "w": [{"w": "டிரேட்ஸ்.", "s": 47.017, "e": 47.669}]}, {"t0": 47.738, "t1": 48.926, "w": [{"w": "45", "s": 47.752, "e": 48.488}, {"w": "நிமிஷம்", "s": 48.621, "e": 48.993}]}, {"t0": 48.926, "t1": 49.714, "w": [{"w": "கழிச்சு", "s": 48.993, "e": 49.504}, {"w": "தான்", "s": 49.504, "e": 49.781}]}, {"t0": 49.714, "t1": 51.565, "w": [{"w": "நிறுத்துறாங்க.", "s": 49.781, "e": 50.788}]}, {"t0": 51.565, "t1": 52.33, "w": [{"w": "460", "s": 51.591, "e": 52.077}, {"w": "மில்லியன்", "s": 52.077, "e": 52.355}]}, {"t0": 52.33, "t1": 53.102, "w": [{"w": "டாலருக்கு", "s": 52.355, "e": 52.696}, {"w": "மேல,", "s": 52.696, "e": 52.897}]}, {"t0": 53.102, "t1": 53.795, "w": [{"w": "அதாவது", "s": 53.127, "e": 53.414}, {"w": "4,000", "s": 53.614, "e": 53.82}]}, {"t0": 53.795, "t1": 54.43, "w": [{"w": "கோடி", "s": 53.82, "e": 54.049}, {"w": "ரூபாய்க்கும்", "s": 54.101, "e": 54.456}]}, {"t0": 54.43, "t1": 54.802, "w": [{"w": "மேல,", "s": 54.456, "e": 54.695}]}, {"t0": 54.802, "t1": 55.301, "w": [{"w": "போச்சு.", "s": 54.828, "e": 55.028}]}, {"t0": 55.301, "t1": 55.93, "w": [{"w": "ஒரே", "s": 55.335, "e": 55.552}, {"w": "வாரத்துல", "s": 55.552, "e": 55.916}]}, {"t0": 55.93, "t1": 56.67, "w": [{"w": "நைட்", "s": 55.964, "e": 56.258}, {"w": "கேபிடலுக்கு", "s": 56.326, "e": 56.704}]}, {"t0": 56.67, "t1": 57.305, "w": [{"w": "400", "s": 56.704, "e": 56.977}, {"w": "மில்லியன்", "s": 56.977, "e": 57.339}]}, {"t0": 57.305, "t1": 57.84, "w": [{"w": "டாலர்", "s": 57.339, "e": 57.602}, {"w": "உதவி", "s": 57.602, "e": 57.874}]}, {"t0": 57.84, "t1": 58.971, "w": [{"w": "தேவைப்பட்டுச்சு.", "s": 57.874, "e": 58.582}]}, {"t0": 58.971, "t1": 59.901, "w": [{"w": "ஒரு", "s": 59.005, "e": 59.178}, {"w": "வருஷத்துக்குள்ள", "s": 59.178, "e": 59.682}]}, {"t0": 59.901, "t1": 60.29, "w": [{"w": "ஒரு", "s": 59.935, "e": 60.051}, {"w": "போட்டி", "s": 60.147, "e": 60.277}]}, {"t0": 60.29, "t1": 60.769, "w": [{"w": "கம்பெனி", "s": 60.324, "e": 60.379}, {"w": "அதை", "s": 60.42, "e": 60.687}]}, {"t0": 60.769, "t1": 61.47, "w": [{"w": "வாங்கிடுச்சு.", "s": 60.803, "e": 61.261}]}, {"t0": 61.47, "t1": 62.248, "w": [{"w": "பாடம்?", "s": 61.52, "e": 61.791}]}, {"t0": 62.248, "t1": 62.84, "w": [{"w": "யூஸ்", "s": 62.279, "e": 62.434}, {"w": "ஆகாத", "s": 62.434, "e": 62.772}]}, {"t0": 62.84, "t1": 63.186, "w": [{"w": "பழைய", "s": 62.871, "e": 62.989}, {"w": "கோடை", "s": 62.989, "e": 63.217}]}, {"t0": 63.186, "t1": 64.074, "w": [{"w": "டெலீட்", "s": 63.217, "e": 63.454}, {"w": "பண்ணுங்க.", "s": 63.454, "e": 63.821}]}, {"t0": 64.074, "t1": 64.477, "w": [{"w": "தனியா", "s": 64.105, "e": 64.306}, {"w": "டிப்ளாய்", "s": 64.306, "e": 64.508}]}, {"t0": 64.477, "t1": 64.938, "w": [{"w": "பண்ணாதீங்க.", "s": 64.508, "e": 64.882}]}, {"t0": 64.938, "t1": 65.515, "w": [{"w": "இது", "s": 64.979, "e": 65.165}, {"w": "மாதிரி", "s": 65.165, "e": 65.458}]}, {"t0": 65.515, "t1": 66.498, "w": [{"w": "டெக்", "s": 65.555, "e": 65.62}, {"w": "கதைகளுக்கு,", "s": 65.75, "e": 66.213}]}, {"t0": 66.498, "t1": 67.148, "w": [{"w": "TechDecoded", "s": 66.538, "e": 66.871}, {"w": "தமிழ்", "s": 66.92, "e": 67.115}]}, {"t0": 67.148, "t1": 69.8, "w": [{"w": "சப்ஸ்க்ரைப்", "s": 67.188, "e": 67.724}, {"w": "பண்ணுங்க.", "s": 67.781, "e": 68.212}]}];
+  const CX = MODE === 'card' ? 430 : 540, CY = MODE === 'card' ? 1770 : 1335, CS = MODE === 'card' ? 60 : 64;
+  CH.forEach(ch => { const g = el('g', {}, capL); const sp = measure(' ', CS, F.sans, 900);
+    const ws = ch.w.map(w => measure(w.w, CS, F.sans, 900)); const tw = ws.reduce((a, b) => a + b, 0) + sp * (ws.length - 1); let x = -tw / 2;
+    ch.items = ch.w.map((w, i) => { const wg = el('g', {}, g);
+      const r0 = el('rect', { x: x - 12, y: -CS * .82 + 8, width: ws[i] + 24, height: CS * 1.12, rx: 14, fill: '#A8301A' }, wg);
+      const r1 = el('rect', { x: x - 12, y: -CS * .82, width: ws[i] + 24, height: CS * 1.12, rx: 14, fill: 'url(#hlg)' }, wg);
+      const te = txt(wg, w.w, { x, y: 0, 'font-size': CS, 'font-family': F.sans, 'font-weight': 900, fill: C.ink, stroke: MODE === 'card' ? 'none' : C.paper, 'stroke-width': 10, 'paint-order': 'stroke', 'stroke-linejoin': 'round' });
+      x += ws[i] + sp; return { r: [r0, r1], te, w }; }); ch.g = g; });
+  capUpdate = (t) => { CH.forEach(ch => { const on = t >= ch.t0 && t < ch.t1; show(ch.g, on); if (!on) return;
+    const p = seg(t, ch.t0, ch.t0 + .3); tf(ch.g, CX, CY + 30 * (1 - E.out(p)), lerp(.85, 1, E.back(p)));
+    ch.items.forEach(it => { const hot = t >= it.w.s && t < it.w.e + .05; it.r.forEach(r => show(r, hot)); it.te.setAttribute('fill', hot ? '#FFFFFF' : C.ink); it.te.setAttribute('stroke-width', hot ? 0 : (MODE === 'card' ? 0 : 10)); }); }); };
+
+  // ---------- Max: bottom-right, key moments only, boil on the drawing ----------
+  const MAXC = { skin: '#F0C4A0', hair: 'messy', hairCol: '#5A3A26', glasses: 'round', hood: 'down', top: '#F87736', topS: '#D85E25', phones: 'none', beard: 'stubble' };
+  const MX = [[0.15, 2.0, { brows: 'high', eyes: 'wide', mouth: 'shock', arms: 'hands-up', extra: ['bang'] }],
+              [6.3, 7.25, { brows: 'skeptic', eyes: 'open', mouth: 'flat', arms: 'shrug', extra: ['question'] }],
+              [7.3, 9.2, { brows: 'worried', eyes: 'closed', mouth: 'frown', arms: 'facepalm' }],
+              [14.3, 16.0, { brows: 'up', eyes: 'open', mouth: 'smile', arms: 'point' }],
+              [18.6, 19.8, { brows: 'focused', eyes: 'squint', mouth: 'flat', arms: 'chin' }],
+              [28.2, 30.6, { brows: 'worried', eyes: 'wide', mouth: 'flat', arms: 'hush' }],
+              [36.2, 37.5, { brows: 'angry', eyes: 'open', mouth: 'frown', arms: 'phone' }],
+              [41.2, 42.25, { brows: 'high', eyes: 'wide', mouth: 'shock', arms: 'hands-up', extra: ['sweat'] }],
+              [45.7, 47.7, { brows: 'worried', eyes: 'worried', mouth: 'wavy', arms: 'hug', extra: ['sweat'] }],
+              [54.6, 55.25, { brows: 'worried', eyes: 'closed', mouth: 'frown', arms: 'facepalm' }],
+              [60.2, 61.45, { brows: 'worried', eyes: 'worried', mouth: 'frown', arms: 'shrug' }],
+              [62.4, 64.9, { brows: 'up', eyes: 'open', mouth: 'smile', arms: 'thumbs' }],
+              [65.0, 69.9, { brows: 'up', eyes: 'happy', mouth: 'grin', arms: 'point', extra: ['spark'] }]];
+  MX.forEach(m => { const g = el('g', { filter: 'url(#boil)' }, maxL); g.innerHTML = HOST.render(Object.assign({ char: MAXC, w: 400, h: 520 }, m[2])); m.push(g); });
+  maxUpdate = (t) => MX.forEach(m => { const on = t >= m[0] && t < m[1]; show(m[3], on); if (on) { const card = MODE === 'card'; tf(m[3], card ? 735 : 590, (card ? 1520 : 1410) + 400 * (1 - E.back(seg(t, m[0], m[0] + .35))), card ? .86 : .9); } });
+
+  // ---------- HUD ----------
+  const hg = el('g', {}, hud);
+  const caseNo = txt(hg, 'CASE No. 2012-KCG-001', { x: 50, y: 70, 'font-size': 26, 'font-family': F.mono, 'font-weight': 800 });
+  const chip = el('g', {}, hg), chipBg = el('rect', { x: 50, y: 86, height: 44, rx: 6 }, chip);
+  const chipA = txt(chip, '', { x: 64, y: 117, 'font-size': 26, 'font-family': F.sans, 'font-weight': 900 }), chipB = txt(chip, '', { y: 117, 'font-size': 26, 'font-family': F.sans, 'font-weight': 900 });
+  const date = el('g', {}, hg), dateBg = el('rect', { x: 800, y: 44, width: 230, height: 56, rx: 8, fill: 'none', 'stroke-width': 4 }, date);
+  const rec = el('circle', { cx: 830, cy: 72, r: 10, fill: C.red }, date), dateT = txt(date, '2012.08.01', { x: 850, y: 84, 'font-size': 28, 'font-family': F.mono, 'font-weight': 800 });
+  const chips = [[0, 6.22, 'சாட்சி 01', 'நஷ்டம்'], [6.22, 9.22, 'சாட்சி 02', 'காரணம்'], [9.22, 16.05, 'கோப்பு', 'கம்பெனி'], [16.05, 19.86, 'சாட்சி 03', 'சர்வர்கள்'], [19.86, 30.67, 'சாட்சி 04', 'பழைய ஸ்விட்ச்'], [30.67, 37.59, 'சாட்சி 05', 'எச்சரிக்கை'], [37.59, 47.75, 'சாட்சி 06', 'ஓப்பன்'], [47.75, 61.52, 'தீர்ப்பு', 'சேதம்'], [61.52, 70, 'முடிவு', 'பாடம்']];
+  hudUpdate = (t) => { const c = chips.find(c => t >= c[0] && t < c[1]); show(hg, !!c); if (!c) return;
+    const dark = (t >= 6.22 && t < 7.27) || (t >= 40.42 && t < 42.31), ink = dark ? C.cream : C.ink;
+    caseNo.setAttribute('fill', ink); chipBg.setAttribute('fill', ink); chipA.textContent = c[2]; chipA.setAttribute('fill', dark ? C.red : C.yellow);
+    chipB.textContent = c[3]; chipB.setAttribute('fill', dark ? C.ink : C.cream);
+    const wa = measure(c[2], 26, F.sans), wb = measure(c[3], 26, F.sans); chipB.setAttribute('x', 64 + wa + 14); chipBg.setAttribute('width', wa + wb + 42);
+    dateBg.setAttribute('stroke', ink); dateT.setAttribute('fill', ink); op(rec, Math.floor(t * 2) % 2 ? .25 : 1); };
+
+  // ---------- halftone-dot wipes ----------
+  const dg = el('g', {}, wipe), dots = [];
+  for (let y = 0; y <= H + 80; y += 80) for (let x = 0; x <= W + 80; x += 80) dots.push({ e: el('circle', { cx: x, cy: y, r: 0 }, dg), x, y });
+  const WIPES = [[2.02, C.yellow], [6.22, C.ink], [7.27, C.orange], [9.22, C.teal], [14.22, C.yellow], [16.05, C.orange], [19.86, C.ink], [27.02, C.yellow], [30.67, C.red], [37.59, C.yellow], [42.31, C.red], [47.75, C.ink], [51.55, C.red], [55.29, C.yellow], [61.52, C.orange], [64.93, C.yellow]];
+  wipeUpdate = (t) => { const w = WIPES.find(([b]) => Math.abs(t - b) < .22); show(dg, !!w); if (!w) return; dg.setAttribute('fill', w[1]);
+    const u = (t - w[0] + .22) / .44; dots.forEach(d => { const delay = (d.x / W * .4 + d.y / H * .6) * .35, p = clamp((u - delay) / .65); d.e.setAttribute('r', (Math.sin(p * Math.PI) * 62).toFixed(1)); }); };
+}
+let hudUpdate = () => {}, wipeUpdate = () => {}, capUpdate = () => {}, maxUpdate = () => {};
+const CUTS = [2.02, 6.22, 7.27, 9.22, 11.07, 14.22], ROT = [-1.6, 1.4, -1.2, 1.5, -1.4, 1.2, -1.5];
+function buildCard() {
+  const cardIn = document.getElementById('cardIn'), sh = document.getElementById('cardSh'), bd = document.getElementById('cardBd');
+  if (MODE !== 'card') return;
+  cardIn.setAttribute('clip-path', 'url(#cardClip)'); op(sh, .35); sh.setAttribute('filter', 'url(#sh)'); bd.setAttribute('stroke-width', 26);
+  const bgl = document.getElementById('bgL');
+  el('rect', { width: W, height: H, fill: C.paper }, bgl);
+  const d = el('defs', {}, bgl);
+  d.innerHTML = '<radialGradient id="g1" cx=".1" cy=".06" r=".5"><stop offset="0" stop-color="#F87736" stop-opacity=".32"/><stop offset="1" stop-color="#F87736" stop-opacity="0"/></radialGradient><radialGradient id="g2" cx=".92" cy=".95" r=".55"><stop offset="0" stop-color="#F87736" stop-opacity=".36"/><stop offset="1" stop-color="#F87736" stop-opacity="0"/></radialGradient><pattern id="dp" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="17" cy="17" r="2.6" fill="#E2CBB8"/></pattern>';
+  el('rect', { width: W, height: H, fill: 'url(#g1)' }, bgl); el('rect', { width: W, height: H, fill: 'url(#g2)' }, bgl); el('rect', { width: W, height: H, fill: 'url(#dp)' }, bgl);
+}
+function cardUpdate(t) {
+  if (MODE !== 'card') return;
+  const k = 0.79, bx = (W - W * k) / 2, by = 125;
+  let i = CUTS.filter(c => t >= c).length, dy = 0, rot = ROT[i], sc = 1;
+  const nxt = CUTS.find(c => t < c && t >= c - .2), prv = CUTS.find(c => t >= c && t < c + .42);
+  if (nxt) { const p = E.in(seg(t, nxt - .2, nxt)); dy = 1500 * p; rot += 14 * p; }
+  if (prv) { const p = seg(t, prv, prv + .42); dy = -1500 * (1 - E.back(p)); rot += -10 * (1 - p); sc = 1 + .06 * Math.sin(p * Math.PI); }
+  document.getElementById('cardW').setAttribute('transform', `translate(${bx} ${by + dy}) translate(${W * k / 2} ${H * k / 2}) rotate(${rot}) scale(${k * sc}) translate(${-W / 2} ${-H / 2})`);
+}
+
+function buildPaper() {
+  const cv = document.getElementById('paper'), ctx = cv.getContext('2d'), r = rng(3);
+  const sm = document.createElement('canvas'); sm.width = 54; sm.height = 96; const sx = sm.getContext('2d'), si = sx.createImageData(54, 96);
+  for (let i = 0; i < si.data.length; i += 4) { const v = 242 + r() * 13; si.data[i] = si.data[i + 1] = si.data[i + 2] = v; si.data[i + 3] = 255; }
+  sx.putImageData(si, 0, 0); ctx.imageSmoothingEnabled = true; ctx.drawImage(sm, 0, 0, W, H);
+  const b = ctx.getImageData(0, 0, W, H);
+  for (let i = 0; i < b.data.length; i += 4) { const n = (r() - .5) * 26; b.data[i] = clamp(b.data[i] + n, 0, 255); b.data[i + 1] = clamp(b.data[i + 1] + n, 0, 255); b.data[i + 2] = clamp(b.data[i + 2] + n - 4, 0, 255); }
+  ctx.putImageData(b, 0, 0);
+  const gr = ctx.createRadialGradient(540, 960, 500, 540, 960, 1250); gr.addColorStop(0, 'rgba(255,255,255,0)'); gr.addColorStop(1, 'rgba(120,100,80,0.35)');
+  ctx.fillStyle = gr; ctx.fillRect(0, 0, W, H);
+  ctx.strokeStyle = 'rgba(140,120,100,0.18)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(0, 960); ctx.lineTo(W, 962); ctx.stroke();
+}
+function drawFx(frame) {
+  const ctx = document.getElementById('fx').getContext('2d'); ctx.clearRect(0, 0, W, H); const r = rng(1000 + Math.floor(frame / 2));
+  ctx.fillStyle = 'rgba(255,248,235,0.75)'; for (let i = 0; i < 520; i++) { ctx.beginPath(); ctx.arc(r() * W, r() * H, .6 + r() * 1.8, 0, 7); ctx.fill(); }
+  ctx.fillStyle = 'rgba(42,32,24,0.25)'; for (let i = 0; i < 90; i++) { ctx.beginPath(); ctx.arc(r() * W, r() * H, .6 + r() * 1.3, 0, 7); ctx.fill(); }
+}
+const SHAKES = [[0.623, 16, 0.3], [5.335999999999999, 18, 0.3], [4.841, 24, 0.4], [6.49, 10, 0.25], [8.109, 18, 0.3], [12.031, 16, 0.3], [19.167, 14, 0.3], [26.218, 18, 0.35], [36.437000000000005, 14, 0.3], [41.168, 20, 0.4], [47.067, 16, 0.3], [49.881, 16, 0.3], [54.848000000000006, 30, 0.5], [60.903, 14, 0.3], [53.663999999999994, 12, 0.25]];
+const FLASHES = [[4.841, 0.5], [13.583, 0.5], [13.583, 0.45], [26.168, 0.5], [41.118, 0.45], [54.828, 0.5], [67.288, 0.35]];
+const boilT = document.getElementById('boilT');
+function render(t) {
+  const frame = Math.round(t * FPS); boilT.setAttribute('seed', 1 + (Math.floor(t * 10) % 40));
+  for (const s of scenes) { const on = t >= s.t0 && t < s.t1; show(s.g, on); if (on) s.update(t); }
+  let dx = 0, dy = 0;
+  for (const [t0, a, d] of SHAKES) if (t >= t0 && t < t0 + d) { const k = 1 - (t - t0) / d; dx += a * k * k * Math.sin(t * 91 + t0); dy += a * k * k * Math.cos(t * 77 + t0 * 3); }
+  const pulse = 1 + 0.006 * Math.exp(-((t % 0.5) / 0.07)), push = 1 + 0.04 * ((t % 4) / 4);
+  const s = pulse * push; cam.setAttribute('transform', `translate(${(dx + 540 * (1 - s)).toFixed(2)} ${(dy + 960 * (1 - s)).toFixed(2)}) scale(${s.toFixed(4)})`);
+  let fl = 0; for (const [f, a] of FLASHES) if (t >= f && t < f + .3) fl = Math.max(fl, a * Math.pow(1 - (t - f) / .3, 2)); op(flash, fl);
+  cardUpdate(t); maxUpdate(t); capUpdate(t); hudUpdate(t); if (MODE !== 'card') wipeUpdate(t); drawFx(frame);
+}
+async function init() {
+  const fams = ['400 50px "Slab"', '400 50px "Bagel"', '800 50px "JBM"', '900 50px "Mont"'];
+  await Promise.all(fams.map(f => document.fonts.load(f, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$,.:?!·…→✓%&\'அஆஇஈஉஊஎஏஐஒஓகஙசஞடணதநபமயரலவழளறனஜஷஸஹாிீுூெேைொோௌ்₹')));
+  await document.fonts.ready; buildPaper(); buildCard(); buildAll();
+  render(parseFloat(new URLSearchParams(location.search).get('t') || '0')); window.READY = true;
+}
+window.render = render; init();
+</script></body></html>
